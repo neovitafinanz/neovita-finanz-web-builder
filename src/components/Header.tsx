@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -11,6 +12,7 @@ import {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
   
   const languages = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -28,7 +30,15 @@ const Header = () => {
   const [currentLanguage, setCurrentLanguage] = useState(languages[0]);
 
   const scrollToLoanForm = () => {
-    document.getElementById('loan-form')?.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      window.location.href = '/#loan-form';
+    } else {
+      document.getElementById('loan-form')?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const isActiveRoute = (path: string) => {
+    return location.pathname === path;
   };
 
   return (
@@ -37,30 +47,57 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo Only */}
           <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
-              alt="Neovita Finanz Logo" 
-              className="w-12 h-12 object-contain"
-            />
+            <Link to="/">
+              <img 
+                src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
+                alt="Neovita Finanz Logo" 
+                className="w-12 h-12 object-contain"
+              />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#accueil" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            <Link 
+              to="/" 
+              className={`font-medium transition-colors ${
+                isActiveRoute('/') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+              }`}
+            >
               Accueil
-            </a>
-            <a href="#services" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            </Link>
+            <Link 
+              to="/services" 
+              className={`font-medium transition-colors ${
+                isActiveRoute('/services') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+              }`}
+            >
               Services
-            </a>
-            <a href="#simulation" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            </Link>
+            <Link 
+              to="/simulation" 
+              className={`font-medium transition-colors ${
+                isActiveRoute('/simulation') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+              }`}
+            >
               Simulation
-            </a>
-            <a href="#a-propos" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            </Link>
+            <Link 
+              to="/about" 
+              className={`font-medium transition-colors ${
+                isActiveRoute('/about') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+              }`}
+            >
               À propos
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`font-medium transition-colors ${
+                isActiveRoute('/contact') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+              }`}
+            >
               Contact
-            </a>
+            </Link>
           </nav>
 
           {/* Language Selector & CTA */}
@@ -108,21 +145,51 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#accueil" className="text-gray-700 hover:text-green-600 font-medium">
+              <Link 
+                to="/" 
+                className={`font-medium ${
+                  isActiveRoute('/') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Accueil
-              </a>
-              <a href="#services" className="text-gray-700 hover:text-green-600 font-medium">
+              </Link>
+              <Link 
+                to="/services" 
+                className={`font-medium ${
+                  isActiveRoute('/services') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Services
-              </a>
-              <a href="#simulation" className="text-gray-700 hover:text-green-600 font-medium">
+              </Link>
+              <Link 
+                to="/simulation" 
+                className={`font-medium ${
+                  isActiveRoute('/simulation') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Simulation
-              </a>
-              <a href="#a-propos" className="text-gray-700 hover:text-green-600 font-medium">
+              </Link>
+              <Link 
+                to="/about" 
+                className={`font-medium ${
+                  isActiveRoute('/about') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 À propos
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium">
+              </Link>
+              <Link 
+                to="/contact" 
+                className={`font-medium ${
+                  isActiveRoute('/contact') ? 'text-green-600' : 'text-gray-700 hover:text-green-600'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contact
-              </a>
+              </Link>
               <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
@@ -146,7 +213,10 @@ const Header = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
                 <Button 
-                  onClick={scrollToLoanForm}
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    scrollToLoanForm();
+                  }}
                   className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-4 py-2 rounded-lg font-medium"
                 >
                   Demander un prêt
