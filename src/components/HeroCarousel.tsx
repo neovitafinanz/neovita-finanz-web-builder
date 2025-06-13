@@ -1,34 +1,34 @@
 
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Calculator } from 'lucide-react';
+import { ChevronUp, ChevronDown, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       title: "Votre avenir financier commence ici",
       subtitle: "Solutions sécurisées depuis 2006",
       description: "Réalisez vos projets avec nos solutions de financement personnalisées adaptées à vos besoins"
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       title: "Réalisez vos projets immobiliers",
       subtitle: "Taux immobilier dès 2%*",
       description: "Accompagnement personnalisé pour l'acquisition de votre résidence principale ou investissement locatif"
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       title: "Sécurisez votre futur",
       subtitle: "Expertise financière depuis plus de 17 ans",
       description: "43 experts à votre service pour vous accompagner dans tous vos projets financiers"
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       title: "Investissez dans votre éducation",
       subtitle: "Prêt étudiant dès 2%*",
       description: "Financez vos études supérieures avec nos solutions de prêt étudiant avantageuses"
@@ -68,20 +68,26 @@ const HeroCarousel = () => {
       onMouseLeave={() => setIsPlaying(true)}
     >
       {/* Background Images */}
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
           <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent" />
-        </div>
-      ))}
+            key={slide.id}
+            className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
+              index === currentSlide 
+                ? 'transform translate-y-0' 
+                : index < currentSlide 
+                  ? 'transform -translate-y-full' 
+                  : 'transform translate-y-full'
+            }`}
+          >
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent" />
+          </div>
+        ))}
+      </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -117,24 +123,24 @@ const HeroCarousel = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - Now vertical */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
+        className="absolute top-4 left-1/2 transform -translate-x-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
         aria-label="Slide précédent"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronUp className="w-6 h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
         aria-label="Slide suivant"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronDown className="w-6 h-6" />
       </button>
 
-      {/* Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
+      {/* Indicators - Now vertical */}
+      <div className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 flex flex-col space-y-3">
         {slides.map((_, index) => (
           <button
             key={index}
