@@ -1,0 +1,155 @@
+
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight, Calculator } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const HeroCarousel = () => {
+  const slides = [
+    {
+      id: 1,
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      title: "Votre avenir financier commence ici",
+      subtitle: "Solutions sécurisées depuis 2006",
+      description: "Réalisez vos projets avec nos solutions de financement personnalisées adaptées à vos besoins"
+    },
+    {
+      id: 2,
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      title: "Réalisez vos projets immobiliers",
+      subtitle: "Taux immobilier dès 2%*",
+      description: "Accompagnement personnalisé pour l'acquisition de votre résidence principale ou investissement locatif"
+    },
+    {
+      id: 3,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      title: "Sécurisez votre futur",
+      subtitle: "Expertise financière depuis plus de 17 ans",
+      description: "43 experts à votre service pour vous accompagner dans tous vos projets financiers"
+    },
+    {
+      id: 4,
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      title: "Investissez dans votre éducation",
+      subtitle: "Prêt étudiant dès 2%*",
+      description: "Financez vos études supérieures avec nos solutions de prêt étudiant avantageuses"
+    }
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  useEffect(() => {
+    if (!isPlaying) return;
+    
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [isPlaying, slides.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  return (
+    <section 
+      id="accueil" 
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+      onMouseEnter={() => setIsPlaying(false)}
+      onMouseLeave={() => setIsPlaying(true)}
+    >
+      {/* Background Images */}
+      {slides.map((slide, index) => (
+        <div
+          key={slide.id}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent" />
+        </div>
+      ))}
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-5xl lg:text-7xl font-bold mb-6 animate-fade-in">
+            {slides[currentSlide].title}
+          </h1>
+          <p className="text-xl lg:text-2xl mb-4 text-yellow-400 font-semibold">
+            {slides[currentSlide].subtitle}
+          </p>
+          <p className="text-lg lg:text-xl mb-8 text-gray-200 max-w-2xl mx-auto leading-relaxed">
+            {slides[currentSlide].description}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              className="bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105"
+              onClick={() => document.getElementById('simulation')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Calculator className="w-5 h-5 mr-2" />
+              Simulez votre prêt maintenant
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all"
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Découvrir nos services
+            </Button>
+          </div>
+          <p className="text-sm text-gray-300 mt-6">
+            *Taux indicatif, sous réserve d'étude de votre dossier
+          </p>
+        </div>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
+        aria-label="Slide précédent"
+      >
+        <ChevronLeft className="w-6 h-6" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-all backdrop-blur-sm"
+        aria-label="Slide suivant"
+      >
+        <ChevronRight className="w-6 h-6" />
+      </button>
+
+      {/* Indicators */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`w-3 h-3 rounded-full transition-all ${
+              index === currentSlide 
+                ? 'bg-yellow-400 scale-125' 
+                : 'bg-white/50 hover:bg-white/70'
+            }`}
+            aria-label={`Aller au slide ${index + 1}`}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default HeroCarousel;
