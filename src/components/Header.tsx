@@ -27,36 +27,42 @@ const Header = () => {
 
   const [currentLanguage, setCurrentLanguage] = useState(languages[0]);
 
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">N</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
+              alt="Neovita Finanz Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div>
-              <h1 className="text-xl font-bold text-blue-900">Neovita Finanz</h1>
+              <h1 className="text-xl font-bold text-green-600">Neovita Finanz</h1>
               <p className="text-xs text-gray-600">SIREN 493 171 540</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#accueil" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
+            <a href="#accueil" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Accueil
             </a>
-            <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
+            <a href="#services" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Services
             </a>
-            <a href="#simulation" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
+            <a href="#simulation" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Simulation
             </a>
-            <a href="#a-propos" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
+            <a href="#a-propos" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               À propos
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium transition-colors">
+            <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
               Contact
             </a>
           </nav>
@@ -85,7 +91,10 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <Button className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl">
+            <Button 
+              onClick={scrollToContact}
+              className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
+            >
               Demander un prêt
             </Button>
           </div>
@@ -103,19 +112,19 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
             <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#accueil" className="text-gray-700 hover:text-blue-900 font-medium">
+              <a href="#accueil" className="text-gray-700 hover:text-green-600 font-medium">
                 Accueil
               </a>
-              <a href="#services" className="text-gray-700 hover:text-blue-900 font-medium">
+              <a href="#services" className="text-gray-700 hover:text-green-600 font-medium">
                 Services
               </a>
-              <a href="#simulation" className="text-gray-700 hover:text-blue-900 font-medium">
+              <a href="#simulation" className="text-gray-700 hover:text-green-600 font-medium">
                 Simulation
               </a>
-              <a href="#a-propos" className="text-gray-700 hover:text-blue-900 font-medium">
+              <a href="#a-propos" className="text-gray-700 hover:text-green-600 font-medium">
                 À propos
               </a>
-              <a href="#contact" className="text-gray-700 hover:text-blue-900 font-medium">
+              <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium">
                 Contact
               </a>
               <div className="flex items-center justify-between pt-4 border-t border-gray-200">
@@ -140,7 +149,10 @@ const Header = () => {
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>
-                <Button className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white px-4 py-2 rounded-lg font-medium">
+                <Button 
+                  onClick={scrollToContact}
+                  className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-4 py-2 rounded-lg font-medium"
+                >
                   Demander un prêt
                 </Button>
               </div>

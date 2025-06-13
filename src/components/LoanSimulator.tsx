@@ -28,12 +28,6 @@ const LoanSimulator = () => {
     { value: 'student', label: 'Prêt étudiant', rate: 2.0 }
   ];
 
-  useEffect(() => {
-    if (loanType && amount[0] && duration[0]) {
-      calculateLoan();
-    }
-  }, [amount, duration, loanType]);
-
   const calculateLoan = () => {
     const selectedLoan = loanTypes.find(loan => loan.value === loanType);
     if (!selectedLoan) return;
@@ -57,6 +51,12 @@ const LoanSimulator = () => {
     }
   };
 
+  useEffect(() => {
+    if (loanType && amount[0] && duration[0]) {
+      calculateLoan();
+    }
+  }, [amount, duration, loanType]);
+
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat('fr-FR', {
       style: 'currency',
@@ -72,9 +72,10 @@ const LoanSimulator = () => {
   };
 
   const handleRequestLoan = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
     toast({
       title: "Demande en cours",
-      description: "Vous allez être redirigé vers le formulaire de demande.",
+      description: "Vous allez être redirigé vers le formulaire de contact.",
     });
   };
 
@@ -82,7 +83,7 @@ const LoanSimulator = () => {
     <section id="simulation" className="py-20 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-green-600 mb-6">
             Simulateur de Prêt
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -95,7 +96,7 @@ const LoanSimulator = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Simulator Form */}
             <Card className="bg-white shadow-2xl border-0">
-              <CardHeader className="bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-t-lg">
+              <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
                 <CardTitle className="text-2xl font-bold flex items-center">
                   <Calculator className="w-6 h-6 mr-3" />
                   Paramètres de simulation
@@ -104,17 +105,17 @@ const LoanSimulator = () => {
               <CardContent className="p-8 space-y-8">
                 {/* Loan Type Selection */}
                 <div className="space-y-3">
-                  <Label className="text-lg font-semibold text-blue-900">Type de prêt</Label>
+                  <Label className="text-lg font-semibold text-green-600">Type de prêt</Label>
                   <Select value={loanType} onValueChange={setLoanType}>
-                    <SelectTrigger className="h-12 text-base border-2 border-gray-200 focus:border-blue-500">
+                    <SelectTrigger className="h-12 text-base border-2 border-gray-200 focus:border-green-500">
                       <SelectValue placeholder="Sélectionnez votre type de prêt" />
                     </SelectTrigger>
                     <SelectContent className="bg-white border border-gray-200 shadow-lg">
                       {loanTypes.map((loan) => (
-                        <SelectItem key={loan.value} value={loan.value} className="hover:bg-blue-50">
+                        <SelectItem key={loan.value} value={loan.value} className="hover:bg-green-50">
                           <div className="flex justify-between items-center w-full">
                             <span>{loan.label}</span>
-                            <span className="text-blue-600 font-semibold ml-2">{loan.rate}%</span>
+                            <span className="text-green-600 font-semibold ml-2">{loan.rate}%</span>
                           </div>
                         </SelectItem>
                       ))}
@@ -125,8 +126,8 @@ const LoanSimulator = () => {
                 {/* Amount Slider */}
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <Label className="text-lg font-semibold text-blue-900">Montant du prêt</Label>
-                    <span className="text-2xl font-bold text-blue-600">
+                    <Label className="text-lg font-semibold text-green-600">Montant du prêt</Label>
+                    <span className="text-2xl font-bold text-green-600">
                       {formatCurrency(amount[0])}
                     </span>
                   </div>
@@ -147,8 +148,8 @@ const LoanSimulator = () => {
                 {/* Duration Slider */}
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <Label className="text-lg font-semibold text-blue-900">Durée</Label>
-                    <span className="text-2xl font-bold text-blue-600">
+                    <Label className="text-lg font-semibold text-green-600">Durée</Label>
+                    <span className="text-2xl font-bold text-green-600">
                       {duration[0]} mois ({Math.round(duration[0] / 12 * 10) / 10} ans)
                     </span>
                   </div>
@@ -168,7 +169,7 @@ const LoanSimulator = () => {
 
                 <Button 
                   onClick={calculateLoan}
-                  className="w-full bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                  className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
                   disabled={!loanType}
                 >
                   <Calculator className="w-5 h-5 mr-2" />
@@ -179,7 +180,7 @@ const LoanSimulator = () => {
 
             {/* Results */}
             <Card className="bg-white shadow-2xl border-0">
-              <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
+              <CardHeader className="bg-gradient-to-r from-yellow-600 to-yellow-500 text-white rounded-t-lg">
                 <CardTitle className="text-2xl font-bold">Résultats de votre simulation</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
@@ -211,7 +212,7 @@ const LoanSimulator = () => {
                     </div>
 
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-blue-900 mb-2">Récapitulatif:</h4>
+                      <h4 className="font-semibold text-green-600 mb-2">Récapitulatif:</h4>
                       <ul className="space-y-1 text-sm text-gray-600">
                         <li>• Montant emprunté: {formatCurrency(amount[0])}</li>
                         <li>• Durée: {duration[0]} mois ({Math.round(duration[0] / 12 * 10) / 10} ans)</li>
@@ -231,7 +232,7 @@ const LoanSimulator = () => {
                         <Button 
                           onClick={handleSaveEstimation}
                           variant="outline" 
-                          className="flex-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white"
+                          className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
                         >
                           <Mail className="w-4 h-4 mr-2" />
                           Email
@@ -239,7 +240,7 @@ const LoanSimulator = () => {
                         <Button 
                           onClick={handleSaveEstimation}
                           variant="outline" 
-                          className="flex-1 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white"
+                          className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
                         >
                           <Download className="w-4 h-4 mr-2" />
                           PDF
