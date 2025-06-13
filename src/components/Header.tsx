@@ -27,25 +27,21 @@ const Header = () => {
 
   const [currentLanguage, setCurrentLanguage] = useState(languages[0]);
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToLoanForm = () => {
+    document.getElementById('loan-form')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
+          {/* Logo Only */}
+          <div className="flex items-center">
             <img 
               src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
               alt="Neovita Finanz Logo" 
               className="w-12 h-12 object-contain"
             />
-            <div>
-              <h1 className="text-xl font-bold text-green-600">Neovita Finanz</h1>
-              <p className="text-xs text-gray-600">SIREN 493 171 540</p>
-            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -92,7 +88,7 @@ const Header = () => {
             </DropdownMenu>
 
             <Button 
-              onClick={scrollToContact}
+              onClick={scrollToLoanForm}
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
             >
               Demander un prêt
@@ -150,7 +146,7 @@ const Header = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
                 <Button 
-                  onClick={scrollToContact}
+                  onClick={scrollToLoanForm}
                   className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-4 py-2 rounded-lg font-medium"
                 >
                   Demander un prêt

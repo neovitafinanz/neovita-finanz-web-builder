@@ -3,12 +3,14 @@ import { CreditCard, Shield, TrendingUp, Home, Car, Heart, Building, GraduationC
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import ServiceDetails from './ServiceDetails';
+import ServiceDetailsModal from './ServiceDetailsModal';
 
 const ServicesSection = () => {
   const [selectedService, setSelectedService] = useState(null);
+  const [selectedMainService, setSelectedMainService] = useState(null);
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToLoanForm = () => {
+    document.getElementById('loan-form')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const mainServices = [
@@ -16,19 +18,88 @@ const ServicesSection = () => {
       icon: CreditCard,
       title: "Solutions de Financement",
       description: "Prêts personnalisés adaptés à vos besoins individuels et professionnels",
-      features: ["Prêts personnels", "Crédits travaux", "Rachats de crédit"]
+      features: ["Prêts personnels", "Crédits travaux", "Rachats de crédit"],
+      details: {
+        title: "Solutions de Financement",
+        description: "Nos solutions de financement sur mesure s'adaptent à tous vos projets personnels et professionnels. Que vous souhaitiez réaliser un rêve, faire face à un imprévu ou développer votre activité, nous avons la solution qu'il vous faut.",
+        details: [
+          "Analyse personnalisée de votre situation",
+          "Montants de 1 000 € à 500 000 €",
+          "Durées flexibles de 12 à 360 mois",
+          "Taux compétitifs dès 2%",
+          "Réponse rapide sous 48h"
+        ],
+        advantages: [
+          "Accompagnement personnalisé par des experts",
+          "Procédures simplifiées et digitalisées",
+          "Transparence totale sur les coûts",
+          "Possibilité de remboursement anticipé",
+          "Service client dédié"
+        ],
+        process: [
+          "Simulation en ligne gratuite",
+          "Étude personnalisée de votre dossier",
+          "Validation et signature du contrat"
+        ]
+      }
     },
     {
       icon: TrendingUp,
       title: "Produits d'Investissement",
       description: "Gamme complète d'investissements pour tous profils d'investisseurs",
-      features: ["Placements sécurisés", "Diversification", "Conseil personnalisé"]
+      features: ["Placements sécurisés", "Diversification", "Conseil personnalisé"],
+      details: {
+        title: "Produits d'Investissement",
+        description: "Faites fructifier votre épargne avec notre gamme complète de produits d'investissement. Nos conseillers experts vous accompagnent pour construire un portefeuille adapté à votre profil de risque et à vos objectifs financiers.",
+        details: [
+          "Analyse de votre profil investisseur",
+          "Diversification optimisée des placements",
+          "Suivi régulier de vos investissements",
+          "Reporting détaillé et transparent",
+          "Conseils d'optimisation fiscale"
+        ],
+        advantages: [
+          "Expertise reconnue depuis 2006",
+          "Accès aux meilleurs produits du marché",
+          "Gestion personnalisée de votre patrimoine",
+          "Frais compétitifs et transparents",
+          "Support client expert"
+        ],
+        process: [
+          "Évaluation de votre profil",
+          "Proposition de stratégie d'investissement",
+          "Mise en place et suivi des placements"
+        ]
+      }
     },
     {
       icon: Shield,
       title: "Assurances Complètes",
       description: "Protection optimale pour vous et votre famille",
-      features: ["Assurance vie", "Assurance habitation", "Assurance auto"]
+      features: ["Assurance vie", "Assurance habitation", "Assurance auto"],
+      details: {
+        title: "Assurances Complètes",
+        description: "Protégez ce qui compte le plus pour vous avec notre gamme complète d'assurances. De la protection de votre famille à celle de vos biens, nous vous proposons des solutions adaptées à tous vos besoins.",
+        details: [
+          "Couverture complète tous risques",
+          "Garanties adaptées à votre situation",
+          "Assistance 24h/24 et 7j/7",
+          "Gestion simplifiée des sinistres",
+          "Tarifs négociés avec nos partenaires"
+        ],
+        advantages: [
+          "Large choix d'assureurs partenaires",
+          "Comparaison automatique des offres",
+          "Conseil gratuit et personnalisé",
+          "Gestion centralisée de vos contrats",
+          "Service de négociation pour vous"
+        ],
+        process: [
+          "Analyse de vos besoins en protection",
+          "Comparaison et sélection des meilleures offres",
+          "Souscription et gestion de vos contrats"
+        ]
+      }
     }
   ];
 
@@ -326,7 +397,7 @@ const ServicesSection = () => {
                   ))}
                 </ul>
                 <Button 
-                  onClick={scrollToContact}
+                  onClick={() => setSelectedMainService(service.details)}
                   variant="outline" 
                   className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white transition-colors"
                 >
@@ -378,7 +449,7 @@ const ServicesSection = () => {
                     En savoir plus
                   </Button>
                   <Button 
-                    onClick={scrollToContact}
+                    onClick={scrollToLoanForm}
                     size="sm" 
                     className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white transition-colors"
                   >
@@ -430,11 +501,17 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      {/* Service Details Modal */}
+      {/* Service Details Modals */}
       <ServiceDetails 
         service={selectedService}
         isOpen={!!selectedService}
         onClose={() => setSelectedService(null)}
+      />
+      
+      <ServiceDetailsModal 
+        service={selectedMainService}
+        isOpen={!!selectedMainService}
+        onClose={() => setSelectedMainService(null)}
       />
     </div>
   );
