@@ -4,6 +4,7 @@ import Layout from '@/components/Layout';
 import HeroCarousel from '@/components/HeroCarousel';
 import LoanSimulator from '@/components/LoanSimulator';
 import PartnersSection from '@/components/PartnersSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
@@ -136,6 +137,9 @@ const Index = () => {
 
       {/* Loan Simulator */}
       <LoanSimulator />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Partners Section */}
       <PartnersSection />
