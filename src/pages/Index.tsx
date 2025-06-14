@@ -1,6 +1,9 @@
 
 import React from 'react';
 import Layout from '@/components/Layout';
+import HeroCarousel from '@/components/HeroCarousel';
+import LoanSimulator from '@/components/LoanSimulator';
+import PartnersSection from '@/components/PartnersSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
@@ -56,51 +59,11 @@ const Index = () => {
       title="Accueil" 
       description="Neovita Finanz - Votre partenaire financier de confiance. Solutions de prêts personnels, immobiliers, rachat de crédit depuis 2006."
     >
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-green-700 text-white py-20 lg:py-32">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-          style={{ 
-            backgroundImage: 'url(https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)' 
-          }}
-        />
-        <div className="relative container mx-auto px-4 text-center">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Votre avenir financier<br />
-            <span className="text-yellow-400">commence ici</span>
-          </h1>
-          <p className="text-xl lg:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Depuis 2006, nous accompagnons particuliers et professionnels dans la réalisation 
-            de leurs projets financiers avec expertise et transparence.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              onClick={() => navigate('/demande-credit')}
-              size="lg"
-              className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-              aria-label="Faire une demande de prêt maintenant"
-            >
-              <Calculator className="w-5 h-5 mr-2" />
-              Demander un prêt
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => navigate('/a-propos')}
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
-              aria-label="En savoir plus sur Neovita Finanz"
-            >
-              En savoir plus
-            </Button>
-          </div>
-          <p className="text-sm text-gray-300 mt-6">
-            *Taux indicatif, sous réserve d'étude de votre dossier
-          </p>
-        </div>
-      </section>
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       {/* Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
@@ -170,6 +133,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Loan Simulator */}
+      <LoanSimulator />
+
+      {/* Partners Section */}
+      <PartnersSection />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white">
