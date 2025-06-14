@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,6 +12,7 @@ import {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
   
   const languages = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -27,136 +29,166 @@ const Header = () => {
 
   const [currentLanguage, setCurrentLanguage] = useState(languages[0]);
 
-  const scrollToLoanForm = () => {
-    document.getElementById('loan-form')?.scrollIntoView({ behavior: 'smooth' });
+  const mainNavItems = [
+    { name: 'Accueil', href: '/' },
+    { name: 'Prêts personnels', href: '/prets-personnels' },
+    { name: 'Prêts immobiliers', href: '/prets-immobiliers' },
+    { name: 'Rachat de crédit', href: '/rachat-credit' },
+    { name: 'Crédit travaux', href: '/credit-travaux' },
+    { name: 'Assurances', href: '/assurances' },
+    { name: 'À propos', href: '/a-propos' },
+  ];
+
+  const handleCTAClick = () => {
+    navigate('/demande-credit');
   };
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo Only */}
-          <div className="flex items-center">
-            <img 
-              src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
-              alt="Neovita Finanz Logo" 
-              className="w-12 h-12 object-contain"
-            />
+    <>
+      {/* Contact Bar */}
+      <div className="bg-green-600 text-white py-2 hidden lg:block">
+        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
+          <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-2">
+              <Phone className="w-4 h-4" />
+              <span>01 23 45 67 89</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Mail className="w-4 h-4" />
+              <span>contact@neovita-finanz.fr</span>
+            </div>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#accueil" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Accueil
-            </a>
-            <a href="#services" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Services
-            </a>
-            <a href="#simulation" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Simulation
-            </a>
-            <a href="#a-propos" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              À propos
-            </a>
-            <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium transition-colors">
-              Contact
-            </a>
-          </nav>
-
-          {/* Language Selector & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="flex items-center space-x-2">
-                  <Globe className="w-4 h-4" />
-                  <span>{currentLanguage.flag}</span>
-                  <ChevronDown className="w-4 h-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg">
-                {languages.map((lang) => (
-                  <DropdownMenuItem
-                    key={lang.code}
-                    onClick={() => setCurrentLanguage(lang)}
-                    className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50"
-                  >
-                    <span>{lang.flag}</span>
-                    <span>{lang.name}</span>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <Button 
-              onClick={scrollToLoanForm}
-              className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl"
-            >
-              Demander un prêt
-            </Button>
+          <div className="text-sm">
+            Conseiller disponible du lundi au vendredi de 9h à 18h
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
-            <nav className="flex flex-col space-y-4 mt-4">
-              <a href="#accueil" className="text-gray-700 hover:text-green-600 font-medium">
-                Accueil
-              </a>
-              <a href="#services" className="text-gray-700 hover:text-green-600 font-medium">
-                Services
-              </a>
-              <a href="#simulation" className="text-gray-700 hover:text-green-600 font-medium">
-                Simulation
-              </a>
-              <a href="#a-propos" className="text-gray-700 hover:text-green-600 font-medium">
-                À propos
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-green-600 font-medium">
-                Contact
-              </a>
-              <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="sm" className="flex items-center space-x-2">
-                      <Globe className="w-4 h-4" />
-                      <span>{currentLanguage.flag}</span>
-                      <ChevronDown className="w-4 h-4" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48 bg-white border border-gray-200 shadow-lg">
-                    {languages.map((lang) => (
-                      <DropdownMenuItem
-                        key={lang.code}
-                        onClick={() => setCurrentLanguage(lang)}
-                        className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50"
-                      >
-                        <span>{lang.flag}</span>
-                        <span>{lang.name}</span>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-                <Button 
-                  onClick={scrollToLoanForm}
-                  className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-4 py-2 rounded-lg font-medium"
-                >
-                  Demander un prêt
-                </Button>
-              </div>
-            </nav>
-          </div>
-        )}
       </div>
-    </header>
+
+      {/* Main Header */}
+      <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo - Plus grand */}
+            <Link to="/" className="flex items-center" aria-label="Accueil Neovita Finanz">
+              <img 
+                src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
+                alt="Neovita Finanz - Votre partenaire financier de confiance" 
+                className="w-16 h-16 object-contain"
+              />
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center space-x-6" role="navigation" aria-label="Navigation principale">
+              {mainNavItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-gray-700 hover:text-green-600 font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 rounded-md px-2 py-1"
+                  aria-label={`Aller à la page ${item.name}`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Language Selector & CTA */}
+            <div className="hidden lg:flex items-center space-x-4">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    size="sm" 
+                    className="flex items-center space-x-2"
+                    aria-label="Sélectionner la langue"
+                  >
+                    <Globe className="w-4 h-4" />
+                    <span>{currentLanguage.flag}</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg">
+                  {languages.map((lang) => (
+                    <DropdownMenuItem
+                      key={lang.code}
+                      onClick={() => setCurrentLanguage(lang)}
+                      className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 focus:bg-gray-50"
+                    >
+                      <span>{lang.flag}</span>
+                      <span>{lang.name}</span>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              <Button 
+                onClick={handleCTAClick}
+                className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                aria-label="Faire une demande de prêt"
+              >
+                Demander un prêt
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="lg:hidden focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 rounded-md p-1"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-expanded={isMenuOpen}
+              aria-label="Menu de navigation mobile"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <div className="lg:hidden mt-4 pb-4 border-t border-gray-200" role="navigation" aria-label="Navigation mobile">
+              <nav className="flex flex-col space-y-4 mt-4">
+                {mainNavItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-gray-700 hover:text-green-600 font-medium focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 rounded-md px-2 py-1"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <Button variant="ghost" size="sm" className="flex items-center space-x-2">
+                        <Globe className="w-4 h-4" />
+                        <span>{currentLanguage.flag}</span>
+                        <ChevronDown className="w-4 h-4" />
+                      </Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent align="start" className="w-48 bg-white border border-gray-200 shadow-lg">
+                      {languages.map((lang) => (
+                        <DropdownMenuItem
+                          key={lang.code}
+                          onClick={() => setCurrentLanguage(lang)}
+                          className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50"
+                        >
+                          <span>{lang.flag}</span>
+                          <span>{lang.name}</span>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                  <Button 
+                    onClick={handleCTAClick}
+                    className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-4 py-2 rounded-lg font-medium"
+                  >
+                    Demander un prêt
+                  </Button>
+                </div>
+              </nav>
+            </div>
+          )}
+        </div>
+      </header>
+    </>
   );
 };
 

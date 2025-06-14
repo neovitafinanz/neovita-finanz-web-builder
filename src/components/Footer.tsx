@@ -1,31 +1,32 @@
 
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { name: "Prêts personnels", href: "#prets-personnels" },
-      { name: "Prêts immobiliers", href: "#prets-immobiliers" },
-      { name: "Rachats de crédit", href: "#rachat-credit" },
-      { name: "Crédit travaux", href: "#credit-travaux" },
-      { name: "Assurances", href: "#assurances" }
+      { name: "Prêts personnels", href: "/prets-personnels" },
+      { name: "Prêts immobiliers", href: "/prets-immobiliers" },
+      { name: "Rachats de crédit", href: "/rachat-credit" },
+      { name: "Crédit travaux", href: "/credit-travaux" },
+      { name: "Assurances", href: "/assurances" }
     ],
     company: [
-      { name: "À propos", href: "#a-propos" },
-      { name: "Notre équipe", href: "#equipe" },
-      { name: "Carrières", href: "#carrieres" },
-      { name: "Partenaires", href: "#partenaires" },
-      { name: "Actualités", href: "#actualites" }
+      { name: "À propos", href: "/a-propos" },
+      { name: "Notre équipe", href: "/equipe" },
+      { name: "Carrières", href: "/carrieres" },
+      { name: "Partenaires", href: "/partenaires" },
+      { name: "Actualités", href: "/actualites" }
     ],
     legal: [
-      { name: "Mentions légales", href: "#mentions-legales" },
-      { name: "Politique de confidentialité", href: "#confidentialite" },
-      { name: "Conditions générales", href: "#conditions-generales" },
-      { name: "Plan du site", href: "#plan-site" },
-      { name: "Cookies", href: "#cookies" }
+      { name: "Mentions légales", href: "/mentions-legales" },
+      { name: "Politique de confidentialité", href: "/politique-confidentialite" },
+      { name: "Conditions générales", href: "/conditions-generales" },
+      { name: "Plan du site", href: "/plan-site" },
+      { name: "Cookies", href: "/cookies" }
     ]
   };
 
@@ -42,15 +43,17 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">N</span>
-              </div>
+            <Link to="/" className="flex items-center space-x-2 mb-6">
+              <img 
+                src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
+                alt="Neovita Finanz" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="text-xl font-bold">Neovita Finanz</h3>
                 <p className="text-blue-200 text-sm">Votre partenaire financier</p>
               </div>
-            </div>
+            </Link>
             
             <p className="text-blue-100 mb-6 leading-relaxed">
               Depuis 2006, nous accompagnons particuliers et professionnels 
@@ -77,13 +80,25 @@ const Footer = () => {
 
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
-              <a href="#" className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+              <a 
+                href="#" 
+                className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+              <a 
+                href="#" 
+                className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Twitter"
+              >
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+              <a 
+                href="#" 
+                className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-4 h-4" />
               </a>
             </div>
@@ -95,13 +110,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-blue-200 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     {link.name}
                     <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -113,13 +128,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-blue-200 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     {link.name}
                     <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -131,13 +146,13 @@ const Footer = () => {
             <ul className="space-y-3 mb-6">
               {footerLinks.legal.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-blue-200 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     {link.name}
                     <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -207,12 +222,9 @@ const Footer = () => {
       {/* Copyright */}
       <div className="border-t border-blue-700 bg-blue-800">
         <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-blue-300 text-sm">
               © {currentYear} Neovita Finanz. Tous droits réservés.
-            </p>
-            <p className="text-blue-300 text-sm mt-2 md:mt-0">
-              Développé avec ❤️ pour votre réussite financière
             </p>
           </div>
         </div>
