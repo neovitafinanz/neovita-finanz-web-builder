@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -37,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-blue-900 to-blue-800 text-white">
+    <footer className="bg-gradient-to-b from-green-800 to-green-700 text-white">
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 gap-8">
@@ -51,11 +50,11 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-bold">Neovita Finanz</h3>
-                <p className="text-blue-200 text-sm">Votre partenaire financier</p>
+                <p className="text-green-200 text-sm">Votre partenaire financier</p>
               </div>
             </Link>
             
-            <p className="text-blue-100 mb-6 leading-relaxed">
+            <p className="text-green-100 mb-6 leading-relaxed">
               Depuis 2006, nous accompagnons particuliers et professionnels 
               dans la réalisation de leurs projets financiers avec expertise et transparence.
             </p>
@@ -64,17 +63,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-blue-100 text-sm">
+                <span className="text-green-100 text-sm">
                   1 Rue du Bois Chaland, 91090 Lisses, France
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-blue-100 text-sm">01 23 45 67 89</span>
+                <span className="text-green-100 text-sm">01 23 45 67 89</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-blue-100 text-sm">contact@neovita-finanz.fr</span>
+                <span className="text-green-100 text-sm">contact@neovita-finanz.fr</span>
               </div>
             </div>
 
@@ -82,21 +81,21 @@ const Footer = () => {
             <div className="flex space-x-4 mt-6">
               <a 
                 href="#" 
-                className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-8 h-8 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a 
                 href="#" 
-                className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-8 h-8 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4" />
               </a>
               <a 
                 href="#" 
-                className="w-8 h-8 bg-blue-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-8 h-8 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
@@ -112,7 +111,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link 
                     to={link.href} 
-                    className="text-blue-200 hover:text-white transition-colors text-sm flex items-center group"
+                    className="text-green-200 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     {link.name}
                     <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -130,7 +129,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link 
                     to={link.href} 
-                    className="text-blue-200 hover:text-white transition-colors text-sm flex items-center group"
+                    className="text-green-200 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     {link.name}
                     <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -148,7 +147,7 @@ const Footer = () => {
                 <li key={index}>
                   <Link 
                     to={link.href} 
-                    className="text-blue-200 hover:text-white transition-colors text-sm flex items-center group"
+                    className="text-green-200 hover:text-white transition-colors text-sm flex items-center group"
                   >
                     {link.name}
                     <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -162,10 +161,10 @@ const Footer = () => {
               <h5 className="text-sm font-semibold text-yellow-400 mb-3">Labels de Confiance</h5>
               {trustLabels.map((label, index) => (
                 <div key={index} className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
                   <div>
-                    <span className="text-blue-100 text-xs font-medium">{label.name}</span>
-                    <p className="text-blue-300 text-xs">{label.description}</p>
+                    <span className="text-green-100 text-xs font-medium">{label.name}</span>
+                    <p className="text-green-300 text-xs">{label.description}</p>
                   </div>
                 </div>
               ))}
@@ -175,13 +174,13 @@ const Footer = () => {
       </div>
 
       {/* Legal Information */}
-      <div className="border-t border-blue-700">
+      <div className="border-t border-green-600">
         <div className="container mx-auto px-4 py-8">
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Company Details */}
             <div>
               <h4 className="text-lg font-bold text-yellow-400 mb-4">Neovita Finanz - Informations Société</h4>
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-blue-200">
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-green-200">
                 <div>
                   <p><strong>Forme juridique :</strong> SARL</p>
                   <p><strong>Capital social :</strong> 17 000 000 €</p>
@@ -200,7 +199,7 @@ const Footer = () => {
             {/* Important Notice */}
             <div>
               <h4 className="text-lg font-bold text-yellow-400 mb-4">Avertissement Important</h4>
-              <div className="text-sm text-blue-200 space-y-2">
+              <div className="text-sm text-green-200 space-y-2">
                 <p>
                   <strong>Taux d'intérêt :</strong> Les taux d'intérêt affichés sont indicatifs et soumis 
                   à validation selon le profil du client et les conditions du marché.
@@ -220,10 +219,10 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-blue-700 bg-blue-800">
+      <div className="border-t border-green-600 bg-green-700">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-center items-center">
-            <p className="text-blue-300 text-sm">
+            <p className="text-green-300 text-sm">
               © {currentYear} Neovita Finanz. Tous droits réservés.
             </p>
           </div>

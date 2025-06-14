@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronUp, ChevronDown, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const HeroCarousel = () => {
+  const navigate = useNavigate();
+  
   const slides = [
     {
       id: 1,
@@ -83,7 +86,7 @@ const HeroCarousel = () => {
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${slide.image})` }}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-900/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-green-800/80 via-green-700/60 to-transparent" />
           </div>
         ))}
       </div>
@@ -109,7 +112,7 @@ const HeroCarousel = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all"
+              className="border-2 border-white text-white hover:bg-white hover:text-green-800 px-8 py-4 rounded-lg font-semibold text-lg transition-all"
               onClick={() => document.getElementById('simulation')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Calculator className="w-5 h-5 mr-2" />

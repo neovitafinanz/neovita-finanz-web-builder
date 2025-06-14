@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -69,7 +68,21 @@ const TestimonialsSection = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(true);
   const testimonialsPerPage = 3;
+
+  // Auto-play effect pour le défilement automatique
+  useEffect(() => {
+    if (!isPlaying) return;
+    
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => 
+        prev + testimonialsPerPage >= testimonials.length ? 0 : prev + testimonialsPerPage
+      );
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPlaying, testimonials.length, testimonialsPerPage]);
 
   const nextTestimonials = () => {
     setCurrentIndex((prev) => 
@@ -99,7 +112,11 @@ const TestimonialsSection = () => {
   const overallRating = testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length;
 
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section 
+      className="py-20 bg-gradient-to-b from-blue-50 to-white"
+      onMouseEnter={() => setIsPlaying(false)}
+      onMouseLeave={() => setIsPlaying(true)}
+    >
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
