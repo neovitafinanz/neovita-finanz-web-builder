@@ -8,35 +8,27 @@ const PartnersSection = () => {
   const partners = [
     {
       name: "BNP Paribas",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/BNP_Paribas_logo.svg/200px-BNP_Paribas_logo.svg.png"
-    },
-    {
-      name: "Crédit Agricole",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Cr%C3%A9dit_Agricole.svg/200px-Cr%C3%A9dit_Agricole.svg.png"
+      logo: "/lovable-uploads/67d1c251-fd82-4080-8e8c-6c855b4d6844.png"
     },
     {
       name: "Société Générale",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Societe_Generale.svg/200px-Societe_Generale.svg.png"
+      logo: "/lovable-uploads/b904229e-2e90-4ac5-9ce1-eb3212a73049.png"
     },
     {
-      name: "LCL",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/LCL_logo.svg/200px-LCL_logo.svg.png"
+      name: "UniCredit",
+      logo: "/lovable-uploads/c206f72c-73b7-4084-adb7-526834ba1ff7.png"
     },
     {
-      name: "BPCE",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Logo_BPCE.svg/200px-Logo_BPCE.svg.png"
+      name: "Banque Nationale",
+      logo: "/lovable-uploads/bd8a1af1-74f4-47c8-b7df-b58a3f984eee.png"
     },
     {
-      name: "AXA Banque",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/AXA_Logo.svg/200px-AXA_Logo.svg.png"
+      name: "BFM",
+      logo: "/lovable-uploads/a8461555-90ce-4a4e-893d-59b3284588a7.png"
     },
     {
-      name: "ING",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/ING_Group_N.V._logo.svg/200px-ING_Group_N.V._logo.svg.png"
-    },
-    {
-      name: "HSBC",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/200px-HSBC_logo_%282018%29.svg.png"
+      name: "La Banque Postale",
+      logo: "/lovable-uploads/62503f5e-e134-4028-a210-b37f21356b24.png"
     }
   ];
 
@@ -112,7 +104,7 @@ const PartnersSection = () => {
           </div>
         </div>
 
-        {/* Trust Message */}
+        {/* Trust Message */}  
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-blue-900 mb-4">
