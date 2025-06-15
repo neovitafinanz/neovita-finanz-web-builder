@@ -22,22 +22,22 @@ const PretPersonnel = () => {
     {
       title: 'Financement auto/moto',
       description: 'Achetez le véhicule de vos rêves',
-      icon: '🚗'
+      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       title: 'Voyages et loisirs',
       description: 'Réalisez vos projets de voyage',
-      icon: '✈️'
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       title: 'Équipement maison',
       description: 'Électroménager, mobilier, high-tech',
-      icon: '🏠'
+      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
       title: 'Évènements familiaux',
       description: 'Mariage, naissance, anniversaire',
-      icon: '🎉'
+      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     }
   ];
 
@@ -141,9 +141,16 @@ const PretPersonnel = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {useCases.map((useCase, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all">
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={useCase.image}
+                    alt={useCase.title}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                </div>
                 <CardContent className="p-6 text-center">
-                  <div className="text-4xl mb-4">{useCase.icon}</div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">{useCase.title}</h3>
                   <p className="text-gray-600">{useCase.description}</p>
                 </CardContent>
