@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -15,9 +16,11 @@ const FormulaireCredit = () => {
     firstName: '',
     lastName: '',
     email: '',
+    emailConfirmation: '',
     phone: '',
     loanType: '',
     amount: '',
+    currency: 'EUR',
     duration: '',
     income: '',
     situation: '',
@@ -32,6 +35,19 @@ const FormulaireCredit = () => {
     'Rachat de crédit',
     'Crédit-bail',
     'Prêt étudiant'
+  ];
+
+  const currencies = [
+    { code: 'EUR', symbol: '€', name: 'Euro' },
+    { code: 'DKK', symbol: 'kr', name: 'Couronne danoise' },
+    { code: 'SEK', symbol: 'kr', name: 'Couronne suédoise' },
+    { code: 'BGN', symbol: 'лв', name: 'Lev bulgare' },
+    { code: 'GBP', symbol: '£', name: 'Livre sterling' },
+    { code: 'NOK', symbol: 'kr', name: 'Couronne norvégienne' },
+    { code: 'CHF', symbol: 'CHF', name: 'Franc suisse' },
+    { code: 'PLN', symbol: 'zł', name: 'Zloty polonais' },
+    { code: 'RON', symbol: 'lei', name: 'Leu roumain' },
+    { code: 'CZK', symbol: 'Kč', name: 'Couronne tchèque' }
   ];
 
   const situations = [
@@ -67,7 +83,7 @@ const FormulaireCredit = () => {
     e.preventDefault();
     
     // Validation
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.loanType) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.emailConfirmation || !formData.phone || !formData.loanType) {
       toast({
         title: "Champs manquants",
         description: "Veuillez remplir tous les champs obligatoires.",
@@ -87,6 +103,16 @@ const FormulaireCredit = () => {
       return;
     }
 
+    // Email confirmation validation
+    if (formData.email !== formData.emailConfirmation) {
+      toast({
+        title: "Emails non identiques",
+        description: "L'email et sa confirmation ne correspondent pas.",
+        variant: "destructive"
+      });
+      return;
+    }
+
     // Simulation d'envoi
     toast({
       title: "Demande envoyée avec succès",
@@ -98,9 +124,11 @@ const FormulaireCredit = () => {
       firstName: '',
       lastName: '',
       email: '',
+      emailConfirmation: '',
       phone: '',
       loanType: '',
       amount: '',
+      currency: 'EUR',
       duration: '',
       income: '',
       situation: '',
@@ -111,6 +139,8 @@ const FormulaireCredit = () => {
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
+
+  const selectedCurrency = currencies.find(c => c.code === formData.currency);
 
   return (
     <Layout 
@@ -197,19 +227,39 @@ const FormulaireCredit = () => {
                             />
                           </div>
                           <div>
-                            <Label htmlFor="phone" className="text-gray-700 font-medium">
-                              Téléphone *
+                            <Label htmlFor="emailConfirmation" className="text-gray-700 font-medium">
+                              Confirmation Email *
                             </Label>
                             <Input
-                              id="phone"
-                              type="tel"
-                              value={formData.phone}
-                              onChange={(e) => handleInputChange('phone', e.target.value)}
+                              id="emailConfirmation"
+                              type="email"
+                              value={formData.emailConfirmation}
+                              onChange={(e) => handleInputChange('emailConfirmation', e.target.value)}
                               className="mt-2"
-                              placeholder="06 12 34 56 78"
+                              placeholder="Confirmez votre email"
                               required
+                              onPaste={(e) => e.preventDefault()}
+                              onDrop={(e) => e.preventDefault()}
                             />
+                            {formData.emailConfirmation && formData.email !== formData.emailConfirmation && (
+                              <p className="text-sm text-red-600 mt-1">Les emails ne correspondent pas</p>
+                            )}
                           </div>
+                        </div>
+
+                        <div className="mt-6">
+                          <Label htmlFor="phone" className="text-gray-700 font-medium">
+                            Téléphone *
+                          </Label>
+                          <Input
+                            id="phone"
+                            type="tel"
+                            value={formData.phone}
+                            onChange={(e) => handleInputChange('phone', e.target.value)}
+                            className="mt-2"
+                            placeholder="06 12 34 56 78"
+                            required
+                          />
                         </div>
                       </div>
 
@@ -232,10 +282,10 @@ const FormulaireCredit = () => {
                           </Select>
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-6 mt-6">
+                        <div className="grid md:grid-cols-3 gap-6 mt-6">
                           <div>
                             <Label htmlFor="amount" className="text-gray-700 font-medium">
-                              Montant souhaité (€)
+                              Montant souhaité
                             </Label>
                             <Input
                               id="amount"
@@ -247,6 +297,23 @@ const FormulaireCredit = () => {
                               min="1000"
                               max="1000000"
                             />
+                          </div>
+                          <div>
+                            <Label htmlFor="currency" className="text-gray-700 font-medium">
+                              Devise
+                            </Label>
+                            <Select value={formData.currency} onValueChange={(value) => handleInputChange('currency', value)}>
+                              <SelectTrigger className="mt-2">
+                                <SelectValue />
+                              </SelectTrigger>
+                              <SelectContent>
+                                {currencies.map((currency) => (
+                                  <SelectItem key={currency.code} value={currency.code}>
+                                    {currency.symbol} - {currency.name}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
                           </div>
                           <div>
                             <Label htmlFor="duration" className="text-gray-700 font-medium">
@@ -287,7 +354,7 @@ const FormulaireCredit = () => {
                           </div>
                           <div>
                             <Label htmlFor="income" className="text-gray-700 font-medium">
-                              Revenus mensuels nets (€)
+                              Revenus mensuels nets ({selectedCurrency?.symbol})
                             </Label>
                             <Input
                               id="income"
