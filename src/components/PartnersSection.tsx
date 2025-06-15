@@ -1,10 +1,15 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const PartnersSection = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
-
   const partners = [
     {
       name: "BNP Paribas",
@@ -32,24 +37,6 @@ const PartnersSection = () => {
     }
   ];
 
-  useEffect(() => {
-    if (!isPlaying) return;
-    
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % Math.max(1, partners.length - 5));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [isPlaying, partners.length]);
-
-  const visiblePartners = partners.slice(currentIndex, currentIndex + 6);
-  
-  // Compléter avec les premiers éléments si nécessaire
-  while (visiblePartners.length < 6 && partners.length > 0) {
-    const remainingIndex = (currentIndex + visiblePartners.length) % partners.length;
-    visiblePartners.push(partners[remainingIndex]);
-  }
-
   return (
     <section className="py-16 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4">
@@ -65,43 +52,36 @@ const PartnersSection = () => {
         </div>
 
         {/* Partners Carousel */}
-        <div 
-          className="relative overflow-hidden"
-          onMouseEnter={() => setIsPlaying(false)}
-          onMouseLeave={() => setIsPlaying(true)}
-        >
-          <div className="flex items-center justify-center space-x-8 lg:space-x-12">
-            {visiblePartners.map((partner, index) => (
-              <div 
-                key={`${partner.name}-${index}`}
-                className="flex-shrink-0 w-32 h-16 lg:w-40 lg:h-20 flex items-center justify-center bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer group"
-                onClick={() => console.log(`Clicked on ${partner.name}`)}
-              >
-                <img
-                  src={partner.logo}
-                  alt={`Logo ${partner.name}`}
-                  className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation Indicators */}
-          <div className="flex justify-center mt-8 space-x-2">
-            {Array.from({ length: Math.max(1, partners.length - 5) }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentIndex 
-                    ? 'bg-blue-900' 
-                    : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-                aria-label={`Aller au groupe de partenaires ${index + 1}`}
-              />
-            ))}
-          </div>
+        <div className="max-w-4xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {partners.map((partner, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="flex items-center justify-center bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md hover:scale-105 transition-all duration-300 cursor-pointer group h-20 lg:h-24">
+                    <img
+                      src={partner.logo}
+                      alt={`Logo ${partner.name}`}
+                      className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 p-2"
+                      loading="lazy"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-12" />
+            <CarouselNext className="hidden md:flex -right-12" />
+          </Carousel>
         </div>
 
         {/* Trust Message */}  
