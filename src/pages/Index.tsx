@@ -63,14 +63,21 @@ const Index = () => {
       {/* Hero Carousel */}
       <HeroCarousel />
 
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
+      {/* Services Section with background image */}
+      <section id="services" className="py-20 relative">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-gray-900/60" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
               Nos Solutions de Financement
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Découvrez nos solutions adaptées à tous vos projets
             </p>
           </div>
@@ -79,7 +86,7 @@ const Index = () => {
             {services.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all group">
+                <Card key={index} className="border-0 shadow-xl hover:shadow-2xl transition-all group bg-white/95 backdrop-blur-sm">
                   <div className="relative overflow-hidden rounded-t-lg">
                     <img
                       src={service.image}
@@ -109,11 +116,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Advantages Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      {/* Advantages Section with background */}
+      <section className="py-20 relative">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-green-900/80" />
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
               Pourquoi choisir Neovita Finanz ?
             </h2>
           </div>
@@ -122,7 +136,7 @@ const Index = () => {
             {advantages.map((advantage, index) => {
               const IconComponent = advantage.icon;
               return (
-                <div key={index} className="text-center">
+                <div key={index} className="text-center bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-8 h-8 text-green-600" />
                   </div>
@@ -144,13 +158,20 @@ const Index = () => {
       {/* Partners Section */}
       <PartnersSection />
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-green-600 to-green-500 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+      {/* CTA Section with background image */}
+      <section className="py-20 relative">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: `url(https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-green-800/90 to-green-600/90" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
             Prêt à concrétiser votre projet ?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-100">
             Nos conseillers experts vous accompagnent dans toutes vos démarches
           </p>
           <Button 
