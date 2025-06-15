@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,6 +14,7 @@ import {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { currentLanguage, setCurrentLanguage, t } = useLanguage();
   
   const languages = [
     { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -27,20 +29,24 @@ const Header = () => {
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   ];
 
-  const [currentLanguage, setCurrentLanguage] = useState(languages[0]);
+  const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
 
   const mainNavItems = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Prêts personnels', href: '/prets-personnels' },
-    { name: 'Prêts immobiliers', href: '/prets-immobiliers' },
-    { name: 'Rachat de crédit', href: '/rachat-credit' },
-    { name: 'Crédit travaux', href: '/credit-travaux' },
-    { name: 'Assurances', href: '/assurances' },
-    { name: 'À propos', href: '/a-propos' },
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.personalLoans'), href: '/prets-personnels' },
+    { name: t('nav.mortgageLoans'), href: '/prets-immobiliers' },
+    { name: t('nav.creditBuyback'), href: '/rachat-credit' },
+    { name: t('nav.workCredit'), href: '/credit-travaux' },
+    { name: t('nav.insurance'), href: '/assurances' },
+    { name: t('nav.about'), href: '/a-propos' },
   ];
 
   const handleCTAClick = () => {
     navigate('/demande-credit');
+  };
+
+  const handleLanguageChange = (langCode: string) => {
+    setCurrentLanguage(langCode);
   };
 
   return (
@@ -59,7 +65,7 @@ const Header = () => {
             </div>
           </div>
           <div className="text-sm">
-            Conseiller disponible du lundi au vendredi de 9h à 18h
+            {t('common.phoneAvailable')}
           </div>
         </div>
       </div>
@@ -102,7 +108,7 @@ const Header = () => {
                     aria-label="Sélectionner la langue"
                   >
                     <Globe className="w-4 h-4" />
-                    <span>{currentLanguage.flag}</span>
+                    <span>{currentLang.flag}</span>
                     <ChevronDown className="w-4 h-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -110,7 +116,7 @@ const Header = () => {
                   {languages.map((lang) => (
                     <DropdownMenuItem
                       key={lang.code}
-                      onClick={() => setCurrentLanguage(lang)}
+                      onClick={() => handleLanguageChange(lang.code)}
                       className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 focus:bg-gray-50"
                     >
                       <span>{lang.flag}</span>
@@ -125,7 +131,7 @@ const Header = () => {
                 className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                 aria-label="Faire une demande de prêt"
               >
-                Demander un prêt
+                {t('common.requestLoan')}
               </Button>
             </div>
 
@@ -159,7 +165,7 @@ const Header = () => {
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="sm" className="flex items-center space-x-2">
                         <Globe className="w-4 h-4" />
-                        <span>{currentLanguage.flag}</span>
+                        <span>{currentLang.flag}</span>
                         <ChevronDown className="w-4 h-4" />
                       </Button>
                     </DropdownMenuTrigger>
@@ -167,7 +173,7 @@ const Header = () => {
                       {languages.map((lang) => (
                         <DropdownMenuItem
                           key={lang.code}
-                          onClick={() => setCurrentLanguage(lang)}
+                          onClick={() => handleLanguageChange(lang.code)}
                           className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50"
                         >
                           <span>{lang.flag}</span>
@@ -180,7 +186,7 @@ const Header = () => {
                     onClick={handleCTAClick}
                     className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-4 py-2 rounded-lg font-medium"
                   >
-                    Demander un prêt
+                    {t('common.requestLoan')}
                   </Button>
                 </div>
               </nav>

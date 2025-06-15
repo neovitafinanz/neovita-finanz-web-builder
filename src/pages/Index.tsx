@@ -8,29 +8,31 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Calculator, Shield, Clock, Users, TrendingUp, Award } from 'lucide-react';
 
 const Index = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const services = [
     {
-      title: 'Prêts personnels',
-      description: 'Financez vos projets personnels avec des conditions avantageuses',
+      title: t('services.personalLoans.title'),
+      description: t('services.personalLoans.description'),
       icon: Users,
       href: '/prets-personnels',
       image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: 'Prêts immobiliers',
-      description: 'Concrétisez votre projet immobilier avec notre accompagnement',
+      title: t('services.mortgageLoans.title'),
+      description: t('services.mortgageLoans.description'),
       icon: Award,
       href: '/prets-immobiliers',
       image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: 'Rachat de crédit',
-      description: 'Optimisez vos finances en regroupant vos crédits',
+      title: t('services.creditBuyback.title'),
+      description: t('services.creditBuyback.description'),
       icon: TrendingUp,
       href: '/rachat-credit',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -40,24 +42,24 @@ const Index = () => {
   const advantages = [
     {
       icon: Shield,
-      title: 'Sécurité garantie',
-      description: 'Vos données sont protégées et sécurisées'
+      title: t('advantages.security.title'),
+      description: t('advantages.security.description')
     },
     {
       icon: Clock,
-      title: 'Réponse rapide',
-      description: 'Réponse sous 24h pour votre demande'
+      title: t('advantages.speed.title'),
+      description: t('advantages.speed.description')
     },
     {
       icon: Users,
-      title: 'Conseillers experts',
-      description: '43 experts à votre service depuis 2006'
+      title: t('advantages.experts.title'),
+      description: t('advantages.experts.description')
     }
   ];
 
   return (
     <Layout 
-      title="Accueil" 
+      title={t('nav.home')} 
       description="Neovita Finanz - Votre partenaire financier de confiance. Solutions de prêts personnels, immobiliers, rachat de crédit depuis 2006."
     >
       {/* Hero Carousel */}
@@ -75,10 +77,10 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              Nos Solutions de Financement
+              {t('home.servicesTitle')}
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Découvrez nos solutions adaptées à tous vos projets
+              {t('home.servicesSubtitle')}
             </p>
           </div>
 
@@ -106,7 +108,7 @@ const Index = () => {
                       className="w-full bg-green-600 hover:bg-green-700 text-white"
                       aria-label={`En savoir plus sur ${service.title}`}
                     >
-                      Découvrir
+                      {t('common.discover')}
                     </Button>
                   </CardContent>
                 </Card>
@@ -128,7 +130,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              Pourquoi choisir Neovita Finanz ?
+              {t('home.advantagesTitle')}
             </h2>
           </div>
 
@@ -169,17 +171,17 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-green-800/90 to-green-600/90" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-            Prêt à concrétiser votre projet ?
+            {t('home.ctaTitle')}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-100">
-            Nos conseillers experts vous accompagnent dans toutes vos démarches
+            {t('home.ctaSubtitle')}
           </p>
           <Button 
             onClick={() => navigate('/demande-credit')}
             size="lg"
             className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
           >
-            Commencer ma demande
+            {t('common.startRequest')}
           </Button>
         </div>
       </section>
