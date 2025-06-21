@@ -60,11 +60,13 @@ const getTranslations = () => {
         requestLoan: 'Demander un prêt',
         contactUs: 'Nous contacter',
         learnMore: 'En savoir plus',
+        learnMoreAbout: 'En savoir plus sur',
         discover: 'Découvrir',
         startRequest: 'Commencer ma demande',
         phoneAvailable: 'Conseiller disponible du lundi au vendredi de 9h à 18h'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Votre partenaire financier de confiance. Solutions de prêts personnels, immobiliers, rachat de crédit depuis 2006.',
         heroTitle: 'Votre partenaire financier de confiance',
         heroSubtitle: 'Solutions de prêts personnalisées depuis 2006',
         servicesTitle: 'Nos Solutions de Financement',
@@ -116,11 +118,13 @@ const getTranslations = () => {
         requestLoan: 'Request a loan',
         contactUs: 'Contact us',
         learnMore: 'Learn more',
+        learnMoreAbout: 'Learn more about',
         discover: 'Discover',
         startRequest: 'Start my request',
         phoneAvailable: 'Advisor available Monday to Friday from 9am to 6pm'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Your trusted financial partner. Personal loan solutions, mortgages, credit buyback since 2006.',
         heroTitle: 'Your trusted financial partner',
         heroSubtitle: 'Personalized loan solutions since 2006',
         servicesTitle: 'Our Financing Solutions',
@@ -172,11 +176,13 @@ const getTranslations = () => {
         requestLoan: 'Kredit beantragen',
         contactUs: 'Kontaktieren Sie uns',
         learnMore: 'Mehr erfahren',
+        learnMoreAbout: 'Mehr erfahren über',
         discover: 'Entdecken',
         startRequest: 'Antrag starten',
         phoneAvailable: 'Berater verfügbar Montag bis Freitag von 9 bis 18 Uhr'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Ihr vertrauensvoller Finanzpartner. Privatkredit-Lösungen, Hypotheken, Kreditrückkauf seit 2006.',
         heroTitle: 'Ihr vertrauensvoller Finanzpartner',
         heroSubtitle: 'Personalisierte Kreditlösungen seit 2006',
         servicesTitle: 'Unsere Finanzierungslösungen',
@@ -228,11 +234,13 @@ const getTranslations = () => {
         requestLoan: 'Solicitar préstamo',
         contactUs: 'Contáctanos',
         learnMore: 'Saber más',
+        learnMoreAbout: 'Saber más sobre',
         discover: 'Descubrir',
         startRequest: 'Comenzar mi solicitud',
         phoneAvailable: 'Asesor disponible de lunes a viernes de 9h a 18h'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Su socio financiero de confianza. Soluciones de préstamos personales, hipotecas, recompra de crédito desde 2006.',
         heroTitle: 'Su socio financiero de confianza',
         heroSubtitle: 'Soluciones de préstamos personalizadas desde 2006',
         servicesTitle: 'Nuestras Soluciones de Financiamiento',
@@ -284,11 +292,13 @@ const getTranslations = () => {
         requestLoan: 'Solicitar empréstimo',
         contactUs: 'Contacte-nos',
         learnMore: 'Saber mais',
+        learnMoreAbout: 'Saber mais sobre',
         discover: 'Descobrir',
         startRequest: 'Começar minha solicitação',
         phoneAvailable: 'Consultor disponível de segunda a sexta das 9h às 18h'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Seu parceiro financeiro de confiança. Soluções de empréstimos pessoais, hipotecas, recompra de crédito desde 2006.',
         heroTitle: 'Seu parceiro financeiro de confiança',
         heroSubtitle: 'Soluções de empréstimos personalizadas desde 2006',
         servicesTitle: 'Nossas Soluções de Financiamento',
@@ -340,11 +350,13 @@ const getTranslations = () => {
         requestLoan: 'Richiedi prestito',
         contactUs: 'Contattaci',
         learnMore: 'Saperne di più',
+        learnMoreAbout: 'Saperne di più su',
         discover: 'Scoprire',
         startRequest: 'Inizia la mia richiesta',
         phoneAvailable: 'Consulente disponibile dal lunedì al venerdì dalle 9 alle 18'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Il vostro partner finanziario di fiducia. Soluzioni di prestiti personali, mutui, riacquisto crediti dal 2006.',
         heroTitle: 'Il vostro partner finanziario di fiducia',
         heroSubtitle: 'Soluzioni di prestito personalizzate dal 2006',
         servicesTitle: 'Le Nostre Soluzioni di Finanziamento',
@@ -396,11 +408,13 @@ const getTranslations = () => {
         requestLoan: 'Lening aanvragen',
         contactUs: 'Contacteer ons',
         learnMore: 'Meer weten',
+        learnMoreAbout: 'Meer weten over',
         discover: 'Ontdekken',
         startRequest: 'Start mijn aanvraag',
         phoneAvailable: 'Adviseur beschikbaar maandag tot vrijdag van 9u tot 18u'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Uw vertrouwde financiële partner. Persoonlijke lening oplossingen, hypotheken, krediet terugkoop sinds 2006.',
         heroTitle: 'Uw vertrouwde financiële partner',
         heroSubtitle: 'Gepersonaliseerde leningoplossingen sinds 2006',
         servicesTitle: 'Onze Financieringsoplossingen',
@@ -452,11 +466,13 @@ const getTranslations = () => {
         requestLoan: 'Ansøg om lån',
         contactUs: 'Kontakt os',
         learnMore: 'Lær mere',
+        learnMoreAbout: 'Lær mere om',
         discover: 'Opdag',
         startRequest: 'Start min ansøgning',
         phoneAvailable: 'Rådgiver tilgængelig mandag til fredag fra 9 til 18'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Din betroede finansielle partner. Personlige låneløsninger, realkreditlån, kredit tilbag ekøb siden 2006.',
         heroTitle: 'Din betroede finansielle partner',
         heroSubtitle: 'Personaliserede låneløsninger siden 2006',
         servicesTitle: 'Vores Finansieringsløsninger',
@@ -508,11 +524,13 @@ const getTranslations = () => {
         requestLoan: 'Hae lainaa',
         contactUs: 'Ota yhteyttä',
         learnMore: 'Lue lisää',
+        learnMoreAbout: 'Lue lisää aiheesta',
         discover: 'Löydä',
         startRequest: 'Aloita hakemukseni',
         phoneAvailable: 'Neuvoja saatavilla maanantaista perjantaihin klo 9-18'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Luotettava rahoituskumppanisi. Henkilökohtaisten lainojen ratkaisuja, asuntolainoja, luoton takaisinosto vuodesta 2006.',
         heroTitle: 'Luotettava rahoituskumppanisi',
         heroSubtitle: 'Henkilökohtaiset lainaratkaisut vuodesta 2006',
         servicesTitle: 'Rahoitusratkaisumme',
@@ -564,11 +582,13 @@ const getTranslations = () => {
         requestLoan: 'Solicitare împrumut',
         contactUs: 'Contactați-ne',
         learnMore: 'Aflați mai multe',
+        learnMoreAbout: 'Aflați mai multe despre',
         discover: 'Descoperiți',
         startRequest: 'Încep cererea mea',
         phoneAvailable: 'Consilier disponibil de luni până vineri de la 9 la 18'
       },
       home: {
+        metaDescription: 'Neovita Finanz - Partenerul dumneavoastră financiar de încredere. Soluții de împrumuturi personale, ipotecare, răscumpărare credite din 2006.',
         heroTitle: 'Partenerul dumneavoastră financiar de încredere',
         heroSubtitle: 'Soluții de împrumuturi personalizate din 2006',
         servicesTitle: 'Soluțiile Noastre de Finanțare',
@@ -593,7 +613,7 @@ const getTranslations = () => {
       },
       advantages: {
         security: {
-          title: 'Securitate garantată',
+          title: 'Securitate garantață',
           description: 'Datele dumneavoastră sunt protejate și sigure'
         },
         speed: {

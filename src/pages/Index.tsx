@@ -60,7 +60,7 @@ const Index = () => {
   return (
     <Layout 
       title={t('nav.home')} 
-      description="Neovita Finanz - Votre partenaire financier de confiance. Solutions de prêts personnels, immobiliers, rachat de crédit depuis 2006."
+      description={t('home.metaDescription')}
     >
       {/* Hero Carousel */}
       <HeroCarousel />
@@ -106,7 +106,7 @@ const Index = () => {
                     <Button 
                       onClick={() => navigate(service.href)}
                       className="w-full bg-green-600 hover:bg-green-700 text-white"
-                      aria-label={`En savoir plus sur ${service.title}`}
+                      aria-label={`${t('common.learnMoreAbout')} ${service.title}`}
                     >
                       {t('common.discover')}
                     </Button>
