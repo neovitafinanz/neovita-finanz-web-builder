@@ -2,70 +2,29 @@ import React, { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const TestimonialsSection = () => {
-  const testimonials = [
-    {
-      id: 1,
-      name: "Marie Dubois",
-      location: "Paris",
-      rating: 5,
-      comment: "Excellent service ! L'équipe de Neovita Finanz m'a accompagnée tout au long de mon projet immobilier. Processus rapide et transparent, je recommande vivement !",
-      loanType: "Prêt immobilier",
-      amount: "250 000€",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b098?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    },
-    {
-      id: 2,
-      name: "Pierre Martin",
-      location: "Lyon",
-      rating: 5,
-      comment: "Grâce à Neovita Finanz, j'ai pu regrouper tous mes crédits. Leur expertise m'a permis de réduire mes mensualités de 40%. Service professionnel et conseils avisés.",
-      loanType: "Rachat de crédit",
-      amount: "75 000€",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    },
-    {
-      id: 3,
-      name: "Sophie Leroux",
-      location: "Marseille",
-      rating: 5,
-      comment: "Pour financer mes études de médecine, j'ai fait confiance à Neovita Finanz. Conditions privilégiées et équipe très à l'écoute. Un vrai partenariat !",
-      loanType: "Prêt étudiant",
-      amount: "45 000€",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    },
-    {
-      id: 4,
-      name: "Jean-Marc Rousseau",
-      location: "Toulouse",
-      rating: 5,
-      comment: "Rénovation complète de ma maison grâce au crédit travaux de Neovita Finanz. Taux compétitif et démarches simplifiées. Résultat au-delà de mes attentes !",
-      loanType: "Crédit travaux",
-      amount: "80 000€",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    },
-    {
-      id: 5,
-      name: "Amélie Blanchard",
-      location: "Nantes",
-      rating: 5,
-      comment: "Service client exceptionnel ! Mon conseiller a pris le temps de m'expliquer toutes les options. J'ai obtenu mon prêt personnel en 48h seulement.",
-      loanType: "Prêt personnel",
-      amount: "25 000€",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    },
-    {
-      id: 6,
-      name: "Thomas Bonnet",
-      location: "Nice",
-      rating: 5,
-      comment: "Pour développer mon entreprise, j'avais besoin d'un crédit-bail. Neovita Finanz a su adapter la solution à mes besoins spécifiques. Parfait !",
-      loanType: "Crédit-bail",
-      amount: "120 000€",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
-    }
-  ];
+  const { t } = useLanguage();
+  
+  // Use testimonials from translation context
+  const testimonials = t('testimonials.clients').map((client: any, index: number) => ({
+    id: index + 1,
+    name: client.name,
+    location: client.location,
+    rating: 5,
+    comment: client.comment,
+    loanType: client.loanType,
+    amount: client.amount,
+    avatar: [
+      "https://images.unsplash.com/photo-1494790108755-2616b612b098?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+    ][index]
+  }));
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -121,11 +80,10 @@ const TestimonialsSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-blue-900 mb-6">
-            Témoignages Clients
+            {t('testimonials.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            Découvrez les expériences de nos clients satisfaits qui nous font confiance 
-            pour leurs projets financiers.
+            {t('testimonials.subtitle')}
           </p>
           
           {/* Overall Rating */}
@@ -137,7 +95,7 @@ const TestimonialsSection = () => {
               {overallRating.toFixed(1)}/5
             </span>
             <span className="text-gray-600">
-              ({testimonials.length} avis clients)
+              ({testimonials.length} {t('testimonials.overallRating')})
             </span>
           </div>
         </div>
@@ -176,13 +134,13 @@ const TestimonialsSection = () => {
                   {/* Loan Details */}
                   <div className="border-t border-gray-100 pt-4">
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-gray-600">Type de prêt:</span>
+                      <span className="text-gray-600">{t('testimonials.loanTypeLabel')}</span>
                       <span className="font-semibold text-blue-900">
                         {testimonial.loanType}
                       </span>
                     </div>
                     <div className="flex justify-between items-center text-sm mt-2">
-                      <span className="text-gray-600">Montant:</span>
+                      <span className="text-gray-600">{t('testimonials.amountLabel')}</span>
                       <span className="font-semibold text-green-600">
                         {testimonial.amount}
                       </span>
@@ -202,7 +160,7 @@ const TestimonialsSection = () => {
               className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white transition-colors"
             >
               <ChevronLeft className="w-5 h-5 mr-2" />
-              Précédent
+              {t('testimonials.navigation.previous')}
             </Button>
             
             <div className="flex space-x-2">
@@ -215,7 +173,7 @@ const TestimonialsSection = () => {
                       ? 'bg-blue-900'
                       : 'bg-gray-300 hover:bg-gray-400'
                   }`}
-                  aria-label={`Aller à la page ${index + 1}`}
+                  aria-label={`${t('testimonials.navigation.goToPage')} ${index + 1}`}
                 />
               ))}
             </div>
@@ -226,7 +184,7 @@ const TestimonialsSection = () => {
               size="lg"
               className="border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white transition-colors"
             >
-              Suivant
+              {t('testimonials.navigation.next')}
               <ChevronRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
@@ -236,20 +194,20 @@ const TestimonialsSection = () => {
         <div className="text-center mt-16">
           <div className="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-blue-900 mb-4">
-              La satisfaction client au cœur de nos priorités
+              {t('testimonials.trust.title')}
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-3xl font-bold text-green-600 mb-2">98%</div>
-                <div className="text-gray-600">Clients satisfaits</div>
+                <div className="text-gray-600">{t('testimonials.trust.satisfied')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600 mb-2">24h</div>
-                <div className="text-gray-600">Réponse moyenne</div>
+                <div className="text-gray-600">{t('testimonials.trust.response')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-yellow-600 mb-2">4.8/5</div>
-                <div className="text-gray-600">Note moyenne</div>
+                <div className="text-gray-600">{t('testimonials.trust.rating')}</div>
               </div>
             </div>
           </div>
