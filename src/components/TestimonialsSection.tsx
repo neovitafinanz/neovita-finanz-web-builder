@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -8,9 +7,8 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const TestimonialsSection = () => {
   const { t } = useLanguage();
   
-  // Get testimonials data safely
-  const testimonialsData = t('testimonials.clients');
-  const testimonials = Array.isArray(testimonialsData) ? testimonialsData.map((client: any, index: number) => ({
+  // Use testimonials from translation context
+  const testimonials = t('testimonials.clients').map((client: any, index: number) => ({
     id: index + 1,
     name: client.name,
     location: client.location,
@@ -26,7 +24,7 @@ const TestimonialsSection = () => {
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80",
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     ][index]
-  })) : [];
+  }));
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -70,7 +68,7 @@ const TestimonialsSection = () => {
     ));
   };
 
-  const overallRating = testimonials.length > 0 ? testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length : 5;
+  const overallRating = testimonials.reduce((acc, curr) => acc + curr.rating, 0) / testimonials.length;
 
   return (
     <section 
