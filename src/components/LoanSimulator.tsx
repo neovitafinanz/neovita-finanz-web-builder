@@ -7,10 +7,8 @@ import { Label } from '@/components/ui/label';
 import { Slider } from '@/components/ui/slider';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const LoanSimulator = () => {
-  const { t } = useLanguage();
   const [amount, setAmount] = useState([50000]);
   const [duration, setDuration] = useState([120]);
   const [loanType, setLoanType] = useState('');
@@ -21,13 +19,13 @@ const LoanSimulator = () => {
   const { toast } = useToast();
 
   const loanTypes = [
-    { value: 'personal', label: t('loanSimulator.loanTypes.personal'), rate: 3.0 },
-    { value: 'consumption', label: t('loanSimulator.loanTypes.consumption'), rate: 2.5 },
-    { value: 'works', label: t('loanSimulator.loanTypes.works'), rate: 3.5 },
-    { value: 'mortgage', label: t('loanSimulator.loanTypes.mortgage'), rate: 2.0 },
-    { value: 'consolidation', label: t('loanSimulator.loanTypes.consolidation'), rate: 2.0 },
-    { value: 'lease', label: t('loanSimulator.loanTypes.lease'), rate: 3.0 },
-    { value: 'student', label: t('loanSimulator.loanTypes.student'), rate: 2.0 }
+    { value: 'personal', label: 'Prêt personnel en ligne', rate: 3.0 },
+    { value: 'consumption', label: 'Prêt à la consommation', rate: 2.5 },
+    { value: 'works', label: 'Crédit travaux/rénovation', rate: 3.5 },
+    { value: 'mortgage', label: 'Prêt immobilier', rate: 2.0 },
+    { value: 'consolidation', label: 'Rachat de crédit', rate: 2.0 },
+    { value: 'lease', label: 'Crédit-bail', rate: 3.0 },
+    { value: 'student', label: 'Prêt étudiant', rate: 2.0 }
   ];
 
   const calculateLoan = () => {
@@ -68,16 +66,16 @@ const LoanSimulator = () => {
 
   const handleSaveEstimation = () => {
     toast({
-      title: t('loanSimulator.toasts.saved'),
-      description: t('loanSimulator.toasts.savedDesc'),
+      title: "Estimation sauvegardée",
+      description: "Votre simulation a été enregistrée avec succès.",
     });
   };
 
   const handleRequestLoan = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
     toast({
-      title: t('loanSimulator.toasts.request'),
-      description: t('loanSimulator.toasts.requestDesc'),
+      title: "Demande en cours",
+      description: "Vous allez être redirigé vers le formulaire de contact.",
     });
   };
 
@@ -86,10 +84,11 @@ const LoanSimulator = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-green-600 mb-6">
-            {t('loanSimulator.title')}
+            Simulateur de Prêt
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            {t('loanSimulator.subtitle')}
+            Estimez rapidement vos conditions d'emprunt avec notre outil sécurisé. 
+            Obtenez une simulation personnalisée en quelques clics.
           </p>
         </div>
 
@@ -100,16 +99,16 @@ const LoanSimulator = () => {
               <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
                 <CardTitle className="text-2xl font-bold flex items-center">
                   <Calculator className="w-6 h-6 mr-3" />
-                  {t('loanSimulator.form.title')}
+                  Paramètres de simulation
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-8 space-y-8">
                 {/* Loan Type Selection */}
                 <div className="space-y-3">
-                  <Label className="text-lg font-semibold text-green-600">{t('loanSimulator.form.loanType')}</Label>
+                  <Label className="text-lg font-semibold text-green-600">Type de prêt</Label>
                   <Select value={loanType} onValueChange={setLoanType}>
                     <SelectTrigger className="h-12 text-base border-2 border-gray-200 focus:border-green-500">
-                      <SelectValue placeholder={t('loanSimulator.form.loanTypePlaceholder')} />
+                      <SelectValue placeholder="Sélectionnez votre type de prêt" />
                     </SelectTrigger>
                     <SelectContent className="bg-white border border-gray-200 shadow-lg">
                       {loanTypes.map((loan) => (
@@ -127,7 +126,7 @@ const LoanSimulator = () => {
                 {/* Amount Slider */}
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <Label className="text-lg font-semibold text-green-600">{t('loanSimulator.form.amount')}</Label>
+                    <Label className="text-lg font-semibold text-green-600">Montant du prêt</Label>
                     <span className="text-2xl font-bold text-green-600">
                       {formatCurrency(amount[0])}
                     </span>
@@ -149,7 +148,7 @@ const LoanSimulator = () => {
                 {/* Duration Slider */}
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-                    <Label className="text-lg font-semibold text-green-600">{t('loanSimulator.form.duration')}</Label>
+                    <Label className="text-lg font-semibold text-green-600">Durée</Label>
                     <span className="text-2xl font-bold text-green-600">
                       {duration[0]} mois ({Math.round(duration[0] / 12 * 10) / 10} ans)
                     </span>
@@ -174,7 +173,7 @@ const LoanSimulator = () => {
                   disabled={!loanType}
                 >
                   <Calculator className="w-5 h-5 mr-2" />
-                  {t('loanSimulator.form.calculate')}
+                  Calculer mon estimation
                 </Button>
               </CardContent>
             </Card>
@@ -182,20 +181,20 @@ const LoanSimulator = () => {
             {/* Results */}
             <Card className="bg-white shadow-2xl border-0">
               <CardHeader className="bg-gradient-to-r from-yellow-600 to-yellow-500 text-white rounded-t-lg">
-                <CardTitle className="text-2xl font-bold">{t('loanSimulator.results.title')}</CardTitle>
+                <CardTitle className="text-2xl font-bold">Résultats de votre simulation</CardTitle>
               </CardHeader>
               <CardContent className="p-8">
                 {loanType && monthlyPayment > 0 ? (
                   <div className="space-y-6">
                     <div className="grid grid-cols-2 gap-6">
                       <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <p className="text-sm text-gray-600 mb-1">{t('loanSimulator.results.monthlyPayment')}</p>
+                        <p className="text-sm text-gray-600 mb-1">Mensualité</p>
                         <p className="text-2xl font-bold text-blue-900">
                           {formatCurrency(monthlyPayment)}
                         </p>
                       </div>
                       <div className="bg-green-50 p-4 rounded-lg text-center">
-                        <p className="text-sm text-gray-600 mb-1">{t('loanSimulator.results.interestRate')}</p>
+                        <p className="text-sm text-gray-600 mb-1">Taux d'intérêt</p>
                         <p className="text-2xl font-bold text-green-600">
                           {interestRate}%*
                         </p>
@@ -203,21 +202,21 @@ const LoanSimulator = () => {
                     </div>
 
                     <div className="bg-yellow-50 p-4 rounded-lg text-center">
-                      <p className="text-sm text-gray-600 mb-1">{t('loanSimulator.results.totalCost')}</p>
+                      <p className="text-sm text-gray-600 mb-1">Coût total du crédit</p>
                       <p className="text-2xl font-bold text-yellow-600">
                         {formatCurrency(totalCost)}
                       </p>
                       <p className="text-sm text-gray-500 mt-1">
-                        {t('loanSimulator.results.interestAmount')}: {formatCurrency(totalCost - amount[0])}
+                        dont intérêts: {formatCurrency(totalCost - amount[0])}
                       </p>
                     </div>
 
                     <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-green-600 mb-2">{t('loanSimulator.results.summary')}</h4>
+                      <h4 className="font-semibold text-green-600 mb-2">Récapitulatif:</h4>
                       <ul className="space-y-1 text-sm text-gray-600">
-                        <li>• {t('loanSimulator.results.borrowedAmount')}: {formatCurrency(amount[0])}</li>
-                        <li>• {t('loanSimulator.results.duration')}: {duration[0]} mois ({Math.round(duration[0] / 12 * 10) / 10} ans)</li>
-                        <li>• {t('loanSimulator.results.type')}: {loanTypes.find(l => l.value === loanType)?.label}</li>
+                        <li>• Montant emprunté: {formatCurrency(amount[0])}</li>
+                        <li>• Durée: {duration[0]} mois ({Math.round(duration[0] / 12 * 10) / 10} ans)</li>
+                        <li>• Type: {loanTypes.find(l => l.value === loanType)?.label}</li>
                       </ul>
                     </div>
 
@@ -226,7 +225,7 @@ const LoanSimulator = () => {
                         onClick={handleRequestLoan}
                         className="w-full bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
                       >
-                        {t('loanSimulator.results.requestLoan')}
+                        Demander ce prêt
                       </Button>
                       
                       <div className="flex gap-2">
@@ -236,7 +235,7 @@ const LoanSimulator = () => {
                           className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
                         >
                           <Mail className="w-4 h-4 mr-2" />
-                          {t('loanSimulator.results.email')}
+                          Email
                         </Button>
                         <Button 
                           onClick={handleSaveEstimation}
@@ -244,24 +243,24 @@ const LoanSimulator = () => {
                           className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
                         >
                           <Download className="w-4 h-4 mr-2" />
-                          {t('loanSimulator.results.pdf')}
+                          PDF
                         </Button>
                       </div>
                     </div>
 
                     <div className="text-xs text-gray-500 bg-gray-50 p-3 rounded">
-                      <p className="font-semibold mb-1">{t('loanSimulator.results.disclaimer')}</p>
-                      {t('loanSimulator.results.disclaimerItems').map((item: string, index: number) => (
-                        <p key={index}>{item}</p>
-                      ))}
+                      <p className="font-semibold mb-1">*Mentions importantes:</p>
+                      <p>• Taux indicatif, soumis à validation selon votre profil</p>
+                      <p>• Offre sous réserve d'acceptation du dossier</p>
+                      <p>• Vous disposez d'un délai de rétractation de 14 jours</p>
                     </div>
                   </div>
                 ) : (
                   <div className="text-center py-12">
                     <Calculator className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-                    <p className="text-gray-500 text-lg mb-2">{t('loanSimulator.results.emptyState.title')}</p>
+                    <p className="text-gray-500 text-lg mb-2">Prêt pour votre simulation ?</p>
                     <p className="text-gray-400">
-                      {t('loanSimulator.results.emptyState.subtitle')}
+                      Sélectionnez un type de prêt et ajustez les paramètres pour voir vos résultats
                     </p>
                   </div>
                 )}
