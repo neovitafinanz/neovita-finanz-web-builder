@@ -1,38 +1,41 @@
+
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { name: "Prêts personnels", href: "/prets-personnels" },
-      { name: "Prêts immobiliers", href: "/prets-immobiliers" },
-      { name: "Rachats de crédit", href: "/rachat-credit" },
-      { name: "Crédit travaux", href: "/credit-travaux" },
-      { name: "Assurances", href: "/assurances" }
+      { name: t('footer.services.personalLoans'), href: "/prets-personnels" },
+      { name: t('footer.services.mortgageLoans'), href: "/prets-immobiliers" },
+      { name: t('footer.services.creditBuyback'), href: "/rachat-credit" },
+      { name: t('footer.services.workCredit'), href: "/credit-travaux" },
+      { name: t('footer.services.insurance'), href: "/assurances" }
     ],
     company: [
-      { name: "À propos", href: "/a-propos" },
-      { name: "Notre équipe", href: "/equipe" },
-      { name: "Carrières", href: "/carrieres" },
-      { name: "Partenaires", href: "/partenaires" },
-      { name: "Actualités", href: "/actualites" }
+      { name: t('footer.company.about'), href: "/a-propos" },
+      { name: t('footer.company.team'), href: "/equipe" },
+      { name: t('footer.company.careers'), href: "/carrieres" },
+      { name: t('footer.company.partners'), href: "/partenaires" },
+      { name: t('footer.company.news'), href: "/actualites" }
     ],
     legal: [
-      { name: "Mentions légales", href: "/mentions-legales" },
-      { name: "Politique de confidentialité", href: "/politique-confidentialite" },
-      { name: "Conditions générales", href: "/conditions-generales" },
-      { name: "Plan du site", href: "/plan-site" },
-      { name: "Cookies", href: "/cookies" }
+      { name: t('footer.legal.terms'), href: "/mentions-legales" },
+      { name: t('footer.legal.privacy'), href: "/politique-confidentialite" },
+      { name: t('footer.legal.conditions'), href: "/conditions-generales" },
+      { name: t('footer.legal.sitemap'), href: "/plan-site" },
+      { name: t('footer.legal.cookies'), href: "/cookies" }
     ]
   };
 
   const trustLabels = [
-    { name: "RGPD Conforme", description: "Protection des données" },
-    { name: "SSL Sécurisé", description: "Connexions chiffrées" },
-    { name: "RCS Évry", description: "Société enregistrée" }
+    { name: t('footer.trust.gdpr'), description: t('footer.trust.gdprDesc') },
+    { name: t('footer.trust.ssl'), description: t('footer.trust.sslDesc') },
+    { name: t('footer.trust.rcs'), description: t('footer.trust.rcsDesc') }
   ];
 
   return (
@@ -50,13 +53,12 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-bold">Neovita Finanz</h3>
-                <p className="text-green-200 text-sm">Votre partenaire financier</p>
+                <p className="text-green-200 text-sm">{t('footer.tagline')}</p>
               </div>
             </Link>
             
             <p className="text-green-100 mb-6 leading-relaxed">
-              Depuis 2006, nous accompagnons particuliers et professionnels 
-              dans la réalisation de leurs projets financiers avec expertise et transparence.
+              {t('footer.description')}
             </p>
 
             {/* Contact Info */}
@@ -105,7 +107,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold mb-6">Nos Services</h4>
+            <h4 className="text-lg font-bold mb-6">{t('footer.sections.services')}</h4>
             <ul className="space-y-3">
               {footerLinks.services.map((link, index) => (
                 <li key={index}>
@@ -123,7 +125,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-bold mb-6">Entreprise</h4>
+            <h4 className="text-lg font-bold mb-6">{t('footer.sections.company')}</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link, index) => (
                 <li key={index}>
@@ -141,7 +143,7 @@ const Footer = () => {
 
           {/* Legal & Trust */}
           <div>
-            <h4 className="text-lg font-bold mb-6">Informations Légales</h4>
+            <h4 className="text-lg font-bold mb-6">{t('footer.sections.legal')}</h4>
             <ul className="space-y-3 mb-6">
               {footerLinks.legal.map((link, index) => (
                 <li key={index}>
@@ -158,7 +160,7 @@ const Footer = () => {
 
             {/* Trust Labels */}
             <div className="space-y-2">
-              <h5 className="text-sm font-semibold text-yellow-400 mb-3">Labels de Confiance</h5>
+              <h5 className="text-sm font-semibold text-yellow-400 mb-3">{t('footer.trust.title')}</h5>
               {trustLabels.map((label, index) => (
                 <div key={index} className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
@@ -179,11 +181,11 @@ const Footer = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Company Details */}
             <div>
-              <h4 className="text-lg font-bold text-yellow-400 mb-4">Neovita Finanz - Informations Société</h4>
+              <h4 className="text-lg font-bold text-yellow-400 mb-4">{t('footer.companyInfo.title')}</h4>
               <div className="grid md:grid-cols-2 gap-4 text-sm text-green-200">
                 <div>
-                  <p><strong>Forme juridique :</strong> SARL</p>
-                  <p><strong>Capital social :</strong> 17 000 000 €</p>
+                  <p><strong>{t('footer.companyInfo.legalForm')} :</strong> SARL</p>
+                  <p><strong>{t('footer.companyInfo.capital')} :</strong> 17 000 000 €</p>
                   <p><strong>SIREN :</strong> 493 171 540</p>
                   <p><strong>SIRET :</strong> 493 171 540 00013</p>
                 </div>
@@ -191,26 +193,23 @@ const Footer = () => {
                   <p><strong>TVA :</strong> FR16493171540</p>
                   <p><strong>RCS :</strong> Évry (07/07/2008)</p>
                   <p><strong>RNE :</strong> 02/04/2008</p>
-                  <p><strong>Effectif :</strong> 43 salariés</p>
+                  <p><strong>{t('footer.companyInfo.employees')} :</strong> 43 salariés</p>
                 </div>
               </div>
             </div>
 
             {/* Important Notice */}
             <div>
-              <h4 className="text-lg font-bold text-yellow-400 mb-4">Avertissement Important</h4>
+              <h4 className="text-lg font-bold text-yellow-400 mb-4">{t('footer.warning.title')}</h4>
               <div className="text-sm text-green-200 space-y-2">
                 <p>
-                  <strong>Taux d'intérêt :</strong> Les taux d'intérêt affichés sont indicatifs et soumis 
-                  à validation selon le profil du client et les conditions du marché.
+                  <strong>Taux d'intérêt :</strong> {t('footer.warning.rates')}
                 </p>
                 <p>
-                  <strong>Crédit :</strong> Un crédit vous engage et doit être remboursé. 
-                  Vérifiez vos capacités de remboursement avant de vous engager.
+                  <strong>Crédit :</strong> {t('footer.warning.credit')}
                 </p>
                 <p>
-                  <strong>Assurance :</strong> Les garanties d'assurance sont soumises aux conditions 
-                  générales des contrats proposés.
+                  <strong>Assurance :</strong> {t('footer.warning.insurance')}
                 </p>
               </div>
             </div>
@@ -223,7 +222,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-center items-center">
             <p className="text-green-300 text-sm">
-              © {currentYear} Neovita Finanz. Tous droits réservés.
+              © {currentYear} Neovita Finanz. {t('footer.copyright')}
             </p>
           </div>
         </div>

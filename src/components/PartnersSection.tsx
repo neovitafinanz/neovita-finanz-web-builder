@@ -8,8 +8,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const PartnersSection = () => {
+  const { t } = useLanguage();
+  
   const partners = [
     {
       name: "BNP Paribas",
@@ -43,11 +46,10 @@ const PartnersSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
-            Nos Partenaires Bancaires
+            {t('partners.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Grâce à notre réseau de partenaires financiers de confiance, 
-            nous vous proposons les meilleures conditions du marché.
+            {t('partners.subtitle')}
           </p>
         </div>
 
@@ -88,25 +90,23 @@ const PartnersSection = () => {
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-xl font-bold text-blue-900 mb-4">
-              Un réseau de confiance pour votre sérénité
+              {t('partners.trustMessage.title')}
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Notre collaboration avec les principales institutions financières françaises et européennes 
-              nous permet de vous proposer une large gamme de solutions de financement aux conditions 
-              les plus avantageuses du marché.
+              {t('partners.trustMessage.description')}
             </p>
             <div className="grid md:grid-cols-3 gap-4 mt-6 text-sm">
               <div className="flex items-center justify-center space-x-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                <span className="text-gray-600">Partenaires agréés</span>
+                <span className="text-gray-600">{t('partners.trustMessage.labels.approved')}</span>
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <span className="text-gray-600">Conditions négociées</span>
+                <span className="text-gray-600">{t('partners.trustMessage.labels.negotiated')}</span>
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                <span className="text-gray-600">Traitement rapide</span>
+                <span className="text-gray-600">{t('partners.trustMessage.labels.fast')}</span>
               </div>
             </div>
           </div>
