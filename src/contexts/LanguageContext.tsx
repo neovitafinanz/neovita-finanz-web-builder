@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 interface Translation {
@@ -565,10 +566,15 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
     const keys = key.split('.');
     let translation: any = translations[currentLanguage];
 
+    console.log('Translation lookup for key:', key);
+    console.log('Starting translation object:', translation);
+
     for (const k of keys) {
       if (translation && typeof translation === 'object' && k in translation) {
         translation = translation[k];
+        console.log(`Found key ${k}, new translation:`, translation);
       } else {
+        console.log(`Key ${k} not found in translation, returning key`);
         return key;
       }
     }
@@ -583,6 +589,7 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
       return translation;
     }
 
+    console.log('Final translation result:', translation);
     return translation;
   }, [currentLanguage]);
 
