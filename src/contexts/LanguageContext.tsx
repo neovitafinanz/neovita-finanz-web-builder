@@ -1,18 +1,18 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 interface Translation {
-  [key: string]: string | Translation;
+  [key: string]: string | Translation | string[] | any[];
 }
 
 interface LanguageContextProps {
-  language: string;
-  setLanguage: (language: string) => void;
-  t: (key: string, params?: Record<string, string | number>) => string;
+  currentLanguage: string;
+  setCurrentLanguage: (language: string) => void;
+  t: (key: string, params?: Record<string, string | number>) => any;
 }
 
 const LanguageContext = createContext<LanguageContextProps>({
-  language: 'fr',
-  setLanguage: () => {},
+  currentLanguage: 'fr',
+  setCurrentLanguage: () => {},
   t: (key: string) => key,
 });
 
@@ -24,14 +24,23 @@ const translations: { [key: string]: Translation } = {
   fr: {
     nav: {
       home: "Accueil",
+      personalLoans: "Prêts Personnels",
+      mortgageLoans: "Prêts Immobiliers", 
+      creditBuyback: "Rachat de Crédit",
+      workCredit: "Crédit Travaux",
+      insurance: "Assurances",
+      about: "À Propos",
       services: "Services",
-      about: "À propos",
       contact: "Contact",
       login: "Connexion",
       register: "Inscription",
       logout: "Déconnexion",
       profile: "Profil",
       language: "Langue"
+    },
+    common: {
+      requestLoan: "Demander un prêt",
+      phoneAvailable: "Disponible du lundi au vendredi de 9h à 18h"
     },
     hero: {
       slide1: {
@@ -162,7 +171,6 @@ const translations: { [key: string]: Translation } = {
       copyright: "Tous droits réservés."
     },
     
-    // Loan Simulator
     loanSimulator: {
       title: "Simulateur de Prêt",
       subtitle: "Estimez rapidement vos conditions d'emprunt avec notre outil sécurisé. Obtenez une simulation personnalisée en quelques clics.",
@@ -215,7 +223,6 @@ const translations: { [key: string]: Translation } = {
       }
     },
 
-    // Testimonials
     testimonials: {
       title: "Témoignages Clients",
       subtitle: "Découvrez les expériences de nos clients satisfaits qui nous font confiance pour leurs projets financiers.",
@@ -283,14 +290,23 @@ const translations: { [key: string]: Translation } = {
   en: {
     nav: {
       home: "Home",
-      services: "Services",
+      personalLoans: "Personal Loans",
+      mortgageLoans: "Mortgage Loans",
+      creditBuyback: "Credit Buyback", 
+      workCredit: "Work Credit",
+      insurance: "Insurance",
       about: "About",
+      services: "Services",
       contact: "Contact",
       login: "Login",
       register: "Register",
       logout: "Logout",
       profile: "Profile",
       language: "Language"
+    },
+    common: {
+      requestLoan: "Request a loan",
+      phoneAvailable: "Available Monday to Friday from 9am to 6pm"
     },
     hero: {
       slide1: {
@@ -539,15 +555,15 @@ const translations: { [key: string]: Translation } = {
 };
 
 const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
-  const [language, setLanguage] = useState(localStorage.getItem('language') || 'fr');
+  const [currentLanguage, setCurrentLanguage] = useState(localStorage.getItem('language') || 'fr');
 
   useEffect(() => {
-    localStorage.setItem('language', language);
-  }, [language]);
+    localStorage.setItem('language', currentLanguage);
+  }, [currentLanguage]);
 
-  const t = useCallback((key: string, params?: Record<string, string | number>): string => {
+  const t = useCallback((key: string, params?: Record<string, string | number>): any => {
     const keys = key.split('.');
-    let translation: any = translations[language];
+    let translation: any = translations[currentLanguage];
 
     for (const k of keys) {
       if (translation && typeof translation === 'object' && k in translation) {
@@ -567,11 +583,11 @@ const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
       return translation;
     }
 
-    return key;
-  }, [language]);
+    return translation;
+  }, [currentLanguage]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ currentLanguage, setCurrentLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );
