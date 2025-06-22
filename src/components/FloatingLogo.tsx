@@ -5,81 +5,61 @@ const FloatingLogo = () => {
   const handleTranslateClick = () => {
     console.log('Clic sur le bouton de traduction floating');
     
-    const tryOpenTranslate = (attempt = 1, maxAttempts = 10) => {
-      console.log(`Tentative ${attempt}/${maxAttempts} d'ouverture Google Translate`);
+    // Fonction pour forcer l'ouverture du sélecteur Google Translate
+    const openGoogleTranslate = () => {
+      // Chercher le sélecteur principal
+      const translateSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
       
-      // Sélecteurs à essayer
-      const selectors = [
-        '.goog-te-combo',
-        '#google_translate_element .goog-te-combo',
-        '#google_translate_element_mobile .goog-te-combo',
-        '.goog-te-gadget .goog-te-combo',
-        '.goog-te-gadget-simple .goog-te-combo'
-      ];
-      
-      let translateElement = null;
-      
-      // Chercher un élément disponible
-      for (const selector of selectors) {
-        const element = document.querySelector(selector) as HTMLSelectElement;
-        if (element && element.options && element.options.length > 1) {
-          translateElement = element;
-          console.log(`Élément trouvé avec le sélecteur: ${selector}`);
-          break;
-        }
-      }
-      
-      if (translateElement) {
-        console.log('Ouverture du sélecteur Google Translate');
+      if (translateSelect) {
+        console.log('Sélecteur Google Translate trouvé, ouverture...');
         
-        // Simuler un clic utilisateur
-        translateElement.focus();
+        // Forcer le focus et déclencher l'ouverture
+        translateSelect.focus();
+        translateSelect.click();
         
-        // Déclencher les événements
-        const events = ['mousedown', 'click', 'mouseup'];
-        events.forEach(eventType => {
-          const event = new MouseEvent(eventType, {
-            view: window,
-            bubbles: true,
-            cancelable: true,
-          });
-          translateElement.dispatchEvent(event);
+        // Alternative : déclencher l'événement mousedown
+        const mouseDownEvent = new MouseEvent('mousedown', {
+          view: window,
+          bubbles: true,
+          cancelable: true,
         });
+        translateSelect.dispatchEvent(mouseDownEvent);
         
         return true;
-      } else if (attempt < maxAttempts) {
-        console.log(`Tentative ${attempt} échouée, nouvelle tentative dans 300ms...`);
-        setTimeout(() => tryOpenTranslate(attempt + 1, maxAttempts), 300);
-      } else {
-        console.log('Google Translate non trouvé après toutes les tentatives');
-        
-        // Fallback: essayer de cliquer sur le gadget principal
-        const gadgets = [
-          '.goog-te-gadget-simple',
-          '.goog-te-gadget',
-          '#google_translate_element',
-          '#google_translate_element_mobile'
-        ];
-        
-        for (const gadgetSelector of gadgets) {
-          const gadget = document.querySelector(gadgetSelector) as HTMLElement;
-          if (gadget) {
-            console.log(`Clic sur le gadget: ${gadgetSelector}`);
-            gadget.click();
-            return true;
-          }
-        }
-        
-        // Si vraiment rien ne fonctionne
-        console.log('Aucun élément Google Translate trouvé');
-        alert('Le traducteur se charge encore. Veuillez patienter quelques secondes et réessayer.');
       }
       
+      // Si pas trouvé, essayer de cliquer sur le conteneur Google Translate
+      const translateContainer = document.querySelector('#google_translate_element') as HTMLElement;
+      if (translateContainer) {
+        console.log('Conteneur Google Translate trouvé, clic...');
+        translateContainer.click();
+        
+        // Réessayer de trouver le sélecteur après un court délai
+        setTimeout(() => {
+          const newSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+          if (newSelect) {
+            newSelect.focus();
+            newSelect.click();
+          }
+        }, 100);
+        
+        return true;
+      }
+      
+      console.log('Google Translate non trouvé');
+      alert('Le traducteur n\'est pas encore chargé. Veuillez rafraîchir la page.');
       return false;
     };
     
-    // Commencer les tentatives
-    tryOpenTranslate();
+    // Essayer d'ouvrir immédiatement
+    if (!openGoogleTranslate()) {
+      // Si ça ne marche pas, attendre un peu et réessayer
+      setTimeout(() => {
+        if (!openGoogleTranslate()) {
+          console.log('Échec définitif d\'ouverture de Google Translate');
+        }
+      }, 500);
+    }
   };
 
   return (
