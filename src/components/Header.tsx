@@ -64,18 +64,18 @@ const Header = () => {
                 className="bg-green-700 text-white border border-green-500 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-white"
               >
                 <option value="">Sélectionner</option>
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="it">Italiano</option>
-                <option value="de">Deutsch</option>
-                <option value="pt">Português</option>
-                <option value="nl">Nederlands</option>
-                <option value="da">Dansk</option>
-                <option value="sv">Svenska</option>
-                <option value="no">Norsk</option>
-                <option value="ja">日本語</option>
-                <option value="zh-CN">中文 (简体)</option>
-                <option value="ru">Русский</option>
+                <option value="en">🇬🇧 English</option>
+                <option value="es">🇪🇸 Español</option>
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="de">🇩🇪 Deutsch</option>
+                <option value="pt">🇵🇹 Português</option>
+                <option value="nl">🇳🇱 Nederlands</option>
+                <option value="da">🇩🇰 Dansk</option>
+                <option value="sv">🇸🇪 Svenska</option>
+                <option value="no">🇳🇴 Norsk</option>
+                <option value="ja">🇯🇵 日本語</option>
+                <option value="zh-CN">🇨🇳 中文 (简体)</option>
+                <option value="ru">🇷🇺 Русский</option>
               </select>
             </div>
           </div>
@@ -120,18 +120,18 @@ const Header = () => {
                   className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
                 >
                   <option value="">🌐</option>
-                  <option value="en">EN</option>
-                  <option value="es">ES</option>
-                  <option value="it">IT</option>
-                  <option value="de">DE</option>
-                  <option value="pt">PT</option>
-                  <option value="nl">NL</option>
-                  <option value="da">DA</option>
-                  <option value="sv">SV</option>
-                  <option value="no">NO</option>
-                  <option value="ja">JA</option>
-                  <option value="zh-CN">中文</option>
-                  <option value="ru">RU</option>
+                  <option value="en">🇬🇧</option>
+                  <option value="es">🇪🇸</option>
+                  <option value="it">🇮🇹</option>
+                  <option value="de">🇩🇪</option>
+                  <option value="pt">🇵🇹</option>
+                  <option value="nl">🇳🇱</option>
+                  <option value="da">🇩🇰</option>
+                  <option value="sv">🇸🇪</option>
+                  <option value="no">🇳🇴</option>
+                  <option value="ja">🇯🇵</option>
+                  <option value="zh-CN">🇨🇳</option>
+                  <option value="ru">🇷🇺</option>
                 </select>
               </div>
 
