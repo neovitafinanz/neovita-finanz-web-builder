@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "personalLoans": "Personal Loans",
+    "mortgageLoans": "Mortgage Loans",
+    "creditBuyback": "Credit Buyback",
+    "workCredit": "Work Credit",
+    "insurance": "Insurance",
+    "about": "About"
+  },
+  "common": {
+    "phoneAvailable": "Monday to Friday 9am to 6pm",
+    "requestLoan": "Request Loan",
+    "discover": "Discover",
+    "learnMoreAbout": "Learn more about",
+    "startRequest": "Start my request"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Your Trusted Partner",
+      "subtitle": "Personalized Financing Solutions",
+      "description": "Discover our credit solutions adapted to your needs with expert and personalized support."
+    },
+    "slide2": {
+      "title": "Mortgage Loans",
+      "subtitle": "Realize Your Real Estate Project",
+      "description": "Competitive rates and tailor-made support to make your real estate projects a reality."
+    },
+    "slide3": {
+      "title": "Credit Buyback",
+      "subtitle": "Simplify Your Finances",
+      "description": "Consolidate your credits into one to reduce your monthly payments and regain your financial peace of mind."
+    },
+    "slide4": {
+      "title": "Expertise & Proximity",
+      "subtitle": "43 Advisors at Your Service",
+      "description": "A dedicated team of experts to support you in all your financing projects."
+    },
+    "cta": {
+      "primary": "Make a request",
+      "secondary": "Simulate my loan"
+    },
+    "disclaimer": "A credit commits you and must be repaid. Check your repayment capacity before committing."
+  },
+  "home": {
+    "metaDescription": "Neovita Finanz - Personalized financing solutions. Personal loans, mortgages, credit buyback with expert support.",
+    "servicesTitle": "Our Financing Solutions",
+    "servicesSubtitle": "Solutions adapted to all your life projects",
+    "advantagesTitle": "Why Choose Neovita Finanz",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaSubtitle": "Our expert advisors support you in your financing request"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Personal Loans",
+      "description": "Finance your personal projects with advantageous conditions"
+    },
+    "mortgageLoans": {
+      "title": "Mortgage Loans",
+      "description": "Make your real estate project a reality with our expertise"
+    },
+    "creditBuyback": {
+      "title": "Credit Buyback",
+      "description": "Simplify your repayments and reduce your monthly payments"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Security & Trust",
+      "description": "Approved establishment with 15 years of experience in financing"
+    },
+    "speed": {
+      "title": "Speed & Efficiency",
+      "description": "Response within 48 hours and quick release of your funds"
+    },
+    "experts": {
+      "title": "Expert Support",
+      "description": "43 specialized advisors to guide you at every step"
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted financial partner",
+    "description": "Neovita Finanz has been supporting you for 15 years in all your financing projects with expertise and proximity.",
+    "sections": {
+      "services": "Our Services",
+      "company": "The Company",
+      "legal": "Legal Information"
+    },
+    "services": {
+      "personalLoans": "Personal Loans",
+      "mortgageLoans": "Mortgage Loans",
+      "creditBuyback": "Credit Buyback",
+      "workCredit": "Work Credit",
+      "insurance": "Insurance"
+    },
+    "company": {
+      "about": "About",
+      "team": "Our Team",
+      "careers": "Careers",
+      "partners": "Partners",
+      "news": "News"
+    },
+    "legal": {
+      "terms": "Legal Terms",
+      "privacy": "Privacy Policy",
+      "conditions": "General Conditions",
+      "sitemap": "Site Map",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifications",
+      "gdpr": "GDPR Compliant",
+      "gdprDesc": "Data protection",
+      "ssl": "SSL Secured",
+      "sslDesc": "Secure connection",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Approved establishment"
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "legalForm": "Legal form",
+      "capital": "Capital",
+      "employees": "Staff"
+    },
+    "warning": {
+      "title": "Important Information",
+      "rates": "From 0.9% to 19.9% depending on profile and duration",
+      "credit": "A credit commits you and must be repaid",
+      "insurance": "Borrower insurance is not mandatory"
+    },
+    "copyright": "All rights reserved."
+  }
+}

@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "Accueil",
+    "personalLoans": "Prêts Personnels",
+    "mortgageLoans": "Prêts Immobiliers",
+    "creditBuyback": "Rachat de Crédit",
+    "workCredit": "Crédit Travaux",
+    "insurance": "Assurances",
+    "about": "À Propos"
+  },
+  "common": {
+    "phoneAvailable": "Du lundi au vendredi de 9h à 18h",
+    "requestLoan": "Demande de Prêt",
+    "discover": "Découvrir",
+    "learnMoreAbout": "En savoir plus sur",
+    "startRequest": "Commencer ma demande"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Votre Partenaire de Confiance",
+      "subtitle": "Solutions de Financement Personnalisées",
+      "description": "Découvrez nos solutions de crédit adaptées à vos besoins avec un accompagnement expert et personnalisé."
+    },
+    "slide2": {
+      "title": "Prêts Immobiliers",
+      "subtitle": "Réalisez Votre Projet Immobilier",
+      "description": "Des taux compétitifs et un accompagnement sur mesure pour concrétiser vos projets immobiliers."
+    },
+    "slide3": {
+      "title": "Rachat de Crédit",
+      "subtitle": "Simplifiez Vos Finances",
+      "description": "Regroupez vos crédits en un seul pour réduire vos mensualités et retrouver votre sérénité financière."
+    },
+    "slide4": {
+      "title": "Expertise & Proximité",
+      "subtitle": "43 Conseillers à Votre Service",
+      "description": "Une équipe d'experts dédiée pour vous accompagner dans tous vos projets de financement."
+    },
+    "cta": {
+      "primary": "Faire une demande",
+      "secondary": "Simuler mon prêt"
+    },
+    "disclaimer": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager."
+  },
+  "home": {
+    "metaDescription": "Neovita Finanz - Solutions de financement personnalisées. Prêts personnels, immobiliers, rachat de crédit avec accompagnement expert.",
+    "servicesTitle": "Nos Solutions de Financement",
+    "servicesSubtitle": "Des solutions adaptées à tous vos projets de vie",
+    "advantagesTitle": "Pourquoi Choisir Neovita Finanz",
+    "ctaTitle": "Prêt à Commencer Votre Projet ?",
+    "ctaSubtitle": "Nos conseillers experts vous accompagnent dans votre demande de financement"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Prêts Personnels",
+      "description": "Financez vos projets personnels avec des conditions avantageuses"
+    },
+    "mortgageLoans": {
+      "title": "Prêts Immobiliers",
+      "description": "Concrétisez votre projet immobilier avec notre expertise"
+    },
+    "creditBuyback": {
+      "title": "Rachat de Crédit",
+      "description": "Simplifiez vos remboursements et réduisez vos mensualités"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Sécurité & Confiance",
+      "description": "Établissement agréé avec 15 ans d'expérience dans le financement"
+    },
+    "speed": {
+      "title": "Rapidité & Efficacité",
+      "description": "Réponse sous 48h et déblocage rapide de vos fonds"
+    },
+    "experts": {
+      "title": "Accompagnement Expert",
+      "description": "43 conseillers spécialisés pour vous guider à chaque étape"
+    }
+  },
+  "footer": {
+    "tagline": "Votre partenaire financier de confiance",
+    "description": "Neovita Finanz vous accompagne depuis 15 ans dans tous vos projets de financement avec expertise et proximité.",
+    "sections": {
+      "services": "Nos Services",
+      "company": "L'Entreprise",
+      "legal": "Informations Légales"
+    },
+    "services": {
+      "personalLoans": "Prêts Personnels",
+      "mortgageLoans": "Prêts Immobiliers",
+      "creditBuyback": "Rachat de Crédit",
+      "workCredit": "Crédit Travaux",
+      "insurance": "Assurances"
+    },
+    "company": {
+      "about": "À Propos",
+      "team": "Notre Équipe",
+      "careers": "Carrières",
+      "partners": "Partenaires",
+      "news": "Actualités"
+    },
+    "legal": {
+      "terms": "Mentions Légales",
+      "privacy": "Politique de Confidentialité",
+      "conditions": "Conditions Générales",
+      "sitemap": "Plan du Site",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifications",
+      "gdpr": "Conforme RGPD",
+      "gdprDesc": "Protection des données",
+      "ssl": "Sécurisé SSL",
+      "sslDesc": "Connexion sécurisée",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Établissement agréé"
+    },
+    "companyInfo": {
+      "title": "Informations Société",
+      "legalForm": "Forme juridique",
+      "capital": "Capital",
+      "employees": "Effectif"
+    },
+    "warning": {
+      "title": "Informations Importantes",
+      "rates": "De 0,9% à 19,9% selon profil et durée",
+      "credit": "Un crédit vous engage et doit être remboursé",
+      "insurance": "L'assurance emprunteur n'est pas obligatoire"
+    },
+    "copyright": "Tous droits réservés."
+  }
+}
