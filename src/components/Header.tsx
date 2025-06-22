@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -16,6 +15,7 @@ declare global {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [translateLoaded, setTranslateLoaded] = useState(false);
   const navigate = useNavigate();
   const { currentLanguage, setCurrentLanguage, t } = useLanguage();
 
@@ -23,22 +23,40 @@ const Header = () => {
     // Fonction d'initialisation de Google Translate
     window.googleTranslateElementInit = () => {
       if (window.google && window.google.translate) {
-        window.googleTranslateInstance = new window.google.translate.TranslateElement(
-          {
-            pageLanguage: 'fr',
-            includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
-            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
-            multilanguagePage: true
-          },
-          'google_translate_element'
-        );
+        // Pour desktop
+        if (document.getElementById('google_translate_element')) {
+          new window.google.translate.TranslateElement(
+            {
+              pageLanguage: 'fr',
+              includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
+              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false,
+              multilanguagePage: true
+            },
+            'google_translate_element'
+          );
+        }
         
-        console.log('Google Translate initialisé');
+        // Pour mobile
+        if (document.getElementById('google_translate_element_mobile')) {
+          new window.google.translate.TranslateElement(
+            {
+              pageLanguage: 'fr',
+              includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
+              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false,
+              multilanguagePage: true
+            },
+            'google_translate_element_mobile'
+          );
+        }
+        
+        setTranslateLoaded(true);
+        console.log('Google Translate initialisé avec succès');
       }
     };
 
-    // Charger Google Translate
+    // Charger Google Translate seulement une fois
     if (!document.querySelector('script[src*="translate.google.com"]')) {
       const script = document.createElement('script');
       script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
@@ -46,8 +64,11 @@ const Header = () => {
       script.onload = () => {
         console.log('Script Google Translate chargé');
       };
+      script.onerror = () => {
+        console.error('Erreur de chargement du script Google Translate');
+      };
       document.head.appendChild(script);
-    } else if (window.google && window.google.translate) {
+    } else if (window.google && window.google.translate && !translateLoaded) {
       window.googleTranslateElementInit();
     }
 
@@ -56,7 +77,7 @@ const Header = () => {
       const scripts = document.querySelectorAll('script[src*="translate.google.com"]');
       scripts.forEach(script => script.remove());
     };
-  }, []);
+  }, [translateLoaded]);
 
   const mainNavItems = [
     { name: t('nav.home'), href: '/' },
@@ -200,6 +221,16 @@ const Header = () => {
         }
         body {
           top: 0px !important;
+        }
+        #google_translate_element .goog-te-gadget-simple {
+          background-color: transparent !important;
+          border: none !important;
+          padding: 0 !important;
+        }
+        #google_translate_element_mobile .goog-te-gadget-simple {
+          background-color: white !important;
+          border: 1px solid #ddd !important;
+          border-radius: 4px !important;
         }
         `}
       </style>
