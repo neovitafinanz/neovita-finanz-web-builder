@@ -57,55 +57,11 @@ const GoogleTranslate = () => {
       addChangeListener(selectorMobile);
     };
 
-    // Gestionnaire pour le bouton de copie de lien
-    const handleCopyLink = () => {
-      const copyButton = document.getElementById('copyLink');
-      const copyStatus = document.getElementById('copyStatus');
-      
-      if (copyButton) {
-        copyButton.addEventListener('click', function() {
-          const lang = (document.getElementById('languageSelector') as HTMLSelectElement)?.value;
-          if (!lang) {
-            if (copyStatus) {
-              copyStatus.textContent = 'Veuillez d\'abord choisir une langue.';
-              setTimeout(() => {
-                copyStatus.textContent = '';
-              }, 2000);
-            }
-            return;
-          }
-
-          const baseUrl = window.location.href.split('#')[0];
-          const fullUrl = `https://translate.google.com/translate?hl=fr&sl=fr&tl=${lang}&u=${encodeURIComponent(baseUrl)}`;
-
-          navigator.clipboard.writeText(fullUrl).then(() => {
-            if (copyStatus) {
-              copyStatus.textContent = '✓ Lien copié!';
-              setTimeout(() => {
-                copyStatus.textContent = '';
-              }, 2000);
-            }
-          }).catch(() => {
-            if (copyStatus) {
-              copyStatus.textContent = '✗ Échec de la copie';
-              setTimeout(() => {
-                copyStatus.textContent = '';
-              }, 2000);
-            }
-          });
-        });
-      }
-    };
-
     // Attendre que le DOM soit chargé
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        handleLanguageChange();
-        handleCopyLink();
-      });
+      document.addEventListener('DOMContentLoaded', handleLanguageChange);
     } else {
       handleLanguageChange();
-      handleCopyLink();
     }
 
     // Chargement du script Google Translate
@@ -134,7 +90,7 @@ const GoogleTranslate = () => {
 
   return (
     <>
-      {/* CSS pour masquer les éléments indésirables de Google Translate */}
+      {/* CSS pour masquer les éléments indésirables de Google Translate et styler le sélecteur personnalisé */}
       <style dangerouslySetInnerHTML={{
         __html: `
           .goog-te-banner-frame,
@@ -157,7 +113,7 @@ const GoogleTranslate = () => {
             display: none !important;
           }
 
-          /* Style pour le sélecteur personnalisé */
+          /* Style pour le sélecteur de langue personnalisé */
           #custom-translate {
             position: fixed;
             top: 20px;
@@ -170,6 +126,7 @@ const GoogleTranslate = () => {
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             z-index: 9999;
           }
+          
           #custom-translate select {
             margin-left: 8px;
             padding: 4px 6px;
@@ -178,28 +135,6 @@ const GoogleTranslate = () => {
           }
         `
       }} />
-
-      {/* Sélecteur de langue personnalisé */}
-      <div id="custom-translate">
-        🌐 Langue :
-        <select id="languageSelector">
-          <option value="">Sélectionner</option>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="it">Italiano</option>
-          <option value="de">Deutsch</option>
-          <option value="pt">Português</option>
-          <option value="nl">Nederlands</option>
-          <option value="da">Dansk</option>
-          <option value="sv">Svenska</option>
-          <option value="no">Norsk</option>
-          <option value="ja">日本語</option>
-          <option value="zh-CN">中文 (简体)</option>
-          <option value="ru">Русский</option>
-        </select>
-        <button id="copyLink" style={{ marginTop: '8px' }}>📋 Copier le lien traduit</button>
-        <span id="copyStatus" style={{ marginLeft: '10px', color: 'green' }}></span>
-      </div>
     </>
   );
 };
