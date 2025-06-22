@@ -25,35 +25,7 @@ const GoogleTranslate = () => {
       }
     };
 
-    // Fonction pour attendre que le combo Google Translate soit disponible
-    const waitForTranslateCombo = (callback: (combo: HTMLSelectElement) => void) => {
-      const interval = setInterval(() => {
-        const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-        if (combo) {
-          clearInterval(interval);
-          callback(combo);
-        }
-      }, 300);
-    };
-
-    // Appliquer traduction depuis l'URL
-    const applyTranslationFromURL = () => {
-      const params = new URLSearchParams(window.location.search);
-      const lang = params.get('lang');
-
-      if (lang) {
-        waitForTranslateCombo((combo) => {
-          combo.value = lang;
-          combo.dispatchEvent(new Event('change'));
-
-          // Met à jour le sélecteur personnalisé
-          const customSelect = document.getElementById('languageSelector') as HTMLSelectElement;
-          if (customSelect) customSelect.value = lang;
-        });
-      }
-    };
-
-    // Mettre à jour l'URL quand une langue est sélectionnée
+    // Gestionnaire pour le sélecteur personnalisé
     const handleLanguageChange = () => {
       const selector = document.getElementById('languageSelector') as HTMLSelectElement;
       const selectorMobile = document.getElementById('languageSelectorMobile') as HTMLSelectElement;
@@ -61,17 +33,21 @@ const GoogleTranslate = () => {
       const addChangeListener = (element: HTMLSelectElement | null) => {
         if (element) {
           element.addEventListener('change', function () {
-            const lang = element.value;
-            if (lang) {
-              waitForTranslateCombo((combo) => {
-                combo.value = lang;
-                combo.dispatchEvent(new Event('change'));
-
-                // Met à jour l'URL sans recharger
-                const url = new URL(window.location.href);
-                url.searchParams.set('lang', lang);
-                window.history.replaceState({}, '', url);
-              });
+            const language = element.value;
+            if (language) {
+              const frame = document.querySelector('iframe.goog-te-menu-frame') as HTMLIFrameElement;
+              if (frame && frame.contentWindow) {
+                const menuItem = frame.contentWindow.document.querySelector(`.goog-te-menu2-item span[text="${language}"]`) as HTMLElement;
+                if (menuItem) {
+                  menuItem.click();
+                }
+              } else {
+                const select = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+                if (select) {
+                  select.value = language;
+                  select.dispatchEvent(new Event('change'));
+                }
+              }
             }
           });
         }
@@ -79,9 +55,6 @@ const GoogleTranslate = () => {
 
       addChangeListener(selector);
       addChangeListener(selectorMobile);
-      
-      // Appliquer traduction selon URL au chargement
-      applyTranslationFromURL();
     };
 
     // Attendre que le DOM soit chargé
@@ -117,7 +90,7 @@ const GoogleTranslate = () => {
 
   return (
     <>
-      {/* CSS pour masquer les éléments indésirables de Google Translate et styler le sélecteur personnalisé */}
+      {/* CSS pour masquer les éléments indésirables de Google Translate */}
       <style dangerouslySetInnerHTML={{
         __html: `
           .goog-te-banner-frame,
@@ -139,54 +112,8 @@ const GoogleTranslate = () => {
           #google_translate_element .goog-te-gadget {
             display: none !important;
           }
-
-          /* Style pour le sélecteur de langue personnalisé */
-          #custom-translate {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-family: sans-serif;
-            font-size: 14px;
-            background: #ffffff;
-            padding: 8px 12px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            z-index: 9999;
-          }
-          
-          #custom-translate select {
-            margin-left: 8px;
-            padding: 4px 6px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-          }
         `
       }} />
-
-      {/* Custom Language Selector */}
-      <div id="custom-translate" dangerouslySetInnerHTML={{
-        __html: `
-          🌐 Langue :
-          <select id="languageSelector">
-            <option value="">Sélectionner</option>
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="it">Italiano</option>
-            <option value="de">Deutsch</option>
-            <option value="pt">Português</option>
-            <option value="nl">Nederlands</option>
-            <option value="da">Dansk</option>
-            <option value="sv">Svenska</option>
-            <option value="no">Norsk</option>
-            <option value="ja">日本語</option>
-            <option value="zh-CN">中文 (简体)</option>
-            <option value="ru">Русский</option>
-          </select>
-        `
-      }} />
-
-      {/* Hidden Google Translate Element */}
-      <div id="google_translate_element" style={{ display: 'none' }}></div>
     </>
   );
 };
