@@ -35,6 +35,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
+            {/* Routes sans préfixe de langue (français par défaut) */}
             <Route path="/" element={<Index />} />
             <Route path="/prets-personnels" element={<PretPersonnel />} />
             <Route path="/prets-immobiliers" element={<PretImmobilier />} />
@@ -53,6 +54,27 @@ const App = () => (
             <Route path="/plan-site" element={<PlanSite />} />
             <Route path="/cookies" element={<Cookies />} />
             <Route path="/demande-credit" element={<FormulaireCredit />} />
+            
+            {/* Routes avec préfixe de langue */}
+            <Route path="/:lang/" element={<Index />} />
+            <Route path="/:lang/prets-personnels" element={<PretPersonnel />} />
+            <Route path="/:lang/prets-immobiliers" element={<PretImmobilier />} />
+            <Route path="/:lang/rachat-credit" element={<RachatCredit />} />
+            <Route path="/:lang/credit-travaux" element={<CreditTravaux />} />
+            <Route path="/:lang/assurances" element={<Assurances />} />
+            <Route path="/:lang/a-propos" element={<About />} />
+            <Route path="/:lang/equipe" element={<Equipe />} />
+            <Route path="/:lang/carrieres" element={<Carrieres />} />
+            <Route path="/:lang/partenaires" element={<Partenaires />} />
+            <Route path="/:lang/actualites" element={<Actualites />} />
+            <Route path="/:lang/informations-legales" element={<InformationsLegales />} />
+            <Route path="/:lang/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/:lang/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+            <Route path="/:lang/conditions-generales" element={<ConditionsGenerales />} />
+            <Route path="/:lang/plan-site" element={<PlanSite />} />
+            <Route path="/:lang/cookies" element={<Cookies />} />
+            <Route path="/:lang/demande-credit" element={<FormulaireCredit />} />
+            
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

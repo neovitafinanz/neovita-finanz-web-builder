@@ -4,11 +4,13 @@ import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useUrlLanguage } from '@/hooks/useUrlLanguage';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const { t } = useLanguage();
+  const { currentLanguage, changeLanguage } = useUrlLanguage();
 
   const mainNavItems = [
     { name: t('nav.home'), href: '/' },
@@ -26,12 +28,20 @@ const Header = () => {
 
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
-    if (selectedLanguage && window.google && window.google.translate) {
-      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      if (selectElement) {
-        selectElement.value = selectedLanguage;
-        selectElement.dispatchEvent(new Event('change'));
-      }
+    if (selectedLanguage) {
+      // Changer l'URL
+      changeLanguage(selectedLanguage);
+      
+      // Aussi déclencher Google Translate
+      setTimeout(() => {
+        if (window.google && window.google.translate) {
+          const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+          if (selectElement) {
+            selectElement.value = selectedLanguage;
+            selectElement.dispatchEvent(new Event('change'));
+          }
+        }
+      }, 100);
     }
   };
 
@@ -60,10 +70,11 @@ const Header = () => {
               <span>🌐 Langue :</span>
               <select 
                 id="languageSelector"
+                value={currentLanguage}
                 onChange={handleLanguageChange}
                 className="bg-green-700 text-white border border-green-500 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-white"
               >
-                <option value="">Sélectionner</option>
+                <option value="fr">🇫🇷 Français</option>
                 <option value="en">🇬🇧 English</option>
                 <option value="es">🇪🇸 Español</option>
                 <option value="it">🇮🇹 Italiano</option>
@@ -116,10 +127,11 @@ const Header = () => {
                 <Globe className="w-4 h-4" />
                 <select 
                   id="languageSelectorMobile"
+                  value={currentLanguage}
                   onChange={handleLanguageChange}
                   className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
                 >
-                  <option value="">🌐</option>
+                  <option value="fr">🇫🇷</option>
                   <option value="en">🇬🇧</option>
                   <option value="es">🇪🇸</option>
                   <option value="it">🇮🇹</option>
