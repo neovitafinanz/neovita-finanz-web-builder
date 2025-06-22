@@ -22,13 +22,13 @@ import FormulaireCredit from "../pages/FormulaireCredit";
 import NotFound from "../pages/NotFound";
 
 const LanguageRedirect = () => {
-  const { lang } = useParams();
+  const { lang, '*': remainingPath } = useParams();
   const location = useLocation();
   
   // Langues supportées
   const supportedLanguages = ['fr', 'en', 'es', 'it', 'de', 'pt', 'nl', 'da', 'sv', 'no', 'ja', 'zh-CN', 'ru'];
   
-  console.log('LanguageRedirect - lang:', lang, 'pathname:', location.pathname);
+  console.log('LanguageRedirect - lang:', lang, 'remainingPath:', remainingPath, 'pathname:', location.pathname);
   
   // Si la langue n'est pas supportée, rediriger vers la version française
   if (!lang || !supportedLanguages.includes(lang)) {
@@ -39,6 +39,9 @@ const LanguageRedirect = () => {
   }
 
   // Si la langue est supportée, afficher les routes
+  // Le remainingPath peut être undefined pour /en, donc on utilise '' par défaut
+  const currentPath = remainingPath || '';
+  
   return (
     <Routes>
       <Route path="/" element={<Index />} />

@@ -59,7 +59,8 @@ const App = () => {
               <Route path="/cookies" element={<Cookies />} />
               <Route path="/demande-credit" element={<FormulaireCredit />} />
               
-              {/* Routes avec préfixe de langue */}
+              {/* Routes avec préfixe de langue - gère à la fois /lang et /lang/path */}
+              <Route path="/:lang" element={<LanguageRedirect />} />
               <Route path="/:lang/*" element={<LanguageRedirect />} />
               
               <Route path="*" element={<NotFound />} />
