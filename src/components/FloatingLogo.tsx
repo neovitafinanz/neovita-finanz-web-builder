@@ -5,60 +5,75 @@ const FloatingLogo = () => {
   const handleTranslateClick = () => {
     console.log('Clic sur le bouton de traduction floating');
     
-    // Fonction pour forcer l'ouverture du sélecteur Google Translate
+    // Fonction pour vérifier si Google Translate est prêt avec les langues
+    const isTranslateReady = () => {
+      const translateSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      if (translateSelect && translateSelect.options && translateSelect.options.length > 1) {
+        console.log(`Google Translate prêt avec ${translateSelect.options.length} langues disponibles`);
+        return true;
+      }
+      return false;
+    };
+
+    // Fonction pour ouvrir le sélecteur Google Translate
     const openGoogleTranslate = () => {
-      // Chercher le sélecteur principal
       const translateSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
       
-      if (translateSelect) {
-        console.log('Sélecteur Google Translate trouvé, ouverture...');
+      if (translateSelect && translateSelect.options && translateSelect.options.length > 1) {
+        console.log('Ouverture du sélecteur Google Translate...');
         
-        // Forcer le focus et déclencher l'ouverture
-        translateSelect.focus();
-        translateSelect.click();
-        
-        // Alternative : déclencher l'événement mousedown
-        const mouseDownEvent = new MouseEvent('mousedown', {
+        // Créer et déclencher un événement de clic natif
+        const clickEvent = new MouseEvent('click', {
           view: window,
           bubbles: true,
           cancelable: true,
         });
-        translateSelect.dispatchEvent(mouseDownEvent);
         
-        return true;
-      }
-      
-      // Si pas trouvé, essayer de cliquer sur le conteneur Google Translate
-      const translateContainer = document.querySelector('#google_translate_element') as HTMLElement;
-      if (translateContainer) {
-        console.log('Conteneur Google Translate trouvé, clic...');
-        translateContainer.click();
+        translateSelect.focus();
+        translateSelect.dispatchEvent(clickEvent);
         
-        // Réessayer de trouver le sélecteur après un court délai
+        // Alternative avec mousedown si le click ne suffit pas
         setTimeout(() => {
-          const newSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-          if (newSelect) {
-            newSelect.focus();
-            newSelect.click();
-          }
-        }, 100);
+          const mouseDownEvent = new MouseEvent('mousedown', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+          });
+          translateSelect.dispatchEvent(mouseDownEvent);
+        }, 50);
         
         return true;
       }
       
-      console.log('Google Translate non trouvé');
-      alert('Le traducteur n\'est pas encore chargé. Veuillez rafraîchir la page.');
+      console.log('Sélecteur Google Translate non prêt');
       return false;
     };
-    
-    // Essayer d'ouvrir immédiatement
-    if (!openGoogleTranslate()) {
-      // Si ça ne marche pas, attendre un peu et réessayer
-      setTimeout(() => {
-        if (!openGoogleTranslate()) {
-          console.log('Échec définitif d\'ouverture de Google Translate');
+
+    // Vérifier si Google Translate est déjà prêt
+    if (isTranslateReady()) {
+      openGoogleTranslate();
+    } else {
+      console.log('Google Translate pas encore prêt, attente...');
+      
+      // Attendre que Google Translate soit prêt (maximum 5 secondes)
+      let attempts = 0;
+      const maxAttempts = 25; // 25 x 200ms = 5 secondes
+      
+      const checkAndOpen = () => {
+        attempts++;
+        console.log(`Vérification ${attempts}/${maxAttempts}...`);
+        
+        if (isTranslateReady()) {
+          openGoogleTranslate();
+        } else if (attempts < maxAttempts) {
+          setTimeout(checkAndOpen, 200);
+        } else {
+          console.log('Timeout: Google Translate non disponible');
+          alert('Le traducteur se charge encore. Veuillez attendre quelques secondes et réessayer.');
         }
-      }, 500);
+      };
+      
+      checkAndOpen();
     }
   };
 
