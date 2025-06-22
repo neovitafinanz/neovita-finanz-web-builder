@@ -57,7 +57,7 @@ const Header = () => {
             {/* Custom Language Selector */}
             <div id="custom-translate" className="flex items-center space-x-2">
               <Globe className="w-4 h-4" />
-              <span>Langue :</span>
+              <span>🌐 Langue :</span>
               <select 
                 id="languageSelector"
                 onChange={handleLanguageChange}
@@ -65,8 +65,17 @@ const Header = () => {
               >
                 <option value="">Sélectionner</option>
                 <option value="en">English</option>
-                <option value="pt">Português</option>
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
                 <option value="de">Deutsch</option>
+                <option value="pt">Português</option>
+                <option value="nl">Nederlands</option>
+                <option value="da">Dansk</option>
+                <option value="sv">Svenska</option>
+                <option value="no">Norsk</option>
+                <option value="ja">日本語</option>
+                <option value="zh-CN">中文 (简体)</option>
+                <option value="ru">Русский</option>
               </select>
             </div>
           </div>
@@ -112,8 +121,17 @@ const Header = () => {
                 >
                   <option value="">🌐</option>
                   <option value="en">EN</option>
-                  <option value="pt">PT</option>
+                  <option value="es">ES</option>
+                  <option value="it">IT</option>
                   <option value="de">DE</option>
+                  <option value="pt">PT</option>
+                  <option value="nl">NL</option>
+                  <option value="da">DA</option>
+                  <option value="sv">SV</option>
+                  <option value="no">NO</option>
+                  <option value="ja">JA</option>
+                  <option value="zh-CN">中文</option>
+                  <option value="ru">RU</option>
                 </select>
               </div>
 
