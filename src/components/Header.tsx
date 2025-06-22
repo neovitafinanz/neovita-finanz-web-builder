@@ -20,28 +20,23 @@ declare global {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isTranslateReady, setIsTranslateReady] = useState(false);
   const navigate = useNavigate();
   const { currentLanguage, setCurrentLanguage, t } = useLanguage();
   
   const languages = [
     { code: 'fr', name: 'Français', googleCode: 'fr' },
-    { code: 'en', name: 'Anglais', googleCode: 'en' },
-    { code: 'ar', name: 'Arabe', googleCode: 'ar' },
-    { code: 'es', name: 'Espagnol', googleCode: 'es' },
-    { code: 'it', name: 'Italien', googleCode: 'it' },
-    { code: 'nl', name: 'Néerlandais', googleCode: 'nl' },
-    { code: 'pl', name: 'Polonais', googleCode: 'pl' },
-    { code: 'pt', name: 'Portugais (Brésil)', googleCode: 'pt' },
-    { code: 'ru', name: 'Russe', googleCode: 'ru' },
+    { code: 'en', name: 'English', googleCode: 'en' },
+    { code: 'ar', name: 'العربية', googleCode: 'ar' },
+    { code: 'es', name: 'Español', googleCode: 'es' },
+    { code: 'it', name: 'Italiano', googleCode: 'it' },
+    { code: 'nl', name: 'Nederlands', googleCode: 'nl' },
+    { code: 'pl', name: 'Polski', googleCode: 'pl' },
+    { code: 'pt', name: 'Português', googleCode: 'pt' },
+    { code: 'ru', name: 'Русский', googleCode: 'ru' },
   ];
 
   useEffect(() => {
-    // Charger Google Translate
-    const script = document.createElement('script');
-    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    script.async = true;
-    document.head.appendChild(script);
-
     // Fonction d'initialisation de Google Translate
     window.googleTranslateElementInit = () => {
       if (window.google && window.google.translate) {
@@ -50,31 +45,73 @@ const Header = () => {
             pageLanguage: 'fr',
             includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
             layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
+            autoDisplay: false,
+            multilanguagePage: true
           },
           'google_translate_element'
         );
+        
+        // Marquer comme prêt après un délai
+        setTimeout(() => {
+          setIsTranslateReady(true);
+        }, 1000);
       }
     };
 
+    // Charger Google Translate seulement si pas déjà chargé
+    if (!document.querySelector('script[src*="translate.google.com"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.async = true;
+      document.head.appendChild(script);
+    } else if (window.google && window.google.translate) {
+      setIsTranslateReady(true);
+    }
+
     return () => {
-      // Nettoyer le script lors du démontage
+      // Nettoyer seulement si nécessaire
       const scripts = document.querySelectorAll('script[src*="translate.google.com"]');
-      scripts.forEach(script => script.remove());
+      if (scripts.length > 1) {
+        scripts.forEach((script, index) => {
+          if (index > 0) script.remove();
+        });
+      }
     };
   }, []);
 
   const handleLanguageChange = (googleCode: string, langName: string) => {
-    // Utiliser Google Translate pour changer la langue
+    console.log(`Tentative de changement vers ${langName} (${googleCode})`);
+    
+    if (!isTranslateReady) {
+      console.log('Google Translate pas encore prêt');
+      return;
+    }
+
+    // Méthode 1: Essayer avec le sélecteur direct
     const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
     if (selectElement) {
+      console.log('Sélecteur trouvé, changement de langue...');
       selectElement.value = googleCode;
-      selectElement.dispatchEvent(new Event('change'));
+      selectElement.dispatchEvent(new Event('change', { bubbles: true }));
+      return;
     }
-    console.log(`Changement vers ${langName}`);
-  };
 
-  const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
+    // Méthode 2: Attendre un peu et réessayer
+    setTimeout(() => {
+      const selectElement2 = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      if (selectElement2) {
+        console.log('Sélecteur trouvé au 2ème essai, changement de langue...');
+        selectElement2.value = googleCode;
+        selectElement2.dispatchEvent(new Event('change', { bubbles: true }));
+      } else {
+        console.log('Sélecteur Google Translate non trouvé');
+        // Méthode 3: Forcer la création si nécessaire
+        if (window.google && window.google.translate) {
+          window.googleTranslateElementInit();
+        }
+      }
+    }, 500);
+  };
 
   const mainNavItems = [
     { name: t('nav.home'), href: '/' },
@@ -90,10 +127,18 @@ const Header = () => {
     navigate('/demande-credit');
   };
 
+  const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
+
   return (
     <>
-      {/* Google Translate Element - caché */}
-      <div id="google_translate_element" style={{ display: 'none' }}></div>
+      {/* Google Translate Element - caché mais accessible */}
+      <div id="google_translate_element" style={{ 
+        position: 'absolute', 
+        top: '-9999px', 
+        left: '-9999px',
+        visibility: 'hidden',
+        opacity: 0 
+      }}></div>
       
       {/* Contact Bar */}
       <div className="bg-green-600 text-white py-2 hidden lg:block">
@@ -118,7 +163,7 @@ const Header = () => {
       <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            {/* Logo - Plus grand */}
+            {/* Logo */}
             <Link to="/" className="flex items-center" aria-label="Accueil Neovita Finanz">
               <img 
                 src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
@@ -152,7 +197,7 @@ const Header = () => {
                     aria-label="Sélectionner une langue"
                   >
                     <Globe className="w-4 h-4" />
-                    <span>Sélectionner une langue</span>
+                    <span>Langue</span>
                     <ChevronDown className="w-4 h-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -208,7 +253,7 @@ const Header = () => {
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="sm" className="flex items-center space-x-2">
                         <Globe className="w-4 h-4" />
-                        <span>Sélectionner une langue</span>
+                        <span>Langue</span>
                         <ChevronDown className="w-4 h-4" />
                       </Button>
                     </DropdownMenuTrigger>
