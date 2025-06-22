@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -24,6 +24,17 @@ const Header = () => {
     navigate('/demande-credit');
   };
 
+  const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLanguage = event.target.value;
+    if (selectedLanguage && window.google && window.google.translate) {
+      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      if (selectElement) {
+        selectElement.value = selectedLanguage;
+        selectElement.dispatchEvent(new Event('change'));
+      }
+    }
+  };
+
   return (
     <>
       {/* Contact Bar */}
@@ -39,8 +50,25 @@ const Header = () => {
               <span>contact@neovita-finanz.fr</span>
             </div>
           </div>
-          <div className="text-sm">
-            {t('common.phoneAvailable')}
+          <div className="flex items-center space-x-4">
+            <div className="text-sm">
+              {t('common.phoneAvailable')}
+            </div>
+            {/* Custom Language Selector */}
+            <div id="custom-translate" className="flex items-center space-x-2">
+              <Globe className="w-4 h-4" />
+              <span>Langue :</span>
+              <select 
+                id="languageSelector"
+                onChange={handleLanguageChange}
+                className="bg-green-700 text-white border border-green-500 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-white"
+              >
+                <option value="">Sélectionner</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="de">Deutsch</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -72,15 +100,32 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* CTA Button */}
-            <div className="hidden lg:flex items-center">
-              <Button 
-                onClick={handleCTAClick}
-                className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                aria-label="Faire une demande de prêt"
-              >
-                {t('common.requestLoan')}
-              </Button>
+            {/* CTA Button and Mobile Language Selector */}
+            <div className="flex items-center space-x-4">
+              {/* Mobile Language Selector */}
+              <div id="custom-translate-mobile" className="flex items-center space-x-2 lg:hidden">
+                <Globe className="w-4 h-4" />
+                <select 
+                  id="languageSelectorMobile"
+                  onChange={handleLanguageChange}
+                  className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
+                >
+                  <option value="">🌐</option>
+                  <option value="en">EN</option>
+                  <option value="pt">PT</option>
+                  <option value="de">DE</option>
+                </select>
+              </div>
+
+              <div className="hidden lg:flex items-center">
+                <Button 
+                  onClick={handleCTAClick}
+                  className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                  aria-label="Faire une demande de prêt"
+                >
+                  {t('common.requestLoan')}
+                </Button>
+              </div>
             </div>
 
             {/* Mobile Menu Button */}
@@ -121,6 +166,9 @@ const Header = () => {
           )}
         </div>
       </header>
+
+      {/* Hidden Google Translate Element */}
+      <div id="google_translate_element" style={{ display: 'none' }}></div>
     </>
   );
 };

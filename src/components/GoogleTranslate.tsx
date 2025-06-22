@@ -51,17 +51,6 @@ const GoogleTranslate = () => {
 
   return (
     <>
-      {/* Element Google Translate avec positionnement fixe */}
-      <div 
-        id="google_translate_element" 
-        style={{
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          zIndex: 1000
-        }}
-      />
-      
       {/* CSS pour masquer les éléments indésirables de Google Translate */}
       <style dangerouslySetInnerHTML={{
         __html: `
@@ -78,6 +67,11 @@ const GoogleTranslate = () => {
           
           body {
             top: 0 !important;
+          }
+
+          /* Masquer le sélecteur Google Translate par défaut */
+          #google_translate_element .goog-te-gadget {
+            display: none !important;
           }
         `
       }} />
