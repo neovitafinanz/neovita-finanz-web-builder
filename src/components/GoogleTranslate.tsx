@@ -25,19 +25,31 @@ const GoogleTranslate = () => {
       }
     };
 
-    // Appliquer traduction si ?lang=xx présent
+    // Fonction pour attendre que le combo Google Translate soit disponible
+    const waitForTranslateCombo = (callback: (combo: HTMLSelectElement) => void) => {
+      const interval = setInterval(() => {
+        const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+        if (combo) {
+          clearInterval(interval);
+          callback(combo);
+        }
+      }, 300);
+    };
+
+    // Appliquer traduction depuis l'URL
     const applyTranslationFromURL = () => {
       const params = new URLSearchParams(window.location.search);
       const lang = params.get('lang');
+
       if (lang) {
-        const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-        if (combo) {
+        waitForTranslateCombo((combo) => {
           combo.value = lang;
           combo.dispatchEvent(new Event('change'));
-        } else {
-          // Attendre que Google Translate soit prêt
-          setTimeout(applyTranslationFromURL, 500);
-        }
+
+          // Met à jour le sélecteur personnalisé
+          const customSelect = document.getElementById('languageSelector') as HTMLSelectElement;
+          if (customSelect) customSelect.value = lang;
+        });
       }
     };
 
@@ -46,30 +58,20 @@ const GoogleTranslate = () => {
       const selector = document.getElementById('languageSelector') as HTMLSelectElement;
       const selectorMobile = document.getElementById('languageSelectorMobile') as HTMLSelectElement;
       
-      // Appliquer traduction selon URL au chargement
-      applyTranslationFromURL();
-      
       const addChangeListener = (element: HTMLSelectElement | null) => {
         if (element) {
           element.addEventListener('change', function () {
-            const language = element.value;
-            if (language) {
-              const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-              if (combo) {
-                combo.value = language;
+            const lang = element.value;
+            if (lang) {
+              waitForTranslateCombo((combo) => {
+                combo.value = lang;
                 combo.dispatchEvent(new Event('change'));
+
+                // Met à jour l'URL sans recharger
                 const url = new URL(window.location.href);
-                url.searchParams.set('lang', language);
-                window.history.replaceState({}, '', url); // Met à jour l'URL sans recharger
-              } else {
-                const frame = document.querySelector('iframe.goog-te-menu-frame') as HTMLIFrameElement;
-                if (frame && frame.contentWindow) {
-                  const menuItem = frame.contentWindow.document.querySelector(`.goog-te-menu2-item span[text="${language}"]`) as HTMLElement;
-                  if (menuItem) {
-                    menuItem.click();
-                  }
-                }
-              }
+                url.searchParams.set('lang', lang);
+                window.history.replaceState({}, '', url);
+              });
             }
           });
         }
@@ -77,6 +79,9 @@ const GoogleTranslate = () => {
 
       addChangeListener(selector);
       addChangeListener(selectorMobile);
+      
+      // Appliquer traduction selon URL au chargement
+      applyTranslationFromURL();
     };
 
     // Attendre que le DOM soit chargé
