@@ -10,6 +10,15 @@ const RachatCredit = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
+  const advantagesList = [
+    "Réduction de vos mensualités",
+    "Simplification de votre gestion",
+    "Taux potentiellement plus avantageux",
+    "Une seule mensualité",
+    "Possibilité de trésorerie supplémentaire",
+    "Conseil personnalisé gratuit"
+  ];
+
   return (
     <Layout 
       title={t('creditBuyback.title')}
@@ -44,7 +53,7 @@ const RachatCredit = () => {
                 {t('creditBuyback.advantages')}
               </h2>
               <div className="space-y-4">
-                {t('creditBuyback.advantagesList').map((advantage, index) => (
+                {advantagesList.map((advantage, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-gray-700">{advantage}</span>

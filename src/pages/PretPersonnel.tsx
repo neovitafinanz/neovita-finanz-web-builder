@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,15 @@ import { useLanguage } from '@/contexts/LanguageContext';
 const PretPersonnel = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
+
+  const advantages = [
+    "Réponse rapide sous 24h",
+    "Taux compétitifs dès 2.9%",
+    "Aucun frais de dossier",
+    "Remboursement anticipé possible",
+    "Déblocage des fonds sous 48h",
+    "Accompagnement personnalisé"
+  ];
 
   const useCases = [
     {
@@ -161,7 +171,7 @@ const PretPersonnel = () => {
                 {t('personalLoans.whyChoose')}
               </h2>
               <div className="space-y-4">
-                {t('personalLoans.advantages').map((advantage, index) => (
+                {advantages.map((advantage, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-gray-700">{advantage}</span>

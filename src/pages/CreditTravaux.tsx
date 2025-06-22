@@ -8,8 +8,17 @@ import { Hammer, Wrench } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const CreditTravaux = () => {
-  const navigate = useNavigage();
+  const navigate = useNavigate();
   const { t } = useLanguage();
+
+  const projectTypes = [
+    "Rénovation énergétique",
+    "Extension de maison", 
+    "Aménagement intérieur",
+    "Travaux de toiture",
+    "Installation piscine",
+    "Modernisation cuisine/salle de bain"
+  ];
 
   return (
     <Layout 
@@ -46,7 +55,7 @@ const CreditTravaux = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {t('workCredit.projectTypes').map((project, index) => (
+            {projectTypes.map((project, index) => (
               <Card key={index} className="border-0 shadow-lg text-center">
                 <CardContent className="p-6">
                   <Wrench className="w-12 h-12 text-green-600 mx-auto mb-4" />
