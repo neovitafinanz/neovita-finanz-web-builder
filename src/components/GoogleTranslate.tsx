@@ -36,24 +36,47 @@ const GoogleTranslate = () => {
   ];
 
   const changeLanguage = useCallback((langCode: string) => {
-    if (!isReady) return;
+    console.log('Tentative de changement de langue vers:', langCode);
+    
+    if (!isReady) {
+      console.log('Google Translate pas encore prêt');
+      return;
+    }
 
     const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-    if (selectElement && selectElement.value !== langCode) {
-      selectElement.value = langCode;
-      selectElement.dispatchEvent(new Event('change', { bubbles: true }));
-      setCurrentLang(langCode);
+    console.log('Element sélecteur trouvé:', selectElement);
+    
+    if (selectElement) {
+      console.log('Valeur actuelle du sélecteur:', selectElement.value);
+      console.log('Options disponibles:', Array.from(selectElement.options).map(opt => opt.value));
       
-      // Sauvegarder la préférence
-      localStorage.setItem('google_translate_lang', langCode);
+      if (selectElement.value !== langCode) {
+        selectElement.value = langCode;
+        selectElement.dispatchEvent(new Event('change', { bubbles: true }));
+        setCurrentLang(langCode);
+        
+        // Sauvegarder la préférence
+        localStorage.setItem('google_translate_lang', langCode);
+        console.log('Langue changée vers:', langCode);
+      }
+    } else {
+      console.log('Élément sélecteur Google Translate non trouvé');
     }
   }, [isReady]);
 
   useEffect(() => {
+    let checkAttempts = 0;
+    const maxAttempts = 50;
+
     // Vérifier si Google Translate est prêt
     const checkReady = () => {
+      checkAttempts++;
+      console.log(`Vérification Google Translate (tentative ${checkAttempts})`);
+      
       const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      
       if (selectElement && selectElement.options.length > 1) {
+        console.log('Google Translate prêt avec', selectElement.options.length, 'options');
         setIsReady(true);
         
         // Appliquer la langue sauvegardée ou détecter la langue du navigateur
@@ -61,30 +84,48 @@ const GoogleTranslate = () => {
         const browserLang = navigator.language.split('-')[0];
         const targetLang = savedLang || (languages.find(l => l.code === browserLang)?.code) || 'fr';
         
+        console.log('Langue cible détectée:', targetLang);
+        
         if (targetLang !== 'fr') {
           setTimeout(() => changeLanguage(targetLang), 500);
         }
+      } else if (checkAttempts < maxAttempts) {
+        setTimeout(checkReady, 200);
       } else {
-        setTimeout(checkReady, 100);
+        console.log('Échec du chargement de Google Translate après', maxAttempts, 'tentatives');
       }
     };
 
     // Observer pour détecter les changements de traduction
     const observer = new MutationObserver(() => {
       const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      if (selectElement) {
-        const currentValue = selectElement.value;
-        if (currentValue && currentValue !== currentLang) {
-          setCurrentLang(currentValue);
-        }
+      if (selectElement && selectElement.value !== currentLang) {
+        console.log('Changement de langue détecté:', selectElement.value);
+        setCurrentLang(selectElement.value);
       }
     });
 
-    checkReady();
+    // Attendre que Google Translate soit disponible
+    const waitForGoogleTranslate = () => {
+      if (window.google && window.google.translate) {
+        console.log('API Google Translate disponible');
+        checkReady();
+      } else {
+        console.log('En attente de l\'API Google Translate...');
+        setTimeout(waitForGoogleTranslate, 100);
+      }
+    };
+
+    waitForGoogleTranslate();
     observer.observe(document.body, { childList: true, subtree: true });
 
     return () => observer.disconnect();
   }, [changeLanguage, currentLang, languages]);
+
+  const handleLanguageSelect = (langCode: string) => {
+    console.log('Sélection de langue via interface:', langCode);
+    changeLanguage(langCode);
+  };
 
   if (!isReady) {
     return (
@@ -111,13 +152,16 @@ const GoogleTranslate = () => {
           top: '-9999px',
           left: '-9999px',
           visibility: 'hidden',
-          opacity: 0
+          opacity: 0,
+          width: '1px',
+          height: '1px',
+          overflow: 'hidden'
         }}
       />
       
       {/* Sélecteur de langue flottant */}
       <div className="fixed bottom-4 right-4 z-50">
-        <Select value={currentLang} onValueChange={changeLanguage}>
+        <Select value={currentLang} onValueChange={handleLanguageSelect}>
           <SelectTrigger className="bg-white hover:bg-gray-50 border-gray-300 shadow-lg rounded-full w-12 h-12 p-0 border">
             <div className="flex items-center justify-center w-full">
               <Globe className="w-5 h-5 text-green-600" />
