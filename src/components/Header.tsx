@@ -122,17 +122,19 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - caché mais accessible */}
+      {/* Google Translate Element - invisible mais présent dans le DOM */}
       <div 
         id="google_translate_element" 
         style={{ 
           position: 'absolute', 
-          top: '-9999px', 
-          left: '-9999px',
+          top: '0px', 
+          left: '0px',
           visibility: 'hidden',
           opacity: 0,
           width: '1px',
-          height: '1px'
+          height: '1px',
+          overflow: 'hidden',
+          pointerEvents: 'none'
         }}
       ></div>
       
