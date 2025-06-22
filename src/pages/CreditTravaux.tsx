@@ -5,32 +5,34 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
 import { Calculator, CheckCircle, Hammer, Wrench } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const CreditTravaux = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const projectTypes = [
-    'Rénovation énergétique',
-    'Extension de maison',
-    'Aménagement intérieur',
-    'Travaux de toiture',
-    'Installation piscine',
-    'Modernisation cuisine/salle de bain'
+    t('workCredit.projectTypes.energyRenovation'),
+    t('workCredit.projectTypes.houseExtension'),
+    t('workCredit.projectTypes.interiorDesign'),
+    t('workCredit.projectTypes.roofWork'),
+    t('workCredit.projectTypes.poolInstallation'),
+    t('workCredit.projectTypes.kitchenBathroom')
   ];
 
   return (
     <Layout 
-      title="Crédit travaux" 
-      description="Crédit travaux avec Neovita Finanz. Financez vos projets de rénovation et d'aménagement. Conditions avantageuses."
+      title={t('workCredit.title')} 
+      description={t('workCredit.metaDescription')}
     >
       <section className="relative bg-gradient-to-br from-blue-900 to-green-700 text-white py-20">
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Crédit Travaux
+              {t('workCredit.hero.title')}
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200">
-              Donnez vie à vos projets de rénovation et d'aménagement
+              {t('workCredit.hero.subtitle')}
             </p>
             <Button 
               onClick={() => navigate('/demande-credit')}
@@ -38,7 +40,7 @@ const CreditTravaux = () => {
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold"
             >
               <Hammer className="w-5 h-5 mr-2" />
-              Financer mes travaux
+              {t('workCredit.hero.cta')}
             </Button>
           </div>
         </div>
@@ -48,7 +50,7 @@ const CreditTravaux = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Types de travaux financés
+              {t('workCredit.projectTypes.title')}
             </h2>
           </div>
 
