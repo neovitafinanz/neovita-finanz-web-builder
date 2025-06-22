@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -56,6 +57,30 @@ const Header = () => {
         setTimeout(() => {
           setIsTranslateReady(true);
           console.log('Google Translate initialisé');
+          
+          // Masquer complètement l'interface Google Translate après initialisation
+          const gtElement = document.getElementById('google_translate_element');
+          if (gtElement) {
+            gtElement.style.display = 'none';
+          }
+          
+          // Masquer aussi la barre de traduction Google qui peut apparaître
+          const observer = new MutationObserver(() => {
+            const googleBar = document.querySelector('.goog-te-banner-frame');
+            if (googleBar) {
+              (googleBar as HTMLElement).style.display = 'none';
+            }
+            
+            // Masquer tous les éléments de l'interface Google Translate
+            const allGoogleElements = document.querySelectorAll('[class*="goog-te"], [id*="google_translate"]');
+            allGoogleElements.forEach(element => {
+              if (element.id !== 'google_translate_element') {
+                (element as HTMLElement).style.display = 'none';
+              }
+            });
+          });
+          
+          observer.observe(document.body, { childList: true, subtree: true });
         }, 3000);
       }
     };
@@ -139,16 +164,20 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - visible mais très petit */}
+      {/* Google Translate Element - complètement masqué */}
       <div 
         id="google_translate_element" 
         style={{ 
-          position: 'absolute', 
-          top: '-1000px', 
-          left: '-1000px',
+          position: 'fixed',
+          top: '-9999px', 
+          left: '-9999px',
           width: '1px',
           height: '1px',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          visibility: 'hidden',
+          opacity: 0,
+          pointerEvents: 'none',
+          zIndex: -1
         }}
       ></div>
       
