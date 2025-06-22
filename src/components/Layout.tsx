@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import GoogleTranslate from './GoogleTranslate';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -35,6 +36,7 @@ const Layout = ({ children, title, description }: LayoutProps) => {
         {children}
       </main>
       <Footer />
+      <GoogleTranslate />
     </div>
   );
 };
