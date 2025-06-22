@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -120,17 +121,17 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - visible temporairement pour debug */}
+      {/* Google Translate Element - caché mais accessible */}
       <div 
         id="google_translate_element" 
         style={{ 
-          position: 'fixed',
-          top: '0px',
-          left: '0px',
-          zIndex: 9999,
-          backgroundColor: 'white',
-          border: '1px solid red',
-          padding: '10px'
+          position: 'absolute', 
+          top: '-9999px', 
+          left: '-9999px',
+          visibility: 'hidden',
+          opacity: 0,
+          width: '1px',
+          height: '1px'
         }}
       ></div>
       
