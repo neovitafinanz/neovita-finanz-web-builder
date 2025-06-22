@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -22,52 +21,87 @@ const Header = () => {
   useEffect(() => {
     console.log('Initialisation Google Translate...');
     
-    // Fonction d'initialisation simplifiée
+    // Nettoyer les anciens éléments
+    const cleanup = () => {
+      const existingElements = document.querySelectorAll('#google_translate_element, #google_translate_element_mobile');
+      existingElements.forEach(el => {
+        if (el.innerHTML) {
+          el.innerHTML = '';
+        }
+      });
+    };
+
+    // Fonction d'initialisation avec retry
     const initGoogleTranslate = () => {
       if (window.google && window.google.translate) {
-        console.log('Google Translate API disponible');
+        console.log('Google Translate API disponible, création des éléments...');
         
-        // Configuration simple
+        cleanup();
+        
         const config = {
           pageLanguage: 'fr',
           includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
           layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
+          autoDisplay: false,
+          multilanguagePage: true
         };
         
-        // Créer l'élément pour desktop
-        const desktopElement = document.getElementById('google_translate_element');
-        if (desktopElement && !desktopElement.hasChildNodes()) {
-          new window.google.translate.TranslateElement(config, 'google_translate_element');
-          console.log('Google Translate desktop créé');
-        }
+        // Créer l'élément desktop
+        setTimeout(() => {
+          const desktopElement = document.getElementById('google_translate_element');
+          if (desktopElement) {
+            try {
+              new window.google.translate.TranslateElement(config, 'google_translate_element');
+              console.log('Google Translate desktop créé');
+            } catch (e) {
+              console.error('Erreur création desktop:', e);
+            }
+          }
+        }, 100);
         
-        // Créer l'élément pour mobile
-        const mobileElement = document.getElementById('google_translate_element_mobile');
-        if (mobileElement && !mobileElement.hasChildNodes()) {
-          new window.google.translate.TranslateElement(config, 'google_translate_element_mobile');
-          console.log('Google Translate mobile créé');
-        }
+        // Créer l'élément mobile
+        setTimeout(() => {
+          const mobileElement = document.getElementById('google_translate_element_mobile');
+          if (mobileElement) {
+            try {
+              new window.google.translate.TranslateElement(config, 'google_translate_element_mobile');
+              console.log('Google Translate mobile créé');
+            } catch (e) {
+              console.error('Erreur création mobile:', e);
+            }
+          }
+        }, 200);
+        
       } else {
-        console.log('Google Translate API non disponible, réessai...');
-        setTimeout(initGoogleTranslate, 500);
+        console.log('Google Translate API non disponible, réessai dans 1s...');
+        setTimeout(initGoogleTranslate, 1000);
       }
     };
 
     // Définir la fonction globale
     window.googleTranslateElementInit = initGoogleTranslate;
 
-    // Charger le script si nécessaire
+    // Charger le script
     if (!document.querySelector('script[src*="translate.google.com"]')) {
       const script = document.createElement('script');
       script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       script.async = true;
-      script.onload = () => console.log('Script Google Translate chargé');
-      script.onerror = () => console.error('Erreur chargement Google Translate');
+      script.onload = () => {
+        console.log('Script Google Translate chargé');
+        // Attendre un peu que l'API soit prête
+        setTimeout(initGoogleTranslate, 500);
+      };
+      script.onerror = () => {
+        console.error('Erreur chargement Google Translate');
+        // Réessayer dans 3 secondes
+        setTimeout(() => {
+          document.head.appendChild(script);
+        }, 3000);
+      };
       document.head.appendChild(script);
-    } else if (window.google && window.google.translate) {
-      // Si le script existe déjà et l'API est prête
-      initGoogleTranslate();
+    } else {
+      // Script déjà présent, initialiser
+      setTimeout(initGoogleTranslate, 500);
     }
   }, []);
 

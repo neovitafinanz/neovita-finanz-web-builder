@@ -5,76 +5,52 @@ const FloatingLogo = () => {
   const handleTranslateClick = () => {
     console.log('Clic sur le bouton de traduction floating');
     
-    // Fonction pour vérifier si Google Translate est prêt avec les langues
-    const isTranslateReady = () => {
-      const translateSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      if (translateSelect && translateSelect.options && translateSelect.options.length > 1) {
-        console.log(`Google Translate prêt avec ${translateSelect.options.length} langues disponibles`);
-        return true;
-      }
-      return false;
-    };
-
-    // Fonction pour ouvrir le sélecteur Google Translate
-    const openGoogleTranslate = () => {
+    // Attendre que Google Translate soit complètement chargé
+    const waitForGoogleTranslate = () => {
       const translateSelect = document.querySelector('.goog-te-combo') as HTMLSelectElement;
       
       if (translateSelect && translateSelect.options && translateSelect.options.length > 1) {
-        console.log('Ouverture du sélecteur Google Translate...');
+        console.log(`Google Translate trouvé avec ${translateSelect.options.length} langues`);
         
-        // Créer et déclencher un événement de clic natif
-        const clickEvent = new MouseEvent('click', {
-          view: window,
-          bubbles: true,
-          cancelable: true,
-        });
-        
+        // Ouvrir le sélecteur
         translateSelect.focus();
-        translateSelect.dispatchEvent(clickEvent);
+        translateSelect.click();
         
-        // Alternative avec mousedown si le click ne suffit pas
+        // Forcer l'ouverture avec un événement mousedown si nécessaire
         setTimeout(() => {
-          const mouseDownEvent = new MouseEvent('mousedown', {
-            view: window,
-            bubbles: true,
-            cancelable: true,
-          });
-          translateSelect.dispatchEvent(mouseDownEvent);
-        }, 50);
+          if (!translateSelect.matches(':focus')) {
+            translateSelect.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+          }
+        }, 100);
         
         return true;
       }
       
-      console.log('Sélecteur Google Translate non prêt');
       return false;
     };
-
-    // Vérifier si Google Translate est déjà prêt
-    if (isTranslateReady()) {
-      openGoogleTranslate();
-    } else {
-      console.log('Google Translate pas encore prêt, attente...');
-      
-      // Attendre que Google Translate soit prêt (maximum 5 secondes)
-      let attempts = 0;
-      const maxAttempts = 25; // 25 x 200ms = 5 secondes
-      
-      const checkAndOpen = () => {
-        attempts++;
-        console.log(`Vérification ${attempts}/${maxAttempts}...`);
-        
-        if (isTranslateReady()) {
-          openGoogleTranslate();
-        } else if (attempts < maxAttempts) {
-          setTimeout(checkAndOpen, 200);
-        } else {
-          console.log('Timeout: Google Translate non disponible');
-          alert('Le traducteur se charge encore. Veuillez attendre quelques secondes et réessayer.');
-        }
-      };
-      
-      checkAndOpen();
+    
+    // Essayer immédiatement
+    if (waitForGoogleTranslate()) {
+      return;
     }
+    
+    // Sinon attendre avec retry
+    console.log('Google Translate pas prêt, attente...');
+    let attempts = 0;
+    const maxAttempts = 15; // 15 x 500ms = 7.5 secondes
+    
+    const checkInterval = setInterval(() => {
+      attempts++;
+      console.log(`Tentative ${attempts}/${maxAttempts}...`);
+      
+      if (waitForGoogleTranslate()) {
+        clearInterval(checkInterval);
+      } else if (attempts >= maxAttempts) {
+        clearInterval(checkInterval);
+        console.log('Timeout: Google Translate non disponible');
+        alert('Le traducteur se charge encore. Veuillez patienter quelques secondes et réessayer.');
+      }
+    }, 500);
   };
 
   return (
