@@ -11,7 +11,7 @@ const FloatingLogo = () => {
         aria-label="Retour à l'accueil Neovita Finanz"
       >
         <img 
-          src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
+          src="/lovable-uploads/bd8a1af1-74f4-47c8-b7df-b58a3f984eee.png" 
           alt="Neovita Finanz" 
           className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
         />
