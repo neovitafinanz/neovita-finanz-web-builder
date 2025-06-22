@@ -64,8 +64,21 @@ const GoogleTranslate = () => {
       
       if (copyButton) {
         copyButton.addEventListener('click', function() {
-          const currentUrl = window.location.href;
-          navigator.clipboard.writeText(currentUrl).then(() => {
+          const lang = (document.getElementById('languageSelector') as HTMLSelectElement)?.value;
+          if (!lang) {
+            if (copyStatus) {
+              copyStatus.textContent = 'Veuillez d\'abord choisir une langue.';
+              setTimeout(() => {
+                copyStatus.textContent = '';
+              }, 2000);
+            }
+            return;
+          }
+
+          const baseUrl = window.location.href.split('#')[0];
+          const fullUrl = `https://translate.google.com/translate?hl=fr&sl=fr&tl=${lang}&u=${encodeURIComponent(baseUrl)}`;
+
+          navigator.clipboard.writeText(fullUrl).then(() => {
             if (copyStatus) {
               copyStatus.textContent = '✓ Lien copié!';
               setTimeout(() => {
@@ -74,7 +87,7 @@ const GoogleTranslate = () => {
             }
           }).catch(() => {
             if (copyStatus) {
-              copyStatus.textContent = '✗ Erreur de copie';
+              copyStatus.textContent = '✗ Échec de la copie';
               setTimeout(() => {
                 copyStatus.textContent = '';
               }, 2000);
