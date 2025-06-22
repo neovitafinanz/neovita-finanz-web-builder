@@ -59,38 +59,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    
-    <!-- Google Translate Script - Chargé après le DOM -->
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        console.log('Initialisation de Google Translate');
-        try {
-          new google.translate.TranslateElement({
-            pageLanguage: 'fr',
-            includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru,de',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
-            multilanguagePage: true,
-            gaTrack: false,
-            gaId: null
-          }, 'google_translate_element');
-          console.log('Google Translate initialisé avec succès');
-        } catch (error) {
-          console.error('Erreur lors de l\'initialisation de Google Translate:', error);
-        }
-      }
-      
-      // Chargement différé du script Google Translate
-      window.addEventListener('load', function() {
-        const script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        script.async = true;
-        script.onerror = function() {
-          console.error('Erreur de chargement du script Google Translate');
-        };
-        document.head.appendChild(script);
-      });
-    </script>
   </body>
 </html>
