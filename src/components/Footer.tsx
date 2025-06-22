@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -75,7 +74,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-green-100 text-sm">contact@neovita-finanz.fr</span>
+                <span className="text-green-100 text-sm">contact@neovitafinanz.com</span>
               </div>
             </div>
 
