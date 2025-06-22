@@ -5,52 +5,69 @@ const FloatingLogo = () => {
   const handleTranslateClick = () => {
     console.log('Clic sur le bouton de traduction');
     
-    // Attendre un peu pour que Google Translate soit chargé
-    const tryOpenTranslate = () => {
+    const tryOpenTranslate = (attempt = 1, maxAttempts = 20) => {
+      console.log(`Tentative ${attempt}/${maxAttempts}`);
+      
       // Chercher tous les sélecteurs possibles
       const selectors = [
         '.goog-te-combo',
         '#google_translate_element .goog-te-combo',
         '#google_translate_element_mobile .goog-te-combo',
-        '.goog-te-gadget .goog-te-combo'
+        '.goog-te-gadget .goog-te-combo',
+        '.goog-te-gadget-simple .goog-te-combo'
       ];
       
       let found = false;
       
       for (const selector of selectors) {
-        const translateSelector = document.querySelector(selector) as HTMLSelectElement;
-        console.log(`Recherche du sélecteur: ${selector}`, translateSelector);
+        const translateElement = document.querySelector(selector) as HTMLSelectElement;
+        console.log(`Recherche du sélecteur: ${selector}`, translateElement);
         
-        if (translateSelector) {
-          console.log('Sélecteur trouvé, ouverture...');
-          translateSelector.focus();
-          translateSelector.click();
+        if (translateElement && translateElement.options && translateElement.options.length > 1) {
+          console.log('Sélecteur Google Translate trouvé et prêt !');
           
-          // Essayer aussi de déclencher l'événement change
-          const changeEvent = new Event('change', { bubbles: true });
-          translateSelector.dispatchEvent(changeEvent);
+          // Simuler un clic utilisateur réel
+          translateElement.focus();
+          
+          // Créer et déclencher un événement mousedown
+          const mouseDownEvent = new MouseEvent('mousedown', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+          });
+          translateElement.dispatchEvent(mouseDownEvent);
+          
+          // Puis un événement click
+          const clickEvent = new MouseEvent('click', {
+            view: window,
+            bubbles: true,
+            cancelable: true,
+          });
+          translateElement.dispatchEvent(clickEvent);
           
           found = true;
           break;
         }
       }
       
-      if (!found) {
-        console.log('Aucun sélecteur Google Translate trouvé');
-        // Essayer de trouver et cliquer sur l'élément parent
-        const parentElement = document.querySelector('.goog-te-gadget');
-        if (parentElement) {
-          console.log('Clic sur l\'élément parent Google Translate');
-          (parentElement as HTMLElement).click();
+      if (!found && attempt < maxAttempts) {
+        console.log(`Tentative ${attempt} échouée, nouvelle tentative dans 250ms...`);
+        setTimeout(() => tryOpenTranslate(attempt + 1, maxAttempts), 250);
+      } else if (!found) {
+        console.log('Google Translate non disponible après toutes les tentatives');
+        // Fallback : essayer de cliquer sur l'élément gadget
+        const gadget = document.querySelector('.goog-te-gadget-simple') || document.querySelector('.goog-te-gadget');
+        if (gadget) {
+          console.log('Clic sur le gadget Google Translate');
+          (gadget as HTMLElement).click();
+        } else {
+          alert('Le traducteur Google n\'est pas encore disponible. Veuillez patienter quelques secondes et réessayer.');
         }
       }
     };
     
-    // Essayer immédiatement
+    // Commencer les tentatives
     tryOpenTranslate();
-    
-    // Si ça ne marche pas, réessayer après un délai
-    setTimeout(tryOpenTranslate, 100);
   };
 
   return (
