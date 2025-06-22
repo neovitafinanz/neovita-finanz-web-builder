@@ -22,6 +22,7 @@ declare global {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isTranslateReady, setIsTranslateReady] = useState(false);
+  const [showTranslateOptions, setShowTranslateOptions] = useState(false);
   const navigate = useNavigate();
   const { currentLanguage, setCurrentLanguage, t } = useLanguage();
   
@@ -121,21 +122,54 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - visible en bas de l'écran */}
+      {/* Google Translate Element - caché mais accessible */}
       <div 
         id="google_translate_element" 
         style={{ 
-          position: 'fixed',
-          bottom: '20px',
-          right: '20px',
-          zIndex: 1000,
-          backgroundColor: 'white',
-          padding: '8px',
-          borderRadius: '8px',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-          border: '1px solid #e5e7eb'
+          position: 'absolute', 
+          top: '-9999px', 
+          left: '-9999px',
+          visibility: 'hidden',
+          opacity: 0,
+          width: '1px',
+          height: '1px'
         }}
       ></div>
+      
+      {/* Bouton de traduction personnalisé */}
+      <div style={{ 
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        zIndex: 1000
+      }}>
+        <DropdownMenu open={showTranslateOptions} onOpenChange={setShowTranslateOptions}>
+          <DropdownMenuTrigger asChild>
+            <Button
+              variant="outline"
+              size="sm"
+              className="bg-white hover:bg-gray-50 border-gray-300 shadow-lg rounded-full w-12 h-12 p-0"
+              aria-label="Traduire la page"
+            >
+              <Globe className="w-5 h-5 text-green-600" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg">
+            {languages.map((lang) => (
+              <DropdownMenuItem
+                key={lang.code}
+                onClick={() => {
+                  handleLanguageChange(lang.googleCode, lang.name);
+                  setShowTranslateOptions(false);
+                }}
+                className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 focus:bg-gray-50"
+              >
+                <span>{lang.name}</span>
+              </DropdownMenuItem>
+            ))}
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
       
       {/* Contact Bar */}
       <div className="bg-green-600 text-white py-2 hidden lg:block">
