@@ -90,7 +90,7 @@ const GoogleTranslate = () => {
 
   return (
     <>
-      {/* CSS pour masquer les éléments indésirables de Google Translate et styler le sélecteur personnalisé */}
+      {/* CSS pour masquer les éléments indésirables de Google Translate */}
       <style dangerouslySetInnerHTML={{
         __html: `
           .goog-te-banner-frame,
@@ -111,27 +111,6 @@ const GoogleTranslate = () => {
           /* Masquer le sélecteur Google Translate par défaut */
           #google_translate_element .goog-te-gadget {
             display: none !important;
-          }
-
-          /* Style pour le sélecteur de langue personnalisé */
-          #custom-translate {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            font-family: sans-serif;
-            font-size: 14px;
-            background: #ffffff;
-            padding: 8px 12px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            z-index: 9999;
-          }
-          
-          #custom-translate select {
-            margin-left: 8px;
-            padding: 4px 6px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
           }
         `
       }} />
