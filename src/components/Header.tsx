@@ -51,10 +51,18 @@ const Header = () => {
           'google_translate_element'
         );
         
-        // Marquer comme prêt après un délai
-        setTimeout(() => {
-          setIsTranslateReady(true);
-        }, 1000);
+        // Attendre que l'élément soit vraiment prêt
+        const checkTranslateReady = () => {
+          const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+          if (selectElement) {
+            console.log('Google Translate est prêt !');
+            setIsTranslateReady(true);
+          } else {
+            setTimeout(checkTranslateReady, 100);
+          }
+        };
+        
+        setTimeout(checkTranslateReady, 500);
       }
     };
 
@@ -63,54 +71,87 @@ const Header = () => {
       const script = document.createElement('script');
       script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       script.async = true;
+      script.onload = () => {
+        console.log('Script Google Translate chargé');
+      };
       document.head.appendChild(script);
     } else if (window.google && window.google.translate) {
-      setIsTranslateReady(true);
+      window.googleTranslateElementInit();
     }
-
-    return () => {
-      // Nettoyer seulement si nécessaire
-      const scripts = document.querySelectorAll('script[src*="translate.google.com"]');
-      if (scripts.length > 1) {
-        scripts.forEach((script, index) => {
-          if (index > 0) script.remove();
-        });
-      }
-    };
   }, []);
 
   const handleLanguageChange = (googleCode: string, langName: string) => {
     console.log(`Tentative de changement vers ${langName} (${googleCode})`);
     
     if (!isTranslateReady) {
-      console.log('Google Translate pas encore prêt');
-      return;
-    }
-
-    // Méthode 1: Essayer avec le sélecteur direct
-    const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-    if (selectElement) {
-      console.log('Sélecteur trouvé, changement de langue...');
-      selectElement.value = googleCode;
-      selectElement.dispatchEvent(new Event('change', { bubbles: true }));
-      return;
-    }
-
-    // Méthode 2: Attendre un peu et réessayer
-    setTimeout(() => {
-      const selectElement2 = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      if (selectElement2) {
-        console.log('Sélecteur trouvé au 2ème essai, changement de langue...');
-        selectElement2.value = googleCode;
-        selectElement2.dispatchEvent(new Event('change', { bubbles: true }));
-      } else {
-        console.log('Sélecteur Google Translate non trouvé');
-        // Méthode 3: Forcer la création si nécessaire
+      console.log('Google Translate pas encore prêt, tentative de réinitialisation...');
+      // Réessayer d'initialiser
+      setTimeout(() => {
         if (window.google && window.google.translate) {
           window.googleTranslateElementInit();
         }
+      }, 1000);
+      return;
+    }
+
+    // Fonction pour changer la langue
+    const changeLanguage = () => {
+      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      console.log('Élément sélecteur:', selectElement);
+      
+      if (selectElement) {
+        console.log('Options disponibles:', Array.from(selectElement.options).map(opt => opt.value));
+        console.log('Changement vers:', googleCode);
+        
+        selectElement.value = googleCode;
+        
+        // Déclencher l'événement change
+        const event = new Event('change', { bubbles: true });
+        selectElement.dispatchEvent(event);
+        
+        // Alternative: déclencher aussi onchange directement
+        if (selectElement.onchange) {
+          selectElement.onchange(event as any);
+        }
+        
+        console.log('Événement change déclenché');
+      } else {
+        console.log('Sélecteur Google Translate non trouvé');
+        
+        // Forcer la visibilité temporaire pour debug
+        const translateDiv = document.getElementById('google_translate_element');
+        if (translateDiv) {
+          console.log('Div Google Translate trouvée, contenu:', translateDiv.innerHTML);
+          
+          // Rendre temporairement visible pour forcer l'initialisation
+          translateDiv.style.position = 'static';
+          translateDiv.style.visibility = 'visible';
+          translateDiv.style.opacity = '1';
+          
+          setTimeout(() => {
+            const selectElement2 = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+            if (selectElement2) {
+              console.log('Sélecteur trouvé après rendu visible');
+              selectElement2.value = googleCode;
+              selectElement2.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+            
+            // Remettre invisible
+            translateDiv.style.position = 'absolute';
+            translateDiv.style.top = '-9999px';
+            translateDiv.style.left = '-9999px';
+            translateDiv.style.visibility = 'hidden';
+            translateDiv.style.opacity = '0';
+          }, 100);
+        }
       }
-    }, 500);
+    };
+
+    // Essayer immédiatement
+    changeLanguage();
+    
+    // Si ça ne marche pas, réessayer après un délai
+    setTimeout(changeLanguage, 200);
   };
 
   const mainNavItems = [
@@ -131,14 +172,19 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - caché mais accessible */}
-      <div id="google_translate_element" style={{ 
-        position: 'absolute', 
-        top: '-9999px', 
-        left: '-9999px',
-        visibility: 'hidden',
-        opacity: 0 
-      }}></div>
+      {/* Google Translate Element - maintenir caché mais accessible */}
+      <div 
+        id="google_translate_element" 
+        style={{ 
+          position: 'absolute', 
+          top: '-9999px', 
+          left: '-9999px',
+          visibility: 'hidden',
+          opacity: 0,
+          width: '1px',
+          height: '1px'
+        }}
+      ></div>
       
       {/* Contact Bar */}
       <div className="bg-green-600 text-white py-2 hidden lg:block">
