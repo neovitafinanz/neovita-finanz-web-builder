@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -16,6 +15,7 @@ declare global {
   interface Window {
     google: any;
     googleTranslateElementInit: () => void;
+    googleTranslateInstance: any;
   }
 }
 
@@ -42,7 +42,7 @@ const Header = () => {
     // Fonction d'initialisation de Google Translate
     window.googleTranslateElementInit = () => {
       if (window.google && window.google.translate) {
-        new window.google.translate.TranslateElement(
+        window.googleTranslateInstance = new window.google.translate.TranslateElement(
           {
             pageLanguage: 'fr',
             includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
@@ -53,97 +53,142 @@ const Header = () => {
           'google_translate_element'
         );
         
-        // Attendre que l'élément soit complètement créé
         setTimeout(() => {
           setIsTranslateReady(true);
-          console.log('Google Translate initialisé');
+          console.log('Google Translate initialisé et prêt');
           
-          // Masquer complètement l'interface Google Translate après initialisation
-          const gtElement = document.getElementById('google_translate_element');
-          if (gtElement) {
-            gtElement.style.display = 'none';
-          }
-          
-          // Masquer aussi la barre de traduction Google qui peut apparaître
-          const observer = new MutationObserver(() => {
-            const googleBar = document.querySelector('.goog-te-banner-frame');
-            if (googleBar) {
-              (googleBar as HTMLElement).style.display = 'none';
-            }
-            
-            // Masquer tous les éléments de l'interface Google Translate
-            const allGoogleElements = document.querySelectorAll('[class*="goog-te"], [id*="google_translate"]');
-            allGoogleElements.forEach(element => {
-              if (element.id !== 'google_translate_element') {
-                (element as HTMLElement).style.display = 'none';
-              }
-            });
-          });
-          
-          observer.observe(document.body, { childList: true, subtree: true });
-        }, 3000);
+          // Masquer complètement l'interface Google Translate
+          hideGoogleTranslateUI();
+        }, 2000);
       }
     };
 
-    // Charger Google Translate seulement si pas déjà chargé
+    // Charger Google Translate
     if (!document.querySelector('script[src*="translate.google.com"]')) {
       const script = document.createElement('script');
       script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       script.async = true;
+      script.onload = () => {
+        console.log('Script Google Translate chargé');
+      };
       document.head.appendChild(script);
     } else if (window.google && window.google.translate) {
       window.googleTranslateElementInit();
     }
+
+    return () => {
+      // Nettoyage
+      const scripts = document.querySelectorAll('script[src*="translate.google.com"]');
+      scripts.forEach(script => script.remove());
+    };
   }, []);
 
+  const hideGoogleTranslateUI = () => {
+    const hideElements = () => {
+      // Masquer l'élément principal
+      const gtElement = document.getElementById('google_translate_element');
+      if (gtElement) {
+        gtElement.style.display = 'none';
+      }
+
+      // Masquer la barre de Google Translate
+      const googleBar = document.querySelector('.goog-te-banner-frame');
+      if (googleBar) {
+        (googleBar as HTMLElement).style.display = 'none';
+      }
+
+      // Masquer tous les éléments Google Translate
+      const allGoogleElements = document.querySelectorAll('[class*="goog-te"], [id*="google_translate"], .skiptranslate');
+      allGoogleElements.forEach(element => {
+        if (element.id !== 'google_translate_element') {
+          (element as HTMLElement).style.display = 'none';
+        }
+      });
+
+      // Masquer le body de Google Translate s'il apparaît
+      if (document.body.classList.contains('translated-ltr') || document.body.classList.contains('translated-rtl')) {
+        const style = document.createElement('style');
+        style.innerHTML = `
+          .goog-te-banner-frame { display: none !important; }
+          .goog-te-menu-value { display: none !important; }
+          .goog-te-gadget { display: none !important; }
+          .goog-te-combo { display: none !important; }
+          body { top: 0px !important; }
+        `;
+        document.head.appendChild(style);
+      }
+    };
+
+    // Observer pour masquer les éléments qui apparaissent dynamiquement
+    const observer = new MutationObserver(() => {
+      hideElements();
+    });
+
+    observer.observe(document.body, { 
+      childList: true, 
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    // Masquer immédiatement
+    hideElements();
+  };
+
   const handleLanguageChange = (googleCode: string, langName: string) => {
-    console.log(`Changement vers ${langName} (${googleCode})`);
+    console.log(`Tentative de traduction vers ${langName} (${googleCode})`);
     
     if (!isTranslateReady) {
-      console.log('Google Translate pas prêt');
+      console.log('Google Translate pas encore prêt');
       return;
     }
 
-    // Attendre un peu puis chercher le sélecteur avec une approche plus robuste
-    setTimeout(() => {
-      // Chercher tous les éléments select possibles
-      const allSelects = document.querySelectorAll('select');
-      console.log('Nombre de selects trouvés:', allSelects.length);
-      
-      let targetSelect = null;
-      
-      // Parcourir tous les selects pour trouver celui de Google Translate
-      allSelects.forEach((select, index) => {
-        console.log(`Select ${index}:`, select.className, select.name, select.id);
-        
-        // Le select de Google Translate contient généralement ces classes ou attributs
-        if (select.className.includes('goog-te-combo') || 
-            select.querySelector('option[value="' + googleCode + '"]')) {
-          targetSelect = select;
-          console.log('Select Google Translate trouvé:', select);
+    // Méthode 1: Utiliser l'API Google Translate directement
+    if (window.google && window.google.translate) {
+      try {
+        // Restaurer la langue originale si nécessaire
+        if (googleCode === 'fr') {
+          window.location.href = window.location.href.split('#')[0];
+          return;
         }
-      });
-      
-      if (targetSelect) {
-        console.log('Changement de langue vers:', googleCode);
-        targetSelect.value = googleCode;
+
+        // Créer un lien de traduction direct
+        const currentUrl = window.location.href.split('#')[0];
+        const translateUrl = `https://translate.google.com/translate?sl=fr&tl=${googleCode}&u=${encodeURIComponent(currentUrl)}`;
         
-        // Déclencher l'événement change
-        const changeEvent = new Event('change', { bubbles: true });
-        targetSelect.dispatchEvent(changeEvent);
-        
-        console.log('Événement change déclenché');
-      } else {
-        console.log('Aucun select Google Translate trouvé');
-        
-        // Fallback: essayer de cliquer sur le lien de traduction approprié
-        const translateLinks = document.querySelectorAll('a[onclick*="' + googleCode + '"]');
-        if (translateLinks.length > 0) {
-          console.log('Clic sur le lien de traduction');
-          (translateLinks[0] as HTMLElement).click();
-        }
+        // Ouvrir dans la même fenêtre
+        window.location.href = translateUrl;
+        return;
+      } catch (error) {
+        console.error('Erreur lors de la traduction:', error);
       }
-    }, 500);
+    }
+
+    // Méthode 2: Chercher et utiliser le sélecteur Google Translate
+    setTimeout(() => {
+      const selectElement = document.querySelector('select.goog-te-combo') as HTMLSelectElement;
+      
+      if (selectElement) {
+        console.log('Sélecteur Google Translate trouvé');
+        selectElement.value = googleCode;
+        
+        // Déclencher les événements nécessaires
+        const events = ['change', 'click', 'input'];
+        events.forEach(eventType => {
+          const event = new Event(eventType, { bubbles: true });
+          selectElement.dispatchEvent(event);
+        });
+        
+        console.log(`Langue changée vers ${googleCode}`);
+      } else {
+        console.log('Sélecteur Google Translate non trouvé, tentative alternative');
+        
+        // Méthode 3: Utiliser l'URL de traduction Google directe
+        const currentUrl = window.location.href.split('#')[0];
+        const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${googleCode}&u=${encodeURIComponent(currentUrl)}`;
+        window.open(translateUrl, '_self');
+      }
+    }, 100);
   };
 
   const mainNavItems = [
