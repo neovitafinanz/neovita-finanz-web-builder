@@ -17,13 +17,52 @@ const GoogleTranslate = () => {
       try {
         new window.google.translate.TranslateElement({
           pageLanguage: 'fr',
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+          autoDisplay: false
         }, 'google_translate_element');
         console.log('Google Translate initialisé avec succès');
       } catch (error) {
         console.error('Erreur lors de l\'initialisation de Google Translate:', error);
       }
     };
+
+    // Gestionnaire pour le sélecteur personnalisé
+    const handleLanguageChange = () => {
+      const selector = document.getElementById('languageSelector') as HTMLSelectElement;
+      const selectorMobile = document.getElementById('languageSelectorMobile') as HTMLSelectElement;
+      
+      const addChangeListener = (element: HTMLSelectElement | null) => {
+        if (element) {
+          element.addEventListener('change', function () {
+            const language = element.value;
+            if (language) {
+              const frame = document.querySelector('iframe.goog-te-menu-frame') as HTMLIFrameElement;
+              if (frame && frame.contentWindow) {
+                const menuItem = frame.contentWindow.document.querySelector(`.goog-te-menu2-item span[text="${language}"]`) as HTMLElement;
+                if (menuItem) {
+                  menuItem.click();
+                }
+              } else {
+                const select = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+                if (select) {
+                  select.value = language;
+                  select.dispatchEvent(new Event('change'));
+                }
+              }
+            }
+          });
+        }
+      };
+
+      addChangeListener(selector);
+      addChangeListener(selectorMobile);
+    };
+
+    // Attendre que le DOM soit chargé
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', handleLanguageChange);
+    } else {
+      handleLanguageChange();
+    }
 
     // Chargement du script Google Translate
     const script = document.createElement('script');
