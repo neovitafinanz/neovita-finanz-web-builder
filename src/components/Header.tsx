@@ -51,18 +51,10 @@ const Header = () => {
           'google_translate_element'
         );
         
-        // Attendre que l'élément soit vraiment prêt
-        const checkTranslateReady = () => {
-          const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-          if (selectElement) {
-            console.log('Google Translate est prêt !');
-            setIsTranslateReady(true);
-          } else {
-            setTimeout(checkTranslateReady, 100);
-          }
-        };
-        
-        setTimeout(checkTranslateReady, 500);
+        setTimeout(() => {
+          setIsTranslateReady(true);
+          console.log('Google Translate initialisé');
+        }, 1000);
       }
     };
 
@@ -71,9 +63,6 @@ const Header = () => {
       const script = document.createElement('script');
       script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       script.async = true;
-      script.onload = () => {
-        console.log('Script Google Translate chargé');
-      };
       document.head.appendChild(script);
     } else if (window.google && window.google.translate) {
       window.googleTranslateElementInit();
@@ -81,77 +70,66 @@ const Header = () => {
   }, []);
 
   const handleLanguageChange = (googleCode: string, langName: string) => {
-    console.log(`Tentative de changement vers ${langName} (${googleCode})`);
+    console.log(`Changement vers ${langName} (${googleCode})`);
     
     if (!isTranslateReady) {
-      console.log('Google Translate pas encore prêt, tentative de réinitialisation...');
-      // Réessayer d'initialiser
-      setTimeout(() => {
-        if (window.google && window.google.translate) {
-          window.googleTranslateElementInit();
-        }
-      }, 1000);
+      console.log('Google Translate pas prêt');
       return;
     }
 
-    // Fonction pour changer la langue
-    const changeLanguage = () => {
-      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-      console.log('Élément sélecteur:', selectElement);
-      
-      if (selectElement) {
-        console.log('Options disponibles:', Array.from(selectElement.options).map(opt => opt.value));
-        console.log('Changement vers:', googleCode);
-        
-        selectElement.value = googleCode;
-        
-        // Déclencher l'événement change
-        const event = new Event('change', { bubbles: true });
-        selectElement.dispatchEvent(event);
-        
-        // Alternative: déclencher aussi onchange directement
-        if (selectElement.onchange) {
-          selectElement.onchange(event as any);
-        }
-        
-        console.log('Événement change déclenché');
-      } else {
-        console.log('Sélecteur Google Translate non trouvé');
-        
-        // Forcer la visibilité temporaire pour debug
-        const translateDiv = document.getElementById('google_translate_element');
-        if (translateDiv) {
-          console.log('Div Google Translate trouvée, contenu:', translateDiv.innerHTML);
-          
-          // Rendre temporairement visible pour forcer l'initialisation
-          translateDiv.style.position = 'static';
-          translateDiv.style.visibility = 'visible';
-          translateDiv.style.opacity = '1';
-          
-          setTimeout(() => {
-            const selectElement2 = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-            if (selectElement2) {
-              console.log('Sélecteur trouvé après rendu visible');
-              selectElement2.value = googleCode;
-              selectElement2.dispatchEvent(new Event('change', { bubbles: true }));
-            }
-            
-            // Remettre invisible
-            translateDiv.style.position = 'absolute';
-            translateDiv.style.top = '-9999px';
-            translateDiv.style.left = '-9999px';
-            translateDiv.style.visibility = 'hidden';
-            translateDiv.style.opacity = '0';
-          }, 100);
-        }
+    // Méthode 1: Utiliser l'API Google Translate directement
+    if (window.google && window.google.translate) {
+      const translateInstance = window.google.translate.TranslateElement.getInstance();
+      if (translateInstance) {
+        console.log('Utilisation de l\'API Google Translate');
+        translateInstance.showBanner(false);
+        translateInstance.setLanguage(googleCode);
+        return;
       }
-    };
+    }
 
-    // Essayer immédiatement
-    changeLanguage();
-    
-    // Si ça ne marche pas, réessayer après un délai
-    setTimeout(changeLanguage, 200);
+    // Méthode 2: Simuler un clic sur le lien de langue
+    const translateLink = document.querySelector(`a[href*="&tl=${googleCode}"]`) as HTMLAnchorElement;
+    if (translateLink) {
+      console.log('Clic sur le lien de traduction');
+      translateLink.click();
+      return;
+    }
+
+    // Méthode 3: Chercher le sélecteur traditionnel
+    const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+    if (selectElement) {
+      console.log('Utilisation du sélecteur traditionnel');
+      selectElement.value = googleCode;
+      selectElement.dispatchEvent(new Event('change', { bubbles: true }));
+      return;
+    }
+
+    // Méthode 4: Utiliser le nouveau format d'interface
+    const newTranslateButton = document.querySelector('.VIpgJd-ZVi9od-xl07Ob-lTBxed') as HTMLElement;
+    if (newTranslateButton) {
+      console.log('Clic sur le nouveau bouton Google Translate');
+      newTranslateButton.click();
+      
+      // Attendre que le menu se charge et chercher l'option de langue
+      setTimeout(() => {
+        const langOptions = document.querySelectorAll('[data-language-code="' + googleCode + '"]');
+        if (langOptions.length > 0) {
+          (langOptions[0] as HTMLElement).click();
+        } else {
+          // Chercher par texte alternatif
+          const allOptions = document.querySelectorAll('.goog-te-menu2-item span');
+          for (let option of allOptions) {
+            if (option.textContent?.toLowerCase().includes(langName.toLowerCase().substring(0, 3))) {
+              (option.parentElement as HTMLElement).click();
+              break;
+            }
+          }
+        }
+      }, 300);
+    }
+
+    console.log('Aucune méthode de traduction disponible');
   };
 
   const mainNavItems = [
@@ -247,7 +225,7 @@ const Header = () => {
                     <ChevronDown className="w-4 h-4" />
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg">
+                <DropdownMenuContent align="end" className="w-48 bg-white border border-gray-200 shadow-lg z-50">
                   {languages.map((lang) => (
                     <DropdownMenuItem
                       key={lang.code}
@@ -303,7 +281,7 @@ const Header = () => {
                         <ChevronDown className="w-4 h-4" />
                       </Button>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent align="start" className="w-48 bg-white border border-gray-200 shadow-lg">
+                    <DropdownMenuContent align="start" className="w-48 bg-white border border-gray-200 shadow-lg z-50">
                       {languages.map((lang) => (
                         <DropdownMenuItem
                           key={lang.code}
