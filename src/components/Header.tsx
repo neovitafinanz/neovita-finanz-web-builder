@@ -105,10 +105,10 @@ const Header = () => {
                     variant="ghost" 
                     size="sm" 
                     className="flex items-center space-x-2"
-                    aria-label="Sélectionner la langue"
+                    aria-label="Sélectionner une langue"
                   >
                     <Globe className="w-4 h-4" />
-                    <span>{currentLang.flag}</span>
+                    <span>Sélectionner une langue</span>
                     <ChevronDown className="w-4 h-4" />
                   </Button>
                 </DropdownMenuTrigger>
@@ -165,7 +165,7 @@ const Header = () => {
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="sm" className="flex items-center space-x-2">
                         <Globe className="w-4 h-4" />
-                        <span>{currentLang.flag}</span>
+                        <span>Sélectionner une langue</span>
                         <ChevronDown className="w-4 h-4" />
                       </Button>
                     </DropdownMenuTrigger>
