@@ -12,6 +12,7 @@ import { Shield, Clock, Users, CheckCircle } from 'lucide-react';
 
 const FormulaireCredit = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -79,7 +80,7 @@ const FormulaireCredit = () => {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validation
@@ -113,27 +114,64 @@ const FormulaireCredit = () => {
       return;
     }
 
-    // Simulation d'envoi
-    toast({
-      title: "Demande envoyée avec succès",
-      description: "Nous vous contacterons dans les plus brefs délais.",
-    });
+    setIsSubmitting(true);
 
-    // Reset du formulaire
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      emailConfirmation: '',
-      phone: '',
-      loanType: '',
-      amount: '',
-      currency: 'EUR',
-      duration: '',
-      income: '',
-      situation: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('https://formspree.io/f/mnnvbywo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          loanType: formData.loanType,
+          amount: formData.amount,
+          currency: formData.currency,
+          duration: formData.duration,
+          income: formData.income,
+          situation: formData.situation,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: `Nouvelle demande de crédit - ${formData.loanType}`
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Demande envoyée avec succès",
+          description: "Nous vous contacterons dans les plus brefs délais.",
+        });
+
+        // Reset du formulaire
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          emailConfirmation: '',
+          phone: '',
+          loanType: '',
+          amount: '',
+          currency: 'EUR',
+          duration: '',
+          income: '',
+          situation: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Erreur lors de l\'envoi');
+      }
+    } catch (error) {
+      toast({
+        title: "Erreur",
+        description: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -193,7 +231,6 @@ const FormulaireCredit = () => {
                               className="mt-2"
                               placeholder="Votre prénom"
                               required
-                              aria-describedby="firstName-description"
                             />
                           </div>
                           <div>
@@ -388,9 +425,10 @@ const FormulaireCredit = () => {
                         <Button 
                           type="submit"
                           size="lg"
+                          disabled={isSubmitting}
                           className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                         >
-                          Envoyer ma demande
+                          {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
                         </Button>
                       </div>
 

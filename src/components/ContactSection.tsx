@@ -17,6 +17,7 @@ const ContactSection = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -27,7 +28,7 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validation basique
@@ -40,20 +41,51 @@ const ContactSection = () => {
       return;
     }
 
-    // Simulation d'envoi
-    toast({
-      title: "Message envoyé !",
-      description: "Nous vous recontacterons dans les plus brefs délais.",
-    });
+    setIsSubmitting(true);
 
-    // Reset du formulaire
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
+    try {
+      const response = await fetch('https://formspree.io/f/mnnvbywo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: `Nouveau message de contact - ${formData.subject || 'Sans sujet'}`
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message envoyé !",
+          description: "Nous vous recontacterons dans les plus brefs délais.",
+        });
+
+        // Reset du formulaire
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Erreur lors de l\'envoi');
+      }
+    } catch (error) {
+      toast({
+        title: "Erreur",
+        description: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const openWhatsApp = () => {
@@ -279,10 +311,11 @@ const ContactSection = () => {
 
                     <Button 
                       type="submit"
+                      disabled={isSubmitting}
                       className="w-full bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 text-white py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
                     >
                       <Send className="w-5 h-5 mr-2" />
-                      Envoyer ma demande
+                      {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
                     </Button>
 
                     <p className="text-xs text-gray-500 text-center">
