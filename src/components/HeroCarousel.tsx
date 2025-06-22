@@ -12,28 +12,28 @@ const HeroCarousel = () => {
   const slides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       titleKey: 'hero.slide1.title',
       subtitleKey: 'hero.slide1.subtitle',
       descriptionKey: 'hero.slide1.description'
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       titleKey: 'hero.slide2.title',
       subtitleKey: 'hero.slide2.subtitle',
       descriptionKey: 'hero.slide2.description'
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       titleKey: 'hero.slide3.title',
       subtitleKey: 'hero.slide3.subtitle',
       descriptionKey: 'hero.slide3.description'
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
       titleKey: 'hero.slide4.title',
       subtitleKey: 'hero.slide4.subtitle',
       descriptionKey: 'hero.slide4.description'

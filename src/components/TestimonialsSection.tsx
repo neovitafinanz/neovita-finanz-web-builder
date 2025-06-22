@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,7 +14,7 @@ const TestimonialsSection = () => {
       comment: "Excellent service ! L'équipe de Neovita Finanz m'a accompagnée tout au long de mon projet immobilier. Processus rapide et transparent, je recommande vivement !",
       loanType: "Prêt immobilier",
       amount: "250 000€",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b098?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 2,
@@ -23,7 +24,7 @@ const TestimonialsSection = () => {
       comment: "Grâce à Neovita Finanz, j'ai pu regrouper tous mes crédits. Leur expertise m'a permis de réduire mes mensualités de 40%. Service professionnel et conseils avisés.",
       loanType: "Rachat de crédit",
       amount: "75 000€",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 3,
@@ -33,7 +34,7 @@ const TestimonialsSection = () => {
       comment: "Pour financer mes études de médecine, j'ai fait confiance à Neovita Finanz. Conditions privilégiées et équipe très à l'écoute. Un vrai partenariat !",
       loanType: "Prêt étudiant",
       amount: "45 000€",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 4,
@@ -43,7 +44,7 @@ const TestimonialsSection = () => {
       comment: "Rénovation complète de ma maison grâce au crédit travaux de Neovita Finanz. Taux compétitif et démarches simplifiées. Résultat au-delà de mes attentes !",
       loanType: "Crédit travaux",
       amount: "80 000€",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 5,
@@ -53,7 +54,7 @@ const TestimonialsSection = () => {
       comment: "Service client exceptionnel ! Mon conseiller a pris le temps de m'expliquer toutes les options. J'ai obtenu mon prêt personnel en 48h seulement.",
       loanType: "Prêt personnel",
       amount: "25 000€",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     },
     {
       id: 6,
@@ -63,7 +64,7 @@ const TestimonialsSection = () => {
       comment: "Pour développer mon entreprise, j'avais besoin d'un crédit-bail. Neovita Finanz a su adapter la solution à mes besoins spécifiques. Parfait !",
       loanType: "Crédit-bail",
       amount: "120 000€",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
     }
   ];
 
