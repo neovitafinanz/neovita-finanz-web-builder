@@ -14,145 +14,121 @@
     "requestLoan": "Demande de Prêt",
     "discover": "Découvrir",
     "learnMoreAbout": "En savoir plus sur",
-    "startRequest": "Commencer ma demande",
-    "requestThisLoan": "Demander ce prêt",
-    "makeMyRequest": "Faire ma demande",
-    "simulateMyLoan": "Simuler mon prêt"
+    "startRequest": "Commencer ma demande"
   },
-  "personalLoans": {
-    "title": "Prêt Personnel",
-    "subtitle": "Financez tous vos projets personnels avec des conditions avantageuses",
-    "characteristics": "Caractéristiques du Prêt Personnel",
-    "forWhichProjects": "Pour quels projets ?",
-    "projectsDescription": "Le prêt personnel vous permet de financer tous vos projets sans justifier l'utilisation des fonds",
-    "whyChoose": "Pourquoi choisir notre prêt personnel ?",
-    "exampleFinancing": "Exemple de financement",
-    "amountBorrowed": "Montant emprunté",
-    "repaymentDuration": "Durée de remboursement",
-    "monthlyPayment": "Mensualité",
-    "exampleDisclaimer": "*Exemple pour un TAEG de 3.9%. Sous réserve d'acceptation du dossier.",
-    "features": {
-      "flexibleAmounts": {
-        "title": "Montants flexibles",
-        "description": "De 3 000€ à 75 000€"
-      },
-      "adaptableDuration": {
-        "title": "Durée adaptable",
-        "description": "De 12 à 84 mois"
-      },
-      "noJustification": {
-        "title": "Sans justificatif",
-        "description": "Utilisation libre des fonds"
-      },
-      "advantageousRates": {
-        "title": "Taux avantageux",
-        "description": "À partir de 2.9% TAEG"
-      }
+  "hero": {
+    "slide1": {
+      "title": "Votre Partenaire de Confiance",
+      "subtitle": "Solutions de Financement Personnalisées",
+      "description": "Découvrez nos solutions de crédit adaptées à vos besoins avec un accompagnement expert et personnalisé."
     },
-    "advantages": [
-      "Réponse rapide sous 24h",
-      "Taux compétitifs dès 2.9%",
-      "Aucun frais de dossier",
-      "Remboursement anticipé possible",
-      "Déblocage des fonds sous 48h",
-      "Accompagnement personnalisé"
-    ],
-    "useCases": {
-      "autoMoto": {
-        "title": "Financement auto/moto",
-        "description": "Achetez le véhicule de vos rêves"
-      },
-      "travel": {
-        "title": "Voyages et loisirs",
-        "description": "Réalisez vos projets de voyage"
-      },
-      "homeEquipment": {
-        "title": "Équipement maison",
-        "description": "Électroménager, mobilier, high-tech"
-      },
-      "familyEvents": {
-        "title": "Évènements familiaux",
-        "description": "Mariage, naissance, anniversaire"
-      }
+    "slide2": {
+      "title": "Prêts Immobiliers",
+      "subtitle": "Réalisez Votre Projet Immobilier",
+      "description": "Des taux compétitifs et un accompagnement sur mesure pour concrétiser vos projets immobiliers."
+    },
+    "slide3": {
+      "title": "Rachat de Crédit",
+      "subtitle": "Simplifiez Vos Finances",
+      "description": "Regroupez vos crédits en un seul pour réduire vos mensualités et retrouver votre sérénité financière."
+    },
+    "slide4": {
+      "title": "Expertise & Proximité",
+      "subtitle": "43 Conseillers à Votre Service",
+      "description": "Une équipe d'experts dédiée pour vous accompagner dans tous vos projets de financement."
+    },
+    "cta": {
+      "primary": "Faire une demande",
+      "secondary": "Simuler mon prêt"
+    },
+    "disclaimer": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager."
+  },
+  "home": {
+    "metaDescription": "Neovita Finanz - Solutions de financement personnalisées. Prêts personnels, immobiliers, rachat de crédit avec accompagnement expert.",
+    "servicesTitle": "Nos Solutions de Financement",
+    "servicesSubtitle": "Des solutions adaptées à tous vos projets de vie",
+    "advantagesTitle": "Pourquoi Choisir Neovita Finanz",
+    "ctaTitle": "Prêt à Commencer Votre Projet ?",
+    "ctaSubtitle": "Nos conseillers experts vous accompagnent dans votre demande de financement"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Prêts Personnels",
+      "description": "Financez vos projets personnels avec des conditions avantageuses"
+    },
+    "mortgageLoans": {
+      "title": "Prêts Immobiliers",
+      "description": "Concrétisez votre projet immobilier avec notre expertise"
+    },
+    "creditBuyback": {
+      "title": "Rachat de Crédit",
+      "description": "Simplifiez vos remboursements et réduisez vos mensualités"
     }
   },
-  "mortgageLoans": {
-    "title": "Prêt Immobilier",
-    "subtitle": "Concrétisez votre projet immobilier avec notre accompagnement expert",
-    "characteristics": "Caractéristiques du Prêt Immobilier",
-    "whyChoose": "Pourquoi choisir notre prêt immobilier ?",
-    "features": {
-      "highAmounts": {
-        "title": "Montants élevés",
-        "description": "Jusqu'à 1 000 000€"
-      },
-      "allProjects": {
-        "title": "Tous projets",
-        "description": "Achat, construction, investissement"
-      },
-      "secured": {
-        "title": "Sécurisé",
-        "description": "Garantie hypothécaire"
-      },
-      "advantageousRates": {
-        "title": "Taux avantageux",
-        "description": "À partir de 1.9% TAEG"
-      }
+  "advantages": {
+    "security": {
+      "title": "Sécurité & Confiance",
+      "description": "Établissement agréé avec 15 ans d'expérience dans le financement"
     },
-    "advantages": [
-      "Taux immobiliers compétitifs",
-      "Accompagnement personnalisé",
-      "Étude gratuite de votre dossier",
-      "Négociation avec les banques",
-      "Suivi jusqu'à la signature",
-      "Assurance emprunteur incluse"
-    ]
-  },
-  "creditBuyback": {
-    "title": "Rachat de Crédit",
-    "subtitle": "Optimisez vos finances en regroupant tous vos crédits",
-    "advantages": "Les avantages du rachat de crédit",
-    "studyMyFile": "Étudier mon dossier",
-    "advantagesList": [
-      "Réduction de vos mensualités",
-      "Simplification de votre gestion",
-      "Taux potentiellement plus avantageux",
-      "Une seule mensualité",
-      "Possibilité de trésorerie supplémentaire",
-      "Conseil personnalisé gratuit"
-    ]
-  },
-  "workCredit": {
-    "title": "Crédit Travaux",
-    "subtitle": "Donnez vie à vos projets de rénovation et d'aménagement",
-    "financedWorkTypes": "Types de travaux financés",
-    "financeMyWork": "Financer mes travaux",
-    "projectTypes": [
-      "Rénovation énergétique",
-      "Extension de maison",
-      "Aménagement intérieur",
-      "Travaux de toiture",
-      "Installation piscine",
-      "Modernisation cuisine/salle de bain"
-    ]
-  },
-  "insurance": {
-    "title": "Nos Assurances",
-    "subtitle": "Protégez ce qui compte le plus pour vous",
-    "requestQuote": "Demander un devis",
-    "types": {
-      "borrowerInsurance": {
-        "title": "Assurance emprunteur",
-        "description": "Protection de votre prêt"
-      },
-      "homeInsurance": {
-        "title": "Assurance habitation",
-        "description": "Protection de votre logement"
-      },
-      "healthInsurance": {
-        "title": "Assurance santé",
-        "description": "Couverture médicale complète"
-      }
+    "speed": {
+      "title": "Rapidité & Efficacité",
+      "description": "Réponse sous 48h et déblocage rapide de vos fonds"
+    },
+    "experts": {
+      "title": "Accompagnement Expert",
+      "description": "43 conseillers spécialisés pour vous guider à chaque étape"
     }
+  },
+  "footer": {
+    "tagline": "Votre partenaire financier de confiance",
+    "description": "Neovita Finanz vous accompagne depuis 15 ans dans tous vos projets de financement avec expertise et proximité.",
+    "sections": {
+      "services": "Nos Services",
+      "company": "L'Entreprise",
+      "legal": "Informations Légales"
+    },
+    "services": {
+      "personalLoans": "Prêts Personnels",
+      "mortgageLoans": "Prêts Immobiliers",
+      "creditBuyback": "Rachat de Crédit",
+      "workCredit": "Crédit Travaux",
+      "insurance": "Assurances"
+    },
+    "company": {
+      "about": "À Propos",
+      "team": "Notre Équipe",
+      "careers": "Carrières",
+      "partners": "Partenaires",
+      "news": "Actualités"
+    },
+    "legal": {
+      "terms": "Mentions Légales",
+      "privacy": "Politique de Confidentialité",
+      "conditions": "Conditions Générales",
+      "sitemap": "Plan du Site",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifications",
+      "gdpr": "Conforme RGPD",
+      "gdprDesc": "Protection des données",
+      "ssl": "Sécurisé SSL",
+      "sslDesc": "Connexion sécurisée",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Établissement agréé"
+    },
+    "companyInfo": {
+      "title": "Informations Société",
+      "legalForm": "Forme juridique",
+      "capital": "Capital",
+      "employees": "Effectif"
+    },
+    "warning": {
+      "title": "Informations Importantes",
+      "rates": "De 0,9% à 19,9% selon profil et durée",
+      "credit": "Un crédit vous engage et doit être remboursé",
+      "insurance": "L'assurance emprunteur n'est pas obligatoire"
+    },
+    "copyright": "Tous droits réservés."
   }
 }

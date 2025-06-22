@@ -5,40 +5,38 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
 import { Calculator, CheckCircle, Clock, Euro, Shield, TrendingUp } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const PretPersonnel = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
 
   const advantages = [
-    "Réponse rapide sous 24h",
-    "Taux compétitifs dès 2.9%",
-    "Aucun frais de dossier",
-    "Remboursement anticipé possible",
-    "Déblocage des fonds sous 48h",
-    "Accompagnement personnalisé"
+    'Réponse rapide sous 24h',
+    'Taux compétitifs dès 2.9%',
+    'Aucun frais de dossier',
+    'Remboursement anticipé possible',
+    'Déblocage des fonds sous 48h',
+    'Accompagnement personnalisé'
   ];
 
   const useCases = [
     {
-      title: t('personalLoans.useCases.autoMoto.title'),
-      description: t('personalLoans.useCases.autoMoto.description'),
+      title: 'Financement auto/moto',
+      description: 'Achetez le véhicule de vos rêves',
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
-      title: t('personalLoans.useCases.travel.title'),
-      description: t('personalLoans.useCases.travel.description'),
+      title: 'Voyages et loisirs',
+      description: 'Réalisez vos projets de voyage',
       image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
-      title: t('personalLoans.useCases.homeEquipment.title'),
-      description: t('personalLoans.useCases.homeEquipment.description'),
+      title: 'Équipement maison',
+      description: 'Électroménager, mobilier, high-tech',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     },
     {
-      title: t('personalLoans.useCases.familyEvents.title'),
-      description: t('personalLoans.useCases.familyEvents.description'),
+      title: 'Évènements familiaux',
+      description: 'Mariage, naissance, anniversaire',
       image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
     }
   ];
@@ -46,29 +44,29 @@ const PretPersonnel = () => {
   const features = [
     {
       icon: Euro,
-      title: t('personalLoans.features.flexibleAmounts.title'),
-      description: t('personalLoans.features.flexibleAmounts.description')
+      title: 'Montants flexibles',
+      description: 'De 3 000€ à 75 000€'
     },
     {
       icon: Clock,
-      title: t('personalLoans.features.adaptableDuration.title'),
-      description: t('personalLoans.features.adaptableDuration.description')
+      title: 'Durée adaptable',
+      description: 'De 12 à 84 mois'
     },
     {
       icon: Shield,
-      title: t('personalLoans.features.noJustification.title'),
-      description: t('personalLoans.features.noJustification.description')
+      title: 'Sans justificatif',
+      description: 'Utilisation libre des fonds'
     },
     {
       icon: TrendingUp,
-      title: t('personalLoans.features.advantageousRates.title'),
-      description: t('personalLoans.features.advantageousRates.description')
+      title: 'Taux avantageux',
+      description: 'À partir de 2.9% TAEG'
     }
   ];
 
   return (
     <Layout 
-      title={t('personalLoans.title')}
+      title="Prêts personnels" 
       description="Prêt personnel en ligne avec Neovita Finanz. Taux dès 2.9%, réponse rapide, montants de 3000€ à 75000€. Demande en ligne sécurisée."
     >
       {/* Hero Section */}
@@ -82,10 +80,10 @@ const PretPersonnel = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              {t('personalLoans.title')}
+              Prêt Personnel
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200">
-              {t('personalLoans.subtitle')}
+              Financez tous vos projets personnels avec des conditions avantageuses
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -94,7 +92,7 @@ const PretPersonnel = () => {
                 className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105"
               >
                 <Calculator className="w-5 h-5 mr-2" />
-                {t('common.requestThisLoan')}
+                Demander ce prêt
               </Button>
             </div>
           </div>
@@ -106,7 +104,7 @@ const PretPersonnel = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              {t('personalLoans.characteristics')}
+              Caractéristiques du Prêt Personnel
             </h2>
           </div>
 
@@ -134,10 +132,10 @@ const PretPersonnel = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              {t('personalLoans.forWhichProjects')}
+              Pour quels projets ?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              {t('personalLoans.projectsDescription')}
+              Le prêt personnel vous permet de financer tous vos projets sans justifier l'utilisation des fonds
             </p>
           </div>
 
@@ -168,7 +166,7 @@ const PretPersonnel = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t('personalLoans.whyChoose')}
+                Pourquoi choisir notre prêt personnel ?
               </h2>
               <div className="space-y-4">
                 {advantages.map((advantage, index) => (
@@ -184,7 +182,7 @@ const PretPersonnel = () => {
                   size="lg"
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
                 >
-                  {t('common.makeMyRequest')}
+                  Faire ma demande
                 </Button>
               </div>
             </div>
@@ -204,32 +202,32 @@ const PretPersonnel = () => {
         <div className="container mx-auto px-4">
           <Card className="max-w-4xl mx-auto border-0 shadow-2xl">
             <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
-              <CardTitle className="text-2xl text-center">{t('personalLoans.exampleFinancing')}</CardTitle>
+              <CardTitle className="text-2xl text-center">Exemple de financement</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold text-green-600 mb-2">15 000€</div>
-                  <div className="text-gray-600">{t('personalLoans.amountBorrowed')}</div>
+                  <div className="text-gray-600">Montant emprunté</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-green-600 mb-2">60 mois</div>
-                  <div className="text-gray-600">{t('personalLoans.repaymentDuration')}</div>
+                  <div className="text-gray-600">Durée de remboursement</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-green-600 mb-2">272€</div>
-                  <div className="text-gray-600">{t('personalLoans.monthlyPayment')}*</div>
+                  <div className="text-gray-600">Mensualité*</div>
                 </div>
               </div>
               <div className="text-center mt-8">
                 <p className="text-sm text-gray-500 mb-4">
-                  {t('personalLoans.exampleDisclaimer')}
+                  *Exemple pour un TAEG de 3.9%. Sous réserve d'acceptation du dossier.
                 </p>
                 <Button 
                   onClick={() => navigate('/demande-credit')}
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
                 >
-                  {t('common.simulateMyLoan')}
+                  Simuler mon prêt
                 </Button>
               </div>
             </CardContent>

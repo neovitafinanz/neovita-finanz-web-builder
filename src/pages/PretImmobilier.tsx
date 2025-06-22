@@ -1,41 +1,49 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
 import { Calculator, CheckCircle, Home, Euro, Shield, TrendingUp } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
 
 const PretImmobilier = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+
+  const advantages = [
+    'Taux immobiliers compétitifs',
+    'Accompagnement personnalisé',
+    'Étude gratuite de votre dossier',
+    'Négociation avec les banques',
+    'Suivi jusqu\'à la signature',
+    'Assurance emprunteur incluse'
+  ];
 
   const features = [
     {
       icon: Euro,
-      title: t('mortgageLoans.features.highAmounts.title'),
-      description: t('mortgageLoans.features.highAmounts.description')
+      title: 'Montants élevés',
+      description: 'Jusqu\'à 1 000 000€'
     },
     {
       icon: Home,
-      title: t('mortgageLoans.features.allProjects.title'),
-      description: t('mortgageLoans.features.allProjects.description')
+      title: 'Tous projets',
+      description: 'Achat, construction, investissement'
     },
     {
       icon: Shield,
-      title: t('mortgageLoans.features.secured.title'),
-      description: t('mortgageLoans.features.secured.description')
+      title: 'Sécurisé',
+      description: 'Garantie hypothécaire'
     },
     {
       icon: TrendingUp,
-      title: t('mortgageLoans.features.advantageousRates.title'),
-      description: t('mortgageLoans.features.advantageousRates.description')
+      title: 'Taux avantageux',
+      description: 'À partir de 1.9% TAEG'
     }
   ];
 
   return (
     <Layout 
-      title={t('mortgageLoans.title')}
+      title="Prêts immobiliers" 
       description="Prêt immobilier avec Neovita Finanz. Taux compétitifs dès 1.9%, accompagnement personnalisé pour tous vos projets immobiliers."
     >
       {/* Hero Section */}
@@ -49,10 +57,10 @@ const PretImmobilier = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              {t('mortgageLoans.title')}
+              Prêt Immobilier
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200">
-              {t('mortgageLoans.subtitle')}
+              Concrétisez votre projet immobilier avec notre accompagnement expert
             </p>
             <Button 
               onClick={() => navigate('/demande-credit')}
@@ -60,7 +68,7 @@ const PretImmobilier = () => {
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold"
             >
               <Calculator className="w-5 h-5 mr-2" />
-              {t('common.requestThisLoan')}
+              Demander ce prêt
             </Button>
           </div>
         </div>
@@ -71,7 +79,7 @@ const PretImmobilier = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              {t('mortgageLoans.characteristics')}
+              Caractéristiques du Prêt Immobilier
             </h2>
           </div>
 
@@ -100,10 +108,10 @@ const PretImmobilier = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                {t('mortgageLoans.whyChoose')}
+                Pourquoi choisir notre prêt immobilier ?
               </h2>
               <div className="space-y-4">
-                {t('mortgageLoans.advantages').map((advantage, index) => (
+                {advantages.map((advantage, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <span className="text-gray-700">{advantage}</span>
@@ -116,7 +124,7 @@ const PretImmobilier = () => {
                   size="lg"
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
                 >
-                  {t('common.makeMyRequest')}
+                  Faire ma demande
                 </Button>
               </div>
             </div>

@@ -14,145 +14,121 @@
     "requestLoan": "Request Loan",
     "discover": "Discover",
     "learnMoreAbout": "Learn more about",
-    "startRequest": "Start my request",
-    "requestThisLoan": "Request this loan",
-    "makeMyRequest": "Make my request",
-    "simulateMyLoan": "Simulate my loan"
+    "startRequest": "Start my request"
   },
-  "personalLoans": {
-    "title": "Personal Loan",
-    "subtitle": "Finance all your personal projects with advantageous conditions",
-    "characteristics": "Personal Loan Characteristics",
-    "forWhichProjects": "For which projects?",
-    "projectsDescription": "Personal loans allow you to finance all your projects without justifying the use of funds",
-    "whyChoose": "Why choose our personal loan?",
-    "exampleFinancing": "Financing example",
-    "amountBorrowed": "Amount borrowed",
-    "repaymentDuration": "Repayment duration",
-    "monthlyPayment": "Monthly payment",
-    "exampleDisclaimer": "*Example for an APR of 3.9%. Subject to file acceptance.",
-    "features": {
-      "flexibleAmounts": {
-        "title": "Flexible amounts",
-        "description": "From €3,000 to €75,000"
-      },
-      "adaptableDuration": {
-        "title": "Adaptable duration",
-        "description": "From 12 to 84 months"
-      },
-      "noJustification": {
-        "title": "No justification",
-        "description": "Free use of funds"
-      },
-      "advantageousRates": {
-        "title": "Advantageous rates",
-        "description": "From 2.9% APR"
-      }
+  "hero": {
+    "slide1": {
+      "title": "Your Trusted Partner",
+      "subtitle": "Personalized Financing Solutions",
+      "description": "Discover our credit solutions adapted to your needs with expert and personalized support."
     },
-    "advantages": [
-      "Quick response within 24h",
-      "Competitive rates from 2.9%",
-      "No file fees",
-      "Early repayment possible",
-      "Fund release within 48h",
-      "Personalized support"
-    ],
-    "useCases": {
-      "autoMoto": {
-        "title": "Auto/motorcycle financing",
-        "description": "Buy the vehicle of your dreams"
-      },
-      "travel": {
-        "title": "Travel and leisure",
-        "description": "Realize your travel projects"
-      },
-      "homeEquipment": {
-        "title": "Home equipment",
-        "description": "Appliances, furniture, high-tech"
-      },
-      "familyEvents": {
-        "title": "Family events",
-        "description": "Wedding, birth, anniversary"
-      }
+    "slide2": {
+      "title": "Mortgage Loans",
+      "subtitle": "Realize Your Real Estate Project",
+      "description": "Competitive rates and tailor-made support to make your real estate projects a reality."
+    },
+    "slide3": {
+      "title": "Credit Buyback",
+      "subtitle": "Simplify Your Finances",
+      "description": "Consolidate your credits into one to reduce your monthly payments and regain your financial peace of mind."
+    },
+    "slide4": {
+      "title": "Expertise & Proximity",
+      "subtitle": "43 Advisors at Your Service",
+      "description": "A dedicated team of experts to support you in all your financing projects."
+    },
+    "cta": {
+      "primary": "Make a request",
+      "secondary": "Simulate my loan"
+    },
+    "disclaimer": "A credit commits you and must be repaid. Check your repayment capacity before committing."
+  },
+  "home": {
+    "metaDescription": "Neovita Finanz - Personalized financing solutions. Personal loans, mortgages, credit buyback with expert support.",
+    "servicesTitle": "Our Financing Solutions",
+    "servicesSubtitle": "Solutions adapted to all your life projects",
+    "advantagesTitle": "Why Choose Neovita Finanz",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaSubtitle": "Our expert advisors support you in your financing request"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Personal Loans",
+      "description": "Finance your personal projects with advantageous conditions"
+    },
+    "mortgageLoans": {
+      "title": "Mortgage Loans",
+      "description": "Make your real estate project a reality with our expertise"
+    },
+    "creditBuyback": {
+      "title": "Credit Buyback",
+      "description": "Simplify your repayments and reduce your monthly payments"
     }
   },
-  "mortgageLoans": {
-    "title": "Mortgage Loan",
-    "subtitle": "Make your real estate project a reality with our expert support",
-    "characteristics": "Mortgage Loan Characteristics",
-    "whyChoose": "Why choose our mortgage loan?",
-    "features": {
-      "highAmounts": {
-        "title": "High amounts",
-        "description": "Up to €1,000,000"
-      },
-      "allProjects": {
-        "title": "All projects",
-        "description": "Purchase, construction, investment"
-      },
-      "secured": {
-        "title": "Secured",
-        "description": "Mortgage guarantee"
-      },
-      "advantageousRates": {
-        "title": "Advantageous rates",
-        "description": "From 1.9% APR"
-      }
+  "advantages": {
+    "security": {
+      "title": "Security & Trust",
+      "description": "Approved establishment with 15 years of experience in financing"
     },
-    "advantages": [
-      "Competitive mortgage rates",
-      "Personalized support",
-      "Free file study",
-      "Bank negotiation",
-      "Follow-up until signature",
-      "Borrower insurance included"
-    ]
-  },
-  "creditBuyback": {
-    "title": "Credit Buyback",
-    "subtitle": "Optimize your finances by consolidating all your credits",
-    "advantages": "Credit buyback advantages",
-    "studyMyFile": "Study my file",
-    "advantagesList": [
-      "Reduction of your monthly payments",
-      "Simplification of your management",
-      "Potentially more advantageous rates",
-      "Single monthly payment",
-      "Possibility of additional cash flow",
-      "Free personalized advice"
-    ]
-  },
-  "workCredit": {
-    "title": "Work Credit",
-    "subtitle": "Bring your renovation and development projects to life",
-    "financedWorkTypes": "Types of financed work",
-    "financeMyWork": "Finance my work",
-    "projectTypes": [
-      "Energy renovation",
-      "House extension",
-      "Interior design",
-      "Roof work",
-      "Pool installation",
-      "Kitchen/bathroom modernization"
-    ]
-  },
-  "insurance": {
-    "title": "Our Insurance",
-    "subtitle": "Protect what matters most to you",
-    "requestQuote": "Request a quote",
-    "types": {
-      "borrowerInsurance": {
-        "title": "Borrower insurance",
-        "description": "Protection of your loan"
-      },
-      "homeInsurance": {
-        "title": "Home insurance",
-        "description": "Protection of your home"
-      },
-      "healthInsurance": {
-        "title": "Health insurance",
-        "description": "Complete medical coverage"
-      }
+    "speed": {
+      "title": "Speed & Efficiency",
+      "description": "Response within 48 hours and quick release of your funds"
+    },
+    "experts": {
+      "title": "Expert Support",
+      "description": "43 specialized advisors to guide you at every step"
     }
+  },
+  "footer": {
+    "tagline": "Your trusted financial partner",
+    "description": "Neovita Finanz has been supporting you for 15 years in all your financing projects with expertise and proximity.",
+    "sections": {
+      "services": "Our Services",
+      "company": "The Company",
+      "legal": "Legal Information"
+    },
+    "services": {
+      "personalLoans": "Personal Loans",
+      "mortgageLoans": "Mortgage Loans",
+      "creditBuyback": "Credit Buyback",
+      "workCredit": "Work Credit",
+      "insurance": "Insurance"
+    },
+    "company": {
+      "about": "About",
+      "team": "Our Team",
+      "careers": "Careers",
+      "partners": "Partners",
+      "news": "News"
+    },
+    "legal": {
+      "terms": "Legal Terms",
+      "privacy": "Privacy Policy",
+      "conditions": "General Conditions",
+      "sitemap": "Site Map",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifications",
+      "gdpr": "GDPR Compliant",
+      "gdprDesc": "Data protection",
+      "ssl": "SSL Secured",
+      "sslDesc": "Secure connection",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Approved establishment"
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "legalForm": "Legal form",
+      "capital": "Capital",
+      "employees": "Staff"
+    },
+    "warning": {
+      "title": "Important Information",
+      "rates": "From 0.9% to 19.9% depending on profile and duration",
+      "credit": "A credit commits you and must be repaid",
+      "insurance": "Borrower insurance is not mandatory"
+    },
+    "copyright": "All rights reserved."
   }
 }
