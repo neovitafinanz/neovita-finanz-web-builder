@@ -135,6 +135,31 @@ const GoogleTranslate = () => {
           }
         `
       }} />
+
+      {/* Custom Language Selector */}
+      <div id="custom-translate" dangerouslySetInnerHTML={{
+        __html: `
+          🌐 Langue :
+          <select id="languageSelector">
+            <option value="">Sélectionner</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="it">Italiano</option>
+            <option value="de">Deutsch</option>
+            <option value="pt">Português</option>
+            <option value="nl">Nederlands</option>
+            <option value="da">Dansk</option>
+            <option value="sv">Svenska</option>
+            <option value="no">Norsk</option>
+            <option value="ja">日本語</option>
+            <option value="zh-CN">中文 (简体)</option>
+            <option value="ru">Русский</option>
+          </select>
+        `
+      }} />
+
+      {/* Hidden Google Translate Element */}
+      <div id="google_translate_element" style={{ display: 'none' }}></div>
     </>
   );
 };
