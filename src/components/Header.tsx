@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -53,10 +52,11 @@ const Header = () => {
           'google_translate_element'
         );
         
+        // Attendre plus longtemps pour que tous les éléments soient créés
         setTimeout(() => {
           setIsTranslateReady(true);
           console.log('Google Translate initialisé');
-        }, 1000);
+        }, 2000);
       }
     };
 
@@ -79,29 +79,53 @@ const Header = () => {
       return;
     }
 
-    // Attendre un moment pour que l'interface soit prête
-    setTimeout(() => {
-      // Chercher le sélecteur de langue traditionnel
-      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+    // Fonction pour chercher le sélecteur avec plusieurs tentatives
+    const findAndChangeLanguage = (attempts = 0) => {
+      const maxAttempts = 10;
+      
+      if (attempts >= maxAttempts) {
+        console.log('Impossible de trouver le sélecteur après', maxAttempts, 'tentatives');
+        return;
+      }
+
+      // Chercher différents sélecteurs possibles
+      const selectors = [
+        '.goog-te-combo',
+        '#google_translate_element select',
+        '.goog-te-menu-value select',
+        'select[name="select-language"]'
+      ];
+
+      let selectElement = null;
+      
+      for (const selector of selectors) {
+        selectElement = document.querySelector(selector) as HTMLSelectElement;
+        if (selectElement) {
+          console.log('Sélecteur trouvé:', selector);
+          break;
+        }
+      }
+
       if (selectElement) {
-        console.log('Sélecteur trouvé, changement vers:', googleCode);
+        console.log('Changement vers:', googleCode);
         selectElement.value = googleCode;
         
-        // Déclencher l'événement change
-        const changeEvent = new Event('change', { bubbles: true });
-        selectElement.dispatchEvent(changeEvent);
-        
-        // Force également l'événement input au cas où
-        setTimeout(() => {
-          const inputEvent = new Event('input', { bubbles: true });
-          selectElement.dispatchEvent(inputEvent);
-        }, 100);
+        // Déclencher plusieurs événements pour s'assurer que ça marche
+        ['change', 'input', 'click'].forEach(eventType => {
+          const event = new Event(eventType, { bubbles: true });
+          selectElement.dispatchEvent(event);
+        });
         
         return;
       }
 
-      console.log('Sélecteur non trouvé');
-    }, 500);
+      // Si pas trouvé, réessayer après un délai plus court
+      console.log(`Tentative ${attempts + 1}: Sélecteur non trouvé, nouvelle tentative...`);
+      setTimeout(() => findAndChangeLanguage(attempts + 1), 200);
+    };
+
+    // Commencer la recherche après un délai initial
+    setTimeout(() => findAndChangeLanguage(), 300);
   };
 
   const mainNavItems = [
