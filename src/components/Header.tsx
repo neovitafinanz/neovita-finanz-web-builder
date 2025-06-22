@@ -77,59 +77,29 @@ const Header = () => {
       return;
     }
 
-    // Méthode 1: Utiliser l'API Google Translate directement
-    if (window.google && window.google.translate) {
-      const translateInstance = window.google.translate.TranslateElement.getInstance();
-      if (translateInstance) {
-        console.log('Utilisation de l\'API Google Translate');
-        translateInstance.showBanner(false);
-        translateInstance.setLanguage(googleCode);
+    // Attendre un moment pour que l'interface soit prête
+    setTimeout(() => {
+      // Chercher le sélecteur de langue traditionnel
+      const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+      if (selectElement) {
+        console.log('Sélecteur trouvé, changement vers:', googleCode);
+        selectElement.value = googleCode;
+        
+        // Déclencher l'événement change
+        const changeEvent = new Event('change', { bubbles: true });
+        selectElement.dispatchEvent(changeEvent);
+        
+        // Force également l'événement input au cas où
+        setTimeout(() => {
+          const inputEvent = new Event('input', { bubbles: true });
+          selectElement.dispatchEvent(inputEvent);
+        }, 100);
+        
         return;
       }
-    }
 
-    // Méthode 2: Simuler un clic sur le lien de langue
-    const translateLink = document.querySelector(`a[href*="&tl=${googleCode}"]`) as HTMLAnchorElement;
-    if (translateLink) {
-      console.log('Clic sur le lien de traduction');
-      translateLink.click();
-      return;
-    }
-
-    // Méthode 3: Chercher le sélecteur traditionnel
-    const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-    if (selectElement) {
-      console.log('Utilisation du sélecteur traditionnel');
-      selectElement.value = googleCode;
-      selectElement.dispatchEvent(new Event('change', { bubbles: true }));
-      return;
-    }
-
-    // Méthode 4: Utiliser le nouveau format d'interface
-    const newTranslateButton = document.querySelector('.VIpgJd-ZVi9od-xl07Ob-lTBxed') as HTMLElement;
-    if (newTranslateButton) {
-      console.log('Clic sur le nouveau bouton Google Translate');
-      newTranslateButton.click();
-      
-      // Attendre que le menu se charge et chercher l'option de langue
-      setTimeout(() => {
-        const langOptions = document.querySelectorAll('[data-language-code="' + googleCode + '"]');
-        if (langOptions.length > 0) {
-          (langOptions[0] as HTMLElement).click();
-        } else {
-          // Chercher par texte alternatif
-          const allOptions = document.querySelectorAll('.goog-te-menu2-item span');
-          for (let option of allOptions) {
-            if (option.textContent?.toLowerCase().includes(langName.toLowerCase().substring(0, 3))) {
-              (option.parentElement as HTMLElement).click();
-              break;
-            }
-          }
-        }
-      }, 300);
-    }
-
-    console.log('Aucune méthode de traduction disponible');
+      console.log('Sélecteur non trouvé');
+    }, 500);
   };
 
   const mainNavItems = [
@@ -150,17 +120,17 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - maintenir caché mais accessible */}
+      {/* Google Translate Element - visible temporairement pour debug */}
       <div 
         id="google_translate_element" 
         style={{ 
-          position: 'absolute', 
-          top: '-9999px', 
-          left: '-9999px',
-          visibility: 'hidden',
-          opacity: 0,
-          width: '1px',
-          height: '1px'
+          position: 'fixed',
+          top: '0px',
+          left: '0px',
+          zIndex: 9999,
+          backgroundColor: 'white',
+          border: '1px solid red',
+          padding: '10px'
         }}
       ></div>
       
