@@ -28,10 +28,14 @@ const LanguageRedirect = () => {
   // Langues supportées
   const supportedLanguages = ['fr', 'en', 'es', 'it', 'de', 'pt', 'nl', 'da', 'sv', 'no', 'ja', 'zh-CN', 'ru'];
   
+  console.log('LanguageRedirect - lang:', lang, 'pathname:', location.pathname);
+  
   // Si la langue n'est pas supportée, rediriger vers la version française
   if (!lang || !supportedLanguages.includes(lang)) {
     const pathWithoutLang = location.pathname.replace(/^\/[^\/]+/, '');
-    return <Navigate to={pathWithoutLang || '/'} replace />;
+    const redirectTo = pathWithoutLang || '/';
+    console.log('Redirecting to:', redirectTo);
+    return <Navigate to={redirectTo} replace />;
   }
 
   // Si la langue est supportée, afficher les routes
