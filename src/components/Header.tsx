@@ -52,11 +52,11 @@ const Header = () => {
           'google_translate_element'
         );
         
-        // Attendre plus longtemps pour que tous les éléments soient créés
+        // Attendre que l'élément soit complètement créé
         setTimeout(() => {
           setIsTranslateReady(true);
           console.log('Google Translate initialisé');
-        }, 2000);
+        }, 3000);
       }
     };
 
@@ -79,53 +79,46 @@ const Header = () => {
       return;
     }
 
-    // Fonction pour chercher le sélecteur avec plusieurs tentatives
-    const findAndChangeLanguage = (attempts = 0) => {
-      const maxAttempts = 10;
+    // Attendre un peu puis chercher le sélecteur avec une approche plus robuste
+    setTimeout(() => {
+      // Chercher tous les éléments select possibles
+      const allSelects = document.querySelectorAll('select');
+      console.log('Nombre de selects trouvés:', allSelects.length);
       
-      if (attempts >= maxAttempts) {
-        console.log('Impossible de trouver le sélecteur après', maxAttempts, 'tentatives');
-        return;
-      }
-
-      // Chercher différents sélecteurs possibles
-      const selectors = [
-        '.goog-te-combo',
-        '#google_translate_element select',
-        '.goog-te-menu-value select',
-        'select[name="select-language"]'
-      ];
-
-      let selectElement = null;
+      let targetSelect = null;
       
-      for (const selector of selectors) {
-        selectElement = document.querySelector(selector) as HTMLSelectElement;
-        if (selectElement) {
-          console.log('Sélecteur trouvé:', selector);
-          break;
+      // Parcourir tous les selects pour trouver celui de Google Translate
+      allSelects.forEach((select, index) => {
+        console.log(`Select ${index}:`, select.className, select.name, select.id);
+        
+        // Le select de Google Translate contient généralement ces classes ou attributs
+        if (select.className.includes('goog-te-combo') || 
+            select.querySelector('option[value="' + googleCode + '"]')) {
+          targetSelect = select;
+          console.log('Select Google Translate trouvé:', select);
+        }
+      });
+      
+      if (targetSelect) {
+        console.log('Changement de langue vers:', googleCode);
+        targetSelect.value = googleCode;
+        
+        // Déclencher l'événement change
+        const changeEvent = new Event('change', { bubbles: true });
+        targetSelect.dispatchEvent(changeEvent);
+        
+        console.log('Événement change déclenché');
+      } else {
+        console.log('Aucun select Google Translate trouvé');
+        
+        // Fallback: essayer de cliquer sur le lien de traduction approprié
+        const translateLinks = document.querySelectorAll('a[onclick*="' + googleCode + '"]');
+        if (translateLinks.length > 0) {
+          console.log('Clic sur le lien de traduction');
+          (translateLinks[0] as HTMLElement).click();
         }
       }
-
-      if (selectElement) {
-        console.log('Changement vers:', googleCode);
-        selectElement.value = googleCode;
-        
-        // Déclencher plusieurs événements pour s'assurer que ça marche
-        ['change', 'input', 'click'].forEach(eventType => {
-          const event = new Event(eventType, { bubbles: true });
-          selectElement.dispatchEvent(event);
-        });
-        
-        return;
-      }
-
-      // Si pas trouvé, réessayer après un délai plus court
-      console.log(`Tentative ${attempts + 1}: Sélecteur non trouvé, nouvelle tentative...`);
-      setTimeout(() => findAndChangeLanguage(attempts + 1), 200);
-    };
-
-    // Commencer la recherche après un délai initial
-    setTimeout(() => findAndChangeLanguage(), 300);
+    }, 500);
   };
 
   const mainNavItems = [
@@ -146,19 +139,16 @@ const Header = () => {
 
   return (
     <>
-      {/* Google Translate Element - invisible mais présent dans le DOM */}
+      {/* Google Translate Element - visible mais très petit */}
       <div 
         id="google_translate_element" 
         style={{ 
           position: 'absolute', 
-          top: '0px', 
-          left: '0px',
-          visibility: 'hidden',
-          opacity: 0,
+          top: '-1000px', 
+          left: '-1000px',
           width: '1px',
           height: '1px',
-          overflow: 'hidden',
-          pointerEvents: 'none'
+          overflow: 'hidden'
         }}
       ></div>
       
