@@ -1,5 +1,5 @@
-
 import React, { useEffect } from 'react';
+import { useUrlLanguage } from '@/hooks/useUrlLanguage';
 
 // Déclaration du type pour Google Translate
 declare global {
@@ -10,6 +10,8 @@ declare global {
 }
 
 const GoogleTranslate = () => {
+  const { updateUrlLanguage } = useUrlLanguage();
+
   useEffect(() => {
     // Fonction d'initialisation Google Translate
     window.googleTranslateElementInit = function() {
@@ -35,6 +37,9 @@ const GoogleTranslate = () => {
           element.addEventListener('change', function () {
             const language = element.value;
             if (language) {
+              // Mettre à jour l'URL avec la langue sélectionnée
+              updateUrlLanguage(language);
+              
               const frame = document.querySelector('iframe.goog-te-menu-frame') as HTMLIFrameElement;
               if (frame && frame.contentWindow) {
                 const menuItem = frame.contentWindow.document.querySelector(`.goog-te-menu2-item span[text="${language}"]`) as HTMLElement;
@@ -86,7 +91,7 @@ const GoogleTranslate = () => {
       }
       delete window.googleTranslateElementInit;
     };
-  }, []);
+  }, [updateUrlLanguage]);
 
   return (
     <>
