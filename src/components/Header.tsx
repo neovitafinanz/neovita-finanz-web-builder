@@ -174,7 +174,8 @@ const Header = () => {
         </div>
       </header>
 
-      <style jsx>{`
+      <style>
+        {`
         /* Personnalisation de l'interface Google Translate */
         .goog-te-gadget {
           color: white !important;
@@ -200,7 +201,8 @@ const Header = () => {
         body {
           top: 0px !important;
         }
-      `}</style>
+        `}
+      </style>
     </>
   );
 };
