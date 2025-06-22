@@ -2,48 +2,50 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
 import { Calculator, CheckCircle, Home, Euro, Shield, TrendingUp } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const PretImmobilier = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const advantages = [
-    'Taux immobiliers compétitifs',
-    'Accompagnement personnalisé',
-    'Étude gratuite de votre dossier',
-    'Négociation avec les banques',
-    'Suivi jusqu\'à la signature',
-    'Assurance emprunteur incluse'
+    t('mortgageLoan.advantages.competitiveRates'),
+    t('mortgageLoan.advantages.personalSupport'),
+    t('mortgageLoan.advantages.freeStudy'),
+    t('mortgageLoan.advantages.bankNegotiation'),
+    t('mortgageLoan.advantages.followUp'),
+    t('mortgageLoan.advantages.insurance')
   ];
 
   const features = [
     {
       icon: Euro,
-      title: 'Montants élevés',
-      description: 'Jusqu\'à 1 000 000€'
+      title: t('mortgageLoan.characteristics.highAmounts'),
+      description: t('mortgageLoan.characteristics.highAmountsDesc')
     },
     {
       icon: Home,
-      title: 'Tous projets',
-      description: 'Achat, construction, investissement'
+      title: t('mortgageLoan.characteristics.allProjects'),
+      description: t('mortgageLoan.characteristics.allProjectsDesc')
     },
     {
       icon: Shield,
-      title: 'Sécurisé',
-      description: 'Garantie hypothécaire'
+      title: t('mortgageLoan.characteristics.secured'),
+      description: t('mortgageLoan.characteristics.securedDesc')
     },
     {
       icon: TrendingUp,
-      title: 'Taux avantageux',
-      description: 'À partir de 1.9% TAEG'
+      title: t('mortgageLoan.characteristics.advantageousRates'),
+      description: t('mortgageLoan.characteristics.advantageousRatesDesc')
     }
   ];
 
   return (
     <Layout 
-      title="Prêts immobiliers" 
+      title={t('mortgageLoan.title')}
       description="Prêt immobilier avec Neovita Finanz. Taux compétitifs dès 1.9%, accompagnement personnalisé pour tous vos projets immobiliers."
     >
       {/* Hero Section */}
@@ -57,10 +59,10 @@ const PretImmobilier = () => {
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Prêt Immobilier
+              {t('mortgageLoan.title')}
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200">
-              Concrétisez votre projet immobilier avec notre accompagnement expert
+              {t('mortgageLoan.subtitle')}
             </p>
             <Button 
               onClick={() => navigate('/demande-credit')}
@@ -68,7 +70,7 @@ const PretImmobilier = () => {
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold"
             >
               <Calculator className="w-5 h-5 mr-2" />
-              Demander ce prêt
+              {t('mortgageLoan.requestButton')}
             </Button>
           </div>
         </div>
@@ -79,7 +81,7 @@ const PretImmobilier = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Caractéristiques du Prêt Immobilier
+              {t('mortgageLoan.characteristics.title')}
             </h2>
           </div>
 
@@ -108,7 +110,7 @@ const PretImmobilier = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Pourquoi choisir notre prêt immobilier ?
+                {t('mortgageLoan.advantages.title')}
               </h2>
               <div className="space-y-4">
                 {advantages.map((advantage, index) => (
@@ -124,7 +126,7 @@ const PretImmobilier = () => {
                   size="lg"
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
                 >
-                  Faire ma demande
+                  {t('mortgageLoan.advantages.makeRequest')}
                 </Button>
               </div>
             </div>

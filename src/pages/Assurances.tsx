@@ -4,42 +4,44 @@ import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
-import { Shield, CheckCircle, Heart, Home } from 'lucide-react';
+import { Shield, Heart, Home } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Assurances = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const insuranceTypes = [
     {
-      title: 'Assurance emprunteur',
-      description: 'Protection de votre prêt',
+      title: t('insurance.types.borrowerInsurance'),
+      description: t('insurance.types.borrowerInsuranceDesc'),
       icon: Shield
     },
     {
-      title: 'Assurance habitation',
-      description: 'Protection de votre logement',
+      title: t('insurance.types.homeInsurance'),
+      description: t('insurance.types.homeInsuranceDesc'),
       icon: Home
     },
     {
-      title: 'Assurance santé',
-      description: 'Couverture médicale complète',
+      title: t('insurance.types.healthInsurance'),
+      description: t('insurance.types.healthInsuranceDesc'),
       icon: Heart
     }
   ];
 
   return (
     <Layout 
-      title="Assurances" 
+      title={t('insurance.title')}
       description="Solutions d'assurance avec Neovita Finanz. Assurance emprunteur, habitation, santé. Protection optimale."
     >
       <section className="relative bg-gradient-to-br from-blue-900 to-green-700 text-white py-20">
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Nos Assurances
+              {t('insurance.title')}
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200">
-              Protégez ce qui compte le plus pour vous
+              {t('insurance.subtitle')}
             </p>
             <Button 
               onClick={() => navigate('/demande-credit')}
@@ -47,7 +49,7 @@ const Assurances = () => {
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold"
             >
               <Shield className="w-5 h-5 mr-2" />
-              Demander un devis
+              {t('insurance.requestButton')}
             </Button>
           </div>
         </div>
