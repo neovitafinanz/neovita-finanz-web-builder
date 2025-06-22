@@ -25,27 +25,49 @@ const GoogleTranslate = () => {
       }
     };
 
-    // Gestionnaire pour le sélecteur personnalisé
+    // Appliquer traduction si ?lang=xx présent
+    const applyTranslationFromURL = () => {
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang');
+      if (lang) {
+        const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+        if (combo) {
+          combo.value = lang;
+          combo.dispatchEvent(new Event('change'));
+        } else {
+          // Attendre que Google Translate soit prêt
+          setTimeout(applyTranslationFromURL, 500);
+        }
+      }
+    };
+
+    // Mettre à jour l'URL quand une langue est sélectionnée
     const handleLanguageChange = () => {
       const selector = document.getElementById('languageSelector') as HTMLSelectElement;
       const selectorMobile = document.getElementById('languageSelectorMobile') as HTMLSelectElement;
+      
+      // Appliquer traduction selon URL au chargement
+      applyTranslationFromURL();
       
       const addChangeListener = (element: HTMLSelectElement | null) => {
         if (element) {
           element.addEventListener('change', function () {
             const language = element.value;
             if (language) {
-              const frame = document.querySelector('iframe.goog-te-menu-frame') as HTMLIFrameElement;
-              if (frame && frame.contentWindow) {
-                const menuItem = frame.contentWindow.document.querySelector(`.goog-te-menu2-item span[text="${language}"]`) as HTMLElement;
-                if (menuItem) {
-                  menuItem.click();
-                }
+              const combo = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+              if (combo) {
+                combo.value = language;
+                combo.dispatchEvent(new Event('change'));
+                const url = new URL(window.location.href);
+                url.searchParams.set('lang', language);
+                window.history.replaceState({}, '', url); // Met à jour l'URL sans recharger
               } else {
-                const select = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-                if (select) {
-                  select.value = language;
-                  select.dispatchEvent(new Event('change'));
+                const frame = document.querySelector('iframe.goog-te-menu-frame') as HTMLIFrameElement;
+                if (frame && frame.contentWindow) {
+                  const menuItem = frame.contentWindow.document.querySelector(`.goog-te-menu2-item span[text="${language}"]`) as HTMLElement;
+                  if (menuItem) {
+                    menuItem.click();
+                  }
                 }
               }
             }
