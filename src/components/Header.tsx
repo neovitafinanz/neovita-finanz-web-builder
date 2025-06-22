@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X, Globe, ChevronDown, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
@@ -11,23 +10,69 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
+// Déclaration du type pour Google Translate
+declare global {
+  interface Window {
+    google: any;
+    googleTranslateElementInit: () => void;
+  }
+}
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const { currentLanguage, setCurrentLanguage, t } = useLanguage();
   
   const languages = [
-    { code: 'fr', name: 'Français', flag: '🇫🇷' },
-    { code: 'pt', name: 'Português', flag: '🇵🇹' },
-    { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'da', name: 'Dansk', flag: '🇩🇰' },
-    { code: 'fi', name: 'Suomi', flag: '🇫🇮' },
-    { code: 'nl', name: 'Nederlands', flag: '🇳🇱' },
-    { code: 'en', name: 'English', flag: '🇬🇧' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-    { code: 'ro', name: 'Română', flag: '🇷🇴' },
-    { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+    { code: 'fr', name: 'Français', googleCode: 'fr' },
+    { code: 'en', name: 'Anglais', googleCode: 'en' },
+    { code: 'ar', name: 'Arabe', googleCode: 'ar' },
+    { code: 'es', name: 'Espagnol', googleCode: 'es' },
+    { code: 'it', name: 'Italien', googleCode: 'it' },
+    { code: 'nl', name: 'Néerlandais', googleCode: 'nl' },
+    { code: 'pl', name: 'Polonais', googleCode: 'pl' },
+    { code: 'pt', name: 'Portugais (Brésil)', googleCode: 'pt' },
+    { code: 'ru', name: 'Russe', googleCode: 'ru' },
   ];
+
+  useEffect(() => {
+    // Charger Google Translate
+    const script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Fonction d'initialisation de Google Translate
+    window.googleTranslateElementInit = () => {
+      if (window.google && window.google.translate) {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'fr',
+            includedLanguages: 'fr,en,ar,es,it,nl,pl,pt,ru',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+          },
+          'google_translate_element'
+        );
+      }
+    };
+
+    return () => {
+      // Nettoyer le script lors du démontage
+      const scripts = document.querySelectorAll('script[src*="translate.google.com"]');
+      scripts.forEach(script => script.remove());
+    };
+  }, []);
+
+  const handleLanguageChange = (googleCode: string, langName: string) => {
+    // Utiliser Google Translate pour changer la langue
+    const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
+    if (selectElement) {
+      selectElement.value = googleCode;
+      selectElement.dispatchEvent(new Event('change'));
+    }
+    console.log(`Changement vers ${langName}`);
+  };
 
   const currentLang = languages.find(lang => lang.code === currentLanguage) || languages[0];
 
@@ -45,12 +90,11 @@ const Header = () => {
     navigate('/demande-credit');
   };
 
-  const handleLanguageChange = (langCode: string) => {
-    setCurrentLanguage(langCode);
-  };
-
   return (
     <>
+      {/* Google Translate Element - caché */}
+      <div id="google_translate_element" style={{ display: 'none' }}></div>
+      
       {/* Contact Bar */}
       <div className="bg-green-600 text-white py-2 hidden lg:block">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
@@ -116,10 +160,9 @@ const Header = () => {
                   {languages.map((lang) => (
                     <DropdownMenuItem
                       key={lang.code}
-                      onClick={() => handleLanguageChange(lang.code)}
+                      onClick={() => handleLanguageChange(lang.googleCode, lang.name)}
                       className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 focus:bg-gray-50"
                     >
-                      <span>{lang.flag}</span>
                       <span>{lang.name}</span>
                     </DropdownMenuItem>
                   ))}
@@ -173,10 +216,9 @@ const Header = () => {
                       {languages.map((lang) => (
                         <DropdownMenuItem
                           key={lang.code}
-                          onClick={() => handleLanguageChange(lang.code)}
+                          onClick={() => handleLanguageChange(lang.googleCode, lang.name)}
                           className="flex items-center space-x-2 cursor-pointer hover:bg-gray-50"
                         >
-                          <span>{lang.flag}</span>
                           <span>{lang.name}</span>
                         </DropdownMenuItem>
                       ))}
