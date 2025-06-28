@@ -69,32 +69,38 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Extract language from URL
+  // Simplified language extraction from URL - only run once on mount and when pathname changes significantly
   useEffect(() => {
-    console.log('Current pathname:', location.pathname);
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const langFromUrl = pathSegments[0];
     
-    // Check if the first segment is a valid language code
-    if (langFromUrl && languages.some(lang => lang.code === langFromUrl)) {
-      console.log('Setting language from URL:', langFromUrl);
-      setCurrentLanguage(langFromUrl as Language);
-    } else {
-      // Default to French if no language in URL
-      console.log('No valid language in URL, defaulting to French');
+    const validLanguages = languages.map(lang => lang.code);
+    
+    if (langFromUrl && validLanguages.includes(langFromUrl)) {
+      if (currentLanguage !== langFromUrl) {
+        setCurrentLanguage(langFromUrl as Language);
+      }
+    } else if (currentLanguage !== 'fr') {
       setCurrentLanguage('fr');
     }
   }, [location.pathname]);
 
   const setLanguage = (language: Language) => {
-    console.log('Changing language to:', language);
     setCurrentLanguage(language);
     
-    // Update URL to reflect language change
-    const pathWithoutLang = location.pathname.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, '') || '/';
-    const newPath = language === 'fr' ? pathWithoutLang : `/${language}${pathWithoutLang}`;
+    // Simple URL update logic
+    const pathSegments = location.pathname.split('/').filter(Boolean);
+    const validLanguages = languages.map(lang => lang.code);
     
-    console.log('Navigating to:', newPath);
+    // Remove existing language prefix if present
+    if (pathSegments.length > 0 && validLanguages.includes(pathSegments[0])) {
+      pathSegments.shift();
+    }
+    
+    // Build new path
+    const basePath = pathSegments.length > 0 ? '/' + pathSegments.join('/') : '/';
+    const newPath = language === 'fr' ? basePath : `/${language}${basePath}`;
+    
     navigate(newPath, { replace: true });
   };
 
@@ -108,15 +114,13 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
       if (value && typeof value === 'object' && k in value) {
         value = value[k];
       } else {
-        // Fallback to French if key not found
-        console.warn(`Translation key "${key}" not found for language "${currentLanguage}", falling back to French`);
+        // Fallback to French
         value = translations.fr;
         for (const fallbackKey of keys) {
           if (value && typeof value === 'object' && fallbackKey in value) {
             value = value[fallbackKey];
           } else {
-            console.warn(`Translation key "${key}" not found in fallback language (French)`);
-            return key;
+            return key; // Return key if not found anywhere
           }
         }
         break;

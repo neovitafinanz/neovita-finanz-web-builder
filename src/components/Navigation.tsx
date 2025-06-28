@@ -21,18 +21,19 @@ const Navigation = () => {
   };
 
   const navigationItems = [
-    { key: 'home', path: '/' },
+    { key: 'home', path: '/', label: 'Accueil' },
     {
       key: 'services',
+      label: 'Services',
       dropdown: [
-        { key: 'personalLoans', path: '/prets-personnels' },
-        { key: 'mortgageLoans', path: '/prets-immobiliers' },
-        { key: 'creditBuyback', path: '/rachat-credit' },
-        { key: 'workCredit', path: '/credit-travaux' },
-        { key: 'insurance', path: '/assurances' }
+        { key: 'personalLoans', path: '/prets-personnels', label: 'Prêts Personnels' },
+        { key: 'mortgageLoans', path: '/prets-immobiliers', label: 'Prêts Immobiliers' },
+        { key: 'creditBuyback', path: '/rachat-credit', label: 'Rachat de Crédit' },
+        { key: 'workCredit', path: '/credit-travaux', label: 'Crédit Travaux' },
+        { key: 'insurance', path: '/assurances', label: 'Assurances' }
       ]
     },
-    { key: 'about', path: '/a-propos' }
+    { key: 'about', path: '/a-propos', label: 'À propos' }
   ];
 
   return (
@@ -56,7 +57,7 @@ const Navigation = () => {
                     onMouseLeave={() => setServicesOpen(false)}
                   >
                     <button className="flex items-center px-3 py-2 text-gray-700 hover:text-primary transition-colors">
-                      {t(`nav.${item.key}`)}
+                      {t(`nav.${item.key}`) || item.label}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
                     {servicesOpen && (
@@ -68,7 +69,7 @@ const Navigation = () => {
                             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors"
                             onClick={() => setServicesOpen(false)}
                           >
-                            {t(`nav.${subItem.key}`)}
+                            {t(`nav.${subItem.key}`) || subItem.label}
                           </Link>
                         ))}
                       </div>
@@ -83,7 +84,7 @@ const Navigation = () => {
                         : 'text-gray-700 hover:text-primary'
                     }`}
                   >
-                    {t(`nav.${item.key}`)}
+                    {t(`nav.${item.key}`) || item.label}
                   </Link>
                 )}
               </div>
@@ -121,7 +122,7 @@ const Navigation = () => {
                       onClick={() => setServicesOpen(!servicesOpen)}
                       className="w-full text-left flex items-center justify-between px-3 py-2 text-gray-700 hover:text-primary transition-colors"
                     >
-                      {t(`nav.${item.key}`)}
+                      {t(`nav.${item.key}`) || item.label}
                       <ChevronDown className="h-4 w-4" />
                     </button>
                     {servicesOpen && (
@@ -136,7 +137,7 @@ const Navigation = () => {
                               setServicesOpen(false);
                             }}
                           >
-                            {t(`nav.${subItem.key}`)}
+                            {t(`nav.${subItem.key}`) || subItem.label}
                           </Link>
                         ))}
                       </div>
@@ -152,7 +153,7 @@ const Navigation = () => {
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    {t(`nav.${item.key}`)}
+                    {t(`nav.${item.key}`) || item.label}
                   </Link>
                 )}
               </div>
@@ -163,7 +164,7 @@ const Navigation = () => {
               <span className="text-sm">01 86 65 48 40</span>
             </div>
             <div className="px-3 py-2 text-xs text-gray-500">
-              {t('common.phoneAvailable')}
+              {t('common.phoneAvailable') || 'Disponible 24h/7j'}
             </div>
           </div>
         </div>
