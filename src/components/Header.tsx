@@ -29,19 +29,7 @@ const Header = () => {
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
     if (selectedLanguage) {
-      // Changer l'URL
       changeLanguage(selectedLanguage);
-      
-      // Aussi déclencher Google Translate
-      setTimeout(() => {
-        if (window.google && window.google.translate) {
-          const selectElement = document.querySelector('.goog-te-combo') as HTMLSelectElement;
-          if (selectElement) {
-            selectElement.value = selectedLanguage;
-            selectElement.dispatchEvent(new Event('change'));
-          }
-        }
-      }, 100);
     }
   };
 
@@ -65,11 +53,10 @@ const Header = () => {
               {t('common.phoneAvailable')}
             </div>
             {/* Custom Language Selector */}
-            <div id="custom-translate" className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
               <Globe className="w-4 h-4" />
               <span>🌐 Langue :</span>
               <select 
-                id="languageSelector"
                 value={currentLanguage}
                 onChange={handleLanguageChange}
                 className="bg-green-700 text-white border border-green-500 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-white"
@@ -123,10 +110,9 @@ const Header = () => {
             {/* CTA Button and Mobile Language Selector */}
             <div className="flex items-center space-x-4">
               {/* Mobile Language Selector */}
-              <div id="custom-translate-mobile" className="flex items-center space-x-2 lg:hidden">
+              <div className="flex items-center space-x-2 lg:hidden">
                 <Globe className="w-4 h-4" />
                 <select 
-                  id="languageSelectorMobile"
                   value={currentLanguage}
                   onChange={handleLanguageChange}
                   className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
@@ -196,9 +182,6 @@ const Header = () => {
           )}
         </div>
       </header>
-
-      {/* Hidden Google Translate Element */}
-      <div id="google_translate_element" style={{ display: 'none' }}></div>
     </>
   );
 };
