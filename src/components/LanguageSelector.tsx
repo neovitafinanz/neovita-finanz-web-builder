@@ -12,7 +12,10 @@ const LanguageSelector = () => {
     { code: 'pt', name: 'Português', flag: '🇵🇹' },
     { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
     { code: 'es', name: 'Español', flag: '🇪🇸' },
-    { code: 'it', name: 'Italiano', flag: '🇮🇹' }
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+    { code: 'da', name: 'Dansk', flag: '🇩🇰' },
+    { code: 'sv', name: 'Svenska', flag: '🇸🇪' },
+    { code: 'no', name: 'Norsk', flag: '🇳🇴' }
   ];
 
   return (
