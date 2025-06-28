@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "ホーム",
+    "personalLoans": "個人ローン",
+    "mortgageLoans": "住宅ローン",
+    "creditBuyback": "クレジット統合",
+    "workCredit": "ワーククレジット",
+    "insurance": "保険",
+    "about": "会社概要"
+  },
+  "common": {
+    "phoneAvailable": "月曜日から金曜日の9時から18時まで",
+    "requestLoan": "ローン申請",
+    "discover": "発見する",
+    "learnMoreAbout": "詳しく知る",
+    "startRequest": "申請を開始する"
+  },
+  "hero": {
+    "slide1": {
+      "title": "BHV Autoへようこそ",
+      "subtitle": "車両輸入のスペシャリスト",
+      "description": "専門的で個人的なサポートによる車両輸入サービスをご覧ください。"
+    },
+    "slide2": {
+      "title": "住宅ローン",
+      "subtitle": "不動産プロジェクトを実現",
+      "description": "競争力のある金利とオーダーメイドのサポートで不動産プロジェクトを実現します。"
+    },
+    "slide3": {
+      "title": "クレジット統合",
+      "subtitle": "財務を簡素化",
+      "description": "クレジットを一つにまとめて月々の支払いを減らし、経済的な安心を取り戻しましょう。"
+    },
+    "slide4": {
+      "title": "専門知識と親近感",
+      "subtitle": "43名のアドバイザーがサービス",
+      "description": "すべての融資プロジェクトでお客様をサポートする専門家チーム。"
+    },
+    "cta": {
+      "primary": "申請する",
+      "secondary": "ローンをシミュレーション"
+    },
+    "disclaimer": "クレジットはあなたを拘束し、返済する必要があります。コミットする前に返済能力を確認してください。"
+  },
+  "home": {
+    "metaDescription": "BHV Auto - 車両輸入のスペシャリスト。専門的なサポートによるプロフェッショナルな輸入サービス。",
+    "servicesTitle": "輸入サービス",
+    "servicesSubtitle": "すべての車両輸入ニーズに適応したソリューション",
+    "advantagesTitle": "BHV Autoを選ぶ理由",
+    "ctaTitle": "車両を輸入する準備はできましたか？",
+    "ctaSubtitle": "専門家がお客様の輸入プロジェクトをサポートします"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "個人ローン",
+      "description": "有利な条件で個人プロジェクトを融資"
+    },
+    "mortgageLoans": {
+      "title": "住宅ローン",
+      "description": "当社の専門知識で不動産プロジェクトを実現"
+    },
+    "creditBuyback": {
+      "title": "クレジット統合",
+      "description": "返済を簡素化し、月々の支払いを削減"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "セキュリティと信頼",
+      "description": "融資で15年の経験を持つ認定機関"
+    },
+    "speed": {
+      "title": "迅速性と効率性",
+      "description": "48時間以内の回答と資金の迅速な解放"
+    },
+    "experts": {
+      "title": "専門サポート",
+      "description": "各ステップでお客様をガイドする43名の専門アドバイザー"
+    }
+  },
+  "footer": {
+    "tagline": "車両輸入のスペシャリスト",
+    "description": "BHV Autoは専門知識と親近感をもって、すべての車両輸入プロジェクトでお客様をサポートします。",
+    "sections": {
+      "services": "サービス",
+      "company": "会社",
+      "legal": "法的情報"
+    },
+    "services": {
+      "personalLoans": "個人ローン",
+      "mortgageLoans": "住宅ローン",
+      "creditBuyback": "クレジット統合",
+      "workCredit": "ワーククレジット",
+      "insurance": "保険"
+    },
+    "company": {
+      "about": "会社概要",
+      "team": "チーム",
+      "careers": "キャリア",
+      "partners": "パートナー",
+      "news": "ニュース"
+    },
+    "legal": {
+      "terms": "法的事項",
+      "privacy": "プライバシーポリシー",
+      "conditions": "一般条件",
+      "sitemap": "サイトマップ",
+      "cookies": "クッキー"
+    },
+    "trust": {
+      "title": "認証",
+      "gdpr": "GDPR準拠",
+      "gdprDesc": "データ保護",
+      "ssl": "SSL保護",
+      "sslDesc": "安全な接続",
+      "rcs": "RCS Évry",
+      "rcsDesc": "認定機関"
+    },
+    "companyInfo": {
+      "title": "会社情報",
+      "legalForm": "法的形態",
+      "capital": "資本金",
+      "employees": "従業員"
+    },
+    "warning": {
+      "title": "重要な情報",
+      "rates": "プロフィールと期間に応じて0.9%から19.9%",
+      "credit": "クレジットはあなたを拘束し、返済する必要があります",
+      "insurance": "借り手保険は義務ではありません"
+    },
+    "copyright": "すべての権利を保有。"
+  }
+}

@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "Hem",
+    "personalLoans": "Personliga Lån",
+    "mortgageLoans": "Bolån",
+    "creditBuyback": "Kreditsamling",
+    "workCredit": "Arbetskredit",
+    "insurance": "Försäkringar",
+    "about": "Om Oss"
+  },
+  "common": {
+    "phoneAvailable": "Måndag till fredag från 9 till 18",
+    "requestLoan": "Låneansökan",
+    "discover": "Upptäck",
+    "learnMoreAbout": "Lär dig mer om",
+    "startRequest": "Starta min ansökan"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Välkommen till BHV Auto",
+      "subtitle": "Din specialist på fordonsimport",
+      "description": "Upptäck våra fordonsimporttjänster med expert och personlig vägledning."
+    },
+    "slide2": {
+      "title": "Bolån",
+      "subtitle": "Förverkliga Ditt Fastighetsprojekt",
+      "description": "Konkurrenskraftiga räntor och skräddarsydd vägledning för att förverkliga dina fastighetsprojekt."
+    },
+    "slide3": {
+      "title": "Kreditsamling",
+      "subtitle": "Förenkla Din Ekonomi",
+      "description": "Samla dina krediter i en för att minska dina månatliga betalningar och återfå din ekonomiska lugn."
+    },
+    "slide4": {
+      "title": "Expertis & Närhet",
+      "subtitle": "43 Rådgivare till Din Tjänst",
+      "description": "Ett dedikerat team av experter för att ledsaga dig i alla dina finansieringsprojekt."
+    },
+    "cta": {
+      "primary": "Gör en ansökan",
+      "secondary": "Simulera mitt lån"
+    },
+    "disclaimer": "Ett kredit förbinder dig och måste betalas tillbaka. Kontrollera din återbetalningsförmåga innan du förbinder dig."
+  },
+  "home": {
+    "metaDescription": "BHV Auto - Din specialist på fordonsimport. Professionella importtjänster med expertvägledning.",
+    "servicesTitle": "Våra Importtjänster",
+    "servicesSubtitle": "Lösningar anpassade till alla dina fordonsimportbehov",
+    "advantagesTitle": "Varför Välja BHV Auto",
+    "ctaTitle": "Redo att Importera Ditt Fordon?",
+    "ctaSubtitle": "Våra experter ledsagar dig i ditt importprojekt"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Personliga Lån",
+      "description": "Finansiera dina personliga projekt med fördelaktiga villkor"
+    },
+    "mortgageLoans": {
+      "title": "Bolån",
+      "description": "Förverkliga ditt fastighetsprojekt med vår expertis"
+    },
+    "creditBuyback": {
+      "title": "Kreditsamling",
+      "description": "Förenkla dina återbetalningar och minska dina månatliga betalningar"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Säkerhet & Förtroende",
+      "description": "Godkänt etablissement med 15 års erfarenhet inom finansiering"
+    },
+    "speed": {
+      "title": "Snabbhet & Effektivitet",
+      "description": "Svar inom 48 timmar och snabb frigöring av dina medel"
+    },
+    "experts": {
+      "title": "Expertvägledning",
+      "description": "43 specialiserade rådgivare för att guida dig genom varje steg"
+    }
+  },
+  "footer": {
+    "tagline": "Din specialist på fordonsimport",
+    "description": "BHV Auto ledsagar dig i alla dina fordonsimportprojekt med expertis och närhet.",
+    "sections": {
+      "services": "Våra Tjänster",
+      "company": "Företaget",
+      "legal": "Juridisk Information"
+    },
+    "services": {
+      "personalLoans": "Personliga Lån",
+      "mortgageLoans": "Bolån",
+      "creditBuyback": "Kreditsamling",
+      "workCredit": "Arbetskredit",
+      "insurance": "Försäkringar"
+    },
+    "company": {
+      "about": "Om Oss",
+      "team": "Vårt Team",
+      "careers": "Karriärer",
+      "partners": "Partners",
+      "news": "Nyheter"
+    },
+    "legal": {
+      "terms": "Juridiska Upplysningar",
+      "privacy": "Integritetspolicy",
+      "conditions": "Allmänna Villkor",
+      "sitemap": "Sitemap",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifieringar",
+      "gdpr": "GDPR-konform",
+      "gdprDesc": "Dataskydd",
+      "ssl": "SSL-säkrad",
+      "sslDesc": "Säker anslutning",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Godkänt etablissement"
+    },
+    "companyInfo": {
+      "title": "Företagsinformation",
+      "legalForm": "Juridisk form",
+      "capital": "Kapital",
+      "employees": "Personal"
+    },
+    "warning": {
+      "title": "Viktig Information",
+      "rates": "Från 0,9% till 19,9% beroende på profil och varaktighet",
+      "credit": "Ett kredit förbinder dig och måste betalas tillbaka",
+      "insurance": "Låntagarförsäkring är inte obligatorisk"
+    },
+    "copyright": "Alla rättigheter förbehållna."
+  }
+}

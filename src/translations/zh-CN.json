@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "首页",
+    "personalLoans": "个人贷款",
+    "mortgageLoans": "房屋贷款",
+    "creditBuyback": "信贷整合",
+    "workCredit": "工作信贷",
+    "insurance": "保险",
+    "about": "关于我们"
+  },
+  "common": {
+    "phoneAvailable": "周一至周五上午9点至下午6点",
+    "requestLoan": "贷款申请",
+    "discover": "发现",
+    "learnMoreAbout": "了解更多关于",
+    "startRequest": "开始我的申请"
+  },
+  "hero": {
+    "slide1": {
+      "title": "欢迎来到BHV Auto",
+      "subtitle": "您的车辆进口专家",
+      "description": "通过专业和个性化支持发现我们的车辆进口服务。"
+    },
+    "slide2": {
+      "title": "房屋贷款",
+      "subtitle": "实现您的房地产项目",
+      "description": "竞争性利率和量身定制的支持，帮助您实现房地产项目。"
+    },
+    "slide3": {
+      "title": "信贷整合",
+      "subtitle": "简化您的财务",
+      "description": "将您的信贷合并成一个，以减少您的月供并恢复您的财务安宁。"
+    },
+    "slide4": {
+      "title": "专业知识与亲近",
+      "subtitle": "43位顾问为您服务",
+      "description": "专门的专家团队在您所有的融资项目中为您提供支持。"
+    },
+    "cta": {
+      "primary": "提出申请",
+      "secondary": "模拟我的贷款"
+    },
+    "disclaimer": "信贷使您承担义务并必须偿还。在承诺之前检查您的偿还能力。"
+  },
+  "home": {
+    "metaDescription": "BHV Auto - 您的车辆进口专家。专业的进口服务，提供专家支持。",
+    "servicesTitle": "我们的进口服务",
+    "servicesSubtitle": "适应您所有车辆进口需求的解决方案",
+    "advantagesTitle": "为什么选择BHV Auto",
+    "ctaTitle": "准备好进口您的车辆了吗？",
+    "ctaSubtitle": "我们的专家在您的进口项目中为您提供支持"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "个人贷款",
+      "description": "以有利条件为您的个人项目提供资金"
+    },
+    "mortgageLoans": {
+      "title": "房屋贷款",
+      "description": "凭借我们的专业知识实现您的房地产项目"
+    },
+    "creditBuyback": {
+      "title": "信贷整合",
+      "description": "简化您的还款并减少您的月供"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "安全与信任",
+      "description": "在融资方面拥有15年经验的批准机构"
+    },
+    "speed": {
+      "title": "快速与高效",
+      "description": "48小时内回复并快速释放您的资金"
+    },
+    "experts": {
+      "title": "专家支持",
+      "description": "43位专业顾问在每一步都为您提供指导"
+    }
+  },
+  "footer": {
+    "tagline": "您的车辆进口专家",
+    "description": "BHV Auto凭借专业知识和亲近感在您所有的车辆进口项目中为您提供支持。",
+    "sections": {
+      "services": "我们的服务",
+      "company": "公司",
+      "legal": "法律信息"
+    },
+    "services": {
+      "personalLoans": "个人贷款",
+      "mortgageLoans": "房屋贷款",
+      "creditBuyback": "信贷整合",
+      "workCredit": "工作信贷",
+      "insurance": "保险"
+    },
+    "company": {
+      "about": "关于我们",
+      "team": "我们的团队",
+      "careers": "职业",
+      "partners": "合作伙伴",
+      "news": "新闻"
+    },
+    "legal": {
+      "terms": "法律条款",
+      "privacy": "隐私政策",
+      "conditions": "一般条件",
+      "sitemap": "网站地图",
+      "cookies": "Cookie"
+    },
+    "trust": {
+      "title": "认证",
+      "gdpr": "符合GDPR",
+      "gdprDesc": "数据保护",
+      "ssl": "SSL安全",
+      "sslDesc": "安全连接",
+      "rcs": "RCS Évry",
+      "rcsDesc": "批准机构"
+    },
+    "companyInfo": {
+      "title": "公司信息",
+      "legalForm": "法律形式",
+      "capital": "资本",
+      "employees": "员工"
+    },
+    "warning": {
+      "title": "重要信息",
+      "rates": "根据个人资料和期限，从0.9%到19.9%",
+      "credit": "信贷使您承担义务并必须偿还",
+      "insurance": "借款人保险不是强制性的"
+    },
+    "copyright": "版权所有。"
+  }
+}

@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "Hjem",
+    "personalLoans": "Personlige Lån",
+    "mortgageLoans": "Realkreditlån",
+    "creditBuyback": "Kreditsamling",
+    "workCredit": "Arbejdskredit",
+    "insurance": "Forsikringer",
+    "about": "Om Os"
+  },
+  "common": {
+    "phoneAvailable": "Mandag til fredag fra 9 til 18",
+    "requestLoan": "Låneansøgning",
+    "discover": "Opdag",
+    "learnMoreAbout": "Lær mere om",
+    "startRequest": "Start min ansøgning"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Velkommen til BHV Auto",
+      "subtitle": "Din specialist i køretøjsimport",
+      "description": "Opdag vores køretøjsimportservice med ekspert og personlig vejledning."
+    },
+    "slide2": {
+      "title": "Realkreditlån",
+      "subtitle": "Realiser Dit Ejendomsprojekt",
+      "description": "Konkurrencedygtige renter og skræddersyet vejledning til at realisere dine ejendomsprojekter."
+    },
+    "slide3": {
+      "title": "Kreditsamling",
+      "subtitle": "Forenkl Din Økonomi",
+      "description": "Saml dine kreditter i én for at reducere dine månedlige betalinger og genvinde din økonomiske ro."
+    },
+    "slide4": {
+      "title": "Ekspertise & Nærhed",
+      "subtitle": "43 Rådgivere til Din Tjeneste",
+      "description": "Et dedikeret team af eksperter til at ledsage dig i alle dine finansieringsprojekter."
+    },
+    "cta": {
+      "primary": "Lav en ansøgning",
+      "secondary": "Simuler mit lån"
+    },
+    "disclaimer": "Et kredit forpligter dig og skal tilbagebetales. Kontroller din tilbagebetalingsevne før du forpligter dig."
+  },
+  "home": {
+    "metaDescription": "BHV Auto - Din specialist i køretøjsimport. Professionelle importservice med ekspertvejledning.",
+    "servicesTitle": "Vores Importservice",
+    "servicesSubtitle": "Løsninger tilpasset alle dine køretøjsimportbehov",
+    "advantagesTitle": "Hvorfor Vælge BHV Auto",
+    "ctaTitle": "Klar til at Importere Dit Køretøj?",
+    "ctaSubtitle": "Vores eksperter ledsager dig i dit importprojekt"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Personlige Lån",
+      "description": "Finansier dine personlige projekter med fordelagtige betingelser"
+    },
+    "mortgageLoans": {
+      "title": "Realkreditlån",
+      "description": "Realiser dit ejendomsprojekt med vores ekspertise"
+    },
+    "creditBuyback": {
+      "title": "Kreditsamling",
+      "description": "Forenkl dine tilbagebetalinger og reducer dine månedlige betalinger"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Sikkerhed & Tillid",
+      "description": "Godkendt etablissement med 15 års erfaring inden for finansiering"
+    },
+    "speed": {
+      "title": "Hurtighed & Effektivitet",
+      "description": "Svar inden for 48 timer og hurtig frigivelse af dine midler"
+    },
+    "experts": {
+      "title": "Ekspertvejledning",
+      "description": "43 specialiserede rådgivere til at guide dig gennem hvert trin"
+    }
+  },
+  "footer": {
+    "tagline": "Din specialist i køretøjsimport",
+    "description": "BHV Auto ledsager dig i alle dine køretøjsimportprojekter med ekspertise og nærhed.",
+    "sections": {
+      "services": "Vores Tjenester",
+      "company": "Virksomheden",
+      "legal": "Juridiske Oplysninger"
+    },
+    "services": {
+      "personalLoans": "Personlige Lån",
+      "mortgageLoans": "Realkreditlån",
+      "creditBuyback": "Kreditsamling",
+      "workCredit": "Arbejdskredit",
+      "insurance": "Forsikringer"
+    },
+    "company": {
+      "about": "Om Os",
+      "team": "Vores Team",
+      "careers": "Karrierer",
+      "partners": "Partnere",
+      "news": "Nyheder"
+    },
+    "legal": {
+      "terms": "Juridiske Oplysninger",
+      "privacy": "Privatlivspolitik",
+      "conditions": "Generelle Betingelser",
+      "sitemap": "Sitemap",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certificeringer",
+      "gdpr": "GDPR-konform",
+      "gdprDesc": "Databeskyttelse",
+      "ssl": "SSL-sikret",
+      "sslDesc": "Sikker forbindelse",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Godkendt etablissement"
+    },
+    "companyInfo": {
+      "title": "Virksomhedsoplysninger",
+      "legalForm": "Juridisk form",
+      "capital": "Kapital",
+      "employees": "Medarbejdere"
+    },
+    "warning": {
+      "title": "Vigtige Oplysninger",
+      "rates": "Fra 0,9% til 19,9% afhængigt af profil og varighed",
+      "credit": "Et kredit forpligter dig og skal tilbagebetales",
+      "insurance": "Låntagerforsikring er ikke obligatorisk"
+    },
+    "copyright": "Alle rettigheder forbeholdes."
+  }
+}
