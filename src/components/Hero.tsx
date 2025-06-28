@@ -13,28 +13,28 @@ const Hero = () => {
       subtitleKey: 'hero.slide1.subtitle',
       descriptionKey: 'hero.slide1.description',
       background: 'bg-gradient-to-r from-primary to-blue-600',
-      image: '/lovable-uploads/hero-slide-1.jpg'
+      image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       titleKey: 'hero.slide2.title',
       subtitleKey: 'hero.slide2.subtitle',
       descriptionKey: 'hero.slide2.description',
       background: 'bg-gradient-to-r from-green-600 to-primary',
-      image: '/lovable-uploads/hero-slide-2.jpg'
+      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       titleKey: 'hero.slide3.title',
       subtitleKey: 'hero.slide3.subtitle',
       descriptionKey: 'hero.slide3.description',
       background: 'bg-gradient-to-r from-purple-600 to-primary',
-      image: '/lovable-uploads/hero-slide-3.jpg'
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       titleKey: 'hero.slide4.title',
       subtitleKey: 'hero.slide4.subtitle',
       descriptionKey: 'hero.slide4.description',
       background: 'bg-gradient-to-r from-orange-600 to-primary',
-      image: '/lovable-uploads/hero-slide-4.jpg'
+      image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
   ];
 
@@ -62,20 +62,20 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-white space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                  {t(slide.titleKey)}
+                  {t(slide.titleKey) || 'Titre par défaut'}
                 </h1>
                 <h2 className="text-xl md:text-2xl font-light opacity-90">
-                  {t(slide.subtitleKey)}
+                  {t(slide.subtitleKey) || 'Sous-titre par défaut'}
                 </h2>
                 <p className="text-lg opacity-80 leading-relaxed">
-                  {t(slide.descriptionKey)}
+                  {t(slide.descriptionKey) || 'Description par défaut'}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <a
-                    href={getLocalizedPath('/contact')}
+                    href={getLocalizedPath('/demande-credit')}
                     className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors group"
                   >
-                    {t('hero.cta.primary')}
+                    {t('hero.cta.primary') || 'Demander un crédit'}
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </a>
                   <a
@@ -83,14 +83,14 @@ const Hero = () => {
                     className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors group"
                   >
                     <Play className="mr-2 h-5 w-5" />
-                    {t('hero.cta.secondary')}
+                    {t('hero.cta.secondary') || 'Simuler un prêt'}
                   </a>
                 </div>
               </div>
               <div className="hidden lg:block">
                 <img
                   src={slide.image}
-                  alt={t(slide.titleKey)}
+                  alt={t(slide.titleKey) || 'Image Hero'}
                   className="w-full h-96 object-cover rounded-lg shadow-2xl"
                 />
               </div>
@@ -115,7 +115,7 @@ const Hero = () => {
       {/* Legal Disclaimer */}
       <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs py-2 px-4">
         <div className="max-w-7xl mx-auto">
-          {t('hero.disclaimer')}
+          {t('hero.disclaimer') || 'Avertissement légal par défaut'}
         </div>
       </div>
     </div>

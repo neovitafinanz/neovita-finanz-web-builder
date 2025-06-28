@@ -25,14 +25,14 @@ const Navigation = () => {
     {
       key: 'services',
       dropdown: [
-        { key: 'personalLoans', path: '/personal-loans' },
-        { key: 'mortgageLoans', path: '/mortgage-loans' },
-        { key: 'creditBuyback', path: '/credit-buyback' },
-        { key: 'workCredit', path: '/work-credit' },
-        { key: 'insurance', path: '/insurance' }
+        { key: 'personalLoans', path: '/prets-personnels' },
+        { key: 'mortgageLoans', path: '/prets-immobiliers' },
+        { key: 'creditBuyback', path: '/rachat-credit' },
+        { key: 'workCredit', path: '/credit-travaux' },
+        { key: 'insurance', path: '/assurances' }
       ]
     },
-    { key: 'about', path: '/about' }
+    { key: 'about', path: '/a-propos' }
   ];
 
   return (
@@ -41,7 +41,7 @@ const Navigation = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to={getLocalizedPath('/')} className="flex items-center">
-              <span className="text-xl font-bold text-primary">BHV Auto</span>
+              <span className="text-xl font-bold text-primary">Neovita Finanz</span>
             </Link>
           </div>
 

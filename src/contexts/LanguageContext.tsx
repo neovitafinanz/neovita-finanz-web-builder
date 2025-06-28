@@ -71,29 +71,36 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 
   // Extract language from URL
   useEffect(() => {
+    console.log('Current pathname:', location.pathname);
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const langFromUrl = pathSegments[0];
     
     // Check if the first segment is a valid language code
     if (langFromUrl && languages.some(lang => lang.code === langFromUrl)) {
+      console.log('Setting language from URL:', langFromUrl);
       setCurrentLanguage(langFromUrl as Language);
     } else {
       // Default to French if no language in URL
+      console.log('No valid language in URL, defaulting to French');
       setCurrentLanguage('fr');
     }
   }, [location.pathname]);
 
   const setLanguage = (language: Language) => {
+    console.log('Changing language to:', language);
     setCurrentLanguage(language);
     
     // Update URL to reflect language change
     const pathWithoutLang = location.pathname.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, '') || '/';
     const newPath = language === 'fr' ? pathWithoutLang : `/${language}${pathWithoutLang}`;
     
+    console.log('Navigating to:', newPath);
     navigate(newPath, { replace: true });
   };
 
   const t = (key: string): string => {
+    if (!key) return '';
+    
     const keys = key.split('.');
     let value: any = translations[currentLanguage];
     
@@ -102,12 +109,13 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         value = value[k];
       } else {
         // Fallback to French if key not found
+        console.warn(`Translation key "${key}" not found for language "${currentLanguage}", falling back to French`);
         value = translations.fr;
         for (const fallbackKey of keys) {
           if (value && typeof value === 'object' && fallbackKey in value) {
             value = value[fallbackKey];
           } else {
-            console.warn(`Translation key "${key}" not found for language "${currentLanguage}"`);
+            console.warn(`Translation key "${key}" not found in fallback language (French)`);
             return key;
           }
         }
