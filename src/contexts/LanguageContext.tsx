@@ -1,6 +1,6 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 type Language = 'fr' | 'en' | 'es' | 'it' | 'de' | 'pt' | 'nl' | 'sv' | 'no' | 'da' | 'zh-CN' | 'ja' | 'ru';
 
@@ -20,8 +20,10 @@ const isValidLanguage = (lang: string): lang is Language => {
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [language, setLanguage] = useState<Language>('fr');
   const [translations, setTranslations] = useState<Record<string, any>>({});
+  const [isLoading, setIsLoading] = useState(false);
 
   // Extract language from URL
   useEffect(() => {
@@ -38,6 +40,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Load translations
   useEffect(() => {
     const loadTranslations = async () => {
+      if (isLoading) return; // Prevent multiple simultaneous loads
+      
+      setIsLoading(true);
       try {
         const translationModule = await import(`../translations/${language}.json`);
         setTranslations(translationModule.default);
@@ -51,11 +56,13 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
           console.error('Failed to load fallback translations:', fallbackError);
           setTranslations({});
         }
+      } finally {
+        setIsLoading(false);
       }
     };
 
     loadTranslations();
-  }, [language]);
+  }, [language, isLoading]);
 
   const changeLanguage = (newLanguage: Language) => {
     const currentPath = location.pathname;
@@ -68,7 +75,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     
     // Create new path
     const newPath = `/${newLanguage}${pathSegments.length > 0 ? '/' + pathSegments.join('/') : ''}`;
-    window.location.href = newPath;
+    
+    // Use React Router navigation instead of window.location for instant change
+    navigate(newPath);
   };
 
   const t = (key: string): string => {
