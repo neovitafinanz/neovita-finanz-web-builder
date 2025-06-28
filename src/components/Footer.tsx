@@ -1,228 +1,185 @@
+
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Phone, Mail, MapPin, Shield, Lock, Award } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
-  const currentYear = new Date().getFullYear();
+  const { t, currentLanguage } = useLanguage();
 
-  const footerLinks = {
-    services: [
-      { name: t('footer.services.personalLoans'), href: "/prets-personnels" },
-      { name: t('footer.services.mortgageLoans'), href: "/prets-immobiliers" },
-      { name: t('footer.services.creditBuyback'), href: "/rachat-credit" },
-      { name: t('footer.services.workCredit'), href: "/credit-travaux" },
-      { name: t('footer.services.insurance'), href: "/assurances" }
-    ],
-    company: [
-      { name: t('footer.company.about'), href: "/a-propos" },
-      { name: t('footer.company.team'), href: "/equipe" },
-      { name: t('footer.company.careers'), href: "/carrieres" },
-      { name: t('footer.company.partners'), href: "/partenaires" },
-      { name: t('footer.company.news'), href: "/actualites" }
-    ],
-    legal: [
-      { name: t('footer.legal.terms'), href: "/mentions-legales" },
-      { name: t('footer.legal.privacy'), href: "/politique-confidentialite" },
-      { name: t('footer.legal.conditions'), href: "/conditions-generales" },
-      { name: t('footer.legal.sitemap'), href: "/plan-site" },
-      { name: t('footer.legal.cookies'), href: "/cookies" }
-    ]
+  const getLocalizedPath = (path: string) => {
+    return currentLanguage === 'fr' ? path : `/${currentLanguage}${path}`;
   };
 
-  const trustLabels = [
-    { name: t('footer.trust.gdpr'), description: t('footer.trust.gdprDesc') },
-    { name: t('footer.trust.ssl'), description: t('footer.trust.sslDesc') },
-    { name: t('footer.trust.rcs'), description: t('footer.trust.rcsDesc') }
-  ];
-
   return (
-    <footer className="bg-gradient-to-b from-green-800 to-green-700 text-white">
-      {/* Main Footer */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 gap-8">
+    <footer className="bg-slate-900 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center space-x-2 mb-6">
-              <img 
-                src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
-                alt="Neovita Finanz" 
-                className="w-12 h-12 object-contain"
-              />
-              <div>
-                <h3 className="text-xl font-bold">Neovita Finanz</h3>
-                <p className="text-green-200 text-sm">{t('footer.tagline')}</p>
-              </div>
-            </Link>
-            
-            <p className="text-green-100 mb-6 leading-relaxed">
+          <div className="space-y-4">
+            <div className="flex items-center">
+              <span className="text-2xl font-bold text-primary">BHV Auto</span>
+            </div>
+            <p className="text-gray-300 text-sm">
+              {t('footer.tagline')}
+            </p>
+            <p className="text-gray-400 text-sm">
               {t('footer.description')}
             </p>
-
-            {/* Contact Info */}
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-green-100 text-sm">
-                  1 Rue du Bois Chaland, 91090 Lisses, France
-                </span>
+            
+            <div className="space-y-2">
+              <div className="flex items-center text-sm text-gray-300">
+                <Phone className="h-4 w-4 mr-2 text-primary" />
+                01 86 65 48 40
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-green-100 text-sm">01 23 45 67 89</span>
+              <div className="flex items-center text-sm text-gray-300">
+                <Mail className="h-4 w-4 mr-2 text-primary" />
+                contact@bhv-auto.fr
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-green-100 text-sm">contact@neovitafinanz.com</span>
+              <div className="flex items-center text-sm text-gray-300">
+                <MapPin className="h-4 w-4 mr-2 text-primary" />
+                Paris, France
               </div>
-            </div>
-
-            {/* Social Media */}
-            <div className="flex space-x-4 mt-6">
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a 
-                href="#" 
-                className="w-8 h-8 bg-green-600 hover:bg-green-500 rounded-full flex items-center justify-center transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-bold mb-6">{t('footer.sections.services')}</h4>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link, index) => (
-                <li key={index}>
-                  <Link 
-                    to={link.href} 
-                    className="text-green-200 hover:text-white transition-colors text-sm flex items-center group"
-                  >
-                    {link.name}
-                    <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </Link>
-                </li>
-              ))}
+            <h3 className="text-lg font-semibold mb-4">{t('footer.sections.services')}</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to={getLocalizedPath('/personal-loans')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.services.personalLoans')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/mortgage-loans')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.services.mortgageLoans')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/credit-buyback')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.services.creditBuyback')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/work-credit')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.services.workCredit')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/insurance')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.services.insurance')}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h4 className="text-lg font-bold mb-6">{t('footer.sections.company')}</h4>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link, index) => (
-                <li key={index}>
-                  <Link 
-                    to={link.href} 
-                    className="text-green-200 hover:text-white transition-colors text-sm flex items-center group"
-                  >
-                    {link.name}
-                    <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </Link>
-                </li>
-              ))}
+            <h3 className="text-lg font-semibold mb-4">{t('footer.sections.company')}</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to={getLocalizedPath('/about')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.company.about')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/team')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.company.team')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/careers')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.company.careers')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/partners')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.company.partners')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/news')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.company.news')}
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Legal & Trust */}
+          {/* Legal */}
           <div>
-            <h4 className="text-lg font-bold mb-6">{t('footer.sections.legal')}</h4>
-            <ul className="space-y-3 mb-6">
-              {footerLinks.legal.map((link, index) => (
-                <li key={index}>
-                  <Link 
-                    to={link.href} 
-                    className="text-green-200 hover:text-white transition-colors text-sm flex items-center group"
-                  >
-                    {link.name}
-                    <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </Link>
-                </li>
-              ))}
+            <h3 className="text-lg font-semibold mb-4">{t('footer.sections.legal')}</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link to={getLocalizedPath('/legal')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.legal.terms')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/privacy')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.legal.privacy')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/conditions')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.legal.conditions')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/sitemap')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.legal.sitemap')}
+                </Link>
+              </li>
+              <li>
+                <Link to={getLocalizedPath('/cookies')} className="text-gray-300 hover:text-primary transition-colors text-sm">
+                  {t('footer.legal.cookies')}
+                </Link>
+              </li>
             </ul>
+          </div>
+        </div>
 
-            {/* Trust Labels */}
-            <div className="space-y-2">
-              <h5 className="text-sm font-semibold text-yellow-400 mb-3">{t('footer.trust.title')}</h5>
-              {trustLabels.map((label, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <div>
-                    <span className="text-green-100 text-xs font-medium">{label.name}</span>
-                    <p className="text-green-300 text-xs">{label.description}</p>
-                  </div>
-                </div>
-              ))}
+        {/* Trust Indicators */}
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-2">
+                <Shield className="h-8 w-8 text-primary" />
+              </div>
+              <h4 className="font-semibold text-sm">{t('footer.trust.gdpr')}</h4>
+              <p className="text-xs text-gray-400">{t('footer.trust.gdprDesc')}</p>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-2">
+                <Lock className="h-8 w-8 text-primary" />
+              </div>
+              <h4 className="font-semibold text-sm">{t('footer.trust.ssl')}</h4>
+              <p className="text-xs text-gray-400">{t('footer.trust.sslDesc')}</p>
+            </div>
+            <div className="text-center">
+              <div className="flex items-center justify-center mb-2">
+                <Award className="h-8 w-8 text-primary" />
+              </div>
+              <h4 className="font-semibold text-sm">{t('footer.trust.rcs')}</h4>
+              <p className="text-xs text-gray-400">{t('footer.trust.rcsDesc')}</p>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Legal Information */}
-      <div className="border-t border-green-600">
-        <div className="container mx-auto px-4 py-8">
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Company Details */}
-            <div>
-              <h4 className="text-lg font-bold text-yellow-400 mb-4">{t('footer.companyInfo.title')}</h4>
-              <div className="grid md:grid-cols-2 gap-4 text-sm text-green-200">
-                <div>
-                  <p><strong>{t('footer.companyInfo.legalForm')} :</strong> SARL</p>
-                  <p><strong>{t('footer.companyInfo.capital')} :</strong> 17 000 000 €</p>
-                  <p><strong>SIREN :</strong> 493 171 540</p>
-                  <p><strong>SIRET :</strong> 493 171 540 00013</p>
-                </div>
-                <div>
-                  <p><strong>TVA :</strong> FR16493171540</p>
-                  <p><strong>RCS :</strong> Évry (07/07/2008)</p>
-                  <p><strong>RNE :</strong> 02/04/2008</p>
-                  <p><strong>{t('footer.companyInfo.employees')} :</strong> 43 salariés</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Important Notice */}
-            <div>
-              <h4 className="text-lg font-bold text-yellow-400 mb-4">{t('footer.warning.title')}</h4>
-              <div className="text-sm text-green-200 space-y-2">
-                <p>
-                  <strong>Taux d'intérêt :</strong> {t('footer.warning.rates')}
-                </p>
-                <p>
-                  <strong>Crédit :</strong> {t('footer.warning.credit')}
-                </p>
-                <p>
-                  <strong>Assurance :</strong> {t('footer.warning.insurance')}
-                </p>
-              </div>
-            </div>
+        {/* Warning & Copyright */}
+        <div className="border-t border-gray-700 pt-6">
+          <div className="bg-gray-800 rounded-lg p-4 mb-4">
+            <h4 className="font-semibold text-sm mb-2 text-yellow-400">{t('footer.warning.title')}</h4>
+            <ul className="text-xs text-gray-300 space-y-1">
+              <li>• {t('footer.warning.rates')}</li>
+              <li>• {t('footer.warning.credit')}</li>
+              <li>• {t('footer.warning.insurance')}</li>
+            </ul>
           </div>
-        </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="border-t border-green-600 bg-green-700">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row justify-center items-center">
-            <p className="text-green-300 text-sm">
-              © {currentYear} Neovita Finanz. {t('footer.copyright')}
-            </p>
+          
+          <div className="text-center text-xs text-gray-400">
+            <p>&copy; 2024 BHV Auto. {t('footer.copyright')}</p>
           </div>
         </div>
       </div>
