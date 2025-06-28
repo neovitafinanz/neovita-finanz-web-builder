@@ -2,40 +2,43 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Handshake, Building, Award } from 'lucide-react';
 
 const Partenaires = () => {
+  const { t } = useLanguage();
+
   const partnerTypes = [
     {
       icon: Building,
-      title: 'Banques partenaires',
-      description: 'Réseau de banques et établissements financiers'
+      title: t('partners.types.banks.title'),
+      description: t('partners.types.banks.description')
     },
     {
       icon: Handshake,
-      title: 'Courtiers',
-      description: 'Collaboration avec des courtiers expérimentés'
+      title: t('partners.types.brokers.title'),
+      description: t('partners.types.brokers.description')
     },
     {
       icon: Award,
-      title: 'Assureurs',
-      description: 'Partenariats avec les meilleurs assureurs'
+      title: t('partners.types.insurers.title'),
+      description: t('partners.types.insurers.description')
     }
   ];
 
   return (
     <Layout 
-      title="Partenaires" 
-      description="Découvrez les partenaires de Neovita Finanz. Réseau de banques, courtiers et assureurs pour vous offrir les meilleures solutions."
+      title={t('partners.title')}
+      description={t('partners.metaDescription')}
     >
       <section className="relative bg-gradient-to-br from-blue-900 to-green-700 text-white py-20">
         <div className="relative container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
-              Nos Partenaires
+              {t('partners.title')}
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-gray-200">
-              Un réseau solide pour votre réussite
+              {t('partners.subtitle')}
             </p>
           </div>
         </div>
