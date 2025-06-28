@@ -4,13 +4,11 @@ import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { useUrlLanguage } from '@/hooks/useUrlLanguage';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
-  const { t } = useLanguage();
-  const { currentLanguage, changeLanguage } = useUrlLanguage();
+  const { t, language, changeLanguage } = useLanguage();
 
   const mainNavItems = [
     { name: t('nav.home'), href: '/' },
@@ -29,7 +27,7 @@ const Header = () => {
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLanguage = event.target.value;
     if (selectedLanguage) {
-      changeLanguage(selectedLanguage);
+      changeLanguage(selectedLanguage as any);
     }
   };
 
@@ -57,7 +55,7 @@ const Header = () => {
               <Globe className="w-4 h-4" />
               <span>🌐 Langue :</span>
               <select 
-                value={currentLanguage}
+                value={language}
                 onChange={handleLanguageChange}
                 className="bg-green-700 text-white border border-green-500 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-white"
               >
@@ -113,7 +111,7 @@ const Header = () => {
               <div className="flex items-center space-x-2 lg:hidden">
                 <Globe className="w-4 h-4" />
                 <select 
-                  value={currentLanguage}
+                  value={language}
                   onChange={handleLanguageChange}
                   className="border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-green-500"
                 >
