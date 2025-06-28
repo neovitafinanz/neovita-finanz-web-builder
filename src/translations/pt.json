@@ -51,6 +51,78 @@
     "ctaTitle": "Pronto para Importar o Seu Veículo?",
     "ctaSubtitle": "Os nossos especialistas acompanham-no no seu projeto de importação"
   },
+  "personalLoans": {
+    "metaDescription": "Empréstimos pessoais com Neovita Finanz. Financiamento rápido e flexível para todos os seus projetos pessoais.",
+    "hero": {
+      "subtitle": "Financie todos os seus projetos pessoais"
+    },
+    "advantages": {
+      "title": "Vantagens dos empréstimos pessoais",
+      "flexibility": "Utilização livre dos fundos",
+      "rapidResponse": "Resposta rápida em 48h",
+      "competitiveRates": "Taxas competitivas",
+      "noCollateral": "Sem garantia ou fiança",
+      "personalizedSupport": "Acompanhamento personalizado",
+      "freeStudy": "Estudo gratuito do dossiê"
+    },
+    "cta": {
+      "study": "Estudar o meu dossiê"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Consolidação de crédito com Neovita Finanz. Reduza as suas prestações mensais, simplifique a sua gestão financeira.",
+    "hero": {
+      "subtitle": "Otimize as suas finanças agrupando todos os seus créditos"
+    },
+    "advantages": {
+      "title": "Vantagens da consolidação de crédito",
+      "reduction": "Reduza as suas prestações mensais",
+      "simplification": "Simplifique a sua gestão",
+      "betterRates": "Taxas potencialmente melhores",
+      "singlePayment": "Uma única prestação mensal",
+      "additionalCash": "Possibilidade de liquidez adicional",
+      "freeAdvice": "Aconselhamento personalizado gratuito"
+    },
+    "cta": {
+      "request": "Solicitar esta consolidação",
+      "study": "Estudar o meu dossiê"
+    }
+  },
+  "about": {
+    "metaDescription": "Sobre a BHV Auto - Descubra a nossa experiência em importação de veículos e a nossa equipa de especialistas.",
+    "hero": {
+      "subtitle": "O seu parceiro de confiança há 15 anos"
+    },
+    "mission": {
+      "title": "A Nossa Missão",
+      "description": "Acompanhamos os nossos clientes nos seus projetos de importação de veículos com experiência, transparência e proximidade. A nossa equipa de 43 conselheiros especializados guia-o em cada etapa do seu projeto."
+    },
+    "stats": {
+      "advisors": "Conselheiros",
+      "experience": "Anos de experiência",
+      "clients": "Clientes satisfeitos",
+      "trust": "Confiança"
+    }
+  },
+  "partners": {
+    "title": "Os Nossos Parceiros",
+    "subtitle": "Uma rede sólida para o seu sucesso",
+    "metaDescription": "Descubra os parceiros da BHV Auto. Rede de bancos, corretores e seguradoras para lhe oferecer as melhores soluções.",
+    "types": {
+      "banks": {
+        "title": "Bancos parceiros",
+        "description": "Rede de bancos e instituições financeiras"
+      },
+      "brokers": {
+        "title": "Corretores",
+        "description": "Colaboração com corretores experientes"
+      },
+      "insurers": {
+        "title": "Seguradoras",
+        "description": "Parcerias com as melhores seguradoras"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "Empréstimos Pessoais",

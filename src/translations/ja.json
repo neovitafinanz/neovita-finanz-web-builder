@@ -51,6 +51,78 @@
     "ctaTitle": "車両を輸入する準備はできましたか？",
     "ctaSubtitle": "専門家がお客様の輸入プロジェクトをサポートします"
   },
+  "personalLoans": {
+    "metaDescription": "Neovita Finanzの個人ローン。すべての個人プロジェクトのための迅速で柔軟な融資。",
+    "hero": {
+      "subtitle": "すべての個人プロジェクトに融資"
+    },
+    "advantages": {
+      "title": "個人ローンの利点",
+      "flexibility": "資金の自由使用",
+      "rapidResponse": "48時間以内の迅速な回答",
+      "competitiveRates": "競争力のある金利",
+      "noCollateral": "担保や保証なし",
+      "personalizedSupport": "個人的なサポート",
+      "freeStudy": "無料ファイル調査"
+    },
+    "cta": {
+      "study": "私のファイルを調査"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Neovita Finanzのクレジット統合。月々の支払いを減らし、財務管理を簡素化します。",
+    "hero": {
+      "subtitle": "すべてのクレジットを統合して財務を最適化"
+    },
+    "advantages": {
+      "title": "クレジット統合の利点",
+      "reduction": "月々の支払いを削減",
+      "simplification": "管理を簡素化",
+      "betterRates": "より良い金利の可能性",
+      "singlePayment": "単一の月払い",
+      "additionalCash": "追加現金の可能性",
+      "freeAdvice": "無料個人アドバイス"
+    },
+    "cta": {
+      "request": "この統合を要求",
+      "study": "私のファイルを調査"
+    }
+  },
+  "about": {
+    "metaDescription": "BHV Autoについて - 車両輸入における専門知識と専門家チームをご覧ください。",
+    "hero": {
+      "subtitle": "15年間の信頼できるパートナー"
+    },
+    "mission": {
+      "title": "私たちの使命",
+      "description": "専門知識、透明性、親近感をもって、お客様の車両輸入プロジェクトをサポートします。43名の専門アドバイザーのチームが、プロジェクトのあらゆるステップでお客様をガイドします。"
+    },
+    "stats": {
+      "advisors": "アドバイザー",
+      "experience": "年の経験",
+      "clients": "満足したお客様",
+      "trust": "信頼"
+    }
+  },
+  "partners": {
+    "title": "パートナー",
+    "subtitle": "成功のための強固なネットワーク",
+    "metaDescription": "BHV Autoパートナーをご覧ください。最高のソリューションを提供するための銀行、ブローカー、保険会社のネットワーク。",
+    "types": {
+      "banks": {
+        "title": "パートナー銀行",
+        "description": "銀行と金融機関のネットワーク"
+      },
+      "brokers": {
+        "title": "ブローカー",
+        "description": "経験豊富なブローカーとの協力"
+      },
+      "insurers": {
+        "title": "保険会社",
+        "description": "最高の保険会社とのパートナーシップ"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "個人ローン",

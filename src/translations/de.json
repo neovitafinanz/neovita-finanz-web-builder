@@ -51,6 +51,78 @@
     "ctaTitle": "Bereit, Ihr Fahrzeug zu importieren?",
     "ctaSubtitle": "Unsere Experten begleiten Sie bei Ihrem Import-Projekt"
   },
+  "personalLoans": {
+    "metaDescription": "Privatkredite mit Neovita Finanz. Schnelle und flexible Finanzierung für alle Ihre persönlichen Projekte.",
+    "hero": {
+      "subtitle": "Finanzieren Sie alle Ihre persönlichen Projekte"
+    },
+    "advantages": {
+      "title": "Vorteile von Privatkrediten",
+      "flexibility": "Freie Verwendung der Mittel",
+      "rapidResponse": "Schnelle Antwort innerhalb von 48h",
+      "competitiveRates": "Wettbewerbsfähige Zinsen",
+      "noCollateral": "Ohne Sicherheiten oder Bürgschaft",
+      "personalizedSupport": "Persönliche Betreuung",
+      "freeStudy": "Kostenlose Dossierprüfung"
+    },
+    "cta": {
+      "study": "Mein Dossier prüfen"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Kreditumschuldung mit Neovita Finanz. Reduzieren Sie Ihre monatlichen Raten, vereinfachen Sie Ihr Finanzmanagement.",
+    "hero": {
+      "subtitle": "Optimieren Sie Ihre Finanzen durch Zusammenfassung aller Ihrer Kredite"
+    },
+    "advantages": {
+      "title": "Vorteile der Kreditumschuldung",
+      "reduction": "Reduzieren Sie Ihre monatlichen Raten",
+      "simplification": "Vereinfachen Sie Ihr Management",
+      "betterRates": "Möglicherweise bessere Zinsen",
+      "singlePayment": "Eine einzige monatliche Rate",
+      "additionalCash": "Möglichkeit zusätzlicher Liquidität",
+      "freeAdvice": "Kostenlose persönliche Beratung"
+    },
+    "cta": {
+      "request": "Diese Umschuldung beantragen",
+      "study": "Mein Dossier prüfen"
+    }
+  },
+  "about": {
+    "metaDescription": "Über BHV Auto - Entdecken Sie unsere Expertise im Fahrzeugimport und unser Spezialistenteam.",
+    "hero": {
+      "subtitle": "Ihr vertrauensvoller Partner seit 15 Jahren"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Wir begleiten unsere Kunden bei ihren Fahrzeugimport-Projekten mit Expertise, Transparenz und Nähe. Unser Team von 43 spezialisierten Beratern führt Sie durch jeden Schritt Ihres Projekts."
+    },
+    "stats": {
+      "advisors": "Berater",
+      "experience": "Jahre Erfahrung",
+      "clients": "Zufriedene Kunden",
+      "trust": "Vertrauen"
+    }
+  },
+  "partners": {
+    "title": "Unsere Partner",
+    "subtitle": "Ein solides Netzwerk für Ihren Erfolg",
+    "metaDescription": "Entdecken Sie BHV Auto Partner. Netzwerk von Banken, Maklern und Versicherern, um Ihnen die besten Lösungen zu bieten.",
+    "types": {
+      "banks": {
+        "title": "Partnerbanken",
+        "description": "Netzwerk von Banken und Finanzinstituten"
+      },
+      "brokers": {
+        "title": "Makler",
+        "description": "Zusammenarbeit mit erfahrenen Maklern"
+      },
+      "insurers": {
+        "title": "Versicherer",
+        "description": "Partnerschaften mit den besten Versicherern"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "Privatkredite",
