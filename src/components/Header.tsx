@@ -11,17 +11,17 @@ const Header = () => {
   const { t, language, changeLanguage } = useLanguage();
 
   const mainNavItems = [
-    { name: t('nav.home'), href: '/' },
-    { name: t('nav.personalLoans'), href: '/prets-personnels' },
-    { name: t('nav.mortgageLoans'), href: '/prets-immobiliers' },
-    { name: t('nav.creditBuyback'), href: '/rachat-credit' },
-    { name: t('nav.workCredit'), href: '/credit-travaux' },
-    { name: t('nav.insurance'), href: '/assurances' },
-    { name: t('nav.about'), href: '/a-propos' },
+    { name: t('nav.home'), href: `/${language}` },
+    { name: t('nav.personalLoans'), href: `/${language}/prets-personnels` },
+    { name: t('nav.mortgageLoans'), href: `/${language}/prets-immobiliers` },
+    { name: t('nav.creditBuyback'), href: `/${language}/rachat-credit` },
+    { name: t('nav.workCredit'), href: `/${language}/credit-travaux` },
+    { name: t('nav.insurance'), href: `/${language}/assurances` },
+    { name: t('nav.about'), href: `/${language}/a-propos` },
   ];
 
   const handleCTAClick = () => {
-    navigate('/demande-credit');
+    navigate(`/${language}/demande-credit`);
   };
 
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -83,7 +83,7 @@ const Header = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center" aria-label="Accueil Neovita Finanz">
+            <Link to={`/${language}`} className="flex items-center" aria-label="Accueil Neovita Finanz">
               <img 
                 src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
                 alt="Neovita Finanz - Votre partenaire financier de confiance" 
