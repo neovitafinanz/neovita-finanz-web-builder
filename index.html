@@ -25,22 +25,6 @@
     <meta property="twitter:title" content="Neovita Finanz - Votre Partenaire Financier de Confiance" />
     <meta property="twitter:description" content="Solutions financières personnalisées : prêts, crédits, assurances. Accompagnement expert pour tous vos projets." />
     <meta property="twitter:image" content="https://neovitafinanz.com/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" />
-    
-    <!-- Language redirection script -->
-    <script>
-      (function () {
-        const supportedLangs = ['fr', 'en', 'pt', 'de', 'es', 'it'];
-        const userLang = navigator.language.slice(0, 2).toLowerCase();
-        const currentPath = window.location.pathname;
-
-        const isLanguagePath = supportedLangs.some(lang => currentPath.startsWith('/' + lang + '/'));
-
-        if (!isLanguagePath) {
-          const redirectLang = supportedLangs.includes(userLang) ? userLang : 'fr';
-          window.location.replace('/' + redirectLang + '/');
-        }
-      })();
-    </script>
   </head>
   <body>
     <div id="root"></div>
