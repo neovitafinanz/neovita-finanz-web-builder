@@ -1,12 +1,7 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LanguageProvider } from "./contexts/LanguageContext";
-import ScrollToTop from "./components/ScrollToTop";
+
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { LanguageProvider } from './contexts/LanguageContext';
 import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
 import PretPersonnel from "./pages/PretPersonnel";
 import PretImmobilier from "./pages/PretImmobilier";
 import RachatCredit from "./pages/RachatCredit";
@@ -24,53 +19,54 @@ import ConditionsGenerales from "./pages/ConditionsGenerales";
 import PlanSite from "./pages/PlanSite";
 import Cookies from "./pages/Cookies";
 import FormulaireCredit from "./pages/FormulaireCredit";
-import LanguageRedirect from "./components/LanguageRedirect";
+import NotFound from "./pages/NotFound";
+import ScrollToTop from './components/ScrollToTop';
+import './App.css';
 
-const queryClient = new QueryClient();
-
-const App = () => {
-  console.log('App rendering');
+function App() {
+  const supportedLanguages = ['fr', 'en', 'es', 'it', 'de', 'pt', 'nl', 'da', 'sv', 'no', 'ja', 'zh-CN', 'ru'];
   
   return (
-    <QueryClientProvider client={queryClient}>
+    <Router>
       <LanguageProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <ScrollToTop />
-            <Routes>
-              {/* Routes sans préfixe de langue (français par défaut) */}
-              <Route path="/" element={<Index />} />
-              <Route path="/prets-personnels" element={<PretPersonnel />} />
-              <Route path="/prets-immobiliers" element={<PretImmobilier />} />
-              <Route path="/rachat-credit" element={<RachatCredit />} />
-              <Route path="/credit-travaux" element={<CreditTravaux />} />
-              <Route path="/assurances" element={<Assurances />} />
-              <Route path="/a-propos" element={<About />} />
-              <Route path="/equipe" element={<Equipe />} />
-              <Route path="/carrieres" element={<Carrieres />} />
-              <Route path="/partenaires" element={<Partenaires />} />
-              <Route path="/actualites" element={<Actualites />} />
-              <Route path="/informations-legales" element={<InformationsLegales />} />
-              <Route path="/mentions-legales" element={<MentionsLegales />} />
-              <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
-              <Route path="/conditions-generales" element={<ConditionsGenerales />} />
-              <Route path="/plan-site" element={<PlanSite />} />
-              <Route path="/cookies" element={<Cookies />} />
-              <Route path="/demande-credit" element={<FormulaireCredit />} />
-              
-              {/* Routes avec préfixe de langue - gère à la fois /lang et /lang/path */}
-              <Route path="/:lang" element={<LanguageRedirect />} />
-              <Route path="/:lang/*" element={<LanguageRedirect />} />
-              
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
+        <ScrollToTop />
+        <Routes>
+          {/* Redirect root to French */}
+          <Route path="/" element={<Navigate to="/fr" replace />} />
+          
+          {/* Language-specific routes */}
+          {supportedLanguages.map(lang => (
+            <Route key={lang} path={`/${lang}/*`} element={
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/prets-personnels" element={<PretPersonnel />} />
+                <Route path="/prets-immobiliers" element={<PretImmobilier />} />
+                <Route path="/rachat-credit" element={<RachatCredit />} />
+                <Route path="/credit-travaux" element={<CreditTravaux />} />
+                <Route path="/assurances" element={<Assurances />} />
+                <Route path="/a-propos" element={<About />} />
+                <Route path="/equipe" element={<Equipe />} />
+                <Route path="/carrieres" element={<Carrieres />} />
+                <Route path="/partenaires" element={<Partenaires />} />
+                <Route path="/actualites" element={<Actualites />} />
+                <Route path="/informations-legales" element={<InformationsLegales />} />
+                <Route path="/mentions-legales" element={<MentionsLegales />} />
+                <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+                <Route path="/conditions-generales" element={<ConditionsGenerales />} />
+                <Route path="/plan-site" element={<PlanSite />} />
+                <Route path="/cookies" element={<Cookies />} />
+                <Route path="/demande-credit" element={<FormulaireCredit />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            } />
+          ))}
+          
+          {/* Catch all - redirect to 404 */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </LanguageProvider>
-    </QueryClientProvider>
+    </Router>
   );
-};
+}
 
 export default App;
