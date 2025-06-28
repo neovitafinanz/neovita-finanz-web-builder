@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "ホーム",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "専門サポート",
       "description": "各ステップでお客様をガイドする43名の専門アドバイザー"
+    }
+  },
+  "simulator": {
+    "title": "ローンシミュレーター",
+    "subtitle": "数ステップで融資を計算",
+    "parameters": "ローンパラメータ",
+    "loanType": "ローンタイプ",
+    "selectLoanType": "タイプを選択",
+    "amount": "金額"
+  },
+  "testimonials": {
+    "title": "お客様の声",
+    "subtitle": "お客様のご意見",
+    "reviews": "レビュー",
+    "loanTypeLabel": "ローンタイプ",
+    "amountLabel": "金額",
+    "jeanmarc": {
+      "comment": "NeoVitaのおかげで、プロジェクトを開始するためのローンを迅速に取得できました。",
+      "loanType": "自営業者ローン"
+    },
+    "amelie": {
+      "comment": "完璧で迅速、そして非常にプロフェッショナルなサービスです！",
+      "loanType": "個人ローン"
+    },
+    "pedro": {
+      "comment": "シミュレーションから支払いまで、すべて順調に進みました。",
+      "loanType": "自動車金融"
     }
   },
   "footer": {

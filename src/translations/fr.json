@@ -151,6 +151,33 @@
       "description": "43 conseillers spécialisés pour vous guider à chaque étape"
     }
   },
+  "simulator": {
+    "title": "Simulateur de prêt",
+    "subtitle": "Calculez votre financement en quelques étapes",
+    "parameters": "Paramètres du prêt",
+    "loanType": "Type de prêt",
+    "selectLoanType": "Sélectionner un type",
+    "amount": "Montant"
+  },
+  "testimonials": {
+    "title": "Témoignages clients",
+    "subtitle": "Ce que disent nos clients",
+    "reviews": "avis",
+    "loanTypeLabel": "Type de prêt",
+    "amountLabel": "Montant",
+    "jeanmarc": {
+      "comment": "Grâce à NeoVita, j'ai obtenu rapidement un prêt pour lancer mon projet.",
+      "loanType": "Prêt auto-entrepreneur"
+    },
+    "amelie": {
+      "comment": "Service impeccable, rapide et très professionnel !",
+      "loanType": "Prêt personnel"
+    },
+    "pedro": {
+      "comment": "Tout s'est bien passé, de la simulation au paiement.",
+      "loanType": "Financement automobile"
+    }
+  },
   "footer": {
     "tagline": "Votre spécialiste de l'importation de véhicules",
     "description": "BHV Auto vous accompagne dans tous vos projets d'importation de véhicules avec expertise et proximité.",

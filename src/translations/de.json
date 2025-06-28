@@ -11,26 +11,26 @@
   },
   "common": {
     "phoneAvailable": "Montag bis Freitag von 9 bis 18 Uhr",
-    "requestLoan": "Kreditanfrage",
+    "requestLoan": "Kredit beantragen",
     "discover": "Entdecken",
-    "learnMoreAbout": "Mehr erfahren über",
-    "startRequest": "Meine Anfrage starten"
+    "learnMoreAbout": "Erfahren Sie mehr über",
+    "startRequest": "Meinen Antrag starten"
   },
   "hero": {
     "slide1": {
       "title": "Willkommen bei BHV Auto",
       "subtitle": "Ihr Spezialist für Fahrzeugimport",
-      "description": "Entdecken Sie unsere Fahrzeugimport-Services mit fachkundiger und persönlicher Betreuung."
+      "description": "Entdecken Sie unsere Fahrzeugimportdienste mit fachkundiger und persönlicher Betreuung."
     },
     "slide2": {
       "title": "Immobilienkredite",
       "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt",
-      "description": "Wettbewerbsfähige Zinsen und maßgeschneiderte Betreuung für die Realisierung Ihrer Immobilienprojekte."
+      "description": "Wettbewerbsfähige Zinsen und maßgeschneiderte Betreuung zur Umsetzung Ihrer Immobilienprojekte."
     },
     "slide3": {
       "title": "Kreditumschuldung",
       "subtitle": "Vereinfachen Sie Ihre Finanzen",
-      "description": "Fassen Sie Ihre Kredite zu einem zusammen, um Ihre monatlichen Raten zu reduzieren und Ihre finanzielle Ruhe wiederzuerlangen."
+      "description": "Fassen Sie Ihre Kredite zusammen, um Ihre monatlichen Raten zu reduzieren und Ihre finanzielle Ruhe wiederzufinden."
     },
     "slide4": {
       "title": "Expertise & Nähe",
@@ -38,18 +38,18 @@
       "description": "Ein engagiertes Expertenteam, das Sie bei all Ihren Finanzierungsprojekten begleitet."
     },
     "cta": {
-      "primary": "Anfrage stellen",
+      "primary": "Einen Antrag stellen",
       "secondary": "Meinen Kredit simulieren"
     },
-    "disclaimer": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit vor der Verpflichtung."
+    "disclaimer": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten."
   },
   "home": {
-    "metaDescription": "BHV Auto - Ihr Spezialist für Fahrzeugimport. Professionelle Import-Services mit fachkundiger Betreuung.",
-    "servicesTitle": "Unsere Import-Services",
-    "servicesSubtitle": "Lösungen, die auf alle Ihre Fahrzeugimport-Bedürfnisse zugeschnitten sind",
+    "metaDescription": "BHV Auto - Ihr Spezialist für Fahrzeugimport. Professionelle Importdienste mit fachkundiger Betreuung.",
+    "servicesTitle": "Unsere Importdienste",
+    "servicesSubtitle": "Lösungen, die auf alle Ihre Fahrzeugimportbedürfnisse zugeschnitten sind",
     "advantagesTitle": "Warum BHV Auto wählen",
     "ctaTitle": "Bereit, Ihr Fahrzeug zu importieren?",
-    "ctaSubtitle": "Unsere Experten begleiten Sie bei Ihrem Import-Projekt"
+    "ctaSubtitle": "Unsere Experten begleiten Sie bei Ihrem Importprojekt"
   },
   "personalLoans": {
     "metaDescription": "Privatkredite mit Neovita Finanz. Schnelle und flexible Finanzierung für alle Ihre persönlichen Projekte.",
@@ -61,12 +61,12 @@
       "flexibility": "Freie Verwendung der Mittel",
       "rapidResponse": "Schnelle Antwort innerhalb von 48h",
       "competitiveRates": "Wettbewerbsfähige Zinsen",
-      "noCollateral": "Ohne Sicherheiten oder Bürgschaft",
+      "noCollateral": "Ohne Garantie oder Bürgschaft",
       "personalizedSupport": "Persönliche Betreuung",
-      "freeStudy": "Kostenlose Dossierprüfung"
+      "freeStudy": "Kostenlose Aktenprüfung"
     },
     "cta": {
-      "study": "Mein Dossier prüfen"
+      "study": "Meine Akte prüfen"
     }
   },
   "creditBuyback": {
@@ -78,14 +78,14 @@
       "title": "Vorteile der Kreditumschuldung",
       "reduction": "Reduzieren Sie Ihre monatlichen Raten",
       "simplification": "Vereinfachen Sie Ihr Management",
-      "betterRates": "Möglicherweise bessere Zinsen",
+      "betterRates": "Potenziell bessere Zinsen",
       "singlePayment": "Eine einzige monatliche Rate",
       "additionalCash": "Möglichkeit zusätzlicher Liquidität",
       "freeAdvice": "Kostenlose persönliche Beratung"
     },
     "cta": {
       "request": "Diese Umschuldung beantragen",
-      "study": "Mein Dossier prüfen"
+      "study": "Meine Akte prüfen"
     }
   },
   "about": {
@@ -95,7 +95,7 @@
     },
     "mission": {
       "title": "Unsere Mission",
-      "description": "Wir begleiten unsere Kunden bei ihren Fahrzeugimport-Projekten mit Expertise, Transparenz und Nähe. Unser Team von 43 spezialisierten Beratern führt Sie durch jeden Schritt Ihres Projekts."
+      "description": "Wir begleiten unsere Kunden bei ihren Fahrzeugimportprojekten mit Expertise, Transparenz und Nähe. Unser Team von 43 spezialisierten Beratern führt Sie durch jeden Schritt Ihres Projekts."
     },
     "stats": {
       "advisors": "Berater",
@@ -126,7 +126,7 @@
   "services": {
     "personalLoans": {
       "title": "Privatkredite",
-      "description": "Finanzieren Sie Ihre persönlichen Projekte mit vorteilhaften Konditionen"
+      "description": "Finanzieren Sie Ihre persönlichen Projekte zu vorteilhaften Konditionen"
     },
     "mortgageLoans": {
       "title": "Immobilienkredite",
@@ -140,22 +140,49 @@
   "advantages": {
     "security": {
       "title": "Sicherheit & Vertrauen",
-      "description": "Zugelassenes Unternehmen mit 15 Jahren Erfahrung in der Finanzierung"
+      "description": "Zugelassenes Institut mit 15 Jahren Erfahrung in der Finanzierung"
     },
     "speed": {
       "title": "Schnelligkeit & Effizienz",
       "description": "Antwort innerhalb von 48 Stunden und schnelle Freigabe Ihrer Mittel"
     },
     "experts": {
-      "title": "Fachkundige Betreuung",
+      "title": "Expertenbetreuung",
       "description": "43 spezialisierte Berater, die Sie bei jedem Schritt begleiten"
+    }
+  },
+  "simulator": {
+    "title": "Kredit-Simulator",
+    "subtitle": "Berechnen Sie Ihre Finanzierung in wenigen Schritten",
+    "parameters": "Kreditparameter",
+    "loanType": "Kreditart",
+    "selectLoanType": "Art auswählen",
+    "amount": "Betrag"
+  },
+  "testimonials": {
+    "title": "Kundenstimmen",
+    "subtitle": "Was unsere Kunden sagen",
+    "reviews": "Bewertungen",
+    "loanTypeLabel": "Kreditart",
+    "amountLabel": "Betrag",
+    "jeanmarc": {
+      "comment": "Dank NeoVita habe ich schnell einen Kredit erhalten, um mein Projekt zu starten.",
+      "loanType": "Selbstständigenkredit"
+    },
+    "amelie": {
+      "comment": "Tadelloser, schneller und sehr professioneller Service!",
+      "loanType": "Privatkredit"
+    },
+    "pedro": {
+      "comment": "Alles lief gut, von der Simulation bis zur Zahlung.",
+      "loanType": "Autofinanzierung"
     }
   },
   "footer": {
     "tagline": "Ihr Spezialist für Fahrzeugimport",
-    "description": "BHV Auto begleitet Sie bei allen Ihren Fahrzeugimport-Projekten mit Expertise und Nähe.",
+    "description": "BHV Auto begleitet Sie bei all Ihren Fahrzeugimportprojekten mit Expertise und Nähe.",
     "sections": {
-      "services": "Unsere Services",
+      "services": "Unsere Dienstleistungen",
       "company": "Das Unternehmen",
       "legal": "Rechtliche Informationen"
     },
@@ -187,19 +214,19 @@
       "ssl": "SSL-gesichert",
       "sslDesc": "Sichere Verbindung",
       "rcs": "RCS Évry",
-      "rcsDesc": "Zugelassenes Unternehmen"
+      "rcsDesc": "Zugelassenes Institut"
     },
     "companyInfo": {
       "title": "Unternehmensinformationen",
       "legalForm": "Rechtsform",
       "capital": "Kapital",
-      "employees": "Mitarbeiter"
+      "employees": "Personal"
     },
     "warning": {
       "title": "Wichtige Informationen",
       "rates": "Von 0,9% bis 19,9% je nach Profil und Laufzeit",
       "credit": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden",
-      "insurance": "Eine Kreditversicherung ist nicht obligatorisch"
+      "insurance": "Kreditnehmerversicherung ist nicht obligatorisch"
     },
     "copyright": "Alle Rechte vorbehalten."
   }

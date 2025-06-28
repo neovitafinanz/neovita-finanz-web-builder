@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Hjem",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "Ekspertveiledning",
       "description": "43 spesialiserte rådgivere for å guide deg gjennom hvert trinn"
+    }
+  },
+  "simulator": {
+    "title": "Lånesimulator",
+    "subtitle": "Beregn din finansiering i få trinn",
+    "parameters": "Låneparametere",
+    "loanType": "Lånetype",
+    "selectLoanType": "Velg en type",
+    "amount": "Beløp"
+  },
+  "testimonials": {
+    "title": "Kundevitnesbyrd",
+    "subtitle": "Hva våre kunder sier",
+    "reviews": "anmeldelser",
+    "loanTypeLabel": "Lånetype",
+    "amountLabel": "Beløp",
+    "jeanmarc": {
+      "comment": "Takket være NeoVita fikk jeg raskt et lån for å starte prosjektet mitt.",
+      "loanType": "Selvstendig næringsdrivende lån"
+    },
+    "amelie": {
+      "comment": "Plettfri, rask og svært profesjonell service!",
+      "loanType": "Personlig lån"
+    },
+    "pedro": {
+      "comment": "Alt gikk bra, fra simulering til betaling.",
+      "loanType": "Bilfinansiering"
     }
   },
   "footer": {

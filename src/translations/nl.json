@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Startpagina",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "Deskundige Begeleiding",
       "description": "43 gespecialiseerde adviseurs om u bij elke stap te begeleiden"
+    }
+  },
+  "simulator": {
+    "title": "Lening simulator",
+    "subtitle": "Bereken uw financiering in enkele stappen",
+    "parameters": "Lening parameters",
+    "loanType": "Type lening",
+    "selectLoanType": "Selecteer een type",
+    "amount": "Bedrag"
+  },
+  "testimonials": {
+    "title": "Klantgetuigenissen",
+    "subtitle": "Wat onze klanten zeggen",
+    "reviews": "beoordelingen",
+    "loanTypeLabel": "Type lening",
+    "amountLabel": "Bedrag",
+    "jeanmarc": {
+      "comment": "Dankzij NeoVita heb ik snel een lening gekregen om mijn project te starten.",
+      "loanType": "Zelfstandige lening"
+    },
+    "amelie": {
+      "comment": "Onberispelijke, snelle en zeer professionele service!",
+      "loanType": "Persoonlijke lening"
+    },
+    "pedro": {
+      "comment": "Alles verliep goed, van simulatie tot betaling.",
+      "loanType": "Auto financiering"
     }
   },
   "footer": {

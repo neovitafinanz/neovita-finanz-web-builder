@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Inicio",
@@ -119,7 +118,7 @@
       },
       "insurers": {
         "title": "Aseguradoras",
-        "description": "Alianzas con las mejores aseguradoras"
+        "description": "Asociaciones con las mejores aseguradoras"
       }
     }
   },
@@ -139,16 +138,43 @@
   },
   "advantages": {
     "security": {
-      "title": "Seguridad & Confianza",
-      "description": "Establecimiento autorizado con 15 años de experiencia en financiación"
+      "title": "Seguridad y Confianza",
+      "description": "Establecimiento aprobado con 15 años de experiencia en financiación"
     },
     "speed": {
-      "title": "Rapidez & Eficiencia",
-      "description": "Respuesta en 48h y desbloqueo rápido de sus fondos"
+      "title": "Rapidez y Eficiencia",
+      "description": "Respuesta en 48 horas y liberación rápida de sus fondos"
     },
     "experts": {
       "title": "Acompañamiento Experto",
       "description": "43 asesores especializados para guiarle en cada paso"
+    }
+  },
+  "simulator": {
+    "title": "Simulador de préstamo",
+    "subtitle": "Calcule su financiación en pocos pasos",
+    "parameters": "Parámetros del préstamo",
+    "loanType": "Tipo de préstamo",
+    "selectLoanType": "Seleccionar un tipo",
+    "amount": "Importe"
+  },
+  "testimonials": {
+    "title": "Testimonios de clientes",
+    "subtitle": "Lo que dicen nuestros clientes",
+    "reviews": "opiniones",
+    "loanTypeLabel": "Tipo de préstamo",
+    "amountLabel": "Importe",
+    "jeanmarc": {
+      "comment": "Gracias a NeoVita, obtuve rápidamente un préstamo para lanzar mi proyecto.",
+      "loanType": "Préstamo autónomo"
+    },
+    "amelie": {
+      "comment": "¡Servicio impecable, rápido y muy profesional!",
+      "loanType": "Préstamo personal"
+    },
+    "pedro": {
+      "comment": "Todo salió bien, desde la simulación hasta el pago.",
+      "loanType": "Financiación de automóvil"
     }
   },
   "footer": {
@@ -174,7 +200,7 @@
       "news": "Noticias"
     },
     "legal": {
-      "terms": "Aviso Legal",
+      "terms": "Términos Legales",
       "privacy": "Política de Privacidad",
       "conditions": "Condiciones Generales",
       "sitemap": "Mapa del Sitio",
@@ -182,12 +208,12 @@
     },
     "trust": {
       "title": "Certificaciones",
-      "gdpr": "Conforme RGPD",
+      "gdpr": "Conforme a GDPR",
       "gdprDesc": "Protección de datos",
       "ssl": "Seguro SSL",
       "sslDesc": "Conexión segura",
       "rcs": "RCS Évry",
-      "rcsDesc": "Establecimiento autorizado"
+      "rcsDesc": "Establecimiento aprobado"
     },
     "companyInfo": {
       "title": "Información de la Empresa",

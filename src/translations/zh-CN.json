@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "首页",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "专家支持",
       "description": "43位专业顾问在每一步都为您提供指导"
+    }
+  },
+  "simulator": {
+    "title": "贷款模拟器",
+    "subtitle": "几步计算您的融资",
+    "parameters": "贷款参数",
+    "loanType": "贷款类型",
+    "selectLoanType": "选择类型",
+    "amount": "金额"
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "客户的话",
+    "reviews": "评论",
+    "loanTypeLabel": "贷款类型",
+    "amountLabel": "金额",
+    "jeanmarc": {
+      "comment": "感谢NeoVita，我快速获得了启动项目的贷款。",
+      "loanType": "自雇贷款"
+    },
+    "amelie": {
+      "comment": "无可挑剔、快速且非常专业的服务！",
+      "loanType": "个人贷款"
+    },
+    "pedro": {
+      "comment": "一切都很顺利，从模拟到付款。",
+      "loanType": "汽车融资"
     }
   },
   "footer": {

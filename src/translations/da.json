@@ -3,7 +3,7 @@
   "nav": {
     "home": "Hjem",
     "personalLoans": "Personlige Lån",
-    "mortgageLoans": "Realkreditlån",
+    "mortgageLoans": "Boliglån",
     "creditBuyback": "Kreditsamling",
     "workCredit": "Arbejdskredit",
     "insurance": "Forsikringer",
@@ -12,7 +12,7 @@
   "common": {
     "phoneAvailable": "Mandag til fredag fra 9 til 18",
     "requestLoan": "Låneansøgning",
-    "discover": "Opdag",
+    "discover": "Opdage",
     "learnMoreAbout": "Lær mere om",
     "startRequest": "Start min ansøgning"
   },
@@ -20,17 +20,17 @@
     "slide1": {
       "title": "Velkommen til BHV Auto",
       "subtitle": "Din specialist i køretøjsimport",
-      "description": "Opdag vores køretøjsimportservice med ekspert og personlig vejledning."
+      "description": "Opdag vores køretøjsimporttjenester med ekspert og personlig vejledning."
     },
     "slide2": {
-      "title": "Realkreditlån",
+      "title": "Boliglån",
       "subtitle": "Realiser Dit Ejendomsprojekt",
-      "description": "Konkurrencedygtige renter og skræddersyet vejledning til at realisere dine ejendomsprojekter."
+      "description": "Konkurrencedygtige renter og skræddersyet vejledning for at realisere dine ejendomsprojekter."
     },
     "slide3": {
       "title": "Kreditsamling",
-      "subtitle": "Forenkl Din Økonomi",
-      "description": "Saml dine kreditter i én for at reducere dine månedlige betalinger og genvinde din økonomiske ro."
+      "subtitle": "Forenkle Din Økonomi",
+      "description": "Saml dine kreditter i en for at reducere dine månedlige betalinger og genvinde din økonomiske ro."
     },
     "slide4": {
       "title": "Ekspertise & Nærhed",
@@ -38,14 +38,14 @@
       "description": "Et dedikeret team af eksperter til at ledsage dig i alle dine finansieringsprojekter."
     },
     "cta": {
-      "primary": "Lav en ansøgning",
+      "primary": "Gør en ansøgning",
       "secondary": "Simuler mit lån"
     },
-    "disclaimer": "Et kredit forpligter dig og skal tilbagebetales. Kontroller din tilbagebetalingsevne før du forpligter dig."
+    "disclaimer": "En kredit forpligter dig og skal betales tilbage. Kontroller din tilbagebetalingsevne før du forpligter dig."
   },
   "home": {
-    "metaDescription": "BHV Auto - Din specialist i køretøjsimport. Professionelle importservice med ekspertvejledning.",
-    "servicesTitle": "Vores Importservice",
+    "metaDescription": "BHV Auto - Din specialist i køretøjsimport. Professionelle importtjenester med ekspertvejledning.",
+    "servicesTitle": "Vores Importtjenester",
     "servicesSubtitle": "Løsninger tilpasset alle dine køretøjsimportbehov",
     "advantagesTitle": "Hvorfor Vælge BHV Auto",
     "ctaTitle": "Klar til at Importere Dit Køretøj?",
@@ -59,25 +59,25 @@
     "advantages": {
       "title": "Fordele ved personlige lån",
       "flexibility": "Fri brug af midler",
-      "rapidResponse": "Hurtig respons inden for 48t",
+      "rapidResponse": "Hurtig svar inden for 48t",
       "competitiveRates": "Konkurrencedygtige renter",
       "noCollateral": "Ingen garanti eller kaution",
       "personalizedSupport": "Personlig vejledning",
-      "freeStudy": "Gratis filundersøgelse"
+      "freeStudy": "Gratis aktundersøgelse"
     },
     "cta": {
-      "study": "Undersøg min fil"
+      "study": "Undersøg min akt"
     }
   },
   "creditBuyback": {
-    "metaDescription": "Kreditsamling med Neovita Finanz. Reducer dine månedlige betalinger, forenkl din økonomiske forvaltning.",
+    "metaDescription": "Kreditsamling med Neovita Finanz. Reducer dine månedlige betalinger, forenkle din økonomiske forvaltning.",
     "hero": {
-      "subtitle": "Optimer din økonomi ved at samle alle dine kreditter"
+      "subtitle": "Optimaliser din økonomi ved at samle alle dine kreditter"
     },
     "advantages": {
       "title": "Fordele ved kreditsamling",
       "reduction": "Reducer dine månedlige betalinger",
-      "simplification": "Forenkl din forvaltning",
+      "simplification": "Forenkle din forvaltning",
       "betterRates": "Potentielt bedre renter",
       "singlePayment": "En enkelt månedlig betaling",
       "additionalCash": "Mulighed for ekstra kontanter",
@@ -85,7 +85,7 @@
     },
     "cta": {
       "request": "Anmod om denne samling",
-      "study": "Undersøg min fil"
+      "study": "Undersøg min akt"
     }
   },
   "about": {
@@ -95,7 +95,7 @@
     },
     "mission": {
       "title": "Vores Mission",
-      "description": "Vi ledsager vores kunder i deres køretøjsimportprojekter med ekspertise, gennemsigtighed og nærhed. Vores team af 43 specialiserede rådgivere vejleder dig gennem hvert trin af dit projekt."
+      "description": "Vi ledsager vores kunder i deres køretøjsimportprojekter med ekspertise, gennemsigtighed og nærhed. Vores team af 43 specialiserede rådgivere guider dig gennem hvert trin af dit projekt."
     },
     "stats": {
       "advisors": "Rådgivere",
@@ -129,12 +129,12 @@
       "description": "Finansier dine personlige projekter med fordelagtige betingelser"
     },
     "mortgageLoans": {
-      "title": "Realkreditlån",
+      "title": "Boliglån",
       "description": "Realiser dit ejendomsprojekt med vores ekspertise"
     },
     "creditBuyback": {
       "title": "Kreditsamling",
-      "description": "Forenkl dine tilbagebetalinger og reducer dine månedlige betalinger"
+      "description": "Forenkle dine tilbagebetalinger og reducer dine månedlige betalinger"
     }
   },
   "advantages": {
@@ -143,12 +143,39 @@
       "description": "Godkendt etablissement med 15 års erfaring inden for finansiering"
     },
     "speed": {
-      "title": "Hurtighed & Effektivitet",
+      "title": "Hastighed & Effektivitet",
       "description": "Svar inden for 48 timer og hurtig frigivelse af dine midler"
     },
     "experts": {
       "title": "Ekspertvejledning",
       "description": "43 specialiserede rådgivere til at guide dig gennem hvert trin"
+    }
+  },
+  "simulator": {
+    "title": "Lånesimulator",
+    "subtitle": "Beregn din finansiering i få trin",
+    "parameters": "Låneparametre",
+    "loanType": "Lånetype",
+    "selectLoanType": "Vælg en type",
+    "amount": "Beløb"
+  },
+  "testimonials": {
+    "title": "Kundeanmeldelser",
+    "subtitle": "Hvad vores kunder siger",
+    "reviews": "anmeldelser",
+    "loanTypeLabel": "Lånetype",
+    "amountLabel": "Beløb",
+    "jeanmarc": {
+      "comment": "Takket være NeoVita fik jeg hurtigt et lån til at starte mit projekt.",
+      "loanType": "Selvstændigt lån"
+    },
+    "amelie": {
+      "comment": "Upåklagelig, hurtig og meget professionel service!",
+      "loanType": "Personligt lån"
+    },
+    "pedro": {
+      "comment": "Alt gik godt, fra simulation til betaling.",
+      "loanType": "Bilfinansiering"
     }
   },
   "footer": {
@@ -157,11 +184,11 @@
     "sections": {
       "services": "Vores Tjenester",
       "company": "Virksomheden",
-      "legal": "Juridiske Oplysninger"
+      "legal": "Juridisk Information"
     },
     "services": {
       "personalLoans": "Personlige Lån",
-      "mortgageLoans": "Realkreditlån",
+      "mortgageLoans": "Boliglån",
       "creditBuyback": "Kreditsamling",
       "workCredit": "Arbejdskredit",
       "insurance": "Forsikringer"
@@ -182,7 +209,7 @@
     },
     "trust": {
       "title": "Certificeringer",
-      "gdpr": "GDPR-konform",
+      "gdpr": "GDPR-kompatibel",
       "gdprDesc": "Databeskyttelse",
       "ssl": "SSL-sikret",
       "sslDesc": "Sikker forbindelse",
@@ -190,15 +217,15 @@
       "rcsDesc": "Godkendt etablissement"
     },
     "companyInfo": {
-      "title": "Virksomhedsoplysninger",
+      "title": "Virksomhedsinformation",
       "legalForm": "Juridisk form",
       "capital": "Kapital",
-      "employees": "Medarbejdere"
+      "employees": "Personale"
     },
     "warning": {
-      "title": "Vigtige Oplysninger",
-      "rates": "Fra 0,9% til 19,9% afhængigt af profil og varighed",
-      "credit": "Et kredit forpligter dig og skal tilbagebetales",
+      "title": "Vigtig Information",
+      "rates": "Fra 0,9% til 19,9% afhængig af profil og varighed",
+      "credit": "En kredit forpligter dig og skal betales tilbage",
       "insurance": "Låntagerforsikring er ikke obligatorisk"
     },
     "copyright": "Alle rettigheder forbeholdes."

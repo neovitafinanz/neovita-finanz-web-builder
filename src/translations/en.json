@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "Expert Support",
       "description": "43 specialized advisors to guide you at every step"
+    }
+  },
+  "simulator": {
+    "title": "Loan Simulator",
+    "subtitle": "Calculate your financing in a few steps",
+    "parameters": "Loan Parameters",
+    "loanType": "Loan Type",
+    "selectLoanType": "Select a type",
+    "amount": "Amount"
+  },
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "What our customers say",
+    "reviews": "reviews",
+    "loanTypeLabel": "Loan Type",
+    "amountLabel": "Amount",
+    "jeanmarc": {
+      "comment": "Thanks to NeoVita, I quickly obtained a loan to launch my project.",
+      "loanType": "Self-employed loan"
+    },
+    "amelie": {
+      "comment": "Impeccable, fast and very professional service!",
+      "loanType": "Personal loan"
+    },
+    "pedro": {
+      "comment": "Everything went well, from simulation to payment.",
+      "loanType": "Auto financing"
     }
   },
   "footer": {

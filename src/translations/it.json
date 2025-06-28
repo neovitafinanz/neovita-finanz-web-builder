@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "Supporto Esperto",
       "description": "43 consulenti specializzati per guidarvi ad ogni passo"
+    }
+  },
+  "simulator": {
+    "title": "Simulatore di prestito",
+    "subtitle": "Calcolate il vostro finanziamento in pochi passi",
+    "parameters": "Parametri del prestito",
+    "loanType": "Tipo di prestito",
+    "selectLoanType": "Seleziona un tipo",
+    "amount": "Importo"
+  },
+  "testimonials": {
+    "title": "Testimonianze clienti",
+    "subtitle": "Cosa dicono i nostri clienti",
+    "reviews": "recensioni",
+    "loanTypeLabel": "Tipo di prestito",
+    "amountLabel": "Importo",
+    "jeanmarc": {
+      "comment": "Grazie a NeoVita, ho ottenuto rapidamente un prestito per lanciare il mio progetto.",
+      "loanType": "Prestito libero professionista"
+    },
+    "amelie": {
+      "comment": "Servizio impeccabile, veloce e molto professionale!",
+      "loanType": "Prestito personale"
+    },
+    "pedro": {
+      "comment": "Tutto è andato bene, dalla simulazione al pagamento.",
+      "loanType": "Finanziamento auto"
     }
   },
   "footer": {

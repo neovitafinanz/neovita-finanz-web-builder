@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Início",
@@ -149,6 +148,33 @@
     "experts": {
       "title": "Acompanhamento Especializado",
       "description": "43 conselheiros especializados para o guiar em cada etapa"
+    }
+  },
+  "simulator": {
+    "title": "Simulador de empréstimo",
+    "subtitle": "Calcule o seu financiamento em poucos passos",
+    "parameters": "Parâmetros do empréstimo",
+    "loanType": "Tipo de empréstimo",
+    "selectLoanType": "Selecionar um tipo",
+    "amount": "Montante"
+  },
+  "testimonials": {
+    "title": "Testemunhos de clientes",
+    "subtitle": "O que dizem os nossos clientes",
+    "reviews": "avaliações",
+    "loanTypeLabel": "Tipo de empréstimo",
+    "amountLabel": "Montante",
+    "jeanmarc": {
+      "comment": "Graças à NeoVita, obtive rapidamente um empréstimo para lançar o meu projeto.",
+      "loanType": "Empréstimo trabalhador independente"
+    },
+    "amelie": {
+      "comment": "Serviço impecável, rápido e muito profissional!",
+      "loanType": "Empréstimo pessoal"
+    },
+    "pedro": {
+      "comment": "Tudo correu bem, da simulação ao pagamento.",
+      "loanType": "Financiamento automóvel"
     }
   },
   "footer": {
