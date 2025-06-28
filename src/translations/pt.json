@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "Início",
+    "personalLoans": "Empréstimos Pessoais",
+    "mortgageLoans": "Empréstimos Imobiliários",
+    "creditBuyback": "Consolidação de Crédito",
+    "workCredit": "Crédito Obras",
+    "insurance": "Seguros",
+    "about": "Sobre Nós"
+  },
+  "common": {
+    "phoneAvailable": "Segunda a sexta das 9h às 18h",
+    "requestLoan": "Pedido de Empréstimo",
+    "discover": "Descobrir",
+    "learnMoreAbout": "Saiba mais sobre",
+    "startRequest": "Iniciar o meu pedido"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Bem-vindo à BHV Auto",
+      "subtitle": "O seu especialista em importação de veículos",
+      "description": "Descubra os nossos serviços de importação de veículos com acompanhamento especializado e personalizado."
+    },
+    "slide2": {
+      "title": "Empréstimos Imobiliários",
+      "subtitle": "Realize o Seu Projeto Imobiliário",
+      "description": "Taxas competitivas e acompanhamento à medida para concretizar os seus projetos imobiliários."
+    },
+    "slide3": {
+      "title": "Consolidação de Crédito",
+      "subtitle": "Simplifique as Suas Finanças",
+      "description": "Agrupe os seus créditos num só para reduzir as suas prestações e recuperar a sua tranquilidade financeira."
+    },
+    "slide4": {
+      "title": "Experiência & Proximidade",
+      "subtitle": "43 Conselheiros ao Seu Serviço",
+      "description": "Uma equipa de especialistas dedicada para o acompanhar em todos os seus projetos de financiamento."
+    },
+    "cta": {
+      "primary": "Fazer um pedido",
+      "secondary": "Simular o meu empréstimo"
+    },
+    "disclaimer": "Um crédito compromete-o e deve ser reembolsado. Verifique a sua capacidade de reembolso antes de se comprometer."
+  },
+  "home": {
+    "metaDescription": "BHV Auto - O seu especialista em importação de veículos. Serviços profissionais de importação com acompanhamento especializado.",
+    "servicesTitle": "Os Nossos Serviços de Importação",
+    "servicesSubtitle": "Soluções adaptadas a todas as suas necessidades de importação de veículos",
+    "advantagesTitle": "Porquê Escolher a BHV Auto",
+    "ctaTitle": "Pronto para Importar o Seu Veículo?",
+    "ctaSubtitle": "Os nossos especialistas acompanham-no no seu projeto de importação"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Empréstimos Pessoais",
+      "description": "Financie os seus projetos pessoais com condições vantajosas"
+    },
+    "mortgageLoans": {
+      "title": "Empréstimos Imobiliários",
+      "description": "Concretize o seu projeto imobiliário com a nossa experiência"
+    },
+    "creditBuyback": {
+      "title": "Consolidação de Crédito",
+      "description": "Simplifique os seus reembolsos e reduza as suas prestações"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Segurança & Confiança",
+      "description": "Estabelecimento aprovado com 15 anos de experiência em financiamento"
+    },
+    "speed": {
+      "title": "Rapidez & Eficiência",
+      "description": "Resposta em 48h e desbloqueio rápido dos seus fundos"
+    },
+    "experts": {
+      "title": "Acompanhamento Especializado",
+      "description": "43 conselheiros especializados para o guiar em cada etapa"
+    }
+  },
+  "footer": {
+    "tagline": "O seu especialista em importação de veículos",
+    "description": "A BHV Auto acompanha-o em todos os seus projetos de importação de veículos com experiência e proximidade.",
+    "sections": {
+      "services": "Os Nossos Serviços",
+      "company": "A Empresa",
+      "legal": "Informações Legais"
+    },
+    "services": {
+      "personalLoans": "Empréstimos Pessoais",
+      "mortgageLoans": "Empréstimos Imobiliários",
+      "creditBuyback": "Consolidação de Crédito",
+      "workCredit": "Crédito Obras",
+      "insurance": "Seguros"
+    },
+    "company": {
+      "about": "Sobre Nós",
+      "team": "A Nossa Equipa",
+      "careers": "Carreiras",
+      "partners": "Parceiros",
+      "news": "Notícias"
+    },
+    "legal": {
+      "terms": "Menções Legais",
+      "privacy": "Política de Privacidade",
+      "conditions": "Condições Gerais",
+      "sitemap": "Mapa do Site",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certificações",
+      "gdpr": "Conforme RGPD",
+      "gdprDesc": "Proteção de dados",
+      "ssl": "Seguro SSL",
+      "sslDesc": "Conexão segura",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Estabelecimento aprovado"
+    },
+    "companyInfo": {
+      "title": "Informações da Empresa",
+      "legalForm": "Forma jurídica",
+      "capital": "Capital",
+      "employees": "Efetivo"
+    },
+    "warning": {
+      "title": "Informações Importantes",
+      "rates": "De 0,9% a 19,9% segundo perfil e duração",
+      "credit": "Um crédito compromete-o e deve ser reembolsado",
+      "insurance": "O seguro do mutuário não é obrigatório"
+    },
+    "copyright": "Todos os direitos reservados."
+  }
+}

@@ -1,0 +1,134 @@
+
+{
+  "nav": {
+    "home": "Startseite",
+    "personalLoans": "Privatkredite",
+    "mortgageLoans": "Immobilienkredite",
+    "creditBuyback": "Kreditumschuldung",
+    "workCredit": "Arbeitskredit",
+    "insurance": "Versicherungen",
+    "about": "Über uns"
+  },
+  "common": {
+    "phoneAvailable": "Montag bis Freitag von 9 bis 18 Uhr",
+    "requestLoan": "Kreditanfrage",
+    "discover": "Entdecken",
+    "learnMoreAbout": "Mehr erfahren über",
+    "startRequest": "Meine Anfrage starten"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Willkommen bei BHV Auto",
+      "subtitle": "Ihr Spezialist für Fahrzeugimport",
+      "description": "Entdecken Sie unsere Fahrzeugimport-Services mit fachkundiger und persönlicher Betreuung."
+    },
+    "slide2": {
+      "title": "Immobilienkredite",
+      "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt",
+      "description": "Wettbewerbsfähige Zinsen und maßgeschneiderte Betreuung für die Realisierung Ihrer Immobilienprojekte."
+    },
+    "slide3": {
+      "title": "Kreditumschuldung",
+      "subtitle": "Vereinfachen Sie Ihre Finanzen",
+      "description": "Fassen Sie Ihre Kredite zu einem zusammen, um Ihre monatlichen Raten zu reduzieren und Ihre finanzielle Ruhe wiederzuerlangen."
+    },
+    "slide4": {
+      "title": "Expertise & Nähe",
+      "subtitle": "43 Berater zu Ihren Diensten",
+      "description": "Ein engagiertes Expertenteam, das Sie bei all Ihren Finanzierungsprojekten begleitet."
+    },
+    "cta": {
+      "primary": "Anfrage stellen",
+      "secondary": "Meinen Kredit simulieren"
+    },
+    "disclaimer": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit vor der Verpflichtung."
+  },
+  "home": {
+    "metaDescription": "BHV Auto - Ihr Spezialist für Fahrzeugimport. Professionelle Import-Services mit fachkundiger Betreuung.",
+    "servicesTitle": "Unsere Import-Services",
+    "servicesSubtitle": "Lösungen, die auf alle Ihre Fahrzeugimport-Bedürfnisse zugeschnitten sind",
+    "advantagesTitle": "Warum BHV Auto wählen",
+    "ctaTitle": "Bereit, Ihr Fahrzeug zu importieren?",
+    "ctaSubtitle": "Unsere Experten begleiten Sie bei Ihrem Import-Projekt"
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Privatkredite",
+      "description": "Finanzieren Sie Ihre persönlichen Projekte mit vorteilhaften Konditionen"
+    },
+    "mortgageLoans": {
+      "title": "Immobilienkredite",
+      "description": "Verwirklichen Sie Ihr Immobilienprojekt mit unserer Expertise"
+    },
+    "creditBuyback": {
+      "title": "Kreditumschuldung",
+      "description": "Vereinfachen Sie Ihre Rückzahlungen und reduzieren Sie Ihre monatlichen Raten"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Sicherheit & Vertrauen",
+      "description": "Zugelassenes Unternehmen mit 15 Jahren Erfahrung in der Finanzierung"
+    },
+    "speed": {
+      "title": "Schnelligkeit & Effizienz",
+      "description": "Antwort innerhalb von 48 Stunden und schnelle Freigabe Ihrer Mittel"
+    },
+    "experts": {
+      "title": "Fachkundige Betreuung",
+      "description": "43 spezialisierte Berater, die Sie bei jedem Schritt begleiten"
+    }
+  },
+  "footer": {
+    "tagline": "Ihr Spezialist für Fahrzeugimport",
+    "description": "BHV Auto begleitet Sie bei allen Ihren Fahrzeugimport-Projekten mit Expertise und Nähe.",
+    "sections": {
+      "services": "Unsere Services",
+      "company": "Das Unternehmen",
+      "legal": "Rechtliche Informationen"
+    },
+    "services": {
+      "personalLoans": "Privatkredite",
+      "mortgageLoans": "Immobilienkredite",
+      "creditBuyback": "Kreditumschuldung",
+      "workCredit": "Arbeitskredit",
+      "insurance": "Versicherungen"
+    },
+    "company": {
+      "about": "Über uns",
+      "team": "Unser Team",
+      "careers": "Karrieren",
+      "partners": "Partner",
+      "news": "Nachrichten"
+    },
+    "legal": {
+      "terms": "Rechtliche Hinweise",
+      "privacy": "Datenschutzrichtlinie",
+      "conditions": "Allgemeine Geschäftsbedingungen",
+      "sitemap": "Sitemap",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Zertifizierungen",
+      "gdpr": "DSGVO-konform",
+      "gdprDesc": "Datenschutz",
+      "ssl": "SSL-gesichert",
+      "sslDesc": "Sichere Verbindung",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Zugelassenes Unternehmen"
+    },
+    "companyInfo": {
+      "title": "Unternehmensinformationen",
+      "legalForm": "Rechtsform",
+      "capital": "Kapital",
+      "employees": "Mitarbeiter"
+    },
+    "warning": {
+      "title": "Wichtige Informationen",
+      "rates": "Von 0,9% bis 19,9% je nach Profil und Laufzeit",
+      "credit": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden",
+      "insurance": "Eine Kreditversicherung ist nicht obligatorisch"
+    },
+    "copyright": "Alle Rechte vorbehalten."
+  }
+}

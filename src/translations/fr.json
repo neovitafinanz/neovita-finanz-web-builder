@@ -18,9 +18,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "Votre Partenaire de Confiance",
-      "subtitle": "Solutions de Financement Personnalisées",
-      "description": "Découvrez nos solutions de crédit adaptées à vos besoins avec un accompagnement expert et personnalisé."
+      "title": "Bienvenue chez BHV Auto",
+      "subtitle": "Votre spécialiste de l'importation de véhicules",
+      "description": "Découvrez nos services d'importation de véhicules avec un accompagnement expert et personnalisé."
     },
     "slide2": {
       "title": "Prêts Immobiliers",
@@ -44,12 +44,12 @@
     "disclaimer": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager."
   },
   "home": {
-    "metaDescription": "Neovita Finanz - Solutions de financement personnalisées. Prêts personnels, immobiliers, rachat de crédit avec accompagnement expert.",
-    "servicesTitle": "Nos Solutions de Financement",
-    "servicesSubtitle": "Des solutions adaptées à tous vos projets de vie",
-    "advantagesTitle": "Pourquoi Choisir Neovita Finanz",
-    "ctaTitle": "Prêt à Commencer Votre Projet ?",
-    "ctaSubtitle": "Nos conseillers experts vous accompagnent dans votre demande de financement"
+    "metaDescription": "BHV Auto - Votre spécialiste de l'importation de véhicules. Services professionnels d'importation avec accompagnement expert.",
+    "servicesTitle": "Nos Services d'Importation",
+    "servicesSubtitle": "Des solutions adaptées à tous vos besoins d'importation de véhicules",
+    "advantagesTitle": "Pourquoi Choisir BHV Auto",
+    "ctaTitle": "Prêt à Importer Votre Véhicule ?",
+    "ctaSubtitle": "Nos experts vous accompagnent dans votre projet d'importation"
   },
   "services": {
     "personalLoans": {
@@ -80,8 +80,8 @@
     }
   },
   "footer": {
-    "tagline": "Votre partenaire financier de confiance",
-    "description": "Neovita Finanz vous accompagne depuis 15 ans dans tous vos projets de financement avec expertise et proximité.",
+    "tagline": "Votre spécialiste de l'importation de véhicules",
+    "description": "BHV Auto vous accompagne dans tous vos projets d'importation de véhicules avec expertise et proximité.",
     "sections": {
       "services": "Nos Services",
       "company": "L'Entreprise",

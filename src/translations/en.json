@@ -18,9 +18,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "Your Trusted Partner",
-      "subtitle": "Personalized Financing Solutions",
-      "description": "Discover our credit solutions adapted to your needs with expert and personalized support."
+      "title": "Welcome to BHV Auto",
+      "subtitle": "Your vehicle import specialist",
+      "description": "Discover our vehicle import services with expert and personalized support."
     },
     "slide2": {
       "title": "Mortgage Loans",
@@ -44,12 +44,12 @@
     "disclaimer": "A credit commits you and must be repaid. Check your repayment capacity before committing."
   },
   "home": {
-    "metaDescription": "Neovita Finanz - Personalized financing solutions. Personal loans, mortgages, credit buyback with expert support.",
-    "servicesTitle": "Our Financing Solutions",
-    "servicesSubtitle": "Solutions adapted to all your life projects",
-    "advantagesTitle": "Why Choose Neovita Finanz",
-    "ctaTitle": "Ready to Start Your Project?",
-    "ctaSubtitle": "Our expert advisors support you in your financing request"
+    "metaDescription": "BHV Auto - Your vehicle import specialist. Professional import services with expert support.",
+    "servicesTitle": "Our Import Services",
+    "servicesSubtitle": "Solutions adapted to all your vehicle import needs",
+    "advantagesTitle": "Why Choose BHV Auto",
+    "ctaTitle": "Ready to Import Your Vehicle?",
+    "ctaSubtitle": "Our experts support you in your import project"
   },
   "services": {
     "personalLoans": {
@@ -80,8 +80,8 @@
     }
   },
   "footer": {
-    "tagline": "Your trusted financial partner",
-    "description": "Neovita Finanz has been supporting you for 15 years in all your financing projects with expertise and proximity.",
+    "tagline": "Your vehicle import specialist",
+    "description": "BHV Auto has been supporting you in all your vehicle import projects with expertise and proximity.",
     "sections": {
       "services": "Our Services",
       "company": "The Company",
