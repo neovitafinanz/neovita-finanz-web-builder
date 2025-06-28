@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Layout from '@/components/Layout';
-import Hero from '@/components/Hero';
+import HeroCarousel from '@/components/HeroCarousel';
 import LoanSimulator from '@/components/LoanSimulator';
 import PartnersSection from '@/components/PartnersSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -18,22 +18,22 @@ const Index = () => {
 
   const services = [
     {
-      title: t('services.personalLoans.title') || 'Prêts Personnels',
-      description: t('services.personalLoans.description') || 'Description des prêts personnels',
+      title: t('services.personalLoans.title'),
+      description: t('services.personalLoans.description'),
       icon: Users,
       href: '/prets-personnels',
       image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: t('services.mortgageLoans.title') || 'Prêts Immobiliers',
-      description: t('services.mortgageLoans.description') || 'Description des prêts immobiliers',
+      title: t('services.mortgageLoans.title'),
+      description: t('services.mortgageLoans.description'),
       icon: Award,
       href: '/prets-immobiliers',
       image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
-      title: t('services.creditBuyback.title') || 'Rachat de Crédit',
-      description: t('services.creditBuyback.description') || 'Description du rachat de crédit',
+      title: t('services.creditBuyback.title'),
+      description: t('services.creditBuyback.description'),
       icon: TrendingUp,
       href: '/rachat-credit',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
@@ -43,28 +43,28 @@ const Index = () => {
   const advantages = [
     {
       icon: Shield,
-      title: t('advantages.security.title') || 'Sécurité',
-      description: t('advantages.security.description') || 'Description de la sécurité'
+      title: t('advantages.security.title'),
+      description: t('advantages.security.description')
     },
     {
       icon: Clock,
-      title: t('advantages.speed.title') || 'Rapidité',
-      description: t('advantages.speed.description') || 'Description de la rapidité'
+      title: t('advantages.speed.title'),
+      description: t('advantages.speed.description')
     },
     {
       icon: Users,
-      title: t('advantages.experts.title') || 'Experts',
-      description: t('advantages.experts.description') || 'Description des experts'
+      title: t('advantages.experts.title'),
+      description: t('advantages.experts.description')
     }
   ];
 
   return (
     <Layout 
-      title={t('nav.home') || 'Accueil'} 
-      description={t('home.metaDescription') || 'Meta description par défaut'}
+      title={t('nav.home')} 
+      description={t('home.metaDescription')}
     >
-      {/* Hero Section */}
-      <Hero />
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       {/* Services Section with background image */}
       <section id="services" className="py-20 relative">
@@ -78,10 +78,10 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <ScrollAnimation animation="fade-in" className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              {t('home.servicesTitle') || 'Nos Services'}
+              {t('home.servicesTitle')}
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              {t('home.servicesSubtitle') || 'Découvrez nos solutions financières'}
+              {t('home.servicesSubtitle')}
             </p>
           </ScrollAnimation>
 
@@ -112,9 +112,9 @@ const Index = () => {
                       <Button 
                         onClick={() => navigate(service.href)}
                         className="w-full bg-green-600 hover:bg-green-700 text-white"
-                        aria-label={`${t('common.learnMoreAbout') || 'En savoir plus sur'} ${service.title}`}
+                        aria-label={`${t('common.learnMoreAbout')} ${service.title}`}
                       >
-                        {t('common.discover') || 'Découvrir'}
+                        {t('common.discover')}
                       </Button>
                     </CardContent>
                   </Card>
@@ -137,7 +137,7 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           <ScrollAnimation animation="fade-in" className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-              {t('home.advantagesTitle') || 'Nos Avantages'}
+              {t('home.advantagesTitle')}
             </h2>
           </ScrollAnimation>
 
@@ -190,17 +190,17 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-green-800/90 to-green-600/90" />
         <ScrollAnimation animation="scale-in" className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-white">
-            {t('home.ctaTitle') || 'Prêt à commencer ?'}
+            {t('home.ctaTitle')}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-100">
-            {t('home.ctaSubtitle') || 'Contactez-nous dès aujourd\'hui'}
+            {t('home.ctaSubtitle')}
           </p>
           <Button 
             onClick={() => navigate('/demande-credit')}
             size="lg"
             className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
           >
-            {t('common.startRequest') || 'Faire une demande'}
+            {t('common.startRequest')}
           </Button>
         </ScrollAnimation>
       </section>
