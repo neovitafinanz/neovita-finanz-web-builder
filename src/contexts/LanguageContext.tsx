@@ -64,21 +64,24 @@ interface LanguageProviderProps {
   children: ReactNode;
 }
 
+// Helper function to check if a string is a valid language
+const isValidLanguage = (lang: string): lang is Language => {
+  return languages.some(l => l.code === lang);
+};
+
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [currentLanguage, setCurrentLanguage] = useState<Language>('fr');
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Simplified language extraction from URL - only run once on mount and when pathname changes significantly
+  // Extract language from URL on mount and path changes
   useEffect(() => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const langFromUrl = pathSegments[0];
     
-    const validLanguages = languages.map(lang => lang.code);
-    
-    if (langFromUrl && validLanguages.includes(langFromUrl)) {
+    if (langFromUrl && isValidLanguage(langFromUrl)) {
       if (currentLanguage !== langFromUrl) {
-        setCurrentLanguage(langFromUrl as Language);
+        setCurrentLanguage(langFromUrl);
       }
     } else if (currentLanguage !== 'fr') {
       setCurrentLanguage('fr');
@@ -90,10 +93,9 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     
     // Simple URL update logic
     const pathSegments = location.pathname.split('/').filter(Boolean);
-    const validLanguages = languages.map(lang => lang.code);
     
     // Remove existing language prefix if present
-    if (pathSegments.length > 0 && validLanguages.includes(pathSegments[0])) {
+    if (pathSegments.length > 0 && isValidLanguage(pathSegments[0])) {
       pathSegments.shift();
     }
     
