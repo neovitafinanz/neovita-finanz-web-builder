@@ -51,6 +51,78 @@
     "ctaTitle": "Ready to Import Your Vehicle?",
     "ctaSubtitle": "Our experts support you in your import project"
   },
+  "personalLoans": {
+    "metaDescription": "Personal loans with Neovita Finanz. Fast and flexible financing for all your personal projects.",
+    "hero": {
+      "subtitle": "Finance all your personal projects"
+    },
+    "advantages": {
+      "title": "Personal loan advantages",
+      "flexibility": "Free use of funds",
+      "rapidResponse": "Quick response within 48h",
+      "competitiveRates": "Competitive rates",
+      "noCollateral": "No guarantee or surety",
+      "personalizedSupport": "Personalized support",
+      "freeStudy": "Free file study"
+    },
+    "cta": {
+      "study": "Study my file"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Credit buyback with Neovita Finanz. Reduce your monthly payments, simplify your financial management.",
+    "hero": {
+      "subtitle": "Optimize your finances by consolidating all your credits"
+    },
+    "advantages": {
+      "title": "Credit buyback advantages",
+      "reduction": "Reduce your monthly payments",
+      "simplification": "Simplify your management",
+      "betterRates": "Potentially better rates",
+      "singlePayment": "Single monthly payment",
+      "additionalCash": "Possibility of additional cash",
+      "freeAdvice": "Free personalized advice"
+    },
+    "cta": {
+      "request": "Request this buyback",
+      "study": "Study my file"
+    }
+  },
+  "about": {
+    "metaDescription": "About BHV Auto - Discover our expertise in vehicle import and our team of specialists.",
+    "hero": {
+      "subtitle": "Your trusted partner for 15 years"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We support our clients in their vehicle import projects with expertise, transparency and proximity. Our team of 43 specialized advisors guides you at every step of your project."
+    },
+    "stats": {
+      "advisors": "Advisors",
+      "experience": "Years of experience",
+      "clients": "Satisfied clients",
+      "trust": "Trust"
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "A solid network for your success",
+    "metaDescription": "Discover BHV Auto partners. Network of banks, brokers and insurers to offer you the best solutions.",
+    "types": {
+      "banks": {
+        "title": "Partner banks",
+        "description": "Network of banks and financial institutions"
+      },
+      "brokers": {
+        "title": "Brokers",
+        "description": "Collaboration with experienced brokers"
+      },
+      "insurers": {
+        "title": "Insurers",
+        "description": "Partnerships with the best insurers"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "Personal Loans",

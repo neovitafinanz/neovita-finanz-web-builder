@@ -51,6 +51,78 @@
     "ctaTitle": "准备好进口您的车辆了吗？",
     "ctaSubtitle": "我们的专家在您的进口项目中为您提供支持"
   },
+  "personalLoans": {
+    "metaDescription": "Neovita Finanz个人贷款。为您所有个人项目提供快速灵活的融资。",
+    "hero": {
+      "subtitle": "为您所有个人项目提供资金"
+    },
+    "advantages": {
+      "title": "个人贷款的优势",
+      "flexibility": "资金自由使用",
+      "rapidResponse": "48小时内快速回复",
+      "competitiveRates": "竞争性利率",
+      "noCollateral": "无担保或保证",
+      "personalizedSupport": "个性化支持",
+      "freeStudy": "免费文件研究"
+    },
+    "cta": {
+      "study": "研究我的文件"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Neovita Finanz信贷整合。减少您的月供，简化您的财务管理。",
+    "hero": {
+      "subtitle": "通过整合所有信贷优化您的财务"
+    },
+    "advantages": {
+      "title": "信贷整合的优势",
+      "reduction": "减少您的月供",
+      "simplification": "简化您的管理",
+      "betterRates": "可能更好的利率",
+      "singlePayment": "单一月供",
+      "additionalCash": "额外现金的可能性",
+      "freeAdvice": "免费个性化建议"
+    },
+    "cta": {
+      "request": "请求此整合",
+      "study": "研究我的文件"
+    }
+  },
+  "about": {
+    "metaDescription": "关于BHV Auto - 发现我们在车辆进口方面的专业知识和我们的专家团队。",
+    "hero": {
+      "subtitle": "您15年来值得信赖的合作伙伴"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "description": "我们凭借专业知识、透明度和亲近感在客户的车辆进口项目中为他们提供支持。我们由43位专业顾问组成的团队在您项目的每一步都为您提供指导。"
+    },
+    "stats": {
+      "advisors": "顾问",
+      "experience": "年经验",
+      "clients": "满意客户",
+      "trust": "信任"
+    }
+  },
+  "partners": {
+    "title": "我们的合作伙伴",
+    "subtitle": "您成功的坚实网络",
+    "metaDescription": "发现BHV Auto合作伙伴。银行、经纪人和保险公司网络，为您提供最佳解决方案。",
+    "types": {
+      "banks": {
+        "title": "合作银行",
+        "description": "银行和金融机构网络"
+      },
+      "brokers": {
+        "title": "经纪人",
+        "description": "与经验丰富的经纪人合作"
+      },
+      "insurers": {
+        "title": "保险公司",
+        "description": "与最佳保险公司的合作伙伴关系"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "个人贷款",

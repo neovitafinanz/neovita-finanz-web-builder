@@ -51,6 +51,78 @@
     "ctaTitle": "Klaar om Uw Voertuig te Importeren?",
     "ctaSubtitle": "Onze experts begeleiden u bij uw importproject"
   },
+  "personalLoans": {
+    "metaDescription": "Persoonlijke leningen met Neovita Finanz. Snelle en flexibele financiering voor al uw persoonlijke projecten.",
+    "hero": {
+      "subtitle": "Financier al uw persoonlijke projecten"
+    },
+    "advantages": {
+      "title": "Voordelen van persoonlijke leningen",
+      "flexibility": "Vrij gebruik van fondsen",
+      "rapidResponse": "Snel antwoord binnen 48u",
+      "competitiveRates": "Concurrerende tarieven",
+      "noCollateral": "Geen garantie of borg",
+      "personalizedSupport": "Persoonlijke begeleiding",
+      "freeStudy": "Gratis dossierstudie"
+    },
+    "cta": {
+      "study": "Mijn dossier bestuderen"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Kredietsamenvoeging met Neovita Finanz. Verlaag uw maandlasten, vereenvoudig uw financieel beheer.",
+    "hero": {
+      "subtitle": "Optimaliseer uw financiën door al uw kredieten samen te voegen"
+    },
+    "advantages": {
+      "title": "Voordelen van kredietsamenvoeging",
+      "reduction": "Verlaag uw maandlasten",
+      "simplification": "Vereenvoudig uw beheer",
+      "betterRates": "Mogelijk betere tarieven",
+      "singlePayment": "Eén maandelijkse betaling",
+      "additionalCash": "Mogelijkheid van extra geld",
+      "freeAdvice": "Gratis persoonlijk advies"
+    },
+    "cta": {
+      "request": "Deze samenvoeging aanvragen",
+      "study": "Mijn dossier bestuderen"
+    }
+  },
+  "about": {
+    "metaDescription": "Over BHV Auto - Ontdek onze expertise in voertuigimport en ons team van specialisten.",
+    "hero": {
+      "subtitle": "Uw vertrouwde partner sinds 15 jaar"
+    },
+    "mission": {
+      "title": "Onze Missie",
+      "description": "Wij begeleiden onze klanten bij hun voertuigimportprojecten met expertise, transparantie en nabijheid. Ons team van 43 gespecialiseerde adviseurs begeleidt u bij elke stap van uw project."
+    },
+    "stats": {
+      "advisors": "Adviseurs",
+      "experience": "Jaar ervaring",
+      "clients": "Tevreden klanten",
+      "trust": "Vertrouwen"
+    }
+  },
+  "partners": {
+    "title": "Onze Partners",
+    "subtitle": "Een solide netwerk voor uw succes",
+    "metaDescription": "Ontdek BHV Auto partners. Netwerk van banken, makelaars en verzekeraars om u de beste oplossingen te bieden.",
+    "types": {
+      "banks": {
+        "title": "Partnerbanken",
+        "description": "Netwerk van banken en financiële instellingen"
+      },
+      "brokers": {
+        "title": "Makelaars",
+        "description": "Samenwerking met ervaren makelaars"
+      },
+      "insurers": {
+        "title": "Verzekeraars",
+        "description": "Partnerschappen met de beste verzekeraars"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "Persoonlijke Leningen",

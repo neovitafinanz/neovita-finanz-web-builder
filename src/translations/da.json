@@ -51,6 +51,78 @@
     "ctaTitle": "Klar til at Importere Dit Køretøj?",
     "ctaSubtitle": "Vores eksperter ledsager dig i dit importprojekt"
   },
+  "personalLoans": {
+    "metaDescription": "Personlige lån med Neovita Finanz. Hurtig og fleksibel finansiering til alle dine personlige projekter.",
+    "hero": {
+      "subtitle": "Finansier alle dine personlige projekter"
+    },
+    "advantages": {
+      "title": "Fordele ved personlige lån",
+      "flexibility": "Fri brug af midler",
+      "rapidResponse": "Hurtig respons inden for 48t",
+      "competitiveRates": "Konkurrencedygtige renter",
+      "noCollateral": "Ingen garanti eller kaution",
+      "personalizedSupport": "Personlig vejledning",
+      "freeStudy": "Gratis filundersøgelse"
+    },
+    "cta": {
+      "study": "Undersøg min fil"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Kreditsamling med Neovita Finanz. Reducer dine månedlige betalinger, forenkl din økonomiske forvaltning.",
+    "hero": {
+      "subtitle": "Optimer din økonomi ved at samle alle dine kreditter"
+    },
+    "advantages": {
+      "title": "Fordele ved kreditsamling",
+      "reduction": "Reducer dine månedlige betalinger",
+      "simplification": "Forenkl din forvaltning",
+      "betterRates": "Potentielt bedre renter",
+      "singlePayment": "En enkelt månedlig betaling",
+      "additionalCash": "Mulighed for ekstra kontanter",
+      "freeAdvice": "Gratis personlig rådgivning"
+    },
+    "cta": {
+      "request": "Anmod om denne samling",
+      "study": "Undersøg min fil"
+    }
+  },
+  "about": {
+    "metaDescription": "Om BHV Auto - Opdag vores ekspertise inden for køretøjsimport og vores team af specialister.",
+    "hero": {
+      "subtitle": "Din pålidelige partner i 15 år"
+    },
+    "mission": {
+      "title": "Vores Mission",
+      "description": "Vi ledsager vores kunder i deres køretøjsimportprojekter med ekspertise, gennemsigtighed og nærhed. Vores team af 43 specialiserede rådgivere vejleder dig gennem hvert trin af dit projekt."
+    },
+    "stats": {
+      "advisors": "Rådgivere",
+      "experience": "År med erfaring",
+      "clients": "Tilfredse kunder",
+      "trust": "Tillid"
+    }
+  },
+  "partners": {
+    "title": "Vores Partnere",
+    "subtitle": "Et solidt netværk for din succes",
+    "metaDescription": "Opdag BHV Auto partnere. Netværk af banker, mæglere og forsikringsselskaber for at tilbyde dig de bedste løsninger.",
+    "types": {
+      "banks": {
+        "title": "Partnerbanker",
+        "description": "Netværk af banker og finansielle institutioner"
+      },
+      "brokers": {
+        "title": "Mæglere",
+        "description": "Samarbejde med erfarne mæglere"
+      },
+      "insurers": {
+        "title": "Forsikringsselskaber",
+        "description": "Partnerskaber med de bedste forsikringsselskaber"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "Personlige Lån",

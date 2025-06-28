@@ -51,6 +51,78 @@
     "ctaTitle": "Redo att Importera Ditt Fordon?",
     "ctaSubtitle": "Våra experter ledsagar dig i ditt importprojekt"
   },
+  "personalLoans": {
+    "metaDescription": "Personliga lån med Neovita Finanz. Snabb och flexibel finansiering för alla dina personliga projekt.",
+    "hero": {
+      "subtitle": "Finansiera alla dina personliga projekt"
+    },
+    "advantages": {
+      "title": "Fördelar med personliga lån",
+      "flexibility": "Fri användning av medel",
+      "rapidResponse": "Snabbt svar inom 48t",
+      "competitiveRates": "Konkurrenskraftiga räntor",
+      "noCollateral": "Ingen garanti eller borgen",
+      "personalizedSupport": "Personlig vägledning",
+      "freeStudy": "Gratis filstudie"
+    },
+    "cta": {
+      "study": "Studera min fil"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Kreditsamling med Neovita Finanz. Minska dina månatliga betalningar, förenkla din ekonomiska förvaltning.",
+    "hero": {
+      "subtitle": "Optimera din ekonomi genom att samla alla dina krediter"
+    },
+    "advantages": {
+      "title": "Fördelar med kreditsamling",
+      "reduction": "Minska dina månatliga betalningar",
+      "simplification": "Förenkla din förvaltning",
+      "betterRates": "Potentiellt bättre räntor",
+      "singlePayment": "En enda månadsbetalning",
+      "additionalCash": "Möjlighet till extra kontanter",
+      "freeAdvice": "Gratis personlig rådgivning"
+    },
+    "cta": {
+      "request": "Begär denna samling",
+      "study": "Studera min fil"
+    }
+  },
+  "about": {
+    "metaDescription": "Om BHV Auto - Upptäck vår expertis inom fordonsimport och vårt team av specialister.",
+    "hero": {
+      "subtitle": "Din pålitliga partner i 15 år"
+    },
+    "mission": {
+      "title": "Vårt Uppdrag",
+      "description": "Vi ledsagar våra kunder i deras fordonsimportprojekt med expertis, transparens och närhet. Vårt team av 43 specialiserade rådgivare vägleder dig genom varje steg av ditt projekt."
+    },
+    "stats": {
+      "advisors": "Rådgivare",
+      "experience": "År av erfarenhet",
+      "clients": "Nöjda kunder",
+      "trust": "Förtroende"
+    }
+  },
+  "partners": {
+    "title": "Våra Partners",
+    "subtitle": "Ett solidt nätverk för din framgång",
+    "metaDescription": "Upptäck BHV Auto partners. Nätverk av banker, mäklare och försäkringsbolag för att erbjuda dig de bästa lösningarna.",
+    "types": {
+      "banks": {
+        "title": "Partnerbanker",
+        "description": "Nätverk av banker och finansiella institutioner"
+      },
+      "brokers": {
+        "title": "Mäklare",
+        "description": "Samarbete med erfarna mäklare"
+      },
+      "insurers": {
+        "title": "Försäkringsbolag",
+        "description": "Partnerskap med de bästa försäkringsbolagen"
+      }
+    }
+  },
   "services": {
     "personalLoans": {
       "title": "Personliga Lån",
@@ -62,7 +134,7 @@
     },
     "creditBuyback": {
       "title": "Kreditsamling",
-      "description": "Förenkla dina återbetalningar och minska dina månatliga betalningar"
+      "description": "Förenkla dina återbetalningar och minska dina månatliga betalingar"
     }
   },
   "advantages": {
