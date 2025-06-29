@@ -2,72 +2,64 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const MentionsLegales = () => {
+  const { t } = useLanguage();
+
   return (
     <Layout 
-      title="Mentions légales" 
-      description="Mentions légales du site Neovita Finanz. Informations sur l'éditeur, hébergement et propriété intellectuelle."
+      title={t('legal.title')}
+      description={t('legal.description')}
     >
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Mentions Légales
+              {t('legal.title')}
             </h1>
 
             <div className="space-y-6">
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Éditeur du site</CardTitle>
+                  <CardTitle>{t('legal.editor.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    <strong>Neovita Finanz</strong><br />
-                    Société par Actions Simplifiée<br />
-                    Capital social : [Montant du capital]<br />
-                    Siège social : [Adresse complète]<br />
-                    RCS : [Numéro RCS]<br />
-                    SIRET : [Numéro SIRET]<br />
-                    TVA Intracommunautaire : [Numéro TVA]
+                    {t('legal.editor.content')}
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Directeur de publication</CardTitle>
+                  <CardTitle>{t('legal.director.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    [Nom du directeur de publication]<br />
-                    [Titre/Fonction]
+                    {t('legal.director.content')}
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Hébergement</CardTitle>
+                  <CardTitle>{t('legal.hosting.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Ce site est hébergé par :<br />
-                    [Nom de l'hébergeur]<br />
-                    [Adresse de l'hébergeur]
+                    {t('legal.hosting.content')}
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Propriété intellectuelle</CardTitle>
+                  <CardTitle>{t('legal.intellectual.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Tous les éléments de ce site (textes, images, sons, vidéos, logos, etc.) 
-                    sont protégés par le droit d'auteur et le droit des marques. 
-                    Toute reproduction sans autorisation est interdite.
+                    {t('legal.intellectual.content')}
                   </p>
                 </CardContent>
               </Card>

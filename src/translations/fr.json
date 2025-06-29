@@ -19,8 +19,8 @@
   "hero": {
     "slide1": {
       "title": "Bienvenue chez Neovita Finanz",
-      "subtitle": "Votre partenaire financier de confiance",
-      "description": "Découvrez nos services financiers avec un accompagnement expert et personnalisé."
+      "subtitle": "Votre spécialiste du financement",
+      "description": "Découvrez nos services de financement avec un accompagnement expert et personnalisé."
     },
     "slide2": {
       "title": "Prêts Immobiliers",
@@ -30,7 +30,7 @@
     "slide3": {
       "title": "Rachat de Crédit",
       "subtitle": "Simplifiez Vos Finances",
-      "description": "Regroupez vos crédits en un seul pour réduire vos mensualités et retrouver votre sérénité financière."
+      "description": "Regroupez vos crédits en un seul pour diminuer vos mensualités et retrouver votre sérénité financière."
     },
     "slide4": {
       "title": "Expertise & Proximité",
@@ -44,11 +44,11 @@
     "disclaimer": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager."
   },
   "home": {
-    "metaDescription": "Neovita Finanz - Votre partenaire financier de confiance. Services financiers professionnels avec accompagnement expert.",
-    "servicesTitle": "Nos Services Financiers",
+    "metaDescription": "Neovita Finanz - Votre spécialiste du financement. Services professionnels de financement avec accompagnement expert.",
+    "servicesTitle": "Nos Services de Financement",
     "servicesSubtitle": "Des solutions adaptées à tous vos besoins de financement",
     "advantagesTitle": "Pourquoi Choisir Neovita Finanz",
-    "ctaTitle": "Prêt à Démarrer Votre Projet ?",
+    "ctaTitle": "Prêt à Financer Votre Projet ?",
     "ctaSubtitle": "Nos experts vous accompagnent dans votre projet de financement"
   },
   "personalLoans": {
@@ -57,193 +57,112 @@
       "subtitle": "Financez tous vos projets personnels"
     },
     "advantages": {
-      "title": "Les avantages du prêt personnel",
+      "title": "Avantages des prêts personnels",
       "flexibility": "Utilisation libre des fonds",
       "rapidResponse": "Réponse rapide sous 48h",
       "competitiveRates": "Taux compétitifs",
       "noCollateral": "Sans garantie ni caution",
       "personalizedSupport": "Accompagnement personnalisé",
-      "freeStudy": "Étude gratuite de votre dossier"
+      "freeStudy": "Étude gratuite du dossier"
     },
     "cta": {
       "study": "Étudier mon dossier"
     }
   },
   "mortgageLoans": {
-    "metaDescription": "Prêt immobilier avec Neovita Finanz. Taux compétitifs dès 1.9%, accompagnement personnalisé pour tous vos projets immobiliers.",
+    "metaDescription": "Prêts immobiliers avec Neovita Finanz. Réalisez votre projet immobilier avec des taux compétitifs.",
     "hero": {
-      "subtitle": "Concrétisez votre projet immobilier avec notre accompagnement expert"
+      "subtitle": "Réalisez votre projet immobilier"
     },
     "characteristics": {
-      "title": "Caractéristiques du Prêt Immobilier",
+      "title": "Caractéristiques des prêts immobiliers",
       "highAmounts": "Montants élevés",
-      "highAmountsDesc": "Jusqu'à 1 000 000€",
+      "highAmountsDesc": "Jusqu'à 80% de la valeur du bien",
       "allProjects": "Tous projets",
-      "allProjectsDesc": "Achat, construction, investissement",
+      "allProjectsDesc": "Achat, construction, rénovation",
       "secured": "Sécurisé",
-      "securedDesc": "Garantie hypothécaire",
+      "securedDesc": "Garanti par le bien immobilier",
       "advantageousRates": "Taux avantageux",
-      "advantageousRatesDesc": "À partir de 1.9% TAEG"
+      "advantageousRatesDesc": "Taux compétitifs du marché"
     },
     "advantages": {
-      "title": "Pourquoi choisir notre prêt immobilier ?",
-      "competitiveRates": "Taux immobiliers compétitifs",
+      "title": "Avantages de nos prêts immobiliers",
+      "competitiveRates": "Taux compétitifs",
       "personalizedSupport": "Accompagnement personnalisé",
-      "freeStudy": "Étude gratuite de votre dossier",
+      "freeStudy": "Étude gratuite du dossier",
       "bankNegotiation": "Négociation avec les banques",
-      "followUp": "Suivi jusqu'à la signature",
-      "insurance": "Assurance emprunteur incluse"
+      "followUp": "Suivi de votre projet",
+      "insurance": "Solutions d'assurance"
     },
     "cta": {
-      "request": "Demander ce prêt",
-      "apply": "Faire ma demande"
+      "request": "Demander votre prêt immobilier",
+      "apply": "Faire une demande"
     }
   },
   "workCredit": {
-    "metaDescription": "Crédit travaux avec Neovita Finanz. Financez vos projets de rénovation et d'aménagement. Conditions avantageuses.",
+    "metaDescription": "Crédit travaux avec Neovita Finanz. Financez vos projets de rénovation et de construction.",
     "hero": {
       "title": "Crédit Travaux",
-      "subtitle": "Donnez vie à vos projets de rénovation et d'aménagement"
+      "subtitle": "Financez vos projets de rénovation et de construction"
     },
     "projectTypes": {
-      "title": "Types de travaux financés",
+      "title": "Nos types de projets",
       "energyRenovation": "Rénovation énergétique",
       "houseExtension": "Extension de maison",
       "interiorDesign": "Aménagement intérieur",
       "roofWork": "Travaux de toiture",
       "poolInstallation": "Installation piscine",
-      "kitchenBathroom": "Modernisation cuisine/salle de bain"
+      "kitchenBathroom": "Cuisine et salle de bain"
     },
     "cta": {
       "finance": "Financer mes travaux"
     }
   },
   "insurance": {
-    "metaDescription": "Solutions d'assurance avec Neovita Finanz. Assurance emprunteur, habitation, santé. Protection optimale.",
+    "metaDescription": "Assurances avec Neovita Finanz. Protégez vos projets et vos proches.",
     "hero": {
-      "title": "Nos Assurances",
-      "subtitle": "Protégez ce qui compte le plus pour vous"
+      "title": "Nos assurances",
+      "subtitle": "Protégez vos projets et vos proches"
     },
     "types": {
       "borrower": {
         "title": "Assurance emprunteur",
-        "description": "Protection de votre prêt"
+        "description": "Protégez-vous et votre famille en cas de décès ou d'invalidité"
       },
       "home": {
         "title": "Assurance habitation",
-        "description": "Protection de votre logement"
+        "description": "Protégez votre logement et vos biens"
       },
       "health": {
         "title": "Assurance santé",
-        "description": "Couverture médicale complète"
+        "description": "Protection santé complémentaire pour toute la famille"
       }
     },
     "cta": {
-      "quote": "Demander un devis"
-    }
-  },
-  "loanRequest": {
-    "metaDescription": "Faites votre demande de crédit en ligne. Réponse rapide sous 24h. Conseillers experts disponibles.",
-    "hero": {
-      "title": "Demande de Crédit",
-      "subtitle": "Complétez ce formulaire pour faire votre demande. Notre équipe d'experts vous contactera rapidement."
-    },
-    "form": {
-      "title": "Votre Demande de Financement",
-      "personalInfo": "Informations personnelles",
-      "firstName": "Prénom",
-      "lastName": "Nom",
-      "email": "Email",
-      "emailConfirmation": "Confirmation Email",
-      "phone": "Téléphone",
-      "project": "Votre projet de financement",
-      "loanType": "Type de prêt",
-      "selectLoanType": "Sélectionnez le type de prêt",
-      "amount": "Montant souhaité",
-      "currency": "Devise",
-      "duration": "Durée souhaitée (mois)",
-      "situation": "Votre situation",
-      "professionalSituation": "Situation professionnelle",
-      "selectSituation": "Sélectionnez votre situation",
-      "monthlyIncome": "Revenus mensuels nets",
-      "message": "Message complémentaire",
-      "messagePlaceholder": "Décrivez votre projet ou vos besoins spécifiques...",
-      "submit": "Envoyer ma demande",
-      "submitting": "Envoi en cours...",
-      "required": "* Champs obligatoires. Vos données sont protégées et ne seront utilisées que pour traiter votre demande."
-    },
-    "reassurance": {
-      "title": "Pourquoi nous faire confiance ?",
-      "secureData": {
-        "title": "Données sécurisées",
-        "description": "Vos informations sont protégées par cryptage SSL"
-      },
-      "quickResponse": {
-        "title": "Réponse rapide",
-        "description": "Traitement de votre demande sous 24h"
-      },
-      "availableAdvisors": {
-        "title": "Conseillers disponibles",
-        "description": "Une équipe d'experts à votre écoute"
-      }
-    },
-    "advantages": {
-      "title": "Nos avantages",
-      "experience": "Plus de 17 ans d'expérience",
-      "experts": "43 experts à votre service",
-      "rates": "Taux compétitifs",
-      "support": "Accompagnement personnalisé"
-    },
-    "contact": {
-      "title": "Besoin d'aide ?",
-      "description": "Nos conseillers sont à votre disposition",
-      "phone": "01 23 45 67 89",
-      "hours": "Du lundi au vendredi de 9h à 18h"
-    },
-    "situations": {
-      "employee": "Salarié(e) CDI",
-      "temporaryEmployee": "Salarié(e) CDD",
-      "civilServant": "Fonctionnaire",
-      "selfEmployed": "Travailleur indépendant",
-      "freelancer": "Profession libérale",
-      "retired": "Retraité(e)",
-      "student": "Étudiant(e)",
-      "jobSeeker": "Demandeur d'emploi"
-    },
-    "validation": {
-      "missingFields": "Champs manquants",
-      "missingFieldsDesc": "Veuillez remplir tous les champs obligatoires.",
-      "invalidEmail": "Email invalide",
-      "invalidEmailDesc": "Veuillez saisir une adresse email valide.",
-      "emailMismatch": "Emails non identiques",
-      "emailMismatchDesc": "L'email et sa confirmation ne correspondent pas.",
-      "success": "Demande envoyée avec succès",
-      "successDesc": "Nous vous contacterons dans les plus brefs délais.",
-      "error": "Erreur",
-      "errorDesc": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer."
+      "quote": "Obtenir un devis"
     }
   },
   "creditBuyback": {
-    "metaDescription": "Rachat de crédit avec Neovita Finanz. Réduisez vos mensualités, simplifiez votre gestion financière.",
+    "metaDescription": "Rachat de crédit avec Neovita Finanz. Diminuez vos mensualités, simplifiez votre gestion financière.",
     "hero": {
       "subtitle": "Optimisez vos finances en regroupant tous vos crédits"
     },
     "advantages": {
-      "title": "Les avantages du rachat de crédit",
-      "reduction": "Réduction de vos mensualités",
-      "simplification": "Simplification de votre gestion",
-      "betterRates": "Taux potentiellement plus avantageux",
+      "title": "Avantages du rachat de crédit",
+      "reduction": "Diminuez vos mensualités",
+      "simplification": "Simplifiez votre gestion",
+      "betterRates": "Taux potentiellement meilleurs",
       "singlePayment": "Une seule mensualité",
       "additionalCash": "Possibilité de trésorerie supplémentaire",
       "freeAdvice": "Conseil personnalisé gratuit"
     },
     "cta": {
-      "request": "Demander ce rachat",
+      "request": "Demander ce regroupement",
       "study": "Étudier mon dossier"
     }
   },
   "about": {
-    "metaDescription": "À propos de Neovita Finanz - Découvrez notre expertise financière et notre équipe de spécialistes.",
+    "metaDescription": "À propos de Neovita Finanz - Découvrez notre expertise en financement et notre équipe d'experts.",
     "hero": {
       "subtitle": "Votre partenaire de confiance depuis 15 ans"
     },
@@ -253,37 +172,9 @@
     },
     "stats": {
       "advisors": "Conseillers",
-      "experience": "Ans d'expérience",
+      "experience": "Années d'expérience",
       "clients": "Clients satisfaits",
-      "trust": "De confiance"
-    }
-  },
-  "partners": {
-    "title": "Nos Partenaires",
-    "subtitle": "Un réseau solide pour votre réussite",
-    "metaDescription": "Découvrez les partenaires de Neovita Finanz. Réseau de banques, courtiers et assureurs pour vous offrir les meilleures solutions.",
-    "types": {
-      "banks": {
-        "title": "Banques partenaires",
-        "description": "Réseau de banques et établissements financiers"
-      },
-      "brokers": {
-        "title": "Courtiers",
-        "description": "Collaboration avec des courtiers expérimentés"
-      },
-      "insurers": {
-        "title": "Assureurs",
-        "description": "Partenariats avec les meilleurs assureurs"
-      }
-    },
-    "trustMessage": {
-      "title": "Un réseau de confiance",
-      "subtitle": "Des partenaires sélectionnés pour leur expertise",
-      "labels": {
-        "fast": "Traitement rapide",
-        "secure": "Sécurisé",
-        "reliable": "Fiable"
-      }
+      "trust": "Confiance"
     }
   },
   "services": {
@@ -297,13 +188,13 @@
     },
     "creditBuyback": {
       "title": "Rachat de Crédit",
-      "description": "Simplifiez vos remboursements et réduisez vos mensualités"
+      "description": "Simplifiez vos remboursements et diminuez vos mensualités"
     }
   },
   "advantages": {
     "security": {
       "title": "Sécurité & Confiance",
-      "description": "Établissement agréé avec 15 ans d'expérience dans le financement"
+      "description": "Établissement agréé avec 15 ans d'expérience en financement"
     },
     "speed": {
       "title": "Rapidité & Efficacité",
@@ -323,25 +214,17 @@
     "amount": "Montant",
     "duration": "Durée",
     "months": "mois",
-    "years": "ans",
-    "calculate": "Calculer",
+    "years": "années",
     "results": "Résultats",
     "monthlyPayment": "Mensualité",
     "totalCost": "Coût total",
-    "interestRate": "Taux d'intérêt",
-    "estimationSaved": "Estimation sauvegardée",
-    "estimationSavedDesc": "Votre simulation a été sauvegardée avec succès",
-    "requestInProgress": "Demande en cours",
-    "requestInProgressDesc": "Nous allons vous contacter rapidement"
-  },
-  "loanTypes": {
-    "personal": "Prêt personnel",
-    "consumption": "Crédit consommation",
-    "works": "Crédit travaux",
-    "mortgage": "Prêt immobilier",
-    "consolidation": "Rachat de crédit",
-    "lease": "Location avec option d'achat",
-    "student": "Prêt étudiant"
+    "totalInterest": "Total intérêts",
+    "types": {
+      "personal": "Prêt personnel",
+      "mortgage": "Prêt immobilier",
+      "work": "Crédit travaux",
+      "auto": "Prêt auto"
+    }
   },
   "testimonials": {
     "title": "Témoignages clients",
@@ -349,21 +232,174 @@
     "reviews": "avis",
     "loanTypeLabel": "Type de prêt",
     "amountLabel": "Montant",
+    "marie": {
+      "comment": "Excellent service, rapide et professionnel. Je recommande Neovita Finanz !",
+      "loanType": "Prêt personnel"
+    },
+    "pierre": {
+      "comment": "Grâce à Neovita, j'ai obtenu mon prêt immobilier aux meilleures conditions.",
+      "loanType": "Prêt immobilier"
+    },
+    "sophie": {
+      "comment": "Parfait pour regrouper mes crédits, beaucoup plus simple maintenant !",
+      "loanType": "Rachat de crédit"
+    },
     "jeanmarc": {
-      "comment": "Grâce à Neovita, j'ai obtenu rapidement un prêt pour lancer mon projet.",
-      "loanType": "Prêt auto-entrepreneur"
+      "comment": "Grâce à NeoVita, j'ai rapidement obtenu un prêt pour lancer mon projet.",
+      "loanType": "Prêt travailleur indépendant"
     },
     "amelie": {
       "comment": "Service impeccable, rapide et très professionnel !",
       "loanType": "Prêt personnel"
     },
     "pedro": {
-      "comment": "Tout s'est bien passé, de la simulation au paiement.",
-      "loanType": "Financement automobile"
+      "comment": "Tout s'est bien passé, de la simulation au versement.",
+      "loanType": "Financement auto"
+    }
+  },
+  "creditForm": {
+    "title": "Demande de prêt",
+    "subtitle": "Remplissez le formulaire pour obtenir une offre personnalisée",
+    "personalInfo": "Informations personnelles",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "projectInfo": "Informations sur le projet",
+    "loanType": "Type de prêt",
+    "amount": "Montant souhaité",
+    "duration": "Durée",
+    "income": "Revenus mensuels",
+    "purpose": "Objet du prêt",
+    "submit": "Envoyer ma demande",
+    "submitting": "Envoi en cours...",
+    "success": "Votre demande a été envoyée avec succès !",
+    "error": "Une erreur s'est produite. Veuillez réessayer."
+  },
+  "legal": {
+    "title": "Mentions Légales",
+    "description": "Mentions légales du site Neovita Finanz. Informations sur l'éditeur, hébergement et propriété intellectuelle.",
+    "editor": {
+      "title": "Éditeur du site",
+      "content": "Neovita Finanz - Société par Actions Simplifiée - Capital social : [Montant du capital] - Siège social : [Adresse complète] - RCS : [Numéro RCS] - SIRET : [Numéro SIRET] - TVA Intracommunautaire : [Numéro TVA]"
+    },
+    "director": {
+      "title": "Directeur de publication",
+      "content": "[Nom du directeur de publication] - [Titre/Fonction]"
+    },
+    "hosting": {
+      "title": "Hébergement",
+      "content": "Ce site est hébergé par : [Nom de l'hébergeur] - [Adresse de l'hébergeur]"
+    },
+    "intellectual": {
+      "title": "Propriété intellectuelle",
+      "content": "Tous les éléments de ce site (textes, images, sons, vidéos, logos, etc.) sont protégés par le droit d'auteur et le droit des marques. Toute reproduction sans autorisation est interdite."
+    }
+  },
+  "terms": {
+    "title": "Conditions Générales",
+    "description": "Conditions générales d'utilisation et de vente de Neovita Finanz. Modalités de nos services financiers.",
+    "purpose": {
+      "title": "Objet",
+      "content": "Les présentes conditions générales régissent l'utilisation de nos services d'intermédiation en opérations de banque et services de paiement."
+    },
+    "services": {
+      "title": "Services proposés",
+      "content": "Neovita Finanz propose les services suivants :",
+      "advice": "Conseil en financement",
+      "intermediation": "Intermédiation en crédit",
+      "support": "Accompagnement dans les démarches",
+      "negotiation": "Négociation avec les établissements financiers"
+    },
+    "obligations": {
+      "title": "Obligations du client",
+      "content": "Le client s'engage à :",
+      "accurate": "Fournir des informations exactes et complètes",
+      "deadlines": "Respecter les délais de transmission des pièces",
+      "changes": "Signaler tout changement de situation",
+      "commitments": "Respecter les engagements pris"
+    },
+    "remuneration": {
+      "title": "Rémunération",
+      "content": "Notre rémunération est perçue auprès des établissements financiers partenaires selon les modalités définies dans nos accords de partenariat."
+    }
+  },
+  "cookies": {
+    "title": "Politique des Cookies",
+    "description": "Politique des cookies de Neovita Finanz. Utilisation des cookies et gestion de vos préférences.",
+    "what": {
+      "title": "Qu'est-ce qu'un cookie ?",
+      "description": "Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette, smartphone) lors de la visite d'un site web. Il permet de reconnaître votre navigateur et de mémoriser certaines informations."
+    },
+    "types": {
+      "title": "Types de cookies utilisés",
+      "technical": {
+        "title": "Cookies techniques",
+        "description": "Nécessaires au fonctionnement du site (navigation, sécurité, formulaires)."
+      },
+      "analytics": {
+        "title": "Cookies analytiques",
+        "description": "Permettent d'analyser l'utilisation du site pour améliorer nos services."
+      },
+      "preferences": {
+        "title": "Cookies de préférences",
+        "description": "Mémorisent vos choix et préférences pour personnaliser votre expérience."
+      }
+    },
+    "management": {
+      "title": "Gestion des cookies",
+      "description": "Vous pouvez gérer les cookies via les paramètres de votre navigateur. Vous avez la possibilité de les accepter, les refuser ou les supprimer. Attention : la désactivation de certains cookies peut affecter le fonctionnement du site."
+    },
+    "duration": {
+      "title": "Durée de conservation",
+      "description": "Les cookies sont conservés pour une durée maximum de 13 mois, conformément à la réglementation en vigueur."
+    }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "description": "Politique de confidentialité de Neovita Finanz. Protection des données personnelles et respect de votre vie privée.",
+    "dataCollection": {
+      "title": "Collecte des données",
+      "description": "Nous collectons uniquement les données nécessaires au traitement de votre demande de financement et à l'amélioration de nos services."
+    },
+    "dataUsage": {
+      "title": "Utilisation des données",
+      "description": "Vos données sont utilisées exclusivement pour traiter votre demande, vous contacter et vous proposer des offres adaptées à vos besoins."
+    },
+    "dataProtection": {
+      "title": "Protection des données",
+      "description": "Nous mettons en œuvre toutes les mesures techniques et organisationnelles nécessaires pour protéger vos données contre tout accès non autorisé."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "description": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données personnelles."
+    }
+  },
+  "siteMap": {
+    "title": "Plan du Site",
+    "description": "Accédez rapidement à toutes les pages de notre site Neovita Finanz."
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Un réseau solide pour votre réussite",
+    "metaDescription": "Découvrez les partenaires de Neovita Finanz. Réseau de banques, courtiers et assureurs pour vous offrir les meilleures solutions.",
+    "types": {
+      "banks": {
+        "title": "Banques partenaires",
+        "description": "Réseau de banques et établissements financiers"
+      },
+      "brokers": {
+        "title": "Courtiers",
+        "description": "Collaboration avec des courtiers expérimentés"
+      },
+      "insurers": {
+        "title": "Assureurs",
+        "description": "Partenariats avec les meilleurs assureurs"
+      }
     }
   },
   "footer": {
-    "tagline": "Votre partenaire financier de confiance",
+    "tagline": "Votre spécialiste du financement",
     "description": "Neovita Finanz vous accompagne dans tous vos projets de financement avec expertise et proximité.",
     "sections": {
       "services": "Nos Services",

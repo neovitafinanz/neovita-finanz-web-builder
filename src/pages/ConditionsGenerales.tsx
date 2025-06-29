@@ -2,75 +2,76 @@
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ConditionsGenerales = () => {
+  const { t } = useLanguage();
+
   return (
     <Layout 
-      title="Conditions générales" 
-      description="Conditions générales d'utilisation et de vente de Neovita Finanz. Modalités de nos services financiers."
+      title={t('terms.title')}
+      description={t('terms.description')}
     >
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-              Conditions Générales
+              {t('terms.title')}
             </h1>
 
             <div className="space-y-6">
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Objet</CardTitle>
+                  <CardTitle>{t('terms.purpose.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Les présentes conditions générales régissent l'utilisation de nos services 
-                    d'intermédiation en opérations de banque et services de paiement.
+                    {t('terms.purpose.content')}
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Services proposés</CardTitle>
+                  <CardTitle>{t('terms.services.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Neovita Finanz propose les services suivants :
+                    {t('terms.services.content')}
                   </p>
                   <ul className="list-disc list-inside mt-2 text-gray-600">
-                    <li>Conseil en financement</li>
-                    <li>Intermédiation en crédit</li>
-                    <li>Accompagnement dans les démarches</li>
-                    <li>Négociation avec les établissements financiers</li>
+                    <li>{t('terms.services.advice')}</li>
+                    <li>{t('terms.services.intermediation')}</li>
+                    <li>{t('terms.services.support')}</li>
+                    <li>{t('terms.services.negotiation')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Obligations du client</CardTitle>
+                  <CardTitle>{t('terms.obligations.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Le client s'engage à :
+                    {t('terms.obligations.content')}
                   </p>
                   <ul className="list-disc list-inside mt-2 text-gray-600">
-                    <li>Fournir des informations exactes et complètes</li>
-                    <li>Respecter les délais de transmission des pièces</li>
-                    <li>Signaler tout changement de situation</li>
-                    <li>Respecter les engagements pris</li>
+                    <li>{t('terms.obligations.accurate')}</li>
+                    <li>{t('terms.obligations.deadlines')}</li>
+                    <li>{t('terms.obligations.changes')}</li>
+                    <li>{t('terms.obligations.commitments')}</li>
                   </ul>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Rémunération</CardTitle>
+                  <CardTitle>{t('terms.remuneration.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600">
-                    Notre rémunération est perçue auprès des établissements financiers 
-                    partenaires selon les modalités définies dans nos accords de partenariat.
+                    {t('terms.remuneration.content')}
                   </p>
                 </CardContent>
               </Card>
