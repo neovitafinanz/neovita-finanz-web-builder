@@ -121,6 +121,15 @@
         "title": "Assureurs",
         "description": "Partenariats avec les meilleurs assureurs"
       }
+    },
+    "trustMessage": {
+      "title": "Un réseau de confiance",
+      "subtitle": "Des partenaires sélectionnés pour leur expertise",
+      "labels": {
+        "fast": "Traitement rapide",
+        "secure": "Sécurisé",
+        "reliable": "Fiable"
+      }
     }
   },
   "services": {
@@ -157,7 +166,28 @@
     "parameters": "Paramètres du prêt",
     "loanType": "Type de prêt",
     "selectLoanType": "Sélectionner un type",
-    "amount": "Montant"
+    "amount": "Montant",
+    "duration": "Durée",
+    "months": "mois",
+    "years": "ans",
+    "calculate": "Calculer",
+    "results": "Résultats",
+    "monthlyPayment": "Mensualité",
+    "totalCost": "Coût total",
+    "interestRate": "Taux d'intérêt",
+    "estimationSaved": "Estimation sauvegardée",
+    "estimationSavedDesc": "Votre simulation a été sauvegardée avec succès",
+    "requestInProgress": "Demande en cours",
+    "requestInProgressDesc": "Nous allons vous contacter rapidement"
+  },
+  "loanTypes": {
+    "personal": "Prêt personnel",
+    "consumption": "Crédit consommation",
+    "works": "Crédit travaux",
+    "mortgage": "Prêt immobilier",
+    "consolidation": "Rachat de crédit",
+    "lease": "Location avec option d'achat",
+    "student": "Prêt étudiant"
   },
   "testimonials": {
     "title": "Témoignages clients",

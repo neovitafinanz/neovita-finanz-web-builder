@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Home",
@@ -120,6 +121,15 @@
         "title": "Insurers",
         "description": "Partnerships with the best insurers"
       }
+    },
+    "trustMessage": {
+      "title": "A trusted network",
+      "subtitle": "Partners selected for their expertise",
+      "labels": {
+        "fast": "Fast processing",
+        "secure": "Secure",
+        "reliable": "Reliable"
+      }
     }
   },
   "services": {
@@ -156,7 +166,28 @@
     "parameters": "Loan Parameters",
     "loanType": "Loan Type",
     "selectLoanType": "Select a type",
-    "amount": "Amount"
+    "amount": "Amount",
+    "duration": "Duration",
+    "months": "months",
+    "years": "years",
+    "calculate": "Calculate",
+    "results": "Results",
+    "monthlyPayment": "Monthly Payment",
+    "totalCost": "Total Cost",
+    "interestRate": "Interest Rate",
+    "estimationSaved": "Estimation Saved",
+    "estimationSavedDesc": "Your simulation has been saved successfully",
+    "requestInProgress": "Request In Progress",
+    "requestInProgressDesc": "We will contact you quickly"
+  },
+  "loanTypes": {
+    "personal": "Personal loan",
+    "consumption": "Consumer credit",
+    "works": "Home improvement loan",
+    "mortgage": "Mortgage loan",
+    "consolidation": "Credit consolidation",
+    "lease": "Lease with option to buy",
+    "student": "Student loan"
   },
   "testimonials": {
     "title": "Customer Testimonials",

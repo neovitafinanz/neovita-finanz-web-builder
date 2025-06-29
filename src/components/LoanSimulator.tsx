@@ -188,81 +188,43 @@ const LoanSimulator = () => {
                 {loanType && monthlyPayment > 0 ? (
                   <div className="space-y-6">
                     <div className="grid grid-cols-2 gap-6">
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <p className="text-sm text-gray-600 mb-1">{t('simulator.monthlyPayment')}</p>
-                        <p className="text-2xl font-bold text-blue-900">
-                          {formatCurrency(monthlyPayment)}
-                        </p>
+                      <div className="text-center p-4 bg-green-50 rounded-lg">
+                        <p className="text-sm text-gray-600 mb-2">{t('simulator.monthlyPayment')}</p>
+                        <p className="text-2xl font-bold text-green-600">{formatCurrency(monthlyPayment)}</p>
                       </div>
-                      <div className="bg-green-50 p-4 rounded-lg text-center">
-                        <p className="text-sm text-gray-600 mb-1">{t('simulator.interestRate')}</p>
-                        <p className="text-2xl font-bold text-green-600">
-                          {interestRate}%*
-                        </p>
+                      <div className="text-center p-4 bg-blue-50 rounded-lg">
+                        <p className="text-sm text-gray-600 mb-2">{t('simulator.totalCost')}</p>
+                        <p className="text-2xl font-bold text-blue-600">{formatCurrency(totalCost)}</p>
                       </div>
                     </div>
-
-                    <div className="bg-yellow-50 p-4 rounded-lg text-center">
-                      <p className="text-sm text-gray-600 mb-1">{t('simulator.totalCost')}</p>
-                      <p className="text-2xl font-bold text-yellow-600">
-                        {formatCurrency(totalCost)}
-                      </p>
-                      <p className="text-sm text-gray-500 mt-1">
-                        {t('simulator.includingInterest')}: {formatCurrency(totalCost - amount[0])}
-                      </p>
+                    
+                    <div className="text-center p-4 bg-yellow-50 rounded-lg">
+                      <p className="text-sm text-gray-600 mb-2">{t('simulator.interestRate')}</p>
+                      <p className="text-2xl font-bold text-yellow-600">{interestRate}%</p>
                     </div>
 
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-green-600 mb-2">{t('simulator.summary')}:</h4>
-                      <ul className="space-y-1 text-sm text-gray-600">
-                        <li>• {t('simulator.borrowedAmount')}: {formatCurrency(amount[0])}</li>
-                        <li>• {t('simulator.duration')}: {duration[0]} {t('simulator.months')} ({Math.round(duration[0] / 12 * 10) / 10} {t('simulator.years')})</li>
-                        <li>• {t('simulator.type')}: {loanTypes.find(l => l.value === loanType)?.label}</li>
-                      </ul>
-                    </div>
-
-                    <div className="space-y-3">
+                    <div className="flex gap-4">
+                      <Button 
+                        onClick={handleSaveEstimation}
+                        variant="outline"
+                        className="flex-1"
+                      >
+                        <Download className="w-4 h-4 mr-2" />
+                        {t('simulator.estimationSaved')}
+                      </Button>
                       <Button 
                         onClick={handleRequestLoan}
-                        className="w-full bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white py-3 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+                        className="flex-1 bg-green-600 hover:bg-green-700"
                       >
-                        {t('simulator.requestLoan')}
+                        <Mail className="w-4 h-4 mr-2" />
+                        {t('common.requestLoan')}
                       </Button>
-                      
-                      <div className="flex gap-2">
-                        <Button 
-                          onClick={handleSaveEstimation}
-                          variant="outline" 
-                          className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
-                        >
-                          <Mail className="w-4 h-4 mr-2" />
-                          {t('simulator.email')}
-                        </Button>
-                        <Button 
-                          onClick={handleSaveEstimation}
-                          variant="outline" 
-                          className="flex-1 border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
-                        >
-                          <Download className="w-4 h-4 mr-2" />
-                          {t('simulator.pdf')}
-                        </Button>
-                      </div>
-                    </div>
-
-                    <div className="text-xs text-gray-500 bg-gray-50 p-3 rounded">
-                      <p className="font-semibold mb-1">*{t('simulator.importantNotices')}:</p>
-                      <p>• {t('simulator.indicativeRate')}</p>
-                      <p>• {t('simulator.subjectToApproval')}</p>
-                      <p>• {t('simulator.withdrawalPeriod')}</p>
                     </div>
                   </div>
                 ) : (
-                  <div className="text-center py-12">
-                    <Calculator className="w-16 h-16 text-gray-300 mx-auto mb-4" />
-                    <p className="text-gray-500 text-lg mb-2">{t('simulator.readyForSimulation')}</p>
-                    <p className="text-gray-400">
-                      {t('simulator.selectTypeAndAdjust')}
-                    </p>
+                  <div className="text-center text-gray-500 py-8">
+                    <Calculator className="w-16 h-16 mx-auto mb-4 text-gray-300" />
+                    <p>{t('simulator.selectLoanType')}</p>
                   </div>
                 )}
               </CardContent>
