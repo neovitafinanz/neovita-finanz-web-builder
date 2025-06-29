@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -18,9 +17,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "Welcome to BHV Auto",
-      "subtitle": "Your vehicle import specialist",
-      "description": "Discover our vehicle import services with expert and personalized support."
+      "title": "Welcome to Neovita Finanz",
+      "subtitle": "Your trusted financial partner",
+      "description": "Discover our financial services with expert and personalized support."
     },
     "slide2": {
       "title": "Mortgage Loans",
@@ -44,12 +43,12 @@
     "disclaimer": "A credit commits you and must be repaid. Check your repayment capacity before committing."
   },
   "home": {
-    "metaDescription": "BHV Auto - Your vehicle import specialist. Professional import services with expert support.",
-    "servicesTitle": "Our Import Services",
-    "servicesSubtitle": "Solutions adapted to all your vehicle import needs",
-    "advantagesTitle": "Why Choose BHV Auto",
-    "ctaTitle": "Ready to Import Your Vehicle?",
-    "ctaSubtitle": "Our experts support you in your import project"
+    "metaDescription": "Neovita Finanz - Your trusted financial partner. Professional financial services with expert support.",
+    "servicesTitle": "Our Financial Services",
+    "servicesSubtitle": "Solutions adapted to all your financing needs",
+    "advantagesTitle": "Why Choose Neovita Finanz",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaSubtitle": "Our experts support you in your financing project"
   },
   "personalLoans": {
     "metaDescription": "Personal loans with Neovita Finanz. Fast and flexible financing for all your personal projects.",
@@ -89,13 +88,13 @@
     }
   },
   "about": {
-    "metaDescription": "About BHV Auto - Discover our expertise in vehicle import and our team of specialists.",
+    "metaDescription": "About Neovita Finanz - Discover our financial expertise and our team of specialists.",
     "hero": {
       "subtitle": "Your trusted partner for 15 years"
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We support our clients in their vehicle import projects with expertise, transparency and proximity. Our team of 43 specialized advisors guides you at every step of your project."
+      "description": "We support our clients in their financing projects with expertise, transparency and proximity. Our team of 43 specialized advisors guides you at every step of your project."
     },
     "stats": {
       "advisors": "Advisors",
@@ -107,7 +106,7 @@
   "partners": {
     "title": "Our Partners",
     "subtitle": "A solid network for your success",
-    "metaDescription": "Discover BHV Auto partners. Network of banks, brokers and insurers to offer you the best solutions.",
+    "metaDescription": "Discover Neovita Finanz partners. Network of banks, brokers and insurers to offer you the best solutions.",
     "types": {
       "banks": {
         "title": "Partner banks",
@@ -209,8 +208,8 @@
     }
   },
   "footer": {
-    "tagline": "Your vehicle import specialist",
-    "description": "BHV Auto has been supporting you in all your vehicle import projects with expertise and proximity.",
+    "tagline": "Your trusted financial partner",
+    "description": "Neovita Finanz has been supporting you in all your financing projects with expertise and proximity.",
     "sections": {
       "services": "Our Services",
       "company": "The Company",
