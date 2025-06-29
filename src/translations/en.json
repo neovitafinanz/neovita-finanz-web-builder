@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Home",
@@ -66,6 +67,160 @@
     },
     "cta": {
       "study": "Study my file"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Mortgage loan with Neovita Finanz. Competitive rates from 1.9%, personalized support for all your real estate projects.",
+    "hero": {
+      "subtitle": "Make your real estate project a reality with our expert support"
+    },
+    "characteristics": {
+      "title": "Mortgage Loan Characteristics",
+      "highAmounts": "High amounts",
+      "highAmountsDesc": "Up to €1,000,000",
+      "allProjects": "All projects",
+      "allProjectsDesc": "Purchase, construction, investment",
+      "secured": "Secured",
+      "securedDesc": "Mortgage guarantee",
+      "advantageousRates": "Advantageous rates",
+      "advantageousRatesDesc": "From 1.9% APR"
+    },
+    "advantages": {
+      "title": "Why choose our mortgage loan?",
+      "competitiveRates": "Competitive mortgage rates",
+      "personalizedSupport": "Personalized support",
+      "freeStudy": "Free file study",
+      "bankNegotiation": "Bank negotiation",
+      "followUp": "Follow-up until signature",
+      "insurance": "Borrower insurance included"
+    },
+    "cta": {
+      "request": "Request this loan",
+      "apply": "Apply now"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Work credit with Neovita Finanz. Finance your renovation and development projects. Advantageous conditions.",
+    "hero": {
+      "title": "Work Credit",
+      "subtitle": "Bring your renovation and development projects to life"
+    },
+    "projectTypes": {
+      "title": "Types of work financed",
+      "energyRenovation": "Energy renovation",
+      "houseExtension": "House extension",
+      "interiorDesign": "Interior design",
+      "roofWork": "Roof work",
+      "poolInstallation": "Pool installation",
+      "kitchenBathroom": "Kitchen/bathroom modernization"
+    },
+    "cta": {
+      "finance": "Finance my work"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Insurance solutions with Neovita Finanz. Borrower insurance, home insurance, health insurance. Optimal protection.",
+    "hero": {
+      "title": "Our Insurance",
+      "subtitle": "Protect what matters most to you"
+    },
+    "types": {
+      "borrower": {
+        "title": "Borrower insurance",
+        "description": "Protection of your loan"
+      },
+      "home": {
+        "title": "Home insurance",
+        "description": "Protection of your home"
+      },
+      "health": {
+        "title": "Health insurance",
+        "description": "Complete medical coverage"
+      }
+    },
+    "cta": {
+      "quote": "Request a quote"
+    }
+  },
+  "loanRequest": {
+    "metaDescription": "Make your credit request online. Quick response within 24h. Expert advisors available.",
+    "hero": {
+      "title": "Credit Request",
+      "subtitle": "Complete this form to make your request. Our team of experts will contact you quickly."
+    },
+    "form": {
+      "title": "Your Financing Request",
+      "personalInfo": "Personal information",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "emailConfirmation": "Email confirmation",
+      "phone": "Phone",
+      "project": "Your financing project",
+      "loanType": "Loan type",
+      "selectLoanType": "Select loan type",
+      "amount": "Desired amount",
+      "currency": "Currency",
+      "duration": "Desired duration (months)",
+      "situation": "Your situation",
+      "professionalSituation": "Professional situation",
+      "selectSituation": "Select your situation",
+      "monthlyIncome": "Net monthly income",
+      "message": "Additional message",
+      "messagePlaceholder": "Describe your project or specific needs...",
+      "submit": "Send my request",
+      "submitting": "Sending...",
+      "required": "* Required fields. Your data is protected and will only be used to process your request."
+    },
+    "reassurance": {
+      "title": "Why trust us?",
+      "secureData": {
+        "title": "Secure data",
+        "description": "Your information is protected by SSL encryption"
+      },
+      "quickResponse": {
+        "title": "Quick response",
+        "description": "Processing your request within 24h"
+      },
+      "availableAdvisors": {
+        "title": "Available advisors",
+        "description": "A team of experts at your service"
+      }
+    },
+    "advantages": {
+      "title": "Our advantages",
+      "experience": "Over 17 years of experience",
+      "experts": "43 experts at your service",
+      "rates": "Competitive rates",
+      "support": "Personalized support"
+    },
+    "contact": {
+      "title": "Need help?",
+      "description": "Our advisors are at your disposal",
+      "phone": "01 23 45 67 89",
+      "hours": "Monday to Friday 9am to 6pm"
+    },
+    "situations": {
+      "employee": "Permanent employee",
+      "temporaryEmployee": "Temporary employee",
+      "civilServant": "Civil servant",
+      "selfEmployed": "Self-employed",
+      "freelancer": "Freelancer",
+      "retired": "Retired",
+      "student": "Student",
+      "jobSeeker": "Job seeker"
+    },
+    "validation": {
+      "missingFields": "Missing fields",
+      "missingFieldsDesc": "Please fill in all required fields.",
+      "invalidEmail": "Invalid email",
+      "invalidEmailDesc": "Please enter a valid email address.",
+      "emailMismatch": "Emails do not match",
+      "emailMismatchDesc": "Email and confirmation do not match.",
+      "success": "Request sent successfully",
+      "successDesc": "We will contact you as soon as possible.",
+      "error": "Error",
+      "errorDesc": "An error occurred while sending. Please try again."
     }
   },
   "creditBuyback": {
@@ -195,7 +350,7 @@
     "loanTypeLabel": "Loan Type",
     "amountLabel": "Amount",
     "jeanmarc": {
-      "comment": "Thanks to NeoVita, I quickly obtained a loan to launch my project.",
+      "comment": "Thanks to Neovita, I quickly obtained a loan to launch my project.",
       "loanType": "Self-employed loan"
     },
     "amelie": {

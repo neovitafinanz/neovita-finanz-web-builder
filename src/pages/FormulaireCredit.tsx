@@ -8,10 +8,12 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Shield, Clock, Users, CheckCircle } from 'lucide-react';
 
 const FormulaireCredit = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
@@ -29,13 +31,13 @@ const FormulaireCredit = () => {
   });
 
   const loanTypes = [
-    'Prêt personnel en ligne',
-    'Prêt à la consommation',
-    'Crédit travaux/rénovation',
-    'Prêt immobilier',
-    'Rachat de crédit',
-    'Crédit-bail',
-    'Prêt étudiant'
+    t('loanTypes.personal'),
+    t('loanTypes.consumption'),
+    t('loanTypes.works'),
+    t('loanTypes.mortgage'),
+    t('loanTypes.consolidation'),
+    t('loanTypes.lease'),
+    t('loanTypes.student')
   ];
 
   const currencies = [
@@ -52,31 +54,31 @@ const FormulaireCredit = () => {
   ];
 
   const situations = [
-    'Salarié(e) CDI',
-    'Salarié(e) CDD',
-    'Fonctionnaire',
-    'Travailleur indépendant',
-    'Profession libérale',
-    'Retraité(e)',
-    'Étudiant(e)',
-    'Demandeur d\'emploi'
+    t('loanRequest.situations.employee'),
+    t('loanRequest.situations.temporaryEmployee'),
+    t('loanRequest.situations.civilServant'),
+    t('loanRequest.situations.selfEmployed'),
+    t('loanRequest.situations.freelancer'),
+    t('loanRequest.situations.retired'),
+    t('loanRequest.situations.student'),
+    t('loanRequest.situations.jobSeeker')
   ];
 
   const reassurancePoints = [
     {
       icon: Shield,
-      title: 'Données sécurisées',
-      description: 'Vos informations sont protégées par cryptage SSL'
+      title: t('loanRequest.reassurance.secureData.title'),
+      description: t('loanRequest.reassurance.secureData.description')
     },
     {
       icon: Clock,
-      title: 'Réponse rapide',
-      description: 'Traitement de votre demande sous 24h'
+      title: t('loanRequest.reassurance.quickResponse.title'),
+      description: t('loanRequest.reassurance.quickResponse.description')
     },
     {
       icon: Users,
-      title: 'Conseillers disponibles',
-      description: 'Une équipe d\'experts à votre écoute'
+      title: t('loanRequest.reassurance.availableAdvisors.title'),
+      description: t('loanRequest.reassurance.availableAdvisors.description')
     }
   ];
 
@@ -86,8 +88,8 @@ const FormulaireCredit = () => {
     // Validation
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.emailConfirmation || !formData.phone || !formData.loanType) {
       toast({
-        title: "Champs manquants",
-        description: "Veuillez remplir tous les champs obligatoires.",
+        title: t('loanRequest.validation.missingFields'),
+        description: t('loanRequest.validation.missingFieldsDesc'),
         variant: "destructive"
       });
       return;
@@ -97,8 +99,8 @@ const FormulaireCredit = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       toast({
-        title: "Email invalide",
-        description: "Veuillez saisir une adresse email valide.",
+        title: t('loanRequest.validation.invalidEmail'),
+        description: t('loanRequest.validation.invalidEmailDesc'),
         variant: "destructive"
       });
       return;
@@ -107,8 +109,8 @@ const FormulaireCredit = () => {
     // Email confirmation validation
     if (formData.email !== formData.emailConfirmation) {
       toast({
-        title: "Emails non identiques",
-        description: "L'email et sa confirmation ne correspondent pas.",
+        title: t('loanRequest.validation.emailMismatch'),
+        description: t('loanRequest.validation.emailMismatchDesc'),
         variant: "destructive"
       });
       return;
@@ -141,8 +143,8 @@ const FormulaireCredit = () => {
 
       if (response.ok) {
         toast({
-          title: "Demande envoyée avec succès",
-          description: "Nous vous contacterons dans les plus brefs délais.",
+          title: t('loanRequest.validation.success'),
+          description: t('loanRequest.validation.successDesc'),
         });
 
         // Reset du formulaire
@@ -165,8 +167,8 @@ const FormulaireCredit = () => {
       }
     } catch (error) {
       toast({
-        title: "Erreur",
-        description: "Une erreur s'est produite lors de l'envoi. Veuillez réessayer.",
+        title: t('loanRequest.validation.error'),
+        description: t('loanRequest.validation.errorDesc'),
         variant: "destructive"
       });
     } finally {
@@ -182,8 +184,8 @@ const FormulaireCredit = () => {
 
   return (
     <Layout 
-      title="Demande de crédit" 
-      description="Faites votre demande de crédit en ligne. Réponse rapide sous 24h. Conseillers experts disponibles."
+      title={t('loanRequest.hero.title')}
+      description={t('loanRequest.metaDescription')}
     >
       <div className="min-h-screen relative">
         {/* Background image */}
@@ -200,10 +202,10 @@ const FormulaireCredit = () => {
             {/* Header */}
             <div className="text-center mb-12">
               <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Demande de Crédit
+                {t('loanRequest.hero.title')}
               </h1>
               <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-                Complétez ce formulaire pour faire votre demande. Notre équipe d'experts vous contactera rapidement.
+                {t('loanRequest.hero.subtitle')}
               </p>
             </div>
 
@@ -212,37 +214,37 @@ const FormulaireCredit = () => {
               <div className="lg:col-span-2">
                 <Card className="border-0 shadow-2xl bg-white/95 backdrop-blur-sm">
                   <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
-                    <CardTitle className="text-2xl text-center">Votre Demande de Financement</CardTitle>
+                    <CardTitle className="text-2xl text-center">{t('loanRequest.form.title')}</CardTitle>
                   </CardHeader>
                   <CardContent className="p-8">
                     <form onSubmit={handleSubmit} className="space-y-6">
                       {/* Informations personnelles */}
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Informations personnelles</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('loanRequest.form.personalInfo')}</h3>
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <Label htmlFor="firstName" className="text-gray-700 font-medium">
-                              Prénom *
+                              {t('loanRequest.form.firstName')} *
                             </Label>
                             <Input
                               id="firstName"
                               value={formData.firstName}
                               onChange={(e) => handleInputChange('firstName', e.target.value)}
                               className="mt-2"
-                              placeholder="Votre prénom"
+                              placeholder={t('loanRequest.form.firstName')}
                               required
                             />
                           </div>
                           <div>
                             <Label htmlFor="lastName" className="text-gray-700 font-medium">
-                              Nom *
+                              {t('loanRequest.form.lastName')} *
                             </Label>
                             <Input
                               id="lastName"
                               value={formData.lastName}
                               onChange={(e) => handleInputChange('lastName', e.target.value)}
                               className="mt-2"
-                              placeholder="Votre nom"
+                              placeholder={t('loanRequest.form.lastName')}
                               required
                             />
                           </div>
@@ -251,7 +253,7 @@ const FormulaireCredit = () => {
                         <div className="grid md:grid-cols-2 gap-6 mt-6">
                           <div>
                             <Label htmlFor="email" className="text-gray-700 font-medium">
-                              Email *
+                              {t('loanRequest.form.email')} *
                             </Label>
                             <Input
                               id="email"
@@ -265,7 +267,7 @@ const FormulaireCredit = () => {
                           </div>
                           <div>
                             <Label htmlFor="emailConfirmation" className="text-gray-700 font-medium">
-                              Confirmation Email *
+                              {t('loanRequest.form.emailConfirmation')} *
                             </Label>
                             <Input
                               id="emailConfirmation"
@@ -273,20 +275,20 @@ const FormulaireCredit = () => {
                               value={formData.emailConfirmation}
                               onChange={(e) => handleInputChange('emailConfirmation', e.target.value)}
                               className="mt-2"
-                              placeholder="Confirmez votre email"
+                              placeholder={t('loanRequest.form.emailConfirmation')}
                               required
                               onPaste={(e) => e.preventDefault()}
                               onDrop={(e) => e.preventDefault()}
                             />
                             {formData.emailConfirmation && formData.email !== formData.emailConfirmation && (
-                              <p className="text-sm text-red-600 mt-1">Les emails ne correspondent pas</p>
+                              <p className="text-sm text-red-600 mt-1">{t('loanRequest.validation.emailMismatchDesc')}</p>
                             )}
                           </div>
                         </div>
 
                         <div className="mt-6">
                           <Label htmlFor="phone" className="text-gray-700 font-medium">
-                            Téléphone *
+                            {t('loanRequest.form.phone')} *
                           </Label>
                           <Input
                             id="phone"
@@ -302,14 +304,14 @@ const FormulaireCredit = () => {
 
                       {/* Informations du prêt */}
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Votre projet de financement</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('loanRequest.form.project')}</h3>
                         <div>
                           <Label htmlFor="loanType" className="text-gray-700 font-medium">
-                            Type de prêt *
+                            {t('loanRequest.form.loanType')} *
                           </Label>
                           <Select value={formData.loanType} onValueChange={(value) => handleInputChange('loanType', value)}>
                             <SelectTrigger className="mt-2">
-                              <SelectValue placeholder="Sélectionnez le type de prêt" />
+                              <SelectValue placeholder={t('loanRequest.form.selectLoanType')} />
                             </SelectTrigger>
                             <SelectContent>
                               {loanTypes.map((type) => (
@@ -322,7 +324,7 @@ const FormulaireCredit = () => {
                         <div className="grid md:grid-cols-3 gap-6 mt-6">
                           <div>
                             <Label htmlFor="amount" className="text-gray-700 font-medium">
-                              Montant souhaité
+                              {t('loanRequest.form.amount')}
                             </Label>
                             <Input
                               id="amount"
@@ -337,7 +339,7 @@ const FormulaireCredit = () => {
                           </div>
                           <div>
                             <Label htmlFor="currency" className="text-gray-700 font-medium">
-                              Devise
+                              {t('loanRequest.form.currency')}
                             </Label>
                             <Select value={formData.currency} onValueChange={(value) => handleInputChange('currency', value)}>
                               <SelectTrigger className="mt-2">
@@ -354,7 +356,7 @@ const FormulaireCredit = () => {
                           </div>
                           <div>
                             <Label htmlFor="duration" className="text-gray-700 font-medium">
-                              Durée souhaitée (mois)
+                              {t('loanRequest.form.duration')}
                             </Label>
                             <Input
                               id="duration"
@@ -372,15 +374,15 @@ const FormulaireCredit = () => {
 
                       {/* Situation financière */}
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-4">Votre situation</h3>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('loanRequest.form.situation')}</h3>
                         <div className="grid md:grid-cols-2 gap-6">
                           <div>
                             <Label htmlFor="situation" className="text-gray-700 font-medium">
-                              Situation professionnelle
+                              {t('loanRequest.form.professionalSituation')}
                             </Label>
                             <Select value={formData.situation} onValueChange={(value) => handleInputChange('situation', value)}>
                               <SelectTrigger className="mt-2">
-                                <SelectValue placeholder="Sélectionnez votre situation" />
+                                <SelectValue placeholder={t('loanRequest.form.selectSituation')} />
                               </SelectTrigger>
                               <SelectContent>
                                 {situations.map((situation) => (
@@ -391,7 +393,7 @@ const FormulaireCredit = () => {
                           </div>
                           <div>
                             <Label htmlFor="income" className="text-gray-700 font-medium">
-                              Revenus mensuels nets ({selectedCurrency?.symbol})
+                              {t('loanRequest.form.monthlyIncome')} ({selectedCurrency?.symbol})
                             </Label>
                             <Input
                               id="income"
@@ -409,14 +411,14 @@ const FormulaireCredit = () => {
                       {/* Message */}
                       <div>
                         <Label htmlFor="message" className="text-gray-700 font-medium">
-                          Message complémentaire
+                          {t('loanRequest.form.message')}
                         </Label>
                         <Textarea
                           id="message"
                           value={formData.message}
                           onChange={(e) => handleInputChange('message', e.target.value)}
                           className="mt-2"
-                          placeholder="Décrivez votre projet ou vos besoins spécifiques..."
+                          placeholder={t('loanRequest.form.messagePlaceholder')}
                           rows={4}
                         />
                       </div>
@@ -428,12 +430,12 @@ const FormulaireCredit = () => {
                           disabled={isSubmitting}
                           className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
                         >
-                          {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
+                          {isSubmitting ? t('loanRequest.form.submitting') : t('loanRequest.form.submit')}
                         </Button>
                       </div>
 
                       <p className="text-sm text-gray-500 text-center">
-                        * Champs obligatoires. Vos données sont protégées et ne seront utilisées que pour traiter votre demande.
+                        {t('loanRequest.form.required')}
                       </p>
                     </form>
                   </CardContent>
@@ -446,7 +448,7 @@ const FormulaireCredit = () => {
                   {/* Points de réassurance */}
                   <Card className="border-0 shadow-lg bg-white/95 backdrop-blur-sm">
                     <CardHeader>
-                      <CardTitle className="text-lg text-center">Pourquoi nous faire confiance ?</CardTitle>
+                      <CardTitle className="text-lg text-center">{t('loanRequest.reassurance.title')}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
                       {reassurancePoints.map((point, index) => {
@@ -469,24 +471,24 @@ const FormulaireCredit = () => {
                   {/* Avantages */}
                   <Card className="border-0 shadow-lg bg-white/95 backdrop-blur-sm">
                     <CardHeader>
-                      <CardTitle className="text-lg text-center">Nos avantages</CardTitle>
+                      <CardTitle className="text-lg text-center">{t('loanRequest.advantages.title')}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-3">
                       <div className="flex items-center space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">Plus de 17 ans d'expérience</span>
+                        <span className="text-sm">{t('loanRequest.advantages.experience')}</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">43 experts à votre service</span>
+                        <span className="text-sm">{t('loanRequest.advantages.experts')}</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">Taux compétitifs</span>
+                        <span className="text-sm">{t('loanRequest.advantages.rates')}</span>
                       </div>
                       <div className="flex items-center space-x-2">
                         <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">Accompagnement personnalisé</span>
+                        <span className="text-sm">{t('loanRequest.advantages.support')}</span>
                       </div>
                     </CardContent>
                   </Card>
@@ -494,15 +496,15 @@ const FormulaireCredit = () => {
                   {/* Contact */}
                   <Card className="border-0 shadow-lg bg-green-50/90 backdrop-blur-sm">
                     <CardContent className="p-4">
-                      <h4 className="font-medium text-gray-900 mb-2">Besoin d'aide ?</h4>
+                      <h4 className="font-medium text-gray-900 mb-2">{t('loanRequest.contact.title')}</h4>
                       <p className="text-sm text-gray-600 mb-3">
-                        Nos conseillers sont à votre disposition
+                        {t('loanRequest.contact.description')}
                       </p>
                       <p className="text-sm font-medium text-green-600">
-                        📞 01 23 45 67 89
+                        📞 {t('loanRequest.contact.phone')}
                       </p>
                       <p className="text-xs text-gray-500">
-                        Du lundi au vendredi de 9h à 18h
+                        {t('loanRequest.contact.hours')}
                       </p>
                     </CardContent>
                   </Card>

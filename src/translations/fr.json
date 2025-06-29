@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Accueil",
@@ -66,6 +67,160 @@
     },
     "cta": {
       "study": "Étudier mon dossier"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Prêt immobilier avec Neovita Finanz. Taux compétitifs dès 1.9%, accompagnement personnalisé pour tous vos projets immobiliers.",
+    "hero": {
+      "subtitle": "Concrétisez votre projet immobilier avec notre accompagnement expert"
+    },
+    "characteristics": {
+      "title": "Caractéristiques du Prêt Immobilier",
+      "highAmounts": "Montants élevés",
+      "highAmountsDesc": "Jusqu'à 1 000 000€",
+      "allProjects": "Tous projets",
+      "allProjectsDesc": "Achat, construction, investissement",
+      "secured": "Sécurisé",
+      "securedDesc": "Garantie hypothécaire",
+      "advantageousRates": "Taux avantageux",
+      "advantageousRatesDesc": "À partir de 1.9% TAEG"
+    },
+    "advantages": {
+      "title": "Pourquoi choisir notre prêt immobilier ?",
+      "competitiveRates": "Taux immobiliers compétitifs",
+      "personalizedSupport": "Accompagnement personnalisé",
+      "freeStudy": "Étude gratuite de votre dossier",
+      "bankNegotiation": "Négociation avec les banques",
+      "followUp": "Suivi jusqu'à la signature",
+      "insurance": "Assurance emprunteur incluse"
+    },
+    "cta": {
+      "request": "Demander ce prêt",
+      "apply": "Faire ma demande"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Crédit travaux avec Neovita Finanz. Financez vos projets de rénovation et d'aménagement. Conditions avantageuses.",
+    "hero": {
+      "title": "Crédit Travaux",
+      "subtitle": "Donnez vie à vos projets de rénovation et d'aménagement"
+    },
+    "projectTypes": {
+      "title": "Types de travaux financés",
+      "energyRenovation": "Rénovation énergétique",
+      "houseExtension": "Extension de maison",
+      "interiorDesign": "Aménagement intérieur",
+      "roofWork": "Travaux de toiture",
+      "poolInstallation": "Installation piscine",
+      "kitchenBathroom": "Modernisation cuisine/salle de bain"
+    },
+    "cta": {
+      "finance": "Financer mes travaux"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Solutions d'assurance avec Neovita Finanz. Assurance emprunteur, habitation, santé. Protection optimale.",
+    "hero": {
+      "title": "Nos Assurances",
+      "subtitle": "Protégez ce qui compte le plus pour vous"
+    },
+    "types": {
+      "borrower": {
+        "title": "Assurance emprunteur",
+        "description": "Protection de votre prêt"
+      },
+      "home": {
+        "title": "Assurance habitation",
+        "description": "Protection de votre logement"
+      },
+      "health": {
+        "title": "Assurance santé",
+        "description": "Couverture médicale complète"
+      }
+    },
+    "cta": {
+      "quote": "Demander un devis"
+    }
+  },
+  "loanRequest": {
+    "metaDescription": "Faites votre demande de crédit en ligne. Réponse rapide sous 24h. Conseillers experts disponibles.",
+    "hero": {
+      "title": "Demande de Crédit",
+      "subtitle": "Complétez ce formulaire pour faire votre demande. Notre équipe d'experts vous contactera rapidement."
+    },
+    "form": {
+      "title": "Votre Demande de Financement",
+      "personalInfo": "Informations personnelles",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "emailConfirmation": "Confirmation Email",
+      "phone": "Téléphone",
+      "project": "Votre projet de financement",
+      "loanType": "Type de prêt",
+      "selectLoanType": "Sélectionnez le type de prêt",
+      "amount": "Montant souhaité",
+      "currency": "Devise",
+      "duration": "Durée souhaitée (mois)",
+      "situation": "Votre situation",
+      "professionalSituation": "Situation professionnelle",
+      "selectSituation": "Sélectionnez votre situation",
+      "monthlyIncome": "Revenus mensuels nets",
+      "message": "Message complémentaire",
+      "messagePlaceholder": "Décrivez votre projet ou vos besoins spécifiques...",
+      "submit": "Envoyer ma demande",
+      "submitting": "Envoi en cours...",
+      "required": "* Champs obligatoires. Vos données sont protégées et ne seront utilisées que pour traiter votre demande."
+    },
+    "reassurance": {
+      "title": "Pourquoi nous faire confiance ?",
+      "secureData": {
+        "title": "Données sécurisées",
+        "description": "Vos informations sont protégées par cryptage SSL"
+      },
+      "quickResponse": {
+        "title": "Réponse rapide",
+        "description": "Traitement de votre demande sous 24h"
+      },
+      "availableAdvisors": {
+        "title": "Conseillers disponibles",
+        "description": "Une équipe d'experts à votre écoute"
+      }
+    },
+    "advantages": {
+      "title": "Nos avantages",
+      "experience": "Plus de 17 ans d'expérience",
+      "experts": "43 experts à votre service",
+      "rates": "Taux compétitifs",
+      "support": "Accompagnement personnalisé"
+    },
+    "contact": {
+      "title": "Besoin d'aide ?",
+      "description": "Nos conseillers sont à votre disposition",
+      "phone": "01 23 45 67 89",
+      "hours": "Du lundi au vendredi de 9h à 18h"
+    },
+    "situations": {
+      "employee": "Salarié(e) CDI",
+      "temporaryEmployee": "Salarié(e) CDD",
+      "civilServant": "Fonctionnaire",
+      "selfEmployed": "Travailleur indépendant",
+      "freelancer": "Profession libérale",
+      "retired": "Retraité(e)",
+      "student": "Étudiant(e)",
+      "jobSeeker": "Demandeur d'emploi"
+    },
+    "validation": {
+      "missingFields": "Champs manquants",
+      "missingFieldsDesc": "Veuillez remplir tous les champs obligatoires.",
+      "invalidEmail": "Email invalide",
+      "invalidEmailDesc": "Veuillez saisir une adresse email valide.",
+      "emailMismatch": "Emails non identiques",
+      "emailMismatchDesc": "L'email et sa confirmation ne correspondent pas.",
+      "success": "Demande envoyée avec succès",
+      "successDesc": "Nous vous contacterons dans les plus brefs délais.",
+      "error": "Erreur",
+      "errorDesc": "Une erreur s'est produite lors de l'envoi. Veuillez réessayer."
     }
   },
   "creditBuyback": {
@@ -195,7 +350,7 @@
     "loanTypeLabel": "Type de prêt",
     "amountLabel": "Montant",
     "jeanmarc": {
-      "comment": "Grâce à NeoVita, j'ai obtenu rapidement un prêt pour lancer mon projet.",
+      "comment": "Grâce à Neovita, j'ai obtenu rapidement un prêt pour lancer mon projet.",
       "loanType": "Prêt auto-entrepreneur"
     },
     "amelie": {
