@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Hjem",
@@ -17,9 +18,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "Velkommen til BHV Auto",
-      "subtitle": "Din spesialist på kjøretøyimport",
-      "description": "Oppdag våre kjøretøyimporttjenester med ekspert og personlig veiledning."
+      "title": "Velkommen til Neovita Finanz",
+      "subtitle": "Din finansieringsspesialist",
+      "description": "Oppdag våre finansieringstjenester med ekspert og personlig veiledning."
     },
     "slide2": {
       "title": "Boliglån",
@@ -43,12 +44,12 @@
     "disclaimer": "En kreditt forplikter deg og må betales tilbake. Kontroller din tilbakebetalingsevne før du forplikter deg."
   },
   "home": {
-    "metaDescription": "BHV Auto - Din spesialist på kjøretøyimport. Profesjonelle importtjenester med ekspertveiledning.",
-    "servicesTitle": "Våre Importtjenester",
-    "servicesSubtitle": "Løsninger tilpasset alle dine kjøretøyimportbehov",
-    "advantagesTitle": "Hvorfor Velge BHV Auto",
-    "ctaTitle": "Klar til å Importere Ditt Kjøretøy?",
-    "ctaSubtitle": "Våre eksperter ledsager deg i ditt importprosjekt"
+    "metaDescription": "Neovita Finanz - Din finansieringsspesialist. Profesjonelle finansieringstjenester med ekspertveiledning.",
+    "servicesTitle": "Våre Finansieringstjenester",
+    "servicesSubtitle": "Løsninger tilpasset alle dine finansieringsbehov",
+    "advantagesTitle": "Hvorfor Velge Neovita Finanz",
+    "ctaTitle": "Klar til å Finansiere Ditt Prosjekt?",
+    "ctaSubtitle": "Våre eksperter ledsager deg i ditt finansieringsprosjekt"
   },
   "personalLoans": {
     "metaDescription": "Personlige lån med Neovita Finanz. Rask og fleksibel finansiering for alle dine personlige prosjekter.",
@@ -66,6 +67,79 @@
     },
     "cta": {
       "study": "Studer min fil"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Boliglån med Neovita Finanz. Realiser ditt eiendomsprosjekt med konkurransedyktige renter.",
+    "hero": {
+      "subtitle": "Realiser ditt eiendomsprosjekt"
+    },
+    "characteristics": {
+      "title": "Egenskaper for boliglån",
+      "highAmounts": "Høye beløp",
+      "highAmountsDesc": "Opp til 80% av eiendommens verdi",
+      "allProjects": "Alle prosjekter",
+      "allProjectsDesc": "Kjøp, bygging, renovering",
+      "secured": "Sikret",
+      "securedDesc": "Garantert av eiendommen",
+      "advantageousRates": "Fordelaktige renter",
+      "advantageousRatesDesc": "Konkurransedyktige renter på markedet"
+    },
+    "advantages": {
+      "title": "Fordeler med våre boliglån",
+      "competitiveRates": "Konkurransedyktige renter",
+      "personalizedSupport": "Personlig veiledning",
+      "freeStudy": "Gratis filstudie",
+      "bankNegotiation": "Forhandling med banker",
+      "followUp": "Oppfølging av ditt prosjekt",
+      "insurance": "Forsikringsløsninger"
+    },
+    "cta": {
+      "request": "Be om ditt boliglån",
+      "apply": "Søk nå"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Arbeidskredit med Neovita Finanz. Finansier dine renoverings- og byggeprosjekter.",
+    "hero": {
+      "title": "Arbeidskredit",
+      "subtitle": "Finansier dine renoverings- og byggeprosjekter"
+    },
+    "projectTypes": {
+      "title": "Våre prosjekttyper",
+      "energyRenovation": "Energirenovering",
+      "houseExtension": "Husutvidelse",
+      "interiorDesign": "Interiørdesign",
+      "roofWork": "Takarbeid",
+      "poolInstallation": "Bassenginstallasjon",
+      "kitchenBathroom": "Kjøkken og bad"
+    },
+    "cta": {
+      "finance": "Finansier mine arbeider"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Forsikringer med Neovita Finanz. Beskytt dine prosjekter og dine kjære.",
+    "hero": {
+      "title": "Våre forsikringer",
+      "subtitle": "Beskytt dine prosjekter og dine kjære"
+    },
+    "types": {
+      "borrower": {
+        "title": "Låntakerforsikring",
+        "description": "Beskytt deg og din familie ved dødsfall eller uførhet"
+      },
+      "home": {
+        "title": "Hjemmeforsikring",
+        "description": "Beskytt hjemmet ditt og dine eiendeler"
+      },
+      "health": {
+        "title": "Helseforsikring",
+        "description": "Tilleggshelsebeskyttelse for hele familien"
+      }
+    },
+    "cta": {
+      "quote": "Få et tilbud"
     }
   },
   "creditBuyback": {
@@ -88,13 +162,13 @@
     }
   },
   "about": {
-    "metaDescription": "Om BHV Auto - Oppdag vår ekspertise innen kjøretøyimport og vårt team av spesialister.",
+    "metaDescription": "Om Neovita Finanz - Oppdag vår ekspertise innen finansiering og vårt team av spesialister.",
     "hero": {
       "subtitle": "Din pålitelige partner i 15 år"
     },
     "mission": {
       "title": "Vårt Oppdrag",
-      "description": "Vi ledsager våre kunder i deres kjøretøyimportprosjekter med ekspertise, åpenhet og nærhet. Vårt team av 43 spesialiserte rådgivere veileder deg gjennom hvert trinn av prosjektet ditt."
+      "description": "Vi ledsager våre kunder i deres finansieringsprosjekter med ekspertise, åpenhet og nærhet. Vårt team av 43 spesialiserte rådgivere veileder deg gjennom hvert trinn av prosjektet ditt."
     },
     "stats": {
       "advisors": "Rådgivere",
@@ -106,7 +180,7 @@
   "partners": {
     "title": "Våre Partnere",
     "subtitle": "Et solid nettverk for din suksess",
-    "metaDescription": "Oppdag BHV Auto partnere. Nettverk av banker, meglere og forsikringsselskaper for å tilby deg de beste løsningene.",
+    "metaDescription": "Oppdag Neovita Finanz partnere. Nettverk av banker, meglere og forsikringsselskaper for å tilby deg de beste løsningene.",
     "types": {
       "banks": {
         "title": "Partnerbanker",
@@ -156,7 +230,20 @@
     "parameters": "Låneparametere",
     "loanType": "Lånetype",
     "selectLoanType": "Velg en type",
-    "amount": "Beløp"
+    "amount": "Beløp",
+    "duration": "Varighet",
+    "months": "måneder",
+    "years": "år",
+    "results": "Resultater",
+    "monthlyPayment": "Månedlig betaling",
+    "totalCost": "Totalkostnad",
+    "totalInterest": "Total rente",
+    "types": {
+      "personal": "Personlig lån",
+      "mortgage": "Boliglån",
+      "work": "Arbeidskredit",
+      "auto": "Billån"
+    }
   },
   "testimonials": {
     "title": "Kundevitnesbyrd",
@@ -164,6 +251,18 @@
     "reviews": "anmeldelser",
     "loanTypeLabel": "Lånetype",
     "amountLabel": "Beløp",
+    "marie": {
+      "comment": "Utmerket service, rask og profesjonell. Jeg anbefaler Neovita Finanz!",
+      "loanType": "Personlig lån"
+    },
+    "pierre": {
+      "comment": "Takket være Neovita fikk jeg mitt boliglån på beste vilkår.",
+      "loanType": "Boliglån"
+    },
+    "sophie": {
+      "comment": "Perfekt for å samle mine kreditter, mye enklere nå!",
+      "loanType": "Kredittsamling"
+    },
     "jeanmarc": {
       "comment": "Takket være NeoVita fikk jeg raskt et lån for å starte prosjektet mitt.",
       "loanType": "Selvstendig næringsdrivende lån"
@@ -177,9 +276,28 @@
       "loanType": "Bilfinansiering"
     }
   },
+  "creditForm": {
+    "title": "Lånesøknad",
+    "subtitle": "Fyll ut skjemaet for å få et personlig tilbud",
+    "personalInfo": "Personlig informasjon",
+    "firstName": "Fornavn",
+    "lastName": "Etternavn",
+    "email": "E-post",
+    "phone": "Telefon",
+    "projectInfo": "Prosjektinformasjon",
+    "loanType": "Type lån",
+    "amount": "Ønsket beløp",
+    "duration": "Varighet",
+    "income": "Månedlig inntekt",
+    "purpose": "Formål med lånet",
+    "submit": "Send min søknad",
+    "submitting": "Sender...",
+    "success": "Din søknad er sendt!",
+    "error": "En feil oppstod. Prøv igjen."
+  },
   "footer": {
-    "tagline": "Din spesialist på kjøretøyimport",
-    "description": "BHV Auto ledsager deg i alle dine kjøretøyimportprosjekter med ekspertise og nærhet.",
+    "tagline": "Din finansieringsspesialist",
+    "description": "Neovita Finanz ledsager deg i alle dine finansieringsprosjekter med ekspertise og nærhet.",
     "sections": {
       "services": "Våre Tjenester",
       "company": "Selskapet",

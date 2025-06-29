@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "首页",
@@ -17,9 +18,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "欢迎来到BHV Auto",
-      "subtitle": "您的车辆进口专家",
-      "description": "通过专业和个性化支持发现我们的车辆进口服务。"
+      "title": "欢迎来到Neovita Finanz",
+      "subtitle": "您的融资专家",
+      "description": "通过专业和个性化支持发现我们的融资服务。"
     },
     "slide2": {
       "title": "房屋贷款",
@@ -43,12 +44,12 @@
     "disclaimer": "信贷使您承担义务并必须偿还。在承诺之前检查您的偿还能力。"
   },
   "home": {
-    "metaDescription": "BHV Auto - 您的车辆进口专家。专业的进口服务，提供专家支持。",
-    "servicesTitle": "我们的进口服务",
-    "servicesSubtitle": "适应您所有车辆进口需求的解决方案",
-    "advantagesTitle": "为什么选择BHV Auto",
-    "ctaTitle": "准备好进口您的车辆了吗？",
-    "ctaSubtitle": "我们的专家在您的进口项目中为您提供支持"
+    "metaDescription": "Neovita Finanz - 您的融资专家。专业的融资服务，提供专家支持。",
+    "servicesTitle": "我们的融资服务",
+    "servicesSubtitle": "适应您所有融资需求的解决方案",
+    "advantagesTitle": "为什么选择Neovita Finanz",
+    "ctaTitle": "准备好为您的项目融资了吗？",
+    "ctaSubtitle": "我们的专家在您的融资项目中为您提供支持"
   },
   "personalLoans": {
     "metaDescription": "Neovita Finanz个人贷款。为您所有个人项目提供快速灵活的融资。",
@@ -66,6 +67,79 @@
     },
     "cta": {
       "study": "研究我的文件"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Neovita Finanz房屋贷款。以竞争性利率实现您的房地产项目。",
+    "hero": {
+      "subtitle": "实现您的房地产项目"
+    },
+    "characteristics": {
+      "title": "房屋贷款特点",
+      "highAmounts": "高额度",
+      "highAmountsDesc": "最高可达房产价值的80%",
+      "allProjects": "所有项目",
+      "allProjectsDesc": "购买、建造、装修",
+      "secured": "有担保",
+      "securedDesc": "由房产担保",
+      "advantageousRates": "优惠利率",
+      "advantageousRatesDesc": "市场竞争性利率"
+    },
+    "advantages": {
+      "title": "我们房屋贷款的优势",
+      "competitiveRates": "竞争性利率",
+      "personalizedSupport": "个性化支持",
+      "freeStudy": "免费文件研究",
+      "bankNegotiation": "银行谈判",
+      "followUp": "项目跟进",
+      "insurance": "保险解决方案"
+    },
+    "cta": {
+      "request": "申请您的房屋贷款",
+      "apply": "立即申请"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Neovita Finanz工作信贷。为您的装修和建筑项目提供资金。",
+    "hero": {
+      "title": "工作信贷",
+      "subtitle": "为您的装修和建筑项目提供资金"
+    },
+    "projectTypes": {
+      "title": "我们的项目类型",
+      "energyRenovation": "能源改造",
+      "houseExtension": "房屋扩建",
+      "interiorDesign": "室内设计",
+      "roofWork": "屋顶工程",
+      "poolInstallation": "游泳池安装",
+      "kitchenBathroom": "厨房和浴室"
+    },
+    "cta": {
+      "finance": "为我的工程融资"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Neovita Finanz保险。保护您的项目和您的亲人。",
+    "hero": {
+      "title": "我们的保险",
+      "subtitle": "保护您的项目和您的亲人"
+    },
+    "types": {
+      "borrower": {
+        "title": "借款人保险",
+        "description": "在死亡或残疾情况下保护您和您的家人"
+      },
+      "home": {
+        "title": "房屋保险",
+        "description": "保护您的家和您的财产"
+      },
+      "health": {
+        "title": "健康保险",
+        "description": "全家的补充健康保护"
+      }
+    },
+    "cta": {
+      "quote": "获取报价"
     }
   },
   "creditBuyback": {
@@ -88,13 +162,13 @@
     }
   },
   "about": {
-    "metaDescription": "关于BHV Auto - 发现我们在车辆进口方面的专业知识和我们的专家团队。",
+    "metaDescription": "关于Neovita Finanz - 发现我们在融资方面的专业知识和我们的专家团队。",
     "hero": {
       "subtitle": "您15年来值得信赖的合作伙伴"
     },
     "mission": {
       "title": "我们的使命",
-      "description": "我们凭借专业知识、透明度和亲近感在客户的车辆进口项目中为他们提供支持。我们由43位专业顾问组成的团队在您项目的每一步都为您提供指导。"
+      "description": "我们凭借专业知识、透明度和亲近感在客户的融资项目中为他们提供支持。我们由43位专业顾问组成的团队在您项目的每一步都为您提供指导。"
     },
     "stats": {
       "advisors": "顾问",
@@ -106,7 +180,7 @@
   "partners": {
     "title": "我们的合作伙伴",
     "subtitle": "您成功的坚实网络",
-    "metaDescription": "发现BHV Auto合作伙伴。银行、经纪人和保险公司网络，为您提供最佳解决方案。",
+    "metaDescription": "发现Neovita Finanz合作伙伴。银行、经纪人和保险公司网络，为您提供最佳解决方案。",
     "types": {
       "banks": {
         "title": "合作银行",
@@ -156,7 +230,20 @@
     "parameters": "贷款参数",
     "loanType": "贷款类型",
     "selectLoanType": "选择类型",
-    "amount": "金额"
+    "amount": "金额",
+    "duration": "期限",
+    "months": "个月",
+    "years": "年",
+    "results": "结果",
+    "monthlyPayment": "月供",
+    "totalCost": "总成本",
+    "totalInterest": "总利息",
+    "types": {
+      "personal": "个人贷款",
+      "mortgage": "房屋贷款",
+      "work": "工作信贷",
+      "auto": "汽车贷款"
+    }
   },
   "testimonials": {
     "title": "客户评价",
@@ -164,6 +251,18 @@
     "reviews": "评论",
     "loanTypeLabel": "贷款类型",
     "amountLabel": "金额",
+    "marie": {
+      "comment": "优秀的服务，快速而专业。我推荐Neovita Finanz！",
+      "loanType": "个人贷款"
+    },
+    "pierre": {
+      "comment": "感谢Neovita，我以最佳条件获得了房屋贷款。",
+      "loanType": "房屋贷款"
+    },
+    "sophie": {
+      "comment": "完美整合我的信贷，现在简单多了！",
+      "loanType": "信贷整合"
+    },
     "jeanmarc": {
       "comment": "感谢NeoVita，我快速获得了启动项目的贷款。",
       "loanType": "自雇贷款"
@@ -177,9 +276,28 @@
       "loanType": "汽车融资"
     }
   },
+  "creditForm": {
+    "title": "贷款申请",
+    "subtitle": "填写表格获取个性化报价",
+    "personalInfo": "个人信息",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "email": "电子邮件",
+    "phone": "电话",
+    "projectInfo": "项目信息",
+    "loanType": "贷款类型",
+    "amount": "期望金额",
+    "duration": "期限",
+    "income": "月收入",
+    "purpose": "贷款用途",
+    "submit": "提交我的申请",
+    "submitting": "提交中...",
+    "success": "您的申请已成功提交！",
+    "error": "发生错误。请重试。"
+  },
   "footer": {
-    "tagline": "您的车辆进口专家",
-    "description": "BHV Auto凭借专业知识和亲近感在您所有的车辆进口项目中为您提供支持。",
+    "tagline": "您的融资专家",
+    "description": "Neovita Finanz凭借专业知识和亲近感在您所有的融资项目中为您提供支持。",
     "sections": {
       "services": "我们的服务",
       "company": "公司",

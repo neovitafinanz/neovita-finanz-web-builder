@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Startpagina",
@@ -17,9 +18,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "Welkom bij BHV Auto",
-      "subtitle": "Uw specialist in voertuigimport",
-      "description": "Ontdek onze voertuigimportdiensten met deskundige en persoonlijke begeleiding."
+      "title": "Welkom bij Neovita Finanz",
+      "subtitle": "Uw financieringsspecialist",
+      "description": "Ontdek onze financieringsdiensten met deskundige en persoonlijke begeleiding."
     },
     "slide2": {
       "title": "Hypotheken",
@@ -43,12 +44,12 @@
     "disclaimer": "Een krediet verplicht u en moet worden terugbetaald. Controleer uw terugbetalingscapaciteit voordat u zich verbindt."
   },
   "home": {
-    "metaDescription": "BHV Auto - Uw specialist in voertuigimport. Professionele importdiensten met deskundige begeleiding.",
-    "servicesTitle": "Onze Importdiensten",
-    "servicesSubtitle": "Oplossingen aangepast aan al uw voertuigimportbehoeften",
-    "advantagesTitle": "Waarom Kiezen voor BHV Auto",
-    "ctaTitle": "Klaar om Uw Voertuig te Importeren?",
-    "ctaSubtitle": "Onze experts begeleiden u bij uw importproject"
+    "metaDescription": "Neovita Finanz - Uw financieringsspecialist. Professionele financieringsdiensten met deskundige begeleiding.",
+    "servicesTitle": "Onze Financieringsdiensten",
+    "servicesSubtitle": "Oplossingen aangepast aan al uw financieringsbehoeften",
+    "advantagesTitle": "Waarom Kiezen voor Neovita Finanz",
+    "ctaTitle": "Klaar om Uw Project te Financieren?",
+    "ctaSubtitle": "Onze experts begeleiden u bij uw financieringsproject"
   },
   "personalLoans": {
     "metaDescription": "Persoonlijke leningen met Neovita Finanz. Snelle en flexibele financiering voor al uw persoonlijke projecten.",
@@ -66,6 +67,79 @@
     },
     "cta": {
       "study": "Mijn dossier bestuderen"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Hypotheken met Neovita Finanz. Realiseer uw vastgoedproject met concurrerende tarieven.",
+    "hero": {
+      "subtitle": "Realiseer uw vastgoedproject"
+    },
+    "characteristics": {
+      "title": "Kenmerken van hypotheken",
+      "highAmounts": "Hoge bedragen",
+      "highAmountsDesc": "Tot 80% van de waarde van het eigendom",
+      "allProjects": "Alle projecten",
+      "allProjectsDesc": "Aankoop, bouw, renovatie",
+      "secured": "Gewaarborgd",
+      "securedDesc": "Gegarandeerd door het eigendom",
+      "advantageousRates": "Voordelige tarieven",
+      "advantageousRatesDesc": "Concurrerende tarieven op de markt"
+    },
+    "advantages": {
+      "title": "Voordelen van onze hypotheken",
+      "competitiveRates": "Concurrerende tarieven",
+      "personalizedSupport": "Persoonlijke begeleiding",
+      "freeStudy": "Gratis dossierstudie",
+      "bankNegotiation": "Onderhandeling met banken",
+      "followUp": "Opvolging van uw project",
+      "insurance": "Verzekeringsoplossingen"
+    },
+    "cta": {
+      "request": "Vraag uw hypotheek aan",
+      "apply": "Nu aanvragen"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Werkkredieten met Neovita Finanz. Financier uw renovatie- en bouwprojecten.",
+    "hero": {
+      "title": "Werkkredieten",
+      "subtitle": "Financier uw renovatie- en bouwprojecten"
+    },
+    "projectTypes": {
+      "title": "Onze projecttypes",
+      "energyRenovation": "Energierenovatie",
+      "houseExtension": "Huisuitbreiding",
+      "interiorDesign": "Interieurontwerp",
+      "roofWork": "Dakwerkzaamheden",
+      "poolInstallation": "Zwembadinstallatie",
+      "kitchenBathroom": "Keuken en badkamer"
+    },
+    "cta": {
+      "finance": "Mijn werken financieren"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Verzekeringen met Neovita Finanz. Bescherm uw projecten en uw dierbaren.",
+    "hero": {
+      "title": "Onze verzekeringen",
+      "subtitle": "Bescherm uw projecten en uw dierbaren"
+    },
+    "types": {
+      "borrower": {
+        "title": "Lenersverzekering",
+        "description": "Bescherm uzelf en uw familie bij overlijden of invaliditeit"
+      },
+      "home": {
+        "title": "Woonverzekering",
+        "description": "Bescherm uw huis en uw bezittingen"
+      },
+      "health": {
+        "title": "Ziektekostenverzekering",
+        "description": "Aanvullende gezondheidsbescherming voor het hele gezin"
+      }
+    },
+    "cta": {
+      "quote": "Een offerte krijgen"
     }
   },
   "creditBuyback": {
@@ -88,13 +162,13 @@
     }
   },
   "about": {
-    "metaDescription": "Over BHV Auto - Ontdek onze expertise in voertuigimport en ons team van specialisten.",
+    "metaDescription": "Over Neovita Finanz - Ontdek onze expertise in financiering en ons team van specialisten.",
     "hero": {
       "subtitle": "Uw vertrouwde partner sinds 15 jaar"
     },
     "mission": {
       "title": "Onze Missie",
-      "description": "Wij begeleiden onze klanten bij hun voertuigimportprojecten met expertise, transparantie en nabijheid. Ons team van 43 gespecialiseerde adviseurs begeleidt u bij elke stap van uw project."
+      "description": "Wij begeleiden onze klanten bij hun financieringsprojecten met expertise, transparantie en nabijheid. Ons team van 43 gespecialiseerde adviseurs begeleidt u bij elke stap van uw project."
     },
     "stats": {
       "advisors": "Adviseurs",
@@ -106,7 +180,7 @@
   "partners": {
     "title": "Onze Partners",
     "subtitle": "Een solide netwerk voor uw succes",
-    "metaDescription": "Ontdek BHV Auto partners. Netwerk van banken, makelaars en verzekeraars om u de beste oplossingen te bieden.",
+    "metaDescription": "Ontdek Neovita Finanz partners. Netwerk van banken, makelaars en verzekeraars om u de beste oplossingen te bieden.",
     "types": {
       "banks": {
         "title": "Partnerbanken",
@@ -156,7 +230,20 @@
     "parameters": "Lening parameters",
     "loanType": "Type lening",
     "selectLoanType": "Selecteer een type",
-    "amount": "Bedrag"
+    "amount": "Bedrag",
+    "duration": "Looptijd",
+    "months": "maanden",
+    "years": "jaar",
+    "results": "Resultaten",
+    "monthlyPayment": "Maandelijkse betaling",
+    "totalCost": "Totale kosten",
+    "totalInterest": "Totale rente",
+    "types": {
+      "personal": "Persoonlijke lening",
+      "mortgage": "Hypotheek",
+      "work": "Werkkredieten",
+      "auto": "Autolening"
+    }
   },
   "testimonials": {
     "title": "Klantgetuigenissen",
@@ -164,6 +251,18 @@
     "reviews": "beoordelingen",
     "loanTypeLabel": "Type lening",
     "amountLabel": "Bedrag",
+    "marie": {
+      "comment": "Uitstekende service, snel en professioneel. Ik beveel Neovita Finanz aan!",
+      "loanType": "Persoonlijke lening"
+    },
+    "pierre": {
+      "comment": "Dankzij Neovita heb ik mijn hypotheek gekregen tegen de beste voorwaarden.",
+      "loanType": "Hypotheek"
+    },
+    "sophie": {
+      "comment": "Perfect om mijn kredieten samen te voegen, veel eenvoudiger nu!",
+      "loanType": "Kredietsamenvoeging"
+    },
     "jeanmarc": {
       "comment": "Dankzij NeoVita heb ik snel een lening gekregen om mijn project te starten.",
       "loanType": "Zelfstandige lening"
@@ -177,9 +276,28 @@
       "loanType": "Auto financiering"
     }
   },
+  "creditForm": {
+    "title": "Leningaanvraag",
+    "subtitle": "Vul het formulier in voor een gepersonaliseerde offerte",
+    "personalInfo": "Persoonlijke informatie",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "projectInfo": "Projectinformatie",
+    "loanType": "Type lening",
+    "amount": "Gewenst bedrag",
+    "duration": "Looptijd",
+    "income": "Maandinkomen",
+    "purpose": "Doel van de lening",
+    "submit": "Mijn aanvraag verzenden",
+    "submitting": "Verzenden...",
+    "success": "Uw aanvraag is succesvol verzonden!",
+    "error": "Er is een fout opgetreden. Probeer opnieuw."
+  },
   "footer": {
-    "tagline": "Uw specialist in voertuigimport",
-    "description": "BHV Auto begeleidt u bij al uw voertuigimportprojecten met expertise en nabijheid.",
+    "tagline": "Uw financieringsspecialist",
+    "description": "Neovita Finanz begeleidt u bij al uw financieringsprojecten met expertise en nabijheid.",
     "sections": {
       "services": "Onze Diensten",
       "company": "Het Bedrijf",
