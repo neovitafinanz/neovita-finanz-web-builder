@@ -2,13 +2,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { Toaster } from "@/components/ui/toaster";
-import Home from './pages/Home';
+import Index from './pages/Index';
 import PretPersonnel from './pages/PretPersonnel';
 import PretImmobilier from './pages/PretImmobilier';
 import RachatCredit from './pages/RachatCredit';
 import CreditTravaux from './pages/CreditTravaux';
 import Assurances from './pages/Assurances';
-import APropos from './pages/APropos';
+import About from './pages/About';
 import Partenaires from './pages/Partenaires';
 import FormulaireCredit from './pages/FormulaireCredit';
 import MentionsLegales from './pages/MentionsLegales';
@@ -23,13 +23,13 @@ function App() {
       <Router>
         <Routes>
           {/* Routes principales */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Index />} />
           <Route path="/pret-personnel" element={<PretPersonnel />} />
           <Route path="/pret-immobilier" element={<PretImmobilier />} />
           <Route path="/rachat-credit" element={<RachatCredit />} />
           <Route path="/credit-travaux" element={<CreditTravaux />} />
           <Route path="/nos-assurances" element={<Assurances />} />
-          <Route path="/a-propos" element={<APropos />} />
+          <Route path="/a-propos" element={<About />} />
           <Route path="/partenaires" element={<Partenaires />} />
           <Route path="/demande-credit" element={<FormulaireCredit />} />
           
@@ -41,13 +41,13 @@ function App() {
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
 
           {/* Routes avec préfixe de langue */}
-          <Route path="/:lang" element={<Home />} />
+          <Route path="/:lang" element={<Index />} />
           <Route path="/:lang/pret-personnel" element={<PretPersonnel />} />
           <Route path="/:lang/pret-immobilier" element={<PretImmobilier />} />
           <Route path="/:lang/rachat-credit" element={<RachatCredit />} />
           <Route path="/:lang/credit-travaux" element={<CreditTravaux />} />
           <Route path="/:lang/nos-assurances" element={<Assurances />} />
-          <Route path="/:lang/a-propos" element={<APropos />} />
+          <Route path="/:lang/a-propos" element={<About />} />
           <Route path="/:lang/partenaires" element={<Partenaires />} />
           <Route path="/:lang/demande-credit" element={<FormulaireCredit />} />
           <Route path="/:lang/mentions-legales" element={<MentionsLegales />} />
