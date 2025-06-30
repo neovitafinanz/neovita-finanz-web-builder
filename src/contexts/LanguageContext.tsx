@@ -25,33 +25,40 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [translations, setTranslations] = useState<Record<string, any>>({});
   const [isLoading, setIsLoading] = useState(false);
 
-  // Extract language from URL
+  // Extract language from URL - only run when location changes
   useEffect(() => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const urlLang = pathSegments[0];
     
     if (urlLang && isValidLanguage(urlLang)) {
-      setLanguage(urlLang);
+      if (language !== urlLang) {
+        setLanguage(urlLang);
+      }
     } else {
-      setLanguage('fr');
+      if (language !== 'fr') {
+        setLanguage('fr');
+      }
     }
-  }, [location.pathname]);
+  }, [location.pathname]); // Remove language dependency to avoid loops
 
-  // Load translations
+  // Load translations - only run when language changes and not already loading
   useEffect(() => {
+    if (isLoading) return;
+    
     const loadTranslations = async () => {
-      if (isLoading) return; // Prevent multiple simultaneous loads
-      
       setIsLoading(true);
       try {
+        console.log(`Loading translations for ${language}`);
         const translationModule = await import(`../translations/${language}.json`);
         setTranslations(translationModule.default);
+        console.log(`Successfully loaded translations for ${language}`);
       } catch (error) {
         console.error(`Failed to load translations for ${language}:`, error);
         // Fallback to French translations
         try {
           const fallbackModule = await import('../translations/fr.json');
           setTranslations(fallbackModule.default);
+          console.log('Loaded fallback French translations');
         } catch (fallbackError) {
           console.error('Failed to load fallback translations:', fallbackError);
           setTranslations({});
@@ -62,7 +69,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     };
 
     loadTranslations();
-  }, [language, isLoading]);
+  }, [language]); // Remove isLoading dependency
 
   const changeLanguage = (newLanguage: Language) => {
     const currentPath = location.pathname;
@@ -76,11 +83,15 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     // Create new path
     const newPath = `/${newLanguage}${pathSegments.length > 0 ? '/' + pathSegments.join('/') : ''}`;
     
-    // Use React Router navigation instead of window.location for instant change
+    // Use React Router navigation
     navigate(newPath);
   };
 
   const t = (key: string): string => {
+    if (!translations || Object.keys(translations).length === 0) {
+      return key; // Return key if no translations loaded yet
+    }
+    
     const keys = key.split('.');
     let current = translations;
     
@@ -88,6 +99,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       if (current && typeof current === 'object' && k in current) {
         current = current[k];
       } else {
+        console.warn(`Translation key not found: ${key}`);
         return key; // Return key if translation not found
       }
     }
