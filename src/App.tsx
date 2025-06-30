@@ -19,8 +19,8 @@ import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 
 function App() {
   return (
-    <LanguageProvider>
-      <Router>
+    <Router>
+      <LanguageProvider>
         <Routes>
           {/* Routes principales */}
           <Route path="/" element={<Index />} />
@@ -57,8 +57,8 @@ function App() {
           <Route path="/:lang/politique-confidentialite" element={<PolitiqueConfidentialite />} />
         </Routes>
         <Toaster />
-      </Router>
-    </LanguageProvider>
+      </LanguageProvider>
+    </Router>
   );
 }
 
