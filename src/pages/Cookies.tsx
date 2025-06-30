@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -88,7 +87,7 @@ const Cookies = () => {
                     </div>
 
                     <div className="border-l-4 border-orange-500 pl-4">
-                      <h4 className="font-semibold text-gray-900 mb-2">Cookies publicitaires</h4>
+                      <h4 className="font-semibolder text-gray-900 mb-2">Cookies publicitaires</h4>
                       <p className="text-gray-600 mb-2">
                         Ces cookies sont utilisés pour vous proposer des publicités pertinentes basées sur vos centres d'intérêt.
                       </p>
@@ -183,22 +182,6 @@ const Cookies = () => {
                         </tr>
                       </tbody>
                     </table>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg bg-green-50 border-green-200">
-                <CardHeader>
-                  <CardTitle className="text-green-800">Contact</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-green-700">
-                    Pour toute question concernant notre politique de cookies, vous pouvez nous contacter :
-                  </p>
-                  <div className="mt-3 space-y-1 text-green-700">
-                    <p><strong>Email :</strong> dpo@neovitafinanz.com</p>
-                    <p><strong>Adresse :</strong> 1 Rue du Bois Chaland, 91090 Lisses, France</p>
-                    <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
                   </div>
                 </CardContent>
               </Card>

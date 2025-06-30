@@ -50,7 +50,7 @@ const MentionsLegales = () => {
                     </div>
                     <div className="flex items-center space-x-2 text-gray-600">
                       <Mail className="w-4 h-4" />
-                      <span>contact@neovitafinanz.com</span>
+                      <span>infos@neovitafinanz.com</span>
                     </div>
                   </div>
                 </CardContent>
@@ -94,20 +94,6 @@ const MentionsLegales = () => {
                     <strong>Directeur de la publication :</strong> M. Jean-Pierre Martin<br />
                     <strong>Qualité :</strong> Gérant de la société
                   </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg">
-                <CardHeader>
-                  <CardTitle>{t('legal.hosting.title')}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 text-gray-600">
-                    <p><strong>Hébergeur :</strong> OVH SAS</p>
-                    <p><strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</p>
-                    <p><strong>Téléphone :</strong> 1007</p>
-                    <p><strong>Site web :</strong> www.ovh.com</p>
-                  </div>
                 </CardContent>
               </Card>
 

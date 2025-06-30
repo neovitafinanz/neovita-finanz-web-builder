@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -44,9 +43,9 @@ const PolitiqueConfidentialite = () => {
                     </p>
                     <div className="bg-green-50 p-4 rounded-lg">
                       <p className="text-green-800"><strong>Adresse :</strong> 1 Rue du Bois Chaland, 91090 Lisses, France</p>
-                      <p className="text-green-800"><strong>Email :</strong> dpo@neovitafinanz.com</p>
+                      <p className="text-green-800"><strong>Email :</strong> infos@neovitafinanz.com</p>
                       <p className="text-green-800"><strong>Téléphone :</strong> 01 23 45 67 89</p>
-                      <p className="text-green-800"><strong>DPO :</strong> delegue.protection.donnees@neovitafinanz.com</p>
+                      <p className="text-green-800"><strong>DPO :</strong> infos@neovitafinanz.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -328,7 +327,7 @@ const PolitiqueConfidentialite = () => {
                       <h5 className="font-semibold text-gray-900 mb-3">📝 Comment exercer vos droits ?</h5>
                       <div className="space-y-3 text-sm text-gray-700">
                         <p>
-                          <strong>Par email :</strong> dpo@neovitafinanz.com (réponse sous 1 mois)
+                          <strong>Par email :</strong> infos@neovitafinanz.com (réponse sous 1 mois)
                         </p>
                         <p>
                           <strong>Par courrier :</strong> Neovita Finanz - DPO, 1 Rue du Bois Chaland, 91090 Lisses
