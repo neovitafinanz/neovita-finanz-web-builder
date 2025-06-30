@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -87,7 +88,7 @@ const Cookies = () => {
                     </div>
 
                     <div className="border-l-4 border-orange-500 pl-4">
-                      <h4 className="font-semibolder text-gray-900 mb-2">Cookies publicitaires</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2">Cookies publicitaires</h4>
                       <p className="text-gray-600 mb-2">
                         Ces cookies sont utilisés pour vous proposer des publicités pertinentes basées sur vos centres d'intérêt.
                       </p>

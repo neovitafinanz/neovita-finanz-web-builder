@@ -90,13 +90,13 @@
       "competitiveRates": "Taux compétitifs",
       "personalizedSupport": "Accompagnement personnalisé",
       "freeStudy": "Étude gratuite du dossier",
-      "bankNegotiation": "Négociation avec les banques",
+      "bankNegotiation": "Négociation bancaire",
       "followUp": "Suivi de votre projet",
       "insurance": "Solutions d'assurance"
     },
     "cta": {
       "request": "Demander votre prêt immobilier",
-      "apply": "Faire une demande"
+      "apply": "Postuler maintenant"
     }
   },
   "workCredit": {
@@ -131,7 +131,7 @@
       },
       "home": {
         "title": "Assurance habitation",
-        "description": "Protégez votre logement et vos biens"
+        "description": "Protégez votre domicile et vos biens"
       },
       "health": {
         "title": "Assurance santé",
@@ -162,7 +162,7 @@
     }
   },
   "about": {
-    "metaDescription": "À propos de Neovita Finanz - Découvrez notre expertise en financement et notre équipe d'experts.",
+    "metaDescription": "À propos de Neovita Finanz - Découvrez notre expertise en financement et notre équipe de spécialistes.",
     "hero": {
       "subtitle": "Votre partenaire de confiance depuis 15 ans"
     },
@@ -175,6 +175,25 @@
       "experience": "Années d'expérience",
       "clients": "Clients satisfaits",
       "trust": "Confiance"
+    }
+  },
+  "partners": {
+    "title": "Nos Partenaires",
+    "subtitle": "Un réseau solide pour votre réussite",
+    "metaDescription": "Découvrez les partenaires de Neovita Finanz. Réseau de banques, courtiers et assureurs pour vous offrir les meilleures solutions.",
+    "types": {
+      "banks": {
+        "title": "Banques partenaires",
+        "description": "Réseau de banques et établissements financiers"
+      },
+      "brokers": {
+        "title": "Courtiers",
+        "description": "Collaboration avec des courtiers expérimentés"
+      },
+      "insurers": {
+        "title": "Assureurs",
+        "description": "Partenariats avec les meilleurs assureurs"
+      }
     }
   },
   "services": {
@@ -214,11 +233,11 @@
     "amount": "Montant",
     "duration": "Durée",
     "months": "mois",
-    "years": "années",
+    "years": "ans",
     "results": "Résultats",
     "monthlyPayment": "Mensualité",
     "totalCost": "Coût total",
-    "totalInterest": "Total intérêts",
+    "totalInterest": "Intérêts totaux",
     "types": {
       "personal": "Prêt personnel",
       "mortgage": "Prêt immobilier",
@@ -245,8 +264,8 @@
       "loanType": "Rachat de crédit"
     },
     "jeanmarc": {
-      "comment": "Grâce à NeoVita, j'ai rapidement obtenu un prêt pour lancer mon projet.",
-      "loanType": "Prêt travailleur indépendant"
+      "comment": "Grâce à NeoVita, j'ai obtenu rapidement un prêt pour lancer mon projet.",
+      "loanType": "Prêt libre professionnel"
     },
     "amelie": {
       "comment": "Service impeccable, rapide et très professionnel !",
@@ -278,125 +297,49 @@
   },
   "legal": {
     "title": "Mentions Légales",
-    "description": "Mentions légales du site Neovita Finanz. Informations sur l'éditeur, hébergement et propriété intellectuelle.",
+    "description": "Informations légales et réglementaires de Neovita Finanz",
     "editor": {
-      "title": "Éditeur du site",
-      "content": "Neovita Finanz - Société par Actions Simplifiée - Capital social : [Montant du capital] - Siège social : [Adresse complète] - RCS : [Numéro RCS] - SIRET : [Numéro SIRET] - TVA Intracommunautaire : [Numéro TVA]"
+      "title": "Éditeur du site"
     },
     "director": {
-      "title": "Directeur de publication",
-      "content": "[Nom du directeur de publication] - [Titre/Fonction]"
-    },
-    "hosting": {
-      "title": "Hébergement",
-      "content": "Ce site est hébergé par : [Nom de l'hébergeur] - [Adresse de l'hébergeur]"
+      "title": "Directeur de la publication"
     },
     "intellectual": {
-      "title": "Propriété intellectuelle",
-      "content": "Tous les éléments de ce site (textes, images, sons, vidéos, logos, etc.) sont protégés par le droit d'auteur et le droit des marques. Toute reproduction sans autorisation est interdite."
-    }
-  },
-  "terms": {
-    "title": "Conditions Générales",
-    "description": "Conditions générales d'utilisation et de vente de Neovita Finanz. Modalités de nos services financiers.",
-    "purpose": {
-      "title": "Objet",
-      "content": "Les présentes conditions générales régissent l'utilisation de nos services d'intermédiation en opérations de banque et services de paiement."
-    },
-    "services": {
-      "title": "Services proposés",
-      "content": "Neovita Finanz propose les services suivants :",
-      "advice": "Conseil en financement",
-      "intermediation": "Intermédiation en crédit",
-      "support": "Accompagnement dans les démarches",
-      "negotiation": "Négociation avec les établissements financiers"
-    },
-    "obligations": {
-      "title": "Obligations du client",
-      "content": "Le client s'engage à :",
-      "accurate": "Fournir des informations exactes et complètes",
-      "deadlines": "Respecter les délais de transmission des pièces",
-      "changes": "Signaler tout changement de situation",
-      "commitments": "Respecter les engagements pris"
-    },
-    "remuneration": {
-      "title": "Rémunération",
-      "content": "Notre rémunération est perçue auprès des établissements financiers partenaires selon les modalités définies dans nos accords de partenariat."
+      "title": "Propriété intellectuelle"
     }
   },
   "cookies": {
-    "title": "Politique des Cookies",
-    "description": "Politique des cookies de Neovita Finanz. Utilisation des cookies et gestion de vos préférences.",
+    "title": "Politique de Cookies",
+    "description": "Comment nous utilisons les cookies pour améliorer votre expérience",
     "what": {
-      "title": "Qu'est-ce qu'un cookie ?",
-      "description": "Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, tablette, smartphone) lors de la visite d'un site web. Il permet de reconnaître votre navigateur et de mémoriser certaines informations."
+      "title": "Qu'est-ce qu'un cookie ?"
     },
     "types": {
       "title": "Types de cookies utilisés",
       "technical": {
-        "title": "Cookies techniques",
-        "description": "Nécessaires au fonctionnement du site (navigation, sécurité, formulaires)."
+        "title": "Cookies techniques"
       },
       "analytics": {
-        "title": "Cookies analytiques",
-        "description": "Permettent d'analyser l'utilisation du site pour améliorer nos services."
+        "title": "Cookies d'analyse"
       },
       "preferences": {
-        "title": "Cookies de préférences",
-        "description": "Mémorisent vos choix et préférences pour personnaliser votre expérience."
+        "title": "Cookies de préférences"
       }
     },
     "management": {
-      "title": "Gestion des cookies",
-      "description": "Vous pouvez gérer les cookies via les paramètres de votre navigateur. Vous avez la possibilité de les accepter, les refuser ou les supprimer. Attention : la désactivation de certains cookies peut affecter le fonctionnement du site."
+      "title": "Gestion des cookies"
     },
     "duration": {
-      "title": "Durée de conservation",
-      "description": "Les cookies sont conservés pour une durée maximum de 13 mois, conformément à la réglementation en vigueur."
+      "title": "Durée de conservation"
     }
   },
   "privacy": {
     "title": "Politique de Confidentialité",
-    "description": "Politique de confidentialité de Neovita Finanz. Protection des données personnelles et respect de votre vie privée.",
-    "dataCollection": {
-      "title": "Collecte des données",
-      "description": "Nous collectons uniquement les données nécessaires au traitement de votre demande de financement et à l'amélioration de nos services."
-    },
-    "dataUsage": {
-      "title": "Utilisation des données",
-      "description": "Vos données sont utilisées exclusivement pour traiter votre demande, vous contacter et vous proposer des offres adaptées à vos besoins."
-    },
-    "dataProtection": {
-      "title": "Protection des données",
-      "description": "Nous mettons en œuvre toutes les mesures techniques et organisationnelles nécessaires pour protéger vos données contre tout accès non autorisé."
-    },
-    "rights": {
-      "title": "Vos droits",
-      "description": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données personnelles."
-    }
+    "description": "Protection et traitement de vos données personnelles"
   },
-  "siteMap": {
+  "sitemap": {
     "title": "Plan du Site",
-    "description": "Accédez rapidement à toutes les pages de notre site Neovita Finanz."
-  },
-  "partners": {
-    "title": "Nos Partenaires",
-    "subtitle": "Un réseau solide pour votre réussite",
-    "metaDescription": "Découvrez les partenaires de Neovita Finanz. Réseau de banques, courtiers et assureurs pour vous offrir les meilleures solutions.",
-    "types": {
-      "banks": {
-        "title": "Banques partenaires",
-        "description": "Réseau de banques et établissements financiers"
-      },
-      "brokers": {
-        "title": "Courtiers",
-        "description": "Collaboration avec des courtiers expérimentés"
-      },
-      "insurers": {
-        "title": "Assureurs",
-        "description": "Partenariats avec les meilleurs assureurs"
-      }
-    }
+    "description": "Navigation et structure du site Neovita Finanz"
   },
   "footer": {
     "tagline": "Votre spécialiste du financement",
