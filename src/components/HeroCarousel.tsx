@@ -7,7 +7,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const HeroCarousel = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, isLoading } = useLanguage();
   
   const slides = [
     {
@@ -44,14 +44,19 @@ const HeroCarousel = () => {
   const [isPlaying, setIsPlaying] = useState(true);
 
   useEffect(() => {
-    if (!isPlaying) return;
+    if (!isPlaying || isLoading) return;
     
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isPlaying, slides.length]);
+  }, [isPlaying, slides.length, isLoading]);
+
+  // Don't render anything while loading
+  if (isLoading) {
+    return null;
+  }
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);

@@ -8,6 +8,7 @@ interface LanguageContextType {
   language: Language;
   changeLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  isLoading: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -23,9 +24,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
   const [language, setLanguage] = useState<Language>('fr');
   const [translations, setTranslations] = useState<Record<string, any>>({});
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Extract language from URL - only run when location changes
+  // Extract language from URL
   useEffect(() => {
     const pathSegments = location.pathname.split('/').filter(Boolean);
     const urlLang = pathSegments[0];
@@ -39,12 +40,10 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         setLanguage('fr');
       }
     }
-  }, [location.pathname]); // Remove language dependency to avoid loops
+  }, [location.pathname]);
 
-  // Load translations - only run when language changes and not already loading
+  // Load translations immediately on language change
   useEffect(() => {
-    if (isLoading) return;
-    
     const loadTranslations = async () => {
       setIsLoading(true);
       try {
@@ -69,7 +68,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     };
 
     loadTranslations();
-  }, [language]); // Remove isLoading dependency
+  }, [language]);
 
   const changeLanguage = (newLanguage: Language) => {
     const currentPath = location.pathname;
@@ -88,8 +87,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const t = (key: string): string => {
-    if (!translations || Object.keys(translations).length === 0) {
-      return key; // Return key if no translations loaded yet
+    if (isLoading || !translations || Object.keys(translations).length === 0) {
+      return ''; // Return empty string while loading instead of raw key
     }
     
     const keys = key.split('.');
@@ -100,7 +99,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         current = current[k];
       } else {
         console.warn(`Translation key not found: ${key}`);
-        return key; // Return key if translation not found
+        return key; // Only return key if translation actually not found
       }
     }
     
@@ -108,7 +107,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   };
 
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage, t }}>
+    <LanguageContext.Provider value={{ language, changeLanguage, t, isLoading }}>
       {children}
     </LanguageContext.Provider>
   );
