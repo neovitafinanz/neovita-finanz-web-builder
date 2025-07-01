@@ -37,10 +37,12 @@ const Layout = ({ children, title, description }: LayoutProps) => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col overflow-x-hidden w-full max-w-full">
       <Header />
-      <main className="flex-grow">
-        {children}
+      <main className="flex-grow w-full max-w-full overflow-x-hidden">
+        <div className="w-full max-w-full">
+          {children}
+        </div>
       </main>
       <Footer />
     </div>

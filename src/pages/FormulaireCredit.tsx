@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
@@ -187,7 +186,7 @@ const FormulaireCredit = () => {
       title={t('loanRequest.hero.title')}
       description={t('loanRequest.metaDescription')}
     >
-      <div className="min-h-screen relative">
+      <div className="min-h-screen relative w-full max-w-full overflow-x-hidden">
         {/* Background image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -197,32 +196,32 @@ const FormulaireCredit = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-green-900/85 to-green-800/85" />
         
-        <div className="relative z-10 py-12">
-          <div className="container mx-auto px-4">
+        <div className="relative z-10 py-6 sm:py-12 w-full">
+          <div className="container-responsive">
             {/* Header */}
-            <div className="text-center mb-12">
-              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <div className="text-center mb-8 sm:mb-12 px-4">
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 text-responsive">
                 {t('loanRequest.hero.title')}
               </h1>
-              <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed text-responsive">
                 {t('loanRequest.hero.subtitle')}
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
               {/* Formulaire */}
-              <div className="lg:col-span-2">
-                <Card className="border-0 shadow-2xl bg-white/95 backdrop-blur-sm">
+              <div className="lg:col-span-2 w-full max-w-full">
+                <Card className="border-0 shadow-2xl bg-white/95 backdrop-blur-sm w-full max-w-full overflow-hidden">
                   <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
-                    <CardTitle className="text-2xl text-center">{t('loanRequest.form.title')}</CardTitle>
+                    <CardTitle className="text-xl sm:text-2xl text-center">{t('loanRequest.form.title')}</CardTitle>
                   </CardHeader>
-                  <CardContent className="p-8">
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                  <CardContent className="p-4 sm:p-8 max-w-full overflow-x-hidden">
+                    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-full">
                       {/* Informations personnelles */}
-                      <div>
+                      <div className="w-full">
                         <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('loanRequest.form.personalInfo')}</h3>
-                        <div className="grid md:grid-cols-2 gap-6">
-                          <div>
+                        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+                          <div className="w-full">
                             <Label htmlFor="firstName" className="text-gray-700 font-medium">
                               {t('loanRequest.form.firstName')} *
                             </Label>
@@ -230,12 +229,12 @@ const FormulaireCredit = () => {
                               id="firstName"
                               value={formData.firstName}
                               onChange={(e) => handleInputChange('firstName', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder={t('loanRequest.form.firstName')}
                               required
                             />
                           </div>
-                          <div>
+                          <div className="w-full">
                             <Label htmlFor="lastName" className="text-gray-700 font-medium">
                               {t('loanRequest.form.lastName')} *
                             </Label>
@@ -243,15 +242,15 @@ const FormulaireCredit = () => {
                               id="lastName"
                               value={formData.lastName}
                               onChange={(e) => handleInputChange('lastName', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder={t('loanRequest.form.lastName')}
                               required
                             />
                           </div>
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-6 mt-6">
-                          <div>
+                        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mt-6 w-full">
+                          <div className="w-full">
                             <Label htmlFor="email" className="text-gray-700 font-medium">
                               {t('loanRequest.form.email')} *
                             </Label>
@@ -260,12 +259,12 @@ const FormulaireCredit = () => {
                               type="email"
                               value={formData.email}
                               onChange={(e) => handleInputChange('email', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder="votre.email@exemple.com"
                               required
                             />
                           </div>
-                          <div>
+                          <div className="w-full">
                             <Label htmlFor="emailConfirmation" className="text-gray-700 font-medium">
                               {t('loanRequest.form.emailConfirmation')} *
                             </Label>
@@ -274,7 +273,7 @@ const FormulaireCredit = () => {
                               type="email"
                               value={formData.emailConfirmation}
                               onChange={(e) => handleInputChange('emailConfirmation', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder={t('loanRequest.form.emailConfirmation')}
                               required
                               onPaste={(e) => e.preventDefault()}
@@ -286,7 +285,7 @@ const FormulaireCredit = () => {
                           </div>
                         </div>
 
-                        <div className="mt-6">
+                        <div className="mt-6 w-full">
                           <Label htmlFor="phone" className="text-gray-700 font-medium">
                             {t('loanRequest.form.phone')} *
                           </Label>
@@ -295,7 +294,7 @@ const FormulaireCredit = () => {
                             type="tel"
                             value={formData.phone}
                             onChange={(e) => handleInputChange('phone', e.target.value)}
-                            className="mt-2"
+                            className="mt-2 w-full"
                             placeholder="06 12 34 56 78"
                             required
                           />
@@ -303,14 +302,14 @@ const FormulaireCredit = () => {
                       </div>
 
                       {/* Informations du prêt */}
-                      <div>
+                      <div className="w-full">
                         <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('loanRequest.form.project')}</h3>
-                        <div>
+                        <div className="w-full">
                           <Label htmlFor="loanType" className="text-gray-700 font-medium">
                             {t('loanRequest.form.loanType')} *
                           </Label>
                           <Select value={formData.loanType} onValueChange={(value) => handleInputChange('loanType', value)}>
-                            <SelectTrigger className="mt-2">
+                            <SelectTrigger className="mt-2 w-full">
                               <SelectValue placeholder={t('loanRequest.form.selectLoanType')} />
                             </SelectTrigger>
                             <SelectContent>
@@ -321,8 +320,8 @@ const FormulaireCredit = () => {
                           </Select>
                         </div>
 
-                        <div className="grid md:grid-cols-3 gap-6 mt-6">
-                          <div>
+                        <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mt-6 w-full">
+                          <div className="w-full">
                             <Label htmlFor="amount" className="text-gray-700 font-medium">
                               {t('loanRequest.form.amount')}
                             </Label>
@@ -331,18 +330,18 @@ const FormulaireCredit = () => {
                               type="number"
                               value={formData.amount}
                               onChange={(e) => handleInputChange('amount', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder="50000"
                               min="1000"
                               max="1000000"
                             />
                           </div>
-                          <div>
+                          <div className="w-full">
                             <Label htmlFor="currency" className="text-gray-700 font-medium">
                               {t('loanRequest.form.currency')}
                             </Label>
                             <Select value={formData.currency} onValueChange={(value) => handleInputChange('currency', value)}>
-                              <SelectTrigger className="mt-2">
+                              <SelectTrigger className="mt-2 w-full">
                                 <SelectValue />
                               </SelectTrigger>
                               <SelectContent>
@@ -354,7 +353,7 @@ const FormulaireCredit = () => {
                               </SelectContent>
                             </Select>
                           </div>
-                          <div>
+                          <div className="w-full">
                             <Label htmlFor="duration" className="text-gray-700 font-medium">
                               {t('loanRequest.form.duration')}
                             </Label>
@@ -363,7 +362,7 @@ const FormulaireCredit = () => {
                               type="number"
                               value={formData.duration}
                               onChange={(e) => handleInputChange('duration', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder="60"
                               min="12"
                               max="360"
@@ -373,15 +372,15 @@ const FormulaireCredit = () => {
                       </div>
 
                       {/* Situation financière */}
-                      <div>
+                      <div className="w-full">
                         <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('loanRequest.form.situation')}</h3>
-                        <div className="grid md:grid-cols-2 gap-6">
-                          <div>
+                        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+                          <div className="w-full">
                             <Label htmlFor="situation" className="text-gray-700 font-medium">
                               {t('loanRequest.form.professionalSituation')}
                             </Label>
                             <Select value={formData.situation} onValueChange={(value) => handleInputChange('situation', value)}>
-                              <SelectTrigger className="mt-2">
+                              <SelectTrigger className="mt-2 w-full">
                                 <SelectValue placeholder={t('loanRequest.form.selectSituation')} />
                               </SelectTrigger>
                               <SelectContent>
@@ -391,7 +390,7 @@ const FormulaireCredit = () => {
                               </SelectContent>
                             </Select>
                           </div>
-                          <div>
+                          <div className="w-full">
                             <Label htmlFor="income" className="text-gray-700 font-medium">
                               {t('loanRequest.form.monthlyIncome')} ({selectedCurrency?.symbol})
                             </Label>
@@ -400,7 +399,7 @@ const FormulaireCredit = () => {
                               type="number"
                               value={formData.income}
                               onChange={(e) => handleInputChange('income', e.target.value)}
-                              className="mt-2"
+                              className="mt-2 w-full"
                               placeholder="3000"
                               min="0"
                             />
@@ -409,7 +408,7 @@ const FormulaireCredit = () => {
                       </div>
 
                       {/* Message */}
-                      <div>
+                      <div className="w-full">
                         <Label htmlFor="message" className="text-gray-700 font-medium">
                           {t('loanRequest.form.message')}
                         </Label>
@@ -417,18 +416,18 @@ const FormulaireCredit = () => {
                           id="message"
                           value={formData.message}
                           onChange={(e) => handleInputChange('message', e.target.value)}
-                          className="mt-2"
+                          className="mt-2 w-full"
                           placeholder={t('loanRequest.form.messagePlaceholder')}
                           rows={4}
                         />
                       </div>
 
-                      <div className="text-center">
+                      <div className="text-center w-full">
                         <Button 
                           type="submit"
                           size="lg"
                           disabled={isSubmitting}
-                          className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-3 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                          className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 w-full sm:w-auto"
                         >
                           {isSubmitting ? t('loanRequest.form.submitting') : t('loanRequest.form.submit')}
                         </Button>
@@ -443,10 +442,10 @@ const FormulaireCredit = () => {
               </div>
 
               {/* Sidebar de réassurance */}
-              <div className="lg:col-span-1">
-                <div className="space-y-6">
+              <div className="lg:col-span-1 w-full max-w-full">
+                <div className="space-y-6 w-full">
                   {/* Points de réassurance */}
-                  <Card className="border-0 shadow-lg bg-white/95 backdrop-blur-sm">
+                  <Card className="border-0 shadow-lg bg-white/95 backdrop-blur-sm w-full max-w-full overflow-hidden">
                     <CardHeader>
                       <CardTitle className="text-lg text-center">{t('loanRequest.reassurance.title')}</CardTitle>
                     </CardHeader>
@@ -458,9 +457,9 @@ const FormulaireCredit = () => {
                             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                               <IconComponent className="w-5 h-5 text-green-600" />
                             </div>
-                            <div>
-                              <h4 className="font-medium text-gray-900">{point.title}</h4>
-                              <p className="text-sm text-gray-600">{point.description}</p>
+                            <div className="flex-1 min-w-0">
+                              <h4 className="font-medium text-gray-900 text-responsive">{point.title}</h4>
+                              <p className="text-sm text-gray-600 text-responsive">{point.description}</p>
                             </div>
                           </div>
                         );
@@ -469,41 +468,41 @@ const FormulaireCredit = () => {
                   </Card>
 
                   {/* Avantages */}
-                  <Card className="border-0 shadow-lg bg-white/95 backdrop-blur-sm">
+                  <Card className="border-0 shadow-lg bg-white/95 backdrop-blur-sm w-full max-w-full overflow-hidden">
                     <CardHeader>
                       <CardTitle className="text-lg text-center">{t('loanRequest.advantages.title')}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-3">
                       <div className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">{t('loanRequest.advantages.experience')}</span>
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                        <span className="text-sm text-responsive">{t('loanRequest.advantages.experience')}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">{t('loanRequest.advantages.experts')}</span>
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                        <span className="text-sm text-responsive">{t('loanRequest.advantages.experts')}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">{t('loanRequest.advantages.rates')}</span>
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                        <span className="text-sm text-responsive">{t('loanRequest.advantages.rates')}</span>
                       </div>
                       <div className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">{t('loanRequest.advantages.support')}</span>
+                        <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                        <span className="text-sm text-responsive">{t('loanRequest.advantages.support')}</span>
                       </div>
                     </CardContent>
                   </Card>
 
                   {/* Contact */}
-                  <Card className="border-0 shadow-lg bg-green-50/90 backdrop-blur-sm">
+                  <Card className="border-0 shadow-lg bg-green-50/90 backdrop-blur-sm w-full max-w-full overflow-hidden">
                     <CardContent className="p-4">
-                      <h4 className="font-medium text-gray-900 mb-2">{t('loanRequest.contact.title')}</h4>
-                      <p className="text-sm text-gray-600 mb-3">
+                      <h4 className="font-medium text-gray-900 mb-2 text-responsive">{t('loanRequest.contact.title')}</h4>
+                      <p className="text-sm text-gray-600 mb-3 text-responsive">
                         {t('loanRequest.contact.description')}
                       </p>
-                      <p className="text-sm font-medium text-green-600">
+                      <p className="text-sm font-medium text-green-600 text-responsive">
                         📞 {t('loanRequest.contact.phone')}
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-xs text-gray-500 text-responsive">
                         {t('loanRequest.contact.hours')}
                       </p>
                     </CardContent>
