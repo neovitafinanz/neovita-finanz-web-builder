@@ -299,45 +299,95 @@
     "title": "Mentions Légales",
     "description": "Informations légales et réglementaires de Neovita Finanz",
     "editor": {
-      "title": "Éditeur du site"
+      "title": "Éditeur du site",
+      "name": "Neovita Finanz",
+      "legalForm": "SAS au capital de 50 000 €",
+      "rcs": "RCS Évry B 789 456 123",
+      "vat": "FR 12 789 456 123",
+      "address": "123 Avenue de la République, 75011 Paris, France",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
     },
     "director": {
-      "title": "Directeur de la publication"
+      "title": "Directeur de la publication",
+      "name": "Jean Dupont, Président"
     },
     "intellectual": {
-      "title": "Propriété intellectuelle"
+      "title": "Propriété intellectuelle",
+      "content": "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques."
+    },
+    "liability": {
+      "title": "Responsabilité",
+      "content": "Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l'année, mais peut toutefois contenir des inexactitudes ou des omissions."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Ce site utilise des cookies pour améliorer l'expérience utilisateur. En naviguant sur ce site, vous acceptez l'utilisation de ces cookies."
     }
   },
   "cookies": {
     "title": "Politique de Cookies",
     "description": "Comment nous utilisons les cookies pour améliorer votre expérience",
+    "lastUpdate": "Dernière mise à jour",
     "what": {
-      "title": "Qu'est-ce qu'un cookie ?"
+      "title": "Qu'est-ce qu'un cookie ?",
+      "content": "Un cookie est un petit fichier texte déposé sur votre ordinateur lors de la visite d'un site web. Il permet de reconnaître votre navigateur et de mémoriser certaines informations vous concernant."
     },
     "types": {
       "title": "Types de cookies utilisés",
       "technical": {
-        "title": "Cookies techniques"
+        "title": "Cookies techniques",
+        "content": "Ces cookies sont nécessaires au fonctionnement du site. Ils permettent d'utiliser les principales fonctionnalités du site (par exemple l'accès à votre compte)."
       },
       "analytics": {
-        "title": "Cookies d'analyse"
+        "title": "Cookies d'analyse",
+        "content": "Ces cookies nous permettent de connaître l'utilisation et les performances de notre site, d'établir des statistiques, des volumes de fréquentation et d'utilisation."
       },
       "preferences": {
-        "title": "Cookies de préférences"
+        "title": "Cookies de préférences",
+        "content": "Ces cookies permettent de retenir vos choix et personnaliser votre expérience sur notre site (langue, région, etc.)."
       }
     },
     "management": {
-      "title": "Gestion des cookies"
+      "title": "Gestion des cookies",
+      "content": "Vous pouvez à tout moment choisir de désactiver ces cookies. Votre navigateur peut également être paramétré pour vous signaler les cookies qui sont déposés dans votre ordinateur et vous demander de les accepter ou non."
     },
     "duration": {
-      "title": "Durée de conservation"
+      "title": "Durée de conservation",
+      "content": "Les cookies techniques sont conservés pour la durée de la session. Les cookies d'analyse et de préférences sont conservés pour une durée maximale de 13 mois."
     }
   },
   "privacy": {
     "title": "Politique de Confidentialité",
-    "description": "Protection et traitement de vos données personnelles"
+    "description": "Protection et traitement de vos données personnelles",
+    "lastUpdate": "Dernière mise à jour",
+    "dataCollection": {
+      "title": "Collecte des données",
+      "content": "Nous collectons uniquement les données personnelles nécessaires à la fourniture de nos services de financement. Ces données incluent vos informations de contact, vos données financières et professionnelles dans le cadre de l'étude de votre dossier de crédit."
+    },
+    "dataUse": {
+      "title": "Utilisation des données",
+      "content": "Vos données personnelles sont utilisées exclusivement pour l'étude de votre demande de financement, la gestion de votre dossier client et le respect de nos obligations légales et réglementaires."
+    },
+    "dataProtection": {
+      "title": "Protection des données",
+      "content": "Nous mettons en place toutes les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, modification, divulgation ou destruction."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "content": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité de vos données ainsi que du droit de vous opposer à leur traitement. Vous pouvez exercer ces droits en nous contactant."
+    },
+    "retention": {
+      "title": "Durée de conservation",
+      "content": "Vos données sont conservées pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées, dans le respect des dispositions légales applicables au secteur bancaire et financier."
+    },
+    "contact": {
+      "title": "Contact",
+      "dpo": "Délégué à la protection des données",
+      "address": "Adresse postale"
+    }
   },
-  "sitemap": {
+  "siteMap": {
     "title": "Plan du Site",
     "description": "Navigation et structure du site Neovita Finanz"
   },
