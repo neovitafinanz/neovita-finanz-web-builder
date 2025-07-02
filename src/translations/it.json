@@ -439,5 +439,35 @@
       "engagement": "Un credito ti impegna e deve essere rimborsato. Verifica le tue capacità di rimborso prima di impegnarti.",
       "insurance": "Assicurazione: L'assicurazione del mutuatario non è obbligatoria ma vivamente raccomandata."
     }
+  },
+  "privacy": {
+    "title": "Informativa sulla Privacy",
+    "description": "Come proteggiamo e utilizziamo i vostri dati personali",
+    "lastUpdate": "Ultimo aggiornamento",
+    "dataCollection": {
+      "title": "Raccolta Dati",
+      "content": "Raccogliamo i vostri dati personali quando utilizzate i nostri servizi, compilate i nostri moduli o ci contattate. Questi dati includono le vostre informazioni di contatto, la vostra situazione finanziaria e professionale necessarie per lo studio del vostro dossier di credito."
+    },
+    "dataUse": {
+      "title": "Utilizzo dei Dati",
+      "content": "I vostri dati sono utilizzati esclusivamente per elaborare la vostra richiesta di finanziamento, proporvi soluzioni adatte e rispettare i nostri obblighi legali. Non vendiamo mai i vostri dati a terzi."
+    },
+    "dataProtection": {
+      "title": "Protezione dei Dati",
+      "content": "Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere i vostri dati contro qualsiasi accesso non autorizzato, modifica, divulgazione o distruzione."
+    },
+    "rights": {
+      "title": "I Vostri Diritti",
+      "content": "In conformità al GDPR, avete il diritto di accesso, rettifica, cancellazione, limitazione del trattamento, portabilità e opposizione riguardo ai vostri dati personali. Potete esercitare questi diritti contattandoci."
+    },
+    "retention": {
+      "title": "Conservazione dei Dati",
+      "content": "Conserviamo i vostri dati personali per il periodo necessario per gli scopi per cui sono stati raccolti, in conformità agli obblighi legali in vigore nel settore finanziario."
+    },
+    "contact": {
+      "title": "Contatto",
+      "dpo": "Responsabile della Protezione dei Dati",
+      "address": "Indirizzo"
+    }
   }
 }

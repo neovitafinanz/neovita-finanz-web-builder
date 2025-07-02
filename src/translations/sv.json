@@ -506,5 +506,35 @@
       "engagement": "En kredit förpliktar dig och måste återbetalas. Kontrollera din återbetalningsförmåga innan du förbinder dig.",
       "insurance": "Försäkring: Låntagarförsäkring är inte obligatorisk men starkt rekommenderad."
     }
+  },
+  "privacy": {
+    "title": "Integritetspolicy",
+    "description": "Hur vi skyddar och använder dina personliga data",
+    "lastUpdate": "Senast uppdaterad",
+    "dataCollection": {
+      "title": "Datainsamling",
+      "content": "Vi samlar in dina personliga data när du använder våra tjänster, fyller i våra formulär eller kontaktar oss. Dessa data inkluderar din kontaktinformation, din ekonomiska och professionella situation som är nödvändig för studien av din kreditfil."
+    },
+    "dataUse": {
+      "title": "Dataanvändning",
+      "content": "Dina data används uteslutande för att behandla din finansieringsförfrågan, erbjuda dig lämpliga lösningar och följa våra juridiska åtaganden. Vi säljer aldrig dina data till tredje part."
+    },
+    "dataProtection": {
+      "title": "Dataskydd",
+      "content": "Vi implementerar lämpliga tekniska och organisatoriska säkerhetsåtgärder för att skydda dina data mot obehörig åtkomst, ändring, avslöjande eller förstörelse."
+    },
+    "rights": {
+      "title": "Dina Rättigheter",
+      "content": "I enlighet med GDPR har du rätt till åtkomst, rättelse, radering, begränsning av behandling, portabilitet och invändning avseende dina personliga data. Du kan utöva dessa rättigheter genom att kontakta oss."
+    },
+    "retention": {
+      "title": "Datalagring",
+      "content": "Vi behåller dina personliga data under den period som krävs för de ändamål för vilka de samlades in, i enlighet med gällande juridiska åtaganden inom finanssektorn."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "dpo": "Dataskyddsombud",
+      "address": "Adress"
+    }
   }
 }

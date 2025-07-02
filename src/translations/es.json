@@ -412,5 +412,35 @@
       "engagement": "Un crédito te compromete y debe ser reembolsado. Verifica tu capacidad de reembolso antes de comprometerte.",
       "insurance": "Seguro: El seguro del prestatario no es obligatorio pero muy recomendado."
     }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "description": "Cómo protegemos y utilizamos sus datos personales",
+    "lastUpdate": "Última actualización",
+    "dataCollection": {
+      "title": "Recolección de Datos",
+      "content": "Recopilamos sus datos personales cuando utiliza nuestros servicios, completa nuestros formularios o nos contacta. Estos datos incluyen su información de contacto, su situación financiera y profesional necesarias para el estudio de su expediente de crédito."
+    },
+    "dataUse": {
+      "title": "Uso de los Datos",
+      "content": "Sus datos se utilizan exclusivamente para procesar su solicitud de financiamiento, ofrecerle soluciones adecuadas y cumplir con nuestras obligaciones legales. Nunca vendemos sus datos a terceros."
+    },
+    "dataProtection": {
+      "title": "Protección de Datos",
+      "content": "Implementamos medidas de seguridad técnicas y organizacionales apropiadas para proteger sus datos contra cualquier acceso no autorizado, modificación, divulgación o destrucción."
+    },
+    "rights": {
+      "title": "Sus Derechos",
+      "content": "De acuerdo con el RGPD, tiene derecho de acceso, rectificación, supresión, limitación del procesamiento, portabilidad y oposición con respecto a sus datos personales. Puede ejercer estos derechos contactándonos."
+    },
+    "retention": {
+      "title": "Conservación de Datos",
+      "content": "Conservamos sus datos personales durante el período necesario para los fines para los cuales fueron recopilados, de acuerdo con las obligaciones legales vigentes en el sector financiero."
+    },
+    "contact": {
+      "title": "Contacto",
+      "dpo": "Delegado de Protección de Datos",
+      "address": "Dirección"
+    }
   }
 }

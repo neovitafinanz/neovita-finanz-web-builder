@@ -443,5 +443,35 @@
       "engagement": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.",
       "insurance": "Assurance : L'assurance emprunteur n'est pas obligatoire mais vivement recommandée."
     }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "description": "Comment nous protégeons et utilisons vos données personnelles",
+    "lastUpdate": "Dernière mise à jour",
+    "dataCollection": {
+      "title": "Collecte des Données",
+      "content": "Nous collectons vos données personnelles lorsque vous utilisez nos services, remplissez nos formulaires ou nous contactez. Ces données incluent vos informations de contact, votre situation financière et professionnelle nécessaires à l'étude de votre dossier de crédit."
+    },
+    "dataUse": {
+      "title": "Utilisation des Données",
+      "content": "Vos données sont utilisées exclusivement pour traiter votre demande de financement, vous proposer des solutions adaptées et respecter nos obligations légales. Nous ne vendons jamais vos données à des tiers."
+    },
+    "dataProtection": {
+      "title": "Protection des Données",
+      "content": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, modification, divulgation ou destruction."
+    },
+    "rights": {
+      "title": "Vos Droits",
+      "content": "Conformément au RGPD, vous disposez du droit d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité et d'opposition concernant vos données personnelles. Vous pouvez exercer ces droits en nous contactant."
+    },
+    "retention": {
+      "title": "Conservation des Données",
+      "content": "Nous conservons vos données personnelles pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées, conformément aux obligations légales en vigueur dans le secteur financier."
+    },
+    "contact": {
+      "title": "Contact",
+      "dpo": "Délégué à la Protection des Données",
+      "address": "Adresse"
+    }
   }
 }

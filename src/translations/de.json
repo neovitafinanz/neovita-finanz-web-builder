@@ -455,5 +455,35 @@
       "engagement": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Überprüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten.",
       "insurance": "Versicherung: Eine Kreditnehmerversicherung ist nicht obligatorisch, aber dringend empfohlen."
     }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "description": "Wie wir Ihre persönlichen Daten schützen und verwenden",
+    "lastUpdate": "Letzte Aktualisierung",
+    "dataCollection": {
+      "title": "Datenerhebung",
+      "content": "Wir erheben Ihre persönlichen Daten, wenn Sie unsere Dienste nutzen, unsere Formulare ausfüllen oder uns kontaktieren. Diese Daten umfassen Ihre Kontaktinformationen, Ihre finanzielle und berufliche Situation, die für die Prüfung Ihres Kreditdossiers erforderlich sind."
+    },
+    "dataUse": {
+      "title": "Datenverwendung",
+      "content": "Ihre Daten werden ausschließlich verwendet, um Ihren Finanzierungsantrag zu bearbeiten, Ihnen geeignete Lösungen anzubieten und unseren rechtlichen Verpflichtungen nachzukommen. Wir verkaufen niemals Ihre Daten an Dritte."
+    },
+    "dataProtection": {
+      "title": "Datenschutz",
+      "content": "Wir setzen angemessene technische und organisatorische Sicherheitsmaßnahmen um, um Ihre Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen."
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "content": "Gemäß DSGVO haben Sie das Recht auf Zugang, Berichtigung, Löschung, Einschränkung der Verarbeitung, Übertragbarkeit und Widerspruch bezüglich Ihrer persönlichen Daten. Sie können diese Rechte ausüben, indem Sie uns kontaktieren."
+    },
+    "retention": {
+      "title": "Datenspeicherung",
+      "content": "Wir bewahren Ihre persönlichen Daten für den Zeitraum auf, der für die Zwecke erforderlich ist, für die sie erhoben wurden, in Übereinstimmung mit den geltenden rechtlichen Verpflichtungen im Finanzsektor."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "dpo": "Datenschutzbeauftragter",
+      "address": "Adresse"
+    }
   }
 }

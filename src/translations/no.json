@@ -481,5 +481,35 @@
       "engagement": "En kreditt forplikter deg og må tilbakebetales. Sjekk din tilbakebetalingsevne før du forplikter deg.",
       "insurance": "Forsikring: Låntakers forsikring er ikke obligatorisk men sterkt anbefalt."
     }
+  },
+  "privacy": {
+    "title": "Personvernpolicy",
+    "description": "Hvordan vi beskytter og bruker dine personlige data",
+    "lastUpdate": "Sist oppdatert",
+    "dataCollection": {
+      "title": "Datainnsamling",
+      "content": "Vi samler inn dine personlige data når du bruker våre tjenester, fyller ut våre skjemaer eller kontakter oss. Disse dataene inkluderer kontaktinformasjonen din, din økonomiske og profesjonelle situasjon som er nødvendig for studiet av kreditten din."
+    },
+    "dataUse": {
+      "title": "Databruk",
+      "content": "Dataene dine brukes utelukkende til å behandle finansieringsforespørselen din, tilby deg passende løsninger og overholde våre juridiske forpliktelser. Vi selger aldri dataene dine til tredjeparter."
+    },
+    "dataProtection": {
+      "title": "Databeskyttelse",
+      "content": "Vi implementerer passende tekniske og organisatoriske sikkerhetstiltak for å beskytte dataene dine mot uautorisert tilgang, endring, avsløring eller ødeleggelse."
+    },
+    "rights": {
+      "title": "Dine Rettigheter",
+      "content": "I samsvar med GDPR har du rett til tilgang, korrigering, sletting, begrensning av behandling, portabilitet og innsigelse angående dine personlige data. Du kan utøve disse rettighetene ved å kontakte oss."
+    },
+    "retention": {
+      "title": "Datalagring",
+      "content": "Vi oppbevarer dine personlige data i den perioden som er nødvendig for formålene de ble samlet inn for, i samsvar med gjeldende juridiske forpliktelser i finanssektoren."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "dpo": "Personvernombud",
+      "address": "Adresse"
+    }
   }
 }

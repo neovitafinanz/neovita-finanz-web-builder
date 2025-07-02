@@ -431,5 +431,35 @@
       "engagement": "Een krediet verplicht u en moet worden terugbetaald. Controleer uw terugbetalingscapaciteit voordat u zich verbindt.",
       "insurance": "Verzekering: Lenersverzekering is niet verplicht maar sterk aanbevolen."
     }
+  },
+  "privacy": {
+    "title": "Privacybeleid",
+    "description": "Hoe we uw persoonlijke gegevens beschermen en gebruiken",
+    "lastUpdate": "Laatst bijgewerkt",
+    "dataCollection": {
+      "title": "Gegevensverzameling",
+      "content": "We verzamelen uw persoonlijke gegevens wanneer u onze diensten gebruikt, onze formulieren invult of contact met ons opneemt. Deze gegevens omvatten uw contactgegevens, uw financiële en professionele situatie die nodig is voor de studie van uw kredietdossier."
+    },
+    "dataUse": {
+      "title": "Gegevensgebruik",
+      "content": "Uw gegevens worden uitsluitend gebruikt om uw financieringsaanvraag te verwerken, u geschikte oplossingen aan te bieden en onze wettelijke verplichtingen na te komen. We verkopen nooit uw gegevens aan derden."
+    },
+    "dataProtection": {
+      "title": "Gegevensbescherming",
+      "content": "We implementeren passende technische en organisatorische beveiligingsmaatregelen om uw gegevens te beschermen tegen ongeautoriseerde toegang, wijziging, openbaarmaking of vernietiging."
+    },
+    "rights": {
+      "title": "Uw Rechten",
+      "content": "In overeenstemming met de AVG heeft u recht op toegang, rectificatie, wissing, beperking van verwerking, overdraagbaarheid en bezwaar betreffende uw persoonlijke gegevens. U kunt deze rechten uitoefenen door contact met ons op te nemen."
+    },
+    "retention": {
+      "title": "Gegevensbewaring",
+      "content": "We bewaren uw persoonlijke gegevens voor de periode die nodig is voor de doeleinden waarvoor ze zijn verzameld, in overeenstemming met de geldende wettelijke verplichtingen in de financiële sector."
+    },
+    "contact": {
+      "title": "Contact",
+      "dpo": "Functionaris Gegevensbescherming",
+      "address": "Adres"
+    }
   }
 }

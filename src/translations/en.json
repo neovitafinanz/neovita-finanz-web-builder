@@ -472,5 +472,35 @@
       "engagement": "A credit commits you and must be repaid. Check your repayment capacity before committing.",
       "insurance": "Insurance: Borrower insurance is not mandatory but strongly recommended."
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "How we protect and use your personal data",
+    "lastUpdate": "Last updated",
+    "dataCollection": {
+      "title": "Data Collection",
+      "content": "We collect your personal data when you use our services, fill out our forms or contact us. This data includes your contact information, financial and professional situation necessary for the study of your credit file."
+    },
+    "dataUse": {
+      "title": "Data Use",
+      "content": "Your data is used exclusively to process your financing request, offer you suitable solutions and comply with our legal obligations. We never sell your data to third parties."
+    },
+    "dataProtection": {
+      "title": "Data Protection",
+      "content": "We implement appropriate technical and organizational security measures to protect your data against any unauthorized access, modification, disclosure or destruction."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "content": "In accordance with GDPR, you have the right of access, rectification, erasure, limitation of processing, portability and opposition regarding your personal data. You can exercise these rights by contacting us."
+    },
+    "retention": {
+      "title": "Data Retention",
+      "content": "We retain your personal data for the period necessary for the purposes for which it was collected, in accordance with the legal obligations in force in the financial sector."
+    },
+    "contact": {
+      "title": "Contact",
+      "dpo": "Data Protection Officer",
+      "address": "Address"
+    }
   }
 }

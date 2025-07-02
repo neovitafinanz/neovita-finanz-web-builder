@@ -439,5 +439,35 @@
       "engagement": "Um crédito compromete-o e deve ser reembolsado. Verifique a sua capacidade de reembolso antes de se comprometer.",
       "insurance": "Seguro: O seguro do mutuário não é obrigatório mas fortemente recomendado."
     }
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "description": "Como protegemos e utilizamos os seus dados pessoais",
+    "lastUpdate": "Última atualização",
+    "dataCollection": {
+      "title": "Recolha de Dados",
+      "content": "Recolhemos os seus dados pessoais quando utiliza os nossos serviços, preenche os nossos formulários ou nos contacta. Estes dados incluem as suas informações de contacto, a sua situação financeira e profissional necessárias para o estudo do seu dossiê de crédito."
+    },
+    "dataUse": {
+      "title": "Utilização dos Dados",
+      "content": "Os seus dados são utilizados exclusivamente para processar o seu pedido de financiamento, propor-lhe soluções adequadas e cumprir as nossas obrigações legais. Nunca vendemos os seus dados a terceiros."
+    },
+    "dataProtection": {
+      "title": "Proteção dos Dados",
+      "content": "Implementamos medidas de segurança técnicas e organizacionais apropriadas para proteger os seus dados contra qualquer acesso não autorizado, modificação, divulgação ou destruição."
+    },
+    "rights": {
+      "title": "Os Seus Direitos",
+      "content": "De acordo com o RGPD, tem o direito de acesso, retificação, apagamento, limitação do processamento, portabilidade e oposição relativamente aos seus dados pessoais. Pode exercer estes direitos contactando-nos."
+    },
+    "retention": {
+      "title": "Conservação dos Dados",
+      "content": "Conservamos os seus dados pessoais pelo período necessário para os fins para os quais foram recolhidos, de acordo com as obrigações legais em vigor no setor financeiro."
+    },
+    "contact": {
+      "title": "Contacto",
+      "dpo": "Encarregado da Proteção de Dados",
+      "address": "Endereço"
+    }
   }
 }
