@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "ホーム",
@@ -136,6 +137,30 @@
       "finance": "私の工事に資金を提供"
     }
   },
+  "insurance": {
+    "metaDescription": "Neovita Finanzの保険。カスタマイズされた保険ソリューションでプロジェクトと投資を保護します。",
+    "hero": {
+      "title": "保険",
+      "subtitle": "投資とプロジェクトを保護"
+    },
+    "types": {
+      "borrower": {
+        "title": "借用者保険",
+        "description": "死亡、障害、失業の場合にあなたとあなたの愛する人を保護します"
+      },
+      "home": {
+        "title": "住宅保険",
+        "description": "包括的な補償であなたの家と財産を確保します"
+      },
+      "health": {
+        "title": "健康保険",
+        "description": "健康プランで質の高い医療にアクセスします"
+      }
+    },
+    "cta": {
+      "quote": "見積もりを取得"
+    }
+  },
   "about": {
     "metaDescription": "BHV Autoについて - 車両輸入における専門知識と専門家チームをご覧ください。",
     "hero": {
@@ -183,6 +208,10 @@
     "creditBuyback": {
       "title": "クレジット統合",
       "description": "返済を簡素化し、月々の支払いを削減"
+    },
+    "workCredit": {
+      "title": "ワーククレジット",
+      "description": "リノベーションと建設プロジェクトを融資"
     }
   },
   "advantages": {
