@@ -26,8 +26,7 @@ const Footer = () => {
     legal: [
       { name: t('footer.legal.terms'), href: `/${language}/mentions-legales` },
       { name: t('footer.legal.privacy'), href: `/${language}/politique-confidentialite` },
-      { name: t('footer.legal.conditions'), href: `/${language}/conditions-generales` },
-      { name: t('footer.legal.sitemap'), href: `/${language}/plan-site` }
+      { name: t('footer.legal.conditions'), href: `/${language}/conditions-generales` }
     ]
   };
 

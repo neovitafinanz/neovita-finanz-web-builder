@@ -15,7 +15,7 @@ import FormulaireCredit from './pages/FormulaireCredit';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsGenerales from './pages/ConditionsGenerales';
 
-import PlanDuSite from './pages/PlanDuSite';
+
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 
 function AppRoutes() {
@@ -41,7 +41,7 @@ function AppRoutes() {
       <Route path="/mentions-legales" element={<MentionsLegales />} />
       <Route path="/conditions-generales" element={<ConditionsGenerales />} />
       
-      <Route path="/plan-du-site" element={<PlanDuSite />} />
+      
       <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
 
       {/* Routes avec préfixe de langue */}
@@ -62,7 +62,7 @@ function AppRoutes() {
       <Route path="/:lang/mentions-legales" element={<MentionsLegales />} />
       <Route path="/:lang/conditions-generales" element={<ConditionsGenerales />} />
       
-      <Route path="/:lang/plan-du-site" element={<PlanDuSite />} />
+      
       <Route path="/:lang/politique-confidentialite" element={<PolitiqueConfidentialite />} />
     </Routes>
   );
