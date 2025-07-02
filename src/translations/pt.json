@@ -136,6 +136,30 @@
       "finance": "Financiar os meus trabalhos"
     }
   },
+  "insurance": {
+    "metaDescription": "Seguros com Neovita Finanz. Proteja os seus projetos e investimentos com soluções de seguro personalizadas.",
+    "hero": {
+      "title": "Seguros",
+      "subtitle": "Proteja os seus investimentos e projetos"
+    },
+    "types": {
+      "borrower": {
+        "title": "Seguro do Mutuário",
+        "description": "Proteja-se a si e aos seus entes queridos em caso de morte, invalidez ou desemprego"
+      },
+      "home": {
+        "title": "Seguro Habitação",
+        "description": "Assegure a sua casa e bens com uma cobertura abrangente"
+      },
+      "health": {
+        "title": "Seguro de Saúde",
+        "description": "Aceda a cuidados de saúde de qualidade com os nossos planos de saúde"
+      }
+    },
+    "cta": {
+      "quote": "Obter cotação"
+    }
+  },
   "about": {
     "metaDescription": "Sobre a BHV Auto - Descubra a nossa experiência em importação de veículos e a nossa equipa de especialistas.",
     "hero": {
@@ -183,6 +207,10 @@
     "creditBuyback": {
       "title": "Consolidação de Crédito",
       "description": "Simplifique os seus reembolsos e reduza as suas prestações"
+    },
+    "workCredit": {
+      "title": "Crédito Obras",
+      "description": "Financie os seus projetos de renovação e construção"
     }
   },
   "advantages": {
