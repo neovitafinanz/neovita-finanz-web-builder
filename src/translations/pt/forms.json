@@ -1,0 +1,34 @@
+
+{
+  "loanForm": {
+    "title": "Pedido de Empréstimo",
+    "subtitle": "Preencha este formulário para solicitar um empréstimo. A nossa equipa de especialistas entrará em contacto consigo rapidamente.",
+    "formTitle": "Formulário de Pedido",
+    "firstName": "Nome",
+    "lastName": "Apelido",
+    "email": "Email",
+    "phone": "Telefone",
+    "loanType": "Tipo de empréstimo",
+    "amount": "Montante desejado",
+    "duration": "Duração",
+    "income": "Rendimento mensal",
+    "message": "Mensagem adicional",
+    "firstNamePlaceholder": "O seu nome",
+    "lastNamePlaceholder": "O seu apelido",
+    "emailPlaceholder": "seu.email@exemplo.com",
+    "phonePlaceholder": "21 123 45 67",
+    "selectLoanType": "Selecione o tipo de empréstimo",
+    "months": "meses",
+    "messagePlaceholder": "Descreva o seu projeto ou necessidades específicas...",
+    "submit": "Enviar o meu pedido",
+    "disclaimer": "* Campos obrigatórios. Os seus dados estão protegidos e serão utilizados apenas para processar o seu pedido.",
+    "validation": {
+      "missingFields": "Campos em falta",
+      "fillRequired": "Preencha todos os campos obrigatórios."
+    },
+    "success": {
+      "title": "Pedido enviado com sucesso",
+      "message": "Entraremos em contacto consigo o mais rapidamente possível."
+    }
+  }
+}

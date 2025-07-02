@@ -1,0 +1,19 @@
+
+{
+  "nav": {
+    "home": "ホーム",
+    "personalLoans": "個人ローン",
+    "mortgageLoans": "住宅ローン",
+    "creditBuyback": "クレジット統合",
+    "workCredit": "ワーククレジット",
+    "insurance": "保険",
+    "about": "会社概要"
+  },
+  "common": {
+    "phoneAvailable": "月〜金 9時〜18時",
+    "requestLoan": "ローン申請",
+    "discover": "発見",
+    "learnMoreAbout": "詳細について",
+    "startRequest": "申請を開始"
+  }
+}

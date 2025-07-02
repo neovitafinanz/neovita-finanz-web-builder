@@ -1,0 +1,34 @@
+
+{
+  "loanForm": {
+    "title": "ローン申請",
+    "subtitle": "ローンを申請するためにこのフォームに記入してください。私たちの専門家チームが迅速にご連絡いたします。",
+    "formTitle": "申請フォーム",
+    "firstName": "名",
+    "lastName": "姓",
+    "email": "メール",
+    "phone": "電話",
+    "loanType": "ローンタイプ",
+    "amount": "希望金額",
+    "duration": "期間",
+    "income": "月収",
+    "message": "追加メッセージ",
+    "firstNamePlaceholder": "あなたの名前",
+    "lastNamePlaceholder": "あなたの姓",
+    "emailPlaceholder": "your.email@example.com",
+    "phonePlaceholder": "03-1234-5678",
+    "selectLoanType": "ローンタイプを選択",
+    "months": "ヶ月",
+    "messagePlaceholder": "あなたのプロジェクトや特定のニーズを説明してください...",
+    "submit": "私の申請を送信",
+    "disclaimer": "* 必須フィールド。あなたのデータは保護されており、申請の処理にのみ使用されます。",
+    "validation": {
+      "missingFields": "必須フィールドが不足",
+      "fillRequired": "すべての必須フィールドを入力してください。"
+    },
+    "success": {
+      "title": "申請が正常に送信されました",
+      "message": "可能な限り迅速にご連絡いたします。"
+    }
+  }
+}

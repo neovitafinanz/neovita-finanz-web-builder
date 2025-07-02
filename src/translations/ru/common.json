@@ -1,0 +1,19 @@
+
+{
+  "nav": {
+    "home": "Главная",
+    "personalLoans": "Личные Кредиты",
+    "mortgageLoans": "Ипотечные Кредиты",
+    "creditBuyback": "Консолидация Кредитов",
+    "workCredit": "Рабочий Кредит",
+    "insurance": "Страхование",
+    "about": "О Нас"
+  },
+  "common": {
+    "phoneAvailable": "С понедельника по пятницу с 9 до 18",
+    "requestLoan": "Заявка на Кредит",
+    "discover": "Открыть",
+    "learnMoreAbout": "Узнать больше о",
+    "startRequest": "Начать мою заявку"
+  }
+}

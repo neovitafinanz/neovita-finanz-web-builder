@@ -1,0 +1,30 @@
+
+{
+  "hero": {
+    "slide1": {
+      "title": "Velkommen til Neovita Finanz",
+      "subtitle": "Din specialist i finansiering",
+      "description": "Opdag vores finansieringstjenester med ekspert og personlig støtte."
+    },
+    "slide2": {
+      "title": "Realkreditlån",
+      "subtitle": "Realiser Dit Ejendomsprojekt",
+      "description": "Konkurrencedygtige renter og skræddersyet støtte til at realisere dine ejendomsprojekter."
+    },
+    "slide3": {
+      "title": "Kreditsammenlægning",
+      "subtitle": "Forenkl Din Økonomi",
+      "description": "Saml dine kreditter i én for at reducere månedlige betalinger og genvinde økonomisk ro."
+    },
+    "slide4": {
+      "title": "Erfaring & Nærhed",
+      "subtitle": "43 Rådgivere Til Din Tjeneste",
+      "description": "Et team af dedikerede specialister til at ledsage dig i alle dine finansieringsprojekter."
+    },
+    "cta": {
+      "primary": "Lav en ansøgning",
+      "secondary": "Simuler mit lån"
+    },
+    "disclaimer": "En kredit forpligter dig og skal tilbagebetales. Tjek din tilbagebetalingsevne før du forpligter dig."
+  }
+}

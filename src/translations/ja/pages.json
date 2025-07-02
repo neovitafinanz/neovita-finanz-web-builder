@@ -1,0 +1,45 @@
+
+{
+  "home": {
+    "metaDescription": "Neovita Finanz - あなたの融資専門家。専門サポートによるプロフェッショナルな融資サービス。",
+    "servicesTitle": "私たちの融資サービス",
+    "servicesSubtitle": "あなたのすべての融資ニーズに適応したソリューション",
+    "advantagesTitle": "なぜNeovita Finanzを選ぶのか",
+    "ctaTitle": "あなたのプロジェクトを融資する準備はできていますか？",
+    "ctaSubtitle": "私たちの専門家があなたの融資プロジェクトをサポートします"
+  },
+  "personalLoans": {
+    "metaDescription": "Neovita Finanzでの個人ローン。あなたのすべての個人プロジェクトのための迅速で柔軟な融資。",
+    "hero": {
+      "subtitle": "あなたのすべての個人プロジェクトを融資"
+    },
+    "advantages": {
+      "title": "個人ローンの利点",
+      "flexibility": "資金の自由な使用",
+      "rapidResponse": "48時間以内の迅速な回答",
+      "competitiveRates": "競争力のある金利",
+      "noCollateral": "保証や保証人なし",
+      "personalizedSupport": "個人化されたサポート",
+      "freeStudy": "無料の書類審査"
+    },
+    "cta": {
+      "study": "私の書類を審査"
+    }
+  },
+  "about": {
+    "metaDescription": "Neovita Finanzについて - 融資における私たちの経験と専門家チームをご発見ください。",
+    "hero": {
+      "subtitle": "15年間のあなたの信頼できるパートナー"
+    },
+    "mission": {
+      "title": "私たちの使命",
+      "description": "私たちは経験、透明性、親近性をもって、お客様の融資プロジェクトをサポートします。43名の専門コンサルタントからなる私たちのチームが、あなたのプロジェクトの各段階をガイドします。"
+    },
+    "stats": {
+      "advisors": "コンサルタント",
+      "experience": "年の経験",
+      "clients": "満足したお客様",
+      "trust": "信頼"
+    }
+  }
+}

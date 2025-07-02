@@ -1,0 +1,30 @@
+
+{
+  "hero": {
+    "slide1": {
+      "title": "Bem-vindos à Neovita Finanz",
+      "subtitle": "O seu especialista em financiamento",
+      "description": "Descubra os nossos serviços de financiamento com apoio especializado e personalizado."
+    },
+    "slide2": {
+      "title": "Empréstimos Imobiliários",
+      "subtitle": "Realize o Seu Projeto Imobiliário",
+      "description": "Taxas competitivas e apoio à medida para realizar os seus projetos imobiliários."
+    },
+    "slide3": {
+      "title": "Consolidação de Crédito",
+      "subtitle": "Simplifique as Suas Finanças",
+      "description": "Agrupe os seus créditos num só para reduzir as mensalidades e recuperar a serenidade financeira."
+    },
+    "slide4": {
+      "title": "Experiência & Proximidade",
+      "subtitle": "43 Consultores ao Seu Serviço",
+      "description": "Uma equipa de especialistas dedicada para o acompanhar em todos os seus projetos de financiamento."
+    },
+    "cta": {
+      "primary": "Fazer um pedido",
+      "secondary": "Simular o meu empréstimo"
+    },
+    "disclaimer": "Um crédito compromete-o e deve ser reembolsado. Verifique a sua capacidade de reembolso antes de se comprometer."
+  }
+}
