@@ -242,6 +242,18 @@
     "reviews": "Bewertungen",
     "loanTypeLabel": "Kreditart",
     "amountLabel": "Betrag",
+    "marie": {
+      "comment": "Ausgezeichneter Service, schnell und professionell. Ich empfehle Neovita Finanz!",
+      "loanType": "Hypothekendarlehen"
+    },
+    "pierre": {
+      "comment": "Das Team hat mich während meines gesamten Projekts begleitet. Sehr zufrieden!",
+      "loanType": "Privatkredit"
+    },
+    "sophie": {
+      "comment": "Einen Kredit zu bekommen war noch nie so einfach. Danke an das ganze Team!",
+      "loanType": "Arbeitskredit"
+    },
     "jeanmarc": {
       "comment": "Dank NeoVita erhielt ich schnell einen Kredit, um mein Projekt zu starten.",
       "loanType": "Selbstständigenkredit"
@@ -250,10 +262,17 @@
       "comment": "Tadelloser, schneller und sehr professioneller Service!",
       "loanType": "Privatkredit"
     },
-    "pedro": {
-      "comment": "Alles lief gut, von der Simulation bis zur Zahlung.",
-      "loanType": "Autofinanzierung"
-    }
+    "thomas": {
+      "comment": "Außergewöhnliche persönliche Betreuung. Ich empfehle es wärmstens!",
+      "loanType": "Kreditumschuldung"
+    },
+    "previous": "Vorherige",
+    "next": "Nächste",
+    "goToPage": "Zur Seite gehen",
+    "trustTitle": "Unsere Garantien",
+    "satisfiedClients": "Zufriedene Kunden",
+    "averageResponse": "Durchschnittliche Antwortzeit",
+    "averageRating": "Durchschnittliche Bewertung"
   },
   "loanRequest": {
     "metaDescription": "Kreditantrag mit NeoVita Finanz. Stellen Sie online Ihren Kreditantrag mit schneller Bearbeitung.",

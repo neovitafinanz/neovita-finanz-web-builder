@@ -328,6 +328,18 @@
     "reviews": "beoordelingen",
     "loanTypeLabel": "Type lening",
     "amountLabel": "Bedrag",
+    "marie": {
+      "comment": "Uitstekende service, snel en professioneel. Ik beveel Neovita Finanz aan!",
+      "loanType": "Hypothecaire lening"
+    },
+    "pierre": {
+      "comment": "Het team heeft mij gedurende mijn hele project begeleid. Zeer tevreden!",
+      "loanType": "Persoonlijke lening"
+    },
+    "sophie": {
+      "comment": "Een lening krijgen is nog nooit zo eenvoudig geweest. Dank aan het hele team!",
+      "loanType": "Werkkredit"
+    },
     "jeanmarc": {
       "comment": "Dankzij NeoVita kreeg ik snel een lening om mijn project te starten.",
       "loanType": "Zelfstandige lening"
@@ -336,10 +348,17 @@
       "comment": "Onberispelijke, snelle en zeer professionele service!",
       "loanType": "Persoonlijke lening"
     },
-    "pedro": {
-      "comment": "Alles ging goed, van simulatie tot betaling.",
-      "loanType": "Autofinanciering"
-    }
+    "thomas": {
+      "comment": "Uitzonderlijke persoonlijke opvolging. Ik beveel ten zeerste aan!",
+      "loanType": "Kredietsamenvoeging"
+    },
+    "previous": "Vorige",
+    "next": "Volgende",
+    "goToPage": "Ga naar pagina",
+    "trustTitle": "Onze garanties",
+    "satisfiedClients": "Tevreden klanten",
+    "averageResponse": "Gemiddelde reactietijd",
+    "averageRating": "Gemiddelde beoordeling"
   },
   "footer": {
     "tagline": "Uw specialist in voertuigimport",

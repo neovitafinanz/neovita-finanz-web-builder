@@ -253,6 +253,18 @@
     "reviews": "recensioni",
     "loanTypeLabel": "Tipo di prestito",
     "amountLabel": "Importo",
+    "marie": {
+      "comment": "Servizio eccellente, veloce e professionale. Raccomando Neovita Finanz!",
+      "loanType": "Mutuo ipotecario"
+    },
+    "pierre": {
+      "comment": "Il team mi ha accompagnato durante tutto il mio progetto. Molto soddisfatto!",
+      "loanType": "Prestito personale"
+    },
+    "sophie": {
+      "comment": "Ottenere un prestito non è mai stato così facile. Grazie a tutto il team!",
+      "loanType": "Credito lavori"
+    },
     "jeanmarc": {
       "comment": "Grazie a NeoVita, ho ottenuto rapidamente un prestito per lanciare il mio progetto.",
       "loanType": "Prestito libero professionista"
@@ -261,10 +273,17 @@
       "comment": "Servizio impeccabile, veloce e molto professionale!",
       "loanType": "Prestito personale"
     },
-    "pedro": {
-      "comment": "Tutto è andato bene, dalla simulazione al pagamento.",
-      "loanType": "Finanziamento auto"
-    }
+    "thomas": {
+      "comment": "Follow-up personalizzato eccezionale. Lo raccomando vivamente!",
+      "loanType": "Consolidamento crediti"
+    },
+    "previous": "Precedente",
+    "next": "Successivo",
+    "goToPage": "Vai alla pagina",
+    "trustTitle": "Le nostre garanzie",
+    "satisfiedClients": "Clienti soddisfatti",
+    "averageResponse": "Tempo medio di risposta",
+    "averageRating": "Valutazione media"
   },
   "loanTypes": {
     "personal": "Prestito personale",

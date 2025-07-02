@@ -226,6 +226,18 @@
     "reviews": "opiniones",
     "loanTypeLabel": "Tipo de préstamo",
     "amountLabel": "Importe",
+    "marie": {
+      "comment": "Excelente servicio, rápido y profesional. ¡Recomiendo Neovita Finanz!",
+      "loanType": "Préstamo hipotecario"
+    },
+    "pierre": {
+      "comment": "El equipo me acompañó durante todo mi proyecto. ¡Muy satisfecho!",
+      "loanType": "Préstamo personal"
+    },
+    "sophie": {
+      "comment": "Obtener un préstamo nunca había sido tan fácil. ¡Gracias a todo el equipo!",
+      "loanType": "Crédito para obras"
+    },
     "jeanmarc": {
       "comment": "Gracias a NeoVita, obtuve rápidamente un préstamo para lanzar mi proyecto.",
       "loanType": "Préstamo autónomo"
@@ -234,10 +246,17 @@
       "comment": "¡Servicio impecable, rápido y muy profesional!",
       "loanType": "Préstamo personal"
     },
-    "pedro": {
-      "comment": "Todo salió bien, desde la simulación hasta el pago.",
-      "loanType": "Financiación de automóvil"
-    }
+    "thomas": {
+      "comment": "Seguimiento personalizado excepcional. ¡Lo recomiendo encarecidamente!",
+      "loanType": "Reagrupación de créditos"
+    },
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "goToPage": "Ir a la página",
+    "trustTitle": "Nuestras garantías",
+    "satisfiedClients": "Clientes satisfechos",
+    "averageResponse": "Tiempo promedio de respuesta",
+    "averageRating": "Calificación promedio"
   },
   "loanTypes": {
     "personal": "Préstamo personal",

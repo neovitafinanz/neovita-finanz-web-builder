@@ -349,6 +349,18 @@
     "reviews": "reviews",
     "loanTypeLabel": "Loan Type",
     "amountLabel": "Amount",
+    "marie": {
+      "comment": "Excellent service, fast and professional. I recommend Neovita Finanz!",
+      "loanType": "Mortgage loan"
+    },
+    "pierre": {
+      "comment": "The team supported me throughout my project. Very satisfied!",
+      "loanType": "Personal loan"
+    },
+    "sophie": {
+      "comment": "Getting a loan has never been so easy. Thanks to the whole team!",
+      "loanType": "Home improvement loan"
+    },
     "jeanmarc": {
       "comment": "Thanks to Neovita, I quickly obtained a loan to launch my project.",
       "loanType": "Self-employed loan"
@@ -357,10 +369,17 @@
       "comment": "Impeccable, fast and very professional service!",
       "loanType": "Personal loan"
     },
-    "pedro": {
-      "comment": "Everything went well, from simulation to payment.",
-      "loanType": "Auto financing"
-    }
+    "thomas": {
+      "comment": "Exceptional personalized follow-up. I highly recommend!",
+      "loanType": "Credit consolidation"
+    },
+    "previous": "Previous",
+    "next": "Next",
+    "goToPage": "Go to page",
+    "trustTitle": "Our guarantees",
+    "satisfiedClients": "Satisfied clients",
+    "averageResponse": "Average response time",
+    "averageRating": "Average rating"
   },
   "footer": {
     "tagline": "Your trusted financial partner",
