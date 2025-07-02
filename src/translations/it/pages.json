@@ -1,0 +1,45 @@
+
+{
+  "home": {
+    "metaDescription": "Neovita Finanz - Il vostro specialista nel finanziamento. Servizi professionali di finanziamento con supporto esperto.",
+    "servicesTitle": "I Nostri Servizi di Finanziamento",
+    "servicesSubtitle": "Soluzioni adatte a tutte le vostre esigenze di finanziamento",
+    "advantagesTitle": "Perché Scegliere Neovita Finanz",
+    "ctaTitle": "Pronti a Finanziare il Vostro Progetto?",
+    "ctaSubtitle": "I nostri esperti vi accompagnano nel vostro progetto di finanziamento"
+  },
+  "personalLoans": {
+    "metaDescription": "Prestiti personali con Neovita Finanz. Finanziamento rapido e flessibile per tutti i vostri progetti personali.",
+    "hero": {
+      "subtitle": "Finanziate tutti i vostri progetti personali"
+    },
+    "advantages": {
+      "title": "Vantaggi dei prestiti personali",
+      "flexibility": "Uso libero dei fondi",
+      "rapidResponse": "Risposta rapida entro 48h",
+      "competitiveRates": "Tassi competitivi",
+      "noCollateral": "Senza garanzie o fideiussioni",
+      "personalizedSupport": "Supporto personalizzato",
+      "freeStudy": "Studio gratuito del dossier"
+    },
+    "cta": {
+      "study": "Studia il mio dossier"
+    }
+  },
+  "about": {
+    "metaDescription": "Su Neovita Finanz - Scoprite la nostra esperienza nel finanziamento e il nostro team di specialisti.",
+    "hero": {
+      "subtitle": "Il vostro partner di fiducia da 15 anni"
+    },
+    "mission": {
+      "title": "La Nostra Missione",
+      "description": "Accompagniamo i nostri clienti nei loro progetti di finanziamento con esperienza, trasparenza e vicinanza. Il nostro team di 43 consulenti specializzati vi guida in ogni fase del vostro progetto."
+    },
+    "stats": {
+      "advisors": "Consulenti",
+      "experience": "Anni di esperienza",
+      "clients": "Clienti soddisfatti",
+      "trust": "Fiducia"
+    }
+  }
+}

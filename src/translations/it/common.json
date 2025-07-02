@@ -1,0 +1,19 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "personalLoans": "Prestiti Personali",
+    "mortgageLoans": "Mutui Immobiliari",
+    "creditBuyback": "Consolidamento Crediti",
+    "workCredit": "Credito Lavori",
+    "insurance": "Assicurazioni",
+    "about": "Chi Siamo"
+  },
+  "common": {
+    "phoneAvailable": "Dal lunedì al venerdì dalle 9 alle 18",
+    "requestLoan": "Richiesta Prestito",
+    "discover": "Scopri",
+    "learnMoreAbout": "Scopri di più su",
+    "startRequest": "Inizia la mia richiesta"
+  }
+}

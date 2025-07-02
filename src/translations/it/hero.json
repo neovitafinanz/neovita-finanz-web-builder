@@ -1,0 +1,30 @@
+
+{
+  "hero": {
+    "slide1": {
+      "title": "Benvenuti da Neovita Finanz",
+      "subtitle": "Il vostro specialista nel finanziamento",
+      "description": "Scoprite i nostri servizi di finanziamento con supporto esperto e personalizzato."
+    },
+    "slide2": {
+      "title": "Mutui Immobiliari",
+      "subtitle": "Realizzate il Vostro Progetto Immobiliare",
+      "description": "Tassi competitivi e supporto su misura per realizzare i vostri progetti immobiliari."
+    },
+    "slide3": {
+      "title": "Consolidamento Crediti",
+      "subtitle": "Semplificate le Vostre Finanze",
+      "description": "Raggruppate i vostri crediti in uno solo per ridurre le rate mensili e ritrovare la serenità finanziaria."
+    },
+    "slide4": {
+      "title": "Esperienza & Vicinanza",
+      "subtitle": "43 Consulenti al Vostro Servizio",
+      "description": "Un team di esperti dedicato per accompagnarvi in tutti i vostri progetti di finanziamento."
+    },
+    "cta": {
+      "primary": "Fare una richiesta",
+      "secondary": "Simula il mio prestito"
+    },
+    "disclaimer": "Un credito vi impegna e deve essere rimborsato. Verificate la vostra capacità di rimborso prima di impegnarvi."
+  }
+}

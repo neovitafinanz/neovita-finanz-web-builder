@@ -1,0 +1,77 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "personalLoans": "Prestiti Personali",
+    "mortgageLoans": "Mutui Immobiliari", 
+    "creditBuyback": "Consolidamento Crediti",
+    "workCredit": "Credito Lavori",
+    "insurance": "Assicurazioni",
+    "about": "Chi Siamo"
+  },
+  "common": {
+    "phoneAvailable": "Dal lunedì al venerdì dalle 9 alle 18",
+    "requestLoan": "Richiesta Prestito",
+    "discover": "Scopri",
+    "learnMoreAbout": "Scopri di più su",
+    "startRequest": "Inizia la mia richiesta"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Benvenuti da Neovita Finanz",
+      "subtitle": "Il vostro specialista nel finanziamento",
+      "description": "Scoprite i nostri servizi di finanziamento con supporto esperto e personalizzato."
+    },
+    "slide2": {
+      "title": "Mutui Immobiliari",
+      "subtitle": "Realizzate il Vostro Progetto Immobiliare",
+      "description": "Tassi competitivi e supporto su misura per realizzare i vostri progetti immobiliari."
+    },
+    "slide3": {
+      "title": "Consolidamento Crediti",
+      "subtitle": "Semplificate le Vostre Finanze",
+      "description": "Raggruppate i vostri crediti in uno solo per ridurre le rate mensili e ritrovare la serenità finanziaria."
+    },
+    "slide4": {
+      "title": "Esperienza & Vicinanza",
+      "subtitle": "43 Consulenti al Vostro Servizio",
+      "description": "Un team di esperti dedicato per accompagnarvi in tutti i vostri progetti di finanziamento."
+    },
+    "cta": {
+      "primary": "Fare una richiesta",
+      "secondary": "Simula il mio prestito"
+    },
+    "disclaimer": "Un credito vi impegna e deve essere rimborsato. Verificate la vostra capacità di rimborso prima di impegnarvi."
+  },
+  "loanForm": {
+    "title": "Richiesta Prestito",
+    "subtitle": "Compilate questo modulo per richiedere un prestito. Il nostro team di esperti vi contatterà rapidamente.",
+    "formTitle": "Modulo di Richiesta",
+    "firstName": "Nome",
+    "lastName": "Cognome",
+    "email": "Email",
+    "phone": "Telefono",
+    "loanType": "Tipo di prestito",
+    "amount": "Importo desiderato",
+    "duration": "Durata",
+    "income": "Reddito mensile",
+    "message": "Messaggio aggiuntivo",
+    "firstNamePlaceholder": "Il vostro nome",
+    "lastNamePlaceholder": "Il vostro cognome",
+    "emailPlaceholder": "vostra.email@esempio.com",
+    "phonePlaceholder": "06 12 34 56 78",
+    "selectLoanType": "Seleziona tipo di prestito",
+    "months": "mesi",
+    "messagePlaceholder": "Descrivete il vostro progetto o esigenze specifiche...",
+    "submit": "Invia la mia richiesta",
+    "disclaimer": "* Campi obbligatori. I vostri dati sono protetti e saranno utilizzati solo per elaborare la vostra richiesta.",
+    "validation": {
+      "missingFields": "Campi mancanti",
+      "fillRequired": "Compilate tutti i campi obbligatori."
+    },
+    "success": {
+      "title": "Richiesta inviata con successo",
+      "message": "Vi contatteremo il prima possibile."
+    }
+  }
+}
