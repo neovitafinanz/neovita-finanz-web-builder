@@ -406,6 +406,9 @@
     },
     "warning": {
       "title": "Informações Importantes",
+      "interestRateLabel": "Taxa de juro",
+      "creditLabel": "Crédito", 
+      "insuranceLabel": "Seguro",
       "rates": "De 0,9% a 19,9% segundo perfil e duração",
       "credit": "Um crédito compromete-o e deve ser reembolsado",
       "insurance": "O seguro do mutuário não é obrigatório"

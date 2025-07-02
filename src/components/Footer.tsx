@@ -202,13 +202,13 @@ const Footer = () => {
               <h4 className="text-lg font-bold text-yellow-400 mb-4">{t('footer.warning.title')}</h4>
               <div className="text-sm text-green-200 space-y-2">
                 <p>
-                  <strong>Taux d'intérêt :</strong> {t('footer.warning.rates')}
+                  <strong>{t('footer.warning.interestRateLabel')} :</strong> {t('footer.warning.rates')}
                 </p>
                 <p>
-                  <strong>Crédit :</strong> {t('footer.warning.credit')}
+                  <strong>{t('footer.warning.creditLabel')} :</strong> {t('footer.warning.credit')}
                 </p>
                 <p>
-                  <strong>Assurance :</strong> {t('footer.warning.insurance')}
+                  <strong>{t('footer.warning.insuranceLabel')} :</strong> {t('footer.warning.insurance')}
                 </p>
               </div>
             </div>

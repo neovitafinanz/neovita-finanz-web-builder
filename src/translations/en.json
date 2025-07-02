@@ -427,6 +427,9 @@
     },
     "warning": {
       "title": "Important Information",
+      "interestRateLabel": "Interest rate",
+      "creditLabel": "Credit",
+      "insuranceLabel": "Insurance",
       "rates": "From 0.9% to 19.9% depending on profile and duration",
       "credit": "A credit commits you and must be repaid",
       "insurance": "Borrower insurance is not mandatory"

@@ -406,6 +406,9 @@
     },
     "warning": {
       "title": "Informazioni Importanti",
+      "interestRateLabel": "Tasso di interesse",
+      "creditLabel": "Credito",
+      "insuranceLabel": "Assicurazione",
       "rates": "Dallo 0,9% al 19,9% secondo profilo e durata",
       "credit": "Un credito vi impegna e deve essere rimborsato",
       "insurance": "L'assicurazione del mutuatario non è obbligatoria"

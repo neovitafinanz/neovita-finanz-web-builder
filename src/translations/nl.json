@@ -406,6 +406,9 @@
     },
     "warning": {
       "title": "Belangrijke Informatie",
+      "interestRateLabel": "Rentevoet",
+      "creditLabel": "Krediet",
+      "insuranceLabel": "Verzekering",
       "rates": "Van 0,9% tot 19,9% volgens profiel en looptijd",
       "credit": "Een krediet verplicht u en moet worden terugbetaald",
       "insurance": "Lener verzekering is niet verplicht"
