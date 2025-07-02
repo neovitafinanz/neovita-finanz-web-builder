@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Hjem",
@@ -134,6 +135,30 @@
     },
     "cta": {
       "finance": "Finansier mine arbejder"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Forsikringer med Neovita Finanz. Beskyt dine projekter og investeringer med skræddersyede forsikringsløsninger.",
+    "hero": {
+      "title": "Forsikringer",
+      "subtitle": "Beskyt dine investeringer og projekter"
+    },
+    "types": {
+      "borrower": {
+        "title": "Låntagers Forsikring",
+        "description": "Beskyt dig selv og dine nærmeste i tilfælde af død, invaliditet eller arbejdsløshed"
+      },
+      "home": {
+        "title": "Boligforsikring",
+        "description": "Sikr dit hjem og dine ejendele med omfattende dækning"
+      },
+      "health": {
+        "title": "Sundhedsforsikring",
+        "description": "Få adgang til kvalitetssundhedspleje med vores sundhedsplaner"
+      }
+    },
+    "cta": {
+      "quote": "Få et tilbud"
     }
   },
   "about": {
