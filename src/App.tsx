@@ -23,10 +23,15 @@ function AppRoutes() {
       {/* Routes principales */}
       <Route path="/" element={<Index />} />
       <Route path="/pret-personnel" element={<PretPersonnel />} />
+      <Route path="/prets-personnels" element={<PretPersonnel />} />
       <Route path="/pret-immobilier" element={<PretImmobilier />} />
+      <Route path="/prets-immobiliers" element={<PretImmobilier />} />
       <Route path="/rachat-credit" element={<RachatCredit />} />
+      <Route path="/rachats-credits" element={<RachatCredit />} />
       <Route path="/credit-travaux" element={<CreditTravaux />} />
+      <Route path="/credits-travaux" element={<CreditTravaux />} />
       <Route path="/nos-assurances" element={<Assurances />} />
+      <Route path="/assurances" element={<Assurances />} />
       <Route path="/a-propos" element={<About />} />
       <Route path="/partenaires" element={<Partenaires />} />
       <Route path="/demande-credit" element={<FormulaireCredit />} />
@@ -41,10 +46,15 @@ function AppRoutes() {
       {/* Routes avec préfixe de langue */}
       <Route path="/:lang" element={<Index />} />
       <Route path="/:lang/pret-personnel" element={<PretPersonnel />} />
+      <Route path="/:lang/prets-personnels" element={<PretPersonnel />} />
       <Route path="/:lang/pret-immobilier" element={<PretImmobilier />} />
+      <Route path="/:lang/prets-immobiliers" element={<PretImmobilier />} />
       <Route path="/:lang/rachat-credit" element={<RachatCredit />} />
+      <Route path="/:lang/rachats-credits" element={<RachatCredit />} />
       <Route path="/:lang/credit-travaux" element={<CreditTravaux />} />
+      <Route path="/:lang/credits-travaux" element={<CreditTravaux />} />
       <Route path="/:lang/nos-assurances" element={<Assurances />} />
+      <Route path="/:lang/assurances" element={<Assurances />} />
       <Route path="/:lang/a-propos" element={<About />} />
       <Route path="/:lang/partenaires" element={<Partenaires />} />
       <Route path="/:lang/demande-credit" element={<FormulaireCredit />} />
