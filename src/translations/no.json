@@ -1,0 +1,336 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "personalLoans": "Personlige Lån",
+    "mortgageLoans": "Boliglån",
+    "creditBuyback": "Kredittsamling",
+    "workCredit": "Arbeidskredit",
+    "insurance": "Forsikringer",
+    "about": "Om Oss"
+  },
+  "common": {
+    "phoneAvailable": "Mandag til fredag fra 9 til 18",
+    "requestLoan": "Lånesøknad",
+    "discover": "Oppdag",
+    "learnMoreAbout": "Lær mer om",
+    "startRequest": "Start min søknad"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Velkommen til Neovita Finanz",
+      "subtitle": "Din finansieringsspesialist",
+      "description": "Oppdag våre finansieringstjenester med ekspert og personlig veiledning."
+    },
+    "slide2": {
+      "title": "Boliglån",
+      "subtitle": "Realiser Ditt Eiendomsprosjekt",
+      "description": "Konkurransedyktige renter og skreddersydd veiledning for å realisere dine eiendomsprosjekter."
+    },
+    "slide3": {
+      "title": "Kredittsamling",
+      "subtitle": "Forenkle Din Økonomi",
+      "description": "Samle dine kreditter i en for å redusere dine månedlige betalinger og gjenvinne din økonomiske ro."
+    },
+    "slide4": {
+      "title": "Ekspertise & Nærhet",
+      "subtitle": "43 Rådgivere til Din Tjeneste",
+      "description": "Et dedikert team av eksperter for å ledsage deg i alle dine finansieringsprosjekter."
+    },
+    "cta": {
+      "primary": "Gjør en søknad",
+      "secondary": "Simuler mitt lån"
+    },
+    "disclaimer": "En kreditt forplikter deg og må betales tilbake. Kontroller din tilbakebetalingsevne før du forplikter deg."
+  },
+  "home": {
+    "metaDescription": "Neovita Finanz - Din finansieringsspesialist. Profesjonelle finansieringstjenester med ekspertveiledning.",
+    "servicesTitle": "Våre Finansieringstjenester",
+    "servicesSubtitle": "Løsninger tilpasset alle dine finansieringsbehov",
+    "advantagesTitle": "Hvorfor Velge Neovita Finanz",
+    "ctaTitle": "Klar til å Finansiere Ditt Prosjekt?",
+    "ctaSubtitle": "Våre eksperter ledsager deg i ditt finansieringsprosjekt"
+  },
+  "personalLoans": {
+    "metaDescription": "Personlige lån med Neovita Finanz. Rask og fleksibel finansiering for alle dine personlige prosjekter.",
+    "hero": {
+      "subtitle": "Finansier alle dine personlige prosjekter"
+    },
+    "advantages": {
+      "title": "Fordeler med personlige lån",
+      "flexibility": "Fri bruk av midler",
+      "rapidResponse": "Raskt svar innen 48t",
+      "competitiveRates": "Konkurransedyktige renter",
+      "noCollateral": "Ingen garanti eller kausjon",
+      "personalizedSupport": "Personlig veiledning",
+      "freeStudy": "Gratis filstudie"
+    },
+    "cta": {
+      "study": "Studer min fil"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Boliglån med Neovita Finanz. Realiser ditt eiendomsprosjekt med konkurransedyktige renter.",
+    "hero": {
+      "subtitle": "Realiser ditt eiendomsprosjekt"
+    },
+    "characteristics": {
+      "title": "Egenskaper for boliglån",
+      "highAmounts": "Høye beløp",
+      "highAmountsDesc": "Opp til 80% av eiendommens verdi",
+      "allProjects": "Alle prosjekter",
+      "allProjectsDesc": "Kjøp, bygging, renovering",
+      "secured": "Sikret",
+      "securedDesc": "Garantert av eiendommen",
+      "advantageousRates": "Fordelaktige renter",
+      "advantageousRatesDesc": "Konkurransedyktige renter på markedet"
+    },
+    "advantages": {
+      "title": "Fordeler med våre boliglån",
+      "competitiveRates": "Konkurransedyktige renter",
+      "personalizedSupport": "Personlig veiledning",
+      "freeStudy": "Gratis filstudie",
+      "bankNegotiation": "Forhandling med banker",
+      "followUp": "Oppfølging av ditt prosjekt",
+      "insurance": "Forsikringsløsninger"
+    },
+    "cta": {
+      "request": "Be om ditt boliglån",
+      "apply": "Søk nå"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Arbeidskredit med Neovita Finanz. Finansier dine renoverings- og byggeprosjekter.",
+    "hero": {
+      "title": "Arbeidskredit",
+      "subtitle": "Finansier dine renoverings- og byggeprosjekter"
+    },
+    "projectTypes": {
+      "title": "Våre prosjekttyper",
+      "energyRenovation": "Energirenovering",
+      "houseExtension": "Husutvidelse",
+      "interiorDesign": "Interiørdesign",
+      "roofWork": "Takarbeid",
+      "poolInstallation": "Bassenginstallasjon",
+      "kitchenBathroom": "Kjøkken og bad"
+    },
+    "cta": {
+      "finance": "Finansier mine arbeider"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Forsikringer med Neovita Finanz. Beskytt dine prosjekter og dine kjære.",
+    "hero": {
+      "title": "Våre forsikringer",
+      "subtitle": "Beskytt dine prosjekter og dine kjære"
+    },
+    "types": {
+      "borrower": {
+        "title": "Låntakerforsikring",
+        "description": "Beskytt deg og din familie ved dødsfall eller uførhet"
+      },
+      "home": {
+        "title": "Hjemmeforsikring",
+        "description": "Beskytt hjemmet ditt og dine eiendeler"
+      },
+      "health": {
+        "title": "Helseforsikring",
+        "description": "Tilleggshelsebeskyttelse for hele familien"
+      }
+    },
+    "cta": {
+      "quote": "Få et tilbud"
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Kredittsamling med Neovita Finanz. Reduser dine månedlige betalinger, forenkle din økonomiske forvaltning.",
+    "hero": {
+      "subtitle": "Optimaliser din økonomi ved å samle alle dine kreditter"
+    },
+    "advantages": {
+      "title": "Fordeler med kredittsamling",
+      "reduction": "Reduser dine månedlige betalinger",
+      "simplification": "Forenkle din forvaltning",
+      "betterRates": "Potensielt bedre renter",
+      "singlePayment": "En enkelt månedlig betaling",
+      "additionalCash": "Mulighet for ekstra kontanter",
+      "freeAdvice": "Gratis personlig rådgivning"
+    },
+    "cta": {
+      "request": "Be om denne samlingen",
+      "study": "Studer min fil"
+    }
+  },
+  "about": {
+    "metaDescription": "Om Neovita Finanz - Oppdag vår ekspertise innen finansiering og vårt team av spesialister.",
+    "hero": {
+      "subtitle": "Din pålitelige partner i 15 år"
+    },
+    "mission": {
+      "title": "Vårt Oppdrag",
+      "description": "Vi ledsager våre kunder i deres finansieringsprosjekter med ekspertise, åpenhet og nærhet. Vårt team av 43 spesialiserte rådgivere veileder deg gjennom hvert trinn av prosjektet ditt."
+    },
+    "stats": {
+      "advisors": "Rådgivere",
+      "experience": "År med erfaring",
+      "clients": "Fornøyde kunder",
+      "trust": "Tillit"
+    }
+  },
+  "partners": {
+    "title": "Våre Partnere",
+    "subtitle": "Et solid nettverk for din suksess",
+    "metaDescription": "Oppdag Neovita Finanz partnere. Nettverk av banker, meglere og forsikringsselskaper for å tilby deg de beste løsningene.",
+    "types": {
+      "banks": {
+        "title": "Partnerbanker",
+        "description": "Nettverk av banker og finansinstitusjoner"
+      },
+      "brokers": {
+        "title": "Meglere",
+        "description": "Samarbeid med erfarne meglere"
+      },
+      "insurers": {
+        "title": "Forsikringsselskaper",
+        "description": "Partnerskap med de beste forsikringsselskapene"
+      }
+    }
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Personlige Lån",
+      "description": "Finansier dine personlige prosjekter med fordelaktige betingelser"
+    },
+    "mortgageLoans": {
+      "title": "Boliglån",
+      "description": "Realiser ditt eiendomsprosjekt med vår ekspertise"
+    },
+    "creditBuyback": {
+      "title": "Kredittsamling",
+      "description": "Forenkle dine tilbakebetalinger og reduser dine månedlige betalinger"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Sikkerhet & Tillit",
+      "description": "Godkjent etablissement med 15 års erfaring innen finansiering"
+    },
+    "speed": {
+      "title": "Hastighet & Effektivitet",
+      "description": "Svar innen 48 timer og rask frigjøring av dine midler"
+    },
+    "experts": {
+      "title": "Ekspertveiledning",
+      "description": "43 spesialiserte rådgivere for å guide deg gjennom hvert trinn"
+    }
+  },
+  "simulator": {
+    "title": "Lånesimulator",
+    "subtitle": "Beregn din finansiering i få trinn",
+    "parameters": "Låneparametere",
+    "loanType": "Lånetype",
+    "selectLoanType": "Velg en type",
+    "amount": "Beløp"
+  },
+  "testimonials": {
+    "title": "Kundevitnesbyrd",
+    "subtitle": "Hva våre kunder sier",
+    "reviews": "anmeldelser",
+    "loanTypeLabel": "Lånetype",
+    "amountLabel": "Beløp",
+    "jeanmarc": {
+      "comment": "Takket være NeoVita fikk jeg raskt et lån for å starte prosjektet mitt.",
+      "loanType": "Selvstendig næringsdrivende lån"
+    },
+    "amelie": {
+      "comment": "Plettfri, rask og svært profesjonell service!",
+      "loanType": "Personlig lån"
+    },
+    "pedro": {
+      "comment": "Alt gikk bra, fra simulering til betaling.",
+      "loanType": "Bilfinansiering"
+    }
+  },
+  "creditForm": {
+    "title": "Lånesøknad",
+    "subtitle": "Fyll ut dette skjemaet for å søke om lån. Vårt ekspertteam vil kontakte deg raskt.",
+    "formTitle": "Søknadsskjema",
+    "firstName": "Fornavn",
+    "lastName": "Etternavn",
+    "email": "E-post",
+    "phone": "Telefon",
+    "loanType": "Type lån",
+    "amount": "Ønsket beløp",
+    "duration": "Varighet",
+    "income": "Månedlig inntekt",
+    "message": "Tilleggsmelding",
+    "firstNamePlaceholder": "Ditt fornavn",
+    "lastNamePlaceholder": "Ditt etternavn",
+    "emailPlaceholder": "din.epost@eksempel.com",
+    "phonePlaceholder": "12 34 56 78",
+    "selectLoanType": "Velg type lån",
+    "months": "måneder",
+    "messagePlaceholder": "Beskriv ditt prosjekt eller spesifikke behov...",
+    "submit": "Send min søknad",
+    "disclaimer": "* Obligatoriske felt. Dine data er beskyttet og vil kun brukes til å behandle søknaden din.",
+    "validation": {
+      "missingFields": "Manglende felt",
+      "fillRequired": "Vennligst fyll ut alle obligatoriske felt."
+    },
+    "success": {
+      "title": "Søknad sendt med suksess",
+      "message": "Vi kontakter deg så raskt som mulig."
+    }
+  },
+  "footer": {
+    "tagline": "Din finansieringsspesialist",
+    "description": "Neovita Finanz ledsager deg i alle dine finansieringsprosjekter med ekspertise og nærhet.",
+    "sections": {
+      "services": "Våre Tjenester",
+      "company": "Selskapet",
+      "legal": "Juridisk Informasjon"
+    },
+    "services": {
+      "personalLoans": "Personlige Lån",
+      "mortgageLoans": "Boliglån",
+      "creditBuyback": "Kredittsamling",
+      "workCredit": "Arbeidskredit",
+      "insurance": "Forsikringer"
+    },
+    "company": {
+      "about": "Om Oss",
+      "team": "Vårt Team",
+      "careers": "Karrierer",
+      "partners": "Partnere",
+      "news": "Nyheter"
+    },
+    "legal": {
+      "terms": "Juridiske Opplysninger",
+      "privacy": "Personvernpolicy",
+      "conditions": "Generelle Betingelser",
+      "sitemap": "Nettstedskart",
+      "cookies": "Informasjonskapsler"
+    },
+    "trust": {
+      "title": "Sertifiseringer",
+      "gdpr": "GDPR-konform",
+      "gdprDesc": "Databeskyttelse",
+      "ssl": "SSL-sikret",
+      "sslDesc": "Sikker tilkobling",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Godkjent etablissement"
+    },
+    "companyInfo": {
+      "title": "Selskapsinformasjon",
+      "legalForm": "Juridisk form",
+      "capital": "Kapital",
+      "employees": "Ansatte"
+    },
+    "warning": {
+      "title": "Viktig Informasjon",
+      "rates": "Fra 0,9% til 19,9% avhengig av profil og varighet",
+      "credit": "En kreditt forplikter deg og må betales tilbake",
+      "insurance": "Låntakerforsikring er ikke obligatorisk"
+    },
+    "copyright": "Alle rettigheter forbeholdt."
+  }
+}

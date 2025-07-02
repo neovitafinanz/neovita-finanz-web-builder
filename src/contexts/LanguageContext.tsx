@@ -1,7 +1,6 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { loadTranslations } from '../utils/translationLoader';
 
 type Language = 'fr' | 'en' | 'es' | 'it' | 'de' | 'pt' | 'nl' | 'sv' | 'no' | 'da' | 'zh-CN' | 'ja' | 'ru';
 
@@ -43,21 +42,21 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [location.pathname]);
 
-  // Load translations using the new modular system
+  // Load translations immediately on language change
   useEffect(() => {
-    const loadLanguageTranslations = async () => {
+    const loadTranslations = async () => {
       setIsLoading(true);
       try {
         console.log(`Loading translations for ${language}`);
-        const loadedTranslations = await loadTranslations(language);
-        setTranslations(loadedTranslations);
+        const translationModule = await import(`../translations/${language}.json`);
+        setTranslations(translationModule.default);
         console.log(`Successfully loaded translations for ${language}`);
       } catch (error) {
         console.error(`Failed to load translations for ${language}:`, error);
         // Fallback to French translations
         try {
-          const fallbackTranslations = await loadTranslations('fr');
-          setTranslations(fallbackTranslations);
+          const fallbackModule = await import('../translations/fr.json');
+          setTranslations(fallbackModule.default);
           console.log('Loaded fallback French translations');
         } catch (fallbackError) {
           console.error('Failed to load fallback translations:', fallbackError);
@@ -68,7 +67,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       }
     };
 
-    loadLanguageTranslations();
+    loadTranslations();
   }, [language]);
 
   const changeLanguage = (newLanguage: Language) => {

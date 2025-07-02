@@ -1,0 +1,417 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "personalLoans": "Personal Loans",
+    "mortgageLoans": "Mortgage Loans",
+    "creditBuyback": "Credit Buyback",
+    "workCredit": "Work Credit",
+    "insurance": "Insurance",
+    "about": "About"
+  },
+  "common": {
+    "phoneAvailable": "Monday to Friday 9am to 6pm",
+    "requestLoan": "Request Loan",
+    "discover": "Discover",
+    "learnMoreAbout": "Learn more about",
+    "startRequest": "Start my request"
+  },
+  "hero": {
+    "slide1": {
+      "title": "Welcome to Neovita Finanz",
+      "subtitle": "Your trusted financial partner",
+      "description": "Discover our financial services with expert and personalized support."
+    },
+    "slide2": {
+      "title": "Mortgage Loans",
+      "subtitle": "Realize Your Real Estate Project",
+      "description": "Competitive rates and tailor-made support to make your real estate projects a reality."
+    },
+    "slide3": {
+      "title": "Credit Buyback",
+      "subtitle": "Simplify Your Finances",
+      "description": "Consolidate your credits into one to reduce your monthly payments and regain your financial peace of mind."
+    },
+    "slide4": {
+      "title": "Expertise & Proximity",
+      "subtitle": "43 Advisors at Your Service",
+      "description": "A dedicated team of experts to support you in all your financing projects."
+    },
+    "cta": {
+      "primary": "Make a request",
+      "secondary": "Simulate my loan"
+    },
+    "disclaimer": "A credit commits you and must be repaid. Check your repayment capacity before committing."
+  },
+  "home": {
+    "metaDescription": "Neovita Finanz - Your trusted financial partner. Professional financial services with expert support.",
+    "servicesTitle": "Our Financial Services",
+    "servicesSubtitle": "Solutions adapted to all your financing needs",
+    "advantagesTitle": "Why Choose Neovita Finanz",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaSubtitle": "Our experts support you in your financing project"
+  },
+  "personalLoans": {
+    "metaDescription": "Personal loans with Neovita Finanz. Fast and flexible financing for all your personal projects.",
+    "hero": {
+      "subtitle": "Finance all your personal projects"
+    },
+    "advantages": {
+      "title": "Personal loan advantages",
+      "flexibility": "Free use of funds",
+      "rapidResponse": "Quick response within 48h",
+      "competitiveRates": "Competitive rates",
+      "noCollateral": "No guarantee or surety",
+      "personalizedSupport": "Personalized support",
+      "freeStudy": "Free file study"
+    },
+    "cta": {
+      "study": "Study my file"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Mortgage loan with Neovita Finanz. Competitive rates from 1.9%, personalized support for all your real estate projects.",
+    "hero": {
+      "subtitle": "Make your real estate project a reality with our expert support"
+    },
+    "characteristics": {
+      "title": "Mortgage Loan Characteristics",
+      "highAmounts": "High amounts",
+      "highAmountsDesc": "Up to €1,000,000",
+      "allProjects": "All projects",
+      "allProjectsDesc": "Purchase, construction, investment",
+      "secured": "Secured",
+      "securedDesc": "Mortgage guarantee",
+      "advantageousRates": "Advantageous rates",
+      "advantageousRatesDesc": "From 1.9% APR"
+    },
+    "advantages": {
+      "title": "Why choose our mortgage loan?",
+      "competitiveRates": "Competitive mortgage rates",
+      "personalizedSupport": "Personalized support",
+      "freeStudy": "Free file study",
+      "bankNegotiation": "Bank negotiation",
+      "followUp": "Follow-up until signature",
+      "insurance": "Borrower insurance included"
+    },
+    "cta": {
+      "request": "Request this loan",
+      "apply": "Apply now"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Work credit with Neovita Finanz. Finance your renovation and development projects. Advantageous conditions.",
+    "hero": {
+      "title": "Work Credit",
+      "subtitle": "Bring your renovation and development projects to life"
+    },
+    "projectTypes": {
+      "title": "Types of work financed",
+      "energyRenovation": "Energy renovation",
+      "houseExtension": "House extension",
+      "interiorDesign": "Interior design",
+      "roofWork": "Roof work",
+      "poolInstallation": "Pool installation",
+      "kitchenBathroom": "Kitchen/bathroom modernization"
+    },
+    "cta": {
+      "finance": "Finance my work"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Insurance solutions with Neovita Finanz. Borrower insurance, home insurance, health insurance. Optimal protection.",
+    "hero": {
+      "title": "Our Insurance",
+      "subtitle": "Protect what matters most to you"
+    },
+    "types": {
+      "borrower": {
+        "title": "Borrower insurance",
+        "description": "Protection of your loan"
+      },
+      "home": {
+        "title": "Home insurance",
+        "description": "Protection of your home"
+      },
+      "health": {
+        "title": "Health insurance",
+        "description": "Complete medical coverage"
+      }
+    },
+    "cta": {
+      "quote": "Request a quote"
+    }
+  },
+  "loanRequest": {
+    "metaDescription": "Make your credit request online. Quick response within 24h. Expert advisors available.",
+    "hero": {
+      "title": "Credit Request",
+      "subtitle": "Complete this form to make your request. Our team of experts will contact you quickly."
+    },
+    "form": {
+      "title": "Your Financing Request",
+      "personalInfo": "Personal information",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "emailConfirmation": "Email confirmation",
+      "phone": "Phone",
+      "project": "Your financing project",
+      "loanType": "Loan type",
+      "selectLoanType": "Select loan type",
+      "amount": "Desired amount",
+      "currency": "Currency",
+      "duration": "Desired duration (months)",
+      "situation": "Your situation",
+      "professionalSituation": "Professional situation",
+      "selectSituation": "Select your situation",
+      "monthlyIncome": "Net monthly income",
+      "message": "Additional message",
+      "messagePlaceholder": "Describe your project or specific needs...",
+      "submit": "Send my request",
+      "submitting": "Sending...",
+      "required": "* Required fields. Your data is protected and will only be used to process your request."
+    },
+    "reassurance": {
+      "title": "Why trust us?",
+      "secureData": {
+        "title": "Secure data",
+        "description": "Your information is protected by SSL encryption"
+      },
+      "quickResponse": {
+        "title": "Quick response",
+        "description": "Processing your request within 24h"
+      },
+      "availableAdvisors": {
+        "title": "Available advisors",
+        "description": "A team of experts at your service"
+      }
+    },
+    "advantages": {
+      "title": "Our advantages",
+      "experience": "Over 17 years of experience",
+      "experts": "43 experts at your service",
+      "rates": "Competitive rates",
+      "support": "Personalized support"
+    },
+    "contact": {
+      "title": "Need help?",
+      "description": "Our advisors are at your disposal",
+      "phone": "01 23 45 67 89",
+      "hours": "Monday to Friday 9am to 6pm"
+    },
+    "situations": {
+      "employee": "Permanent employee",
+      "temporaryEmployee": "Temporary employee",
+      "civilServant": "Civil servant",
+      "selfEmployed": "Self-employed",
+      "freelancer": "Freelancer",
+      "retired": "Retired",
+      "student": "Student",
+      "jobSeeker": "Job seeker"
+    },
+    "validation": {
+      "missingFields": "Missing fields",
+      "missingFieldsDesc": "Please fill in all required fields.",
+      "invalidEmail": "Invalid email",
+      "invalidEmailDesc": "Please enter a valid email address.",
+      "emailMismatch": "Emails do not match",
+      "emailMismatchDesc": "Email and confirmation do not match.",
+      "success": "Request sent successfully",
+      "successDesc": "We will contact you as soon as possible.",
+      "error": "Error",
+      "errorDesc": "An error occurred while sending. Please try again."
+    }
+  },
+  "creditBuyback": {
+    "metaDescription": "Credit buyback with Neovita Finanz. Reduce your monthly payments, simplify your financial management.",
+    "hero": {
+      "subtitle": "Optimize your finances by consolidating all your credits"
+    },
+    "advantages": {
+      "title": "Credit buyback advantages",
+      "reduction": "Reduce your monthly payments",
+      "simplification": "Simplify your management",
+      "betterRates": "Potentially better rates",
+      "singlePayment": "Single monthly payment",
+      "additionalCash": "Possibility of additional cash",
+      "freeAdvice": "Free personalized advice"
+    },
+    "cta": {
+      "request": "Request this buyback",
+      "study": "Study my file"
+    }
+  },
+  "about": {
+    "metaDescription": "About Neovita Finanz - Discover our financial expertise and our team of specialists.",
+    "hero": {
+      "subtitle": "Your trusted partner for 15 years"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We support our clients in their financing projects with expertise, transparency and proximity. Our team of 43 specialized advisors guides you at every step of your project."
+    },
+    "stats": {
+      "advisors": "Advisors",
+      "experience": "Years of experience",
+      "clients": "Satisfied clients",
+      "trust": "Trust"
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "A solid network for your success",
+    "metaDescription": "Discover Neovita Finanz partners. Network of banks, brokers and insurers to offer you the best solutions.",
+    "types": {
+      "banks": {
+        "title": "Partner banks",
+        "description": "Network of banks and financial institutions"
+      },
+      "brokers": {
+        "title": "Brokers",
+        "description": "Collaboration with experienced brokers"
+      },
+      "insurers": {
+        "title": "Insurers",
+        "description": "Partnerships with the best insurers"
+      }
+    },
+    "trustMessage": {
+      "title": "A trusted network",
+      "subtitle": "Partners selected for their expertise",
+      "labels": {
+        "fast": "Fast processing",
+        "secure": "Secure",
+        "reliable": "Reliable"
+      }
+    }
+  },
+  "services": {
+    "personalLoans": {
+      "title": "Personal Loans",
+      "description": "Finance your personal projects with advantageous conditions"
+    },
+    "mortgageLoans": {
+      "title": "Mortgage Loans",
+      "description": "Make your real estate project a reality with our expertise"
+    },
+    "creditBuyback": {
+      "title": "Credit Buyback",
+      "description": "Simplify your repayments and reduce your monthly payments"
+    }
+  },
+  "advantages": {
+    "security": {
+      "title": "Security & Trust",
+      "description": "Approved establishment with 15 years of experience in financing"
+    },
+    "speed": {
+      "title": "Speed & Efficiency",
+      "description": "Response within 48 hours and quick release of your funds"
+    },
+    "experts": {
+      "title": "Expert Support",
+      "description": "43 specialized advisors to guide you at every step"
+    }
+  },
+  "simulator": {
+    "title": "Loan Simulator",
+    "subtitle": "Calculate your financing in a few steps",
+    "parameters": "Loan Parameters",
+    "loanType": "Loan Type",
+    "selectLoanType": "Select a type",
+    "amount": "Amount",
+    "duration": "Duration",
+    "months": "months",
+    "years": "years",
+    "calculate": "Calculate",
+    "results": "Results",
+    "monthlyPayment": "Monthly Payment",
+    "totalCost": "Total Cost",
+    "interestRate": "Interest Rate",
+    "estimationSaved": "Estimation Saved",
+    "estimationSavedDesc": "Your simulation has been saved successfully",
+    "requestInProgress": "Request In Progress",
+    "requestInProgressDesc": "We will contact you quickly"
+  },
+  "loanTypes": {
+    "personal": "Personal loan",
+    "consumption": "Consumer credit",
+    "works": "Home improvement loan",
+    "mortgage": "Mortgage loan",
+    "consolidation": "Credit consolidation",
+    "lease": "Lease with option to buy",
+    "student": "Student loan"
+  },
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "What our customers say",
+    "reviews": "reviews",
+    "loanTypeLabel": "Loan Type",
+    "amountLabel": "Amount",
+    "jeanmarc": {
+      "comment": "Thanks to Neovita, I quickly obtained a loan to launch my project.",
+      "loanType": "Self-employed loan"
+    },
+    "amelie": {
+      "comment": "Impeccable, fast and very professional service!",
+      "loanType": "Personal loan"
+    },
+    "pedro": {
+      "comment": "Everything went well, from simulation to payment.",
+      "loanType": "Auto financing"
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted financial partner",
+    "description": "Neovita Finanz has been supporting you in all your financing projects with expertise and proximity.",
+    "sections": {
+      "services": "Our Services",
+      "company": "The Company",
+      "legal": "Legal Information"
+    },
+    "services": {
+      "personalLoans": "Personal Loans",
+      "mortgageLoans": "Mortgage Loans",
+      "creditBuyback": "Credit Buyback",
+      "workCredit": "Work Credit",
+      "insurance": "Insurance"
+    },
+    "company": {
+      "about": "About",
+      "team": "Our Team",
+      "careers": "Careers",
+      "partners": "Partners",
+      "news": "News"
+    },
+    "legal": {
+      "terms": "Legal Terms",
+      "privacy": "Privacy Policy",
+      "conditions": "General Conditions",
+      "sitemap": "Site Map",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifications",
+      "gdpr": "GDPR Compliant",
+      "gdprDesc": "Data protection",
+      "ssl": "SSL Secured",
+      "sslDesc": "Secure connection",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Approved establishment"
+    },
+    "companyInfo": {
+      "title": "Company Information",
+      "legalForm": "Legal form",
+      "capital": "Capital",
+      "employees": "Staff"
+    },
+    "warning": {
+      "title": "Important Information",
+      "rates": "From 0.9% to 19.9% depending on profile and duration",
+      "credit": "A credit commits you and must be repaid",
+      "insurance": "Borrower insurance is not mandatory"
+    },
+    "copyright": "All rights reserved."
+  }
+}
