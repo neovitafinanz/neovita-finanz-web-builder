@@ -1,55 +1,55 @@
 
 {
   "nav": {
-    "home": "Startpagina",
+    "home": "Home",
     "personalLoans": "Persoonlijke Leningen",
-    "mortgageLoans": "Hypotheken",
+    "mortgageLoans": "Hypothecaire Leningen",
     "creditBuyback": "Kredietsamenvoeging",
-    "workCredit": "Werkkredieten",
+    "workCredit": "Werkkredit",
     "insurance": "Verzekeringen",
     "about": "Over Ons"
   },
   "common": {
-    "phoneAvailable": "Maandag tot vrijdag van 9u tot 18u",
-    "requestLoan": "Lening Aanvragen",
+    "phoneAvailable": "Maandag tot vrijdag van 9 tot 18 uur",
+    "requestLoan": "Leningaanvraag",
     "discover": "Ontdekken",
-    "learnMoreAbout": "Meer weten over",
+    "learnMoreAbout": "Leer meer over",
     "startRequest": "Mijn aanvraag starten"
   },
   "hero": {
     "slide1": {
-      "title": "Welkom bij Neovita Finanz",
-      "subtitle": "Uw financieringsspecialist",
-      "description": "Ontdek onze financieringsdiensten met deskundige en persoonlijke begeleiding."
+      "title": "Welkom bij BHV Auto",
+      "subtitle": "Uw specialist in voertuigimport",
+      "description": "Ontdek onze voertuigimportdiensten met deskundige en gepersonaliseerde begeleiding."
     },
     "slide2": {
-      "title": "Hypotheken",
+      "title": "Hypothecaire Leningen",
       "subtitle": "Realiseer Uw Vastgoedproject",
-      "description": "Concurrerende tarieven en begeleiding op maat om uw vastgoedprojecten te realiseren."
+      "description": "Concurrerende tarieven en maatwerk begeleiding om uw vastgoedprojecten te realiseren."
     },
     "slide3": {
       "title": "Kredietsamenvoeging",
       "subtitle": "Vereenvoudig Uw Financiën",
-      "description": "Groepeer uw kredieten in één om uw maandlasten te verlagen en uw financiële rust terug te vinden."
+      "description": "Voeg uw kredieten samen om uw maandelijkse betalingen te verlagen en uw financiële rust terug te vinden."
     },
     "slide4": {
       "title": "Expertise & Nabijheid",
-      "subtitle": "43 Adviseurs Tot Uw Dienst",
-      "description": "Een toegewijd team van experts om u te begeleiden bij al uw financieringsprojecten."
+      "subtitle": "43 Adviseurs tot Uw Dienst",
+      "description": "Een toegewijd team van experts om u te begeleiden in al uw financieringsprojecten."
     },
     "cta": {
       "primary": "Een aanvraag doen",
       "secondary": "Mijn lening simuleren"
     },
-    "disclaimer": "Een krediet verplicht u en moet worden terugbetaald. Controleer uw terugbetalingscapaciteit voordat u zich verbindt."
+    "disclaimer": "Een krediet verplicht u en moet worden terugbetaald. Controleer uw terugbetalingscapaciteit voordat u zich committeert."
   },
   "home": {
-    "metaDescription": "Neovita Finanz - Uw financieringsspecialist. Professionele financieringsdiensten met deskundige begeleiding.",
-    "servicesTitle": "Onze Financieringsdiensten",
-    "servicesSubtitle": "Oplossingen aangepast aan al uw financieringsbehoeften",
-    "advantagesTitle": "Waarom Kiezen voor Neovita Finanz",
-    "ctaTitle": "Klaar om Uw Project te Financieren?",
-    "ctaSubtitle": "Onze experts begeleiden u bij uw financieringsproject"
+    "metaDescription": "BHV Auto - Uw specialist in voertuigimport. Professionele importdiensten met deskundige begeleiding.",
+    "servicesTitle": "Onze Importdiensten",
+    "servicesSubtitle": "Oplossingen aangepast aan al uw voertuigimportbehoeften",
+    "advantagesTitle": "Waarom BHV Auto Kiezen",
+    "ctaTitle": "Klaar om Uw Voertuig te Importeren?",
+    "ctaSubtitle": "Onze experts begeleiden u in uw importproject"
   },
   "personalLoans": {
     "metaDescription": "Persoonlijke leningen met Neovita Finanz. Snelle en flexibele financiering voor al uw persoonlijke projecten.",
@@ -59,10 +59,10 @@
     "advantages": {
       "title": "Voordelen van persoonlijke leningen",
       "flexibility": "Vrij gebruik van fondsen",
-      "rapidResponse": "Snel antwoord binnen 48u",
+      "rapidResponse": "Snelle reactie binnen 48u",
       "competitiveRates": "Concurrerende tarieven",
-      "noCollateral": "Geen garantie of borg",
-      "personalizedSupport": "Persoonlijke begeleiding",
+      "noCollateral": "Zonder garantie of borg",
+      "personalizedSupport": "Gepersonaliseerde begeleiding",
       "freeStudy": "Gratis dossierstudie"
     },
     "cta": {
@@ -70,90 +70,47 @@
     }
   },
   "mortgageLoans": {
-    "metaDescription": "Hypotheken met Neovita Finanz. Realiseer uw vastgoedproject met concurrerende tarieven.",
+    "metaDescription": "Hypothecaire leningen met Neovita Finanz. Realiseer uw vastgoedproject met concurrerende tarieven.",
     "hero": {
-      "subtitle": "Realiseer uw vastgoedproject"
-    },
-    "characteristics": {
-      "title": "Kenmerken van hypotheken",
-      "highAmounts": "Hoge bedragen",
-      "highAmountsDesc": "Tot 80% van de waarde van het eigendom",
-      "allProjects": "Alle projecten",
-      "allProjectsDesc": "Aankoop, bouw, renovatie",
-      "secured": "Gewaarborgd",
-      "securedDesc": "Gegarandeerd door het eigendom",
-      "advantageousRates": "Voordelige tarieven",
-      "advantageousRatesDesc": "Concurrerende tarieven op de markt"
+      "subtitle": "Realiseer uw vastgoedproject met onze expertise"
     },
     "advantages": {
-      "title": "Voordelen van onze hypotheken",
+      "title": "Voordelen van hypothecaire leningen",
       "competitiveRates": "Concurrerende tarieven",
-      "personalizedSupport": "Persoonlijke begeleiding",
-      "freeStudy": "Gratis dossierstudie",
+      "personalizedSupport": "Gepersonaliseerde begeleiding door experts",
+      "freeStudy": "Gratis haalbaarheidsstudie",
       "bankNegotiation": "Onderhandeling met banken",
-      "followUp": "Opvolging van uw project",
-      "insurance": "Verzekeringsoplossingen"
+      "followUp": "Begeleiding tot deblokkering",
+      "insurance": "Geoptimaliseerde kredieten verzekering"
+    },
+    "characteristics": {
+      "title": "Kenmerken van hypothecaire leningen",
+      "highAmounts": "Hoge bedragen",
+      "highAmountsDesc": "Tot 80% van de waarde van het onroerend goed",
+      "allProjects": "Alle projecten",
+      "allProjectsDesc": "Aankoop, bouw, renovatie, investering",
+      "secured": "Gedekt",
+      "securedDesc": "Hypotheek op het onroerend goed",
+      "advantageousRates": "Voordelige tarieven",
+      "advantageousRatesDesc": "Lagere tarieven dan consumentenkredieten"
     },
     "cta": {
-      "request": "Vraag uw hypotheek aan",
+      "request": "Hypothecaire lening aanvragen",
       "apply": "Nu aanvragen"
     }
   },
-  "workCredit": {
-    "metaDescription": "Werkkredieten met Neovita Finanz. Financier uw renovatie- en bouwprojecten.",
-    "hero": {
-      "title": "Werkkredieten",
-      "subtitle": "Financier uw renovatie- en bouwprojecten"
-    },
-    "projectTypes": {
-      "title": "Onze projecttypes",
-      "energyRenovation": "Energierenovatie",
-      "houseExtension": "Huisuitbreiding",
-      "interiorDesign": "Interieurontwerp",
-      "roofWork": "Dakwerkzaamheden",
-      "poolInstallation": "Zwembadinstallatie",
-      "kitchenBathroom": "Keuken en badkamer"
-    },
-    "cta": {
-      "finance": "Mijn werken financieren"
-    }
-  },
-  "insurance": {
-    "metaDescription": "Verzekeringen met Neovita Finanz. Bescherm uw projecten en uw dierbaren.",
-    "hero": {
-      "title": "Onze verzekeringen",
-      "subtitle": "Bescherm uw projecten en uw dierbaren"
-    },
-    "types": {
-      "borrower": {
-        "title": "Lenersverzekering",
-        "description": "Bescherm uzelf en uw familie bij overlijden of invaliditeit"
-      },
-      "home": {
-        "title": "Woonverzekering",
-        "description": "Bescherm uw huis en uw bezittingen"
-      },
-      "health": {
-        "title": "Ziektekostenverzekering",
-        "description": "Aanvullende gezondheidsbescherming voor het hele gezin"
-      }
-    },
-    "cta": {
-      "quote": "Een offerte krijgen"
-    }
-  },
   "creditBuyback": {
-    "metaDescription": "Kredietsamenvoeging met Neovita Finanz. Verlaag uw maandlasten, vereenvoudig uw financieel beheer.",
+    "metaDescription": "Kredietsamenvoeging met Neovita Finanz. Verlaag uw maandelijkse betalingen, vereenvoudig uw financieel beheer.",
     "hero": {
       "subtitle": "Optimaliseer uw financiën door al uw kredieten samen te voegen"
     },
     "advantages": {
       "title": "Voordelen van kredietsamenvoeging",
-      "reduction": "Verlaag uw maandlasten",
+      "reduction": "Verlaag uw maandelijkse betalingen",
       "simplification": "Vereenvoudig uw beheer",
       "betterRates": "Mogelijk betere tarieven",
-      "singlePayment": "Eén maandelijkse betaling",
-      "additionalCash": "Mogelijkheid van extra geld",
+      "singlePayment": "Één enkele maandelijkse betaling",
+      "additionalCash": "Mogelijkheid van extra liquiditeit",
       "freeAdvice": "Gratis persoonlijk advies"
     },
     "cta": {
@@ -162,13 +119,13 @@
     }
   },
   "about": {
-    "metaDescription": "Over Neovita Finanz - Ontdek onze expertise in financiering en ons team van specialisten.",
+    "metaDescription": "Over BHV Auto - Ontdek onze expertise in voertuigimport en ons team van specialisten.",
     "hero": {
-      "subtitle": "Uw vertrouwde partner sinds 15 jaar"
+      "subtitle": "Uw betrouwbare partner sinds 15 jaar"
     },
     "mission": {
       "title": "Onze Missie",
-      "description": "Wij begeleiden onze klanten bij hun financieringsprojecten met expertise, transparantie en nabijheid. Ons team van 43 gespecialiseerde adviseurs begeleidt u bij elke stap van uw project."
+      "description": "Wij begeleiden onze klanten in hun voertuigimportprojecten met expertise, transparantie en nabijheid. Ons team van 43 gespecialiseerde adviseurs begeleidt u door elke stap van uw project."
     },
     "stats": {
       "advisors": "Adviseurs",
@@ -180,7 +137,7 @@
   "partners": {
     "title": "Onze Partners",
     "subtitle": "Een solide netwerk voor uw succes",
-    "metaDescription": "Ontdek Neovita Finanz partners. Netwerk van banken, makelaars en verzekeraars om u de beste oplossingen te bieden.",
+    "metaDescription": "Ontdek BHV Auto partners. Netwerk van banken, makelaars en verzekeraars om u de beste oplossingen te bieden.",
     "types": {
       "banks": {
         "title": "Partnerbanken",
@@ -202,12 +159,12 @@
       "description": "Financier uw persoonlijke projecten met voordelige voorwaarden"
     },
     "mortgageLoans": {
-      "title": "Hypotheken",
+      "title": "Hypothecaire Leningen",
       "description": "Realiseer uw vastgoedproject met onze expertise"
     },
     "creditBuyback": {
       "title": "Kredietsamenvoeging",
-      "description": "Vereenvoudig uw terugbetalingen en verlaag uw maandlasten"
+      "description": "Vereenvoudig uw terugbetalingen en verlaag uw maandelijkse betalingen"
     }
   },
   "advantages": {
@@ -225,25 +182,12 @@
     }
   },
   "simulator": {
-    "title": "Lening simulator",
+    "title": "Leningsimulator",
     "subtitle": "Bereken uw financiering in enkele stappen",
-    "parameters": "Lening parameters",
+    "parameters": "Leningparameters",
     "loanType": "Type lening",
     "selectLoanType": "Selecteer een type",
-    "amount": "Bedrag",
-    "duration": "Looptijd",
-    "months": "maanden",
-    "years": "jaar",
-    "results": "Resultaten",
-    "monthlyPayment": "Maandelijkse betaling",
-    "totalCost": "Totale kosten",
-    "totalInterest": "Totale rente",
-    "types": {
-      "personal": "Persoonlijke lening",
-      "mortgage": "Hypotheek",
-      "work": "Werkkredieten",
-      "auto": "Autolening"
-    }
+    "amount": "Bedrag"
   },
   "testimonials": {
     "title": "Klantgetuigenissen",
@@ -251,20 +195,8 @@
     "reviews": "beoordelingen",
     "loanTypeLabel": "Type lening",
     "amountLabel": "Bedrag",
-    "marie": {
-      "comment": "Uitstekende service, snel en professioneel. Ik beveel Neovita Finanz aan!",
-      "loanType": "Persoonlijke lening"
-    },
-    "pierre": {
-      "comment": "Dankzij Neovita heb ik mijn hypotheek gekregen tegen de beste voorwaarden.",
-      "loanType": "Hypotheek"
-    },
-    "sophie": {
-      "comment": "Perfect om mijn kredieten samen te voegen, veel eenvoudiger nu!",
-      "loanType": "Kredietsamenvoeging"
-    },
     "jeanmarc": {
-      "comment": "Dankzij NeoVita heb ik snel een lening gekregen om mijn project te starten.",
+      "comment": "Dankzij NeoVita kreeg ik snel een lening om mijn project te starten.",
       "loanType": "Zelfstandige lening"
     },
     "amelie": {
@@ -272,32 +204,13 @@
       "loanType": "Persoonlijke lening"
     },
     "pedro": {
-      "comment": "Alles verliep goed, van simulatie tot betaling.",
-      "loanType": "Auto financiering"
+      "comment": "Alles ging goed, van simulatie tot betaling.",
+      "loanType": "Autofinanciering"
     }
   },
-  "creditForm": {
-    "title": "Leningaanvraag",
-    "subtitle": "Vul het formulier in voor een gepersonaliseerde offerte",
-    "personalInfo": "Persoonlijke informatie",
-    "firstName": "Voornaam",
-    "lastName": "Achternaam",
-    "email": "E-mail",
-    "phone": "Telefoon",
-    "projectInfo": "Projectinformatie",
-    "loanType": "Type lening",
-    "amount": "Gewenst bedrag",
-    "duration": "Looptijd",
-    "income": "Maandinkomen",
-    "purpose": "Doel van de lening",
-    "submit": "Mijn aanvraag verzenden",
-    "submitting": "Verzenden...",
-    "success": "Uw aanvraag is succesvol verzonden!",
-    "error": "Er is een fout opgetreden. Probeer opnieuw."
-  },
   "footer": {
-    "tagline": "Uw financieringsspecialist",
-    "description": "Neovita Finanz begeleidt u bij al uw financieringsprojecten met expertise en nabijheid.",
+    "tagline": "Uw specialist in voertuigimport",
+    "description": "BHV Auto begeleidt u in al uw voertuigimportprojecten met expertise en nabijheid.",
     "sections": {
       "services": "Onze Diensten",
       "company": "Het Bedrijf",
@@ -305,9 +218,9 @@
     },
     "services": {
       "personalLoans": "Persoonlijke Leningen",
-      "mortgageLoans": "Hypotheken",
+      "mortgageLoans": "Hypothecaire Leningen",
       "creditBuyback": "Kredietsamenvoeging",
-      "workCredit": "Werkkredieten",
+      "workCredit": "Werkkredit",
       "insurance": "Verzekeringen"
     },
     "company": {
@@ -329,7 +242,7 @@
       "gdpr": "AVG-conform",
       "gdprDesc": "Gegevensbescherming",
       "ssl": "SSL-beveiligd",
-      "sslDesc": "Beveiligde verbinding",
+      "sslDesc": "Veilige verbinding",
       "rcs": "RCS Évry",
       "rcsDesc": "Erkende instelling"
     },
@@ -343,7 +256,7 @@
       "title": "Belangrijke Informatie",
       "rates": "Van 0,9% tot 19,9% volgens profiel en looptijd",
       "credit": "Een krediet verplicht u en moet worden terugbetaald",
-      "insurance": "Lenersverzekering is niet verplicht"
+      "insurance": "Lener verzekering is niet verplicht"
     },
     "copyright": "Alle rechten voorbehouden."
   }
