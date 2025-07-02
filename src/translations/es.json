@@ -206,7 +206,19 @@
     "parameters": "Parámetros del préstamo",
     "loanType": "Tipo de préstamo",
     "selectLoanType": "Seleccionar un tipo",
-    "amount": "Importe"
+    "amount": "Importe",
+    "duration": "Duración",
+    "months": "meses",
+    "years": "años", 
+    "calculate": "Calcular",
+    "results": "Resultados",
+    "monthlyPayment": "Cuota mensual",
+    "totalCost": "Coste total",
+    "interestRate": "Tipo de interés",
+    "estimationSaved": "Guardar",
+    "estimationSavedDesc": "Estimación guardada",
+    "requestInProgress": "Solicitud en curso",
+    "requestInProgressDesc": "Su solicitud está siendo procesada"
   },
   "testimonials": {
     "title": "Testimonios de clientes",
