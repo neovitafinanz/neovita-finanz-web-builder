@@ -69,9 +69,6 @@ const Header = () => {
                 <option value="da">🇩🇰 Dansk</option>
                 <option value="sv">🇸🇪 Svenska</option>
                 <option value="no">🇳🇴 Norsk</option>
-                <option value="ja">🇯🇵 日本語</option>
-                <option value="zh-CN">🇨🇳 中文 (简体)</option>
-                <option value="ru">🇷🇺 Русский</option>
               </select>
             </div>
           </div>
@@ -125,9 +122,6 @@ const Header = () => {
                   <option value="da">🇩🇰</option>
                   <option value="sv">🇸🇪</option>
                   <option value="no">🇳🇴</option>
-                  <option value="ja">🇯🇵</option>
-                  <option value="zh-CN">🇨🇳</option>
-                  <option value="ru">🇷🇺</option>
                 </select>
               </div>
 
