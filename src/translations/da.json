@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Hjem",
@@ -118,6 +117,25 @@
       "study": "Undersøg min mappe"
     }
   },
+  "workCredit": {
+    "metaDescription": "Arbejdskredit med Neovita Finanz. Finansier dine renoverings- og byggeprojekter.",
+    "hero": {
+      "title": "Arbejdskredit",
+      "subtitle": "Finansier dine renoverings- og byggeprojekter"
+    },
+    "projectTypes": {
+      "title": "Vores projekttyper",
+      "energyRenovation": "Energirenovering",
+      "houseExtension": "Husudvidelse",
+      "interiorDesign": "Indretning",
+      "roofWork": "Tagarbejde",
+      "poolInstallation": "Poolinstallation",
+      "kitchenBathroom": "Køkken og badeværelse"
+    },
+    "cta": {
+      "finance": "Finansier mine arbejder"
+    }
+  },
   "about": {
     "metaDescription": "Om BHV Auto - Opdag vores ekspertise inden for køretøjsimport og vores team af specialister.",
     "hero": {
@@ -165,6 +183,10 @@
     "creditBuyback": {
       "title": "Kreditsammenlægning",
       "description": "Forenkl dine tilbagebetalinger og reducer dine månedlige betalinger"
+    },
+    "workCredit": {
+      "title": "Arbejdskredit",
+      "description": "Finansier dine renoverings- og byggeprojekter"
     }
   },
   "advantages": {

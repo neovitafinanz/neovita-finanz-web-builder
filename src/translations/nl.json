@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -118,6 +117,25 @@
       "study": "Mijn dossier bestuderen"
     }
   },
+  "workCredit": {
+    "metaDescription": "Werkkredit met Neovita Finanz. Financier uw renovatie- en bouwprojecten.",
+    "hero": {
+      "title": "Werkkredit",
+      "subtitle": "Financier uw renovatie- en bouwprojecten"
+    },
+    "projectTypes": {
+      "title": "Onze projecttypes",
+      "energyRenovation": "Energierenovatie",
+      "houseExtension": "Huisuitbreiding",
+      "interiorDesign": "Interieurontwerp",
+      "roofWork": "Dakwerkzaamheden",
+      "poolInstallation": "Zwembadinstallatie",
+      "kitchenBathroom": "Keuken en badkamer"
+    },
+    "cta": {
+      "finance": "Mijn werkzaamheden financieren"
+    }
+  },
   "about": {
     "metaDescription": "Over BHV Auto - Ontdek onze expertise in voertuigimport en ons team van specialisten.",
     "hero": {
@@ -165,6 +183,10 @@
     "creditBuyback": {
       "title": "Kredietsamenvoeging",
       "description": "Vereenvoudig uw terugbetalingen en verlaag uw maandelijkse betalingen"
+    },
+    "workCredit": {
+      "title": "Werkkredit",
+      "description": "Financier uw renovatie- en bouwprojecten"
     }
   },
   "advantages": {
