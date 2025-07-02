@@ -313,8 +313,8 @@
     }
   },
   "footer": {
-    "tagline": "Din finansieringsspesialist",
-    "description": "Neovita Finanz ledsager deg i alle dine finansieringsprosjekter med ekspertise og nærhet.",
+    "tagline": "Din pålitelige finansielle partner",
+    "description": "Neovita Finanz følger deg i alle dine finansieringsprosjekter med ekspertise og nærhet.",
     "sections": {
       "services": "Våre Tjenester",
       "company": "Selskapet",
@@ -323,7 +323,7 @@
     "services": {
       "personalLoans": "Personlige Lån",
       "mortgageLoans": "Boliglån",
-      "creditBuyback": "Kredittsamling",
+      "creditBuyback": "Kredittsammenslåing",
       "workCredit": "Arbeidskredit",
       "insurance": "Forsikringer"
     },
@@ -338,12 +338,12 @@
       "terms": "Juridiske Opplysninger",
       "privacy": "Personvernpolicy",
       "conditions": "Generelle Betingelser",
-      "sitemap": "Nettstedskart",
-      "cookies": "Informasjonskapsler"
+      "sitemap": "Sitemap",
+      "cookies": "Cookies"
     },
     "trust": {
       "title": "Sertifiseringer",
-      "gdpr": "GDPR-konform",
+      "gdpr": "GDPR-kompatibel",
       "gdprDesc": "Databeskyttelse",
       "ssl": "SSL-sikret",
       "sslDesc": "Sikker tilkobling",
@@ -363,212 +363,5 @@
       "insurance": "Låntakerforsikring er ikke obligatorisk"
     },
     "copyright": "Alle rettigheter forbeholdt."
-  },
-  "loanRequest": {
-    "metaDescription": "Gjør lånesøknaden din online. Rask respons innen 24t. Ekspertrådgivere tilgjengelige.",
-    "hero": {
-      "title": "Lånesøknad",
-      "subtitle": "Fullfør lånesøknaden din på nettet og få rask respons fra våre eksperter"
-    },
-    "form": {
-      "title": "Lånesøknadsskjema",
-      "personalInfo": "Personlig informasjon",
-      "firstName": "Fornavn",
-      "lastName": "Etternavn",
-      "email": "E-post",
-      "emailConfirmation": "Bekreft e-post",
-      "phone": "Telefon",
-      "project": "Ditt prosjekt",
-      "loanType": "Lånetype",
-      "selectLoanType": "Velg en lånetype",
-      "amount": "Beløp",
-      "currency": "Valuta",
-      "duration": "Varighet (måneder)",
-      "situation": "Økonomisk situasjon",
-      "professionalSituation": "Yrkessituasjon",
-      "selectSituation": "Velg din situasjon",
-      "monthlyIncome": "Månedlig inntekt",
-      "message": "Melding",
-      "messagePlaceholder": "Beskriv prosjektet ditt...",
-      "submit": "Send søknaden min",
-      "submitting": "Sender...",
-      "required": "* Obligatoriske felt"
-    },
-    "validation": {
-      "missingFields": "Manglende felt",
-      "missingFieldsDesc": "Vennligst fyll ut alle obligatoriske felt.",
-      "invalidEmail": "Ugyldig e-post",
-      "invalidEmailDesc": "Vennligst oppgi en gyldig e-postadresse.",
-      "emailMismatch": "E-postene stemmer ikke",
-      "emailMismatchDesc": "E-postadressene stemmer ikke overens.",
-      "success": "Søknad sendt",
-      "successDesc": "Søknaden din har blitt sendt. Vi vil kontakte deg innen 48 timer.",
-      "error": "Sendefeil",
-      "errorDesc": "En feil oppstod. Vennligst prøv igjen."
-    },
-    "reassurance": {
-      "title": "Hvorfor stole på oss?",
-      "secureData": {
-        "title": "Sikre data",
-        "description": "Dataene dine er beskyttet av SSL-kryptering"
-      },
-      "quickResponse": {
-        "title": "Rask respons",
-        "description": "Respons innen 48 timer"
-      },
-      "availableAdvisors": {
-        "title": "Tilgjengelige rådgivere",
-        "description": "43 eksperter til din tjeneste"
-      }
-    },
-    "advantages": {
-      "title": "Våre fordeler",
-      "experience": "15 års erfaring innen finans",
-      "experts": "43 spesialiserte rådgivere",
-      "rates": "Konkurransedyktige renter",
-      "support": "Personlig oppfølging"
-    },
-    "contact": {
-      "title": "Trenger du hjelp?",
-      "description": "Teamet vårt er tilgjengelig for deg",
-      "phone": "01 86 65 26 51",
-      "hours": "Mandag til fredag fra 9 til 18"
-    },
-    "situations": {
-      "employee": "Ansatt",
-      "temporaryEmployee": "Midlertidig ansatt",
-      "civilServant": "Offentlig ansatt",
-      "selfEmployed": "Selvstendig næringsdrivende",
-      "freelancer": "Frilancer",
-      "retired": "Pensjonist",
-      "student": "Student",
-      "jobSeeker": "Arbeidssøkende"
-    }
-  },
-  "loanTypes": {
-    "personal": "Personlig lån online",
-    "consumption": "Forbrukslån",
-    "works": "Arbeids-/renoveringslån",
-    "mortgage": "Boliglån",
-    "consolidation": "Kredittsamling",
-    "lease": "Leasing",
-    "student": "Studielån"
-  },
-  "legal": {
-    "title": "Juridisk Informasjon",
-    "description": "Juridisk informasjon om Neovita Finanz - AS spesialisert på kredittformidling",
-    "editor": {
-      "title": "Nettstedutgiver"
-    },
-    "director": {
-      "title": "Publikasjonsdirektør"
-    },
-    "intellectual": {
-      "title": "Intellektuell eiendom"
-    },
-    "company": {
-      "name": "Neovita Finanz",
-      "legalForm": "Juridisk form: AS",
-      "capital": "Aksjekapital: 17.000.000 €",
-      "address": "Registrert adresse:",
-      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, Frankrike",
-      "phone": "01 23 45 67 89",
-      "email": "infos@neovitafinanz.com"
-    },
-    "identification": {
-      "title": "Identifikasjon",
-      "siren": "SIREN: 493 171 540",
-      "siret": "SIRET: 493 171 540 00013",
-      "vat": "MVA: FR16493171540",
-      "rcs": "RCS: Évry (07/07/2008)",
-      "rne": "RNE: 02/04/2008"
-    },
-    "activity": {
-      "title": "Aktivitet",
-      "sector": "Sektor: Finansielle tjenester",
-      "employees": "Personale: 43 ansatte",
-      "code": "APE-kode: 6419Z",
-      "activity": "Aktivitet: Kredittformidling"
-    },
-    "directorInfo": {
-      "name": "Publikasjonsdirektør: Hr. Jean-Pierre Martin",
-      "role": "Stilling: Bedriftsleder"
-    },
-    "regulation": {
-      "title": "Profesjonell regulering",
-      "status": "Status: Formidler av bankoperasjoner og betalingstjenester (IOBSP)",
-      "orias": "ORIAS-registrering: 12345678901",
-      "control": "Kontroll: Prudentiell Kontroll og Resolusjonsmyndighet (ACPR)\n61 rue Taitbout, 75436 Paris Cedex 09",
-      "insurance": "Profesjonell Ansvarsforsikring:\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nGarantibeløp: 8.000.000 €"
-    },
-    "intellectualProperty": {
-      "content1": "Alt innhold på denne nettsiden (tekster, bilder, logoer, grafikk osv.) er beskyttet av opphavsrett og tilhører Neovita Finanz eller dens partnere.",
-      "content2": "Enhver reproduksjon, representasjon, endring, publisering, tilpasning av alle eller deler av nettstedets elementer er forbudt, unntatt med forhånds skriftlig tillatelse fra Neovita Finanz.",
-      "content3": "Varemerkene nevnt på dette nettstedet er registrert av selskapene som eier dem."
-    },
-    "warning": {
-      "title": "Kredittadvarsel",
-      "rates": "Renter: Fra 0,50% til 21% avhengig av långivere",
-      "engagement": "En kreditt forplikter deg og må tilbakebetales. Sjekk din tilbakebetalingsevne før du forplikter deg.",
-      "insurance": "Forsikring: Låntakers forsikring er ikke obligatorisk men sterkt anbefalt."
-    }
-  },
-  "privacy": {
-    "title": "Personvernpolicy",
-    "description": "Hvordan vi beskytter og bruker dine personlige data",
-    "lastUpdate": "Sist oppdatert",
-    "dataCollection": {
-      "title": "Datainnsamling",
-      "content": "Vi samler inn dine personlige data når du bruker våre tjenester, fyller ut våre skjemaer eller kontakter oss. Disse dataene inkluderer kontaktinformasjonen din, din økonomiske og profesjonelle situasjon som er nødvendig for studiet av kreditten din."
-    },
-    "dataUse": {
-      "title": "Databruk",
-      "content": "Dataene dine brukes utelukkende til å behandle finansieringsforespørselen din, tilby deg passende løsninger og overholde våre juridiske forpliktelser. Vi selger aldri dataene dine til tredjeparter."
-    },
-    "dataProtection": {
-      "title": "Databeskyttelse",
-      "content": "Vi implementerer passende tekniske og organisatoriske sikkerhetstiltak for å beskytte dataene dine mot uautorisert tilgang, endring, avsløring eller ødeleggelse."
-    },
-    "rights": {
-      "title": "Dine Rettigheter",
-      "content": "I samsvar med GDPR har du rett til tilgang, korrigering, sletting, begrensning av behandling, portabilitet og innsigelse angående dine personlige data. Du kan utøve disse rettighetene ved å kontakte oss."
-    },
-    "retention": {
-      "title": "Datalagring",
-      "content": "Vi oppbevarer dine personlige data i den perioden som er nødvendig for formålene de ble samlet inn for, i samsvar med gjeldende juridiske forpliktelser i finanssektoren."
-    },
-    "contact": {
-      "title": "Kontakt",
-      "dpo": "Personvernombud",
-      "address": "Adresse"
-    }
-  },
-  "terms": {
-    "title": "Generelle Betingelser",
-    "description": "Generelle betingelser for bruk av Neovita Finanz tjenester",
-    "purpose": {
-      "title": "Formål",
-      "content": "Disse generelle betingelsene har som mål å definere modalitetene og betingelsene for bruk av tjenestene som tilbys av Neovita Finanz innen formidling av bankoperasjoner og betalingstjenester."
-    },
-    "services": {
-      "title": "Tilbudte Tjenester",
-      "content": "Neovita Finanz tilbyr følgende tjenester:",
-      "advice": "Rådgivning og ledsagelse i dine finansieringsprosjekter",
-      "intermediation": "Formidling mellom deg og kredittinstitusjoner",
-      "support": "Oppfølging av din sak frem til realisering",
-      "negotiation": "Forhandling av de beste betingelsene"
-    },
-    "obligations": {
-      "title": "Kundens Forpliktelser",
-      "content": "Kunden forplikter seg til å:",
-      "accurate": "Gi nøyaktige og fullstendige opplysninger",
-      "deadlines": "Respektere kommuniserte frister",
-      "changes": "Rapportere enhver endring i situasjonen",
-      "commitments": "Innfri sine finansielle forpliktelser"
-    },
-    "remuneration": {
-      "title": "Godtgjørelse",
-      "content": "Neovita Finanz sin godtgjørelse betales av kredittinstitusjonen ved realisering av finansieringen. Ingen avgifter belastes kunden."
-    }
   }
 }
