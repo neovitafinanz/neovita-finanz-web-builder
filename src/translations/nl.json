@@ -136,6 +136,30 @@
       "finance": "Mijn werkzaamheden financieren"
     }
   },
+  "insurance": {
+    "metaDescription": "Verzekeringen met Neovita Finanz. Bescherm uw projecten en investeringen met gepersonaliseerde verzekeringsoplossingen.",
+    "hero": {
+      "title": "Verzekeringen",
+      "subtitle": "Bescherm uw investeringen en projecten"
+    },
+    "types": {
+      "borrower": {
+        "title": "Leningsnemersverzekering",
+        "description": "Bescherm uzelf en uw dierbaren bij overlijden, invaliditeit of werkloosheid"
+      },
+      "home": {
+        "title": "Woonverzekering",
+        "description": "Verzeker uw huis en bezittingen met uitgebreide dekking"
+      },
+      "health": {
+        "title": "Zorgverzekering",
+        "description": "Toegang tot kwaliteitszorg met onze gezondheidsplannen"
+      }
+    },
+    "cta": {
+      "quote": "Offerte aanvragen"
+    }
+  },
   "about": {
     "metaDescription": "Over BHV Auto - Ontdek onze expertise in voertuigimport en ons team van specialisten.",
     "hero": {

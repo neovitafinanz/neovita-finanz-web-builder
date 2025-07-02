@@ -4,7 +4,7 @@
     "home": "Hjem",
     "personalLoans": "Personlige Lån",
     "mortgageLoans": "Boliglån",
-    "creditBuyback": "Kreditsammenlægning",
+    "creditBuyback": "Kreditsamling",
     "workCredit": "Arbejdskredit",
     "insurance": "Forsikringer",
     "about": "Om Os"
@@ -28,9 +28,9 @@
       "description": "Konkurrencedygtige renter og skræddersyet vejledning for at realisere dine ejendomsprojekter."
     },
     "slide3": {
-      "title": "Kreditsammenlægning",
+      "title": "Kreditsamling",
       "subtitle": "Forenkl Din Økonomi",
-      "description": "Saml dine kreditter i én for at reducere dine månedlige betalinger og genvinde din økonomiske ro."
+      "description": "Saml dine kreditter i en for at reducere dine månedlige betalinger og genvinde din økonomiske ro."
     },
     "slide4": {
       "title": "Ekspertise & Nærhed",
@@ -59,7 +59,7 @@
     "advantages": {
       "title": "Fordele ved personlige lån",
       "flexibility": "Fri brug af midler",
-      "rapidResponse": "Hurtig svar inden for 48t",
+      "rapidResponse": "Hurtig respons inden for 48t",
       "competitiveRates": "Konkurrencedygtige renter",
       "noCollateral": "Ingen garanti eller kaution",
       "personalizedSupport": "Personlig vejledning",
@@ -80,7 +80,7 @@
       "personalizedSupport": "Personlig vejledning af eksperter",
       "freeStudy": "Gratis gennemførlighedsundersøgelse",
       "bankNegotiation": "Forhandling med banker",
-      "followUp": "Opfølgning indtil frigivelse",
+      "followUp": "Opfølgning til frigivelse",
       "insurance": "Optimeret kreditforsikring"
     },
     "characteristics": {
@@ -90,31 +90,31 @@
       "allProjects": "Alle projekter",
       "allProjectsDesc": "Køb, byggeri, renovering, investering",
       "secured": "Sikret",
-      "securedDesc": "Pant i ejendommen",
+      "securedDesc": "Panteret i ejendommen",
       "advantageousRates": "Fordelagtige renter",
-      "advantageousRatesDesc": "Lavere renter end forbrugslån"
+      "advantageousRatesDesc": "Renter lavere end forbrugerkreditter"
     },
     "cta": {
-      "request": "Anmod om boliglån",
+      "request": "Ansøg om boliglån",
       "apply": "Ansøg nu"
     }
   },
   "creditBuyback": {
-    "metaDescription": "Kreditsammenlægning med Neovita Finanz. Reducer dine månedlige betalinger, forenkl din økonomiske forvaltning.",
+    "metaDescription": "Kreditsamling med Neovita Finanz. Reducer dine månedlige betalinger, forenkl din økonomiske forvaltning.",
     "hero": {
       "subtitle": "Optimer din økonomi ved at samle alle dine kreditter"
     },
     "advantages": {
-      "title": "Fordele ved kreditsammenlægning",
+      "title": "Fordele ved kreditsamling",
       "reduction": "Reducer dine månedlige betalinger",
       "simplification": "Forenkl din forvaltning",
       "betterRates": "Potentielt bedre renter",
       "singlePayment": "En enkelt månedlig betaling",
-      "additionalCash": "Mulighed for ekstra likviditet",
+      "additionalCash": "Mulighed for ekstra kontanter",
       "freeAdvice": "Gratis personlig rådgivning"
     },
     "cta": {
-      "request": "Anmod om denne sammenlægning",
+      "request": "Anmod om denne samling",
       "study": "Undersøg min mappe"
     }
   },
@@ -128,9 +128,9 @@
       "title": "Vores projekttyper",
       "energyRenovation": "Energirenovering",
       "houseExtension": "Husudvidelse",
-      "interiorDesign": "Indretning",
+      "interiorDesign": "Indretningsdesign",
       "roofWork": "Tagarbejde",
-      "poolInstallation": "Poolinstallation",
+      "poolInstallation": "Pool installation",
       "kitchenBathroom": "Køkken og badeværelse"
     },
     "cta": {
@@ -138,7 +138,7 @@
     }
   },
   "insurance": {
-    "metaDescription": "Forsikringer med Neovita Finanz. Beskyt dine projekter og investeringer med skræddersyede forsikringsløsninger.",
+    "metaDescription": "Forsikringer med Neovita Finanz. Beskyt dine projekter og investeringer med personlige forsikringsløsninger.",
     "hero": {
       "title": "Forsikringer",
       "subtitle": "Beskyt dine investeringer og projekter"
@@ -146,7 +146,7 @@
     "types": {
       "borrower": {
         "title": "Låntagers Forsikring",
-        "description": "Beskyt dig selv og dine nærmeste i tilfælde af død, invaliditet eller arbejdsløshed"
+        "description": "Beskyt dig selv og dine kære i tilfælde af død, invaliditet eller arbejdsløshed"
       },
       "home": {
         "title": "Boligforsikring",
@@ -172,7 +172,7 @@
     },
     "stats": {
       "advisors": "Rådgivere",
-      "experience": "År med erfaring",
+      "experience": "Års erfaring",
       "clients": "Tilfredse kunder",
       "trust": "Tillid"
     }
@@ -206,7 +206,7 @@
       "description": "Realiser dit ejendomsprojekt med vores ekspertise"
     },
     "creditBuyback": {
-      "title": "Kreditsammenlægning",
+      "title": "Kreditsamling",
       "description": "Forenkl dine tilbagebetalinger og reducer dine månedlige betalinger"
     },
     "workCredit": {
@@ -244,7 +244,7 @@
     "amountLabel": "Beløb",
     "jeanmarc": {
       "comment": "Takket være NeoVita fik jeg hurtigt et lån til at starte mit projekt.",
-      "loanType": "Selvstændigt lån"
+      "loanType": "Selvstændig lån"
     },
     "amelie": {
       "comment": "Upåklagelig, hurtig og meget professionel service!",
@@ -266,7 +266,7 @@
     "services": {
       "personalLoans": "Personlige Lån",
       "mortgageLoans": "Boliglån",
-      "creditBuyback": "Kreditsammenlægning",
+      "creditBuyback": "Kreditsamling",
       "workCredit": "Arbejdskredit",
       "insurance": "Forsikringer"
     },
@@ -301,7 +301,7 @@
     },
     "warning": {
       "title": "Vigtig Information",
-      "rates": "Fra 0,9% til 19,9% efter profil og varighed",
+      "rates": "Fra 0,9% til 19,9% afhængigt af profil og varighed",
       "credit": "En kredit forpligter dig og skal betales tilbage",
       "insurance": "Låntagers forsikring er ikke obligatorisk"
     },

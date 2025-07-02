@@ -1,19 +1,19 @@
 
 {
   "nav": {
-    "home": "Startseite",
+    "home": "Home",
     "personalLoans": "Privatkredite",
-    "mortgageLoans": "Immobilienkredite",
+    "mortgageLoans": "Hypothekendarlehen",
     "creditBuyback": "Kreditumschuldung",
     "workCredit": "Arbeitskredit",
     "insurance": "Versicherungen",
-    "about": "Über uns"
+    "about": "Über Uns"
   },
   "common": {
     "phoneAvailable": "Montag bis Freitag von 9 bis 18 Uhr",
-    "requestLoan": "Kredit beantragen",
+    "requestLoan": "Kreditantrag",
     "discover": "Entdecken",
-    "learnMoreAbout": "Erfahren Sie mehr über",
+    "learnMoreAbout": "Mehr erfahren über",
     "startRequest": "Meinen Antrag starten"
   },
   "hero": {
@@ -23,9 +23,9 @@
       "description": "Entdecken Sie unsere Fahrzeugimportdienste mit fachkundiger und persönlicher Betreuung."
     },
     "slide2": {
-      "title": "Immobilienkredite",
+      "title": "Hypothekendarlehen",
       "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt",
-      "description": "Wettbewerbsfähige Zinsen und maßgeschneiderte Betreuung zur Umsetzung Ihrer Immobilienprojekte."
+      "description": "Wettbewerbsfähige Zinsen und maßgeschneiderte Betreuung zur Verwirklichung Ihrer Immobilienprojekte."
     },
     "slide3": {
       "title": "Kreditumschuldung",
@@ -35,20 +35,20 @@
     "slide4": {
       "title": "Expertise & Nähe",
       "subtitle": "43 Berater zu Ihren Diensten",
-      "description": "Ein engagiertes Expertenteam, das Sie bei all Ihren Finanzierungsprojekten begleitet."
+      "description": "Ein engagiertes Team von Experten, um Sie bei all Ihren Finanzierungsprojekten zu begleiten."
     },
     "cta": {
-      "primary": "Einen Antrag stellen",
+      "primary": "Antrag stellen",
       "secondary": "Meinen Kredit simulieren"
     },
-    "disclaimer": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten."
+    "disclaimer": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Überprüfen Sie Ihre Rückzahlungsfähigkeit bevor Sie sich verpflichten."
   },
   "home": {
     "metaDescription": "BHV Auto - Ihr Spezialist für Fahrzeugimport. Professionelle Importdienste mit fachkundiger Betreuung.",
     "servicesTitle": "Unsere Importdienste",
-    "servicesSubtitle": "Lösungen, die auf alle Ihre Fahrzeugimportbedürfnisse zugeschnitten sind",
-    "advantagesTitle": "Warum BHV Auto wählen",
-    "ctaTitle": "Bereit, Ihr Fahrzeug zu importieren?",
+    "servicesSubtitle": "Lösungen angepasst an alle Ihre Fahrzeugimportbedürfnisse",
+    "advantagesTitle": "Warum BHV Auto Wählen",
+    "ctaTitle": "Bereit Ihr Fahrzeug zu Importieren?",
     "ctaSubtitle": "Unsere Experten begleiten Sie bei Ihrem Importprojekt"
   },
   "personalLoans": {
@@ -63,19 +63,19 @@
       "competitiveRates": "Wettbewerbsfähige Zinsen",
       "noCollateral": "Ohne Garantie oder Bürgschaft",
       "personalizedSupport": "Persönliche Betreuung",
-      "freeStudy": "Kostenlose Aktenprüfung"
+      "freeStudy": "Kostenlose Dossierprüfung"
     },
     "cta": {
-      "study": "Meine Akte prüfen"
+      "study": "Mein Dossier prüfen"
     }
   },
   "mortgageLoans": {
-    "metaDescription": "Immobilienkredite mit Neovita Finanz. Verwirklichen Sie Ihr Immobilienprojekt mit wettbewerbsfähigen Zinsen.",
+    "metaDescription": "Hypothekendarlehen mit Neovita Finanz. Verwirklichen Sie Ihr Immobilienprojekt mit wettbewerbsfähigen Zinsen.",
     "hero": {
-      "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt mit unserem Fachwissen"
+      "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt mit unserer Expertise"
     },
     "advantages": {
-      "title": "Vorteile von Immobilienkrediten",
+      "title": "Vorteile von Hypothekendarlehen",
       "competitiveRates": "Wettbewerbsfähige Zinsen",
       "personalizedSupport": "Persönliche Betreuung durch Experten",
       "freeStudy": "Kostenlose Machbarkeitsstudie",
@@ -84,30 +84,30 @@
       "insurance": "Optimierte Kreditversicherung"
     },
     "characteristics": {
-      "title": "Eigenschaften von Immobilienkrediten",
+      "title": "Eigenschaften von Hypothekendarlehen",
       "highAmounts": "Hohe Beträge",
       "highAmountsDesc": "Bis zu 80% des Immobilienwerts",
       "allProjects": "Alle Projekte",
-      "allProjectsDesc": "Kauf, Bau, Renovierung, Investition", 
-      "secured": "Gesichert",
+      "allProjectsDesc": "Kauf, Bau, Renovierung, Investition",
+      "secured": "Besichert",
       "securedDesc": "Hypothek auf die Immobilie",
       "advantageousRates": "Vorteilhafte Zinsen",
-      "advantageousRatesDesc": "Niedrigere Zinsen als Konsumkredite"
+      "advantageousRatesDesc": "Zinsen niedriger als Verbraucherkredite"
     },
     "cta": {
-      "request": "Immobilienkredit beantragen",
+      "request": "Hypothekendarlehen beantragen",
       "apply": "Jetzt beantragen"
     }
   },
   "creditBuyback": {
-    "metaDescription": "Kreditumschuldung mit Neovita Finanz. Reduzieren Sie Ihre monatlichen Raten, vereinfachen Sie Ihr Finanzmanagement.",
+    "metaDescription": "Kreditumschuldung mit Neovita Finanz. Reduzieren Sie Ihre monatlichen Raten, vereinfachen Sie Ihre Finanzverwaltung.",
     "hero": {
       "subtitle": "Optimieren Sie Ihre Finanzen durch Zusammenfassung aller Ihrer Kredite"
     },
     "advantages": {
       "title": "Vorteile der Kreditumschuldung",
       "reduction": "Reduzieren Sie Ihre monatlichen Raten",
-      "simplification": "Vereinfachen Sie Ihr Management",
+      "simplification": "Vereinfachen Sie Ihre Verwaltung",
       "betterRates": "Potenziell bessere Zinsen",
       "singlePayment": "Eine einzige monatliche Rate",
       "additionalCash": "Möglichkeit zusätzlicher Liquidität",
@@ -115,13 +115,56 @@
     },
     "cta": {
       "request": "Diese Umschuldung beantragen",
-      "study": "Meine Akte prüfen"
+      "study": "Mein Dossier prüfen"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Arbeitskredit mit Neovita Finanz. Finanzieren Sie Ihre Renovierungs- und Bauprojekte.",
+    "hero": {
+      "title": "Arbeitskredit",
+      "subtitle": "Finanzieren Sie Ihre Renovierungs- und Bauprojekte"
+    },
+    "projectTypes": {
+      "title": "Unsere Projekttypen",
+      "energyRenovation": "Energiesanierung",
+      "houseExtension": "Hauserweiterung",
+      "interiorDesign": "Innenarchitektur",
+      "roofWork": "Dacharbeiten",
+      "poolInstallation": "Poolinstallation",
+      "kitchenBathroom": "Küche und Bad"
+    },
+    "cta": {
+      "finance": "Meine Arbeiten finanzieren"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Versicherungen mit Neovita Finanz. Schützen Sie Ihre Projekte und Investitionen mit personalisierten Versicherungslösungen.",
+    "hero": {
+      "title": "Versicherungen",
+      "subtitle": "Schützen Sie Ihre Investitionen und Projekte"
+    },
+    "types": {
+      "borrower": {
+        "title": "Kreditnehmerversicherung",
+        "description": "Schützen Sie sich und Ihre Lieben im Falle von Tod, Invalidität oder Arbeitslosigkeit"
+      },
+      "home": {
+        "title": "Wohngebäudeversicherung",
+        "description": "Sichern Sie Ihr Zuhause und Ihre Besitztümer mit umfassendem Schutz"
+      },
+      "health": {
+        "title": "Krankenversicherung",
+        "description": "Zugang zu qualitativ hochwertiger Gesundheitsversorgung mit unseren Gesundheitsplänen"
+      }
+    },
+    "cta": {
+      "quote": "Angebot erhalten"
     }
   },
   "about": {
-    "metaDescription": "Über BHV Auto - Entdecken Sie unsere Expertise im Fahrzeugimport und unser Spezialistenteam.",
+    "metaDescription": "Über BHV Auto - Entdecken Sie unsere Expertise im Fahrzeugimport und unser Team von Spezialisten.",
     "hero": {
-      "subtitle": "Ihr vertrauensvoller Partner seit 15 Jahren"
+      "subtitle": "Ihr zuverlässiger Partner seit 15 Jahren"
     },
     "mission": {
       "title": "Unsere Mission",
@@ -159,12 +202,16 @@
       "description": "Finanzieren Sie Ihre persönlichen Projekte zu vorteilhaften Konditionen"
     },
     "mortgageLoans": {
-      "title": "Immobilienkredite",
+      "title": "Hypothekendarlehen",
       "description": "Verwirklichen Sie Ihr Immobilienprojekt mit unserer Expertise"
     },
     "creditBuyback": {
       "title": "Kreditumschuldung",
       "description": "Vereinfachen Sie Ihre Rückzahlungen und reduzieren Sie Ihre monatlichen Raten"
+    },
+    "workCredit": {
+      "title": "Arbeitskredit",
+      "description": "Finanzieren Sie Ihre Renovierungs- und Bauprojekte"
     }
   },
   "advantages": {
@@ -178,15 +225,15 @@
     },
     "experts": {
       "title": "Expertenbetreuung",
-      "description": "43 spezialisierte Berater, die Sie bei jedem Schritt begleiten"
+      "description": "43 spezialisierte Berater, um Sie bei jedem Schritt zu begleiten"
     }
   },
   "simulator": {
-    "title": "Kredit-Simulator",
+    "title": "Kreditsimulator",
     "subtitle": "Berechnen Sie Ihre Finanzierung in wenigen Schritten",
     "parameters": "Kreditparameter",
     "loanType": "Kreditart",
-    "selectLoanType": "Art auswählen",
+    "selectLoanType": "Wählen Sie eine Art",
     "amount": "Betrag"
   },
   "testimonials": {
@@ -196,7 +243,7 @@
     "loanTypeLabel": "Kreditart",
     "amountLabel": "Betrag",
     "jeanmarc": {
-      "comment": "Dank NeoVita habe ich schnell einen Kredit erhalten, um mein Projekt zu starten.",
+      "comment": "Dank NeoVita erhielt ich schnell einen Kredit, um mein Projekt zu starten.",
       "loanType": "Selbstständigenkredit"
     },
     "amelie": {
@@ -218,13 +265,13 @@
     },
     "services": {
       "personalLoans": "Privatkredite",
-      "mortgageLoans": "Immobilienkredite",
+      "mortgageLoans": "Hypothekendarlehen",
       "creditBuyback": "Kreditumschuldung",
       "workCredit": "Arbeitskredit",
       "insurance": "Versicherungen"
     },
     "company": {
-      "about": "Über uns",
+      "about": "Über Uns",
       "team": "Unser Team",
       "careers": "Karrieren",
       "partners": "Partner",
@@ -256,7 +303,7 @@
       "title": "Wichtige Informationen",
       "rates": "Von 0,9% bis 19,9% je nach Profil und Laufzeit",
       "credit": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden",
-      "insurance": "Kreditnehmerversicherung ist nicht obligatorisch"
+      "insurance": "Die Kreditnehmerversicherung ist nicht obligatorisch"
     },
     "copyright": "Alle Rechte vorbehalten."
   }

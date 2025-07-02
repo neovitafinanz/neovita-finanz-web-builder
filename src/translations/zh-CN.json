@@ -136,6 +136,30 @@
       "finance": "为我的工程融资"
     }
   },
+  "insurance": {
+    "metaDescription": "Neovita Finanz保险。通过个性化保险解决方案保护您的项目和投资。",
+    "hero": {
+      "title": "保险",
+      "subtitle": "保护您的投资和项目"
+    },
+    "types": {
+      "borrower": {
+        "title": "借款人保险",
+        "description": "在死亡、残疾或失业情况下保护您和您的亲人"
+      },
+      "home": {
+        "title": "房屋保险",
+        "description": "通过全面保障确保您的房屋和财产安全"
+      },
+      "health": {
+        "title": "健康保险",
+        "description": "通过我们的健康计划获得优质医疗保健"
+      }
+    },
+    "cta": {
+      "quote": "获取报价"
+    }
+  },
   "about": {
     "metaDescription": "关于Neovita Finanz - 发现我们在融资方面的专业知识和我们的专家团队。",
     "hero": {
