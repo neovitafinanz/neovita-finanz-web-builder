@@ -358,6 +358,9 @@
     },
     "warning": {
       "title": "Viktig Informasjon",
+      "interestRateLabel": "Rente",
+      "creditLabel": "Kreditt",
+      "insuranceLabel": "Forsikring",
       "rates": "Fra 0,9% til 19,9% avhengig av profil og varighet",
       "credit": "En kreditt forplikter deg og må betales tilbake",
       "insurance": "Låntakerforsikring er ikke obligatorisk"

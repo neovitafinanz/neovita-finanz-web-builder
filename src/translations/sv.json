@@ -364,6 +364,9 @@
     },
     "warning": {
       "title": "Viktig Information",
+      "interestRateLabel": "Ränta",
+      "creditLabel": "Kredit",
+      "insuranceLabel": "Försäkring",
       "rates": "Från 0,9% till 19,9% beroende på profil och varaktighet",
       "credit": "Ett kredit förbinder dig och måste betalas tillbaka",
       "insurance": "Låntagarförsäkring är inte obligatorisk"

@@ -446,6 +446,9 @@
     },
     "warning": {
       "title": "Avertissement crédit",
+      "interestRateLabel": "Taux d'intérêt",
+      "creditLabel": "Crédit",
+      "insuranceLabel": "Assurance",
       "rates": "Taux d'intérêt : De 0,50% à 21% selon les organismes prêteurs",
       "engagement": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.",
       "insurance": "Assurance : L'assurance emprunteur n'est pas obligatoire mais vivement recommandée."

@@ -429,6 +429,9 @@
     },
     "warning": {
       "title": "Wichtige Informationen",
+      "interestRateLabel": "Zinssatz",
+      "creditLabel": "Kredit",
+      "insuranceLabel": "Versicherung",
       "rates": "Von 0,9% bis 19,9% je nach Profil und Laufzeit",
       "credit": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden",
       "insurance": "Die Kreditnehmerversicherung ist nicht obligatorisch"
