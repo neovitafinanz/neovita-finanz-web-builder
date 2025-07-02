@@ -4,10 +4,12 @@ import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, Linkedin } from 'lucide-react';
 
 const Equipe = () => {
   const navigate = useNavigate();
+  const { language } = useLanguage();
 
   const teamMembers = [
     {
@@ -193,7 +195,7 @@ const Equipe = () => {
               nous serions ravis de vous rencontrer.
             </p>
             <Button 
-              onClick={() => navigate('/carrieres')}
+              onClick={() => navigate(`/${language}/carrieres`)}
               className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
             >
               Voir nos offres d'emploi
@@ -212,7 +214,7 @@ const Equipe = () => {
             Nos conseillers experts sont disponibles pour vous accompagner dans votre projet
           </p>
           <Button 
-            onClick={() => navigate('/demande-credit')}
+            onClick={() => navigate(`/${language}/demande-credit`)}
             size="lg"
             className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
           >

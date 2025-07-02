@@ -9,7 +9,7 @@ import { Calculator, CheckCircle, TrendingDown, Euro, Clock } from 'lucide-react
 
 const RachatCredit = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const advantages = [
     t('creditBuyback.advantages.reduction'),
@@ -35,7 +35,7 @@ const RachatCredit = () => {
               {t('creditBuyback.hero.subtitle')}
             </p>
             <Button 
-              onClick={() => navigate('/demande-credit')}
+              onClick={() => navigate(`/${language}/demande-credit`)}
               size="lg"
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold"
             >
@@ -63,7 +63,7 @@ const RachatCredit = () => {
               </div>
               <div className="mt-8">
                 <Button 
-                  onClick={() => navigate('/demande-credit')}
+                  onClick={() => navigate(`/${language}/demande-credit`)}
                   size="lg"
                   className="bg-green-600 hover:bg-green-700 text-white px-8 py-3"
                 >

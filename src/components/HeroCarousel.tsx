@@ -7,7 +7,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 
 const HeroCarousel = () => {
   const navigate = useNavigate();
-  const { t, isLoading } = useLanguage();
+  const { t, isLoading, language } = useLanguage();
   
   const slides = [
     {
@@ -114,7 +114,7 @@ const HeroCarousel = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               className="bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white px-10 py-5 rounded-lg font-bold text-xl shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105 border-2 border-yellow-400"
-              onClick={() => navigate('/demande-credit')}
+              onClick={() => navigate(`/${language}/demande-credit`)}
             >
               {t('hero.cta.primary')}
             </Button>

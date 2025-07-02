@@ -14,7 +14,7 @@ import { Calculator, Shield, Clock, Users, TrendingUp, Award } from 'lucide-reac
 
 const Index = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const services = [
     {
@@ -110,7 +110,7 @@ const Index = () => {
                       <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
                       <p className="text-gray-600 mb-4">{service.description}</p>
                       <Button 
-                        onClick={() => navigate(service.href)}
+                        onClick={() => navigate(`/${language}${service.href}`)}
                         className="w-full bg-green-600 hover:bg-green-700 text-white"
                         aria-label={`${t('common.learnMoreAbout')} ${service.title}`}
                       >
@@ -196,7 +196,7 @@ const Index = () => {
             {t('home.ctaSubtitle')}
           </p>
           <Button 
-            onClick={() => navigate('/demande-credit')}
+            onClick={() => navigate(`/${language}/demande-credit`)}
             size="lg"
             className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
           >

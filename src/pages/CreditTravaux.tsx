@@ -9,7 +9,7 @@ import { Calculator, CheckCircle, Hammer, Wrench } from 'lucide-react';
 
 const CreditTravaux = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const projectTypes = [
     t('workCredit.projectTypes.energyRenovation'),
@@ -35,7 +35,7 @@ const CreditTravaux = () => {
               {t('workCredit.hero.subtitle')}
             </p>
             <Button 
-              onClick={() => navigate('/demande-credit')}
+              onClick={() => navigate(`/${language}/demande-credit`)}
               size="lg"
               className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-4 text-lg font-semibold"
             >
