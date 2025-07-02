@@ -413,5 +413,64 @@
       "insurance": "Borrower insurance is not mandatory"
     },
     "copyright": "All rights reserved."
+  },
+  "legal": {
+    "title": "Legal Notice",
+    "description": "Legal information of Neovita Finanz - LLC specialized in credit intermediation",
+    "editor": {
+      "title": "Site editor"
+    },
+    "director": {
+      "title": "Publication director"
+    },
+    "intellectual": {
+      "title": "Intellectual property"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "Legal form: LLC",
+      "capital": "Share capital: €17,000,000",
+      "address": "Registered office address:",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, France",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "Identification",
+      "siren": "SIREN: 493 171 540",
+      "siret": "SIRET: 493 171 540 00013",
+      "vat": "VAT: FR16493171540",
+      "rcs": "RCS: Évry (07/07/2008)",
+      "rne": "RNE: 02/04/2008"
+    },
+    "activity": {
+      "title": "Activity",
+      "sector": "Sector: Financial services",
+      "employees": "Staff: 43 employees",
+      "code": "APE Code: 6419Z",
+      "activity": "Activity: Credit intermediation"
+    },
+    "directorInfo": {
+      "name": "Publication director: Mr. Jean-Pierre Martin",
+      "role": "Position: Company manager"
+    },
+    "regulation": {
+      "title": "Professional regulation",
+      "status": "Status: Banking operations and payment services intermediary (IOBSP)",
+      "orias": "ORIAS registration: 12345678901",
+      "control": "Control: Prudential Control and Resolution Authority (ACPR)\n61 rue Taitbout, 75436 Paris Cedex 09",
+      "insurance": "Professional Civil Liability Insurance:\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nGuarantee amount: €8,000,000"
+    },
+    "intellectualProperty": {
+      "content1": "All content of this website (texts, images, logos, graphics, etc.) is protected by copyright and belongs to Neovita Finanz or its partners.",
+      "content2": "Any reproduction, representation, modification, publication, adaptation of all or part of the site elements is prohibited, except with prior written authorization from Neovita Finanz.",
+      "content3": "The brands mentioned on this site are registered by the companies that own them."
+    },
+    "warning": {
+      "title": "Credit warning",
+      "rates": "Interest rates: From 0.50% to 21% depending on lenders",
+      "engagement": "A credit commits you and must be repaid. Check your repayment capacity before committing.",
+      "insurance": "Insurance: Borrower insurance is not mandatory but strongly recommended."
+    }
   }
 }

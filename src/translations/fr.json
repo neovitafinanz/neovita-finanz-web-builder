@@ -387,150 +387,61 @@
   },
   "legal": {
     "title": "Mentions Légales",
-    "description": "Informations légales et réglementaires de Neovita Finanz",
+    "description": "Informations légales de Neovita Finanz - SARL spécialisée en intermédiation en crédit",
     "editor": {
-      "title": "Éditeur du site",
+      "title": "Éditeur du site"
+    },
+    "director": {
+      "title": "Directeur de la publication"
+    },
+    "intellectual": {
+      "title": "Propriété intellectuelle"
+    },
+    "company": {
       "name": "Neovita Finanz",
-      "legalForm": "SAS au capital de 50 000 €",
-      "rcs": "RCS Évry B 789 456 123",
-      "vat": "FR 12 789 456 123",
-      "address": "123 Avenue de la République, 75011 Paris, France",
+      "legalForm": "Forme juridique : SARL",
+      "capital": "Capital social : 17 000 000 €",
+      "address": "Adresse du siège social :",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, France",
       "phone": "01 23 45 67 89",
       "email": "infos@neovitafinanz.com"
     },
-    "director": {
-      "title": "Directeur de la publication",
-      "name": "Jean Dupont, Président"
+    "identification": {
+      "title": "Identification",
+      "siren": "SIREN : 493 171 540",
+      "siret": "SIRET : 493 171 540 00013",
+      "vat": "TVA intracommunautaire : FR16493171540",
+      "rcs": "RCS : Évry (07/07/2008)",
+      "rne": "RNE : 02/04/2008"
     },
-    "intellectual": {
-      "title": "Propriété intellectuelle",
-      "content": "L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques."
+    "activity": {
+      "title": "Activité",
+      "sector": "Secteur : Services financiers",
+      "employees": "Effectif : 43 salariés",
+      "code": "Code APE : 6419Z",
+      "activity": "Activité : Intermédiation en crédit"
     },
-    "liability": {
-      "title": "Responsabilité",
-      "content": "Les informations contenues sur ce site sont aussi précises que possible et le site remis à jour à différentes périodes de l'année, mais peut toutefois contenir des inexactitudes ou des omissions."
+    "directorInfo": {
+      "name": "Directeur de la publication : M. Jean-Pierre Martin",
+      "role": "Qualité : Gérant de la société"
     },
-    "cookies": {
-      "title": "Cookies",
-      "content": "Ce site utilise des cookies pour améliorer l'expérience utilisateur. En naviguant sur ce site, vous acceptez l'utilisation de ces cookies."
-    }
-  },
-  "cookies": {
-    "title": "Politique de Cookies",
-    "description": "Comment nous utilisons les cookies pour améliorer votre expérience",
-    "lastUpdate": "Dernière mise à jour",
-    "what": {
-      "title": "Qu'est-ce qu'un cookie ?",
-      "content": "Un cookie est un petit fichier texte déposé sur votre ordinateur lors de la visite d'un site web. Il permet de reconnaître votre navigateur et de mémoriser certaines informations vous concernant."
+    "regulation": {
+      "title": "Réglementation professionnelle",
+      "status": "Statut : Intermédiaire en opérations de banque et en services de paiement (IOBSP)",
+      "orias": "Immatriculation ORIAS : 12345678901",
+      "control": "Contrôle : Autorité de Contrôle Prudentiel et de Résolution (ACPR)\n61 rue Taitbout, 75436 Paris Cedex 09",
+      "insurance": "Assurance Responsabilité Civile Professionnelle :\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nMontant de garantie : 8 000 000 €"
     },
-    "types": {
-      "title": "Types de cookies utilisés",
-      "technical": {
-        "title": "Cookies techniques",
-        "content": "Ces cookies sont nécessaires au fonctionnement du site. Ils permettent d'utiliser les principales fonctionnalités du site (par exemple l'accès à votre compte)."
-      },
-      "analytics": {
-        "title": "Cookies d'analyse",
-        "content": "Ces cookies nous permettent de connaître l'utilisation et les performances de notre site, d'établir des statistiques, des volumes de fréquentation et d'utilisation."
-      },
-      "preferences": {
-        "title": "Cookies de préférences",
-        "content": "Ces cookies permettent de retenir vos choix et personnaliser votre expérience sur notre site (langue, région, etc.)."
-      }
-    },
-    "management": {
-      "title": "Gestion des cookies",
-      "content": "Vous pouvez à tout moment choisir de désactiver ces cookies. Votre navigateur peut également être paramétré pour vous signaler les cookies qui sont déposés dans votre ordinateur et vous demander de les accepter ou non."
-    },
-    "duration": {
-      "title": "Durée de conservation",
-      "content": "Les cookies techniques sont conservés pour la durée de la session. Les cookies d'analyse et de préférences sont conservés pour une durée maximale de 13 mois."
-    }
-  },
-  "privacy": {
-    "title": "Politique de Confidentialité",
-    "description": "Protection et traitement de vos données personnelles",
-    "lastUpdate": "Dernière mise à jour",
-    "dataCollection": {
-      "title": "Collecte des données",
-      "content": "Nous collectons uniquement les données personnelles nécessaires à la fourniture de nos services de financement. Ces données incluent vos informations de contact, vos données financières et professionnelles dans le cadre de l'étude de votre dossier de crédit."
-    },
-    "dataUse": {
-      "title": "Utilisation des données",
-      "content": "Vos données personnelles sont utilisées exclusivement pour l'étude de votre demande de financement, la gestion de votre dossier client et le respect de nos obligations légales et réglementaires."
-    },
-    "dataProtection": {
-      "title": "Protection des données",
-      "content": "Nous mettons en place toutes les mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, modification, divulgation ou destruction."
-    },
-    "rights": {
-      "title": "Vos droits",
-      "content": "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité de vos données ainsi que du droit de vous opposer à leur traitement. Vous pouvez exercer ces droits en nous contactant."
-    },
-    "retention": {
-      "title": "Durée de conservation",
-      "content": "Vos données sont conservées pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées, dans le respect des dispositions légales applicables au secteur bancaire et financier."
-    },
-    "contact": {
-      "title": "Contact",
-      "dpo": "Délégué à la protection des données",
-      "address": "Adresse postale"
-    }
-  },
-  "siteMap": {
-    "title": "Plan du Site",
-    "description": "Navigation et structure du site Neovita Finanz"
-  },
-  "footer": {
-    "tagline": "Votre spécialiste du financement",
-    "description": "Neovita Finanz vous accompagne dans tous vos projets de financement avec expertise et proximité.",
-    "sections": {
-      "services": "Nos Services",
-      "company": "L'Entreprise",
-      "legal": "Informations Légales"
-    },
-    "services": {
-      "personalLoans": "Prêts Personnels",
-      "mortgageLoans": "Prêts Immobiliers",
-      "creditBuyback": "Rachat de Crédit",
-      "workCredit": "Crédit Travaux",
-      "insurance": "Assurances"
-    },
-    "company": {
-      "about": "À Propos",
-      "team": "Notre Équipe",
-      "careers": "Carrières",
-      "partners": "Partenaires",
-      "news": "Actualités"
-    },
-    "legal": {
-      "terms": "Mentions Légales",
-      "privacy": "Politique de Confidentialité",
-      "conditions": "Conditions Générales",
-      "sitemap": "Plan du Site",
-      "cookies": "Cookies"
-    },
-    "trust": {
-      "title": "Certifications",
-      "gdpr": "Conforme RGPD",
-      "gdprDesc": "Protection des données",
-      "ssl": "Sécurisé SSL",
-      "sslDesc": "Connexion sécurisée",
-      "rcs": "RCS Évry",
-      "rcsDesc": "Établissement agréé"
-    },
-    "companyInfo": {
-      "title": "Informations Société",
-      "legalForm": "Forme juridique",
-      "capital": "Capital",
-      "employees": "Effectif"
+    "intellectualProperty": {
+      "content1": "L'ensemble du contenu de ce site web (textes, images, logos, graphismes, etc.) est protégé par le droit d'auteur et appartient à Neovita Finanz ou à ses partenaires.",
+      "content2": "Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable de Neovita Finanz.",
+      "content3": "Les marques citées sur ce site sont déposées par les sociétés qui en sont propriétaires."
     },
     "warning": {
-      "title": "Informations Importantes",
-      "rates": "De 0,9% à 19,9% selon profil et durée",
-      "credit": "Un crédit vous engage et doit être remboursé",
-      "insurance": "L'assurance emprunteur n'est pas obligatoire"
-    },
-    "copyright": "Tous droits réservés."
+      "title": "Avertissement crédit",
+      "rates": "Taux d'intérêt : De 0,50% à 21% selon les organismes prêteurs",
+      "engagement": "Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager.",
+      "insurance": "Assurance : L'assurance emprunteur n'est pas obligatoire mais vivement recommandée."
+    }
   }
 }

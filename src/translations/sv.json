@@ -447,5 +447,64 @@
     "consolidation": "Kreditsamling",
     "lease": "Leasing",
     "student": "Studielån"
+  },
+  "legal": {
+    "title": "Juridisk Information",
+    "description": "Juridisk information om Neovita Finanz - AB specialiserat på kreditförmedling",
+    "editor": {
+      "title": "Webbplatsredaktör"
+    },
+    "director": {
+      "title": "Publikationsdirektör"
+    },
+    "intellectual": {
+      "title": "Immateriella rättigheter"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "Juridisk form: AB",
+      "capital": "Aktiekapital: 17 000 000 €",
+      "address": "Säte adress:",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, Frankrike",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "Identifiering",
+      "siren": "SIREN: 493 171 540",
+      "siret": "SIRET: 493 171 540 00013",
+      "vat": "Moms: FR16493171540",
+      "rcs": "RCS: Évry (07/07/2008)",
+      "rne": "RNE: 02/04/2008"
+    },
+    "activity": {
+      "title": "Verksamhet",
+      "sector": "Sektor: Finansiella tjänster",
+      "employees": "Personal: 43 anställda",
+      "code": "APE-kod: 6419Z",
+      "activity": "Verksamhet: Kreditförmedling"
+    },
+    "directorInfo": {
+      "name": "Publikationsdirektör: Herr Jean-Pierre Martin",
+      "role": "Position: Företagsledare"
+    },
+    "regulation": {
+      "title": "Professionell reglering",
+      "status": "Status: Förmedlare av bankoperationer och betaltjänster (IOBSP)",
+      "orias": "ORIAS-registrering: 12345678901",
+      "control": "Kontroll: Prudentiell kontroll- och resolutionsmyndighet (ACPR)\n61 rue Taitbout, 75436 Paris Cedex 09",
+      "insurance": "Professionell ansvarsförsäkring:\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nGarantibelopp: 8 000 000 €"
+    },
+    "intellectualProperty": {
+      "content1": "Allt innehåll på denna webbplats (texter, bilder, logotyper, grafik, etc.) skyddas av upphovsrätt och tillhör Neovita Finanz eller dess partners.",
+      "content2": "All reproduktion, representation, modifiering, publicering, anpassning av alla eller delar av webbplatsens element är förbjuden, utom med skriftlig förhandstillstånd från Neovita Finanz.",
+      "content3": "Varumärkena som nämns på denna webbplats är registrerade av företagen som äger dem."
+    },
+    "warning": {
+      "title": "Kreditvarning",
+      "rates": "Räntor: Från 0,50% till 21% beroende på långivare",
+      "engagement": "En kredit förpliktar dig och måste återbetalas. Kontrollera din återbetalningsförmåga innan du förbinder dig.",
+      "insurance": "Försäkring: Låntagarförsäkring är inte obligatorisk men starkt rekommenderad."
+    }
   }
 }

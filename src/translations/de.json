@@ -396,5 +396,64 @@
       "insurance": "Die Kreditnehmerversicherung ist nicht obligatorisch"
     },
     "copyright": "Alle Rechte vorbehalten."
+  },
+  "legal": {
+    "title": "Impressum",
+    "description": "Rechtliche Informationen zu Neovita Finanz - GmbH spezialisiert auf Kreditvermittlung",
+    "editor": {
+      "title": "Site-Herausgeber"
+    },
+    "director": {
+      "title": "Verantwortlicher Redakteur"
+    },
+    "intellectual": {
+      "title": "Geistiges Eigentum"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "Rechtsform: GmbH",
+      "capital": "Stammkapital: 17.000.000 €",
+      "address": "Geschäftssitz:",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, Frankreich",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "Identifikation",
+      "siren": "SIREN: 493 171 540",
+      "siret": "SIRET: 493 171 540 00013",
+      "vat": "USt-IdNr.: FR16493171540",
+      "rcs": "RCS: Évry (07/07/2008)",
+      "rne": "RNE: 02/04/2008"
+    },
+    "activity": {
+      "title": "Tätigkeit",
+      "sector": "Sektor: Finanzdienstleistungen",
+      "employees": "Personal: 43 Mitarbeiter",
+      "code": "APE-Code: 6419Z",
+      "activity": "Tätigkeit: Kreditvermittlung"
+    },
+    "directorInfo": {
+      "name": "Verantwortlicher Redakteur: Herr Jean-Pierre Martin",
+      "role": "Position: Geschäftsführer"
+    },
+    "regulation": {
+      "title": "Berufsregelung",
+      "status": "Status: Vermittler für Bankgeschäfte und Zahlungsdienste (IOBSP)",
+      "orias": "ORIAS-Registrierung: 12345678901",
+      "control": "Kontrolle: Aufsichts- und Abwicklungsbehörde (ACPR)\n61 rue Taitbout, 75436 Paris Cedex 09",
+      "insurance": "Berufshaftpflichtversicherung:\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nVersicherungssumme: 8.000.000 €"
+    },
+    "intellectualProperty": {
+      "content1": "Der gesamte Inhalt dieser Website (Texte, Bilder, Logos, Grafiken usw.) ist urheberrechtlich geschützt und gehört Neovita Finanz oder seinen Partnern.",
+      "content2": "Jede Reproduktion, Darstellung, Änderung, Veröffentlichung, Anpassung aller oder eines Teils der Website-Elemente ist verboten, außer mit vorheriger schriftlicher Genehmigung von Neovita Finanz.",
+      "content3": "Die auf dieser Website erwähnten Marken sind von den Unternehmen eingetragen, die sie besitzen."
+    },
+    "warning": {
+      "title": "Kreditwarnung",
+      "rates": "Zinssätze: Von 0,50% bis 21% je nach Kreditgeber",
+      "engagement": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Überprüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten.",
+      "insurance": "Versicherung: Eine Kreditnehmerversicherung ist nicht obligatorisch, aber dringend empfohlen."
+    }
   }
 }

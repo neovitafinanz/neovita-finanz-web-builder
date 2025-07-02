@@ -380,5 +380,64 @@
       "insurance": "L'assicurazione del mutuatario non è obbligatoria"
     },
     "copyright": "Tutti i diritti riservati."
+  },
+  "legal": {
+    "title": "Note Legali",
+    "description": "Informazioni legali di Neovita Finanz - SRL specializzata in intermediazione creditizia",
+    "editor": {
+      "title": "Editore del sito"
+    },
+    "director": {
+      "title": "Direttore della pubblicazione"
+    },
+    "intellectual": {
+      "title": "Proprietà intellettuale"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "Forma giuridica: SRL",
+      "capital": "Capitale sociale: 17.000.000 €",
+      "address": "Indirizzo della sede sociale:",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, Francia",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "Identificazione",
+      "siren": "SIREN: 493 171 540",
+      "siret": "SIRET: 493 171 540 00013",
+      "vat": "IVA: FR16493171540",
+      "rcs": "RCS: Évry (07/07/2008)",
+      "rne": "RNE: 02/04/2008"
+    },
+    "activity": {
+      "title": "Attività",
+      "sector": "Settore: Servizi finanziari",
+      "employees": "Personale: 43 dipendenti",
+      "code": "Codice APE: 6419Z",
+      "activity": "Attività: Intermediazione creditizia"
+    },
+    "directorInfo": {
+      "name": "Direttore della pubblicazione: Sig. Jean-Pierre Martin",
+      "role": "Qualifica: Amministratore della società"
+    },
+    "regulation": {
+      "title": "Regolamentazione professionale",
+      "status": "Stato: Intermediario in operazioni bancarie e servizi di pagamento (IOBSP)",
+      "orias": "Iscrizione ORIAS: 12345678901",
+      "control": "Controllo: Autorità di Controllo Prudenziale e Risoluzione (ACPR)\n61 rue Taitbout, 75436 Parigi Cedex 09",
+      "insurance": "Assicurazione Responsabilità Civile Professionale:\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nImporto di garanzia: 8.000.000 €"
+    },
+    "intellectualProperty": {
+      "content1": "Tutto il contenuto di questo sito web (testi, immagini, loghi, grafici, ecc.) è protetto da copyright e appartiene a Neovita Finanz o ai suoi partner.",
+      "content2": "Qualsiasi riproduzione, rappresentazione, modifica, pubblicazione, adattamento di tutto o parte degli elementi del sito è vietata, salvo autorizzazione scritta preventiva di Neovita Finanz.",
+      "content3": "I marchi citati su questo sito sono registrati dalle società proprietarie."
+    },
+    "warning": {
+      "title": "Avvertenza credito",
+      "rates": "Tassi di interesse: Dallo 0,50% al 21% secondo gli istituti di credito",
+      "engagement": "Un credito ti impegna e deve essere rimborsato. Verifica le tue capacità di rimborso prima di impegnarti.",
+      "insurance": "Assicurazione: L'assicurazione del mutuatario non è obbligatoria ma vivamente raccomandata."
+    }
   }
 }

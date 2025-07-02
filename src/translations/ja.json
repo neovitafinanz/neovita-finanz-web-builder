@@ -380,5 +380,64 @@
       "insurance": "借り手保険は義務ではありません"
     },
     "copyright": "すべての権利を保有。"
+  },
+  "legal": {
+    "title": "法的通知",
+    "description": "Neovita Finanz の法的情報 - クレジット仲介専門の有限会社",
+    "editor": {
+      "title": "サイト発行者"
+    },
+    "director": {
+      "title": "発行責任者"
+    },
+    "intellectual": {
+      "title": "知的財産"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "法的形態：有限会社",
+      "capital": "資本金：17,000,000 €",
+      "address": "本社所在地：",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, France",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "識別情報",
+      "siren": "SIREN：493 171 540",
+      "siret": "SIRET：493 171 540 00013",
+      "vat": "VAT：FR16493171540",
+      "rcs": "RCS：Évry（07/07/2008）",
+      "rne": "RNE：02/04/2008"
+    },
+    "activity": {
+      "title": "活動",
+      "sector": "セクター：金融サービス",
+      "employees": "従業員：43人",
+      "code": "APEコード：6419Z",
+      "activity": "活動：クレジット仲介"
+    },
+    "directorInfo": {
+      "name": "発行責任者：Jean-Pierre Martin氏",
+      "role": "役職：会社管理者"
+    },
+    "regulation": {
+      "title": "専門規制",
+      "status": "ステータス：銀行業務および決済サービス仲介業者（IOBSP）",
+      "orias": "ORIAS登録：12345678901",
+      "control": "監督：プルーデンシャル管理・破綻処理機構（ACPR）\n61 rue Taitbout, 75436 Paris Cedex 09",
+      "insurance": "専門職業責任保険：\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\n保証額：8,000,000 €"
+    },
+    "intellectualProperty": {
+      "content1": "このウェブサイトのすべてのコンテンツ（テキスト、画像、ロゴ、グラフィックスなど）は著作権で保護されており、Neovita Finanzまたはそのパートナーに帰属します。",
+      "content2": "Neovita Finanzからの事前の書面による許可がない限り、サイトの要素の全部または一部の複製、表現、変更、公開、適応は禁止されています。",
+      "content3": "このサイトで言及されているブランドは、それらを所有する会社によって登録されています。"
+    },
+    "warning": {
+      "title": "クレジット警告",
+      "rates": "金利：貸し手によって0.50％から21％",
+      "engagement": "クレジットはあなたを拘束し、返済されなければなりません。コミットする前に返済能力を確認してください。",
+      "insurance": "保険：借り手保険は義務ではありませんが、強く推奨されます。"
+    }
   }
 }

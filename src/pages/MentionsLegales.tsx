@@ -31,26 +31,27 @@ const MentionsLegales = () => {
                 <CardContent>
                   <div className="space-y-4">
                     <p className="text-gray-600">
-                      <strong>Neovita Finanz</strong>
+                      <strong>{t('legal.company.name')}</strong>
                     </p>
                     <p className="text-gray-600">
-                      <strong>Forme juridique :</strong> SARL
+                      <strong>{t('legal.company.legalForm')}</strong>
                     </p>
                     <p className="text-gray-600">
-                      <strong>Capital social :</strong> 17 000 000 €
+                      <strong>{t('legal.company.capital')}</strong>
                     </p>
                     <p className="text-gray-600">
-                      <strong>Adresse du siège social :</strong><br />
-                      1 Rue du Bois Chaland<br />
-                      91090 Lisses, France
+                      <strong>{t('legal.company.address')}</strong><br />
+                      {t('legal.company.addressDetails').split('\n').map((line, i) => (
+                        <span key={i}>{line}<br /></span>
+                      ))}
                     </p>
                     <div className="flex items-center space-x-2 text-gray-600">
                       <Phone className="w-4 h-4" />
-                      <span>01 23 45 67 89</span>
+                      <span>{t('legal.company.phone')}</span>
                     </div>
                     <div className="flex items-center space-x-2 text-gray-600">
                       <Mail className="w-4 h-4" />
-                      <span>infos@neovitafinanz.com</span>
+                      <span>{t('legal.company.email')}</span>
                     </div>
                   </div>
                 </CardContent>
@@ -58,27 +59,27 @@ const MentionsLegales = () => {
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Informations légales</CardTitle>
+                  <CardTitle>{t('legal.identification.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Identification</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2">{t('legal.identification.title')}</h4>
                       <ul className="space-y-1 text-gray-600 text-sm">
-                        <li><strong>SIREN :</strong> 493 171 540</li>
-                        <li><strong>SIRET :</strong> 493 171 540 00013</li>
-                        <li><strong>TVA intracommunautaire :</strong> FR16493171540</li>
-                        <li><strong>RCS :</strong> Évry (07/07/2008)</li>
-                        <li><strong>RNE :</strong> 02/04/2008</li>
+                        <li>{t('legal.identification.siren')}</li>
+                        <li>{t('legal.identification.siret')}</li>
+                        <li>{t('legal.identification.vat')}</li>
+                        <li>{t('legal.identification.rcs')}</li>
+                        <li>{t('legal.identification.rne')}</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Activité</h4>
+                      <h4 className="font-semibold text-gray-900 mb-2">{t('legal.activity.title')}</h4>
                       <ul className="space-y-1 text-gray-600 text-sm">
-                        <li><strong>Secteur :</strong> Services financiers</li>
-                        <li><strong>Effectif :</strong> 43 salariés</li>
-                        <li><strong>Code APE :</strong> 6419Z</li>
-                        <li><strong>Activité :</strong> Intermédiation en crédit</li>
+                        <li>{t('legal.activity.sector')}</li>
+                        <li>{t('legal.activity.employees')}</li>
+                        <li>{t('legal.activity.code')}</li>
+                        <li>{t('legal.activity.activity')}</li>
                       </ul>
                     </div>
                   </div>
@@ -90,34 +91,27 @@ const MentionsLegales = () => {
                   <CardTitle>{t('legal.director.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
-                    <strong>Directeur de la publication :</strong> M. Jean-Pierre Martin<br />
-                    <strong>Qualité :</strong> Gérant de la société
-                  </p>
+                  <div className="text-gray-600">
+                    <p>{t('legal.directorInfo.name')}</p>
+                    <p>{t('legal.directorInfo.role')}</p>
+                  </div>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg">
                 <CardHeader>
-                  <CardTitle>Réglementation professionnelle</CardTitle>
+                  <CardTitle>{t('legal.regulation.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4 text-gray-600">
-                    <p>
-                      <strong>Statut :</strong> Intermédiaire en opérations de banque et en services de paiement (IOBSP)
-                    </p>
-                    <p>
-                      <strong>Immatriculation ORIAS :</strong> 12345678901
-                    </p>
-                    <p>
-                      <strong>Contrôle :</strong> Autorité de Contrôle Prudentiel et de Résolution (ACPR)<br />
-                      61 rue Taitbout, 75436 Paris Cedex 09
-                    </p>
-                    <p>
-                      <strong>Assurance Responsabilité Civile Professionnelle :</strong><br />
-                      AXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex<br />
-                      Montant de garantie : 8 000 000 €
-                    </p>
+                    <p>{t('legal.regulation.status')}</p>
+                    <p>{t('legal.regulation.orias')}</p>
+                    <p>{t('legal.regulation.control').split('\n').map((line, i) => (
+                      <span key={i}>{line}<br /></span>
+                    ))}</p>
+                    <p>{t('legal.regulation.insurance').split('\n').map((line, i) => (
+                      <span key={i}>{line}<br /></span>
+                    ))}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -128,28 +122,22 @@ const MentionsLegales = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3 text-gray-600">
-                    <p>
-                      L'ensemble du contenu de ce site web (textes, images, logos, graphismes, etc.) est protégé par le droit d'auteur et appartient à Neovita Finanz ou à ses partenaires.
-                    </p>
-                    <p>
-                      Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite, sauf autorisation écrite préalable de Neovita Finanz.
-                    </p>
-                    <p>
-                      Les marques citées sur ce site sont déposées par les sociétés qui en sont propriétaires.
-                    </p>
+                    <p>{t('legal.intellectualProperty.content1')}</p>
+                    <p>{t('legal.intellectualProperty.content2')}</p>
+                    <p>{t('legal.intellectualProperty.content3')}</p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-lg bg-yellow-50 border-yellow-200">
                 <CardHeader>
-                  <CardTitle className="text-yellow-800">Avertissement crédit</CardTitle>
+                  <CardTitle className="text-yellow-800">{t('legal.warning.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2 text-yellow-700 text-sm">
-                    <p><strong>Taux d'intérêt :</strong> De 0,50% à 21% selon les organismes prêteurs</p>
-                    <p><strong>Un crédit vous engage et doit être remboursé.</strong> Vérifiez vos capacités de remboursement avant de vous engager.</p>
-                    <p><strong>Assurance :</strong> L'assurance emprunteur n'est pas obligatoire mais vivement recommandée.</p>
+                    <p>{t('legal.warning.rates')}</p>
+                    <p><strong>{t('legal.warning.engagement')}</strong></p>
+                    <p>{t('legal.warning.insurance')}</p>
                   </div>
                 </CardContent>
               </Card>

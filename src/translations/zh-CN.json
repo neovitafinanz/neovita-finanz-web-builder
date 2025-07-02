@@ -376,5 +376,64 @@
     },
     "submit": "提交我的申请",
     "disclaimer": "提交此表格即表示您同意我们的服务联系您。您的数据受到保护，不会传输给第三方。"
+  },
+  "legal": {
+    "title": "法律声明",
+    "description": "Neovita Finanz 法律信息 - 专业信贷中介有限责任公司",
+    "editor": {
+      "title": "网站发布者"
+    },
+    "director": {
+      "title": "出版总监"
+    },
+    "intellectual": {
+      "title": "知识产权"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "法律形式：有限责任公司",
+      "capital": "注册资本：17,000,000 €",
+      "address": "注册地址：",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, France",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "识别信息",
+      "siren": "SIREN：493 171 540",
+      "siret": "SIRET：493 171 540 00013",
+      "vat": "增值税：FR16493171540",
+      "rcs": "RCS：Évry（07/07/2008）",
+      "rne": "RNE：02/04/2008"
+    },
+    "activity": {
+      "title": "业务活动",
+      "sector": "行业：金融服务",
+      "employees": "员工：43名员工",
+      "code": "APE代码：6419Z",
+      "activity": "活动：信贷中介"
+    },
+    "directorInfo": {
+      "name": "出版总监：Jean-Pierre Martin先生",
+      "role": "职务：公司经理"
+    },
+    "regulation": {
+      "title": "专业监管",
+      "status": "地位：银行业务和支付服务中介（IOBSP）",
+      "orias": "ORIAS注册：12345678901",
+      "control": "监管：审慎监管和处置局（ACPR）\n61 rue Taitbout, 75436 Paris Cedex 09",
+      "insurance": "专业民事责任保险：\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\n保证金额：8,000,000 €"
+    },
+    "intellectualProperty": {
+      "content1": "本网站的全部内容（文本、图像、标志、图形等）受版权保护，属于Neovita Finanz或其合作伙伴。",
+      "content2": "除非事先获得Neovita Finanz的书面授权，否则禁止复制、表示、修改、发布、改编网站元素的全部或部分。",
+      "content3": "本网站提及的商标由拥有它们的公司注册。"
+    },
+    "warning": {
+      "title": "信贷警告",
+      "rates": "利率：根据放贷机构从0.50%到21%",
+      "engagement": "信贷约束您并且必须偿还。在承诺之前请检查您的偿还能力。",
+      "insurance": "保险：借款人保险不是强制性的，但强烈建议。"
+    }
   }
 }

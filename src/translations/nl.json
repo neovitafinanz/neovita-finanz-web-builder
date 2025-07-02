@@ -372,5 +372,64 @@
       "insurance": "Lener verzekering is niet verplicht"
     },
     "copyright": "Alle rechten voorbehouden."
+  },
+  "legal": {
+    "title": "Juridische Mededelingen",
+    "description": "Juridische informatie van Neovita Finanz - BV gespecialiseerd in kredietbemiddeling",
+    "editor": {
+      "title": "Site-uitgever"
+    },
+    "director": {
+      "title": "Publicatiedirecteur"
+    },
+    "intellectual": {
+      "title": "Intellectueel eigendom"
+    },
+    "company": {
+      "name": "Neovita Finanz",
+      "legalForm": "Rechtsvorm: BV",
+      "capital": "Maatschappelijk kapitaal: € 17.000.000",
+      "address": "Adres van de maatschappelijke zetel:",
+      "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, Frankrijk",
+      "phone": "01 23 45 67 89",
+      "email": "infos@neovitafinanz.com"
+    },
+    "identification": {
+      "title": "Identificatie",
+      "siren": "SIREN: 493 171 540",
+      "siret": "SIRET: 493 171 540 00013",
+      "vat": "BTW: FR16493171540",
+      "rcs": "RCS: Évry (07/07/2008)",
+      "rne": "RNE: 02/04/2008"
+    },
+    "activity": {
+      "title": "Activiteit",
+      "sector": "Sector: Financiële diensten",
+      "employees": "Personeel: 43 werknemers",
+      "code": "APE-code: 6419Z",
+      "activity": "Activiteit: Kredietbemiddeling"
+    },
+    "directorInfo": {
+      "name": "Publicatiedirecteur: Dhr. Jean-Pierre Martin",
+      "role": "Hoedanigheid: Manager van het bedrijf"
+    },
+    "regulation": {
+      "title": "Professionele regelgeving",
+      "status": "Status: Tussenpersoon in bankoperaties en betalingsdiensten (IOBSP)",
+      "orias": "ORIAS-registratie: 12345678901",
+      "control": "Controle: Prudentiële Controle en Resolutie Autoriteit (ACPR)\n61 rue Taitbout, 75436 Parijs Cedex 09",
+      "insurance": "Professionele Aansprakelijkheidsverzekering:\nAXA France IARD - 313 Terrasses de l'Arche, 92727 Nanterre Cedex\nGarantiebedrag: € 8.000.000"
+    },
+    "intellectualProperty": {
+      "content1": "Alle inhoud van deze website (teksten, afbeeldingen, logo's, afbeeldingen, enz.) wordt beschermd door auteursrecht en behoort toe aan Neovita Finanz of haar partners.",
+      "content2": "Elke reproductie, voorstelling, wijziging, publicatie, aanpassing van alle of een deel van de site-elementen is verboden, behalve met voorafgaande schriftelijke toestemming van Neovita Finanz.",
+      "content3": "De merken die op deze site worden genoemd zijn geregistreerd door de bedrijven die eigenaar zijn."
+    },
+    "warning": {
+      "title": "Kredietwaarschuwing",
+      "rates": "Rentetarieven: Van 0,50% tot 21% afhankelijk van kredietverstrekkers",
+      "engagement": "Een krediet verplicht u en moet worden terugbetaald. Controleer uw terugbetalingscapaciteit voordat u zich verbindt.",
+      "insurance": "Verzekering: Lenersverzekering is niet verplicht maar sterk aanbevolen."
+    }
   }
 }
