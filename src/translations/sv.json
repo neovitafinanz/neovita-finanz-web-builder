@@ -242,7 +242,8 @@
     "estimationSavedDesc": "Uppskattning sparad",
     "requestInProgress": "Ansökan pågår",
     "requestInProgressDesc": "Din ansökan behandlas"
-    "types": {
+  },
+  "loanTypes": {
       "personal": "Personligt lån",
       "mortgage": "Bolån",
       "work": "Arbetskredit",
