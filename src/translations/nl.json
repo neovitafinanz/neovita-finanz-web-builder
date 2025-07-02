@@ -227,6 +227,26 @@
       "description": "43 gespecialiseerde adviseurs om u bij elke stap te begeleiden"
     }
   },
+  "simulator": {
+    "title": "Leningsimulator",
+    "subtitle": "Bereken uw financiering in een paar stappen",
+    "parameters": "Leningparameters",
+    "loanType": "Type lening",
+    "selectLoanType": "Selecteer een type",
+    "amount": "Bedrag",
+    "duration": "Looptijd",
+    "months": "maanden",
+    "years": "jaar", 
+    "calculate": "Berekenen",
+    "results": "Resultaten",
+    "monthlyPayment": "Maandelijkse betaling",
+    "totalCost": "Totale kosten",
+    "interestRate": "Rentevoet",
+    "estimationSaved": "Opslaan",
+    "estimationSavedDesc": "Schatting opgeslagen",
+    "requestInProgress": "Aanvraag in behandeling",
+    "requestInProgressDesc": "Uw aanvraag wordt verwerkt"
+  },
   "loanTypes": {
     "personal": "Persoonlijke lening",
     "consumption": "Consumentenkrediet",

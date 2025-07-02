@@ -232,11 +232,16 @@
     "amount": "Belopp",
     "duration": "Varaktighet",
     "months": "månader",
-    "years": "år",
+    "years": "år", 
+    "calculate": "Beräkna",
     "results": "Resultat",
     "monthlyPayment": "Månadsbetalning",
     "totalCost": "Totalkostnad",
-    "totalInterest": "Totala räntor",
+    "interestRate": "Ränta",
+    "estimationSaved": "Spara",
+    "estimationSavedDesc": "Uppskattning sparad",
+    "requestInProgress": "Ansökan pågår",
+    "requestInProgressDesc": "Din ansökan behandlas"
     "types": {
       "personal": "Personligt lån",
       "mortgage": "Bolån",

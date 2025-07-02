@@ -229,7 +229,19 @@
     "parameters": "Låneparametere",
     "loanType": "Lånetype",
     "selectLoanType": "Velg en type",
-    "amount": "Beløp"
+    "amount": "Beløp",
+    "duration": "Varighet",
+    "months": "måneder",
+    "years": "år", 
+    "calculate": "Beregn",
+    "results": "Resultater",
+    "monthlyPayment": "Månedlig betaling",
+    "totalCost": "Totalkostnad",
+    "interestRate": "Rente",
+    "estimationSaved": "Lagre",
+    "estimationSavedDesc": "Estimat lagret",
+    "requestInProgress": "Søknad pågår",
+    "requestInProgressDesc": "Din søknad behandles"
   },
   "testimonials": {
     "title": "Kundevitnesbyrd",
