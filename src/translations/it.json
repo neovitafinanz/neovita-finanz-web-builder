@@ -118,6 +118,25 @@
       "study": "Studia il mio dossier"
     }
   },
+  "workCredit": {
+    "metaDescription": "Credito lavori con Neovita Finanz. Finanziate i vostri progetti di ristrutturazione e costruzione.",
+    "hero": {
+      "title": "Credito Lavori",
+      "subtitle": "Finanziate i vostri progetti di ristrutturazione e costruzione"
+    },
+    "projectTypes": {
+      "title": "I nostri tipi di progetti",
+      "energyRenovation": "Ristrutturazione energetica",
+      "houseExtension": "Ampliamento casa",
+      "interiorDesign": "Design d'interni",
+      "roofWork": "Lavori sul tetto",
+      "poolInstallation": "Installazione piscina",
+      "kitchenBathroom": "Cucina e bagno"
+    },
+    "cta": {
+      "finance": "Finanzia i miei lavori"
+    }
+  },
   "about": {
     "metaDescription": "Su BHV Auto - Scoprite la nostra esperienza nell'importazione di veicoli e il nostro team di specialisti.",
     "hero": {
@@ -165,6 +184,10 @@
     "creditBuyback": {
       "title": "Consolidamento Crediti",
       "description": "Semplificate i vostri rimborsi e riducete le rate mensili"
+    },
+    "workCredit": {
+      "title": "Credito Lavori",
+      "description": "Finanziate i vostri progetti di ristrutturazione e costruzione"
     }
   },
   "advantages": {
