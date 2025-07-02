@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Hjem",
@@ -230,20 +229,7 @@
     "parameters": "Låneparametere",
     "loanType": "Lånetype",
     "selectLoanType": "Velg en type",
-    "amount": "Beløp",
-    "duration": "Varighet",
-    "months": "måneder",
-    "years": "år",
-    "results": "Resultater",
-    "monthlyPayment": "Månedlig betaling",
-    "totalCost": "Totalkostnad",
-    "totalInterest": "Total rente",
-    "types": {
-      "personal": "Personlig lån",
-      "mortgage": "Boliglån",
-      "work": "Arbeidskredit",
-      "auto": "Billån"
-    }
+    "amount": "Beløp"
   },
   "testimonials": {
     "title": "Kundevitnesbyrd",
@@ -251,18 +237,6 @@
     "reviews": "anmeldelser",
     "loanTypeLabel": "Lånetype",
     "amountLabel": "Beløp",
-    "marie": {
-      "comment": "Utmerket service, rask og profesjonell. Jeg anbefaler Neovita Finanz!",
-      "loanType": "Personlig lån"
-    },
-    "pierre": {
-      "comment": "Takket være Neovita fikk jeg mitt boliglån på beste vilkår.",
-      "loanType": "Boliglån"
-    },
-    "sophie": {
-      "comment": "Perfekt for å samle mine kreditter, mye enklere nå!",
-      "loanType": "Kredittsamling"
-    },
     "jeanmarc": {
       "comment": "Takket være NeoVita fikk jeg raskt et lån for å starte prosjektet mitt.",
       "loanType": "Selvstendig næringsdrivende lån"
@@ -278,22 +252,34 @@
   },
   "creditForm": {
     "title": "Lånesøknad",
-    "subtitle": "Fyll ut skjemaet for å få et personlig tilbud",
-    "personalInfo": "Personlig informasjon",
+    "subtitle": "Fyll ut dette skjemaet for å søke om lån. Vårt ekspertteam vil kontakte deg raskt.",
+    "formTitle": "Søknadsskjema",
     "firstName": "Fornavn",
     "lastName": "Etternavn",
     "email": "E-post",
     "phone": "Telefon",
-    "projectInfo": "Prosjektinformasjon",
     "loanType": "Type lån",
     "amount": "Ønsket beløp",
     "duration": "Varighet",
     "income": "Månedlig inntekt",
-    "purpose": "Formål med lånet",
+    "message": "Tilleggsmelding",
+    "firstNamePlaceholder": "Ditt fornavn",
+    "lastNamePlaceholder": "Ditt etternavn",
+    "emailPlaceholder": "din.epost@eksempel.com",
+    "phonePlaceholder": "12 34 56 78",
+    "selectLoanType": "Velg type lån",
+    "months": "måneder",
+    "messagePlaceholder": "Beskriv ditt prosjekt eller spesifikke behov...",
     "submit": "Send min søknad",
-    "submitting": "Sender...",
-    "success": "Din søknad er sendt!",
-    "error": "En feil oppstod. Prøv igjen."
+    "disclaimer": "* Obligatoriske felt. Dine data er beskyttet og vil kun brukes til å behandle søknaden din.",
+    "validation": {
+      "missingFields": "Manglende felt",
+      "fillRequired": "Vennligst fyll ut alle obligatoriske felt."
+    },
+    "success": {
+      "title": "Søknad sendt med suksess",
+      "message": "Vi kontakter deg så raskt som mulig."
+    }
   },
   "footer": {
     "tagline": "Din finansieringsspesialist",

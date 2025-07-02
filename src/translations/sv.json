@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Hem",
@@ -278,22 +277,34 @@
   },
   "creditForm": {
     "title": "Låneansökan",
-    "subtitle": "Fyll i formuläret för att få en personlig offert",
-    "personalInfo": "Personlig information",
+    "subtitle": "Fyll i detta formulär för att ansöka om lån. Vårt expertteam kommer att kontakta dig snabbt.",
+    "formTitle": "Ansökningsformulär",
     "firstName": "Förnamn",
     "lastName": "Efternamn",
     "email": "E-post",
     "phone": "Telefon",
-    "projectInfo": "Information om projekt",
     "loanType": "Typ av lån",
     "amount": "Önskat belopp",
     "duration": "Varaktighet",
-    "income": "Månadsintäkt",
-    "purpose": "Syfte med lånet",
+    "income": "Månadsinkomst",
+    "message": "Tilläggsmeddelande",
+    "firstNamePlaceholder": "Ditt förnamn",
+    "lastNamePlaceholder": "Ditt efternamn",
+    "emailPlaceholder": "din.epost@exempel.se",
+    "phonePlaceholder": "070-123 45 67",
+    "selectLoanType": "Välj typ av lån",
+    "months": "månader",
+    "messagePlaceholder": "Beskriv ditt projekt eller specifika behov...",
     "submit": "Skicka min ansökan",
-    "submitting": "Skickar...",
-    "success": "Din ansökan har skickats framgångsrikt!",
-    "error": "Ett fel uppstod. Försök igen."
+    "disclaimer": "* Obligatoriska fält. Dina uppgifter är skyddade och kommer endast att användas för att behandla din ansökan.",
+    "validation": {
+      "missingFields": "Saknade fält",
+      "fillRequired": "Vänligen fyll i alla obligatoriska fält."
+    },
+    "success": {
+      "title": "Ansökan skickad framgångsrikt",
+      "message": "Vi kontaktar dig så snart som möjligt."
+    }
   },
   "footer": {
     "tagline": "Din finansieringsspecialist",

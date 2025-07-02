@@ -254,6 +254,37 @@
       "loanType": "Financiamento automóvel"
     }
   },
+  "loanForm": {
+    "title": "Pedido de Empréstimo",
+    "subtitle": "Preencha este formulário para fazer o seu pedido de empréstimo. A nossa equipa de especialistas entrará em contacto consigo rapidamente.",
+    "formTitle": "Formulário de Pedido",
+    "firstName": "Nome",
+    "lastName": "Apelido",
+    "email": "Email",
+    "phone": "Telefone",
+    "loanType": "Tipo de empréstimo",
+    "amount": "Montante desejado",
+    "duration": "Duração",
+    "income": "Rendimento mensal",
+    "message": "Mensagem adicional",
+    "firstNamePlaceholder": "O seu nome",
+    "lastNamePlaceholder": "O seu apelido",
+    "emailPlaceholder": "seu.email@exemplo.com",
+    "phonePlaceholder": "91 234 56 78",
+    "selectLoanType": "Selecionar tipo de empréstimo",
+    "months": "meses",
+    "messagePlaceholder": "Descreva o seu projeto ou necessidades específicas...",
+    "submit": "Enviar o meu pedido",
+    "disclaimer": "* Campos obrigatórios. Os seus dados estão protegidos e só serão utilizados para processar o seu pedido.",
+    "validation": {
+      "missingFields": "Campos em falta",
+      "fillRequired": "Por favor, preencha todos os campos obrigatórios."
+    },
+    "success": {
+      "title": "Pedido enviado com sucesso",
+      "message": "Entraremos em contacto consigo o mais brevemente possível."
+    }
+  },
   "footer": {
     "tagline": "O seu especialista em importação de veículos",
     "description": "A BHV Auto acompanha-o em todos os seus projetos de importação de veículos com experiência e proximidade.",

@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Hjem",
@@ -253,6 +252,37 @@
     "pedro": {
       "comment": "Alt gik godt, fra simulering til betaling.",
       "loanType": "Bilfinansiering"
+    }
+  },
+  "loanForm": {
+    "title": "Låneansøgning",
+    "subtitle": "Udfyld denne formular for at ansøge om et lån. Vores ekspertteam vil kontakte dig hurtigt.",
+    "formTitle": "Ansøgningsformular",
+    "firstName": "Fornavn",
+    "lastName": "Efternavn",
+    "email": "Email",
+    "phone": "Telefon",
+    "loanType": "Lånetype",
+    "amount": "Ønsket beløb",
+    "duration": "Varighed",
+    "income": "Månedlig indkomst",
+    "message": "Supplerende besked",
+    "firstNamePlaceholder": "Dit fornavn",
+    "lastNamePlaceholder": "Dit efternavn",
+    "emailPlaceholder": "din.email@eksempel.com",
+    "phonePlaceholder": "12 34 56 78",
+    "selectLoanType": "Vælg lånetype",
+    "months": "måneder",
+    "messagePlaceholder": "Beskriv dit projekt eller specifikke behov...",
+    "submit": "Send min ansøgning",
+    "disclaimer": "* Obligatoriske felter. Dine data er beskyttet og vil kun blive brugt til at behandle din ansøgning.",
+    "validation": {
+      "missingFields": "Manglende felter",
+      "fillRequired": "Udfyld venligst alle obligatoriske felter."
+    },
+    "success": {
+      "title": "Ansøgning sendt med succes",
+      "message": "Vi kontakter dig så hurtigt som muligt."
     }
   },
   "footer": {

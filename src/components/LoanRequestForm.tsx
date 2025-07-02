@@ -7,9 +7,11 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const LoanRequestForm = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -38,8 +40,8 @@ const LoanRequestForm = () => {
     // Validation simple
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.loanType) {
       toast({
-        title: "Champs manquants",
-        description: "Veuillez remplir tous les champs obligatoires.",
+        title: t('loanForm.validation.missingFields'),
+        description: t('loanForm.validation.fillRequired'),
         variant: "destructive"
       });
       return;
@@ -47,8 +49,8 @@ const LoanRequestForm = () => {
 
     // Simulation d'envoi
     toast({
-      title: "Demande envoyée avec succès",
-      description: "Nous vous contacterons dans les plus brefs délais.",
+      title: t('loanForm.success.title'),
+      description: t('loanForm.success.message'),
     });
 
     // Reset du formulaire
@@ -74,73 +76,83 @@ const LoanRequestForm = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-green-600 mb-6">
-            Demande de Prêt
+            {t('loanForm.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Complétez ce formulaire pour faire votre demande de prêt. Notre équipe d'experts vous contactera rapidement.
+            {t('loanForm.subtitle')}
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <Card className="border-0 shadow-2xl">
             <CardHeader className="bg-gradient-to-r from-green-600 to-green-500 text-white rounded-t-lg">
-              <CardTitle className="text-2xl text-center">Formulaire de Demande</CardTitle>
+              <CardTitle className="text-2xl text-center">{t('loanForm.formTitle')}</CardTitle>
             </CardHeader>
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="firstName" className="text-gray-700 font-medium">Prénom *</Label>
+                    <Label htmlFor="firstName" className="text-gray-700 font-medium">
+                      {t('loanForm.firstName')} *
+                    </Label>
                     <Input
                       id="firstName"
                       value={formData.firstName}
                       onChange={(e) => handleInputChange('firstName', e.target.value)}
                       className="mt-2"
-                      placeholder="Votre prénom"
+                      placeholder={t('loanForm.firstNamePlaceholder')}
                     />
                   </div>
                   <div>
-                    <Label htmlFor="lastName" className="text-gray-700 font-medium">Nom *</Label>
+                    <Label htmlFor="lastName" className="text-gray-700 font-medium">
+                      {t('loanForm.lastName')} *
+                    </Label>
                     <Input
                       id="lastName"
                       value={formData.lastName}
                       onChange={(e) => handleInputChange('lastName', e.target.value)}
                       className="mt-2"
-                      placeholder="Votre nom"
+                      placeholder={t('loanForm.lastNamePlaceholder')}
                     />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="email" className="text-gray-700 font-medium">Email *</Label>
+                    <Label htmlFor="email" className="text-gray-700 font-medium">
+                      {t('loanForm.email')} *
+                    </Label>
                     <Input
                       id="email"
                       type="email"
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       className="mt-2"
-                      placeholder="votre.email@exemple.com"
+                      placeholder={t('loanForm.emailPlaceholder')}
                     />
                   </div>
                   <div>
-                    <Label htmlFor="phone" className="text-gray-700 font-medium">Téléphone *</Label>
+                    <Label htmlFor="phone" className="text-gray-700 font-medium">
+                      {t('loanForm.phone')} *
+                    </Label>
                     <Input
                       id="phone"
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleInputChange('phone', e.target.value)}
                       className="mt-2"
-                      placeholder="06 12 34 56 78"
+                      placeholder={t('loanForm.phonePlaceholder')}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="loanType" className="text-gray-700 font-medium">Type de prêt *</Label>
+                  <Label htmlFor="loanType" className="text-gray-700 font-medium">
+                    {t('loanForm.loanType')} *
+                  </Label>
                   <Select value={formData.loanType} onValueChange={(value) => handleInputChange('loanType', value)}>
                     <SelectTrigger className="mt-2">
-                      <SelectValue placeholder="Sélectionnez le type de prêt" />
+                      <SelectValue placeholder={t('loanForm.selectLoanType')} />
                     </SelectTrigger>
                     <SelectContent>
                       {loanTypes.map((type) => (
@@ -152,7 +164,9 @@ const LoanRequestForm = () => {
 
                 <div className="grid md:grid-cols-3 gap-6">
                   <div>
-                    <Label htmlFor="amount" className="text-gray-700 font-medium">Montant souhaité (€)</Label>
+                    <Label htmlFor="amount" className="text-gray-700 font-medium">
+                      {t('loanForm.amount')} (€)
+                    </Label>
                     <Input
                       id="amount"
                       type="number"
@@ -163,7 +177,9 @@ const LoanRequestForm = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="duration" className="text-gray-700 font-medium">Durée (mois)</Label>
+                    <Label htmlFor="duration" className="text-gray-700 font-medium">
+                      {t('loanForm.duration')} ({t('loanForm.months')})
+                    </Label>
                     <Input
                       id="duration"
                       type="number"
@@ -174,7 +190,9 @@ const LoanRequestForm = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="income" className="text-gray-700 font-medium">Revenus mensuels (€)</Label>
+                    <Label htmlFor="income" className="text-gray-700 font-medium">
+                      {t('loanForm.income')} (€)
+                    </Label>
                     <Input
                       id="income"
                       type="number"
@@ -187,13 +205,15 @@ const LoanRequestForm = () => {
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="text-gray-700 font-medium">Message complémentaire</Label>
+                  <Label htmlFor="message" className="text-gray-700 font-medium">
+                    {t('loanForm.message')}
+                  </Label>
                   <Textarea
                     id="message"
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
                     className="mt-2"
-                    placeholder="Décrivez votre projet ou vos besoins spécifiques..."
+                    placeholder={t('loanForm.messagePlaceholder')}
                     rows={4}
                   />
                 </div>
@@ -203,12 +223,12 @@ const LoanRequestForm = () => {
                     type="submit"
                     className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white px-8 py-3 text-lg font-semibold"
                   >
-                    Envoyer ma demande
+                    {t('loanForm.submit')}
                   </Button>
                 </div>
 
                 <p className="text-sm text-gray-500 text-center">
-                  * Champs obligatoires. Vos données sont protégées et ne seront utilisées que pour traiter votre demande.
+                  {t('loanForm.disclaimer')}
                 </p>
               </form>
             </CardContent>

@@ -227,13 +227,36 @@
       "description": "43 gespecialiseerde adviseurs om u bij elke stap te begeleiden"
     }
   },
-  "simulator": {
-    "title": "Leningsimulator",
-    "subtitle": "Bereken uw financiering in enkele stappen",
-    "parameters": "Leningparameters",
+  "loanForm": {
+    "title": "Leningaanvraag",
+    "subtitle": "Vul dit formulier in om een lening aan te vragen. Ons expertteam zal u snel contacteren.",
+    "formTitle": "Aanvraagformulier",
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "email": "E-mail",
+    "phone": "Telefoon",
     "loanType": "Type lening",
-    "selectLoanType": "Selecteer een type",
-    "amount": "Bedrag"
+    "amount": "Gewenst bedrag",
+    "duration": "Duur",
+    "income": "Maandelijks inkomen",
+    "message": "Aanvullend bericht",
+    "firstNamePlaceholder": "Uw voornaam",
+    "lastNamePlaceholder": "Uw achternaam",
+    "emailPlaceholder": "uw.email@voorbeeld.com",
+    "phonePlaceholder": "06 12 34 56 78",
+    "selectLoanType": "Selecteer type lening",
+    "months": "maanden",
+    "messagePlaceholder": "Beschrijf uw project of specifieke behoeften...",
+    "submit": "Mijn aanvraag verzenden",
+    "disclaimer": "* Verplichte velden. Uw gegevens zijn beschermd en worden alleen gebruikt voor het verwerken van uw aanvraag.",
+    "validation": {
+      "missingFields": "Ontbrekende velden",
+      "fillRequired": "Vul alle verplichte velden in."
+    },
+    "success": {
+      "title": "Aanvraag succesvol verzonden",
+      "message": "We nemen zo snel mogelijk contact met u op."
+    }
   },
   "testimonials": {
     "title": "Klantgetuigenissen",
