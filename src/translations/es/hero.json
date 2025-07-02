@@ -1,0 +1,30 @@
+
+{
+  "hero": {
+    "slide1": {
+      "title": "Bienvenidos a BHV Auto",
+      "subtitle": "Su especialista en importación de vehículos",
+      "description": "Descubra nuestros servicios de importación de vehículos con acompañamiento experto y personalizado."
+    },
+    "slide2": {
+      "title": "Préstamos Hipotecarios",
+      "subtitle": "Realice Su Proyecto Inmobiliario",
+      "description": "Tipos competitivos y acompañamiento a medida para hacer realidad sus proyectos inmobiliarios."
+    },
+    "slide3": {
+      "title": "Reunificación de Créditos",
+      "subtitle": "Simplifique Sus Finanzas",
+      "description": "Agrupe sus créditos en uno solo para reducir sus cuotas mensuales y recuperar su tranquilidad financiera."
+    },
+    "slide4": {
+      "title": "Experiencia & Proximidad",
+      "subtitle": "43 Asesores a Su Servicio",
+      "description": "Un equipo de expertos dedicado para acompañarle en todos sus proyectos de financiación."
+    },
+    "cta": {
+      "primary": "Hacer una solicitud",
+      "secondary": "Simular mi préstamo"
+    },
+    "disclaimer": "Un crédito le compromete y debe ser reembolsado. Verifique su capacidad de reembolso antes de comprometerse."
+  }
+}

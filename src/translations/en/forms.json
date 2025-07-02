@@ -1,0 +1,65 @@
+
+{
+  "loanRequest": {
+    "hero": {
+      "title": "Credit Request",
+      "subtitle": "Complete this form to make your request. Our team of experts will contact you quickly."
+    },
+    "metaDescription": "Make your credit request online. Quick response within 24h. Expert advisors available.",
+    "form": {
+      "title": "Your Financing Request",
+      "personalInfo": "Personal information",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "emailConfirmation": "Email confirmation",
+      "phone": "Phone",
+      "project": "Your financing project",
+      "loanType": "Loan type",
+      "selectLoanType": "Select loan type",
+      "amount": "Desired amount",
+      "currency": "Currency",
+      "duration": "Desired duration (months)",
+      "situation": "Your situation",
+      "professionalSituation": "Professional situation",
+      "selectSituation": "Select your situation",
+      "monthlyIncome": "Net monthly income",
+      "message": "Additional message",
+      "messagePlaceholder": "Describe your project or specific needs...",
+      "submit": "Send my request",
+      "submitting": "Sending...",
+      "required": "* Required fields. Your data is protected and will only be used to process your request."
+    },
+    "situations": {
+      "employee": "Permanent employee",
+      "temporaryEmployee": "Temporary employee",
+      "civilServant": "Civil servant",
+      "selfEmployed": "Self-employed",
+      "freelancer": "Freelancer",
+      "retired": "Retired",
+      "student": "Student",
+      "jobSeeker": "Job seeker"
+    },
+    "validation": {
+      "missingFields": "Missing fields",
+      "missingFieldsDesc": "Please fill in all required fields.",
+      "invalidEmail": "Invalid email",
+      "invalidEmailDesc": "Please enter a valid email address.",
+      "emailMismatch": "Emails do not match",
+      "emailMismatchDesc": "Email and confirmation do not match.",
+      "success": "Request sent successfully",
+      "successDesc": "We will contact you as soon as possible.",
+      "error": "Error",
+      "errorDesc": "An error occurred while sending. Please try again."
+    }
+  },
+  "loanTypes": {
+    "personal": "Personal loan",
+    "consumption": "Consumer credit",
+    "works": "Home improvement loan",
+    "mortgage": "Mortgage loan",
+    "consolidation": "Credit consolidation",
+    "lease": "Lease with option to buy",
+    "student": "Student loan"
+  }
+}

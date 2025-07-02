@@ -1,0 +1,19 @@
+
+{
+  "nav": {
+    "home": "Accueil",
+    "personalLoans": "Prêts Personnels",
+    "mortgageLoans": "Prêts Immobiliers",
+    "creditBuyback": "Rachat de Crédit",
+    "workCredit": "Crédit Travaux",
+    "insurance": "Assurances",
+    "about": "À Propos"
+  },
+  "common": {
+    "phoneAvailable": "Du lundi au vendredi de 9h à 18h",
+    "requestLoan": "Demande de Prêt",
+    "discover": "Découvrir",
+    "learnMoreAbout": "En savoir plus sur",
+    "startRequest": "Commencer ma demande"
+  }
+}

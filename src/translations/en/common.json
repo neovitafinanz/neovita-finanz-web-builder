@@ -1,0 +1,19 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "personalLoans": "Personal Loans",
+    "mortgageLoans": "Mortgage Loans",
+    "creditBuyback": "Credit Buyback",
+    "workCredit": "Work Credit",
+    "insurance": "Insurance",
+    "about": "About"
+  },
+  "common": {
+    "phoneAvailable": "Monday to Friday 9am to 6pm",
+    "requestLoan": "Request Loan",
+    "discover": "Discover",
+    "learnMoreAbout": "Learn more about",
+    "startRequest": "Start my request"
+  }
+}

@@ -1,0 +1,45 @@
+
+{
+  "home": {
+    "metaDescription": "Neovita Finanz - Your trusted financial partner. Professional financial services with expert support.",
+    "servicesTitle": "Our Financial Services",
+    "servicesSubtitle": "Solutions adapted to all your financing needs",
+    "advantagesTitle": "Why Choose Neovita Finanz",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaSubtitle": "Our experts support you in your financing project"
+  },
+  "personalLoans": {
+    "metaDescription": "Personal loans with Neovita Finanz. Fast and flexible financing for all your personal projects.",
+    "hero": {
+      "subtitle": "Finance all your personal projects"
+    },
+    "advantages": {
+      "title": "Personal loan advantages",
+      "flexibility": "Free use of funds",
+      "rapidResponse": "Quick response within 48h",
+      "competitiveRates": "Competitive rates",
+      "noCollateral": "No guarantee or surety",
+      "personalizedSupport": "Personalized support",
+      "freeStudy": "Free file study"
+    },
+    "cta": {
+      "study": "Study my file"
+    }
+  },
+  "about": {
+    "metaDescription": "About Neovita Finanz - Discover our financial expertise and our team of specialists.",
+    "hero": {
+      "subtitle": "Your trusted partner for 15 years"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We support our clients in their financing projects with expertise, transparency and proximity. Our team of 43 specialized advisors guides you at every step of your project."
+    },
+    "stats": {
+      "advisors": "Advisors",
+      "experience": "Years of experience",
+      "clients": "Satisfied clients",
+      "trust": "Trust"
+    }
+  }
+}
