@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Inicio",
@@ -68,6 +69,36 @@
       "study": "Estudiar mi expediente"
     }
   },
+  "mortgageLoans": {
+    "metaDescription": "Préstamos hipotecarios con Neovita Finanz. Concretice su proyecto inmobiliario con tipos competitivos.",
+    "hero": {
+      "subtitle": "Concretice su proyecto inmobiliario con nuestra experiencia"
+    },
+    "advantages": {
+      "title": "Ventajas de los préstamos hipotecarios",
+      "competitiveRates": "Tipos competitivos",
+      "personalizedSupport": "Acompañamiento personalizado por especialistas",
+      "freeStudy": "Estudio de viabilidad gratuito",
+      "bankNegotiation": "Negociación con bancos",
+      "followUp": "Seguimiento hasta la liberación",
+      "insurance": "Seguro de crédito optimizado"
+    },
+    "characteristics": {
+      "title": "Características de los préstamos hipotecarios",
+      "highAmounts": "Importes elevados",
+      "highAmountsDesc": "Hasta el 80% del valor del inmueble",
+      "allProjects": "Todos los proyectos",
+      "allProjectsDesc": "Compra, construcción, renovación, inversión",
+      "secured": "Garantizado",
+      "securedDesc": "Hipoteca sobre el inmueble",
+      "advantageousRates": "Tipos ventajosos",
+      "advantageousRatesDesc": "Tipos inferiores a los créditos al consumo"
+    },
+    "cta": {
+      "request": "Solicitar un préstamo hipotecario",
+      "apply": "Solicitar ahora"
+    }
+  },
   "creditBuyback": {
     "metaDescription": "Reunificación de créditos con Neovita Finanz. Reduzca sus cuotas mensuales, simplifique su gestión financiera.",
     "hero": {
@@ -85,6 +116,25 @@
     "cta": {
       "request": "Solicitar esta reunificación",
       "study": "Estudiar mi expediente"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Crédito obras con Neovita Finanz. Financie sus proyectos de renovación y construcción.",
+    "hero": {
+      "title": "Crédito Obras",
+      "subtitle": "Financie sus proyectos de renovación y construcción"
+    },
+    "projectTypes": {
+      "title": "Nuestros tipos de proyectos",
+      "energyRenovation": "Renovación energética",
+      "houseExtension": "Ampliación de la casa",
+      "interiorDesign": "Diseño de interiores",
+      "roofWork": "Trabajos en el tejado",
+      "poolInstallation": "Instalación de piscina",
+      "kitchenBathroom": "Cocina y baño"
+    },
+    "cta": {
+      "finance": "Financiar mis obras"
     }
   },
   "about": {
