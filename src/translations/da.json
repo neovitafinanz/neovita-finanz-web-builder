@@ -254,36 +254,80 @@
       "loanType": "Bilfinansiering"
     }
   },
-  "loanForm": {
-    "title": "Låneansøgning",
-    "subtitle": "Udfyld denne formular for at ansøge om et lån. Vores ekspertteam vil kontakte dig hurtigt.",
-    "formTitle": "Ansøgningsformular",
-    "firstName": "Fornavn",
-    "lastName": "Efternavn",
-    "email": "Email",
-    "phone": "Telefon",
-    "loanType": "Lånetype",
-    "amount": "Ønsket beløb",
-    "duration": "Varighed",
-    "income": "Månedlig indkomst",
-    "message": "Supplerende besked",
-    "firstNamePlaceholder": "Dit fornavn",
-    "lastNamePlaceholder": "Dit efternavn",
-    "emailPlaceholder": "din.email@eksempel.com",
-    "phonePlaceholder": "12 34 56 78",
-    "selectLoanType": "Vælg lånetype",
-    "months": "måneder",
-    "messagePlaceholder": "Beskriv dit projekt eller specifikke behov...",
-    "submit": "Send min ansøgning",
-    "disclaimer": "* Obligatoriske felter. Dine data er beskyttet og vil kun blive brugt til at behandle din ansøgning.",
-    "validation": {
-      "missingFields": "Manglende felter",
-      "fillRequired": "Udfyld venligst alle obligatoriske felter."
+  "loanTypes": {
+    "personal": "Personligt lån",
+    "consumption": "Forbrugslån",
+    "works": "Kredit til arbejde/renovering",
+    "mortgage": "Realkreditlån",
+    "consolidation": "Kreditsammenlægning",
+    "lease": "Leasing",
+    "student": "Studielån"
+  },
+  "loanRequest": {
+    "metaDescription": "Foretag din kreditanmodning online. Hurtig svar inden for 24t. Ekspertrådgivere tilgængelige.",
+    "hero": {
+      "title": "Kreditanmodning",
+      "subtitle": "Udfyld denne formular for at lave din anmodning. Vores team af eksperter vil kontakte dig hurtigt."
     },
-    "success": {
-      "title": "Ansøgning sendt med succes",
-      "message": "Vi kontakter dig så hurtigt som muligt."
-    }
+    "form": {
+      "title": "Din Finansieringsanmodning",
+      "personalInfo": "Personlige oplysninger",
+      "firstName": "Fornavn",
+      "lastName": "Efternavn",
+      "email": "Email",
+      "emailConfirmation": "Bekræft email",
+      "phone": "Telefon",
+      "project": "Dit projekt",
+      "loanType": "Lånetype",
+      "selectLoanType": "Vælg en type",
+      "amount": "Ønsket beløb",
+      "currency": "Valuta",
+      "duration": "Varighed (i måneder)",
+      "situation": "Finansiel situation",
+      "professionalSituation": "Professionel situation",
+      "selectSituation": "Vælg din situation",
+      "monthlyIncome": "Månedlig indkomst",
+      "message": "Yderligere besked",
+      "messagePlaceholder": "Beskriv kort dit projekt..."
+    },
+    "situations": {
+      "employee": "Ansat",
+      "temporaryEmployee": "Midlertidig ansat",
+      "civilServant": "Offentlig ansat",
+      "selfEmployed": "Selvstændig",
+      "freelancer": "Freelancer",
+      "retired": "Pensionist",
+      "student": "Studerende",
+      "jobSeeker": "Jobsøgende"
+    },
+    "validation": {
+      "missingFields": "Manglende obligatoriske felter",
+      "missingFieldsDesc": "Udfyld venligst alle obligatoriske felter.",
+      "invalidEmail": "Ugyldig email",
+      "invalidEmailDesc": "Indtast venligst en gyldig emailadresse.",
+      "emailMismatch": "Emails matcher ikke",
+      "emailMismatchDesc": "De to indtastede emailadresser matcher ikke.",
+      "success": "Anmodning sendt med succes!",
+      "successDesc": "Din anmodning er modtaget. Vi kontakter dig snarest.",
+      "error": "Fejl ved afsendelse",
+      "errorDesc": "Der opstod en fejl. Prøv venligst igen senere."
+    },
+    "reassurance": {
+      "secureData": {
+        "title": "Sikre Data",
+        "description": "Dine data er beskyttet og krypteret"
+      },
+      "quickResponse": {
+        "title": "Hurtig Svar",
+        "description": "Svar på mindre end 24 timer"
+      },
+      "availableAdvisors": {
+        "title": "Tilgængelige Rådgivere",
+        "description": "Vores eksperter ledsager dig"
+      }
+    },
+    "submit": "Send min anmodning",
+    "disclaimer": "Ved at sende denne formular accepterer du at blive kontaktet af vores tjenester. Dine data er beskyttet og vil ikke blive overført til tredjeparter."
   },
   "footer": {
     "tagline": "Din specialist i køretøjsimport",

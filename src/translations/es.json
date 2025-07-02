@@ -227,6 +227,81 @@
       "loanType": "Financiación de automóvil"
     }
   },
+  "loanTypes": {
+    "personal": "Préstamo personal",
+    "consumption": "Préstamo al consumo",
+    "works": "Crédito obras/renovación",
+    "mortgage": "Préstamo hipotecario",
+    "consolidation": "Reunificación de créditos",
+    "lease": "Leasing",
+    "student": "Préstamo estudiantil"
+  },
+  "loanRequest": {
+    "metaDescription": "Haga su solicitud de crédito en línea. Respuesta rápida en 24h. Asesores expertos disponibles.",
+    "hero": {
+      "title": "Solicitud de Crédito",
+      "subtitle": "Complete este formulario para hacer su solicitud. Nuestro equipo de expertos se pondrá en contacto con usted rápidamente."
+    },
+    "form": {
+      "title": "Su Solicitud de Financiación",
+      "personalInfo": "Información personal",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "emailConfirmation": "Confirmar correo electrónico",
+      "phone": "Teléfono",
+      "project": "Su proyecto",
+      "loanType": "Tipo de préstamo",
+      "selectLoanType": "Seleccione un tipo",
+      "amount": "Importe solicitado",
+      "currency": "Moneda",
+      "duration": "Duración (en meses)",
+      "situation": "Situación financiera",
+      "professionalSituation": "Situación profesional",
+      "selectSituation": "Seleccione su situación",
+      "monthlyIncome": "Ingresos mensuales",
+      "message": "Mensaje adicional",
+      "messagePlaceholder": "Describa brevemente su proyecto..."
+    },
+    "situations": {
+      "employee": "Empleado",
+      "temporaryEmployee": "Empleado temporal",
+      "civilServant": "Funcionario",
+      "selfEmployed": "Autónomo",
+      "freelancer": "Freelance",
+      "retired": "Jubilado",
+      "student": "Estudiante",
+      "jobSeeker": "Demandante de empleo"
+    },
+    "validation": {
+      "missingFields": "Campos obligatorios faltantes",
+      "missingFieldsDesc": "Por favor, complete todos los campos obligatorios.",
+      "invalidEmail": "Correo electrónico inválido",
+      "invalidEmailDesc": "Por favor, introduzca una dirección de correo electrónico válida.",
+      "emailMismatch": "Los correos electrónicos no coinciden",
+      "emailMismatchDesc": "Los dos correos electrónicos introducidos no coinciden.",
+      "success": "¡Solicitud enviada con éxito!",
+      "successDesc": "Su solicitud ha sido recibida. Nos pondremos en contacto con usted en breve.",
+      "error": "Error al enviar",
+      "errorDesc": "Se ha producido un error. Por favor, inténtelo de nuevo más tarde."
+    },
+    "reassurance": {
+      "secureData": {
+        "title": "Datos Seguros",
+        "description": "Sus datos están protegidos y cifrados"
+      },
+      "quickResponse": {
+        "title": "Respuesta Rápida",
+        "description": "Respuesta en menos de 24 horas"
+      },
+      "availableAdvisors": {
+        "title": "Asesores Disponibles",
+        "description": "Nuestros expertos le acompañan"
+      }
+    },
+    "submit": "Enviar mi solicitud",
+    "disclaimer": "Al enviar este formulario, acepta ser contactado por nuestros servicios. Sus datos están protegidos y no serán transmitidos a terceros."
+  },
   "footer": {
     "tagline": "Su especialista en importación de vehículos",
     "description": "BHV Auto le acompaña en todos sus proyectos de importación de vehículos con experiencia y proximidad.",

@@ -254,36 +254,80 @@
       "loanType": "Financiamento automóvel"
     }
   },
-  "loanForm": {
-    "title": "Pedido de Empréstimo",
-    "subtitle": "Preencha este formulário para fazer o seu pedido de empréstimo. A nossa equipa de especialistas entrará em contacto consigo rapidamente.",
-    "formTitle": "Formulário de Pedido",
-    "firstName": "Nome",
-    "lastName": "Apelido",
-    "email": "Email",
-    "phone": "Telefone",
-    "loanType": "Tipo de empréstimo",
-    "amount": "Montante desejado",
-    "duration": "Duração",
-    "income": "Rendimento mensal",
-    "message": "Mensagem adicional",
-    "firstNamePlaceholder": "O seu nome",
-    "lastNamePlaceholder": "O seu apelido",
-    "emailPlaceholder": "seu.email@exemplo.com",
-    "phonePlaceholder": "91 234 56 78",
-    "selectLoanType": "Selecionar tipo de empréstimo",
-    "months": "meses",
-    "messagePlaceholder": "Descreva o seu projeto ou necessidades específicas...",
-    "submit": "Enviar o meu pedido",
-    "disclaimer": "* Campos obrigatórios. Os seus dados estão protegidos e só serão utilizados para processar o seu pedido.",
-    "validation": {
-      "missingFields": "Campos em falta",
-      "fillRequired": "Por favor, preencha todos os campos obrigatórios."
+  "loanTypes": {
+    "personal": "Empréstimo pessoal",
+    "consumption": "Empréstimo ao consumo",
+    "works": "Crédito obras/renovação",
+    "mortgage": "Empréstimo imobiliário",
+    "consolidation": "Reestruturação de créditos",
+    "lease": "Leasing",
+    "student": "Empréstimo estudantil"
+  },
+  "loanRequest": {
+    "metaDescription": "Faça o seu pedido de crédito online. Resposta rápida em 24h. Consultores especializados disponíveis.",
+    "hero": {
+      "title": "Pedido de Crédito",
+      "subtitle": "Complete este formulário para fazer o seu pedido. A nossa equipa de especialistas entrará em contacto consigo rapidamente."
     },
-    "success": {
-      "title": "Pedido enviado com sucesso",
-      "message": "Entraremos em contacto consigo o mais brevemente possível."
-    }
+    "form": {
+      "title": "O Seu Pedido de Financiamento",
+      "personalInfo": "Informações pessoais",
+      "firstName": "Nome",
+      "lastName": "Apelido",
+      "email": "Email",
+      "emailConfirmation": "Confirmar email",
+      "phone": "Telefone",
+      "project": "O seu projeto",
+      "loanType": "Tipo de empréstimo",
+      "selectLoanType": "Selecione um tipo",
+      "amount": "Montante solicitado",
+      "currency": "Moeda",
+      "duration": "Duração (em meses)",
+      "situation": "Situação financeira",
+      "professionalSituation": "Situação profissional",
+      "selectSituation": "Selecione a sua situação",
+      "monthlyIncome": "Rendimento mensal",
+      "message": "Mensagem adicional",
+      "messagePlaceholder": "Descreva brevemente o seu projeto..."
+    },
+    "situations": {
+      "employee": "Funcionário",
+      "temporaryEmployee": "Funcionário temporário",
+      "civilServant": "Funcionário público",
+      "selfEmployed": "Trabalhador por conta própria",
+      "freelancer": "Freelancer",
+      "retired": "Reformado",
+      "student": "Estudante",
+      "jobSeeker": "À procura de emprego"
+    },
+    "validation": {
+      "missingFields": "Campos obrigatórios em falta",
+      "missingFieldsDesc": "Por favor, preencha todos os campos obrigatórios.",
+      "invalidEmail": "Email inválido",
+      "invalidEmailDesc": "Por favor, introduza um endereço de email válido.",
+      "emailMismatch": "Os emails não coincidem",
+      "emailMismatchDesc": "Os dois endereços de email introduzidos não coincidem.",
+      "success": "Pedido enviado com sucesso!",
+      "successDesc": "O seu pedido foi recebido. Entraremos em contacto consigo brevemente.",
+      "error": "Erro no envio",
+      "errorDesc": "Ocorreu um erro. Por favor, tente novamente mais tarde."
+    },
+    "reassurance": {
+      "secureData": {
+        "title": "Dados Seguros",
+        "description": "Os seus dados estão protegidos e encriptados"
+      },
+      "quickResponse": {
+        "title": "Resposta Rápida",
+        "description": "Resposta em menos de 24 horas"
+      },
+      "availableAdvisors": {
+        "title": "Consultores Disponíveis",
+        "description": "Os nossos especialistas acompanham-no"
+      }
+    },
+    "submit": "Enviar o meu pedido",
+    "disclaimer": "Ao enviar este formulário, aceita ser contactado pelos nossos serviços. Os seus dados estão protegidos e não serão transmitidos a terceiros."
   },
   "footer": {
     "tagline": "O seu especialista em importação de veículos",

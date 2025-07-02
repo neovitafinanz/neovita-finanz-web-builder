@@ -227,36 +227,80 @@
       "description": "43 gespecialiseerde adviseurs om u bij elke stap te begeleiden"
     }
   },
-  "loanForm": {
-    "title": "Leningaanvraag",
-    "subtitle": "Vul dit formulier in om een lening aan te vragen. Ons expertteam zal u snel contacteren.",
-    "formTitle": "Aanvraagformulier",
-    "firstName": "Voornaam",
-    "lastName": "Achternaam",
-    "email": "E-mail",
-    "phone": "Telefoon",
-    "loanType": "Type lening",
-    "amount": "Gewenst bedrag",
-    "duration": "Duur",
-    "income": "Maandelijks inkomen",
-    "message": "Aanvullend bericht",
-    "firstNamePlaceholder": "Uw voornaam",
-    "lastNamePlaceholder": "Uw achternaam",
-    "emailPlaceholder": "uw.email@voorbeeld.com",
-    "phonePlaceholder": "06 12 34 56 78",
-    "selectLoanType": "Selecteer type lening",
-    "months": "maanden",
-    "messagePlaceholder": "Beschrijf uw project of specifieke behoeften...",
-    "submit": "Mijn aanvraag verzenden",
-    "disclaimer": "* Verplichte velden. Uw gegevens zijn beschermd en worden alleen gebruikt voor het verwerken van uw aanvraag.",
-    "validation": {
-      "missingFields": "Ontbrekende velden",
-      "fillRequired": "Vul alle verplichte velden in."
+  "loanTypes": {
+    "personal": "Persoonlijke lening",
+    "consumption": "Consumentenkrediet",
+    "works": "Krediet werken/renovatie",
+    "mortgage": "Hypothecaire lening",
+    "consolidation": "Kredietherstructurering",
+    "lease": "Leasing",
+    "student": "Studentenlening"
+  },
+  "loanRequest": {
+    "metaDescription": "Doe uw kredietaanvraag online. Snelle reactie binnen 24u. Deskundige adviseurs beschikbaar.",
+    "hero": {
+      "title": "Kredietaanvraag",
+      "subtitle": "Vul dit formulier in om uw aanvraag te doen. Ons team van experts zal u snel contacteren."
     },
-    "success": {
-      "title": "Aanvraag succesvol verzonden",
-      "message": "We nemen zo snel mogelijk contact met u op."
-    }
+    "form": {
+      "title": "Uw Financieringsaanvraag",
+      "personalInfo": "Persoonlijke informatie",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "emailConfirmation": "E-mail bevestigen",
+      "phone": "Telefoon",
+      "project": "Uw project",
+      "loanType": "Type lening",
+      "selectLoanType": "Selecteer een type",
+      "amount": "Gevraagd bedrag",
+      "currency": "Valuta",
+      "duration": "Duur (in maanden)",
+      "situation": "Financiële situatie",
+      "professionalSituation": "Professionele situatie",
+      "selectSituation": "Selecteer uw situatie",
+      "monthlyIncome": "Maandelijks inkomen",
+      "message": "Aanvullend bericht",
+      "messagePlaceholder": "Beschrijf kort uw project..."
+    },
+    "situations": {
+      "employee": "Werknemer",
+      "temporaryEmployee": "Tijdelijke werknemer",
+      "civilServant": "Ambtenaar",
+      "selfEmployed": "Zelfstandige",
+      "freelancer": "Freelancer",
+      "retired": "Gepensioneerd",
+      "student": "Student",
+      "jobSeeker": "Werkzoekende"
+    },
+    "validation": {
+      "missingFields": "Verplichte velden ontbreken",
+      "missingFieldsDesc": "Vul alle verplichte velden in.",
+      "invalidEmail": "Ongeldige e-mail",
+      "invalidEmailDesc": "Voer een geldig e-mailadres in.",
+      "emailMismatch": "E-mails komen niet overeen",
+      "emailMismatchDesc": "De twee ingevoerde e-mailadressen komen niet overeen.",
+      "success": "Aanvraag succesvol verzonden!",
+      "successDesc": "Uw aanvraag is ontvangen. We nemen binnenkort contact met u op.",
+      "error": "Fout bij verzenden",
+      "errorDesc": "Er is een fout opgetreden. Probeer het later opnieuw."
+    },
+    "reassurance": {
+      "secureData": {
+        "title": "Veilige Gegevens",
+        "description": "Uw gegevens zijn beschermd en versleuteld"
+      },
+      "quickResponse": {
+        "title": "Snelle Reactie",
+        "description": "Reactie binnen 24 uur"
+      },
+      "availableAdvisors": {
+        "title": "Beschikbare Adviseurs",
+        "description": "Onze experts begeleiden u"
+      }
+    },
+    "submit": "Mijn aanvraag verzenden",
+    "disclaimer": "Door dit formulier te verzenden, stemt u ermee in om gecontacteerd te worden door onze diensten. Uw gegevens zijn beschermd en worden niet doorgegeven aan derden."
   },
   "testimonials": {
     "title": "Klantgetuigenissen",

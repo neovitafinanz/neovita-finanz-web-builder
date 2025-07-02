@@ -254,36 +254,80 @@
       "loanType": "Finanziamento auto"
     }
   },
-  "loanForm": {
-    "title": "Richiesta Prestito",
-    "subtitle": "Compilate questo modulo per richiedere un prestito. Il nostro team di esperti vi contatterà rapidamente.",
-    "formTitle": "Modulo di Richiesta",
-    "firstName": "Nome",
-    "lastName": "Cognome",
-    "email": "Email",
-    "phone": "Telefono",
-    "loanType": "Tipo di prestito",
-    "amount": "Importo desiderato",
-    "duration": "Durata",
-    "income": "Reddito mensile",
-    "message": "Messaggio aggiuntivo",
-    "firstNamePlaceholder": "Il vostro nome",
-    "lastNamePlaceholder": "Il vostro cognome",
-    "emailPlaceholder": "vostra.email@esempio.com",
-    "phonePlaceholder": "06 12 34 56 78",
-    "selectLoanType": "Seleziona tipo di prestito",
-    "months": "mesi",
-    "messagePlaceholder": "Descrivete il vostro progetto o esigenze specifiche...",
-    "submit": "Invia la mia richiesta",
-    "disclaimer": "* Campi obbligatori. I vostri dati sono protetti e saranno utilizzati solo per elaborare la vostra richiesta.",
-    "validation": {
-      "missingFields": "Campi mancanti",
-      "fillRequired": "Compilate tutti i campi obbligatori."
+  "loanTypes": {
+    "personal": "Prestito personale",
+    "consumption": "Prestito al consumo",
+    "works": "Credito lavori/ristrutturazione",
+    "mortgage": "Prestito immobiliare",
+    "consolidation": "Riacquisto crediti",
+    "lease": "Leasing",
+    "student": "Prestito studenti"
+  },
+  "loanRequest": {
+    "metaDescription": "Fate la vostra richiesta di credito online. Risposta rapida in 24h. Consulenti esperti disponibili.",
+    "hero": {
+      "title": "Richiesta di Credito",
+      "subtitle": "Completate questo modulo per fare la vostra richiesta. Il nostro team di esperti vi contatterà rapidamente."
     },
-    "success": {
-      "title": "Richiesta inviata con successo",
-      "message": "Vi contatteremo il prima possibile."
-    }
+    "form": {
+      "title": "La Vostra Richiesta di Finanziamento",
+      "personalInfo": "Informazioni personali",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "emailConfirmation": "Conferma email",
+      "phone": "Telefono",
+      "project": "Il vostro progetto",
+      "loanType": "Tipo di prestito",
+      "selectLoanType": "Selezionate un tipo",
+      "amount": "Importo richiesto",
+      "currency": "Valuta",
+      "duration": "Durata (in mesi)",
+      "situation": "Situazione finanziaria",
+      "professionalSituation": "Situazione professionale",
+      "selectSituation": "Selezionate la vostra situazione",
+      "monthlyIncome": "Reddito mensile",
+      "message": "Messaggio aggiuntivo",
+      "messagePlaceholder": "Descrivete brevemente il vostro progetto..."
+    },
+    "situations": {
+      "employee": "Dipendente",
+      "temporaryEmployee": "Dipendente temporaneo",
+      "civilServant": "Funzionario pubblico",
+      "selfEmployed": "Lavoratore autonomo",
+      "freelancer": "Freelance",
+      "retired": "Pensionato",
+      "student": "Studente",
+      "jobSeeker": "Disoccupato"
+    },
+    "validation": {
+      "missingFields": "Campi obbligatori mancanti",
+      "missingFieldsDesc": "Per favore, completate tutti i campi obbligatori.",
+      "invalidEmail": "Email non valida",
+      "invalidEmailDesc": "Per favore, inserite un indirizzo email valido.",
+      "emailMismatch": "Le email non corrispondono",
+      "emailMismatchDesc": "I due indirizzi email inseriti non corrispondono.",
+      "success": "Richiesta inviata con successo!",
+      "successDesc": "La vostra richiesta è stata ricevuta. Vi contatteremo a breve.",
+      "error": "Errore nell'invio",
+      "errorDesc": "Si è verificato un errore. Per favore, riprovate più tardi."
+    },
+    "reassurance": {
+      "secureData": {
+        "title": "Dati Sicuri",
+        "description": "I vostri dati sono protetti e crittografati"
+      },
+      "quickResponse": {
+        "title": "Risposta Rapida",
+        "description": "Risposta in meno di 24 ore"
+      },
+      "availableAdvisors": {
+        "title": "Consulenti Disponibili",
+        "description": "I nostri esperti vi accompagnano"
+      }
+    },
+    "submit": "Invia la mia richiesta",
+    "disclaimer": "Inviando questo modulo, accettate di essere contattati dai nostri servizi. I vostri dati sono protetti e non saranno trasmessi a terzi."
   },
   "footer": {
     "tagline": "Il vostro specialista nell'importazione di veicoli",
