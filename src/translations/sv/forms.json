@@ -1,0 +1,124 @@
+
+{
+  "loanForm": {
+    "title": "Låneansökan",
+    "subtitle": "Fyll i detta formulär för att ansöka om lån. Vårt expertteam kommer att kontakta dig snabbt.",
+    "formTitle": "Ansökningsformulär",
+    "firstName": "Förnamn",
+    "lastName": "Efternamn",
+    "email": "E-post",
+    "phone": "Telefon",
+    "loanType": "Typ av lån",
+    "amount": "Önskat belopp",
+    "duration": "Varaktighet",
+    "income": "Månadsinkomst",
+    "message": "Tilläggsmeddelande",
+    "firstNamePlaceholder": "Ditt förnamn",
+    "lastNamePlaceholder": "Ditt efternamn",
+    "emailPlaceholder": "din.epost@exempel.se",
+    "phonePlaceholder": "070-123 45 67",
+    "selectLoanType": "Välj typ av lån",
+    "months": "månader",
+    "messagePlaceholder": "Beskriv ditt projekt eller specifika behov...",
+    "submit": "Skicka min ansökan",
+    "disclaimer": "* Obligatoriska fält. Dina uppgifter är skyddade och kommer endast att användas för att behandla din ansökan.",
+    "validation": {
+      "missingFields": "Saknade fält",
+      "fillRequired": "Vänligen fyll i alla obligatoriska fält."
+    },
+    "success": {
+      "title": "Ansökan skickad framgångsrikt",
+      "message": "Vi kontaktar dig så snart som möjligt."
+    }
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Låneansökan",
+      "subtitle": "Fyll i detta formulär för att ansöka om lån. Vårt expertteam kommer att kontakta dig snabbt."
+    },
+    "metaDescription": "Låneansökan med Neovita Finanz. Fyll i vårt säkra formulär för snabb behandling.",
+    "form": {
+      "title": "Ansökningsformulär",
+      "personalInfo": "Personuppgifter",
+      "project": "Projektinformation",
+      "situation": "Finansiell situation",
+      "firstName": "Förnamn",
+      "lastName": "Efternamn",
+      "email": "E-post",
+      "emailConfirmation": "Bekräfta e-post",
+      "phone": "Telefon",
+      "loanType": "Lånetyp",
+      "amount": "Belopp",
+      "currency": "Valuta",
+      "duration": "Varaktighet (månader)",
+      "professionalSituation": "Professionell situation",
+      "monthlyIncome": "Månadsinkomst",
+      "message": "Meddelande",
+      "selectLoanType": "Välj lånetyp",
+      "selectSituation": "Välj situation",
+      "messagePlaceholder": "Beskriv ditt projekt...",
+      "submit": "Skicka ansökan",
+      "submitting": "Skickar...",
+      "required": "* Obligatoriska fält. Dina uppgifter är skyddade."
+    },
+    "validation": {
+      "missingFields": "Saknade fält",
+      "missingFieldsDesc": "Vänligen fyll i alla obligatoriska fält.",
+      "invalidEmail": "Ogiltig e-post",
+      "invalidEmailDesc": "Vänligen ange en giltig e-postadress.",
+      "emailMismatch": "E-post matchar inte",
+      "emailMismatchDesc": "E-postadresserna matchar inte.",
+      "success": "Ansökan skickad",
+      "successDesc": "Vi kontaktar dig inom kort.",
+      "error": "Fel",
+      "errorDesc": "Ett fel uppstod. Försök igen."
+    },
+    "reassurance": {
+      "title": "Varför välja oss?",
+      "secureData": {
+        "title": "Säkra data",
+        "description": "Dina uppgifter är skyddade och krypterade"
+      },
+      "quickResponse": {
+        "title": "Snabbt svar",
+        "description": "Svar inom 48 timmar"
+      },
+      "availableAdvisors": {
+        "title": "Tillgängliga rådgivare",
+        "description": "43 experter till din tjänst"
+      }
+    },
+    "advantages": {
+      "title": "Våra fördelar",
+      "experience": "15 års erfarenhet",
+      "experts": "43 specialiserade rådgivare",
+      "rates": "Konkurrenskraftiga räntor",
+      "support": "Personlig support"
+    },
+    "contact": {
+      "title": "Behöver du hjälp?",
+      "description": "Våra rådgivare är tillgängliga för att hjälpa dig",
+      "phone": "010-123 45 67",
+      "hours": "Måndag-fredag 9-18"
+    },
+    "situations": {
+      "employee": "Anställd",
+      "temporaryEmployee": "Timanställd",
+      "civilServant": "Tjänsteman",
+      "selfEmployed": "Egenföretagare",
+      "freelancer": "Frilansare",
+      "retired": "Pensionär",
+      "student": "Student",
+      "jobSeeker": "Arbetssökande"
+    }
+  },
+  "loanTypes": {
+    "personal": "Personligt lån",
+    "consumption": "Konsumtionslån",
+    "works": "Renoveringslån",
+    "mortgage": "Bolån",
+    "consolidation": "Kreditsamling",
+    "lease": "Leasing",
+    "student": "Studielån"
+  }
+}

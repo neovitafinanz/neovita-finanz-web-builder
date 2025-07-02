@@ -1,0 +1,19 @@
+
+{
+  "nav": {
+    "home": "Hem",
+    "personalLoans": "Personliga Lån",
+    "mortgageLoans": "Bolån",
+    "creditBuyback": "Kreditsamling",
+    "workCredit": "Arbetskredit",
+    "insurance": "Försäkringar",
+    "about": "Om Oss"
+  },
+  "common": {
+    "phoneAvailable": "Måndag till fredag från 9 till 18",
+    "requestLoan": "Låneansökan",
+    "discover": "Upptäck",
+    "learnMoreAbout": "Lär dig mer om",
+    "startRequest": "Starta min ansökan"
+  }
+}

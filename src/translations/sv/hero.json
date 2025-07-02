@@ -1,0 +1,30 @@
+
+{
+  "hero": {
+    "slide1": {
+      "title": "Välkommen till Neovita Finanz",
+      "subtitle": "Din finansieringsspecialist",
+      "description": "Upptäck våra finansieringstjänster med expert och personlig vägledning."
+    },
+    "slide2": {
+      "title": "Bolån",
+      "subtitle": "Förverkliga Ditt Fastighetsprojekt",
+      "description": "Konkurrenskraftiga räntor och skräddarsydd vägledning för att förverkliga dina fastighetsprojekt."
+    },
+    "slide3": {
+      "title": "Kreditsamling",
+      "subtitle": "Förenkla Din Ekonomi",
+      "description": "Samla dina krediter i en för att minska dina månatliga betalningar och återfå din ekonomiska lugn."
+    },
+    "slide4": {
+      "title": "Expertis & Närhet",
+      "subtitle": "43 Rådgivare till Din Tjänst",
+      "description": "Ett dedikerat team av experter för att ledsaga dig i alla dina finansieringsprojekt."
+    },
+    "cta": {
+      "primary": "Gör en ansökan",
+      "secondary": "Simulera mitt lån"
+    },
+    "disclaimer": "Ett kredit förbinder dig och måste betalas tillbaka. Kontrollera din återbetalningsförmåga innan du förbinder dig."
+  }
+}

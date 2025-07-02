@@ -1,0 +1,45 @@
+
+{
+  "home": {
+    "metaDescription": "Neovita Finanz - Din finansieringsspecialist. Professionella finansieringstjänster med expertvägledning.",
+    "servicesTitle": "Våra Finansieringstjänster",
+    "servicesSubtitle": "Lösningar anpassade till alla dina finansieringsbehov",
+    "advantagesTitle": "Varför Välja Neovita Finanz",
+    "ctaTitle": "Redo att Finansiera Ditt Projekt?",
+    "ctaSubtitle": "Våra experter ledsagar dig i ditt finansieringsprojekt"
+  },
+  "personalLoans": {
+    "metaDescription": "Personliga lån med Neovita Finanz. Snabb och flexibel finansiering för alla dina personliga projekt.",
+    "hero": {
+      "subtitle": "Finansiera alla dina personliga projekt"
+    },
+    "advantages": {
+      "title": "Fördelar med personliga lån",
+      "flexibility": "Fri användning av medel",
+      "rapidResponse": "Snabbt svar inom 48t",
+      "competitiveRates": "Konkurrenskraftiga räntor",
+      "noCollateral": "Ingen garanti eller borgen",
+      "personalizedSupport": "Personlig vägledning",
+      "freeStudy": "Gratis filstudie"
+    },
+    "cta": {
+      "study": "Studera min fil"
+    }
+  },
+  "about": {
+    "metaDescription": "Om Neovita Finanz - Upptäck vår expertis inom finansiering och vårt team av specialister.",
+    "hero": {
+      "subtitle": "Din pålitliga partner i 15 år"
+    },
+    "mission": {
+      "title": "Vårt Uppdrag",
+      "description": "Vi ledsagar våra kunder i deras finansieringsprojekt med expertis, transparens och närhet. Vårt team av 43 specialiserade rådgivare vägleder dig genom varje steg av ditt projekt."
+    },
+    "stats": {
+      "advisors": "Rådgivare",
+      "experience": "År av erfarenhet",
+      "clients": "Nöjda kunder",
+      "trust": "Förtroende"
+    }
+  }
+}

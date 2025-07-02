@@ -1,0 +1,30 @@
+
+{
+  "hero": {
+    "slide1": {
+      "title": "Willkommen bei Neovita Finanz",
+      "subtitle": "Ihr Finanzierungsspezialist",
+      "description": "Entdecken Sie unsere Finanzierungsdienstleistungen mit fachkundiger und persönlicher Betreuung."
+    },
+    "slide2": {
+      "title": "Immobilienkredite",
+      "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt",
+      "description": "Wettbewerbsfähige Zinsen und maßgeschneiderte Betreuung für die Verwirklichung Ihrer Immobilienprojekte."
+    },
+    "slide3": {
+      "title": "Kreditkonsolidierung",
+      "subtitle": "Vereinfachen Sie Ihre Finanzen",
+      "description": "Fassen Sie Ihre Kredite in einem zusammen, um Ihre monatlichen Raten zu reduzieren und Ihre finanzielle Ruhe wiederzufinden."
+    },
+    "slide4": {
+      "title": "Erfahrung & Nähe",
+      "subtitle": "43 Berater zu Ihren Diensten",
+      "description": "Ein engagiertes Expertenteam, das Sie bei all Ihren Finanzierungsprojekten begleitet."
+    },
+    "cta": {
+      "primary": "Einen Antrag stellen",
+      "secondary": "Meinen Kredit simulieren"
+    },
+    "disclaimer": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden. Prüfen Sie Ihre Rückzahlungsfähigkeit, bevor Sie sich verpflichten."
+  }
+}
