@@ -234,7 +234,26 @@
     "parameters": "Kreditparameter",
     "loanType": "Kreditart",
     "selectLoanType": "Wählen Sie eine Art",
-    "amount": "Betrag"
+    "amount": "Betrag",
+    "duration": "Laufzeit",
+    "months": "Monate",
+    "years": "Jahre",
+    "calculate": "Berechnen",
+    "results": "Ergebnisse",
+    "monthlyPayment": "Monatliche Rate",
+    "totalCost": "Gesamtkosten",
+    "totalInterest": "Gesamtzinsen",
+    "interestRate": "Zinssatz",
+    "estimationSaved": "Schätzung gespeichert",
+    "estimationSavedDesc": "Ihre Schätzung wurde gespeichert",
+    "requestInProgress": "Anfrage wird bearbeitet",
+    "requestInProgressDesc": "Ihre Anfrage wird verarbeitet",
+    "types": {
+      "personal": "Privatkredit",
+      "mortgage": "Hypothekendarlehen",
+      "work": "Arbeitskredit",
+      "auto": "Autokredit"
+    }
   },
   "testimonials": {
     "title": "Kundenstimmen",
