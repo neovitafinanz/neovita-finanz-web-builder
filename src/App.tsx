@@ -14,7 +14,7 @@ import Partenaires from './pages/Partenaires';
 import FormulaireCredit from './pages/FormulaireCredit';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsGenerales from './pages/ConditionsGenerales';
-import Cookies from './pages/Cookies';
+
 import PlanDuSite from './pages/PlanDuSite';
 import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 
@@ -40,7 +40,7 @@ function AppRoutes() {
       {/* Pages légales */}
       <Route path="/mentions-legales" element={<MentionsLegales />} />
       <Route path="/conditions-generales" element={<ConditionsGenerales />} />
-      <Route path="/cookies" element={<Cookies />} />
+      
       <Route path="/plan-du-site" element={<PlanDuSite />} />
       <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
 
@@ -61,7 +61,7 @@ function AppRoutes() {
       <Route path="/:lang/demande-credit" element={<FormulaireCredit />} />
       <Route path="/:lang/mentions-legales" element={<MentionsLegales />} />
       <Route path="/:lang/conditions-generales" element={<ConditionsGenerales />} />
-      <Route path="/:lang/cookies" element={<Cookies />} />
+      
       <Route path="/:lang/plan-du-site" element={<PlanDuSite />} />
       <Route path="/:lang/politique-confidentialite" element={<PolitiqueConfidentialite />} />
     </Routes>
