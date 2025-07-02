@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -135,6 +134,30 @@
     },
     "cta": {
       "finance": "Finanzia i miei lavori"
+    }
+  },
+  "insurance": {
+    "metaDescription": "Assicurazioni con Neovita Finanz. Proteggete i vostri progetti e investimenti con soluzioni assicurative personalizzate.",
+    "hero": {
+      "title": "Assicurazioni",
+      "subtitle": "Proteggete i vostri investimenti e progetti"
+    },
+    "types": {
+      "borrower": {
+        "title": "Assicurazione del Mutuatario",
+        "description": "Proteggetevi e proteggete i vostri cari in caso di morte, invalidità o disoccupazione"
+      },
+      "home": {
+        "title": "Assicurazione Casa",
+        "description": "Assicurate la vostra casa e i vostri beni con una copertura completa"
+      },
+      "health": {
+        "title": "Assicurazione Sanitaria",
+        "description": "Accedete a cure sanitarie di qualità con i nostri piani sanitari"
+      }
+    },
+    "cta": {
+      "quote": "Ottenere un preventivo"
     }
   },
   "about": {
