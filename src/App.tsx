@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { Toaster } from "@/components/ui/toaster";
+import ScrollToTop from './components/ScrollToTop';
 import Index from './pages/Index';
 import PretPersonnel from './pages/PretPersonnel';
 import PretImmobilier from './pages/PretImmobilier';
@@ -70,6 +71,7 @@ function AppRoutes() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <LanguageProvider>
         <AppRoutes />
         <Toaster />
