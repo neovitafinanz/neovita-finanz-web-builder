@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "ホーム",
@@ -116,6 +115,25 @@
     "cta": {
       "request": "この統合を要求",
       "study": "私のファイルを調査"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Neovita Finanzのワーククレジット。リノベーションと建設プロジェクトに資金を提供します。",
+    "hero": {
+      "title": "ワーククレジット",
+      "subtitle": "リノベーションと建設プロジェクトに資金を提供"
+    },
+    "projectTypes": {
+      "title": "プロジェクトの種類",
+      "energyRenovation": "エネルギー改修",
+      "houseExtension": "家の拡張",
+      "interiorDesign": "インテリアデザイン",
+      "roofWork": "屋根工事",
+      "poolInstallation": "プール設置",
+      "kitchenBathroom": "キッチンとバスルーム"
+    },
+    "cta": {
+      "finance": "私の工事に資金を提供"
     }
   },
   "about": {

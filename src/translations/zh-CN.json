@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "首页",
@@ -99,49 +98,6 @@
       "apply": "立即申请"
     }
   },
-  "workCredit": {
-    "metaDescription": "Neovita Finanz工作信贷。为您的装修和建筑项目提供资金。",
-    "hero": {
-      "title": "工作信贷",
-      "subtitle": "为您的装修和建筑项目提供资金"
-    },
-    "projectTypes": {
-      "title": "我们的项目类型",
-      "energyRenovation": "能源改造",
-      "houseExtension": "房屋扩建",
-      "interiorDesign": "室内设计",
-      "roofWork": "屋顶工程",
-      "poolInstallation": "游泳池安装",
-      "kitchenBathroom": "厨房和浴室"
-    },
-    "cta": {
-      "finance": "为我的工程融资"
-    }
-  },
-  "insurance": {
-    "metaDescription": "Neovita Finanz保险。保护您的项目和您的亲人。",
-    "hero": {
-      "title": "我们的保险",
-      "subtitle": "保护您的项目和您的亲人"
-    },
-    "types": {
-      "borrower": {
-        "title": "借款人保险",
-        "description": "在死亡或残疾情况下保护您和您的家人"
-      },
-      "home": {
-        "title": "房屋保险",
-        "description": "保护您的家和您的财产"
-      },
-      "health": {
-        "title": "健康保险",
-        "description": "全家的补充健康保护"
-      }
-    },
-    "cta": {
-      "quote": "获取报价"
-    }
-  },
   "creditBuyback": {
     "metaDescription": "Neovita Finanz信贷整合。减少您的月供，简化您的财务管理。",
     "hero": {
@@ -159,6 +115,25 @@
     "cta": {
       "request": "请求此整合",
       "study": "研究我的文件"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Neovita Finanz工作信贷。为您的装修和建筑项目提供资金。",
+    "hero": {
+      "title": "工作信贷",
+      "subtitle": "为您的装修和建筑项目提供资金"
+    },
+    "projectTypes": {
+      "title": "我们的项目类型",
+      "energyRenovation": "能源改造",
+      "houseExtension": "房屋扩建",
+      "interiorDesign": "室内设计",
+      "roofWork": "屋顶工程",
+      "poolInstallation": "游泳池安装",
+      "kitchenBathroom": "厨房和浴室"
+    },
+    "cta": {
+      "finance": "为我的工程融资"
     }
   },
   "about": {
@@ -224,77 +199,6 @@
       "description": "43位专业顾问在每一步都为您提供指导"
     }
   },
-  "simulator": {
-    "title": "贷款模拟器",
-    "subtitle": "几步计算您的融资",
-    "parameters": "贷款参数",
-    "loanType": "贷款类型",
-    "selectLoanType": "选择类型",
-    "amount": "金额",
-    "duration": "期限",
-    "months": "个月",
-    "years": "年",
-    "results": "结果",
-    "monthlyPayment": "月供",
-    "totalCost": "总成本",
-    "totalInterest": "总利息",
-    "types": {
-      "personal": "个人贷款",
-      "mortgage": "房屋贷款",
-      "work": "工作信贷",
-      "auto": "汽车贷款"
-    }
-  },
-  "testimonials": {
-    "title": "客户评价",
-    "subtitle": "客户的话",
-    "reviews": "评论",
-    "loanTypeLabel": "贷款类型",
-    "amountLabel": "金额",
-    "marie": {
-      "comment": "优秀的服务，快速而专业。我推荐Neovita Finanz！",
-      "loanType": "个人贷款"
-    },
-    "pierre": {
-      "comment": "感谢Neovita，我以最佳条件获得了房屋贷款。",
-      "loanType": "房屋贷款"
-    },
-    "sophie": {
-      "comment": "完美整合我的信贷，现在简单多了！",
-      "loanType": "信贷整合"
-    },
-    "jeanmarc": {
-      "comment": "感谢NeoVita，我快速获得了启动项目的贷款。",
-      "loanType": "自雇贷款"
-    },
-    "amelie": {
-      "comment": "无可挑剔、快速且非常专业的服务！",
-      "loanType": "个人贷款"
-    },
-    "pedro": {
-      "comment": "一切都很顺利，从模拟到付款。",
-      "loanType": "汽车融资"
-    }
-  },
-  "creditForm": {
-    "title": "贷款申请",
-    "subtitle": "填写表格获取个性化报价",
-    "personalInfo": "个人信息",
-    "firstName": "名字",
-    "lastName": "姓氏",
-    "email": "电子邮件",
-    "phone": "电话",
-    "projectInfo": "项目信息",
-    "loanType": "贷款类型",
-    "amount": "期望金额",
-    "duration": "期限",
-    "income": "月收入",
-    "purpose": "贷款用途",
-    "submit": "提交我的申请",
-    "submitting": "提交中...",
-    "success": "您的申请已成功提交！",
-    "error": "发生错误。请重试。"
-  },
   "footer": {
     "tagline": "您的融资专家",
     "description": "Neovita Finanz凭借专业知识和亲近感在您所有的融资项目中为您提供支持。",
@@ -346,5 +250,32 @@
       "insurance": "借款人保险不是强制性的"
     },
     "copyright": "版权所有。"
+  },
+  "simulator": {
+    "title": "贷款模拟器",
+    "subtitle": "几步计算您的融资",
+    "parameters": "贷款参数",
+    "loanType": "贷款类型",
+    "selectLoanType": "选择类型",
+    "amount": "金额"
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "客户的话",
+    "reviews": "评论",
+    "loanTypeLabel": "贷款类型",
+    "amountLabel": "金额",
+    "jeanmarc": {
+      "comment": "感谢NeoVita，我快速获得了启动项目的贷款。",
+      "loanType": "自雇贷款"
+    },
+    "amelie": {
+      "comment": "无可挑剔、快速且非常专业的服务！",
+      "loanType": "个人贷款"
+    },
+    "pedro": {
+      "comment": "一切都很顺利，从模拟到付款。",
+      "loanType": "汽车融资"
+    }
   }
 }

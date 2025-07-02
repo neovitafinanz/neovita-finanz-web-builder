@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Início",
@@ -116,6 +115,25 @@
     "cta": {
       "request": "Solicitar esta consolidação",
       "study": "Estudar o meu dossiê"
+    }
+  },
+  "workCredit": {
+    "metaDescription": "Crédito obras com Neovita Finanz. Financie os seus projetos de renovação e construção.",
+    "hero": {
+      "title": "Crédito Obras",
+      "subtitle": "Financie os seus projetos de renovação e construção"
+    },
+    "projectTypes": {
+      "title": "Os nossos tipos de projetos",
+      "energyRenovation": "Renovação energética",
+      "houseExtension": "Ampliação da casa",
+      "interiorDesign": "Design de interiores",
+      "roofWork": "Trabalhos no telhado",
+      "poolInstallation": "Instalação de piscina",
+      "kitchenBathroom": "Cozinha e casa de banho"
+    },
+    "cta": {
+      "finance": "Financiar os meus trabalhos"
     }
   },
   "about": {
