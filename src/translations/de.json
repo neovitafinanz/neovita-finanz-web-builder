@@ -348,7 +348,52 @@
   "footer": {
     "tagline": "Ihr Spezialist für Fahrzeugimport",
     "description": "BHV Auto begleitet Sie bei all Ihren Fahrzeugimportprojekten mit Expertise und Nähe.",
-...
+    "sections": {
+      "services": "Unsere Dienstleistungen",
+      "company": "Das Unternehmen",
+      "legal": "Rechtliche Informationen"
+    },
+    "services": {
+      "personalLoans": "Privatkredite",
+      "mortgageLoans": "Hypothekendarlehen",
+      "creditBuyback": "Kreditumschuldung",
+      "workCredit": "Arbeitskredit",
+      "insurance": "Versicherungen"
+    },
+    "company": {
+      "about": "Über Uns",
+      "team": "Unser Team",
+      "careers": "Karrieren",
+      "partners": "Partner",
+      "news": "Nachrichten"
+    },
+    "legal": {
+      "terms": "Rechtliche Hinweise",
+      "privacy": "Datenschutzrichtlinie",
+      "conditions": "Allgemeine Geschäftsbedingungen",
+      "sitemap": "Sitemap",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Zertifizierungen",
+      "gdpr": "DSGVO-konform",
+      "gdprDesc": "Datenschutz",
+      "ssl": "SSL-gesichert",
+      "sslDesc": "Sichere Verbindung",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Zugelassenes Institut"
+    },
+    "companyInfo": {
+      "title": "Unternehmensinformationen",
+      "legalForm": "Rechtsform",
+      "capital": "Kapital",
+      "employees": "Personal"
+    },
+    "warning": {
+      "title": "Wichtige Informationen",
+      "rates": "Von 0,9% bis 19,9% je nach Profil und Laufzeit",
+      "credit": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden",
+      "insurance": "Die Kreditnehmerversicherung ist nicht obligatorisch"
     },
     "copyright": "Alle Rechte vorbehalten."
   }

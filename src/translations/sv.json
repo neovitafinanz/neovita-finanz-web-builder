@@ -357,5 +357,95 @@
       "insurance": "Låntagarförsäkring är inte obligatorisk"
     },
     "copyright": "Alla rättigheter förbehållna."
+  },
+  "loanRequest": {
+    "metaDescription": "Gör din kreditansökan online. Snabbt svar inom 24t. Expertrådgivare tillgängliga.",
+    "hero": {
+      "title": "Kreditansökan",
+      "subtitle": "Slutför din låneansökan online och få snabbt svar från våra experter"
+    },
+    "form": {
+      "title": "Låneansökningsformulär",
+      "personalInfo": "Personlig information",
+      "firstName": "Förnamn",
+      "lastName": "Efternamn",
+      "email": "E-post",
+      "emailConfirmation": "Bekräfta e-post",
+      "phone": "Telefon",
+      "project": "Ditt projekt",
+      "loanType": "Låntyp",
+      "selectLoanType": "Välj en låntyp",
+      "amount": "Belopp",
+      "currency": "Valuta",
+      "duration": "Varaktighet (månader)",
+      "situation": "Ekonomisk situation",
+      "professionalSituation": "Yrkessituation",
+      "selectSituation": "Välj din situation",
+      "monthlyIncome": "Månadsinkomst",
+      "message": "Meddelande",
+      "messagePlaceholder": "Beskriv ditt projekt...",
+      "submit": "Skicka min ansökan",
+      "submitting": "Skickar...",
+      "required": "* Obligatoriska fält"
+    },
+    "validation": {
+      "missingFields": "Saknade fält",
+      "missingFieldsDesc": "Vänligen fyll i alla obligatoriska fält.",
+      "invalidEmail": "Ogiltig e-post",
+      "invalidEmailDesc": "Vänligen ange en giltig e-postadress.",
+      "emailMismatch": "E-posten stämmer inte",
+      "emailMismatchDesc": "E-postadresserna stämmer inte överens.",
+      "success": "Ansökan skickad",
+      "successDesc": "Din ansökan har skickats. Vi kommer att kontakta dig inom 48 timmar.",
+      "error": "Skickningsfel",
+      "errorDesc": "Ett fel uppstod. Vänligen försök igen."
+    },
+    "reassurance": {
+      "title": "Varför lita på oss?",
+      "secureData": {
+        "title": "Säkra data",
+        "description": "Dina data skyddas av SSL-kryptering"
+      },
+      "quickResponse": {
+        "title": "Snabbt svar",
+        "description": "Svar inom 48 timmar"
+      },
+      "availableAdvisors": {
+        "title": "Tillgängliga rådgivare",
+        "description": "43 experter till din tjänst"
+      }
+    },
+    "advantages": {
+      "title": "Våra fördelar",
+      "experience": "15 års erfarenhet inom finans",
+      "experts": "43 specialiserade rådgivare",
+      "rates": "Konkurrenskraftiga räntor",
+      "support": "Personlig uppföljning"
+    },
+    "contact": {
+      "title": "Behöver du hjälp?",
+      "description": "Vårt team finns tillgängligt för dig",
+      "phone": "01 86 65 26 51",
+      "hours": "Måndag till fredag från 9 till 18"
+    },
+    "situations": {
+      "employee": "Anställd",
+      "temporaryEmployee": "Tillfälligt anställd",
+      "civilServant": "Offentligt anställd",
+      "selfEmployed": "Egen företagare",
+      "freelancer": "Frilansare",
+      "retired": "Pensionär",
+      "student": "Student",
+      "jobSeeker": "Arbetssökande"
+    }
+  },
+  "loanTypes": {
+    "personal": "Personligt lån online",
+    "consumption": "Konsumentkredit",
+    "works": "Arbets-/renoveringslån",
+    "mortgage": "Bolån",
+    "consolidation": "Kreditsamling",
+    "lease": "Leasing",
+    "student": "Studielån"
   }
 }

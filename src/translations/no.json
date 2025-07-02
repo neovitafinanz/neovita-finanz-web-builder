@@ -332,5 +332,95 @@
       "insurance": "Låntakerforsikring er ikke obligatorisk"
     },
     "copyright": "Alle rettigheter forbeholdt."
+  },
+  "loanRequest": {
+    "metaDescription": "Gjør lånesøknaden din online. Rask respons innen 24t. Ekspertrådgivere tilgjengelige.",
+    "hero": {
+      "title": "Lånesøknad",
+      "subtitle": "Fullfør lånesøknaden din på nettet og få rask respons fra våre eksperter"
+    },
+    "form": {
+      "title": "Lånesøknadsskjema",
+      "personalInfo": "Personlig informasjon",
+      "firstName": "Fornavn",
+      "lastName": "Etternavn",
+      "email": "E-post",
+      "emailConfirmation": "Bekreft e-post",
+      "phone": "Telefon",
+      "project": "Ditt prosjekt",
+      "loanType": "Lånetype",
+      "selectLoanType": "Velg en lånetype",
+      "amount": "Beløp",
+      "currency": "Valuta",
+      "duration": "Varighet (måneder)",
+      "situation": "Økonomisk situasjon",
+      "professionalSituation": "Yrkessituasjon",
+      "selectSituation": "Velg din situasjon",
+      "monthlyIncome": "Månedlig inntekt",
+      "message": "Melding",
+      "messagePlaceholder": "Beskriv prosjektet ditt...",
+      "submit": "Send søknaden min",
+      "submitting": "Sender...",
+      "required": "* Obligatoriske felt"
+    },
+    "validation": {
+      "missingFields": "Manglende felt",
+      "missingFieldsDesc": "Vennligst fyll ut alle obligatoriske felt.",
+      "invalidEmail": "Ugyldig e-post",
+      "invalidEmailDesc": "Vennligst oppgi en gyldig e-postadresse.",
+      "emailMismatch": "E-postene stemmer ikke",
+      "emailMismatchDesc": "E-postadressene stemmer ikke overens.",
+      "success": "Søknad sendt",
+      "successDesc": "Søknaden din har blitt sendt. Vi vil kontakte deg innen 48 timer.",
+      "error": "Sendefeil",
+      "errorDesc": "En feil oppstod. Vennligst prøv igjen."
+    },
+    "reassurance": {
+      "title": "Hvorfor stole på oss?",
+      "secureData": {
+        "title": "Sikre data",
+        "description": "Dataene dine er beskyttet av SSL-kryptering"
+      },
+      "quickResponse": {
+        "title": "Rask respons",
+        "description": "Respons innen 48 timer"
+      },
+      "availableAdvisors": {
+        "title": "Tilgjengelige rådgivere",
+        "description": "43 eksperter til din tjeneste"
+      }
+    },
+    "advantages": {
+      "title": "Våre fordeler",
+      "experience": "15 års erfaring innen finans",
+      "experts": "43 spesialiserte rådgivere",
+      "rates": "Konkurransedyktige renter",
+      "support": "Personlig oppfølging"
+    },
+    "contact": {
+      "title": "Trenger du hjelp?",
+      "description": "Teamet vårt er tilgjengelig for deg",
+      "phone": "01 86 65 26 51",
+      "hours": "Mandag til fredag fra 9 til 18"
+    },
+    "situations": {
+      "employee": "Ansatt",
+      "temporaryEmployee": "Midlertidig ansatt",
+      "civilServant": "Offentlig ansatt",
+      "selfEmployed": "Selvstendig næringsdrivende",
+      "freelancer": "Frilancer",
+      "retired": "Pensjonist",
+      "student": "Student",
+      "jobSeeker": "Arbeidssøkende"
+    }
+  },
+  "loanTypes": {
+    "personal": "Personlig lån online",
+    "consumption": "Forbrukslån",
+    "works": "Arbeids-/renoveringslån",
+    "mortgage": "Boliglån",
+    "consolidation": "Kredittsamling",
+    "lease": "Leasing",
+    "student": "Studielån"
   }
 }
