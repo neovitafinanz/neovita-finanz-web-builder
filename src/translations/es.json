@@ -379,6 +379,9 @@
     },
     "warning": {
       "title": "Información Importante",
+      "interestRateLabel": "Tasa de interés",
+      "creditLabel": "Crédito",
+      "insuranceLabel": "Seguro",
       "rates": "Del 0,9% al 19,9% según perfil y duración",
       "credit": "Un crédito le compromete y debe ser reembolsado",
       "insurance": "El seguro del prestatario no es obligatorio"
