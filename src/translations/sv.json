@@ -244,11 +244,10 @@
     "requestInProgressDesc": "Din ansökan behandlas"
   },
   "loanTypes": {
-      "personal": "Personligt lån",
-      "mortgage": "Bolån",
-      "work": "Arbetskredit",
-      "auto": "Billån"
-    }
+    "personal": "Personligt lån",
+    "mortgage": "Bolån",
+    "work": "Arbetskredit",
+    "auto": "Billån"
   },
   "testimonials": {
     "title": "Kundvittnesmål",
