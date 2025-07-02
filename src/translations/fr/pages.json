@@ -41,5 +41,15 @@
       "clients": "Clients satisfaits",
       "trust": "Confiance"
     }
+  },
+  "testimonials": {
+    "amountLabel": "Montant",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "goToPage": "Aller à la page",
+    "trustTitle": "Ils nous font confiance",
+    "satisfiedClients": "Clients satisfaits",
+    "averageResponse": "Réponse moyenne",
+    "averageRating": "Note moyenne"
   }
 }
