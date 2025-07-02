@@ -86,31 +86,6 @@ const PartnersSection = () => {
           </Carousel>
         </div>
 
-        {/* Trust Message */}  
-        <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-xl font-bold text-blue-900 mb-4">
-              {t('partners.trustMessage.title')}
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              {t('partners.trustMessage.description')}
-            </p>
-            <div className="grid md:grid-cols-3 gap-4 mt-6 text-sm">
-              <div className="flex items-center justify-center space-x-2">
-                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                <span className="text-gray-600">{t('partners.trustMessage.labels.approved')}</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                <span className="text-gray-600">{t('partners.trustMessage.labels.negotiated')}</span>
-              </div>
-              <div className="flex items-center justify-center space-x-2">
-                <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                <span className="text-gray-600">{t('partners.trustMessage.labels.fast')}</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
