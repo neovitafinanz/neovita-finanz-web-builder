@@ -1,0 +1,93 @@
+
+{
+  "loanRequest": {
+    "metaDescription": "Modulo di richiesta di prestito con Neovita Finanz. Compilate il nostro modulo sicuro per ottenere un preventivo personalizzato.",
+    "hero": {
+      "title": "Richiesta di Prestito",
+      "subtitle": "Compilate questo modulo sicuro e i nostri esperti vi contatteranno rapidamente per studiare il vostro progetto."
+    },
+    "form": {
+      "title": "Modulo di Richiesta",
+      "personalInfo": "Informazioni Personali",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "emailConfirmation": "Conferma Email",
+      "phone": "Telefono",
+      "project": "Il Vostro Progetto",
+      "loanType": "Tipo di prestito",
+      "selectLoanType": "Selezionate il tipo di prestito",
+      "amount": "Importo desiderato",
+      "currency": "Valuta",
+      "duration": "Durata (mesi)",
+      "situation": "Situazione Finanziaria",
+      "professionalSituation": "Situazione professionale",
+      "selectSituation": "Selezionate la vostra situazione",
+      "monthlyIncome": "Reddito mensile",
+      "message": "Messaggio",
+      "messagePlaceholder": "Descrivete il vostro progetto o esigenze specifiche...",
+      "submit": "Inviare la mia richiesta",
+      "submitting": "Invio in corso...",
+      "required": "* Campi obbligatori. I vostri dati sono protetti e verranno utilizzati solo per elaborare la vostra richiesta."
+    },
+    "reassurance": {
+      "title": "La Vostra Tranquillità",
+      "secureData": {
+        "title": "Dati Sicuri",
+        "description": "Le vostre informazioni sono protette e crittografate."
+      },
+      "quickResponse": {
+        "title": "Risposta Rapida",
+        "description": "Un esperto vi contatterà entro 24 ore."
+      },
+      "availableAdvisors": {
+        "title": "Consulenti Disponibili",
+        "description": "43 specialisti al vostro servizio dal lunedì al venerdì."
+      }
+    },
+    "advantages": {
+      "title": "I Nostri Vantaggi",
+      "experience": "15 anni di esperienza nel finanziamento",
+      "experts": "43 consulenti specializzati",
+      "rates": "Tassi competitivi e personalizzati",
+      "support": "Supporto personalizzato per ogni progetto"
+    },
+    "contact": {
+      "title": "Bisogno di Aiuto?",
+      "description": "I nostri consulenti sono disponibili per aiutarvi.",
+      "phone": "02 123 45 67",
+      "hours": "Dal lunedì al venerdì dalle 9 alle 18"
+    },
+    "validation": {
+      "missingFields": "Campi mancanti",
+      "missingFieldsDesc": "Compilate tutti i campi obbligatori.",
+      "invalidEmail": "Email non valida",
+      "invalidEmailDesc": "Inserite un indirizzo email valido.",
+      "emailMismatch": "Email non corrispondenti",
+      "emailMismatchDesc": "Gli indirizzi email non corrispondono.",
+      "success": "Richiesta inviata con successo",
+      "successDesc": "Vi contatteremo il prima possibile.",
+      "error": "Errore durante l'invio",
+      "errorDesc": "Si è verificato un errore. Riprovate più tardi."
+    },
+    "situations": {
+      "employee": "Dipendente",
+      "temporaryEmployee": "Dipendente a tempo determinato",
+      "civilServant": "Funzionario pubblico",
+      "selfEmployed": "Lavoratore autonomo",
+      "freelancer": "Libero professionista",
+      "retired": "Pensionato",
+      "student": "Studente",
+      "jobSeeker": "In cerca di lavoro"
+    }
+  },
+  "loanTypes": {
+    "personal": "Prestito personale online",
+    "consumption": "Prestito al consumo",
+    "works": "Credito lavori/ristrutturazione",
+    "mortgage": "Mutuo immobiliare",
+    "consolidation": "Consolidamento crediti",
+    "lease": "Leasing",
+    "student": "Prestito studenti"
+  }
+}

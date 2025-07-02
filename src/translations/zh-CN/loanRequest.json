@@ -1,0 +1,93 @@
+
+{
+  "loanRequest": {
+    "metaDescription": "使用Neovita Finanz的贷款申请表。填写我们的安全表格以获得个性化报价。",
+    "hero": {
+      "title": "贷款申请",
+      "subtitle": "填写这个安全表格，我们的专家将快速联系您来研究您的项目。"
+    },
+    "form": {
+      "title": "申请表格",
+      "personalInfo": "个人信息",
+      "firstName": "名字",
+      "lastName": "姓氏",
+      "email": "邮箱",
+      "emailConfirmation": "确认邮箱",
+      "phone": "电话",
+      "project": "您的项目",
+      "loanType": "贷款类型",
+      "selectLoanType": "选择贷款类型",
+      "amount": "期望金额",
+      "currency": "货币",
+      "duration": "期限（月）",
+      "situation": "财务状况",
+      "professionalSituation": "职业状况",
+      "selectSituation": "选择您的状况",
+      "monthlyIncome": "月收入",
+      "message": "留言",
+      "messagePlaceholder": "描述您的项目或具体需求...",
+      "submit": "提交我的申请",
+      "submitting": "提交中...",
+      "required": "* 必填字段。您的数据受到保护，仅用于处理您的申请。"
+    },
+    "reassurance": {
+      "title": "您的安心保障",
+      "secureData": {
+        "title": "数据安全",
+        "description": "您的信息受到保护和加密。"
+      },
+      "quickResponse": {
+        "title": "快速响应",
+        "description": "专家将在24小时内联系您。"
+      },
+      "availableAdvisors": {
+        "title": "可用顾问",
+        "description": "43位专家周一到周五为您服务。"
+      }
+    },
+    "advantages": {
+      "title": "我们的优势",
+      "experience": "15年融资经验",
+      "experts": "43位专业顾问",
+      "rates": "有竞争力的个性化利率",
+      "support": "每个项目的个性化支持"
+    },
+    "contact": {
+      "title": "需要帮助？",
+      "description": "我们的顾问随时为您提供帮助。",
+      "phone": "010 1234 5678",
+      "hours": "周一至周五 上午9点至下午6点"
+    },
+    "validation": {
+      "missingFields": "缺少字段",
+      "missingFieldsDesc": "请填写所有必填字段。",
+      "invalidEmail": "无效邮箱",
+      "invalidEmailDesc": "请输入有效的邮箱地址。",
+      "emailMismatch": "邮箱不匹配",
+      "emailMismatchDesc": "邮箱地址不匹配。",
+      "success": "申请成功提交",
+      "successDesc": "我们将尽快与您联系。",
+      "error": "发送时出错",
+      "errorDesc": "发生错误。请稍后重试。"
+    },
+    "situations": {
+      "employee": "员工",
+      "temporaryEmployee": "临时员工",
+      "civilServant": "公务员",
+      "selfEmployed": "自雇人士",
+      "freelancer": "自由职业者",
+      "retired": "退休人员",
+      "student": "学生",
+      "jobSeeker": "求职者"
+    }
+  },
+  "loanTypes": {
+    "personal": "在线个人贷款",
+    "consumption": "消费贷款",
+    "works": "装修贷款",
+    "mortgage": "房屋贷款",
+    "consolidation": "债务整合",
+    "lease": "租赁",
+    "student": "学生贷款"
+  }
+}

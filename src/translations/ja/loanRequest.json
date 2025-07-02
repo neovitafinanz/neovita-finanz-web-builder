@@ -1,0 +1,93 @@
+
+{
+  "loanRequest": {
+    "metaDescription": "Neovita Finanzでのローン申請フォーム。安全なフォームに記入して、個別の見積もりを取得してください。",
+    "hero": {
+      "title": "ローン申請",
+      "subtitle": "この安全なフォームにご記入いただければ、専門家が迅速にご連絡してプロジェクトを検討いたします。"
+    },
+    "form": {
+      "title": "申請フォーム",
+      "personalInfo": "個人情報",
+      "firstName": "名前",
+      "lastName": "姓",
+      "email": "メールアドレス",
+      "emailConfirmation": "メールアドレス確認",
+      "phone": "電話番号",
+      "project": "あなたのプロジェクト",
+      "loanType": "ローンの種類",
+      "selectLoanType": "ローンの種類を選択",
+      "amount": "希望金額",
+      "currency": "通貨",
+      "duration": "期間（月）",
+      "situation": "財務状況",
+      "professionalSituation": "職業状況",
+      "selectSituation": "状況を選択",
+      "monthlyIncome": "月収",
+      "message": "メッセージ",
+      "messagePlaceholder": "プロジェクトや具体的なニーズを説明してください...",
+      "submit": "申請を送信",
+      "submitting": "送信中...",
+      "required": "* 必須項目。お客様のデータは保護されており、申請の処理にのみ使用されます。"
+    },
+    "reassurance": {
+      "title": "安心保証",
+      "secureData": {
+        "title": "データの安全性",
+        "description": "お客様の情報は保護・暗号化されています。"
+      },
+      "quickResponse": {
+        "title": "迅速な対応",
+        "description": "専門家が24時間以内にご連絡いたします。"
+      },
+      "availableAdvisors": {
+        "title": "利用可能なアドバイザー",
+        "description": "43名の専門家が月曜日から金曜日までサービスを提供しています。"
+      }
+    },
+    "advantages": {
+      "title": "私たちの利点",
+      "experience": "15年の融資経験",
+      "experts": "43名の専門コンサルタント",
+      "rates": "競争力のある個別金利",
+      "support": "各プロジェクトへの個別サポート"
+    },
+    "contact": {
+      "title": "サポートが必要ですか？",
+      "description": "コンサルタントがサポートいたします。",
+      "phone": "03-1234-5678",
+      "hours": "月曜日〜金曜日 9時〜18時"
+    },
+    "validation": {
+      "missingFields": "未入力項目",
+      "missingFieldsDesc": "すべての必須項目を入力してください。",
+      "invalidEmail": "無効なメールアドレス",
+      "invalidEmailDesc": "有効なメールアドレスを入力してください。",
+      "emailMismatch": "メールアドレスが一致しません",
+      "emailMismatchDesc": "メールアドレスが一致しません。",
+      "success": "申請が正常に送信されました",
+      "successDesc": "できるだけ早くご連絡いたします。",
+      "error": "送信エラー",
+      "errorDesc": "エラーが発生しました。後でもう一度お試しください。"
+    },
+    "situations": {
+      "employee": "従業員",
+      "temporaryEmployee": "臨時従業員",
+      "civilServant": "公務員",
+      "selfEmployed": "自営業",
+      "freelancer": "フリーランサー",
+      "retired": "退職者",
+      "student": "学生",
+      "jobSeeker": "求職者"
+    }
+  },
+  "loanTypes": {
+    "personal": "オンライン個人ローン",
+    "consumption": "消費者ローン",
+    "works": "リフォームローン",
+    "mortgage": "住宅ローン",
+    "consolidation": "ローン一本化",
+    "lease": "リース",
+    "student": "学生ローン"
+  }
+}
