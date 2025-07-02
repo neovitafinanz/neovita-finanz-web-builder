@@ -4,30 +4,31 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
-  const { t } = useLanguage();
+
+  const { t, language } = useLanguage();
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     services: [
-      { name: t('footer.services.personalLoans'), href: "/prets-personnels" },
-      { name: t('footer.services.mortgageLoans'), href: "/prets-immobiliers" },
-      { name: t('footer.services.creditBuyback'), href: "/rachat-credit" },
-      { name: t('footer.services.workCredit'), href: "/credit-travaux" },
-      { name: t('footer.services.insurance'), href: "/assurances" }
+      { name: t('footer.services.personalLoans'), href: `/${language}/prets-personnels` },
+      { name: t('footer.services.mortgageLoans'), href: `/${language}/prets-immobiliers` },
+      { name: t('footer.services.creditBuyback'), href: `/${language}/rachat-credit` },
+      { name: t('footer.services.workCredit'), href: `/${language}/credit-travaux` },
+      { name: t('footer.services.insurance'), href: `/${language}/assurances` }
     ],
     company: [
-      { name: t('footer.company.about'), href: "/a-propos" },
-      { name: t('footer.company.team'), href: "/equipe" },
-      { name: t('footer.company.careers'), href: "/carrieres" },
-      { name: t('footer.company.partners'), href: "/partenaires" },
-      { name: t('footer.company.news'), href: "/actualites" }
+      { name: t('footer.company.about'), href: `/${language}/a-propos` },
+      { name: t('footer.company.team'), href: `/${language}/equipe` },
+      { name: t('footer.company.careers'), href: `/${language}/carrieres` },
+      { name: t('footer.company.partners'), href: `/${language}/partenaires` },
+      { name: t('footer.company.news'), href: `/${language}/actualites` }
     ],
     legal: [
-      { name: t('footer.legal.terms'), href: "/mentions-legales" },
-      { name: t('footer.legal.privacy'), href: "/politique-confidentialite" },
-      { name: t('footer.legal.conditions'), href: "/conditions-generales" },
-      { name: t('footer.legal.sitemap'), href: "/plan-site" },
-      { name: t('footer.legal.cookies'), href: "/cookies" }
+      { name: t('footer.legal.terms'), href: `/${language}/mentions-legales` },
+      { name: t('footer.legal.privacy'), href: `/${language}/politique-confidentialite` },
+      { name: t('footer.legal.conditions'), href: `/${language}/conditions-generales` },
+      { name: t('footer.legal.sitemap'), href: `/${language}/plan-site` },
+      { name: t('footer.legal.cookies'), href: `/${language}/cookies` }
     ]
   };
 
@@ -44,7 +45,7 @@ const Footer = () => {
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center space-x-2 mb-6">
+            <Link to={`/${language}`} className="flex items-center space-x-2 mb-6">
               <img 
                 src="/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" 
                 alt="Neovita Finanz" 
