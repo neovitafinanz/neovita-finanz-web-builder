@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-type Language = 'fr' | 'en' | 'es' | 'it' | 'de' | 'pt' | 'nl' | 'sv' | 'no' | 'da' | 'zh-CN' | 'ja' | 'ru';
+type Language = 'fr' | 'en' | 'es' | 'it' | 'de' | 'pt' | 'nl' | 'sv' | 'no' | 'da';
 
 interface LanguageContextType {
   language: Language;
@@ -13,7 +13,7 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-const supportedLanguages: Language[] = ['fr', 'en', 'es', 'it', 'de', 'pt', 'nl', 'sv', 'no', 'da', 'zh-CN', 'ja', 'ru'];
+const supportedLanguages: Language[] = ['fr', 'en', 'es', 'it', 'de', 'pt', 'nl', 'sv', 'no', 'da'];
 
 const isValidLanguage = (lang: string): lang is Language => {
   return supportedLanguages.includes(lang as Language);
@@ -22,7 +22,25 @@ const isValidLanguage = (lang: string): lang is Language => {
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [language, setLanguage] = useState<Language>('fr');
+  
+  // Get initial language from localStorage or URL or default to 'fr'
+  const getInitialLanguage = (): Language => {
+    const pathSegments = location.pathname.split('/').filter(Boolean);
+    const urlLang = pathSegments[0];
+    
+    if (urlLang && isValidLanguage(urlLang)) {
+      return urlLang;
+    }
+    
+    const savedLang = localStorage.getItem('selectedLanguage');
+    if (savedLang && isValidLanguage(savedLang)) {
+      return savedLang as Language;
+    }
+    
+    return 'fr';
+  };
+
+  const [language, setLanguage] = useState<Language>(getInitialLanguage);
   const [translations, setTranslations] = useState<Record<string, any>>({});
   const [isLoading, setIsLoading] = useState(true);
 
@@ -71,6 +89,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   }, [language]);
 
   const changeLanguage = (newLanguage: Language) => {
+    // Save language preference to localStorage
+    localStorage.setItem('selectedLanguage', newLanguage);
+    
     const currentPath = location.pathname;
     const pathSegments = currentPath.split('/').filter(Boolean);
     
