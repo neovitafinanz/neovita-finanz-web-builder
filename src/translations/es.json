@@ -470,5 +470,92 @@
       "title": "Remuneración",
       "content": "La remuneración de Neovita Finanz es abonada por la entidad de crédito en el momento de la realización de la financiación. No se factura ningún gasto al cliente."
     }
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "description": "Cómo utilizamos las cookies para mejorar su experiencia",
+    "intro": "Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Descubra cómo las utilizamos y cómo puede gestionarlas.",
+    "what": {
+      "title": "¿Qué es una cookie?",
+      "description1": "Las cookies son pequeños archivos de texto almacenados en su dispositivo cuando visita un sitio web. Permiten al sitio recordar sus acciones y preferencias durante un período determinado.",
+      "description2": "Utilizamos cookies para mejorar su navegación, analizar el uso del sitio y personalizar su experiencia de usuario."
+    },
+    "types": {
+      "title": "Tipos de cookies utilizadas",
+      "technical": {
+        "title": "Cookies técnicas (obligatorias)",
+        "description": "Estas cookies son esenciales para el funcionamiento del sitio. Permiten la navegación y el uso de las funcionalidades básicas.",
+        "duration": "Sesión o máximo 1 año",
+        "examples": "Cookies de sesión, preferencias de idioma, carrito de compras"
+      },
+      "analytics": {
+        "title": "Cookies de análisis",
+        "description": "Estas cookies nos ayudan a entender cómo los visitantes utilizan nuestro sitio recopilando información anónima.",
+        "duration": "Máximo 2 años",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Páginas visitadas, duración de la visita, fuente del tráfico"
+      },
+      "preferences": {
+        "title": "Cookies de preferencias",
+        "description": "Estas cookies memorizan sus elecciones y preferencias para personalizar su experiencia.",
+        "duration": "Máximo 1 año",
+        "examples": "Idioma elegido, región, preferencias de visualización"
+      },
+      "advertising": {
+        "title": "Cookies publicitarias",
+        "description": "Estas cookies se utilizan para ofrecerle publicidad relevante basada en sus intereses.",
+        "duration": "Máximo 13 meses",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "Puede rechazar estas cookies sin afectar el funcionamiento del sitio"
+      }
+    },
+    "management": {
+      "title": "Gestión de cookies",
+      "intro": "Tiene control total sobre las cookies. Así es como gestionarlas:",
+      "onSite": {
+        "title": "En nuestro sitio",
+        "description": "Puede modificar sus preferencias de cookies en cualquier momento haciendo clic en el enlace \"Gestionar cookies\" al final de la página."
+      },
+      "browser": {
+        "title": "En su navegador",
+        "chrome": "Configuración → Privacidad y seguridad → Cookies",
+        "firefox": "Configuración → Privacidad y seguridad → Cookies",
+        "safari": "Preferencias → Privacidad → Gestionar datos de sitios web",
+        "edge": "Configuración → Cookies y permisos de sitio"
+      },
+      "external": {
+        "title": "Herramientas externas",
+        "analytics": "Desactivar Google Analytics",
+        "ads": "Configuración de anuncios"
+      }
+    },
+    "duration": {
+      "title": "Período de conservación",
+      "table": {
+        "type": "Tipo de cookie",
+        "duration": "Período de conservación",
+        "purpose": "Finalidad",
+        "session": {
+          "type": "Sesión",
+          "duration": "Fin de sesión",
+          "purpose": "Navegación y funcionamiento del sitio"
+        },
+        "preferences": {
+          "type": "Preferencias",
+          "duration": "1 año",
+          "purpose": "Recordar sus elecciones (idioma, región)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 años",
+          "purpose": "Estadísticas de uso anónimas"
+        },
+        "advertising": {
+          "type": "Publicitarias",
+          "duration": "13 meses",
+          "purpose": "Publicidad dirigida"
+        }
+      }
+    }
   }
 }

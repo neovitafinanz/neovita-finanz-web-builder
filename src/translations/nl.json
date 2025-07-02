@@ -489,5 +489,92 @@
       "title": "Vergoeding",
       "content": "De vergoeding van Neovita Finanz wordt betaald door de kredietinstelling bij realisatie van de financiering. Er worden geen kosten aan de klant gefactureerd."
     }
+  },
+  "cookies": {
+    "title": "Cookiebeleid",
+    "description": "Hoe we cookies gebruiken om uw ervaring te verbeteren",
+    "intro": "We gebruiken cookies om uw ervaring op onze website te verbeteren. Ontdek hoe we ze gebruiken en hoe u ze kunt beheren.",
+    "what": {
+      "title": "Wat is een cookie?",
+      "description1": "Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u een website bezoekt. Ze stellen de site in staat om uw acties en voorkeuren gedurende een bepaalde periode te onthouden.",
+      "description2": "We gebruiken cookies om uw navigatie te verbeteren, het gebruik van de site te analyseren en uw gebruikerservaring te personaliseren."
+    },
+    "types": {
+      "title": "Gebruikte cookie-types",
+      "technical": {
+        "title": "Technische cookies (verplicht)",
+        "description": "Deze cookies zijn essentieel voor het functioneren van de site. Ze maken navigatie en gebruik van basisfuncties mogelijk.",
+        "duration": "Sessie of maximaal 1 jaar",
+        "examples": "Sessiecookies, taalvoorkeuren, winkelwagen"
+      },
+      "analytics": {
+        "title": "Analyse-cookies",
+        "description": "Deze cookies helpen ons begrijpen hoe bezoekers onze site gebruiken door anonieme informatie te verzamelen.",
+        "duration": "Maximaal 2 jaar",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Bezochte pagina's, bezoekduur, verkeersbron"
+      },
+      "preferences": {
+        "title": "Voorkeuren-cookies",
+        "description": "Deze cookies onthouden uw keuzes en voorkeuren om uw ervaring te personaliseren.",
+        "duration": "Maximaal 1 jaar",
+        "examples": "Gekozen taal, regio, weergavevoorkeuren"
+      },
+      "advertising": {
+        "title": "Reclame-cookies",
+        "description": "Deze cookies worden gebruikt om u relevante advertenties aan te bieden op basis van uw interesses.",
+        "duration": "Maximaal 13 maanden",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "U kunt deze cookies weigeren zonder de werking van de site te beïnvloeden"
+      }
+    },
+    "management": {
+      "title": "Cookie-beheer",
+      "intro": "U heeft volledige controle over cookies. Zo beheert u ze:",
+      "onSite": {
+        "title": "Op onze site",
+        "description": "U kunt uw cookie-voorkeuren op elk moment wijzigen door te klikken op de link \"Cookies beheren\" onderaan de pagina."
+      },
+      "browser": {
+        "title": "In uw browser",
+        "chrome": "Instellingen → Privacy en beveiliging → Cookies",
+        "firefox": "Instellingen → Privacy en beveiliging → Cookies",
+        "safari": "Voorkeuren → Privacy → Websitegegevens beheren",
+        "edge": "Instellingen → Cookies en site-machtigingen"
+      },
+      "external": {
+        "title": "Externe tools",
+        "analytics": "Google Analytics uitschakelen",
+        "ads": "Advertentie-instellingen"
+      }
+    },
+    "duration": {
+      "title": "Bewaartermijn",
+      "table": {
+        "type": "Cookie-type",
+        "duration": "Bewaartermijn",
+        "purpose": "Doel",
+        "session": {
+          "type": "Sessie",
+          "duration": "Einde sessie",
+          "purpose": "Navigatie en werking van de site"
+        },
+        "preferences": {
+          "type": "Voorkeuren",
+          "duration": "1 jaar",
+          "purpose": "Uw keuzes onthouden (taal, regio)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 jaar",
+          "purpose": "Anonieme gebruiksstatistieken"
+        },
+        "advertising": {
+          "type": "Reclame",
+          "duration": "13 maanden",
+          "purpose": "Gerichte reclame"
+        }
+      }
+    }
   }
 }

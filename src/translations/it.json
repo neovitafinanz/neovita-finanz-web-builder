@@ -497,5 +497,92 @@
       "title": "Remunerazione",
       "content": "La remunerazione di Neovita Finanz è versata dall'istituto di credito al momento della realizzazione del finanziamento. Nessuna spesa è fatturata al cliente."
     }
+  },
+  "cookies": {
+    "title": "Politica sui Cookie",
+    "description": "Come utilizziamo i cookie per migliorare la tua esperienza",
+    "intro": "Utilizziamo i cookie per migliorare la tua esperienza sul nostro sito web. Scopri come li utilizziamo e come puoi gestirli.",
+    "what": {
+      "title": "Che cos'è un cookie?",
+      "description1": "I cookie sono piccoli file di testo memorizzati sul tuo dispositivo quando visiti un sito web. Permettono al sito di ricordare le tue azioni e preferenze per un certo periodo.",
+      "description2": "Utilizziamo i cookie per migliorare la tua navigazione, analizzare l'utilizzo del sito e personalizzare la tua esperienza utente."
+    },
+    "types": {
+      "title": "Tipi di cookie utilizzati",
+      "technical": {
+        "title": "Cookie tecnici (obbligatori)",
+        "description": "Questi cookie sono essenziali per il funzionamento del sito. Permettono la navigazione e l'utilizzo delle funzionalità di base.",
+        "duration": "Sessione o massimo 1 anno",
+        "examples": "Cookie di sessione, preferenze linguistiche, carrello acquisti"
+      },
+      "analytics": {
+        "title": "Cookie di analisi",
+        "description": "Questi cookie ci aiutano a capire come i visitatori utilizzano il nostro sito raccogliendo informazioni anonime.",
+        "duration": "Massimo 2 anni",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Pagine visitate, durata della visita, fonte del traffico"
+      },
+      "preferences": {
+        "title": "Cookie di preferenze",
+        "description": "Questi cookie memorizzano le tue scelte e preferenze per personalizzare la tua esperienza.",
+        "duration": "Massimo 1 anno",
+        "examples": "Lingua scelta, regione, preferenze di visualizzazione"
+      },
+      "advertising": {
+        "title": "Cookie pubblicitari",
+        "description": "Questi cookie sono utilizzati per offrirti pubblicità pertinenti basate sui tuoi interessi.",
+        "duration": "Massimo 13 mesi",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "Puoi rifiutare questi cookie senza influire sul funzionamento del sito"
+      }
+    },
+    "management": {
+      "title": "Gestione dei cookie",
+      "intro": "Hai il controllo completo sui cookie. Ecco come gestirli:",
+      "onSite": {
+        "title": "Sul nostro sito",
+        "description": "Puoi modificare le tue preferenze sui cookie in qualsiasi momento cliccando sul link \"Gestisci cookie\" in fondo alla pagina."
+      },
+      "browser": {
+        "title": "Nel tuo browser",
+        "chrome": "Impostazioni → Privacy e sicurezza → Cookie",
+        "firefox": "Impostazioni → Privacy e sicurezza → Cookie",
+        "safari": "Preferenze → Privacy → Gestisci dati siti web",
+        "edge": "Impostazioni → Cookie e autorizzazioni sito"
+      },
+      "external": {
+        "title": "Strumenti esterni",
+        "analytics": "Disattiva Google Analytics",
+        "ads": "Impostazioni annunci"
+      }
+    },
+    "duration": {
+      "title": "Periodo di conservazione",
+      "table": {
+        "type": "Tipo di cookie",
+        "duration": "Periodo di conservazione",
+        "purpose": "Finalità",
+        "session": {
+          "type": "Sessione",
+          "duration": "Fine sessione",
+          "purpose": "Navigazione e funzionamento del sito"
+        },
+        "preferences": {
+          "type": "Preferenze",
+          "duration": "1 anno",
+          "purpose": "Ricordare le tue scelte (lingua, regione)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 anni",
+          "purpose": "Statistiche d'uso anonime"
+        },
+        "advertising": {
+          "type": "Pubblicitari",
+          "duration": "13 mesi",
+          "purpose": "Pubblicità mirata"
+        }
+      }
+    }
   }
 }

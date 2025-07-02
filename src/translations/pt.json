@@ -497,5 +497,92 @@
       "title": "Remuneração",
       "content": "A remuneração da Neovita Finanz é paga pela instituição de crédito aquando da realização do financiamento. Nenhuma taxa é cobrada ao cliente."
     }
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "description": "Como utilizamos cookies para melhorar a sua experiência",
+    "intro": "Utilizamos cookies para melhorar a sua experiência no nosso site. Descubra como os utilizamos e como pode geri-los.",
+    "what": {
+      "title": "O que é um cookie?",
+      "description1": "Os cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita um site. Permitem que o site se lembre das suas ações e preferências durante um determinado período.",
+      "description2": "Utilizamos cookies para melhorar a sua navegação, analisar a utilização do site e personalizar a sua experiência de utilizador."
+    },
+    "types": {
+      "title": "Tipos de cookies utilizados",
+      "technical": {
+        "title": "Cookies técnicos (obrigatórios)",
+        "description": "Estes cookies são essenciais para o funcionamento do site. Permitem a navegação e a utilização das funcionalidades básicas.",
+        "duration": "Sessão ou máximo 1 ano",
+        "examples": "Cookies de sessão, preferências linguísticas, carrinho de compras"
+      },
+      "analytics": {
+        "title": "Cookies de análise",
+        "description": "Estes cookies ajudam-nos a compreender como os visitantes utilizam o nosso site, recolhendo informações anónimas.",
+        "duration": "Máximo 2 anos",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Páginas visitadas, duração da visita, origem do tráfego"
+      },
+      "preferences": {
+        "title": "Cookies de preferências",
+        "description": "Estes cookies memorizam as suas escolhas e preferências para personalizar a sua experiência.",
+        "duration": "Máximo 1 ano",
+        "examples": "Idioma escolhido, região, preferências de visualização"
+      },
+      "advertising": {
+        "title": "Cookies publicitários",
+        "description": "Estes cookies são utilizados para lhe propor publicidade relevante baseada nos seus interesses.",
+        "duration": "Máximo 13 meses",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "Pode recusar estes cookies sem afetar o funcionamento do site"
+      }
+    },
+    "management": {
+      "title": "Gestão de cookies",
+      "intro": "Tem controlo total sobre os cookies. Eis como geri-los:",
+      "onSite": {
+        "title": "No nosso site",
+        "description": "Pode modificar as suas preferências de cookies a qualquer momento clicando na ligação \"Gerir cookies\" no final da página."
+      },
+      "browser": {
+        "title": "No seu navegador",
+        "chrome": "Definições → Privacidade e segurança → Cookies",
+        "firefox": "Definições → Privacidade e segurança → Cookies",
+        "safari": "Preferências → Privacidade → Gerir dados de sites",
+        "edge": "Definições → Cookies e permissões de sites"
+      },
+      "external": {
+        "title": "Ferramentas externas",
+        "analytics": "Desativar Google Analytics",
+        "ads": "Definições de anúncios"
+      }
+    },
+    "duration": {
+      "title": "Período de conservação",
+      "table": {
+        "type": "Tipo de cookie",
+        "duration": "Período de conservação",
+        "purpose": "Finalidade",
+        "session": {
+          "type": "Sessão",
+          "duration": "Fim da sessão",
+          "purpose": "Navegação e funcionamento do site"
+        },
+        "preferences": {
+          "type": "Preferências",
+          "duration": "1 ano",
+          "purpose": "Lembrar as suas escolhas (idioma, região)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 anos",
+          "purpose": "Estatísticas de utilização anónimas"
+        },
+        "advertising": {
+          "type": "Publicitários",
+          "duration": "13 meses",
+          "purpose": "Publicidade direcionada"
+        }
+      }
+    }
   }
 }

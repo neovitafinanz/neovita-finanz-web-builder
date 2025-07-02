@@ -493,5 +493,92 @@
       "title": "报酬",
       "content": "Neovita Finanz的报酬由信贷机构在融资实现时支付。客户不收取任何费用。"
     }
+  },
+  "cookies": {
+    "title": "Cookie政策",
+    "description": "我们如何使用cookie来改善您的体验",
+    "intro": "我们使用cookie来改善您在我们网站上的体验。了解我们如何使用它们以及您如何管理它们。",
+    "what": {
+      "title": "什么是cookie？",
+      "description1": "Cookie是您访问网站时存储在您设备上的小型文本文件。它们允许网站在一定时间内记住您的操作和偏好。",
+      "description2": "我们使用cookie来改善您的导航、分析网站使用情况并个性化您的用户体验。"
+    },
+    "types": {
+      "title": "使用的cookie类型",
+      "technical": {
+        "title": "技术性cookie（必需）",
+        "description": "这些cookie对网站运行至关重要。它们使导航和基本功能的使用成为可能。",
+        "duration": "会话或最多1年",
+        "examples": "会话cookie、语言偏好、购物车"
+      },
+      "analytics": {
+        "title": "分析cookie",
+        "description": "这些cookie通过收集匿名信息帮助我们了解访问者如何使用我们的网站。",
+        "duration": "最多2年",
+        "tools": "Google Analytics, Hotjar",
+        "data": "访问的页面、访问时长、流量来源"
+      },
+      "preferences": {
+        "title": "偏好cookie",
+        "description": "这些cookie记住您的选择和偏好以个性化您的体验。",
+        "duration": "最多1年",
+        "examples": "选择的语言、地区、显示偏好"
+      },
+      "advertising": {
+        "title": "广告cookie",
+        "description": "这些cookie用于根据您的兴趣向您提供相关广告。",
+        "duration": "最多13个月",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "您可以拒绝这些cookie而不影响网站的运行"
+      }
+    },
+    "management": {
+      "title": "Cookie管理",
+      "intro": "您对cookie拥有完全控制权。以下是管理方法：",
+      "onSite": {
+        "title": "在我们的网站上",
+        "description": "您可以随时通过点击页面底部的\"管理cookie\"链接来修改您的cookie偏好。"
+      },
+      "browser": {
+        "title": "在您的浏览器中",
+        "chrome": "设置 → 隐私和安全 → Cookie",
+        "firefox": "设置 → 隐私和安全 → Cookie",
+        "safari": "偏好设置 → 隐私 → 管理网站数据",
+        "edge": "设置 → Cookie和站点权限"
+      },
+      "external": {
+        "title": "外部工具",
+        "analytics": "禁用Google Analytics",
+        "ads": "广告设置"
+      }
+    },
+    "duration": {
+      "title": "保留期限",
+      "table": {
+        "type": "Cookie类型",
+        "duration": "保留期限",
+        "purpose": "目的",
+        "session": {
+          "type": "会话",
+          "duration": "会话结束",
+          "purpose": "导航和网站运行"
+        },
+        "preferences": {
+          "type": "偏好",
+          "duration": "1年",
+          "purpose": "记住您的选择（语言、地区）"
+        },
+        "analytics": {
+          "type": "分析",
+          "duration": "2年",
+          "purpose": "匿名使用统计"
+        },
+        "advertising": {
+          "type": "广告",
+          "duration": "13个月",
+          "purpose": "定向广告"
+        }
+      }
+    }
   }
 }

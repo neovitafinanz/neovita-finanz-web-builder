@@ -22,7 +22,7 @@ const Cookies = () => {
                 {t('cookies.title')}
               </h1>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Nous utilisons des cookies pour améliorer votre expérience sur notre site web. Découvrez comment nous les utilisons et comment vous pouvez les gérer.
+                {t('cookies.intro')}
               </p>
             </div>
 
@@ -36,10 +36,10 @@ const Cookies = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Les cookies sont de petits fichiers texte stockés sur votre appareil lorsque vous visitez un site web. Ils permettent au site de mémoriser vos actions et préférences pendant une certaine période.
+                    {t('cookies.what.description1')}
                   </p>
                   <p className="text-gray-600">
-                    Nous utilisons les cookies pour améliorer votre navigation, analyser l'utilisation du site et personnaliser votre expérience utilisateur.
+                    {t('cookies.what.description2')}
                   </p>
                 </CardContent>
               </Card>

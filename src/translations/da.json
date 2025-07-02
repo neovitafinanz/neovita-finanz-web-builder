@@ -497,5 +497,92 @@
       "title": "Vederlag",
       "content": "Neovita Finanz' vederlag betales af kreditinstituttet ved realisering af finansieringen. Der opkræves ingen gebyrer fra kunden."
     }
+  },
+  "cookies": {
+    "title": "Cookie-politik",
+    "description": "Hvordan vi bruger cookies til at forbedre din oplevelse",
+    "intro": "Vi bruger cookies for at forbedre din oplevelse på vores hjemmeside. Lær hvordan vi bruger dem og hvordan du kan administrere dem.",
+    "what": {
+      "title": "Hvad er en cookie?",
+      "description1": "Cookies er små tekstfiler, der gemmes på din enhed, når du besøger en hjemmeside. De tillader hjemmesiden at huske dine handlinger og præferencer i en bestemt periode.",
+      "description2": "Vi bruger cookies for at forbedre din navigation, analysere hjemmesidens brug og personliggøre din brugeroplevelse."
+    },
+    "types": {
+      "title": "Typer af cookies der bruges",
+      "technical": {
+        "title": "Tekniske cookies (påkrævet)",
+        "description": "Disse cookies er vigtige for hjemmesidens funktion. De muliggør navigation og brug af grundlæggende funktioner.",
+        "duration": "Session eller maksimalt 1 år",
+        "examples": "Session cookies, sprogpræferencer, indkøbskurv"
+      },
+      "analytics": {
+        "title": "Analyse-cookies",
+        "description": "Disse cookies hjælper os med at forstå hvordan besøgende bruger vores hjemmeside ved at indsamle anonyme oplysninger.",
+        "duration": "Maksimalt 2 år",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Besøgte sider, besøgsvarighed, trafikkilde"
+      },
+      "preferences": {
+        "title": "Præference-cookies",
+        "description": "Disse cookies husker dine valg og præferencer for at personliggøre din oplevelse.",
+        "duration": "Maksimalt 1 år",
+        "examples": "Valgt sprog, region, visningspræferencer"
+      },
+      "advertising": {
+        "title": "Reklame-cookies",
+        "description": "Disse cookies bruges til at tilbyde dig relevante annoncer baseret på dine interesser.",
+        "duration": "Maksimalt 13 måneder",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "Du kan afvise disse cookies uden at påvirke hjemmesidens funktion"
+      }
+    },
+    "management": {
+      "title": "Cookie-administration",
+      "intro": "Du har fuld kontrol over cookies. Sådan administrerer du dem:",
+      "onSite": {
+        "title": "På vores hjemmeside",
+        "description": "Du kan ændre dine cookie-præferencer til enhver tid ved at klikke på linket \"Administrer cookies\" nederst på siden."
+      },
+      "browser": {
+        "title": "I din browser",
+        "chrome": "Indstillinger → Privatliv og sikkerhed → Cookies",
+        "firefox": "Indstillinger → Privatliv og sikkerhed → Cookies",
+        "safari": "Præferencer → Privatliv → Administrer hjemmesidedata",
+        "edge": "Indstillinger → Cookies og webstedstilladelser"
+      },
+      "external": {
+        "title": "Eksterne værktøjer",
+        "analytics": "Deaktiver Google Analytics",
+        "ads": "Annonceindstillinger"
+      }
+    },
+    "duration": {
+      "title": "Opbevaringsperiode",
+      "table": {
+        "type": "Cookie-type",
+        "duration": "Opbevaringsperiode",
+        "purpose": "Formål",
+        "session": {
+          "type": "Session",
+          "duration": "Slutning af session",
+          "purpose": "Navigation og hjemmesidedrift"
+        },
+        "preferences": {
+          "type": "Præferencer",
+          "duration": "1 år",
+          "purpose": "Huske dine valg (sprog, region)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 år",
+          "purpose": "Anonyme brugsstatistikker"
+        },
+        "advertising": {
+          "type": "Reklame",
+          "duration": "13 måneder",
+          "purpose": "Målrettet reklame"
+        }
+      }
+    }
   }
 }

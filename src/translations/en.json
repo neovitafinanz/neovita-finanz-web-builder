@@ -530,5 +530,92 @@
       "title": "Remuneration",
       "content": "Neovita Finanz's remuneration is paid by the credit institution upon completion of the financing. No fees are charged to the client."
     }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "description": "How we use cookies to improve your experience",
+    "intro": "We use cookies to improve your experience on our website. Learn how we use them and how you can manage them.",
+    "what": {
+      "title": "What is a cookie?",
+      "description1": "Cookies are small text files stored on your device when you visit a website. They allow the site to remember your actions and preferences for a certain period.",
+      "description2": "We use cookies to improve your navigation, analyze site usage and personalize your user experience."
+    },
+    "types": {
+      "title": "Types of cookies used",
+      "technical": {
+        "title": "Technical cookies (required)",
+        "description": "These cookies are essential for the site to function. They enable navigation and use of basic features.",
+        "duration": "Session or 1 year maximum",
+        "examples": "Session cookies, language preferences, shopping cart"
+      },
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "These cookies help us understand how visitors use our site by collecting anonymous information.",
+        "duration": "2 years maximum",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Pages visited, visit duration, traffic source"
+      },
+      "preferences": {
+        "title": "Preference cookies",
+        "description": "These cookies remember your choices and preferences to personalize your experience.",
+        "duration": "1 year maximum",
+        "examples": "Language chosen, region, display preferences"
+      },
+      "advertising": {
+        "title": "Advertising cookies",
+        "description": "These cookies are used to offer you relevant advertisements based on your interests.",
+        "duration": "13 months maximum",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "You can refuse these cookies without affecting the site's operation"
+      }
+    },
+    "management": {
+      "title": "Cookie management",
+      "intro": "You have full control over cookies. Here's how to manage them:",
+      "onSite": {
+        "title": "On our site",
+        "description": "You can change your cookie preferences at any time by clicking the \"Manage cookies\" link at the bottom of the page."
+      },
+      "browser": {
+        "title": "In your browser",
+        "chrome": "Settings → Privacy and security → Cookies",
+        "firefox": "Settings → Privacy and security → Cookies",
+        "safari": "Preferences → Privacy → Manage website data",
+        "edge": "Settings → Cookies and site permissions"
+      },
+      "external": {
+        "title": "External tools",
+        "analytics": "Disable Google Analytics",
+        "ads": "Ad settings"
+      }
+    },
+    "duration": {
+      "title": "Retention period",
+      "table": {
+        "type": "Cookie type",
+        "duration": "Retention period",
+        "purpose": "Purpose",
+        "session": {
+          "type": "Session",
+          "duration": "End of session",
+          "purpose": "Navigation and site operation"
+        },
+        "preferences": {
+          "type": "Preferences",
+          "duration": "1 year",
+          "purpose": "Remember your choices (language, region)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 years",
+          "purpose": "Anonymous usage statistics"
+        },
+        "advertising": {
+          "type": "Advertising",
+          "duration": "13 months",
+          "purpose": "Targeted advertising"
+        }
+      }
+    }
   }
 }

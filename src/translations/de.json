@@ -513,5 +513,92 @@
       "title": "Vergütung",
       "content": "Die Vergütung von Neovita Finanz wird vom Kreditinstitut bei Realisierung der Finanzierung gezahlt. Dem Kunden werden keine Gebühren berechnet."
     }
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie",
+    "description": "Wie wir Cookies verwenden, um Ihre Erfahrung zu verbessern",
+    "intro": "Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Erfahren Sie, wie wir sie verwenden und wie Sie sie verwalten können.",
+    "what": {
+      "title": "Was ist ein Cookie?",
+      "description1": "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden, wenn Sie eine Website besuchen. Sie ermöglichen es der Website, sich für einen bestimmten Zeitraum an Ihre Aktionen und Vorlieben zu erinnern.",
+      "description2": "Wir verwenden Cookies, um Ihre Navigation zu verbessern, die Nutzung der Website zu analysieren und Ihre Benutzererfahrung zu personalisieren."
+    },
+    "types": {
+      "title": "Verwendete Cookie-Typen",
+      "technical": {
+        "title": "Technische Cookies (erforderlich)",
+        "description": "Diese Cookies sind für das Funktionieren der Website unerlässlich. Sie ermöglichen die Navigation und die Nutzung der Grundfunktionen.",
+        "duration": "Sitzung oder maximal 1 Jahr",
+        "examples": "Sitzungs-Cookies, Spracheinstellungen, Warenkorb"
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Diese Cookies helfen uns zu verstehen, wie Besucher unsere Website nutzen, indem sie anonyme Informationen sammeln.",
+        "duration": "Maximal 2 Jahre",
+        "tools": "Google Analytics, Hotjar",
+        "data": "Besuchte Seiten, Besuchsdauer, Verkehrsquelle"
+      },
+      "preferences": {
+        "title": "Präferenz-Cookies",
+        "description": "Diese Cookies merken sich Ihre Entscheidungen und Präferenzen, um Ihre Erfahrung zu personalisieren.",
+        "duration": "Maximal 1 Jahr",
+        "examples": "Gewählte Sprache, Region, Anzeigeeinstellungen"
+      },
+      "advertising": {
+        "title": "Werbe-Cookies",
+        "description": "Diese Cookies werden verwendet, um Ihnen relevante Werbung basierend auf Ihren Interessen anzubieten.",
+        "duration": "Maximal 13 Monate",
+        "partners": "Google Ads, Facebook Pixel",
+        "note": "Sie können diese Cookies ablehnen, ohne die Funktionsweise der Website zu beeinträchtigen"
+      }
+    },
+    "management": {
+      "title": "Cookie-Verwaltung",
+      "intro": "Sie haben die volle Kontrolle über Cookies. So verwalten Sie sie:",
+      "onSite": {
+        "title": "Auf unserer Website",
+        "description": "Sie können Ihre Cookie-Einstellungen jederzeit ändern, indem Sie auf den Link \"Cookies verwalten\" am Ende der Seite klicken."
+      },
+      "browser": {
+        "title": "In Ihrem Browser",
+        "chrome": "Einstellungen → Datenschutz und Sicherheit → Cookies",
+        "firefox": "Einstellungen → Datenschutz und Sicherheit → Cookies",
+        "safari": "Einstellungen → Datenschutz → Website-Daten verwalten",
+        "edge": "Einstellungen → Cookies und Website-Berechtigungen"
+      },
+      "external": {
+        "title": "Externe Tools",
+        "analytics": "Google Analytics deaktivieren",
+        "ads": "Anzeigeneinstellungen"
+      }
+    },
+    "duration": {
+      "title": "Aufbewahrungsdauer",
+      "table": {
+        "type": "Cookie-Typ",
+        "duration": "Aufbewahrungsdauer",
+        "purpose": "Zweck",
+        "session": {
+          "type": "Sitzung",
+          "duration": "Ende der Sitzung",
+          "purpose": "Navigation und Website-Betrieb"
+        },
+        "preferences": {
+          "type": "Präferenzen",
+          "duration": "1 Jahr",
+          "purpose": "Ihre Auswahl merken (Sprache, Region)"
+        },
+        "analytics": {
+          "type": "Analytics",
+          "duration": "2 Jahre",
+          "purpose": "Anonyme Nutzungsstatistiken"
+        },
+        "advertising": {
+          "type": "Werbung",
+          "duration": "13 Monate",
+          "purpose": "Zielgerichtete Werbung"
+        }
+      }
+    }
   }
 }
