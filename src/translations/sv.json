@@ -286,6 +286,7 @@
     "satisfiedClients": "Nöjda kunder",
     "averageResponse": "Genomsnittlig svarstid",
     "averageRating": "Genomsnittlig betyg"
+  },
   "creditForm": {
     "title": "Låneansökan",
     "subtitle": "Fyll i detta formulär för att ansöka om lån. Vårt expertteam kommer att kontakta dig snabbt.",
