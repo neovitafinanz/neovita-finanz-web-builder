@@ -255,55 +255,100 @@
       "loanType": "Autofinanzierung"
     }
   },
+  "loanRequest": {
+    "metaDescription": "Kreditantrag mit NeoVita Finanz. Stellen Sie online Ihren Kreditantrag mit schneller Bearbeitung.",
+    "hero": {
+      "title": "Kreditantrag",
+      "subtitle": "Stellen Sie Ihren Kreditantrag online und erhalten Sie eine schnelle Antwort"
+    },
+    "form": {
+      "title": "Kreditantragsformular",
+      "personalInfo": "Persönliche Informationen",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "emailConfirmation": "E-Mail bestätigen",
+      "phone": "Telefon",
+      "project": "Ihr Projekt",
+      "loanType": "Kreditart",
+      "selectLoanType": "Wählen Sie eine Kreditart",
+      "amount": "Betrag",
+      "currency": "Währung",
+      "duration": "Laufzeit (Monate)",
+      "situation": "Finanzielle Situation",
+      "professionalSituation": "Berufliche Situation",
+      "selectSituation": "Wählen Sie Ihre Situation",
+      "monthlyIncome": "Monatliches Einkommen",
+      "message": "Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt...",
+      "submit": "Meinen Antrag senden",
+      "submitting": "Wird gesendet...",
+      "required": "* Pflichtfelder"
+    },
+    "validation": {
+      "missingFields": "Fehlende Felder",
+      "missingFieldsDesc": "Bitte füllen Sie alle Pflichtfelder aus.",
+      "invalidEmail": "Ungültige E-Mail",
+      "invalidEmailDesc": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "emailMismatch": "E-Mails stimmen nicht überein",
+      "emailMismatchDesc": "Die E-Mail-Adressen stimmen nicht überein.",
+      "success": "Antrag gesendet",
+      "successDesc": "Ihr Antrag wurde erfolgreich gesendet. Wir werden uns innerhalb von 48 Stunden bei Ihnen melden.",
+      "error": "Fehler beim Senden",
+      "errorDesc": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "reassurance": {
+      "title": "Warum uns vertrauen?",
+      "secureData": {
+        "title": "Sichere Daten",
+        "description": "Ihre Daten sind durch SSL-Verschlüsselung geschützt"
+      },
+      "quickResponse": {
+        "title": "Schnelle Antwort",
+        "description": "Antwort innerhalb von 48 Stunden"
+      },
+      "availableAdvisors": {
+        "title": "Verfügbare Berater",
+        "description": "43 Experten zu Ihren Diensten"
+      }
+    },
+    "advantages": {
+      "title": "Unsere Vorteile",
+      "experience": "15 Jahre Erfahrung im Finanzwesen",
+      "experts": "43 spezialisierte Berater",
+      "rates": "Wettbewerbsfähige Zinsen",
+      "support": "Persönliche Betreuung"
+    },
+    "contact": {
+      "title": "Brauchen Sie Hilfe?",
+      "description": "Unser Team steht Ihnen zur Verfügung",
+      "phone": "01 86 65 26 51",
+      "hours": "Montag bis Freitag von 9 bis 18 Uhr"
+    },
+    "situations": {
+      "employee": "Angestellter",
+      "temporaryEmployee": "Zeitarbeiter",
+      "civilServant": "Beamter",
+      "selfEmployed": "Selbstständig",
+      "freelancer": "Freiberufler",
+      "retired": "Rentner",
+      "student": "Student",
+      "jobSeeker": "Arbeitssuchend"
+    }
+  },
+  "loanTypes": {
+    "personal": "Privatkredit online",
+    "consumption": "Verbraucherkredit",
+    "works": "Arbeits-/Renovierungskredit",
+    "mortgage": "Hypothekendarlehen",
+    "consolidation": "Kreditumschuldung",
+    "lease": "Leasing",
+    "student": "Studentenkredit"
+  },
   "footer": {
     "tagline": "Ihr Spezialist für Fahrzeugimport",
     "description": "BHV Auto begleitet Sie bei all Ihren Fahrzeugimportprojekten mit Expertise und Nähe.",
-    "sections": {
-      "services": "Unsere Dienstleistungen",
-      "company": "Das Unternehmen",
-      "legal": "Rechtliche Informationen"
-    },
-    "services": {
-      "personalLoans": "Privatkredite",
-      "mortgageLoans": "Hypothekendarlehen",
-      "creditBuyback": "Kreditumschuldung",
-      "workCredit": "Arbeitskredit",
-      "insurance": "Versicherungen"
-    },
-    "company": {
-      "about": "Über Uns",
-      "team": "Unser Team",
-      "careers": "Karrieren",
-      "partners": "Partner",
-      "news": "Nachrichten"
-    },
-    "legal": {
-      "terms": "Rechtliche Hinweise",
-      "privacy": "Datenschutzrichtlinie",
-      "conditions": "Allgemeine Geschäftsbedingungen",
-      "sitemap": "Sitemap",
-      "cookies": "Cookies"
-    },
-    "trust": {
-      "title": "Zertifizierungen",
-      "gdpr": "DSGVO-konform",
-      "gdprDesc": "Datenschutz",
-      "ssl": "SSL-gesichert",
-      "sslDesc": "Sichere Verbindung",
-      "rcs": "RCS Évry",
-      "rcsDesc": "Zugelassenes Institut"
-    },
-    "companyInfo": {
-      "title": "Unternehmensinformationen",
-      "legalForm": "Rechtsform",
-      "capital": "Kapital",
-      "employees": "Personal"
-    },
-    "warning": {
-      "title": "Wichtige Informationen",
-      "rates": "Von 0,9% bis 19,9% je nach Profil und Laufzeit",
-      "credit": "Ein Kredit verpflichtet Sie und muss zurückgezahlt werden",
-      "insurance": "Die Kreditnehmerversicherung ist nicht obligatorisch"
+...
     },
     "copyright": "Alle Rechte vorbehalten."
   }
