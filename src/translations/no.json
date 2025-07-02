@@ -249,6 +249,18 @@
     "reviews": "anmeldelser",
     "loanTypeLabel": "Lånetype",
     "amountLabel": "Beløp",
+    "marie": {
+      "comment": "Utmerket service, rask og profesjonell. Jeg anbefaler Neovita Finanz!",
+      "loanType": "Boliglån"
+    },
+    "pierre": {
+      "comment": "Teamet fulgte meg gjennom hele prosjektet. Meget fornøyd!",
+      "loanType": "Personlig lån"
+    },
+    "sophie": {
+      "comment": "Å få et lån har aldri vært så enkelt. Takk til hele teamet!",
+      "loanType": "Arbeidskredit"
+    },
     "jeanmarc": {
       "comment": "Takket være NeoVita fikk jeg raskt et lån for å starte prosjektet mitt.",
       "loanType": "Selvstendig næringsdrivende lån"
@@ -257,10 +269,17 @@
       "comment": "Plettfri, rask og svært profesjonell service!",
       "loanType": "Personlig lån"
     },
-    "pedro": {
-      "comment": "Alt gikk bra, fra simulering til betaling.",
-      "loanType": "Bilfinansiering"
-    }
+    "thomas": {
+      "comment": "Eksepsjonell personlig oppfølging. Jeg anbefaler på det sterkeste!",
+      "loanType": "Kredittsamling"
+    },
+    "previous": "Forrige",
+    "next": "Neste",
+    "goToPage": "Gå til side",
+    "trustTitle": "Våre garantier",
+    "satisfiedClients": "Fornøyde kunder",
+    "averageResponse": "Gjennomsnittlig responstid",
+    "averageRating": "Gjennomsnittlig vurdering"
   },
   "creditForm": {
     "title": "Lånesøknad",

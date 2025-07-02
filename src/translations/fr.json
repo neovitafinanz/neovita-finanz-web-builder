@@ -271,10 +271,17 @@
       "comment": "Service impeccable, rapide et très professionnel !",
       "loanType": "Prêt personnel"
     },
-    "pedro": {
-      "comment": "Tout s'est bien passé, de la simulation au versement.",
-      "loanType": "Financement auto"
-    }
+    "thomas": {
+      "comment": "Un suivi personnalisé exceptionnel. Je recommande vivement !",
+      "loanType": "Rachat de crédit"
+    },
+    "previous": "Précédent",
+    "next": "Suivant",
+    "goToPage": "Aller à la page",
+    "trustTitle": "Nos garanties",
+    "satisfiedClients": "Clients satisfaits",
+    "averageResponse": "Délai de réponse moyen",
+    "averageRating": "Note moyenne"
   },
   "creditForm": {
     "title": "Demande de prêt",

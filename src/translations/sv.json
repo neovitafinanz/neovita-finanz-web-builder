@@ -275,11 +275,17 @@
       "comment": "Oklanderlig, snabb och mycket professionell service!",
       "loanType": "Personligt lån"
     },
-    "pedro": {
-      "comment": "Allt gick bra, från simulering till betalning.",
-      "loanType": "Bilfinansiering"
-    }
-  },
+    "thomas": {
+      "comment": "Exceptionell personlig uppföljning. Jag rekommenderar starkt!",
+      "loanType": "Kreditsamling"
+    },
+    "previous": "Föregående",
+    "next": "Nästa",
+    "goToPage": "Gå till sida",
+    "trustTitle": "Våra garantier",
+    "satisfiedClients": "Nöjda kunder",
+    "averageResponse": "Genomsnittlig svarstid",
+    "averageRating": "Genomsnittlig betyg"
   "creditForm": {
     "title": "Låneansökan",
     "subtitle": "Fyll i detta formulär för att ansöka om lån. Vårt expertteam kommer att kontakta dig snabbt.",

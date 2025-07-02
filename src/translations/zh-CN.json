@@ -301,6 +301,18 @@
     "reviews": "评论",
     "loanTypeLabel": "贷款类型",
     "amountLabel": "金额",
+    "marie": {
+      "comment": "优秀的服务，快速且专业。我推荐Neovita Finanz！",
+      "loanType": "房屋贷款"
+    },
+    "pierre": {
+      "comment": "团队在我整个项目过程中都给予了支持。非常满意！",
+      "loanType": "个人贷款"
+    },
+    "sophie": {
+      "comment": "获得贷款从未如此简单。感谢整个团队！",
+      "loanType": "工作信贷"
+    },
     "jeanmarc": {
       "comment": "感谢NeoVita，我快速获得了启动项目的贷款。",
       "loanType": "自雇贷款"
@@ -309,10 +321,17 @@
       "comment": "无可挑剔、快速且非常专业的服务！",
       "loanType": "个人贷款"
     },
-    "pedro": {
-      "comment": "一切都很顺利，从模拟到付款。",
-      "loanType": "汽车融资"
-    }
+    "thomas": {
+      "comment": "卓越的个性化跟进。我强烈推荐！",
+      "loanType": "信贷整合"
+    },
+    "previous": "上一个",
+    "next": "下一个",
+    "goToPage": "转到页面",
+    "trustTitle": "我们的保证",
+    "satisfiedClients": "满意客户",
+    "averageResponse": "平均响应时间",
+    "averageRating": "平均评分"
   },
   "loanTypes": {
     "personal": "个人贷款",

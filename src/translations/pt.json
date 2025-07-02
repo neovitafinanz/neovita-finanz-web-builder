@@ -253,18 +253,37 @@
     "reviews": "avaliações",
     "loanTypeLabel": "Tipo de empréstimo",
     "amountLabel": "Montante",
+    "marie": {
+      "comment": "Excelente serviço, rápido e profissional. Recomendo a Neovita Finanz!",
+      "loanType": "Empréstimo imobiliário"
+    },
+    "pierre": {
+      "comment": "A equipa acompanhou-me durante todo o meu projeto. Muito satisfeito!",
+      "loanType": "Empréstimo pessoal"
+    },
+    "sophie": {
+      "comment": "Obter um empréstimo nunca foi tão fácil. Obrigado a toda a equipa!",
+      "loanType": "Crédito obras"
+    },
     "jeanmarc": {
       "comment": "Graças à NeoVita, obtive rapidamente um empréstimo para lançar o meu projeto.",
       "loanType": "Empréstimo trabalhador independente"
     },
     "amelie": {
-      "comment": "Serviço impecável, rápido e muito profissional!",
+      "comment": "Serviço irrepreensível, rápido e muito profissional!",
       "loanType": "Empréstimo pessoal"
     },
-    "pedro": {
-      "comment": "Tudo correu bem, da simulação ao pagamento.",
-      "loanType": "Financiamento automóvel"
-    }
+    "thomas": {
+      "comment": "Acompanhamento personalizado excecional. Recomendo vivamente!",
+      "loanType": "Reagrupamento de créditos"
+    },
+    "previous": "Anterior",
+    "next": "Seguinte",
+    "goToPage": "Ir para a página",
+    "trustTitle": "As nossas garantias",
+    "satisfiedClients": "Clientes satisfeitos",
+    "averageResponse": "Tempo médio de resposta",
+    "averageRating": "Classificação média"
   },
   "loanTypes": {
     "personal": "Empréstimo pessoal",

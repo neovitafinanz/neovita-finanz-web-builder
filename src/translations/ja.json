@@ -253,6 +253,18 @@
     "reviews": "レビュー",
     "loanTypeLabel": "ローンタイプ",
     "amountLabel": "金額",
+    "marie": {
+      "comment": "優秀なサービス、迅速でプロフェッショナル。Neovita Finanzをお勧めします！",
+      "loanType": "住宅ローン"
+    },
+    "pierre": {
+      "comment": "チームがプロジェクト全体を通してサポートしてくれました。とても満足しています！",
+      "loanType": "個人ローン"
+    },
+    "sophie": {
+      "comment": "ローンを取得することがこれほど簡単だったことはありません。チーム全体に感謝します！",
+      "loanType": "工事クレジット"
+    },
     "jeanmarc": {
       "comment": "NeoVitaのおかげで、プロジェクトを開始するためのローンを迅速に取得できました。",
       "loanType": "自営業者ローン"
@@ -261,10 +273,17 @@
       "comment": "完璧で迅速、そして非常にプロフェッショナルなサービスです！",
       "loanType": "個人ローン"
     },
-    "pedro": {
-      "comment": "シミュレーションから支払いまで、すべて順調に進みました。",
-      "loanType": "自動車金融"
-    }
+    "thomas": {
+      "comment": "例外的な個人サポート。強くお勧めします！",
+      "loanType": "ローン一本化"
+    },
+    "previous": "前",
+    "next": "次",
+    "goToPage": "ページに移動",
+    "trustTitle": "私たちの保証",
+    "satisfiedClients": "満足したお客様",
+    "averageResponse": "平均応答時間",
+    "averageRating": "平均評価"
   },
   "loanTypes": {
     "personal": "個人ローン",
