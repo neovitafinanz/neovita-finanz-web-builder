@@ -69,6 +69,36 @@
       "study": "Meine Akte prüfen"
     }
   },
+  "mortgageLoans": {
+    "metaDescription": "Immobilienkredite mit Neovita Finanz. Verwirklichen Sie Ihr Immobilienprojekt mit wettbewerbsfähigen Zinsen.",
+    "hero": {
+      "subtitle": "Verwirklichen Sie Ihr Immobilienprojekt mit unserem Fachwissen"
+    },
+    "advantages": {
+      "title": "Vorteile von Immobilienkrediten",
+      "competitiveRates": "Wettbewerbsfähige Zinsen",
+      "personalizedSupport": "Persönliche Betreuung durch Experten",
+      "freeStudy": "Kostenlose Machbarkeitsstudie",
+      "bankNegotiation": "Verhandlung mit Banken",
+      "followUp": "Begleitung bis zur Freigabe",
+      "insurance": "Optimierte Kreditversicherung"
+    },
+    "characteristics": {
+      "title": "Eigenschaften von Immobilienkrediten",
+      "highAmounts": "Hohe Beträge",
+      "highAmountsDesc": "Bis zu 80% des Immobilienwerts",
+      "allProjects": "Alle Projekte",
+      "allProjectsDesc": "Kauf, Bau, Renovierung, Investition", 
+      "secured": "Gesichert",
+      "securedDesc": "Hypothek auf die Immobilie",
+      "advantageousRates": "Vorteilhafte Zinsen",
+      "advantageousRatesDesc": "Niedrigere Zinsen als Konsumkredite"
+    },
+    "cta": {
+      "request": "Immobilienkredit beantragen",
+      "apply": "Jetzt beantragen"
+    }
+  },
   "creditBuyback": {
     "metaDescription": "Kreditumschuldung mit Neovita Finanz. Reduzieren Sie Ihre monatlichen Raten, vereinfachen Sie Ihr Finanzmanagement.",
     "hero": {

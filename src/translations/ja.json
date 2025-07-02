@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "ホーム",
@@ -66,6 +67,36 @@
     },
     "cta": {
       "study": "私のファイルを調査"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Neovita Finanzの住宅ローン。競争力のある金利で不動産プロジェクトを実現します。",
+    "hero": {
+      "subtitle": "当社の専門知識で不動産プロジェクトを実現"
+    },
+    "advantages": {
+      "title": "住宅ローンの利点",
+      "competitiveRates": "競争力のある金利",
+      "personalizedSupport": "専門家による個人的なサポート",
+      "freeStudy": "無料実現可能性調査",
+      "bankNegotiation": "銀行との交渉",
+      "followUp": "解放までのフォローアップ",
+      "insurance": "最適化されたクレジット保険"
+    },
+    "characteristics": {
+      "title": "住宅ローンの特徴",
+      "highAmounts": "高額融資",
+      "highAmountsDesc": "不動産価値の最大80%まで",
+      "allProjects": "すべてのプロジェクト",
+      "allProjectsDesc": "購入、建設、改装、投資",
+      "secured": "担保付き",
+      "securedDesc": "不動産に対する抵当権",
+      "advantageousRates": "有利な金利",
+      "advantageousRatesDesc": "消費者金融より低い金利"
+    },
+    "cta": {
+      "request": "住宅ローンを申請",
+      "apply": "今すぐ申請"
     }
   },
   "creditBuyback": {

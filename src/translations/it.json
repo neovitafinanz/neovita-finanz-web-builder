@@ -1,3 +1,4 @@
+
 {
   "nav": {
     "home": "Home",
@@ -66,6 +67,36 @@
     },
     "cta": {
       "study": "Studia il mio dossier"
+    }
+  },
+  "mortgageLoans": {
+    "metaDescription": "Mutui immobiliari con Neovita Finanz. Realizzate il vostro progetto immobiliare con tassi competitivi.",
+    "hero": {
+      "subtitle": "Realizzate il vostro progetto immobiliare con la nostra esperienza"
+    },
+    "advantages": {
+      "title": "Vantaggi dei mutui immobiliari",
+      "competitiveRates": "Tassi competitivi",
+      "personalizedSupport": "Supporto personalizzato da esperti",
+      "freeStudy": "Studio di fattibilità gratuito",
+      "bankNegotiation": "Negoziazione con le banche",
+      "followUp": "Accompagnamento fino allo sblocco",
+      "insurance": "Assicurazione credito ottimizzata"
+    },
+    "characteristics": {
+      "title": "Caratteristiche dei mutui immobiliari",
+      "highAmounts": "Importi elevati",
+      "highAmountsDesc": "Fino all'80% del valore dell'immobile",
+      "allProjects": "Tutti i progetti",
+      "allProjectsDesc": "Acquisto, costruzione, ristrutturazione, investimento",
+      "secured": "Garantito",
+      "securedDesc": "Ipoteca sull'immobile",
+      "advantageousRates": "Tassi vantaggiosi",
+      "advantageousRatesDesc": "Tassi inferiori ai crediti al consumo"
+    },
+    "cta": {
+      "request": "Richiedere un mutuo immobiliare",
+      "apply": "Richiedere ora"
     }
   },
   "creditBuyback": {
