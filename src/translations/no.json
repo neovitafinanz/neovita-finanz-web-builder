@@ -511,5 +511,33 @@
       "dpo": "Personvernombud",
       "address": "Adresse"
     }
+  },
+  "terms": {
+    "title": "Generelle Betingelser",
+    "description": "Generelle betingelser for bruk av Neovita Finanz tjenester",
+    "purpose": {
+      "title": "Formål",
+      "content": "Disse generelle betingelsene har som mål å definere modalitetene og betingelsene for bruk av tjenestene som tilbys av Neovita Finanz innen formidling av bankoperasjoner og betalingstjenester."
+    },
+    "services": {
+      "title": "Tilbudte Tjenester",
+      "content": "Neovita Finanz tilbyr følgende tjenester:",
+      "advice": "Rådgivning og ledsagelse i dine finansieringsprosjekter",
+      "intermediation": "Formidling mellom deg og kredittinstitusjoner",
+      "support": "Oppfølging av din sak frem til realisering",
+      "negotiation": "Forhandling av de beste betingelsene"
+    },
+    "obligations": {
+      "title": "Kundens Forpliktelser",
+      "content": "Kunden forplikter seg til å:",
+      "accurate": "Gi nøyaktige og fullstendige opplysninger",
+      "deadlines": "Respektere kommuniserte frister",
+      "changes": "Rapportere enhver endring i situasjonen",
+      "commitments": "Innfri sine finansielle forpliktelser"
+    },
+    "remuneration": {
+      "title": "Godtgjørelse",
+      "content": "Neovita Finanz sin godtgjørelse betales av kredittinstitusjonen ved realisering av finansieringen. Ingen avgifter belastes kunden."
+    }
   }
 }

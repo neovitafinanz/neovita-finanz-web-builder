@@ -473,5 +473,33 @@
       "dpo": "Délégué à la Protection des Données",
       "address": "Adresse"
     }
+  },
+  "terms": {
+    "title": "Conditions Générales",
+    "description": "Conditions générales d'utilisation des services Neovita Finanz",
+    "purpose": {
+      "title": "Objet",
+      "content": "Les présentes conditions générales ont pour objet de définir les modalités et conditions d'utilisation des services proposés par Neovita Finanz en matière d'intermédiation en opérations de banque et services de paiement."
+    },
+    "services": {
+      "title": "Services Proposés",
+      "content": "Neovita Finanz propose les services suivants :",
+      "advice": "Conseil et accompagnement dans vos projets de financement",
+      "intermediation": "Intermédiation entre vous et les établissements de crédit",
+      "support": "Suivi de votre dossier jusqu'à la réalisation",
+      "negotiation": "Négociation des meilleures conditions"
+    },
+    "obligations": {
+      "title": "Obligations du Client",
+      "content": "Le client s'engage à :",
+      "accurate": "Fournir des informations exactes et complètes",
+      "deadlines": "Respecter les délais communiqués",
+      "changes": "Signaler tout changement de situation",
+      "commitments": "Honorer ses engagements financiers"
+    },
+    "remuneration": {
+      "title": "Rémunération",
+      "content": "La rémunération de Neovita Finanz est versée par l'établissement de crédit lors de la réalisation du financement. Aucun frais n'est facturé au client."
+    }
   }
 }

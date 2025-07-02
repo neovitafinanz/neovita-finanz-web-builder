@@ -469,5 +469,33 @@
       "dpo": "Databeskyttelsesrådgiver",
       "address": "Adresse"
     }
+  },
+  "terms": {
+    "title": "Generelle Betingelser",
+    "description": "Generelle betingelser for brug af Neovita Finanz tjenester",
+    "purpose": {
+      "title": "Formål",
+      "content": "Disse generelle betingelser har til formål at definere vilkårene og betingelserne for brug af de tjenester, som Neovita Finanz tilbyder inden for formidling af bankoperationer og betalingstjenester."
+    },
+    "services": {
+      "title": "Tilbudte Tjenester",
+      "content": "Neovita Finanz tilbyder følgende tjenester:",
+      "advice": "Rådgivning og ledsagelse i dine finansieringsprojekter",
+      "intermediation": "Formidling mellem dig og kreditinstitutter",
+      "support": "Opfølgning af din sag indtil realisering",
+      "negotiation": "Forhandling af de bedste betingelser"
+    },
+    "obligations": {
+      "title": "Kundens Forpligtelser",
+      "content": "Kunden forpligter sig til at:",
+      "accurate": "Give nøjagtige og fuldstændige oplysninger",
+      "deadlines": "Respektere kommunikerede deadlines",
+      "changes": "Rapportere enhver ændring i situation",
+      "commitments": "Honorere deres finansielle forpligtelser"
+    },
+    "remuneration": {
+      "title": "Vederlag",
+      "content": "Neovita Finanz' vederlag betales af kreditinstituttet ved realisering af finansieringen. Der opkræves ingen gebyrer fra kunden."
+    }
   }
 }

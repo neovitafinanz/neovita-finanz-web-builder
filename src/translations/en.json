@@ -502,5 +502,33 @@
       "dpo": "Data Protection Officer",
       "address": "Address"
     }
+  },
+  "terms": {
+    "title": "General Terms and Conditions",
+    "description": "General terms and conditions for using Neovita Finanz services",
+    "purpose": {
+      "title": "Purpose",
+      "content": "These general terms and conditions aim to define the terms and conditions for using the services offered by Neovita Finanz in banking operations and payment services intermediation."
+    },
+    "services": {
+      "title": "Services Offered",
+      "content": "Neovita Finanz offers the following services:",
+      "advice": "Advice and support for your financing projects",
+      "intermediation": "Intermediation between you and credit institutions",
+      "support": "Follow-up of your file until completion",
+      "negotiation": "Negotiation of the best conditions"
+    },
+    "obligations": {
+      "title": "Client Obligations",
+      "content": "The client undertakes to:",
+      "accurate": "Provide accurate and complete information",
+      "deadlines": "Respect communicated deadlines",
+      "changes": "Report any change in situation",
+      "commitments": "Honor their financial commitments"
+    },
+    "remuneration": {
+      "title": "Remuneration",
+      "content": "Neovita Finanz's remuneration is paid by the credit institution upon completion of the financing. No fees are charged to the client."
+    }
   }
 }

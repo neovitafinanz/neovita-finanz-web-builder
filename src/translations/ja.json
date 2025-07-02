@@ -469,5 +469,33 @@
       "dpo": "データ保護責任者",
       "address": "住所"
     }
+  },
+  "terms": {
+    "title": "一般条件",
+    "description": "Neovita Finanzサービス利用規約",
+    "purpose": {
+      "title": "目的",
+      "content": "本一般条件は、Neovita Finanzが銀行業務および決済サービスの仲介において提供するサービスの利用方法および条件を定義することを目的としています。"
+    },
+    "services": {
+      "title": "提供サービス",
+      "content": "Neovita Finanzは以下のサービスを提供します：",
+      "advice": "融資プロジェクトにおけるアドバイスとサポート",
+      "intermediation": "お客様と金融機関との仲介",
+      "support": "実現まであなたのファイルをフォロー",
+      "negotiation": "最良の条件の交渉"
+    },
+    "obligations": {
+      "title": "顧客の義務",
+      "content": "顧客は以下を約束します：",
+      "accurate": "正確で完全な情報の提供",
+      "deadlines": "通知された期限の遵守",
+      "changes": "状況の変化の報告",
+      "commitments": "財務上の約束の履行"
+    },
+    "remuneration": {
+      "title": "報酬",
+      "content": "Neovita Finanzの報酬は、融資の実現時に金融機関によって支払われます。顧客に料金は請求されません。"
+    }
   }
 }

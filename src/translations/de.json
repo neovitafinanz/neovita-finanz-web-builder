@@ -485,5 +485,33 @@
       "dpo": "Datenschutzbeauftragter",
       "address": "Adresse"
     }
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "description": "Allgemeine Geschäftsbedingungen für die Nutzung der Neovita Finanz Dienstleistungen",
+    "purpose": {
+      "title": "Zweck",
+      "content": "Diese allgemeinen Geschäftsbedingungen definieren die Modalitäten und Bedingungen für die Nutzung der von Neovita Finanz angebotenen Dienstleistungen im Bereich der Vermittlung von Bankgeschäften und Zahlungsdienstleistungen."
+    },
+    "services": {
+      "title": "Angebotene Dienstleistungen",
+      "content": "Neovita Finanz bietet folgende Dienstleistungen:",
+      "advice": "Beratung und Begleitung bei Ihren Finanzierungsprojekten",
+      "intermediation": "Vermittlung zwischen Ihnen und Kreditinstituten",
+      "support": "Betreuung Ihres Dossiers bis zur Realisierung",
+      "negotiation": "Verhandlung der besten Konditionen"
+    },
+    "obligations": {
+      "title": "Kundenverpflichtungen",
+      "content": "Der Kunde verpflichtet sich:",
+      "accurate": "Genaue und vollständige Informationen zu liefern",
+      "deadlines": "Die mitgeteilten Fristen einzuhalten",
+      "changes": "Jede Änderung der Situation zu melden",
+      "commitments": "Seine finanziellen Verpflichtungen zu erfüllen"
+    },
+    "remuneration": {
+      "title": "Vergütung",
+      "content": "Die Vergütung von Neovita Finanz wird vom Kreditinstitut bei Realisierung der Finanzierung gezahlt. Dem Kunden werden keine Gebühren berechnet."
+    }
   }
 }

@@ -461,5 +461,33 @@
       "dpo": "Functionaris Gegevensbescherming",
       "address": "Adres"
     }
+  },
+  "terms": {
+    "title": "Algemene Voorwaarden",
+    "description": "Algemene voorwaarden voor het gebruik van Neovita Finanz diensten",
+    "purpose": {
+      "title": "Doel",
+      "content": "Deze algemene voorwaarden hebben tot doel de modaliteiten en voorwaarden te definiëren voor het gebruik van de diensten die door Neovita Finanz worden aangeboden op het gebied van bemiddeling in bankoperaties en betalingsdiensten."
+    },
+    "services": {
+      "title": "Aangeboden Diensten",
+      "content": "Neovita Finanz biedt de volgende diensten:",
+      "advice": "Advies en begeleiding bij uw financieringsprojecten",
+      "intermediation": "Bemiddeling tussen u en kredietinstellingen",
+      "support": "Opvolging van uw dossier tot realisatie",
+      "negotiation": "Onderhandeling van de beste voorwaarden"
+    },
+    "obligations": {
+      "title": "Verplichtingen van de Klant",
+      "content": "De klant verbindt zich ertoe:",
+      "accurate": "Nauwkeurige en volledige informatie te verstrekken",
+      "deadlines": "De meegedeelde deadlines te respecteren",
+      "changes": "Elke verandering in situatie te melden",
+      "commitments": "Hun financiële verplichtingen na te komen"
+    },
+    "remuneration": {
+      "title": "Vergoeding",
+      "content": "De vergoeding van Neovita Finanz wordt betaald door de kredietinstelling bij realisatie van de financiering. Er worden geen kosten aan de klant gefactureerd."
+    }
   }
 }

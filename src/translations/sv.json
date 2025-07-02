@@ -536,5 +536,33 @@
       "dpo": "Dataskyddsombud",
       "address": "Adress"
     }
+  },
+  "terms": {
+    "title": "Allmänna Villkor",
+    "description": "Allmänna villkor för användning av Neovita Finanz tjänster",
+    "purpose": {
+      "title": "Syfte",
+      "content": "Dessa allmänna villkor syftar till att definiera modaliteterna och villkoren för användning av de tjänster som erbjuds av Neovita Finanz inom förmedling av bankoperationer och betaltjänster."
+    },
+    "services": {
+      "title": "Erbjudna Tjänster",
+      "content": "Neovita Finanz erbjuder följande tjänster:",
+      "advice": "Rådgivning och stöd i dina finansieringsprojekt",
+      "intermediation": "Förmedling mellan dig och kreditinstitut",
+      "support": "Uppföljning av ditt ärende fram till realisering",
+      "negotiation": "Förhandling av de bästa villkoren"
+    },
+    "obligations": {
+      "title": "Kundens Skyldigheter",
+      "content": "Kunden åtar sig att:",
+      "accurate": "Tillhandahålla noggrann och fullständig information",
+      "deadlines": "Respektera kommunicerade deadlines",
+      "changes": "Rapportera alla förändringar i situationen",
+      "commitments": "Hedra sina finansiella åtaganden"
+    },
+    "remuneration": {
+      "title": "Ersättning",
+      "content": "Neovita Finanz ersättning betalas av kreditinstitutet vid realisering av finansieringen. Inga avgifter debiteras kunden."
+    }
   }
 }

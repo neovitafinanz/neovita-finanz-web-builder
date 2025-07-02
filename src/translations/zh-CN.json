@@ -465,5 +465,33 @@
       "dpo": "数据保护官",
       "address": "地址"
     }
+  },
+  "terms": {
+    "title": "一般条款",
+    "description": "Neovita Finanz服务使用一般条款",
+    "purpose": {
+      "title": "目的",
+      "content": "本一般条款旨在定义使用Neovita Finanz在银行业务和支付服务中介方面提供的服务的方式和条件。"
+    },
+    "services": {
+      "title": "提供的服务",
+      "content": "Neovita Finanz提供以下服务：",
+      "advice": "在您的融资项目中提供建议和支持",
+      "intermediation": "在您和信贷机构之间进行中介",
+      "support": "跟进您的档案直至实现",
+      "negotiation": "谈判最佳条件"
+    },
+    "obligations": {
+      "title": "客户义务",
+      "content": "客户承诺：",
+      "accurate": "提供准确和完整的信息",
+      "deadlines": "尊重沟通的截止日期",
+      "changes": "报告任何情况变化",
+      "commitments": "履行其财务承诺"
+    },
+    "remuneration": {
+      "title": "报酬",
+      "content": "Neovita Finanz的报酬由信贷机构在融资实现时支付。客户不收取任何费用。"
+    }
   }
 }
