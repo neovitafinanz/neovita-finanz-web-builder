@@ -233,7 +233,19 @@
     "parameters": "Parâmetros do empréstimo",
     "loanType": "Tipo de empréstimo",
     "selectLoanType": "Selecionar um tipo",
-    "amount": "Montante"
+    "amount": "Montante",
+    "duration": "Duração",
+    "months": "meses",
+    "years": "anos", 
+    "calculate": "Calcular",
+    "results": "Resultados",
+    "monthlyPayment": "Pagamento mensal",
+    "totalCost": "Custo total",
+    "interestRate": "Taxa de juro",
+    "estimationSaved": "Guardar",
+    "estimationSavedDesc": "Estimativa guardada",
+    "requestInProgress": "Pedido em curso",
+    "requestInProgressDesc": "O seu pedido está a ser processado"
   },
   "testimonials": {
     "title": "Testemunhos de clientes",

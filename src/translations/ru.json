@@ -285,7 +285,19 @@
     "parameters": "Параметры кредита",
     "loanType": "Тип кредита",
     "selectLoanType": "Выберите тип",
-    "amount": "Сумма"
+    "amount": "Сумма",
+    "duration": "Срок",
+    "months": "месяцев",
+    "years": "лет", 
+    "calculate": "Рассчитать",
+    "results": "Результаты",
+    "monthlyPayment": "Ежемесячный платеж",
+    "totalCost": "Общая стоимость",
+    "interestRate": "Процентная ставка",
+    "estimationSaved": "Сохранить",
+    "estimationSavedDesc": "Расчет сохранен",
+    "requestInProgress": "Запрос обрабатывается",
+    "requestInProgressDesc": "Ваш запрос обрабатывается"
   },
   "testimonials": {
     "title": "Отзывы клиентов",

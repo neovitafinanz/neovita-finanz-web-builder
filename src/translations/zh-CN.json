@@ -281,7 +281,19 @@
     "parameters": "贷款参数",
     "loanType": "贷款类型",
     "selectLoanType": "选择类型",
-    "amount": "金额"
+    "amount": "金额",
+    "duration": "期限",
+    "months": "个月",
+    "years": "年", 
+    "calculate": "计算",
+    "results": "结果",
+    "monthlyPayment": "月供",
+    "totalCost": "总费用",
+    "interestRate": "利率",
+    "estimationSaved": "保存",
+    "estimationSavedDesc": "估算已保存",
+    "requestInProgress": "申请进行中",
+    "requestInProgressDesc": "您的申请正在处理中"
   },
   "testimonials": {
     "title": "客户评价",

@@ -233,7 +233,19 @@
     "parameters": "ローンパラメータ",
     "loanType": "ローンタイプ",
     "selectLoanType": "タイプを選択",
-    "amount": "金額"
+    "amount": "金額",
+    "duration": "期間",
+    "months": "ヶ月",
+    "years": "年", 
+    "calculate": "計算",
+    "results": "結果",
+    "monthlyPayment": "月額支払い",
+    "totalCost": "総費用",
+    "interestRate": "金利",
+    "estimationSaved": "保存",
+    "estimationSavedDesc": "見積もりが保存されました",
+    "requestInProgress": "申請処理中",
+    "requestInProgressDesc": "お客様の申請を処理しています"
   },
   "testimonials": {
     "title": "お客様の声",
