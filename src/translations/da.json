@@ -17,9 +17,9 @@
   },
   "hero": {
     "slide1": {
-      "title": "Velkommen til BHV Auto",
-      "subtitle": "Din specialist i køretøjsimport",
-      "description": "Opdag vores køretøjsimporttjenester med ekspert og personlig vejledning."
+      "title": "Velkommen til Neovita Finanz",
+      "subtitle": "Din pålidelige finansielle partner",
+      "description": "Opdag vores finansieringstjenester med ekspert og personaliseret vejledning."
     },
     "slide2": {
       "title": "Boliglån",
@@ -43,12 +43,12 @@
     "disclaimer": "En kredit forpligter dig og skal betales tilbage. Kontroller din tilbagebetalingsevne før du forpligter dig."
   },
   "home": {
-    "metaDescription": "BHV Auto - Din specialist i køretøjsimport. Professionelle importtjenester med ekspertvejledning.",
-    "servicesTitle": "Vores Importtjenester",
-    "servicesSubtitle": "Løsninger tilpasset alle dine køretøjsimportbehov",
-    "advantagesTitle": "Hvorfor Vælge BHV Auto",
-    "ctaTitle": "Klar til at Importere Dit Køretøj?",
-    "ctaSubtitle": "Vores eksperter ledsager dig i dit importprojekt"
+    "metaDescription": "Neovita Finanz - Din pålidelige finansielle partner. Professionelle finansieringstjenester med ekspertvejledning.",
+    "servicesTitle": "Vores Finansieringstjenester",
+    "servicesSubtitle": "Løsninger tilpasset alle dine finansieringsbehov",
+    "advantagesTitle": "Hvorfor Vælge Neovita Finanz",
+    "ctaTitle": "Klar til at Finansiere Dit Projekt?",
+    "ctaSubtitle": "Vores eksperter vejleder dig i dit finansieringsprojekt"
   },
   "personalLoans": {
     "metaDescription": "Personlige lån med Neovita Finanz. Hurtig og fleksibel finansiering til alle dine personlige projekter.",
@@ -161,13 +161,13 @@
     }
   },
   "about": {
-    "metaDescription": "Om BHV Auto - Opdag vores ekspertise inden for køretøjsimport og vores team af specialister.",
+    "metaDescription": "Om Neovita Finanz - Opdag vores ekspertise inden for finansiering og vores team af specialister.",
     "hero": {
       "subtitle": "Din pålidelige partner i 15 år"
     },
     "mission": {
       "title": "Vores Mission",
-      "description": "Vi ledsager vores kunder i deres køretøjsimportprojekter med ekspertise, gennemsigtighed og nærhed. Vores team af 43 specialiserede rådgivere guider dig gennem hvert trin af dit projekt."
+      "description": "Vi vejleder vores kunder i deres finansieringsprojekter med ekspertise, gennemsigtighed og nærhed. Vores team af 43 specialiserede rådgivere guider dig gennem hvert trin af dit projekt."
     },
     "stats": {
       "advisors": "Rådgivere",
@@ -179,7 +179,7 @@
   "partners": {
     "title": "Vores Partnere",
     "subtitle": "Et solidt netværk for din succes",
-    "metaDescription": "Opdag BHV Auto partnere. Netværk af banker, mæglere og forsikringsselskaber for at tilbyde dig de bedste løsninger.",
+    "metaDescription": "Opdag Neovita Finanz partnere. Netværk af banker, mæglere og forsikringsselskaber for at tilbyde dig de bedste løsninger.",
     "types": {
       "banks": {
         "title": "Partnerbanker",
@@ -361,8 +361,8 @@
     "disclaimer": "Ved at sende denne formular accepterer du at blive kontaktet af vores tjenester. Dine data er beskyttet og vil ikke blive overført til tredjeparter."
   },
   "footer": {
-    "tagline": "Din specialist i køretøjsimport",
-    "description": "BHV Auto ledsager dig i alle dine køretøjsimportprojekter med ekspertise og nærhed.",
+    "tagline": "Din pålidelige finansielle partner",
+    "description": "Neovita Finanz ledsager dig i alle dine finansieringsprojekter med ekspertise og nærhed.",
     "sections": {
       "services": "Vores Tjenester",
       "company": "Virksomheden",
