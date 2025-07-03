@@ -11,6 +11,9 @@ import CreditTravaux from './pages/CreditTravaux';
 import Assurances from './pages/Assurances';
 import About from './pages/About';
 import Partenaires from './pages/Partenaires';
+import Equipe from './pages/Equipe';
+import Carrieres from './pages/Carrieres';
+import Actualites from './pages/Actualites';
 import FormulaireCredit from './pages/FormulaireCredit';
 import MentionsLegales from './pages/MentionsLegales';
 import ConditionsGenerales from './pages/ConditionsGenerales';
@@ -35,6 +38,11 @@ function AppRoutes() {
       <Route path="/assurances" element={<Assurances />} />
       <Route path="/a-propos" element={<About />} />
       <Route path="/partenaires" element={<Partenaires />} />
+      <Route path="/equipe" element={<Equipe />} />
+      <Route path="/notre-equipe" element={<Equipe />} />
+      <Route path="/carrieres" element={<Carrieres />} />
+      <Route path="/actualites" element={<Actualites />} />
+      <Route path="/news" element={<Actualites />} />
       <Route path="/demande-credit" element={<FormulaireCredit />} />
       
       {/* Pages légales */}
@@ -58,6 +66,11 @@ function AppRoutes() {
       <Route path="/:lang/assurances" element={<Assurances />} />
       <Route path="/:lang/a-propos" element={<About />} />
       <Route path="/:lang/partenaires" element={<Partenaires />} />
+      <Route path="/:lang/equipe" element={<Equipe />} />
+      <Route path="/:lang/notre-equipe" element={<Equipe />} />
+      <Route path="/:lang/carrieres" element={<Carrieres />} />
+      <Route path="/:lang/actualites" element={<Actualites />} />
+      <Route path="/:lang/news" element={<Actualites />} />
       <Route path="/:lang/demande-credit" element={<FormulaireCredit />} />
       <Route path="/:lang/mentions-legales" element={<MentionsLegales />} />
       <Route path="/:lang/conditions-generales" element={<ConditionsGenerales />} />

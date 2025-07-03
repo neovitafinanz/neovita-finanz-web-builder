@@ -598,5 +598,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Découvrez l'équipe Neovita Finanz : 43 experts dédiés à votre réussite financière. Conseillers spécialisés et accompagnement personnalisé.",
+    "title": "Notre Équipe",
+    "subtitle": "43 experts passionnés à votre service",
+    "leadership": "Équipe Dirigeante & Experts",
+    "leadingText": "Rencontrez les visages de Neovita Finanz, une équipe d'experts dédiée à votre réussite",
+    "departments": {
+      "title": "Organisation par Départements",
+      "subtitle": "Une structure organisée pour vous offrir le meilleur service"
+    },
+    "join": {
+      "title": "Rejoindre notre équipe",
+      "description": "Nous recherchons régulièrement de nouveaux talents pour renforcer nos équipes. Si vous partagez nos valeurs et souhaitez contribuer à notre mission, nous serions ravis de vous rencontrer.",
+      "button": "Voir nos offres d'emploi"
+    },
+    "cta": {
+      "title": "Une équipe à votre écoute",
+      "description": "Nos conseillers experts sont disponibles pour vous accompagner dans votre projet",
+      "button": "Prendre contact"
+    }
+  },
+  "careers": {
+    "metaDescription": "Rejoignez l'équipe Neovita Finanz. Découvrez nos offres d'emploi et opportunités de carrière dans le secteur financier.",
+    "title": "Carrières",
+    "subtitle": "Rejoignez une équipe qui fait la différence",
+    "positions": {
+      "title": "Offres d'emploi"
+    },
+    "benefits": {
+      "title": "Pourquoi nous rejoindre ?",
+      "team": "Équipe dynamique",
+      "teamDesc": "Rejoignez une équipe de 43 experts passionnés",
+      "growth": "Évolution",
+      "growthDesc": "Opportunités de développement et de formation",
+      "advantages": "Avantages",
+      "advantagesDesc": "Package attractif et avantages sociaux"
+    }
+  },
+  "news": {
+    "metaDescription": "Actualités financières et conseils de Neovita Finanz. Restez informé des dernières évolutions du marché du crédit.",
+    "title": "Actualités",
+    "subtitle": "Restez informé des dernières évolutions"
   }
 }

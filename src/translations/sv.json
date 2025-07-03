@@ -579,5 +579,48 @@
       "title": "Ersättning",
       "content": "Neovita Finanz ersättning betalas av kreditinstitutet vid realisering av finansieringen. Inga avgifter debiteras kunden."
     }
+  },
+  "team": {
+    "metaDescription": "Upptäck Neovita Finanz team: 43 experter tillägnade din finansiella framgång. Specialiserade rådgivare och personlig vägledning.",
+    "title": "Vårt Team",
+    "subtitle": "43 passionerade experter till din tjänst",
+    "leadership": "Ledningsteam & Experter",
+    "leadingText": "Möt ansiktena från Neovita Finanz, ett team av experter tillägnade din framgång",
+    "departments": {
+      "title": "Organisation efter Avdelningar",
+      "subtitle": "En organiserad struktur för att erbjuda dig den bästa servicen"
+    },
+    "join": {
+      "title": "Gå med i vårt team",
+      "description": "Vi söker regelbundet nya talanger för att förstärka våra team. Om du delar våra värderingar och vill bidra till vår mission, skulle vi vara glada att träffa dig.",
+      "button": "Se våra jobberbjudanden"
+    },
+    "cta": {
+      "title": "Ett team till din tjänst",
+      "description": "Våra expertrådgivare är tillgängliga för att stödja dig i ditt projekt",
+      "button": "Ta kontakt"
+    }
+  },
+  "careers": {
+    "metaDescription": "Gå med i Neovita Finanz team. Upptäck våra jobberbjudanden och karriärmöjligheter inom finanssektorn.",
+    "title": "Karriärer",
+    "subtitle": "Gå med i ett team som gör skillnad",
+    "positions": {
+      "title": "Jobberbjudanden"
+    },
+    "benefits": {
+      "title": "Varför gå med oss?",
+      "team": "Dynamiskt team",
+      "teamDesc": "Gå med i ett team av 43 passionerade experter",
+      "growth": "Evolution",
+      "growthDesc": "Utvecklings- och utbildningsmöjligheter",
+      "advantages": "Fördelar",
+      "advantagesDesc": "Attraktivt paket och sociala förmåner"
+    }
+  },
+  "news": {
+    "metaDescription": "Finansiella nyheter och råd från Neovita Finanz. Håll dig informerad om de senaste utvecklingarna på kreditmarknaden.",
+    "title": "Nyheter",
+    "subtitle": "Håll dig informerad om de senaste utvecklingarna"
   }
 }

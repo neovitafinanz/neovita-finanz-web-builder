@@ -639,5 +639,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Discover the Neovita Finanz team: 43 experts dedicated to your financial success. Specialized advisors and personalized support.",
+    "title": "Our Team",
+    "subtitle": "43 passionate experts at your service",
+    "leadership": "Management Team & Experts",
+    "leadingText": "Meet the faces of Neovita Finanz, a team of experts dedicated to your success",
+    "departments": {
+      "title": "Organization by Departments",
+      "subtitle": "An organized structure to offer you the best service"
+    },
+    "join": {
+      "title": "Join our team",
+      "description": "We are regularly looking for new talent to strengthen our teams. If you share our values and want to contribute to our mission, we would be delighted to meet you.",
+      "button": "See our job offers"
+    },
+    "cta": {
+      "title": "A team at your service",
+      "description": "Our expert advisors are available to support you in your project",
+      "button": "Get in touch"
+    }
+  },
+  "careers": {
+    "metaDescription": "Join the Neovita Finanz team. Discover our job offers and career opportunities in the financial sector.",
+    "title": "Careers",
+    "subtitle": "Join a team that makes a difference",
+    "positions": {
+      "title": "Job Offers"
+    },
+    "benefits": {
+      "title": "Why join us?",
+      "team": "Dynamic team",
+      "teamDesc": "Join a team of 43 passionate experts",
+      "growth": "Evolution",
+      "growthDesc": "Development and training opportunities",
+      "advantages": "Benefits",
+      "advantagesDesc": "Attractive package and social benefits"
+    }
+  },
+  "news": {
+    "metaDescription": "Financial news and advice from Neovita Finanz. Stay informed about the latest developments in the credit market.",
+    "title": "News",
+    "subtitle": "Stay informed about the latest developments"
   }
 }

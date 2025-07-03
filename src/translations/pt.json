@@ -618,5 +618,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Descubra a equipa da Neovita Finanz: 43 especialistas dedicados ao seu sucesso financeiro. Consultores especializados e acompanhamento personalizado.",
+    "title": "A Nossa Equipa",
+    "subtitle": "43 especialistas apaixonados ao vosso serviço",
+    "leadership": "Equipa de Liderança e Especialistas",
+    "leadingText": "Conheça os rostos da Neovita Finanz, uma equipa de especialistas dedicada ao vosso sucesso",
+    "departments": {
+      "title": "Organização por Departamentos",
+      "subtitle": "Uma estrutura organizada para vos oferecer o melhor serviço"
+    },
+    "join": {
+      "title": "Juntar-se à nossa equipa",
+      "description": "Procuramos regularmente novos talentos para reforçar as nossas equipas. Se partilham os nossos valores e querem contribuir para a nossa missão, ficaríamos encantados de vos conhecer.",
+      "button": "Ver as nossas ofertas de emprego"
+    },
+    "cta": {
+      "title": "Uma equipa ao vosso serviço",
+      "description": "Os nossos consultores especialistas estão disponíveis para vos apoiar no vosso projeto",
+      "button": "Entrar em contacto"
+    }
+  },
+  "careers": {
+    "metaDescription": "Junte-se à equipa da Neovita Finanz. Descubra as nossas ofertas de emprego e oportunidades de carreira no setor financeiro.",
+    "title": "Carreiras",
+    "subtitle": "Junte-se a uma equipa que faz a diferença",
+    "positions": {
+      "title": "Ofertas de Emprego"
+    },
+    "benefits": {
+      "title": "Porquê juntar-se a nós?",
+      "team": "Equipa dinâmica",
+      "teamDesc": "Junte-se a uma equipa de 43 especialistas apaixonados",
+      "growth": "Evolução",
+      "growthDesc": "Oportunidades de desenvolvimento e formação",
+      "advantages": "Vantagens",
+      "advantagesDesc": "Pacote atrativo e benefícios sociais"
+    }
+  },
+  "news": {
+    "metaDescription": "Notícias financeiras e conselhos da Neovita Finanz. Mantenha-se informado sobre os últimos desenvolvimentos do mercado de crédito.",
+    "title": "Notícias",
+    "subtitle": "Mantenha-se informado sobre os últimos desenvolvimentos"
   }
 }

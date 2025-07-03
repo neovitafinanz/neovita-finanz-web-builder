@@ -641,5 +641,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Entdecken Sie das Neovita Finanz Team: 43 Experten für Ihren finanziellen Erfolg. Spezialisierte Berater und persönliche Betreuung.",
+    "title": "Unser Team",
+    "subtitle": "43 leidenschaftliche Experten zu Ihren Diensten",
+    "leadership": "Führungsteam & Experten",
+    "leadingText": "Lernen Sie die Gesichter von Neovita Finanz kennen, ein Expertenteam für Ihren Erfolg",
+    "departments": {
+      "title": "Organisation nach Abteilungen",
+      "subtitle": "Eine organisierte Struktur für den besten Service"
+    },
+    "join": {
+      "title": "Unserem Team beitreten",
+      "description": "Wir suchen regelmäßig neue Talente zur Verstärkung unserer Teams. Wenn Sie unsere Werte teilen und zu unserer Mission beitragen möchten, würden wir uns freuen, Sie kennenzulernen.",
+      "button": "Unsere Stellenangebote ansehen"
+    },
+    "cta": {
+      "title": "Ein Team zu Ihren Diensten",
+      "description": "Unsere Expertenberater stehen Ihnen zur Verfügung, um Sie bei Ihrem Projekt zu unterstützen",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "careers": {
+    "metaDescription": "Treten Sie dem Neovita Finanz Team bei. Entdecken Sie unsere Stellenangebote und Karrieremöglichkeiten im Finanzsektor.",
+    "title": "Karrieren",
+    "subtitle": "Treten Sie einem Team bei, das den Unterschied macht",
+    "positions": {
+      "title": "Stellenangebote"
+    },
+    "benefits": {
+      "title": "Warum zu uns kommen?",
+      "team": "Dynamisches Team",
+      "teamDesc": "Treten Sie einem Team von 43 leidenschaftlichen Experten bei",
+      "growth": "Entwicklung",
+      "growthDesc": "Entwicklungs- und Schulungsmöglichkeiten",
+      "advantages": "Vorteile",
+      "advantagesDesc": "Attraktives Paket und Sozialleistungen"
+    }
+  },
+  "news": {
+    "metaDescription": "Finanznachrichten und Beratung von Neovita Finanz. Bleiben Sie über die neuesten Entwicklungen am Kreditmarkt informiert.",
+    "title": "Nachrichten",
+    "subtitle": "Bleiben Sie über die neuesten Entwicklungen informiert"
   }
 }

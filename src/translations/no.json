@@ -366,5 +366,48 @@
       "insurance": "Låntakerforsikring er ikke obligatorisk"
     },
     "copyright": "Alle rettigheter forbeholdt."
+  },
+  "team": {
+    "metaDescription": "Oppdag Neovita Finanz-teamet: 43 eksperter dedikert til din finansielle suksess. Spesialiserte rådgivere og personlig veiledning.",
+    "title": "Vårt Team",
+    "subtitle": "43 lidenskapelige eksperter til din tjeneste",
+    "leadership": "Ledelsesteam og Eksperter",
+    "leadingText": "Møt ansiktene fra Neovita Finanz, et team av eksperter dedikert til din suksess",
+    "departments": {
+      "title": "Organisasjon etter Avdelinger",
+      "subtitle": "En organisert struktur for å tilby deg den beste tjenesten"
+    },
+    "join": {
+      "title": "Bli med i vårt team",
+      "description": "Vi søker jevnlig nye talenter for å styrke våre team. Hvis du deler våre verdier og ønsker å bidra til vårt oppdrag, ville vi vært glade for å møte deg.",
+      "button": "Se våre jobbmuligheter"
+    },
+    "cta": {
+      "title": "Et team til din tjeneste",
+      "description": "Våre ekspertrådgivere er tilgjengelige for å støtte deg i prosjektet ditt",
+      "button": "Ta kontakt"
+    }
+  },
+  "careers": {
+    "metaDescription": "Bli med i Neovita Finanz-teamet. Oppdag våre jobbtilbud og karrieremuligheter i finanssektoren.",
+    "title": "Karrierer",
+    "subtitle": "Bli med i et team som gjør en forskjell",
+    "positions": {
+      "title": "Jobbtilbud"
+    },
+    "benefits": {
+      "title": "Hvorfor bli med oss?",
+      "team": "Dynamisk team",
+      "teamDesc": "Bli med i et team av 43 lidenskapelige eksperter",
+      "growth": "Utvikling",
+      "growthDesc": "Utviklings- og opplæringsmuligheter",
+      "advantages": "Fordeler",
+      "advantagesDesc": "Attraktiv pakke og sosiale fordeler"
+    }
+  },
+  "news": {
+    "metaDescription": "Finansielle nyheter og råd fra Neovita Finanz. Hold deg informert om de siste utviklingene i kredittmarkedet.",
+    "title": "Nyheter",
+    "subtitle": "Hold deg informert om de siste utviklingene"
   }
 }

@@ -618,5 +618,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Ontdek het team van Neovita Finanz: 43 experts toegewijd aan uw financieel succes. Gespecialiseerde adviseurs en persoonlijke begeleiding.",
+    "title": "Ons Team",
+    "subtitle": "43 gepassioneerde experts tot uw dienst",
+    "leadership": "Leiderschapsteam & Experts",
+    "leadingText": "Ontmoet de gezichten van Neovita Finanz, een team van experts toegewijd aan uw succes",
+    "departments": {
+      "title": "Organisatie per Afdeling",
+      "subtitle": "Een georganiseerde structuur om u de beste service te bieden"
+    },
+    "join": {
+      "title": "Word lid van ons team",
+      "description": "We zoeken regelmatig nieuwe talenten om onze teams te versterken. Als u onze waarden deelt en wilt bijdragen aan onze missie, zouden we u graag ontmoeten.",
+      "button": "Bekijk onze vacatures"
+    },
+    "cta": {
+      "title": "Een team tot uw dienst",
+      "description": "Onze expert adviseurs zijn beschikbaar om u te ondersteunen bij uw project",
+      "button": "Contact opnemen"
+    }
+  },
+  "careers": {
+    "metaDescription": "Word lid van het Neovita Finanz team. Ontdek onze vacatures en carrièremogelijkheden in de financiële sector.",
+    "title": "Carrières",
+    "subtitle": "Word lid van een team dat het verschil maakt",
+    "positions": {
+      "title": "Vacatures"
+    },
+    "benefits": {
+      "title": "Waarom bij ons komen werken?",
+      "team": "Dynamisch team",
+      "teamDesc": "Word lid van een team van 43 gepassioneerde experts",
+      "growth": "Evolutie",
+      "growthDesc": "Ontwikkelings- en trainingsmogelijkheden",
+      "advantages": "Voordelen",
+      "advantagesDesc": "Aantrekkelijk pakket en sociale voordelen"
+    }
+  },
+  "news": {
+    "metaDescription": "Financieel nieuws en advies van Neovita Finanz. Blijf op de hoogte van de laatste ontwikkelingen op de kredietmarkt.",
+    "title": "Nieuws",
+    "subtitle": "Blijf op de hoogte van de laatste ontwikkelingen"
   }
 }

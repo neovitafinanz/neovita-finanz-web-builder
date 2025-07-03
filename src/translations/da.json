@@ -618,5 +618,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Opdag Neovita Finanz teamet: 43 eksperter dedikeret til din finansielle succes. Specialiserede rådgivere og personlig vejledning.",
+    "title": "Vores Team",
+    "subtitle": "43 passionerede eksperter til din tjeneste",
+    "leadership": "Ledelsesteam & Eksperter",
+    "leadingText": "Mød ansigterne fra Neovita Finanz, et team af eksperter dedikeret til din succes",
+    "departments": {
+      "title": "Organisation efter Afdelinger",
+      "subtitle": "En organiseret struktur for at tilbyde dig den bedste service"
+    },
+    "join": {
+      "title": "Bliv en del af vores team",
+      "description": "Vi søger regelmæssigt nye talenter til at styrke vores teams. Hvis du deler vores værdier og ønsker at bidrage til vores mission, ville vi være glade for at møde dig.",
+      "button": "Se vores jobtilbud"
+    },
+    "cta": {
+      "title": "Et team til din tjeneste",
+      "description": "Vores ekspertrådgivere er tilgængelige for at støtte dig i dit projekt",
+      "button": "Kom i kontakt"
+    }
+  },
+  "careers": {
+    "metaDescription": "Bliv en del af Neovita Finanz teamet. Opdag vores jobtilbud og karrieremuligheder i den finansielle sektor.",
+    "title": "Karrierer",
+    "subtitle": "Bliv en del af et team, der gør en forskel",
+    "positions": {
+      "title": "Jobtilbud"
+    },
+    "benefits": {
+      "title": "Hvorfor komme til os?",
+      "team": "Dynamisk team",
+      "teamDesc": "Bliv en del af et team på 43 passionerede eksperter",
+      "growth": "Evolution",
+      "growthDesc": "Udviklings- og uddannelsesmuligheder",
+      "advantages": "Fordele",
+      "advantagesDesc": "Attraktiv pakke og sociale fordele"
+    }
+  },
+  "news": {
+    "metaDescription": "Finansielle nyheder og rådgivning fra Neovita Finanz. Hold dig opdateret om de seneste udviklinger på kreditmarkedet.",
+    "title": "Nyheder",
+    "subtitle": "Hold dig opdateret om de seneste udviklinger"
   }
 }

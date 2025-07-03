@@ -618,5 +618,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Scopri il team di Neovita Finanz: 43 esperti dedicati al tuo successo finanziario. Consulenti specializzati e supporto personalizzato.",
+    "title": "Il Nostro Team",
+    "subtitle": "43 esperti appassionati al vostro servizio",
+    "leadership": "Team Dirigenziale ed Esperti",
+    "leadingText": "Incontra i volti di Neovita Finanz, un team di esperti dedicato al tuo successo",
+    "departments": {
+      "title": "Organizzazione per Dipartimenti",
+      "subtitle": "Una struttura organizzata per offrirti il miglior servizio"
+    },
+    "join": {
+      "title": "Unisciti al nostro team",
+      "description": "Cerchiamo regolarmente nuovi talenti per rafforzare i nostri team. Se condividi i nostri valori e vuoi contribuire alla nostra missione, saremmo felici di conoscerti.",
+      "button": "Vedi le nostre offerte di lavoro"
+    },
+    "cta": {
+      "title": "Un team al vostro servizio",
+      "description": "I nostri consulenti esperti sono disponibili per supportarvi nel vostro progetto",
+      "button": "Mettersi in contatto"
+    }
+  },
+  "careers": {
+    "metaDescription": "Unisciti al team di Neovita Finanz. Scopri le nostre offerte di lavoro e opportunità di carriera nel settore finanziario.",
+    "title": "Carriere",
+    "subtitle": "Unisciti a un team che fa la differenza",
+    "positions": {
+      "title": "Offerte di Lavoro"
+    },
+    "benefits": {
+      "title": "Perché unirsi a noi?",
+      "team": "Team dinamico",
+      "teamDesc": "Unisciti a un team di 43 esperti appassionati",
+      "growth": "Evoluzione",
+      "growthDesc": "Opportunità di sviluppo e formazione",
+      "advantages": "Vantaggi",
+      "advantagesDesc": "Pacchetto attraente e benefici sociali"
+    }
+  },
+  "news": {
+    "metaDescription": "Notizie finanziarie e consigli da Neovita Finanz. Rimani informato sugli ultimi sviluppi del mercato del credito.",
+    "title": "Notizie",
+    "subtitle": "Rimani informato sugli ultimi sviluppi"
   }
 }

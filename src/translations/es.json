@@ -591,5 +591,48 @@
         }
       }
     }
+  },
+  "team": {
+    "metaDescription": "Descubre el equipo de Neovita Finanz: 43 expertos dedicados a tu éxito financiero. Asesores especializados y acompañamiento personalizado.",
+    "title": "Nuestro Equipo",
+    "subtitle": "43 expertos apasionados a tu servicio",
+    "leadership": "Equipo Directivo y Expertos",
+    "leadingText": "Conoce los rostros de Neovita Finanz, un equipo de expertos dedicado a tu éxito",
+    "departments": {
+      "title": "Organización por Departamentos",
+      "subtitle": "Una estructura organizada para ofrecerte el mejor servicio"
+    },
+    "join": {
+      "title": "Únete a nuestro equipo",
+      "description": "Buscamos regularmente nuevos talentos para reforzar nuestros equipos. Si compartes nuestros valores y quieres contribuir a nuestra misión, estaríamos encantados de conocerte.",
+      "button": "Ver nuestras ofertas de empleo"
+    },
+    "cta": {
+      "title": "Un equipo a tu disposición",
+      "description": "Nuestros asesores expertos están disponibles para acompañarte en tu proyecto",
+      "button": "Ponerse en contacto"
+    }
+  },
+  "careers": {
+    "metaDescription": "Únete al equipo de Neovita Finanz. Descubre nuestras ofertas de empleo y oportunidades de carrera en el sector financiero.",
+    "title": "Carreras",
+    "subtitle": "Únete a un equipo que marca la diferencia",
+    "positions": {
+      "title": "Ofertas de Empleo"
+    },
+    "benefits": {
+      "title": "¿Por qué unirse a nosotros?",
+      "team": "Equipo dinámico",
+      "teamDesc": "Únete a un equipo de 43 expertos apasionados",
+      "growth": "Evolución",
+      "growthDesc": "Oportunidades de desarrollo y formación",
+      "advantages": "Ventajas",
+      "advantagesDesc": "Paquete atractivo y beneficios sociales"
+    }
+  },
+  "news": {
+    "metaDescription": "Noticias financieras y consejos de Neovita Finanz. Mantente informado sobre las últimas evoluciones del mercado crediticio.",
+    "title": "Noticias",
+    "subtitle": "Mantente informado sobre las últimas evoluciones"
   }
 }
