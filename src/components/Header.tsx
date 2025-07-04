@@ -32,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <>
+    <div className="fixed top-0 left-0 right-0 z-50 w-full">
       {/* Contact Bar */}
       <div className="bg-green-600 text-white py-2 hidden lg:block">
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
@@ -76,7 +76,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
+      <header className="bg-white shadow-lg border-b border-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -174,7 +174,7 @@ const Header = () => {
           )}
         </div>
       </header>
-    </>
+    </div>
   );
 };
 
