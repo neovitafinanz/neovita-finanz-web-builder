@@ -392,6 +392,61 @@
       "hours": "Du lundi au vendredi de 9h à 18h"
     }
   },
+  "footer": {
+    "tagline": "Votre partenaire financier de confiance",
+    "description": "Neovita Finanz vous accompagne dans tous vos projets de financement avec expertise et proximité.",
+    "sections": {
+      "services": "Nos Services",
+      "company": "L'Entreprise",
+      "legal": "Informations Légales"
+    },
+    "services": {
+      "personalLoans": "Prêts Personnels",
+      "mortgageLoans": "Prêts Immobiliers",
+      "creditBuyback": "Rachat de Crédit",
+      "workCredit": "Crédit Travaux",
+      "insurance": "Assurances"
+    },
+    "company": {
+      "about": "À Propos",
+      "team": "Notre Équipe",
+      "careers": "Carrières",
+      "partners": "Partenaires",
+      "news": "Actualités"
+    },
+    "legal": {
+      "terms": "Mentions Légales",
+      "privacy": "Politique de Confidentialité",
+      "conditions": "Conditions Générales",
+      "sitemap": "Plan du Site",
+      "cookies": "Cookies"
+    },
+    "trust": {
+      "title": "Certifications",
+      "gdpr": "Conforme RGPD",
+      "gdprDesc": "Protection des données",
+      "ssl": "Sécurisé SSL",
+      "sslDesc": "Connexion sécurisée",
+      "rcs": "RCS Évry",
+      "rcsDesc": "Établissement agréé"
+    },
+    "companyInfo": {
+      "title": "Informations Société",
+      "legalForm": "Forme juridique",
+      "capital": "Capital",
+      "employees": "Personnel"
+    },
+    "warning": {
+      "title": "Informations Importantes",
+      "interestRateLabel": "Taux d'intérêt",
+      "creditLabel": "Crédit",
+      "insuranceLabel": "Assurance",
+      "rates": "De 0,9% à 19,9% selon profil et durée",
+      "credit": "Un crédit vous engage et doit être remboursé",
+      "insurance": "L'assurance emprunteur n'est pas obligatoire"
+    },
+    "copyright": "Tous droits réservés."
+  },
   "legal": {
     "title": "Mentions Légales",
     "description": "Informations légales de Neovita Finanz - SARL spécialisée en intermédiation en crédit",
