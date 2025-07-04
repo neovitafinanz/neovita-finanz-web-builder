@@ -661,5 +661,95 @@
     "metaDescription": "Financieel nieuws en advies van Neovita Finanz. Blijf op de hoogte van de laatste ontwikkelingen op de kredietmarkt.",
     "title": "Nieuws",
     "subtitle": "Blijf op de hoogte van de laatste ontwikkelingen"
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Kredietaanvraag",
+      "subtitle": "Voltooi uw financieringsaanvraag in enkele minuten. Ons team van experts zal u snel contacteren."
+    },
+    "metaDescription": "Doe uw kredietaanvraag online bij Neovita Finanz. Snelle reactie en persoonlijke begeleiding.",
+    "form": {
+      "title": "Kredietaanvraag Formulier",
+      "personalInfo": "Persoonlijke Informatie",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mail",
+      "emailConfirmation": "E-mail Bevestiging",
+      "phone": "Telefoonnummer",
+      "project": "Uw Financieringsproject",
+      "loanType": "Type krediet",
+      "selectLoanType": "Kies krediettype",
+      "amount": "Gewenst bedrag",
+      "currency": "Valuta",
+      "duration": "Gewenste duur (in maanden)",
+      "situation": "Uw Financiële Situatie",
+      "professionalSituation": "Professionele situatie",
+      "selectSituation": "Selecteer uw situatie",
+      "monthlyIncome": "Maandelijks netto inkomen",
+      "message": "Aanvullend bericht",
+      "messagePlaceholder": "Beschrijf uw project, specifieke behoeften...",
+      "submit": "Mijn kredietaanvraag verzenden",
+      "submitting": "Verzenden...",
+      "required": "* Verplichte velden"
+    },
+    "situations": {
+      "employee": "Werknemer vast contract",
+      "temporaryEmployee": "Werknemer tijdelijk contract",
+      "civilServant": "Ambtenaar",
+      "selfEmployed": "Zelfstandige",
+      "freelancer": "Freelancer",
+      "retired": "Gepensioneerd",
+      "student": "Student",
+      "jobSeeker": "Werkzoekende"
+    },
+    "validation": {
+      "missingFields": "Ontbrekende verplichte velden",
+      "missingFieldsDesc": "Vul alle velden in die gemarkeerd zijn met een asterisk (*)",
+      "invalidEmail": "Ongeldig e-mailadres",
+      "invalidEmailDesc": "Voer een geldig e-mailadres in",
+      "emailMismatch": "E-mailadressen komen niet overeen",
+      "emailMismatchDesc": "Controleer of beide e-mailadressen identiek zijn",
+      "success": "Aanvraag succesvol verzonden!",
+      "successDesc": "We hebben uw aanvraag ontvangen. Een adviseur zal u binnen 24u contacteren.",
+      "error": "Verzendfout",
+      "errorDesc": "Er is een fout opgetreden. Probeer het opnieuw."
+    },
+    "reassurance": {
+      "title": "Waarom ons vertrouwen?",
+      "secureData": {
+        "title": "Veilige gegevens",
+        "description": "Uw informatie is beschermd en wordt vertrouwelijk behandeld"
+      },
+      "quickResponse": {
+        "title": "Snelle reactie",
+        "description": "We contacteren u binnen maximaal 24u"
+      },
+      "availableAdvisors": {
+        "title": "Beschikbare adviseurs",
+        "description": "43 experts tot uw dienst van maandag tot vrijdag"
+      }
+    },
+    "advantages": {
+      "title": "Onze Voordelen",
+      "experience": "15 jaar ervaring",
+      "experts": "43 expert adviseurs",
+      "rates": "Concurrerende tarieven",
+      "support": "Persoonlijke begeleiding"
+    },
+    "contact": {
+      "title": "Een vraag?",
+      "description": "Aarzel niet om ons te contacteren",
+      "phone": "01 23 45 67 89",
+      "hours": "Maandag tot vrijdag van 9u tot 18u"
+    }
+  },
+  "loanTypes": {
+    "personal": "Persoonlijke lening",
+    "consumption": "Consumentenkrediet",
+    "works": "Renovatiekrediet",
+    "mortgage": "Hypothecaire lening",
+    "consolidation": "Krediethergroepering",
+    "lease": "Lease-krediet",
+    "student": "Studielening"
   }
 }

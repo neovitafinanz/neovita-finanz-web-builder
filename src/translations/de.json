@@ -684,5 +684,95 @@
     "metaDescription": "Finanznachrichten und Beratung von Neovita Finanz. Bleiben Sie über die neuesten Entwicklungen am Kreditmarkt informiert.",
     "title": "Nachrichten",
     "subtitle": "Bleiben Sie über die neuesten Entwicklungen informiert"
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Kreditantrag",
+      "subtitle": "Stellen Sie Ihren Finanzierungsantrag in wenigen Minuten. Unser Expertenteam wird Sie schnell kontaktieren."
+    },
+    "metaDescription": "Stellen Sie Ihren Kreditantrag online bei Neovita Finanz. Schnelle Antwort und persönliche Betreuung.",
+    "form": {
+      "title": "Kreditantragsformular",
+      "personalInfo": "Persönliche Informationen",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "emailConfirmation": "E-Mail-Bestätigung",
+      "phone": "Telefonnummer",
+      "project": "Ihr Finanzierungsprojekt",
+      "loanType": "Kreditart",
+      "selectLoanType": "Kreditart wählen",
+      "amount": "Gewünschter Betrag",
+      "currency": "Währung",
+      "duration": "Gewünschte Laufzeit (in Monaten)",
+      "situation": "Ihre finanzielle Situation",
+      "professionalSituation": "Berufliche Situation",
+      "selectSituation": "Ihre Situation auswählen",
+      "monthlyIncome": "Monatliches Nettoeinkommen",
+      "message": "Zusätzliche Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Projekt, spezielle Bedürfnisse...",
+      "submit": "Meinen Kreditantrag senden",
+      "submitting": "Wird gesendet...",
+      "required": "* Pflichtfelder"
+    },
+    "situations": {
+      "employee": "Festangestellter",
+      "temporaryEmployee": "Zeitarbeiter",
+      "civilServant": "Beamter",
+      "selfEmployed": "Selbständiger",
+      "freelancer": "Freiberufler",
+      "retired": "Rentner",
+      "student": "Student",
+      "jobSeeker": "Arbeitssuchender"
+    },
+    "validation": {
+      "missingFields": "Fehlende Pflichtfelder",
+      "missingFieldsDesc": "Bitte füllen Sie alle mit Sternchen (*) markierten Felder aus",
+      "invalidEmail": "Ungültige E-Mail-Adresse",
+      "invalidEmailDesc": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "emailMismatch": "E-Mail-Adressen stimmen nicht überein",
+      "emailMismatchDesc": "Bitte überprüfen Sie, dass beide E-Mail-Adressen identisch sind",
+      "success": "Antrag erfolgreich gesendet!",
+      "successDesc": "Wir haben Ihren Antrag erhalten. Ein Berater wird Sie innerhalb von 24h kontaktieren.",
+      "error": "Sendefehler",
+      "errorDesc": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "reassurance": {
+      "title": "Warum uns vertrauen?",
+      "secureData": {
+        "title": "Sichere Daten",
+        "description": "Ihre Informationen sind geschützt und werden vertraulich behandelt"
+      },
+      "quickResponse": {
+        "title": "Schnelle Antwort",
+        "description": "Wir kontaktieren Sie innerhalb von maximal 24h"
+      },
+      "availableAdvisors": {
+        "title": "Verfügbare Berater",
+        "description": "43 Experten stehen Ihnen Montag bis Freitag zur Verfügung"
+      }
+    },
+    "advantages": {
+      "title": "Unsere Vorteile",
+      "experience": "15 Jahre Erfahrung",
+      "experts": "43 Expertenberater",
+      "rates": "Wettbewerbsfähige Zinssätze",
+      "support": "Persönliche Betreuung"
+    },
+    "contact": {
+      "title": "Eine Frage?",
+      "description": "Zögern Sie nicht, uns zu kontaktieren",
+      "phone": "01 23 45 67 89",
+      "hours": "Montag bis Freitag von 9h bis 18h"
+    }
+  },
+  "loanTypes": {
+    "personal": "Privatkredit",
+    "consumption": "Verbraucherkredit",
+    "works": "Renovierungskredit",
+    "mortgage": "Hypothekendarlehen",
+    "consolidation": "Kreditumschuldung",
+    "lease": "Leasing-Kredit",
+    "student": "Studienkredit"
   }
 }

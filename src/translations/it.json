@@ -661,5 +661,95 @@
     "metaDescription": "Notizie finanziarie e consigli da Neovita Finanz. Rimani informato sugli ultimi sviluppi del mercato del credito.",
     "title": "Notizie",
     "subtitle": "Rimani informato sugli ultimi sviluppi"
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Richiesta di Credito",
+      "subtitle": "Completate la vostra richiesta di finanziamento in pochi minuti. Il nostro team di esperti vi contatterà rapidamente."
+    },
+    "metaDescription": "Fate la vostra richiesta di credito online con Neovita Finanz. Risposta rapida e accompagnamento personalizzato.",
+    "form": {
+      "title": "Modulo di Richiesta di Credito",
+      "personalInfo": "Informazioni Personali",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "emailConfirmation": "Conferma Email",
+      "phone": "Numero di telefono",
+      "project": "Il Vostro Progetto di Finanziamento",
+      "loanType": "Tipo di credito",
+      "selectLoanType": "Scegliete il tipo di credito",
+      "amount": "Importo desiderato",
+      "currency": "Valuta",
+      "duration": "Durata desiderata (in mesi)",
+      "situation": "La Vostra Situazione Finanziaria",
+      "professionalSituation": "Situazione professionale",
+      "selectSituation": "Selezionate la vostra situazione",
+      "monthlyIncome": "Reddito mensile netto",
+      "message": "Messaggio aggiuntivo",
+      "messagePlaceholder": "Descrivete il vostro progetto, esigenze specifiche...",
+      "submit": "Inviare la mia richiesta di credito",
+      "submitting": "Invio in corso...",
+      "required": "* Campi obbligatori"
+    },
+    "situations": {
+      "employee": "Dipendente a tempo indeterminato",
+      "temporaryEmployee": "Dipendente a tempo determinato",
+      "civilServant": "Dipendente pubblico",
+      "selfEmployed": "Lavoratore autonomo",
+      "freelancer": "Libero professionista",
+      "retired": "Pensionato/a",
+      "student": "Studente",
+      "jobSeeker": "Disoccupato"
+    },
+    "validation": {
+      "missingFields": "Campi obbligatori mancanti",
+      "missingFieldsDesc": "Si prega di compilare tutti i campi contrassegnati con asterisco (*)",
+      "invalidEmail": "Indirizzo email non valido",
+      "invalidEmailDesc": "Si prega di inserire un indirizzo email valido",
+      "emailMismatch": "Gli indirizzi email non corrispondono",
+      "emailMismatchDesc": "Si prega di verificare che entrambi gli indirizzi email siano identici",
+      "success": "Richiesta inviata con successo!",
+      "successDesc": "Abbiamo ricevuto la vostra richiesta. Un consulente vi contatterà entro 24h.",
+      "error": "Errore di invio",
+      "errorDesc": "Si è verificato un errore. Si prega di riprovare."
+    },
+    "reassurance": {
+      "title": "Perché fidarsi di noi?",
+      "secureData": {
+        "title": "Dati sicuri",
+        "description": "Le vostre informazioni sono protette e trattate con totale riservatezza"
+      },
+      "quickResponse": {
+        "title": "Risposta rapida",
+        "description": "Vi contatteremo entro un massimo di 24h"
+      },
+      "availableAdvisors": {
+        "title": "Consulenti disponibili",
+        "description": "43 esperti al vostro servizio dal lunedì al venerdì"
+      }
+    },
+    "advantages": {
+      "title": "I Nostri Vantaggi",
+      "experience": "15 anni di esperienza",
+      "experts": "43 consulenti esperti",
+      "rates": "Tassi competitivi",
+      "support": "Accompagnamento personalizzato"
+    },
+    "contact": {
+      "title": "Qualche domanda?",
+      "description": "Non esitate a contattarci",
+      "phone": "01 23 45 67 89",
+      "hours": "Dal lunedì al venerdì dalle 9h alle 18h"
+    }
+  },
+  "loanTypes": {
+    "personal": "Prestito personale",
+    "consumption": "Credito al consumo",
+    "works": "Credito lavori/ristrutturazione",
+    "mortgage": "Prestito immobiliare",
+    "consolidation": "Consolidamento crediti",
+    "lease": "Credito-leasing",
+    "student": "Prestito studentesco"
   }
 }

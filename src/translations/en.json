@@ -682,5 +682,95 @@
     "metaDescription": "Financial news and advice from Neovita Finanz. Stay informed about the latest developments in the credit market.",
     "title": "News",
     "subtitle": "Stay informed about the latest developments"
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Credit Application",
+      "subtitle": "Complete your financing application in a few minutes. Our team of experts will contact you quickly to study your project."
+    },
+    "metaDescription": "Make your credit application online with Neovita Finanz. Fast response and personalized support.",
+    "form": {
+      "title": "Credit Application Form",
+      "personalInfo": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "emailConfirmation": "Email Confirmation",
+      "phone": "Phone Number",
+      "project": "Your Financing Project",
+      "loanType": "Credit Type",
+      "selectLoanType": "Choose credit type",
+      "amount": "Desired Amount",
+      "currency": "Currency",
+      "duration": "Desired Duration (in months)",
+      "situation": "Your Financial Situation",
+      "professionalSituation": "Professional Situation",
+      "selectSituation": "Select your situation",
+      "monthlyIncome": "Monthly Net Income",
+      "message": "Additional Message",
+      "messagePlaceholder": "Describe your project, specific needs or any information that could help us advise you better...",
+      "submit": "Send my credit application",
+      "submitting": "Sending...",
+      "required": "* Required fields"
+    },
+    "situations": {
+      "employee": "Permanent Employee",
+      "temporaryEmployee": "Temporary Employee",
+      "civilServant": "Civil Servant",
+      "selfEmployed": "Self-Employed",
+      "freelancer": "Freelancer",
+      "retired": "Retired",
+      "student": "Student",
+      "jobSeeker": "Job Seeker"
+    },
+    "validation": {
+      "missingFields": "Missing required fields",
+      "missingFieldsDesc": "Please fill in all fields marked with an asterisk (*)",
+      "invalidEmail": "Invalid email address",
+      "invalidEmailDesc": "Please enter a valid email address",
+      "emailMismatch": "Email addresses do not match",
+      "emailMismatchDesc": "Please verify that both email addresses are identical",
+      "success": "Application sent successfully!",
+      "successDesc": "We have received your application. An advisor will contact you within 24 hours.",
+      "error": "Sending error",
+      "errorDesc": "An error occurred. Please try again or contact us directly."
+    },
+    "reassurance": {
+      "title": "Why trust us?",
+      "secureData": {
+        "title": "Secure Data",
+        "description": "Your information is protected and treated with complete confidentiality"
+      },
+      "quickResponse": {
+        "title": "Quick Response",
+        "description": "We contact you within 24 hours maximum"
+      },
+      "availableAdvisors": {
+        "title": "Available Advisors",
+        "description": "43 experts at your service Monday to Friday"
+      }
+    },
+    "advantages": {
+      "title": "Our Advantages",
+      "experience": "15 years of experience",
+      "experts": "43 expert advisors",
+      "rates": "Competitive rates",
+      "support": "Personalized support"
+    },
+    "contact": {
+      "title": "Any questions?",
+      "description": "Do not hesitate to contact us",
+      "phone": "01 23 45 67 89",
+      "hours": "Monday to Friday from 9am to 6pm"
+    }
+  },
+  "loanTypes": {
+    "personal": "Personal Loan",
+    "consumption": "Consumer Credit",
+    "works": "Home Improvement Credit",
+    "mortgage": "Mortgage Loan",
+    "consolidation": "Credit Consolidation",
+    "lease": "Lease Credit",
+    "student": "Student Loan"
   }
 }

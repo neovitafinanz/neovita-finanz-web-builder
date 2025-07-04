@@ -661,5 +661,95 @@
     "metaDescription": "Finansielle nyheder og rådgivning fra Neovita Finanz. Hold dig opdateret om de seneste udviklinger på kreditmarkedet.",
     "title": "Nyheder",
     "subtitle": "Hold dig opdateret om de seneste udviklinger"
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Kreditansøgning",
+      "subtitle": "Udfyld din finansieringsansøgning på få minutter. Vores team af eksperter vil kontakte dig hurtigt."
+    },
+    "metaDescription": "Lav din kreditansøgning online med Neovita Finanz. Hurtig respons og personlig vejledning.",
+    "form": {
+      "title": "Kreditansøgning Formular",
+      "personalInfo": "Personlige Oplysninger",
+      "firstName": "Fornavn",
+      "lastName": "Efternavn",
+      "email": "E-mail",
+      "emailConfirmation": "E-mail Bekræftelse",
+      "phone": "Telefonnummer",
+      "project": "Dit Finansieringsprojekt",
+      "loanType": "Kredittype",
+      "selectLoanType": "Vælg kredittype",
+      "amount": "Ønsket beløb",
+      "currency": "Valuta",
+      "duration": "Ønsket varighed (i måneder)",
+      "situation": "Din Økonomiske Situation",
+      "professionalSituation": "Professionel situation",
+      "selectSituation": "Vælg din situation",
+      "monthlyIncome": "Månedlig nettoindkomst",
+      "message": "Yderligere besked",
+      "messagePlaceholder": "Beskriv dit projekt...",
+      "submit": "Send min kreditansøgning",
+      "submitting": "Sender...",
+      "required": "* Påkrævede felter"
+    },
+    "situations": {
+      "employee": "Fast ansat",
+      "temporaryEmployee": "Midlertidigt ansat",
+      "civilServant": "Offentligt ansat",
+      "selfEmployed": "Selvstændig",
+      "freelancer": "Freelancer",
+      "retired": "Pensionist",
+      "student": "Studerende",
+      "jobSeeker": "Jobsøgende"
+    },
+    "validation": {
+      "missingFields": "Manglende påkrævede felter",
+      "missingFieldsDesc": "Udfyld alle felter markeret med (*)",
+      "invalidEmail": "Ugyldig e-mailadresse",
+      "invalidEmailDesc": "Indtast en gyldig e-mailadresse",
+      "emailMismatch": "E-mailadresser matcher ikke",
+      "emailMismatchDesc": "Kontroller at begge e-mailadresser er identiske",
+      "success": "Ansøgning sendt!",
+      "successDesc": "Vi kontakter dig inden for 24t.",
+      "error": "Sendefejl",
+      "errorDesc": "Prøv igen."
+    },
+    "reassurance": {
+      "title": "Hvorfor stole på os?",
+      "secureData": {
+        "title": "Sikre data",
+        "description": "Dine oplysninger er beskyttet"
+      },
+      "quickResponse": {
+        "title": "Hurtig respons",
+        "description": "Vi kontakter dig inden for 24t"
+      },
+      "availableAdvisors": {
+        "title": "Tilgængelige rådgivere",
+        "description": "43 eksperter til din service"
+      }
+    },
+    "advantages": {
+      "title": "Vores Fordele",
+      "experience": "15 års erfaring",
+      "experts": "43 ekspert rådgivere",
+      "rates": "Konkurrencedygtige renter",
+      "support": "Personlig vejledning"
+    },
+    "contact": {
+      "title": "Et spørgsmål?",
+      "description": "Kontakt os",
+      "phone": "01 23 45 67 89",
+      "hours": "Mandag til fredag 9-18"
+    }
+  },
+  "loanTypes": {
+    "personal": "Personligt lån",
+    "consumption": "Forbrugerkredit",
+    "works": "Renovationskredit",
+    "mortgage": "Realkreditlån",
+    "consolidation": "Kreditsammenlægning",
+    "lease": "Leasing-kredit",
+    "student": "Studielån"
   }
 }

@@ -634,5 +634,95 @@
     "metaDescription": "Noticias financieras y consejos de Neovita Finanz. Mantente informado sobre las últimas evoluciones del mercado crediticio.",
     "title": "Noticias",
     "subtitle": "Mantente informado sobre las últimas evoluciones"
+  },
+  "loanRequest": {
+    "hero": {
+      "title": "Solicitud de Crédito",
+      "subtitle": "Complete su solicitud de financiación en pocos minutos. Nuestro equipo de expertos se pondrá en contacto con usted rápidamente."
+    },
+    "metaDescription": "Haga su solicitud de crédito en línea con Neovita Finanz. Respuesta rápida y acompañamiento personalizado.",
+    "form": {
+      "title": "Formulario de Solicitud de Crédito",
+      "personalInfo": "Información Personal",
+      "firstName": "Nombre",
+      "lastName": "Apellidos",
+      "email": "Correo electrónico",
+      "emailConfirmation": "Confirmar correo electrónico",
+      "phone": "Número de teléfono",
+      "project": "Su Proyecto de Financiación",
+      "loanType": "Tipo de crédito",
+      "selectLoanType": "Elija el tipo de crédito",
+      "amount": "Importe deseado",
+      "currency": "Moneda",
+      "duration": "Duración deseada (en meses)",
+      "situation": "Su Situación Financiera",
+      "professionalSituation": "Situación profesional",
+      "selectSituation": "Seleccione su situación",
+      "monthlyIncome": "Ingresos mensuales netos",
+      "message": "Mensaje complementario",
+      "messagePlaceholder": "Describa su proyecto, sus necesidades específicas...",
+      "submit": "Enviar mi solicitud de crédito",
+      "submitting": "Enviando...",
+      "required": "* Campos obligatorios"
+    },
+    "situations": {
+      "employee": "Empleado indefinido",
+      "temporaryEmployee": "Empleado temporal",
+      "civilServant": "Funcionario",
+      "selfEmployed": "Trabajador autónomo",
+      "freelancer": "Profesión liberal",
+      "retired": "Jubilado/a",
+      "student": "Estudiante",
+      "jobSeeker": "Demandante de empleo"
+    },
+    "validation": {
+      "missingFields": "Campos obligatorios faltantes",
+      "missingFieldsDesc": "Por favor, rellene todos los campos marcados con asterisco (*)",
+      "invalidEmail": "Dirección de correo electrónico inválida",
+      "invalidEmailDesc": "Por favor, introduzca una dirección de correo electrónico válida",
+      "emailMismatch": "Las direcciones de correo electrónico no coinciden",
+      "emailMismatchDesc": "Por favor, verifique que ambas direcciones de correo electrónico sean idénticas",
+      "success": "¡Solicitud enviada con éxito!",
+      "successDesc": "Hemos recibido su solicitud. Un consejero se pondrá en contacto con usted en 24h.",
+      "error": "Error al enviar",
+      "errorDesc": "Se ha producido un error. Por favor, inténtelo de nuevo."
+    },
+    "reassurance": {
+      "title": "¿Por qué confiar en nosotros?",
+      "secureData": {
+        "title": "Datos seguros",
+        "description": "Su información está protegida y tratada con total confidencialidad"
+      },
+      "quickResponse": {
+        "title": "Respuesta rápida",
+        "description": "Le contactamos en un máximo de 24h"
+      },
+      "availableAdvisors": {
+        "title": "Asesores disponibles",
+        "description": "43 expertos a su servicio de lunes a viernes"
+      }
+    },
+    "advantages": {
+      "title": "Nuestras Ventajas",
+      "experience": "15 años de experiencia",
+      "experts": "43 asesores expertos",
+      "rates": "Tipos competitivos",
+      "support": "Acompañamiento personalizado"
+    },
+    "contact": {
+      "title": "¿Alguna pregunta?",
+      "description": "No dude en contactarnos",
+      "phone": "01 23 45 67 89",
+      "hours": "De lunes a viernes de 9h a 18h"
+    }
+  },
+  "loanTypes": {
+    "personal": "Préstamo personal",
+    "consumption": "Préstamo al consumo",
+    "works": "Crédito obras/renovación",
+    "mortgage": "Préstamo hipotecario",
+    "consolidation": "Reunificación de créditos",
+    "lease": "Crédito-arrendamiento",
+    "student": "Préstamo estudiantil"
   }
 }
