@@ -68,10 +68,6 @@ const Footer = () => {
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                <span className="text-green-100 text-sm">01 23 45 67 89</span>
-              </div>
-              <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-yellow-400 flex-shrink-0" />
                 <span className="text-green-100 text-sm">contact@neovitafinanz.com</span>
               </div>

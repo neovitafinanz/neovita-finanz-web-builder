@@ -38,10 +38,6 @@ const Header = () => {
         <div className="container mx-auto px-4 flex justify-between items-center text-sm">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4" />
-              <span>01 23 45 67 89</span>
-            </div>
-            <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
               <span>contact@neovita-finanz.fr</span>
             </div>

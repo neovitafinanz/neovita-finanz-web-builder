@@ -12,7 +12,6 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     subject: '',
     message: ''
   });
@@ -52,7 +51,7 @@ const ContactSection = () => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
+          
           subject: formData.subject,
           message: formData.message,
           _replyto: formData.email,
@@ -70,7 +69,7 @@ const ContactSection = () => {
         setFormData({
           name: '',
           email: '',
-          phone: '',
+          
           subject: '',
           message: ''
         });
@@ -136,35 +135,6 @@ const ContactSection = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white border-0 shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-xl font-bold text-blue-900 flex items-center">
-                    <Phone className="w-6 h-6 mr-3 text-blue-600" />
-                    Téléphone
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 mb-2">
-                    <strong>Service client :</strong><br />
-                    01 23 45 67 89
-                  </p>
-                  <p className="text-gray-700 mb-4">
-                    <strong>Conseillers :</strong><br />
-                    01 23 45 67 90
-                  </p>
-                  <div className="flex items-center text-sm text-green-600 mb-4">
-                    <Clock className="w-4 h-4 mr-2" />
-                    Lun-Ven: 8h30-18h30, Sam: 9h-13h
-                  </div>
-                  <Button 
-                    onClick={openWhatsApp}
-                    className="w-full bg-green-500 hover:bg-green-600 text-white"
-                  >
-                    <MessageCircle className="w-4 h-4 mr-2" />
-                    WhatsApp
-                  </Button>
-                </CardContent>
-              </Card>
 
               <Card className="bg-white border-0 shadow-xl">
                 <CardHeader>
@@ -251,20 +221,6 @@ const ContactSection = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="phone" className="text-blue-900 font-semibold">
-                          Téléphone
-                        </Label>
-                        <Input
-                          id="phone"
-                          name="phone"
-                          type="tel"
-                          value={formData.phone}
-                          onChange={handleInputChange}
-                          className="border-2 border-gray-200 focus:border-blue-500 h-12"
-                          placeholder="06 12 34 56 78"
-                        />
-                      </div>
                       <div className="space-y-2">
                         <Label htmlFor="subject" className="text-blue-900 font-semibold">
                           Sujet

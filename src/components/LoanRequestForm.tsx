@@ -16,7 +16,6 @@ const LoanRequestForm = () => {
     firstName: '',
     lastName: '',
     email: '',
-    phone: '',
     loanType: '',
     amount: '',
     duration: '',
@@ -38,7 +37,7 @@ const LoanRequestForm = () => {
     e.preventDefault();
     
     // Validation simple
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.loanType) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.loanType) {
       toast({
         title: t('loanForm.validation.missingFields'),
         description: t('loanForm.validation.fillRequired'),
@@ -58,7 +57,7 @@ const LoanRequestForm = () => {
       firstName: '',
       lastName: '',
       email: '',
-      phone: '',
+      
       loanType: '',
       amount: '',
       duration: '',
@@ -129,19 +128,6 @@ const LoanRequestForm = () => {
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       className="mt-2"
                       placeholder={t('loanForm.emailPlaceholder')}
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="phone" className="text-gray-700 font-medium">
-                      {t('loanForm.phone')} *
-                    </Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => handleInputChange('phone', e.target.value)}
-                      className="mt-2"
-                      placeholder={t('loanForm.phonePlaceholder')}
                     />
                   </div>
                 </div>
