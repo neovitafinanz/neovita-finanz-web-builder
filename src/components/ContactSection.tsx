@@ -146,7 +146,7 @@ const ContactSection = () => {
                 <CardContent>
                   <p className="text-gray-700 mb-2">
                     <strong>Informations générales :</strong><br />
-                    contact@neovitafinanz.com
+                    contacts@neovitafinanz.com
                   </p>
                   <p className="text-gray-700 mb-4">
                     <strong>Nouveau dossier :</strong><br />
