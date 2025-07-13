@@ -215,9 +215,12 @@ const LoanSimulator = () => {
                       <Button 
                         onClick={handleRequestLoan}
                         className="flex-1 bg-green-600 hover:bg-green-700"
+                        asChild
                       >
-                        <Mail className="w-4 h-4 mr-2" />
-                        {t('common.requestLoan')}
+                        <a href="mailto:contacts@neovitafinanz.com?subject=Demande de prêt">
+                          <Mail className="w-4 h-4 mr-2" />
+                          {t('common.requestLoan')}
+                        </a>
                       </Button>
                     </div>
                   </div>

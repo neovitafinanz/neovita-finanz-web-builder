@@ -91,8 +91,8 @@ const PolitiqueConfidentialite = () => {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">{t('privacy.contact.dpo')}</h4>
                       <p className="text-gray-700">
-                        Email: <a href="mailto:infos@neovitafinanz.com" className="text-green-600 hover:underline">
-                          infos@neovitafinanz.com
+                        Email: <a href="mailto:contacts@neovitafinanz.com" className="text-green-600 hover:underline">
+                          contacts@neovitafinanz.com
                         </a>
                       </p>
                     </div>
