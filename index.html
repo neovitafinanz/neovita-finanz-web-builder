@@ -26,17 +26,29 @@
     <meta property="twitter:description" content="Solutions financières personnalisées : prêts, crédits, assurances. Accompagnement expert pour tous vos projets." />
     <meta property="twitter:image" content="https://neovitafinanz.com/lovable-uploads/9ee0536b-2c03-416b-bf54-034f5028bc1f.png" />
     
-    <!-- Google tag (gtag.js) - Placed before other scripts to ensure proper loading -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11516811747"></script>
+    <!-- Google tag (gtag.js) - Enhanced loading with verification -->
     <script>
+      // Initialize dataLayer before loading gtag
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-11516811747');
+      console.log('gtag function initialized');
       
-      // Verify tag is loaded
-      console.log('Google Ads tag loaded');
+      // Load Google Tag Manager script
+      (function() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-11516811747';
+        script.onload = function() {
+          console.log('Google Tag Manager script loaded successfully');
+          gtag('js', new Date());
+          gtag('config', 'AW-11516811747');
+          console.log('Google Ads configured with ID: AW-11516811747');
+        };
+        script.onerror = function() {
+          console.error('Failed to load Google Tag Manager script');
+        };
+        document.head.appendChild(script);
+      })();
     </script>
     
     <!-- Language redirection script -->
