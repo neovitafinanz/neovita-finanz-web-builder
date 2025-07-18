@@ -19,7 +19,6 @@ const FormulaireCredit = () => {
     lastName: '',
     email: '',
     emailConfirmation: '',
-    phone: '',
     loanType: '',
     amount: '',
     currency: 'EUR',
@@ -85,7 +84,7 @@ const FormulaireCredit = () => {
     e.preventDefault();
     
     // Validation
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.emailConfirmation || !formData.phone || !formData.loanType) {
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.emailConfirmation || !formData.loanType) {
       toast({
         title: t('loanRequest.validation.missingFields'),
         description: t('loanRequest.validation.missingFieldsDesc'),
@@ -127,7 +126,7 @@ const FormulaireCredit = () => {
           firstName: formData.firstName,
           lastName: formData.lastName,
           email: formData.email,
-          phone: formData.phone,
+          
           loanType: formData.loanType,
           amount: formData.amount,
           currency: formData.currency,
@@ -152,7 +151,7 @@ const FormulaireCredit = () => {
           lastName: '',
           email: '',
           emailConfirmation: '',
-          phone: '',
+          
           loanType: '',
           amount: '',
           currency: 'EUR',
@@ -285,20 +284,6 @@ const FormulaireCredit = () => {
                           </div>
                         </div>
 
-                        <div className="mt-6 w-full">
-                          <Label htmlFor="phone" className="text-gray-700 font-medium">
-                            {t('loanRequest.form.phone')} *
-                          </Label>
-                          <Input
-                            id="phone"
-                            type="tel"
-                            value={formData.phone}
-                            onChange={(e) => handleInputChange('phone', e.target.value)}
-                            className="mt-2 w-full"
-                            placeholder="06 12 34 56 78"
-                            required
-                          />
-                        </div>
                       </div>
 
                       {/* Informations du prêt */}
@@ -498,9 +483,6 @@ const FormulaireCredit = () => {
                       <h4 className="font-medium text-gray-900 mb-2 text-responsive">{t('loanRequest.contact.title')}</h4>
                       <p className="text-sm text-gray-600 mb-3 text-responsive">
                         {t('loanRequest.contact.description')}
-                      </p>
-                      <p className="text-sm font-medium text-green-600 text-responsive">
-                        📞 {t('loanRequest.contact.phone')}
                       </p>
                       <p className="text-xs text-gray-500 text-responsive">
                         {t('loanRequest.contact.hours')}

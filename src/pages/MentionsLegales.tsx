@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 
 const MentionsLegales = () => {
   const { t } = useLanguage();
@@ -45,10 +45,6 @@ const MentionsLegales = () => {
                         <span key={i}>{line}<br /></span>
                       ))}
                     </p>
-                    <div className="flex items-center space-x-2 text-gray-600">
-                      <Phone className="w-4 h-4" />
-                      <span>{t('legal.company.phone')}</span>
-                    </div>
                     <div className="flex items-center space-x-2 text-gray-600">
                       <Mail className="w-4 h-4" />
                       <span>{t('legal.company.email')}</span>

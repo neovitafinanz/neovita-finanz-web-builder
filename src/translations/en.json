@@ -10,7 +10,7 @@
     "about": "About"
   },
   "common": {
-    "phoneAvailable": "Monday to Friday 9am to 6pm",
+    
     "requestLoan": "Request Loan",
     "discover": "Discover",
     "learnMoreAbout": "Learn more about",
@@ -155,7 +155,7 @@
       "lastName": "Last name",
       "email": "Email",
       "emailConfirmation": "Email confirmation",
-      "phone": "Phone",
+      
       "project": "Your financing project",
       "loanType": "Loan type",
       "selectLoanType": "Select loan type",
@@ -197,7 +197,6 @@
     "contact": {
       "title": "Need help?",
       "description": "Our advisors are at your disposal",
-      "phone": "01 23 45 67 89",
       "hours": "Monday to Friday 9am to 6pm"
     },
     "situations": {
@@ -454,7 +453,6 @@
       "capital": "Share capital: €17,000,000",
       "address": "Registered office address:",
       "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, France",
-      "phone": "01 23 45 67 89",
       "email": "infos@neovitafinanz.com"
     },
     "identification": {
@@ -696,7 +694,7 @@
       "lastName": "Last Name",
       "email": "Email",
       "emailConfirmation": "Email Confirmation",
-      "phone": "Phone Number",
+      
       "project": "Your Financing Project",
       "loanType": "Credit Type",
       "selectLoanType": "Choose credit type",
@@ -760,7 +758,7 @@
     "contact": {
       "title": "Any questions?",
       "description": "Do not hesitate to contact us",
-      "phone": "01 23 45 67 89",
+      
       "hours": "Monday to Friday from 9am to 6pm"
     }
   },

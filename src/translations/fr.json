@@ -10,7 +10,6 @@
     "about": "À Propos"
   },
   "common": {
-    "phoneAvailable": "Du lundi au vendredi de 9h à 18h",
     "requestLoan": "Demande de Prêt",
     "discover": "Découvrir",
     "learnMoreAbout": "En savoir plus sur",
@@ -290,7 +289,7 @@
     "firstName": "Prénom",
     "lastName": "Nom",
     "email": "Email",
-    "phone": "Téléphone",
+    
     "projectInfo": "Informations sur le projet",
     "loanType": "Type de prêt",
     "amount": "Montant souhaité",
@@ -324,7 +323,7 @@
       "lastName": "Nom de famille",
       "email": "Adresse e-mail",
       "emailConfirmation": "Confirmer l'adresse e-mail",
-      "phone": "Numéro de téléphone",
+      
       "project": "Votre Projet de Financement",
       "loanType": "Type de crédit",
       "selectLoanType": "Choisissez le type de crédit",
@@ -388,7 +387,6 @@
     "contact": {
       "title": "Une question ?",
       "description": "N'hésitez pas à nous contacter",
-      "phone": "01 23 45 67 89",
       "hours": "Du lundi au vendredi de 9h à 18h"
     }
   },
@@ -465,7 +463,7 @@
       "capital": "Capital social : 17 000 000 €",
       "address": "Adresse du siège social :",
       "addressDetails": "1 Rue du Bois Chaland\n91090 Lisses, France",
-      "phone": "01 23 45 67 89",
+      
       "email": "infos@neovitafinanz.com"
     },
     "identification": {
