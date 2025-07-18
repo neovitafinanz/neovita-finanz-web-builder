@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, MessageCircle, Send, Clock, Shield } from 'lucide-react';
+import { Mail, MapPin, MessageCircle, Send, Clock, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -87,12 +87,6 @@ const ContactSection = () => {
     }
   };
 
-  const openWhatsApp = () => {
-    const phoneNumber = "33123456789"; // Remplacer par le vrai numéro
-    const message = "Bonjour, je souhaite obtenir des informations sur vos services de financement.";
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
-  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">

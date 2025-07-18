@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Phone, Mail, Globe } from 'lucide-react';
+import { Menu, X, Mail, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -43,9 +43,6 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <div className="text-sm">
-              {t('common.phoneAvailable')}
-            </div>
             {/* Custom Language Selector */}
             <div className="flex items-center space-x-2">
               <Globe className="w-4 h-4" />

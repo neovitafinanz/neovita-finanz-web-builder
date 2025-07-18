@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { X, Calculator, Mail, Phone } from 'lucide-react';
+import { X, Calculator, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
