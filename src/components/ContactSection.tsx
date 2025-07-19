@@ -140,11 +140,11 @@ const ContactSection = () => {
                 <CardContent>
                   <p className="text-gray-700 mb-2">
                     <strong>Informations générales :</strong><br />
-                    contacts@neovitafinanz.com
+                    infos@neovitafinanz.com
                   </p>
                   <p className="text-gray-700 mb-4">
                     <strong>Nouveau dossier :</strong><br />
-                    nouveaux-clients@neovitafinanz.com
+                    infos@neovitafinanz.com
                   </p>
                   <div className="flex items-center text-sm text-blue-600">
                     <Shield className="w-4 h-4 mr-2" />

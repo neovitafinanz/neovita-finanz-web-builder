@@ -137,7 +137,7 @@ const ServiceDetails = ({ service, isOpen, onClose }: ServiceDetailsProps) => {
                 className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-3 font-semibold"
                 asChild
               >
-                <a href="mailto:contacts@neovitafinanz.com?subject=Demande d'informations">
+                <a href="mailto:infos@neovitafinanz.com?subject=Demande d'informations">
                   <Mail className="w-5 h-5 mr-2" />
                   Demander des informations
                 </a>

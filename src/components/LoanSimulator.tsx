@@ -217,7 +217,7 @@ const LoanSimulator = () => {
                         className="flex-1 bg-green-600 hover:bg-green-700"
                         asChild
                       >
-                        <a href="mailto:contacts@neovitafinanz.com?subject=Demande de prêt">
+                        <a href="mailto:infos@neovitafinanz.com?subject=Demande de prêt">
                           <Mail className="w-4 h-4 mr-2" />
                           {t('common.requestLoan')}
                         </a>
