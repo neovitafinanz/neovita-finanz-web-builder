@@ -139,7 +139,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "Neovita Finanz <onboarding@resend.dev>",
-        to: ["infos@neovitafinanz.com"],
+        to: ["contact@neovitafinanz.com"],
         subject: emailSubject,
         html: emailHtml,
       }),
