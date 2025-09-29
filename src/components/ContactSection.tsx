@@ -43,7 +43,7 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/mnnvbywo', {
+      const response = await fetch('https://gjrcvmxvzjyjqjibwnra.supabase.co/functions/v1/send-contact-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -51,28 +51,30 @@ const ContactSection = () => {
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          
           subject: formData.subject,
           message: formData.message,
-          _replyto: formData.email,
-          _subject: `Nouveau message de contact - ${formData.subject || 'Sans sujet'}`
+          formType: 'contact'
         }),
       });
 
       if (response.ok) {
-        toast({
-          title: "Message envoyé !",
-          description: "Nous vous recontacterons dans les plus brefs délais.",
-        });
+        const result = await response.json();
+        if (result.success) {
+          toast({
+            title: "Message envoyé !",
+            description: "Nous vous recontacterons dans les plus brefs délais.",
+          });
 
-        // Reset du formulaire
-        setFormData({
-          name: '',
-          email: '',
-          
-          subject: '',
-          message: ''
-        });
+          // Reset du formulaire
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        } else {
+          throw new Error(result.error || 'Erreur lors de l\'envoi');
+        }
       } else {
         throw new Error('Erreur lors de l\'envoi');
       }

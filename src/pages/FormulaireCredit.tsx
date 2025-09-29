@@ -117,49 +117,48 @@ const FormulaireCredit = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/mnnvbywo', {
+      const response = await fetch('https://gjrcvmxvzjyjqjibwnra.supabase.co/functions/v1/send-contact-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
+          name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
-          
           loanType: formData.loanType,
           amount: formData.amount,
-          currency: formData.currency,
           duration: formData.duration,
-          income: formData.income,
           situation: formData.situation,
           message: formData.message,
-          _replyto: formData.email,
-          _subject: `Nouvelle demande de crédit - ${formData.loanType}`
+          formType: 'credit'
         }),
       });
 
       if (response.ok) {
-        toast({
-          title: t('loanRequest.validation.success'),
-          description: t('loanRequest.validation.successDesc'),
-        });
+        const result = await response.json();
+        if (result.success) {
+          toast({
+            title: t('loanRequest.validation.success'),
+            description: t('loanRequest.validation.successDesc'),
+          });
 
-        // Reset du formulaire
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          emailConfirmation: '',
-          
-          loanType: '',
-          amount: '',
-          currency: 'EUR',
-          duration: '',
-          income: '',
-          situation: '',
-          message: ''
-        });
+          // Reset du formulaire
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            emailConfirmation: '',
+            loanType: '',
+            amount: '',
+            currency: 'EUR',
+            duration: '',
+            income: '',
+            situation: '',
+            message: ''
+          });
+        } else {
+          throw new Error(result.error || 'Erreur lors de l\'envoi');
+        }
       } else {
         throw new Error('Erreur lors de l\'envoi');
       }
